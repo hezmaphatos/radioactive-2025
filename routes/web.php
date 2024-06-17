@@ -85,15 +85,15 @@ Route::get('/cart/{id}', [MerchController::class, 'removeFromCart']);
 Route::get('/merch-checkout', [MerchController::class, 'checkout']);
 
 Route::get('/send', [MailController::class, 'index']);
-// Route::get('/closing-night', function () {
-//     return view('Tickets.index');
-// });
+Route::get('/closing-night', function () {
+    return view('Tickets.index');
+});
 
 // Route::resource('rac', TeamDataController::class);
 
 Route::controller(TeamDataController::class)->group(function(){
-    // Route::get('/rac', 'index');
-    // Route::get('/rac/register', 'create');
+    Route::get('/rac', 'index');
+    Route::get('/rac/register', 'create');
     // Route::get('/rac/register', function(){
     //     return view('welcome');
     // });
@@ -108,8 +108,8 @@ Route::controller(TeamDataController::class)->group(function(){
 });
 
 Route::controller(VocController::class)->group(function () {
-    // Route::get('/voc', 'index');
-    // Route::get('/voc/submission', 'create');
+    Route::get('/voc', 'index');
+    Route::get('/voc/submission', 'create');
     // Route::get('/voc/submission', function(){
     //     return view('welcome');
     // });

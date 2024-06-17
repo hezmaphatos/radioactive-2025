@@ -14,7 +14,7 @@
 
 <body class="overflow-x-hidden">
     <div id="button1"
-        class="hidden fixed bottom-12 end-4 md:bottom-20 md:end-20 flex justify-center items-center z-50 animate-bounce"
+        class="fixed bottom-12 end-4 md:bottom-20 md:end-20 flex justify-center items-center z-50 animate-bounce"
         data-aos="fade-up">
         <a href="/closing-night/#ticket" class="no-underline">
             <button
@@ -42,7 +42,7 @@
             <div class="pr-4 hidden space-x-6 lg:inline-block">
                 <a class="font-taruno text-white text-xs underline underline-offset-4 decoration-[#FFF000] cursor-pointer"
                     href="/">HOME</a>
-                {{-- <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
+                <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
                     href="/voc">VO
                     CHALLENGE</a>
                 <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
@@ -51,7 +51,7 @@
                     href="/closing-night">CLOSING
                     NIGHT</a>
                 <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
-                    href="https://merch.umnradioactive.com/">MERCHANDISE</a> --}}
+                    href="https://merch.umnradioactive.com/">MERCHANDISE</a>
             </div>
 
             <div class="mobile-navbar">
@@ -60,7 +60,7 @@
                     <div class="flex flex-col space-y-6">
                         <a class="font-taruno text-black text-xs underline underline-offset-4 decoration-[#0E0EC0] cursor-pointer"
                             href="/">HOME</a>
-                        {{-- <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
+                        <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
                             href="/voc">VO
                             CHALLENGE</a>
                         <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
@@ -69,7 +69,7 @@
                             href="/closing-night">CLOSING
                             NIGHT</a>
                         <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
-                            href="https://merch.umnradioactive.com/">MERCHANDISE</a> --}}
+                            href="https://merch.umnradioactive.com/">MERCHANDISE</a>
                     </div>
                 </div>
             </div>
@@ -116,8 +116,8 @@
     </div>
 
     <div id="section3" class="-mb-20 lg:-mb-0 lg:my-16" data-aos="fade-up">
-        <h4 class="hidden md:text-xl font-taruno2 text-white text-center my-12">UPCOMING EVENTS</h4>
-        <div class="hidden carousel carousel-center flex">
+        <h4 class="md:text-xl font-taruno2 text-white text-center my-12">UPCOMING EVENTS</h4>
+        <div class="carousel carousel-center flex">
             <div class="carousel-item ml-16 lg:ml-32 border border-white">
                 <a href="/voc" class="no-underline">
                     <div class="flex bg-[#0E0EC0] flex-row max-h-44 lg:max-h-96">
@@ -209,7 +209,7 @@
             </div>
             </a>
         </div>
-        <div id="section4" class="-mb-20 md:-mb-0 md:my-24 hidden" data-aos="fade-up">
+        <div id="section4" class="-mb-20 md:-mb-0 md:my-24" data-aos="fade-up">
             <h2 class="font-taruno2 text-white text-center mb-6 mt-12">EXCLUSIVE MEDIA PARTNER</h2>
             <div class="w-4/6 mb-4 md:w-1/4 items-center justify-center text-center mx-auto md:mb-6">
                 <img class="" src="/images/prambors.webp" alt="" />
@@ -254,7 +254,7 @@
             </div>
         </div>
 
-        <div id="section5" class="py-20 md:py-0 lg:-mb-0 lg:my-16 hidden" data-aos="fade-up">
+        <div id="section5" class="py-20 md:py-0 lg:-mb-0 lg:my-16" data-aos="fade-up">
             <h2 class="font-taruno2 text-white text-center my-12">SPONSORS</h2>
 
             <div id="sponsor-M"

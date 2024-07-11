@@ -32,3 +32,13 @@
     font-family: 'Pathway Extreme';
     src: url("fonts/PathwayExtreme.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: 'LT Museum Bold';
+  src: url("fonts/LTMuseum-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'LT Museum Reguler';
+  src: url("fonts/LTMuseum-Reg.ttf") format("truetype");
+}

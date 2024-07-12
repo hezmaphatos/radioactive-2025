@@ -12,6 +12,7 @@ use App\Http\Controllers\TicketController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TeamDataController;
 use App\Http\Controllers\VocController;
+use App\Http\Controllers\DashboardUserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,17 +26,14 @@ use App\Http\Controllers\VocController;
 */
 
 Route::get('/', function () {
-    return view('Home.index');
+    return view('Home.index', [
+        "title" => "Home"
+    ]);
 });
-
-// Route::get('/voc', function () {
-//     return view('VOC.index');
-// });
 
 Route::controller(LoginController::class)->group(function () {
     Route::get('/login', 'index')->name('login');
     Route::post('/login', 'authenticate');
-    
 });
 
 Route::get('/logout', function (Request $request) {
@@ -62,7 +60,7 @@ Route::controller(OrderController::class)->group(function () {
     Route::get('/invoice/{id}', 'invoice');
 
     // debug only *nanti dihapus*
-    Route::get('/approve', 'approve_ticket');
+    // Route::get('/approve', 'approve_ticket');
 });
 
 Route::controller(TicketController::class)->group(function (){
@@ -86,7 +84,9 @@ Route::get('/merch-checkout', [MerchController::class, 'checkout']);
 
 Route::get('/send', [MailController::class, 'index']);
 Route::get('/closing-night', function () {
-    return view('Tickets.index');
+    return view('Tickets.index', [
+        "title" => "closing"
+    ]);
 });
 
 // Route::resource('rac', TeamDataController::class);
@@ -125,10 +125,12 @@ Route::get('/doorprize', function(){
     return view('RNG.index');
 })->middleware('auth');
 
-// Route::get('/rac', function(){
-//     return view('Rac.index');
-// });
+Route::get('/dashboard', function(){
+    return view('Dashboard.index');
+});
 
-Route::get('/{any}', function () {
-    return redirect('/');
-})->where('any', '.*');
+Route::resource('/dashboard/users', DashboardUserController::class);
+
+// Route::get('/{any}', function () {
+//     return redirect('/');
+// })->where('any', '.*');

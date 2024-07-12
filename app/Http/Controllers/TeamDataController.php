@@ -11,7 +11,9 @@ class TeamDataController extends Controller
     public function index()
     {
         //
-        return view('teams.index');
+        return view('teams.index', [
+            "title" => "RAC"
+        ]);
     }
 
     /**

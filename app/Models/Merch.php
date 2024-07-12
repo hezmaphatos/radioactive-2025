@@ -9,13 +9,7 @@ class Merch extends Model
 {
     use HasFactory;
 
-    protected $fillable = [
-        'name',
-        'description',
-        'image',
-        'price',
-        'stock',
-    ];
+    protected $guarded = [];
 
     public function list_merch() {
         $data = Merch::all();

@@ -15,7 +15,7 @@
     </div>
 
     <div class=" lg:-mb-0 lg:my-16" data-aos="fade-up">
-        <h2 id="title" class="font-taruno2 text-white text-center my-10 mx-4">VOICEOVER CHALLENGE</h2>
+        <h2 id="title" class="font-taruno2 text-white text-center my-10 mx-4">VOICEOVERR CHALLENGE</h2>
         <div id="description" class="px-8 md:px-20 lg:px-80">
             <p class="font-pathway text-sm text-white text-justify md:text-center md:pb-0">Voice Over Challenge
                 merupakan salah satu rangkaian acara RADIOACTIVE 2023. Voice Over Challenge bertujuan untuk mengasah

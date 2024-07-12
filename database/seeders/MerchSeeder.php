@@ -15,43 +15,101 @@ class MerchSeeder extends Seeder
     {
         //
         Merch::create([
-            'name' => 'T-Shirt',
-            'description' => 'T-Shirt',
-            'image' => 't-shirt.jpg',
-            'price' => 100000,
-            'stock' => 10,
+            'name' => 'Turbulent Revolution Tee',
+            'description' => 'KAOSBIRU',
+            'table' => 1,
+            'image1' => '1-KAOSBIRU.webp',
+            'image2' => '2-KAOSBIRU.webp',
+            'image3' => '3-KAOSBIRU.webp',
+            'image4' => '4-KAOSBIRU.webp',
+            'image5' => '4-KAOSBIRU.webp',
+            'price' => 95000
         ]);
 
         Merch::create([
-            'name' => 'Hoodie',
-            'description' => 'Hoodie',
-            'image' => 't-shirt.jpg',
-            'price' => 200000,
-            'stock' => 10,
+            'name' => 'Celestial Revy Tee',
+            'description' => 'KAOSPUTIH',
+            'table' => 1,
+            'image1' => '1-KAOSPUTIH.webp',
+            'image2' => '2-KAOSPUTIH.webp',
+            'image3' => '3-KAOSPUTIH.webp',
+            'image4' => '4-KAOSPUTIH.webp',
+            'image5' => '5-KAOSPUTIH.webp',
+            'price' => 95000
         ]);
 
         Merch::create([
-            'name' => 'Jacket',
-            'description' => 'Jacket',
-            'image' => 't-shirt.jpg',
-            'price' => 300000,
-            'stock' => 10,
+            'name' => 'Radioactive Sticker Pack',
+            'table' => 0,
+            'description' => 'STICKER',
+            'image1' => '1-STICKER.webp',
+            'image2' => '2-STICKER.webp',
+            'image3' => '3-STICKER.webp',
+            'image4' => '4-STICKER.webp',
+            'image5' => '5-STICKER.webp',
+            
+            'price' => 15000
         ]);
 
         Merch::create([
-            'name' => 'Hat',
-            'description' => 'Hat',
-            'image' => 't-shirt.jpg',
-            'price' => 50000,
-            'stock' => 10,
+            'name' => 'Revolution Tote Bag',
+            'description' => 'TOTEBAG',
+            'table' => 0,
+            'image1' => '1-TOTEBAG.webp',
+            'image2' => '2-TOTEBAG.webp',
+            'image3' => '3-TOTEBAG.webp',
+            'image4' => '4-TOTEBAG.webp',
+            'image5' => '5-TOTEBAG.webp',
+            
+            'price' => 85000
         ]);
 
         Merch::create([
-            'name' => 'Pants',
-            'description' => 'Pants',
-            'image' => 't-shirt.jpg',
-            'price' => 150000,
-            'stock' => 10,
+            'name' => 'Revy Eggo Tumbler',
+            'description' => 'TUMBLER',
+            'table' => 0,
+            'image1' => '1-TUMBLER.webp',
+            'image2' => '2-TUMBLER.webp',
+            'image3' => '3-TUMBLER.webp',
+            'image4' => '4-TUMBLER.webp',
+            'image5' => '5-TUMBLER.webp',
+            'price' => 65000
+        ]);
+        
+        Merch::create([
+            'name' => 'Bundle Exclusive 1',
+            'description' => 'BUNDLE1',
+            'table' => 0,
+            'image1' => '1-BUNDLE1.webp',
+            'image2' => '2-BUNDLE1.webp',
+            'image3' => '3-BUNDLE1.webp',
+            'image4' => '4-BUNDLE1.webp',
+            'image5' => '5-BUNDLE1.webp',
+            'price' => 115000
+        ]);
+        
+        Merch::create([
+            'name' => 'Bundle Exclusive 2',
+            'description' => 'BUNDLE2',
+            'table' => 0,
+            'image1' => '1-BUNDLE2.webp',
+            'image2' => '2-BUNDLE2.webp',
+            'image3' => '3-BUNDLE2.webp',
+            'image4' => '4-BUNDLE2.webp',
+            'image5' => '5-BUNDLE2.webp',
+            'price' => 180000
+        ]);
+
+        Merch::create([
+            'name' => 'Bundle Exclusive 3',
+            'description' => 'BUNDLE3',
+            'table' => 0,
+            'image1' => '1-BUNDLE3.webp',
+            'image2' => '2-BUNDLE3.webp',
+            'image3' => '3-BUNDLE3.webp',
+            'image4' => '4-BUNDLE3.webp',
+            'image5' => '5-BUNDLE3.webp',
+            'price' => 240000
         ]);
 
     }

@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TeamDataController;
 use App\Http\Controllers\VocController;
 use App\Http\Controllers\DashboardUserController;
+use App\Http\Controllers\MerchOrderController;
+use App\Http\Controllers\CartController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,6 +36,9 @@ Route::get('/', function () {
 Route::controller(LoginController::class)->group(function () {
     Route::get('/login', 'index')->name('login');
     Route::post('/login', 'authenticate');
+
+    Route::get('/signup', 'signup_view')->middleware('guest');
+    Route::post('/signup', 'signup');
 });
 
 Route::get('/logout', function (Request $request) {
@@ -127,10 +132,32 @@ Route::get('/doorprize', function(){
 
 Route::get('/dashboard', function(){
     return view('Dashboard.index');
-});
+})->middleware('admin');
 
-Route::resource('/dashboard/users', DashboardUserController::class);
+Route::resource('/dashboard/users', DashboardUserController::class)->middleware('admin');
 
 // Route::get('/{any}', function () {
 //     return redirect('/');
 // })->where('any', '.*');
+
+Route::controller(MerchOrderController::class)->group(function () {
+    Route::get('/order', 'order');
+    Route::post('/order', 'order');
+    Route::get('/reset-cart', 'resetCart');
+});
+
+Route::controller(MerchController::class)->group(function () {
+    Route::get('/merch', 'home');
+    Route::get('/cart', 'cart');
+    Route::post('/cart/{id}', 'addToCart');
+    Route::get('item/', 'merch');
+    Route::get('item/{id}', 'ShowItem');
+
+});
+
+Route::controller(CartController::class)->group(function () {
+    Route::get('/cart/{id}', 'removeFromCart');
+    Route::get('/checkout', 'checkout');
+    Route::get('/dashboard', 'dashboard')->middleware('auth');
+    Route::get('approval/{id}/{status}', 'approval')->middleware('auth');
+}); 

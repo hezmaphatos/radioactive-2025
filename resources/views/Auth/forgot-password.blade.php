@@ -10,47 +10,34 @@
 </head>
 
 <body>
-<img src="{{ url('/images/backgroundLogin.jpg') }}" alt="Image"
-        class="absolute inset-0 z-0 h-full w-full object-cover" />
-    <div class="absolute inset-0 z-0 h-full w-full bg-black/50" />
-    <div class="container relative z-40 mx-auto p-8 flex items-center justify-center">
-        <img src="{{ url('/images/logoRadio-putih.webp') }}" alt="Image" class="h-20" />
-    </div>
-    <div class="class=container mx-auto p-4">
-        <form action="{{ route('password.email') }}" method="post">
-            <div
-                class="class=flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 shadow-md absolute top-2/4 left-2/4 mt-5 w-full max-w-[24rem] -translate-y-2/4 -translate-x-2/4">
-                <div
-                    class="relative bg-clip-border mx-4 rounded-xl overflow-hidden shadow-lg -mt-6 mb-4 grid h-28 place-items-center bg-gradient-to-r from-[#011F39] to-[#629FD4]">
-                    <h3 class="block antialiased tracking-normal font-sans text-xl font-bold leading-snug text-white">
-                    Forgot Your Password?</h3>
-                </div>
-                @if ($errors->any())
-                    <ul class="text-red-500 text-center">
-                        @foreach ($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
-                @else
-                    <p class="text-center">Please enter your mail to password reset request.</p>
-                @endif
-                <div class="p-6 flex flex-col gap-4">
-                    @csrf
-                    <div class="relative w-full min-w-[200px] h-11">
-                        <input name="email" type="email" placeholder="Email"
-                            class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1">
-                    </div>
-                    <div class="relative w-full min-w-[200px] h-11 mb-3">
-                        <button type="submit"
-                            class="bg-gradient-to-r from-[#011F39] to-[#629FD4] hover:shadow-lg hover:shadow-blue-500/40 text-white font-bold py-2 px-4 rounded-lg block w-full">
-                            Send Reset Link
-                        </button>
+    <section class="bg-black h-screen relative">
+        <img class="absolute inset-0 h-auto w-full lg:h-3/4 max-w-full max-h-full m-auto opacity-50" src="{{ asset("images/LOGO RA.png") }}"/>
+        <div class="container mx-auto p-4">
+            <form action="{{ route('password.email') }}" method="post">
+                <div class="flex flex-col bg-clip-border rounded-xl bg-white bg-opacity-75 text-gray-700 shadow-md absolute top-2/4 left-2/4 mt-5 w-full max-w-[24rem] -translate-y-2/4 -translate-x-2/4">
+                        <h3 class="font-ltmuseumbold text-2xl font-bold text-black text-center mt-9">Forgot Your Password?</h3>
+                    @if ($errors->any())
+                        <ul class="text-red-500 text-center">
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    @else
+                        <p class="text-center mt-3 font-ltmuseumreg">Please enter your mail to password reset request.</p>
+                    @endif
+                    <div class="p-6 flex flex-col gap-4">
+                        @csrf
+                        <div class="relative w-full min-w-[200px] h-11">
+                            <input name="email" type="email" placeholder="Email" class="px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-[#D61625] focus:ring-[#D61625] block w-full rounded-xl sm:text-sm focus:ring-1">
+                        </div>
+                        <div class="relative w-full min-w-[200px] h-11 mb-3">
+                            <button type="submit" class="bg-[#D61625] hover:bg-[#9B1625] text-white font-bold py-2 px-4 rounded-xl block w-full">Send Reset Link</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </form>
-    </div>
-    </div>
+            </form>
+        </div>
+    </section>
 </body>
 
 </html>

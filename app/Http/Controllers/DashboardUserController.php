@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\Role;
 use Illuminate\Http\Request;
 
 class DashboardUserController extends Controller
@@ -10,11 +11,21 @@ class DashboardUserController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
+        $users = User::orderBy('role_id', 'asc');
+
+        if(request('search')){
+            $users = $users->where('name', 'like', '%' . request('search') . '%')
+                           ->orWhere('email', 'like', '%' . request('search') . '%');
+        }
+        
+        $users = $users->paginate(5)->withQueryString();
+        
         return view('dashboard.User.index', [
-            'users' => User::paginate(1)->withQueryString()
+            'users' => $users
         ]);
+        
     }
 
     /**
@@ -23,7 +34,8 @@ class DashboardUserController extends Controller
     public function create()
     {
         return view('dashboard.user.create', [
-            'users' => User::all() 
+            'users' => User::all(),
+            'roles' => Role::all()
         ]);
     }
 
@@ -32,10 +44,12 @@ class DashboardUserController extends Controller
      */
     public function store(Request $request)
     {
+
         $validatedData = $request->validate([
             'name' => 'required|max:255',
             'email' => 'required|email|max:255|unique:users',
-            'password' => 'required|string|min:8'
+            'password' => 'required|string|min:8',
+            'role_id' => 'required'
         ]);
 
         User::create($validatedData);
@@ -58,7 +72,8 @@ class DashboardUserController extends Controller
     {
         return view('dashboard.user.edit', [
             'user' => $user,
-            'users' => User::all() 
+            'users' => User::all(),
+            'roles' => Role::all()
         ]);
     }
 
@@ -69,7 +84,8 @@ class DashboardUserController extends Controller
     {
         $rules = [
             'name' => 'required|max:255',
-            'password' => 'required|string|min:8'
+            'password' => 'required|string|min:8',
+            'role_id' => 'required'
         ];
         
         if ($request->email != $user->email) {

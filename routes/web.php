@@ -15,6 +15,7 @@ use App\Http\Controllers\VocController;
 use App\Http\Controllers\DashboardUserController;
 use App\Http\Controllers\MerchOrderController;
 use App\Http\Controllers\CartController;
+use App\Models\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -131,7 +132,9 @@ Route::get('/doorprize', function(){
 })->middleware('auth');
 
 Route::get('/dashboard', function(){
-    return view('Dashboard.index');
+    return view('Dashboard.index', [
+        'users' => User::all()
+    ]);
 })->middleware('admin');
 
 Route::resource('/dashboard/users', DashboardUserController::class)->middleware('admin');
@@ -158,6 +161,6 @@ Route::controller(MerchController::class)->group(function () {
 Route::controller(CartController::class)->group(function () {
     Route::get('/cart/{id}', 'removeFromCart');
     Route::get('/checkout', 'checkout');
-    Route::get('/dashboard', 'dashboard')->middleware('auth');
+    // Route::get('/dashboard', 'dashboard')->middleware('auth');
     Route::get('approval/{id}/{status}', 'approval')->middleware('auth');
 }); 

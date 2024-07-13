@@ -20,6 +20,11 @@ class="fixed navbar bg-transparent justify-center gap-16 z-40 transition-all dur
             NIGHT</a>
         <a class="font-taruno text-white text-xs {{ ($title === "merch") ? 'underline underline-offset-4 decoration-[#FFF000] cursor-pointer' : 'no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer'}}"
             href="/merch">MERCHANDISE</a>
+            @auth
+            <a class="font-taruno text-white text-xs no-underline hover:underline cursor-pointer" href="/logout">LOGOUT</a>
+        @else
+        <a class="font-taruno text-white text-xs no-underline hover:underline cursor-pointer" href="/login">LOGIN</a>
+        @endauth
         {{-- <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
             href="https://merch.umnradioactive.com/">MERCHANDISE</a> --}}
     </div>
@@ -37,9 +42,6 @@ class="fixed navbar bg-transparent justify-center gap-16 z-40 transition-all dur
                     href="/rac">RAC</a>
                 <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
                     href="/closing-night">CLOSING NIGHT</a>
-                @auth
-                    <a class="font-taruno text-white text-xs no-underline hover:underline cursor-pointer" href="/logout">LOGOUT</a>
-                @endauth
                 <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
                     href="/merch">MERCHANDISE</a>
             </div>

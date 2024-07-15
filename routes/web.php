@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TeamDataController;
 use App\Http\Controllers\VocController;
 use App\Http\Controllers\DashboardUserController;
+use App\Http\Controllers\DashboardVOCController;
 use App\Http\Controllers\MerchOrderController;
 use App\Http\Controllers\CartController;
 use App\Models\User;
@@ -138,6 +139,7 @@ Route::get('/dashboard', function(){
 })->middleware('admin');
 
 Route::resource('/dashboard/users', DashboardUserController::class)->middleware('admin');
+Route::resource('/dashboard/voc', DashboardVOCController::class)->middleware('admin');
 
 // Route::get('/{any}', function () {
 //     return redirect('/');
@@ -161,6 +163,6 @@ Route::controller(MerchController::class)->group(function () {
 Route::controller(CartController::class)->group(function () {
     Route::get('/cart/{id}', 'removeFromCart');
     Route::get('/checkout', 'checkout');
-    // Route::get('/dashboard', 'dashboard')->middleware('auth');
+    Route::get('/dashboard/cart', 'dashboard')->middleware('auth');
     Route::get('approval/{id}/{status}', 'approval')->middleware('auth');
 }); 

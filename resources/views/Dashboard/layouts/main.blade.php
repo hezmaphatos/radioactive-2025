@@ -18,7 +18,7 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   </head>
 <body x-data="{ page: 'tables', 'loaded': true, 'darkMode': true, 'stickyMenu': false, 'sidebarToggle': false, 'scrollTop': false }">
-{{-- @include('Dashboard.partials.preloader') --}}
+@include('Dashboard.layouts.preloader')
     <div class="flex h-screen overflow-hidden">
         @include('Dashboard.layouts.sidebar')
         <div class="relative flex flex-1 flex-col overflow-y-auto overflow-x-hidden">

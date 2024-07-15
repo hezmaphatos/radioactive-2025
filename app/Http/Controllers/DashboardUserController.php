@@ -13,11 +13,18 @@ class DashboardUserController extends Controller
      */
     public function index(Request $request)
     {
-        $users = User::orderBy('role_id', 'asc');
+        $search = $request->input('search');
 
-        if(request('search')){
-            $users = $users->where('name', 'like', '%' . request('search') . '%')
-                           ->orWhere('email', 'like', '%' . request('search') . '%');
+        $users = User::orderBy('role_id', 'asc');
+    
+        if ($search) {
+            $users = $users->where(function ($query) use ($search) {
+                $query->where('name', 'like', '%' . $search . '%')
+                      ->orWhere('email', 'like', '%' . $search . '%')
+                      ->orWhereHas('role', function ($query) use ($search) {
+                          $query->where('roles', 'like', '%' . $search . '%');
+                      });
+            });
         }
         
         $users = $users->paginate(5)->withQueryString();

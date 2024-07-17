@@ -11,6 +11,7 @@ export default {
                 pathway: ["Pathway Extreme"],
                 taruno: ["Taruno Wide"],
                 taruno2: ["Taruno Wide Outline"],
+                ltmuseum: ['LT Museum'],
             },
             spacing: {
                 76: "19rem",

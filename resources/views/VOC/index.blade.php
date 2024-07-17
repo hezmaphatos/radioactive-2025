@@ -73,20 +73,20 @@
         </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
         <script>
-            // var CurrentDate = new Date();
-            // var HandbookDate = new Date("2023-09-18");
-            // var handbook = document.getElementById("handbookbtn");
-            // var submitbtn = document.getElementById('submitbtn')
+             var CurrentDate = new Date();
+             var HandbookDate = new Date("2024-09-18");
+             var handbook = document.getElementById("handbookbtn");
+             var submitbtn = document.getElementById('submitbtn')
 
-            // function checkTime() {
-            //     if (CurrentDate >= HandbookDate) {
-            //         // handbookbtn.removeAttribute("disabled");
-            //         submitbtn.removeAttribute("disabled");
-            //     }
-            // }
+             function checkTime() {
+                 if (CurrentDate >= HandbookDate) {
+                      handbookbtn.removeAttribute("disabled");
+                     submitbtn.removeAttribute("disabled");
+                 }
+             }
 
-            // checkTime();
-            // setInterval(checkTime, 1000);
+             checkTime();
+             setInterval(checkTime, 1000);
         </script>
 </body>
 

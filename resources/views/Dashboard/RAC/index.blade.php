@@ -42,14 +42,19 @@
                   <tr class="bg-gray-2 text-left dark:bg-meta-4">
                       <th class="px-4 py-4 font-medium text-black dark:text-white xl:pl-11 text-center">Reg ID</th>
                       <th class="px-4 py-4 font-medium text-black dark:text-white">Institusi Asal</th>
-                      <th class="px-4 py-4 font-medium text-black dark:text-white">Nama Lengkap</th>
+                      <th class="px-4 py-4 font-medium text-black dark:text-white">Nama Tim</th>
                       <th class="px-4 py-4 font-medium text-black dark:text-white">Usia</th>
-                      <th class="px-4 py-4 font-medium text-black dark:text-white">Nomor Telepon</th>
                       <th class="px-4 py-4 font-medium text-black dark:text-white">Email</th>
-                      <th class="px-4 py-4 font-medium text-black dark:text-white">NIM</th>
-                      <th class="px-4 py-4 font-medium text-black dark:text-white">Username</th>
-                      <th class="px-4 py-4 font-medium text-black dark:text-white">Link</th>
-                      <th class="px-4 py-4 font-medium text-black dark:text-white">Actions</th>
+                      <th class="px-4 py-4 font-medium text-black dark:text-white">Penyiar 1</th>
+                      <th class="px-4 py-4 font-medium text-black dark:text-white">Penyiar 2</th>
+                      <th class="px-4 py-4 font-medium text-black dark:text-white">Operator</th>
+                      <th class="px-4 py-4 font-medium text-black dark:text-white">NIM Penyiar 1</th>
+                      <th class="px-4 py-4 font-medium text-black dark:text-white">NIM Penyiar 2</th>
+                      <th class="px-4 py-4 font-medium text-black dark:text-white">NIM OPERATOR</th>
+                      <th class="px-4 py-4 font-medium text-black dark:text-white">WA</th>
+                      <th class="px-4 py-4 font-medium text-black dark:text-white">LINE</th>
+                      <th class="px-4 py-4 font-medium text-black dark:text-white">Bukti Pembayaran</th>
+                      <th class="px-4 py-4 font-medium text-black dark:text-white">Bukti Actions</th>
                   </tr>
               </thead>
               <tbody>

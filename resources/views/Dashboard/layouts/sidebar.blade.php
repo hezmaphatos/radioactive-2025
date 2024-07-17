@@ -53,11 +53,20 @@
           </li>
           <li>
             <a
-              class="group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium text-bodydark1 duration-300 ease-in-out {{ Request::is('dashboard/voc*') ? 'bg-graydark' : ''}} hover:bg-graydark dark:hover:bg-meta-4"
-              href="/dashboard/voc"
+              class="group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium text-bodydark1 duration-300 ease-in-out {{ Request::is('dashboard/vocs*') ? 'bg-graydark' : ''}} hover:bg-graydark dark:hover:bg-meta-4"
+              href="/dashboard/vocs"
             >
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mic"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
               VOC
+            </a>
+          </li>
+          <li>
+            <a
+              class="group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium text-bodydark1 duration-300 ease-in-out {{ Request::is('dashboard/racs*') ? 'bg-graydark' : ''}} hover:bg-graydark dark:hover:bg-meta-4"
+              href="/dashboard/racs"
+            >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-radio"><circle cx="12" cy="12" r="2"></circle><path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"></path></svg>
+              RAC
             </a>
           </li>
         </ul>

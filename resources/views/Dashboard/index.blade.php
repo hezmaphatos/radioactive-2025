@@ -131,13 +131,13 @@
 
           <!-- Card Item Start -->
           <div
-            class="rounded-sm border border-stroke bg-white px-7.5 py-6 shadow-default dark:border-strokedark dark:bg-boxdark"
+            class="rounded-sm border border-stroke bg-white px-7.5 py-6 shadow-default"
           >
             <div
-              class="flex h-11.5 w-11.5 items-center justify-center rounded-full bg-meta-2 dark:bg-meta-4"
+              class="flex h-11.5 w-11.5 items-center justify-center rounded-full bg-meta-2 "
             >
               <svg
-                class="fill-primary dark:fill-white"
+                class="fill-primary"
                 width="22"
                 height="18"
                 viewBox="0 0 22 18"
@@ -161,7 +161,7 @@
             <div class="mt-4 flex items-end justify-between">
               <div>
                 <h4
-                  class="text-title-md font-bold text-black dark:text-white"
+                  class="text-title-md font-bold text-black"
                 >
                 {{ $users-> count()}}
                 </h4>

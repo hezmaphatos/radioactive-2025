@@ -2,7 +2,7 @@
 
 @section('container')
             <div class="mb-3 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-              <h2 class="text-title-md2 font-bold text-black dark:text-white">
+              <h2 class="text-title-md2 font-bold text-black">
                 Create New User
               </h2>
               <nav>
@@ -17,28 +17,28 @@
             <div class="col-lg-8">
               <form method="post" action="/dashboard/users">
                 @csrf  
-                <label for="name" class="block text-sm font-medium text-black dark:text-white">Name</label>
+                <label for="name" class="block text-sm font-medium text-black">Name</label>
                 <input id="name" name="name" type="text" placeholder="Name" class="mb-2 w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary @error('name') border-red-500 @enderror" autofocus value="{{ old('name') }}"/>
                 @error('name')
                 <div class="text-red-500">
                     {{ $message }}
                 </div>
                 @enderror           
-                <label for="email" class="block text-sm font-medium text-black dark:text-white">Email</label>
+                <label for="email" class="block text-sm font-medium text-black">Email</label>
                 <input id="email" name="email" type="email" placeholder="Email" class="mb-2  w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary @error('email') border-red-500 @enderror" value="{{ old('email') }}"/>
                 @error('email')
                 <div class="text-red-500">
                     {{ $message }}
                 </div>
                 @enderror           
-                <label for="password" class="block text-sm font-medium text-black dark:text-white">Password</label>
+                <label for="password" class="block text-sm font-medium text-black">Password</label>
                 <input id="password" name="password" type="password" placeholder="Enter password" class="mb-2 w-full rounded border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary @error('password') border-red-500 @enderror"/>
                 @error('password')
                 <div class="text-red-500">
                     {{ $message }}
                 </div>
                 @enderror  
-                  <label for="role_id" class="block text-sm font-medium text-black dark:text-white">
+                  <label for="role_id" class="block text-sm font-medium text-black">
                       Select Role
                   </label>
                   <div x-data="{ isOptionSelected: false }" class="relative z-20 bg-white">

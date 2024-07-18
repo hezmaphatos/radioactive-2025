@@ -2,18 +2,18 @@
 
 @section('container')
 <div class="mb-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-  <h2 class="text-title-md2 font-bold text-black dark:text-white">Dashboard VOC</h2>
+  <h2 class="text-title-md2 font-bold text-black">Dashboard VOC</h2>
   {{-- <a href="/dashboard/users/create" class="mb-2 bg-primary inline-flex items-center justify-center rounded-md px-4 py-3 text-center font-medium text-white hover:bg-opacity-90 lg:px-6 xl:px-6">Create New VOC</a> --}}
 </div>
   @if(session()->has('success'))
-    <div class="mb-3 flex w-full border-l-6 border-[#34D399] bg-[#34D399] bg-opacity-[15%] px-7 py-6 shadow-md dark:bg-[#1B1B24] dark:bg-opacity-30 md:p-3">
+    <div class="mb-3 flex w-full border-l-6 border-[#34D399] bg-[#34D399] bg-opacity-[15%] px-7 py-6 shadow-md md:p-3">
     <div class="mt-1 mr-3 flex h-5 w-full max-w-[22px] items-center justify-center rounded-lg bg-[#34D399]">
     <svg width="8" height="6" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M15.2984 0.826822L15.2868 0.811827L15.2741 0.797751C14.9173 0.401867 14.3238 0.400754 13.9657 0.794406L5.91888 9.45376L2.05667 5.2868C1.69856 4.89287 1.10487 4.89389 0.747996 5.28987C0.417335 5.65675 0.417335 6.22337 0.747996 6.59026L0.747959 6.59029L0.752701 6.59541L4.86742 11.0348C5.14445 11.3405 5.52858 11.5 5.89581 11.5C6.29242 11.5 6.65178 11.3355 6.92401 11.035L15.2162 2.11161C15.5833 1.74452 15.576 1.18615 15.2984 0.826822Z" fill="white" stroke="white"></path>
     </svg>
     </div>
     <div class="w-full">
-      <h5 class="mt-1 text-sm font-bold text-black dark:text-[#34D399]">
+      <h5 class="mt-1 text-sm font-bold text-black">
         {{ session('success') }}
       </h5>
     </div>
@@ -22,15 +22,15 @@
 {{-- Start Searching --}}
   <form class="max-w-md" action="/dashboard/vocs" method="GET">
     @csrf   
-    <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+    <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only">Search</label>
     <div class="relative">
         <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+            <svg class="w-4 h-4 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
             </svg>
         </div>
-        <input type="search" name="search" id="default-search" class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search Here" value="{{ request('search')}}" />
-        <button type="submit" class="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+        <input type="search" name="search" id="default-search" class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500" placeholder="Search Here" value="{{ request('search')}}" />
+        <button type="submit" class="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2">Search</button>
     </div>
 </form>
 {{-- end searching --}}
@@ -39,50 +39,50 @@
       <div class="max-w-full overflow-x-auto">
           <table class="w-full table-auto">
               <thead>
-                  <tr class="bg-gray-2 text-left dark:bg-meta-4">
-                      <th class="px-4 py-4 font-medium text-black dark:text-white xl:pl-11 text-center">Reg ID</th>
-                      <th class="px-4 py-4 font-medium text-black dark:text-white">Institusi Asal</th>
-                      <th class="px-4 py-4 font-medium text-black dark:text-white">Nama Lengkap</th>
-                      <th class="px-4 py-4 font-medium text-black dark:text-white">Usia</th>
-                      <th class="px-4 py-4 font-medium text-black dark:text-white">Nomor Telepon</th>
-                      <th class="px-4 py-4 font-medium text-black dark:text-white">Email</th>
-                      <th class="px-4 py-4 font-medium text-black dark:text-white">NIM</th>
-                      <th class="px-4 py-4 font-medium text-black dark:text-white">Username</th>
-                      <th class="px-4 py-4 font-medium text-black dark:text-white">Link</th>
-                      <th class="px-4 py-4 font-medium text-black dark:text-white">Actions</th>
+                  <tr class="bg-gray-2 text-left">
+                      <th class="px-4 py-4 font-medium text-black xl:pl-11 text-center">Reg ID</th>
+                      <th class="px-4 py-4 font-medium text-black">Institusi Asal</th>
+                      <th class="px-4 py-4 font-medium text-black">Nama Lengkap</th>
+                      <th class="px-4 py-4 font-medium text-black">Usia</th>
+                      <th class="px-4 py-4 font-medium text-black">Nomor Telepon</th>
+                      <th class="px-4 py-4 font-medium text-black">Email</th>
+                      <th class="px-4 py-4 font-medium text-black">NIM</th>
+                      <th class="px-4 py-4 font-medium text-black">Username</th>
+                      <th class="px-4 py-4 font-medium text-black">Link</th>
+                      <th class="px-4 py-4 font-medium text-black">Actions</th>
                   </tr>
               </thead>
               <tbody>
                   @foreach ($vocs as $voc)
                       <tr>
-                          <td class="border-b border-[#eee] px-4 py-5 dark:border-strokedark xl:pl-11">
-                              <p class="text-black text-center dark:text-white">{{ $loop->iteration }}.</p>
+                          <td class="border-b border-[#eee] px-4 py-5 xl:pl-11">
+                              <p class="text-black text-center">{{ $loop->iteration }}.</p>
                           </td>
-                          <td class="border-b border-[#eee] px-4 py-5 dark:border-strokedark">
-                              <p class="text-black dark:text-white">{{ $voc->institusi }}</p>
+                          <td class="border-b border-[#eee] px-4 py-5">
+                              <p class="text-black">{{ $voc->institusi }}</p>
                           </td>
-                          <td class="border-b border-[#eee] px-4 py-5 dark:border-strokedark">
-                              <p class="text-black dark:text-white">{{ $voc->nama }}</p>
+                          <td class="border-b border-[#eee] px-4 py-5">
+                              <p class="text-black">{{ $voc->nama }}</p>
                           </td>
-                          <td class="border-b border-[#eee] px-4 py-5 dark:border-strokedark">
-                              <p class="text-black dark:text-white">{{ $voc->usia }}</p>
+                          <td class="border-b border-[#eee] px-4 py-5">
+                              <p class="text-black">{{ $voc->usia }}</p>
                           </td>
-                          <td class="border-b border-[#eee] px-4 py-5 dark:border-strokedark">
-                              <p class="text-black dark:text-white">{{ $voc->no_telp }}</p>
+                          <td class="border-b border-[#eee] px-4 py-5">
+                              <p class="text-black">{{ $voc->no_telp }}</p>
                           </td>
-                          <td class="border-b border-[#eee] px-4 py-5 dark:border-strokedark">
-                              <p class="text-black dark:text-white">{{ $voc->email }}</p>
+                          <td class="border-b border-[#eee] px-4 py-5">
+                              <p class="text-black">{{ $voc->email }}</p>
                           </td>
-                          <td class="border-b border-[#eee] px-4 py-5 dark:border-strokedark">
-                              <p class="text-black dark:text-white">{{ $voc->nim }}</p>
+                          <td class="border-b border-[#eee] px-4 py-5">
+                              <p class="text-black">{{ $voc->nim }}</p>
                           </td>
-                          <td class="border-b border-[#eee] px-4 py-5 dark:border-strokedark">
-                              <p class="text-black dark:text-white">{{ $voc->uname }}</p>
+                          <td class="border-b border-[#eee] px-4 py-5">
+                              <p class="text-black">{{ $voc->uname }}</p>
                           </td>
-                          <td class="border-b border-[#eee] px-4 py-5 dark:border-strokedark">
-                              <p class="text-black dark:text-white">{{ $voc->link }}</p>
+                          <td class="border-b border-[#eee] px-4 py-5">
+                              <p class="text-black">{{ $voc->link }}</p>
                           </td>
-                          <td class="border-b border-[#eee] px-4 py-5 dark:border-strokedark">
+                          <td class="border-b border-[#eee] px-4 py-5">
                               <div class="flex items-center space-x-3.5">
                                   <button class="hover:text-primary">
                                       <a href="/dashboard/vocs/{{ $voc->id }}/edit">

@@ -2,7 +2,7 @@
 
 @section('container')
 <div class="mb-3 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-    <h2 class="text-title-md2 font-bold text-black dark:text-white">
+    <h2 class="text-title-md2 font-bold text-black">
         Edit Data VOC
     </h2>
     <nav>
@@ -20,7 +20,7 @@
     <form method="post" action="/dashboard/vocs/{{ $voc->id }}">
         @method('put')
         @csrf       
-        <label for="nama" class="block text-sm font-medium text-black dark:text-white">Nama</label>
+        <label for="nama" class="block text-sm font-medium text-black">Nama</label>
         <input id="nama" name="nama" type="text" placeholder="Nama" class="mb-2 w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary @error('nama') border-red-500 @enderror" value="{{ old('nama', $voc->nama) }}"/>
         @error('nama')
         <div class="text-red-500">
@@ -28,7 +28,7 @@
         </div>
         @enderror
 
-        <label for="usia" class="block text-sm font-medium text-black dark:text-white">Usia</label>
+        <label for="usia" class="block text-sm font-medium text-black">Usia</label>
         <input id="usia" name="usia" type="number" placeholder="Usia" class="mb-2 w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary @error('usia') border-red-500 @enderror" value="{{ old('usia', $voc->usia) }}"/>
         @error('usia')
         <div class="text-red-500">
@@ -36,7 +36,7 @@
         </div>
         @enderror
 
-        <label for="no_telp" class="block text-sm font-medium text-black dark:text-white">No Telp</label>
+        <label for="no_telp" class="block text-sm font-medium text-black">No Telp</label>
         <input id="no_telp" name="no_telp" type="text" placeholder="No Telp" class="mb-2 w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary @error('no_telp') border-red-500 @enderror" value="{{ old('no_telp', $voc->no_telp) }}"/>
         @error('no_telp')
         <div class="text-red-500">
@@ -44,7 +44,7 @@
         </div>
         @enderror
 
-        <label for="email" class="block text-sm font-medium text-black dark:text-white">Email</label>
+        <label for="email" class="block text-sm font-medium text-black">Email</label>
         <input id="email" name="email" type="email" placeholder="Email" class="mb-2 w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary @error('email') border-red-500 @enderror" value="{{ old('email', $voc->email) }}"/>
         @error('email')
         <div class="text-red-500">
@@ -52,7 +52,7 @@
         </div>
         @enderror
 
-        <label for="nim" class="block text-sm font-medium text-black dark:text-white">NIM</label>
+        <label for="nim" class="block text-sm font-medium text-black">NIM</label>
         <input id="nim" name="nim" type="text" placeholder="NIM" class="mb-2 w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary @error('nim') border-red-500 @enderror" value="{{ old('nim', $voc->nim) }}"/>
         @error('nim')
         <div class="text-red-500">
@@ -60,7 +60,7 @@
         </div>
         @enderror
 
-        <label for="institusi" class="block text-sm font-medium text-black dark:text-white">Institusi</label>
+        <label for="institusi" class="block text-sm font-medium text-black">Institusi</label>
         <input id="institusi" name="institusi" type="text" placeholder="Institusi" class="mb-2 w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary @error('institusi') border-red-500 @enderror" value="{{ old('institusi', $voc->institusi) }}"/>
         @error('institusi')
         <div class="text-red-500">
@@ -68,7 +68,7 @@
         </div>
         @enderror
 
-        <label for="uname" class="block text-sm font-medium text-black dark:text-white">Username</label>
+        <label for="uname" class="block text-sm font-medium text-black">Username</label>
         <input id="uname" name="uname" type="text" placeholder="Username" class="mb-2 w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary @error('uname') border-red-500 @enderror" value="{{ old('uname', $voc->uname) }}"/>
         @error('uname')
         <div class="text-red-500">
@@ -76,7 +76,7 @@
         </div>
         @enderror
 
-        <label for="link" class="block text-sm font-medium text-black dark:text-white">Link</label>
+        <label for="link" class="block text-sm font-medium text-black">Link</label>
         <input id="link" name="link" type="text" placeholder="Link" class="mb-2 w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary @error('link') border-red-500 @enderror" value="{{ old('link', $voc->link) }}"/>
         @error('link')
         <div class="text-red-500">

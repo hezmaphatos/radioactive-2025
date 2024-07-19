@@ -2,7 +2,7 @@
 
 @section('container')
 <div class="mb-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-  <h2 class="text-title-md2 font-bold text-black">Dashboard VOC</h2>
+  <h2 class="text-title-md2 font-bold text-black">Dashboard RAC</h2>
 </div>
   @if(session()->has('success'))
     <div class="mb-3 flex w-full border-l-6 border-[#34D399] bg-[#34D399] bg-opacity-[15%] px-7 py-6 shadow-md ">
@@ -19,7 +19,7 @@
     </div>
   @endif
 {{-- Start Searching --}}
-  <form class="max-w-md" action="/dashboard/vocs" method="GET">
+  <form class="max-w-md" action="/dashboard/racs" method="GET">
     @csrf   
     <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only">Search</label>
     <div class="relative">
@@ -42,7 +42,6 @@
                       <th class="px-4 py-4 font-medium text-black xl:pl-11 text-center">Reg ID</th>
                       <th class="px-4 py-4 font-medium text-black">Institusi Asal</th>
                       <th class="px-4 py-4 font-medium text-black">Nama Tim</th>
-                      <th class="px-4 py-4 font-medium text-black">Usia</th>
                       <th class="px-4 py-4 font-medium text-black">Email</th>
                       <th class="px-4 py-4 font-medium text-black">Penyiar 1</th>
                       <th class="px-4 py-4 font-medium text-black">Penyiar 2</th>
@@ -64,7 +63,15 @@
                               <p class="text-black text-center">{{ $loop->iteration }}.</p>
                           </td>
                           <td class="border-b border-[#eee] px-4 py-5">
+                            @if($rac->tim1_institusi)
                               <p class="text-black">{{ $rac->tim1_institusi }}</p>
+                            @endif
+                            @if($rac->tim2_institusi)
+                              <p class="text-black">{{ $rac->tim2_institusi }}</p>
+                            @endif
+                            @if($rac->tim3_institusi)
+                              <p class="text-black">{{ $rac->tim3_institusi }}</p>
+                            @endif
                           </td>
                           <td class="border-b border-[#eee] px-4 py-5">
                             @if($rac->tim1_nama)
@@ -78,22 +85,114 @@
                             @endif
                           </td>
                           <td class="border-b border-[#eee] px-4 py-5">
-                              <p class="text-black">{{ $rac->tim2_nama }}</p>
-                          </td>
-                          <td class="border-b border-[#eee] px-4 py-5">
-                              <p class="text-black">{{ $rac->tim3_nama }}</p>
-                          </td>
-                          <td class="border-b border-[#eee] px-4 py-5">
+                            @if($rac->tim1_email)
                               <p class="text-black">{{ $rac->tim1_email }}</p>
+                            @endif
+                            @if($rac->tim2_email)
+                                <p class="text-black">{{ $rac->tim2_email }}</p>
+                            @endif
+                            @if($rac->tim3_email)
+                                <p class="text-black">{{ $rac->tim3_email }}</p>
+                            @endif
                           </td>
                           <td class="border-b border-[#eee] px-4 py-5">
-                              <p class="text-black">{{ $rac->nim }}</p>
+                            @if($rac->tim1_penyiar1)
+                              <p class="text-black">{{ $rac->tim1_penyiar1 }}</p>
+                            @endif
+                            @if($rac->tim2_penyiar1)
+                                <p class="text-black">{{ $rac->tim2_penyiar1 }}</p>
+                            @endif
+                            @if($rac->tim3_penyiar1)
+                                <p class="text-black">{{ $rac->tim3_penyiar1 }}</p>
+                            @endif
                           </td>
                           <td class="border-b border-[#eee] px-4 py-5">
-                              <p class="text-black">{{ $rac->uname }}</p>
+                            @if($rac->tim1_penyiar2)
+                              <p class="text-black">{{ $rac->tim2_penyiar2 }}</p>
+                            @endif
+                            @if($rac->tim2_penyiar2)
+                                <p class="text-black">{{ $rac->tim2_penyiar2 }}</p>
+                            @endif
+                            @if($rac->tim3_penyiar2)
+                                <p class="text-black">{{ $rac->tim3_penyiar2 }}</p>
+                            @endif
                           </td>
                           <td class="border-b border-[#eee] px-4 py-5">
-                              <p class="text-black">{{ $rac->link }}</p>
+                            @if($rac->tim1_operator)
+                              <p class="text-black">{{ $rac->tim1_operator }}</p>
+                            @endif
+                            @if($rac->tim2_operator)
+                                <p class="text-black">{{ $rac->tim2_operator }}</p>
+                            @endif
+                            @if($rac->tim3_operator)
+                                <p class="text-black">{{ $rac->tim3_operator }}</p>
+                            @endif
+                          </td>
+                          <td class="border-b border-[#eee] px-4 py-5">
+                            @if($rac->tim1_nims1)
+                              <p class="text-black">{{ $rac->tim1_nims1 }}</p>
+                            @endif
+                            @if($rac->tim2_nims1)
+                                <p class="text-black">{{ $rac->tim2_nims1 }}</p>
+                            @endif
+                            @if($rac->tim3_nims1)
+                                <p class="text-black">{{ $rac->tim3_nims1 }}</p>
+                            @endif
+                          </td>
+                          <td class="border-b border-[#eee] px-4 py-5">
+                            @if($rac->tim1_nims2)
+                              <p class="text-black">{{ $rac->tim1_nims2 }}</p>
+                            @endif
+                            @if($rac->tim2_nims2)
+                              <p class="text-black">{{ $rac->tim2_nims2 }}</p>
+                            @endif
+                            @if($rac->tim3_nims2)
+                              <p class="text-black">{{ $rac->tim3_nims2 }}</p>
+                            @endif
+                          </td>
+                          <td>
+                            @if($rac->tim1_nimop)
+                                <p class="text-black">{{ $rac->tim1_nimop }}</p>
+                            @endif
+                            @if($rac->tim2_nimop)
+                                <p class="text-black">{{ $rac->tim2_nimop }}</p>
+                            @endif
+                            @if($rac->tim3_nimop)
+                                <p class="text-black">{{ $rac->tim3_nimop }}</p>
+                            @endif                           
+                          </td>
+                          <td>
+                            @if($rac->tim1_contact_wa)
+                                <p class="text-black">{{ $rac->tim1_contact_wa }}</p>
+                            @endif
+                            @if($rac->tim2_contact_wa)
+                                <p class="text-black">{{ $rac->tim2_contact_wa }}</p>
+                            @endif    
+                            @if($rac->tim3_contact_wa)
+                                <p class="text-black">{{ $rac->tim3_contact_wa }}</p>
+                            @endif        
+                          </td>
+                          <td>
+                            @if($rac->tim1_contact_line)
+                                <p class="text-black">{{ $rac->tim1_contact_line }}</p>
+                            @endif
+                            @if($rac->tim2_contact_line)
+                                <p class="text-black">{{ $rac->tim2_contact_line }}</p>
+                            @endif   
+                            @if($rac->tim3_contact_line)
+                                <p class="text-black">{{ $rac->tim3_contact_line }}</p>
+                            @endif      
+                          </td>
+                          <td>
+                            <div style="max-width: 200px;max-height:200px;overflow:hidden">
+                                <a target="_blank" href={{ asset('storage/' . $rac->payment_proof) }}>
+                                    <img src={{ asset('storage/' . $rac->payment_proof) }}
+                                        style="width:100%;height:100%;object-fit:contain;" alt="">
+                                </a>
+                            </div>
+                          </td>
+                          <td class="border-b border-[#eee] px-4 py-5">
+                            <p class="text-">{{ $rac->status }}</p>
                           </td>
                           <td class="border-b border-[#eee] px-4 py-5">
                               <div class="flex items-center space-x-3.5">

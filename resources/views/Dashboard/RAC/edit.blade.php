@@ -435,12 +435,12 @@
           @else
             <img class="img-preview img-fluid mb-3 col-sm-5 w-48 h-64 object-cover">
           @endif
-          <input type="file" id="payment_proof" name="payment_proof" class="w-full cursor-pointer rounded-lg border-[1.5px] border-stroke bg-transparent font-normal outline-none transition file:mr-5 file:border-collapse file:cursor-pointer file:border-0 file:border-r file:border-solid file:border-stroke file:bg-whiter file:px-5 file:py-3 file:hover:bg-primary file:hover:bg-opacity-10 focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter" onchange="previewImage()"/>
-          {{-- @if($rac->payment_proof)
-          <img src="{{ asset('storage/' . $rac->payment_proof)}}" class="img-preview img-fluid mb-3 col-sm-5 d-block">
-        @else
-          <img class="img-preview img-fluid mb-3 col-sm-5">
-        @endif --}}
+          <input type="file" id="payment_proof" name="payment_proof" class="w-full cursor-pointer rounded-lg border-[1.5px] border-stroke bg-transparent font-normal outline-none transition file:mr-5 file:border-collapse file:cursor-pointer file:border-0 file:border-r file:border-solid file:border-stroke file:bg-whiter file:px-5 file:py-3 file:hover:bg-primary file:hover:bg-opacity-10 focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter @error('payment_proof') border-red-500 @enderror" onchange="previewImage()"/>
+          @error('payment_proof')
+          <div class="text-red-500">
+              {{ $message }}
+          </div>
+          @enderror
         </div>
       </div>
     </div>

@@ -63,7 +63,7 @@ class DashboardRACController extends Controller
         $rules = [
             'payment_proof' => 'required|image|file|max:10240',
         ];
-
+    
         // Conditionally add rules for tim1
         if ($rac->tim1_nama) {
             $rules = array_merge($rules, [
@@ -81,67 +81,63 @@ class DashboardRACController extends Controller
             ]);
         }
         
-        // Add rules for tim2
-        $rules = array_merge($rules, [
-            'tim2_penyiar1' => 'required|max:255',
-            'tim2_penyiar2' => 'required|max:255',
-            'tim2_operator' => 'required|max:255',
-            'tim2_institusi' => 'required|max:255',
-            'tim2_nims1' => 'required|max:255',
-            'tim2_nims2' => 'required|max:255',
-            'tim2_nimop' => 'required|max:255',
-            'tim2_contact_wa' => 'required|max:255',
-            'tim2_contact_line' => 'required|max:255',
-            'tim2_nama' => 'required|max:255',
-            'tim2_email' => 'required|max:255',
-        ]);
+        // Conditionally add rules for tim2
+        if ($rac->tim2_nama) {
+            $rules = array_merge($rules, [
+                'tim2_penyiar1' => 'required|max:255',
+                'tim2_penyiar2' => 'required|max:255',
+                'tim2_operator' => 'required|max:255',
+                'tim2_institusi' => 'required|max:255',
+                'tim2_nims1' => 'required|max:255',
+                'tim2_nims2' => 'required|max:255',
+                'tim2_nimop' => 'required|max:255',
+                'tim2_contact_wa' => 'required|max:255',
+                'tim2_contact_line' => 'required|max:255',
+                'tim2_nama' => 'required|max:255',
+                'tim2_email' => 'required|max:255',
+            ]);
+        }
         
-        // Add rules for tim3
-        $rules = array_merge($rules, [
-            'tim3_penyiar1' => 'required|max:255',
-            'tim3_penyiar2' => 'required|max:255',
-            'tim3_operator' => 'required|max:255',
-            'tim3_institusi' => 'required|max:255',
-            'tim3_nims1' => 'required|max:255',
-            'tim3_nims2' => 'required|max:255',
-            'tim3_nimop' => 'required|max:255',
-            'tim3_contact_wa' => 'required|max:255',
-            'tim3_contact_line' => 'required|max:255',
-            'tim3_nama' => 'required|max:255',
-            'tim3_email' => 'required|max:255',
-        ]);
-        
+        // Conditionally add rules for tim3
+        if ($rac->tim3_nama) {
+            $rules = array_merge($rules, [
+                'tim3_penyiar1' => 'required|max:255',
+                'tim3_penyiar2' => 'required|max:255',
+                'tim3_operator' => 'required|max:255',
+                'tim3_institusi' => 'required|max:255',
+                'tim3_nims1' => 'required|max:255',
+                'tim3_nims2' => 'required|max:255',
+                'tim3_nimop' => 'required|max:255',
+                'tim3_contact_wa' => 'required|max:255',
+                'tim3_contact_line' => 'required|max:255',
+                'tim3_nama' => 'required|max:255',
+                'tim3_email' => 'required|max:255',
+            ]);
+        }
+    
         $validatedData = $request->validate($rules);
-
+    
         if ($request->file('payment_proof')) {
             if ($request->oldImage) {
-                Storage::delete($request->oldImage);
+                Storage::delete('public/' . $request->oldImage);
             }
-            $validatedData['payment_proof'] = $request->file('payment_proof')->store('payment_images');
+            $validatedData['payment_proof'] = $request->file('payment_proof')->store('payment_images', 'public');
         }
-
-        // if ($request->file('payment_proof')) {
-        //     if ($request->oldImage) {
-        //         Storage::delete($request->oldImage);
-        //     }
-        //     $validatedData['payment_proof'] = $request->file('payment_proof')->storePublicly('payment_images', 'public');
-        // }
-
-        // if ($request->file('payment_proof')) {
-        //     $validatedData['payment_proof'] = $request->file('payment_proof')->storePublicly('payment_images');
-        // }
-        
+     
         $rac->update($validatedData);
         
         return redirect('/dashboard/racs')->with('success', 'Team has been updated!');
-
     }
+    
 
     /**
      * Remove the specified resource from storage.
      */
     public function destroy(rac $rac)
     {
+        if ($rac->payment_proof) {
+            Storage::delete('public/' . $rac->payment_proof);
+        }
         rac::destroy($rac->id);
         return redirect('/dashboard/racs')->with('success', 'Team has been deleted!');
     }

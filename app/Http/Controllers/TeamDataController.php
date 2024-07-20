@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\rac;
 use App\Models\rac_teams;
 use Illuminate\Http\Request;
 
@@ -19,10 +20,6 @@ class TeamDataController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function dashboard(){
-        $rac_teams = rac_teams::all();
-        return view('teams.dashboard', ['rac_teams' => $rac_teams]);
-    }
 
     public function confirmation_redirect(){
         return view('teams.redirect');
@@ -34,7 +31,7 @@ class TeamDataController extends Controller
     public function create()
     {
         //
-        $rac_teams = rac_teams::all();
+        $rac_teams = rac::all();
         return view('teams.create', ['count'=>$rac_teams->count(), 'rac_teams'=>$rac_teams]);
     }
 
@@ -85,7 +82,7 @@ class TeamDataController extends Controller
         ]);
 
         // $team = new rac_teams();
-        rac_teams::create([
+        rac::create([
             'tim1_penyiar1'=>$request->tim1_penyiar1,
             'tim1_penyiar2'=>$request->tim1_penyiar2,
             'tim1_operator'=>$request->tim1_operator,

@@ -105,13 +105,7 @@ Route::controller(TeamDataController::class)->group(function(){
     // Route::get('/rac/register', function(){
     //     return view('welcome');
     // });
-    Route::post('/rac/store', 'store');
-    Route::get('/rac/show', 'show');
-    Route::get('/rac/{id}/edit', 'edit');
-    Route::post('/rac/update', 'update');
-    Route::post('/rac/delete', 'destroy');
     Route::get('/rac/form/{amount}', 'form');
-    Route::get('/rac/dashboard', 'dashboard');
     Route::get('/rac/confirmation', 'confirmation_redirect');
 });
 

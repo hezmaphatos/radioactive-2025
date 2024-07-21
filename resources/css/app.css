@@ -1,41 +1,44 @@
-@tailwind base; 
+@tailwind base;
 
 @layer base {
-    h1 {
-      @apply text-2xl;
-    }
-    h2 {
-      @apply text-xl;
-    }
-    h3 {
-      @apply text-lg;
-    }
-    a {
-      @apply text-blue-600 underline;
-    }
+  h1 {
+    @apply text-2xl;
   }
-  
+
+  h2 {
+    @apply text-xl;
+  }
+
+  h3 {
+    @apply text-lg;
+  }
+
+  a {
+    @apply text-blue-600 underline;
+  }
+}
+
 @tailwind components;
 @tailwind utilities;
 
 @font-face {
-    font-family: 'Taruno Wide';
-    src: url("fonts/TarunoWide-Regular.otf") format("opentype");
+  font-family: 'Taruno Wide';
+  src: url("fonts/TarunoWide-Regular.otf") format("opentype");
 }
 
 @font-face {
-    font-family: 'Taruno Wide Outline';
-    src: url("fonts/TarunoWideOutline-Regular.otf") format("opentype");
+  font-family: 'Taruno Wide Outline';
+  src: url("fonts/TarunoWideOutline-Regular.otf") format("opentype");
 }
 
 @font-face {
-    font-family: 'Pathway Extreme';
-    src: url("fonts/PathwayExtreme.ttf") format("truetype");
+  font-family: 'Pathway Extreme';
+  src: url("fonts/PathwayExtreme.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: 'Brody Rawk';
-    src: url("fonts/Brody\ Rawk.ttf") format("truetype");
+  font-family: 'Brody Rawk';
+  src: url("fonts/Brody-Rawk.ttf") format("truetype");
 }
 
 @font-face {

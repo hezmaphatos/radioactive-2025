@@ -9,7 +9,7 @@
     @vite('resources/css/app.css')
     <style>
         .shadow-follow {
-            filter: drop-shadow(0 0 50px rgb(255, 0, 21));
+            filter: drop-shadow(0 0 25px rgb(214, 21, 37, 0.7));
         }
     </style>
 </head>
@@ -21,15 +21,15 @@
             <source src="{{asset('images24/bgApi1.webm')}}" type="video/webm">
         </video>
     </div>
-    <div class="w-full pt-24 flex justify-center items-center flex-wrap">
+    <div class="w-full pt-16 flex justify-center items-center flex-wrap">
         <div data-aos="fade-up" class="flex flex-col md:flex-row items-center justify-center gap-4">
             <p class="text-center font-ltmuseum-reg text-base md:text-xl text-white z-20">THE MOST SPECTACULAR ANNUAL EVENT BY </p>
             <img class="w-20 md:w-24 z-16" src="images/LOGO UMN RADIO.webp">
         </div>
         <div class="flex justify-center align-middle items-center flex-wrap w-full">
             <div class="relative">
-                <img class="shadow-follow object-cover h-80 md:h-500 aspect-square animate-pulse" src="{{ asset('images24/logo.png') }}" alt="">
-                <img class="absolute top-0 object-cover h-80 md:h-500 aspect-square" src="{{ asset('images24/logo.png') }}" alt="">
+                <img class="shadow-follow object-cover h-80 md:h-96 aspect-square animate-pulse" src="{{ asset('images24/logo.png') }}" alt="">
+                <img class="absolute top-0 object-cover h-80 md:h-96 aspect-square" src="{{ asset('images24/logo.png') }}" alt="">
             </div>
             <h1 class="text-center text-[#D61525] font-brodyrawk text-7xl w-full">COMING SOON</h1>
         </div>

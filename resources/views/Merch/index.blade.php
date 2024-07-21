@@ -59,7 +59,7 @@
             
             <div class="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
                 <img src="/images/LOGO RA.png" alt="Logo" class="w-30 md:w-64 h-16 md:h-32 object-cover">
-                <div class="text-white text-3xl md:text-2xl font-brody rawk mt-1">
+                <div class="text-white text-3xl md:text-2xl font-brodyrawk mt-1">
                     COLLECTION
                 </div>
             </div>

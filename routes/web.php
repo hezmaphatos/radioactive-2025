@@ -28,6 +28,10 @@ Route::get('/', function () {
     return view('Home.index');
 });
 
+Route::get('/merch', function () {
+    return view('Merch.index');
+});
+
 // Route::get('/voc', function () {
 //     return view('VOC.index');
 // });

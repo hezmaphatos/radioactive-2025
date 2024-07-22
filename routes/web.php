@@ -134,7 +134,7 @@ Route::get('/dashboard', function(){
     ]);
 })->middleware('admin');
 
-Route::resource('/dashboard/users', DashboardUserController::class)->middleware('admin');
+Route::resource('/dashboard/users', DashboardUserController::class)->middleware('superadmin');
 Route::resource('/dashboard/vocs', DashboardVOCController::class)->middleware('admin');
 Route::resource('/dashboard/racs', DashboardRACController::class)->middleware('admin');
 

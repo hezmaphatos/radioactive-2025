@@ -44,6 +44,13 @@ Route::controller(LoginController::class)->group(function () {
     Route::post('/signup', 'signup');
 });
 
+Route::middleware('guest')->controller(ResetPasswordController::class)->group(function() {
+    Route::get('/forgot-password', 'index')->name('password.request');
+    Route::post('/forgot-password', 'forgot_password')->name('password.email');
+    Route::get('/reset-password/{token}', 'reset_token')->name('password.reset');
+    Route::post('/reset-password', 'reset')->name('password.update');;
+});
+
 Route::get('/logout', function (Request $request) {
     Auth::logout();
 
@@ -75,13 +82,6 @@ Route::controller(TicketController::class)->group(function (){
 
     Route::get('/ticket-redeem/{ticket_code}', 'ticket_redeem')->middleware('auth');
     Route::get('/show-qr/{ticket_code}', 'show_qr');
-});
-
-Route::middleware('guest')->controller(ResetPasswordController::class)->group(function() {
-    Route::get('/forgot-password', 'index')->name('password.request');
-    Route::post('/forgot-password', 'forgot_password')->name('password.email');
-    Route::get('/reset-password/{token}', 'reset_token')->name('password.reset');
-    Route::post('/reset-password', 'reset')->name('password.update');;
 });
 
 Route::get('/merch', [MerchController::class, 'index']);

@@ -20,7 +20,7 @@
     </div>
   @endif
 {{-- Start Searching --}}
-  <form class="max-w-md" action="/dashboard/vocs" method="GET">
+  <form class="max-w-md mb-3" action="/dashboard/vocs" method="GET">
     @csrf   
     <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only">Search</label>
     <div class="relative">

@@ -108,7 +108,7 @@
                           </td>
                           <td class="border-b border-[#eee] px-4 py-5">
                             @if($rac->tim1_penyiar2)
-                              <p class="text-black">{{ $rac->tim2_penyiar2 }}</p>
+                              <p class="text-black">{{ $rac->tim1_penyiar2 }}</p>
                             @endif
                             @if($rac->tim2_penyiar2)
                                 <p class="text-black">{{ $rac->tim2_penyiar2 }}</p>
@@ -150,7 +150,7 @@
                               <p class="text-black">{{ $rac->tim3_nims2 }}</p>
                             @endif
                           </td>
-                          <td>
+                          <td class="border-b border-[#eee] px-4 py-5">
                             @if($rac->tim1_nimop)
                                 <p class="text-black">{{ $rac->tim1_nimop }}</p>
                             @endif
@@ -161,7 +161,7 @@
                                 <p class="text-black">{{ $rac->tim3_nimop }}</p>
                             @endif                           
                           </td>
-                          <td>
+                          <td class="border-b border-[#eee] px-4 py-5">
                             @if($rac->tim1_contact_wa)
                                 <p class="text-black">{{ $rac->tim1_contact_wa }}</p>
                             @endif
@@ -172,7 +172,7 @@
                                 <p class="text-black">{{ $rac->tim3_contact_wa }}</p>
                             @endif        
                           </td>
-                          <td>
+                          <td class="border-b border-[#eee] px-4 py-5">
                             @if($rac->tim1_contact_line)
                                 <p class="text-black">{{ $rac->tim1_contact_line }}</p>
                             @endif
@@ -183,7 +183,7 @@
                                 <p class="text-black">{{ $rac->tim3_contact_line }}</p>
                             @endif      
                           </td>
-                          <td>
+                          <td class="border-b border-[#eee] px-4 py-5">
                             <div style="max-width: 200px;max-height:200px;overflow:hidden">
                                 <a target="_blank" href={{ asset('storage/' . $rac->payment_proof) }}>
                                     <img src={{ asset('storage/' . $rac->payment_proof) }}
@@ -192,7 +192,7 @@
                             </div>
                           </td>
                           <td class="border-b border-[#eee] px-4 py-5">
-                            <p class="text-">{{ $rac->status }}</p>
+                            <p class="{{ $rac->status == 'Pending' ? 'text-gray-500' : 'text-green-500' }}">{{ $rac->status }}</p>
                           </td>
                           <td class="border-b border-[#eee] px-4 py-5">
                               <div class="flex items-center space-x-3.5">

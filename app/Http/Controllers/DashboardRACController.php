@@ -61,10 +61,10 @@ class DashboardRACController extends Controller
     public function update(Request $request, rac $rac)
     {
         $rules = [
-            'payment_proof' => 'required|image|file|max:10240',
+            'payment_proof' => 'image|file|max:10240',
+            'status' => 'required|max:255'
         ];
     
-        // Conditionally add rules for tim1
         if ($rac->tim1_nama) {
             $rules = array_merge($rules, [
                 'tim1_penyiar1' => 'required|max:255',
@@ -81,7 +81,6 @@ class DashboardRACController extends Controller
             ]);
         }
         
-        // Conditionally add rules for tim2
         if ($rac->tim2_nama) {
             $rules = array_merge($rules, [
                 'tim2_penyiar1' => 'required|max:255',
@@ -98,7 +97,6 @@ class DashboardRACController extends Controller
             ]);
         }
         
-        // Conditionally add rules for tim3
         if ($rac->tim3_nama) {
             $rules = array_merge($rules, [
                 'tim3_penyiar1' => 'required|max:255',

@@ -36,7 +36,7 @@
                 </label>
                 <input name="tim1_nama" type="text" placeholder="Nama Tim" class="w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary @error('tim1_nama') border-red-500 @enderror" value="{{ old('tim1_nama', $rac->tim1_nama) }}">
                 @error('tim1_nama')
-                <div class="text-red-500">
+                <div class="text-sm text-red-600">
                     {{ $message }}
                 </div>
                 @enderror
@@ -47,7 +47,7 @@
                 </label>
                 <input name="tim1_penyiar1" type="text" placeholder="Penyiar 1" class="w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary @error('tim1_penyiar1') border-red-500 @enderror" value="{{ old('tim1_penyiar1', $rac->tim1_penyiar1) }}">
                 @error('tim1_penyiar1')
-                <div class="text-red-500">
+                <div class="text-sm text-red-600">
                     {{ $message }}
                 </div>
                 @enderror
@@ -58,7 +58,7 @@
                 </label>
                 <input name="tim1_penyiar2" type="text" placeholder="Penyiar 2" class="w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary @error('tim1_penyiar2') border-red-500 @enderror" value="{{ old('tim1_penyiar2', $rac->tim1_penyiar2) }}">
                 @error('tim1_penyiar2')
-                <div class="text-red-500">
+                <div class="text-sm text-red-600">
                     {{ $message }}
                 </div>
                 @enderror
@@ -69,7 +69,7 @@
                 </label>
                 <input name="tim1_operator" type="text" placeholder="Operator" class="w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary @error('tim1_operator') border-red-500 @enderror" value="{{ old('tim1_operator', $rac->tim1_operator) }}">
                 @error('tim1_operator')
-                <div class="text-red-500">
+                <div class="text-sm text-red-600">
                     {{ $message }}
                 </div>
                 @enderror
@@ -80,7 +80,7 @@
                 </label>
                 <input name="tim1_institusi" type="text" placeholder="Institusi/Organisasi Asal" class="w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary @error('tim1_institusi') border-red-500 @enderror" value="{{ old('tim1_institusi', $rac->tim1_institusi) }}">
                 @error('tim1_institusi')
-                <div class="text-red-500">
+                <div class="text-sm text-red-600">
                     {{ $message }}
                 </div>
                 @enderror
@@ -91,7 +91,7 @@
                 </label>
                 <input name="tim1_nims1" type="text" placeholder="Nim Penyiar 1" class="w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary @error('tim1_nims1') border-red-500 @enderror" value="{{ old('tim1_nims1', $rac->tim1_nims1) }}">
                 @error('tim1_nims1')
-                <div class="text-red-500">
+                <div class="text-sm text-red-600">
                     {{ $message }}
                 </div>
                 @enderror
@@ -102,7 +102,7 @@
                 </label>
                 <input name="tim1_nims2" type="text" placeholder="Nim Penyiar 2" class="w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary @error('tim1_nims2') border-red-500 @enderror" value="{{ old('tim1_nims2', $rac->tim1_nims2) }}">
                 @error('tim1_nims2')
-                <div class="text-red-500">
+                <div class="text-sm text-red-600">
                     {{ $message }}
                 </div>
                 @enderror
@@ -113,7 +113,7 @@
                 </label>
                 <input name="tim1_nimop" type="text" placeholder="Nim Operator" class="w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary  @error('tim1_nimop') border-red-500 @enderror" value="{{ old('tim1_nimop', $rac->tim1_nimop) }}">
                 @error('tim1_nimop')
-                <div class="text-red-500">
+                <div class="text-sm text-red-600">
                     {{ $message }}
                 </div>
                 @enderror
@@ -124,7 +124,7 @@
                 </label>
                 <input name="tim1_contact_wa" type="text" placeholder="WA" class="w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary @error('tim1_contact_wa') border-red-500 @enderror" value="{{ old('tim1_contact_wa', $rac->tim1_contact_wa) }}">
                 @error('tim1_contact_wa')
-                <div class="text-red-500">
+                <div class="text-sm text-red-600">
                     {{ $message }}
                 </div>
                 @enderror
@@ -135,7 +135,7 @@
                 </label>
                 <input name="tim1_contact_line" type="text" placeholder="LINE" class="w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary @error('tim1_contact_line') border-red-500 @enderror" value="{{ old('tim1_contact_line', $rac->tim1_contact_line) }}">
                 @error('tim1_contact_line')
-                <div class="text-red-500">
+                <div class="text-sm text-red-600">
                     {{ $message }}
                 </div>
                 @enderror
@@ -146,7 +146,7 @@
                 </label>
                 <input name="tim1_email" type="text" placeholder="Email" class="w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary @error('tim1_email') border-red-500 @enderror" value="{{ old('tim1_email', $rac->tim1_email) }}">
                 @error('tim1_email')
-                <div class="text-red-500">
+                <div class="text-sm text-red-600">
                     {{ $message }}
                 </div>
                 @enderror
@@ -170,7 +170,7 @@
               </label>
               <input name="tim2_nama" type="text" placeholder="Nama Tim" class="w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary @error('tim2_nama') border-red-500 @enderror" value="{{ old('tim2_nama', $rac->tim2_nama) }}">
               @error('tim2_nama')
-              <div class="text-red-500">
+              <div class="text-sm text-red-600">
                   {{ $message }}
               </div>
               @enderror
@@ -181,7 +181,7 @@
               </label>
               <input name="tim2_penyiar1" type="text" placeholder="Penyiar 1" class="w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary @error('tim2_penyiar1') border-red-500 @enderror" value="{{ old('tim2_penyiar1', $rac->tim2_penyiar1) }}">
               @error('tim2_penyiar1')
-              <div class="text-red-500">
+              <div class="text-sm text-red-600">
                   {{ $message }}
               </div>
               @enderror
@@ -192,7 +192,7 @@
               </label>
               <input name="tim2_penyiar2" type="text" placeholder="Penyiar 2" class="w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary @error('tim2_penyiar2') border-red-500 @enderror" value="{{ old('tim2_penyiar2', $rac->tim2_penyiar2) }}">
               @error('tim2_penyiar2')
-              <div class="text-red-500">
+              <div class="text-sm text-red-600">
                   {{ $message }}
               </div>
               @enderror
@@ -203,7 +203,7 @@
               </label>
               <input name="tim2_operator" type="text" placeholder="Operator" class="w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary @error('tim2_operator') border-red-500 @enderror" value="{{ old('tim2_operator', $rac->tim2_operator) }}">
               @error('tim2_operator')
-              <div class="text-red-500">
+              <div class="text-sm text-red-600">
                   {{ $message }}
               </div>
               @enderror
@@ -214,7 +214,7 @@
               </label>
               <input name="tim2_institusi" type="text" placeholder="Institusi/Organisasi Asal" class="w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary @error('tim2_institusi') border-red-500 @enderror" value="{{ old('tim2_institusi', $rac->tim2_institusi) }}">
               @error('tim2_institusi')
-              <div class="text-red-500">
+              <div class="text-sm text-red-600">
                   {{ $message }}
               </div>
               @enderror
@@ -225,7 +225,7 @@
               </label>
               <input name="tim2_nims1" type="text" placeholder="Nim Penyiar 1" class="w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary @error('tim2_nims1') border-red-500 @enderror" value="{{ old('tim2_nims1', $rac->tim2_nims1) }}">
               @error('tim2_nims1')
-              <div class="text-red-500">
+              <div class="text-sm text-red-600">
                   {{ $message }}
               </div>
               @enderror
@@ -236,7 +236,7 @@
               </label>
               <input name="tim2_nims2" type="text" placeholder="Nim Penyiar 2" class="w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary @error('tim2_nims2') border-red-500 @enderror" value="{{ old('tim2_nims2', $rac->tim2_nims2) }}">
               @error('tim2_nims2')
-              <div class="text-red-500">
+              <div class="text-sm text-red-600">
                   {{ $message }}
               </div>
               @enderror
@@ -247,7 +247,7 @@
               </label>
               <input name="tim2_nimop" type="text" placeholder="Nim Operator" class="w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary @error('tim2_nimop') border-red-500 @enderror" value="{{ old('tim2_nimop', $rac->tim2_nimop) }}">
               @error('tim2_nimop')
-              <div class="text-red-500">
+              <div class="text-sm text-red-600">
                   {{ $message }}
               </div>
               @enderror
@@ -258,7 +258,7 @@
               </label>
               <input name="tim2_contact_wa" type="text" placeholder="WA" class="w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary @error('tim2_contact_wa') border-red-500 @enderror" value="{{ old('tim2_contact_wa', $rac->tim2_contact_wa) }}">
               @error('tim2_contact_wa')
-              <div class="text-red-500">
+              <div class="text-sm text-red-600">
                   {{ $message }}
               </div>
               @enderror
@@ -269,7 +269,7 @@
               </label>
               <input name="tim2_contact_line" type="text" placeholder="LINE" class="w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary @error('tim2_contact_line') border-red-500 @enderror" value="{{ old('tim2_contact_line', $rac->tim2_contact_line) }}">
               @error('tim2_contact_line')
-              <div class="text-red-500">
+              <div class="text-sm text-red-600">
                   {{ $message }}
               </div>
               @enderror
@@ -280,7 +280,7 @@
               </label>
               <input name="tim2_email" type="text" placeholder="Email" class="w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary @error('tim2_email') border-red-500 @enderror" value="{{ old('tim2_email', $rac->tim2_email) }}">
               @error('tim2_email')
-              <div class="text-red-500">
+              <div class="text-sm text-red-600">
                   {{ $message }}
               </div>
               @enderror
@@ -304,7 +304,7 @@
             </label>
             <input name="tim3_nama" type="text" placeholder="Nama Tim" class="w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary @error('tim3_nama') border-red-500 @enderror" value="{{ old('tim3_nama', $rac->tim3_nama) }}">
             @error('tim3_nama')
-            <div class="text-red-500">
+            <div class="text-sm text-red-600">
                 {{ $message }}
             </div>
             @enderror
@@ -315,7 +315,7 @@
             </label>
             <input name="tim3_penyiar1" type="text" placeholder="Penyiar 1" class="w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary @error('tim3_penyiar1') border-red-500 @enderror" value="{{ old('tim3_penyiar1', $rac->tim3_penyiar1) }}">
             @error('tim3_penyiar1')
-            <div class="text-red-500">
+            <div class="text-sm text-red-600">
                 {{ $message }}
             </div>
             @enderror
@@ -326,7 +326,7 @@
             </label>
             <input name="tim3_penyiar2" type="text" placeholder="Penyiar 2" class="w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary @error('tim3_penyiar2') border-red-500 @enderror" value="{{ old('tim3_penyiar2', $rac->tim3_penyiar2) }}">
             @error('tim3_penyiar2')
-            <div class="text-red-500">
+            <div class="text-sm text-red-600">
                 {{ $message }}
             </div>
             @enderror
@@ -337,7 +337,7 @@
             </label>
             <input name="tim3_operator" type="text" placeholder="Operator" class="w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary @error('tim3_operator') border-red-500 @enderror" value="{{ old('tim3_operator', $rac->tim3_operator) }}">
             @error('tim3_operator')
-            <div class="text-red-500">
+            <div class="text-sm text-red-600">
                 {{ $message }}
             </div>
             @enderror
@@ -348,7 +348,7 @@
             </label>
             <input name="tim3_institusi" type="text" placeholder="Institusi/Organisasi Asal" class="w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary @error('tim3_institusi') border-red-500 @enderror" value="{{ old('tim3_institusi', $rac->tim3_institusi) }}">
             @error('tim3_institusi')
-            <div class="text-red-500">
+            <div class="text-sm text-red-600">
                 {{ $message }}
             </div>
             @enderror
@@ -359,7 +359,7 @@
             </label>
             <input name="tim3_nims1" type="text" placeholder="Nim Penyiar 1" class="w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary @error('tim3_nims1') border-red-500 @enderror" value="{{ old('tim3_nims1', $rac->tim3_nims1) }}">
             @error('tim3_nims1')
-            <div class="text-red-500">
+            <div class="text-sm text-red-600">
                 {{ $message }}
             </div>
             @enderror
@@ -370,7 +370,7 @@
             </label>
             <input name="tim3_nims2" type="text" placeholder="Nim Penyiar 2" class="w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary @error('tim3_nims2') border-red-500 @enderror" value="{{ old('tim3_nims2', $rac->tim3_nims2) }}">
             @error('tim3_nims2')
-            <div class="text-red-500">
+            <div class="text-sm text-red-600">
                 {{ $message }}
             </div>
             @enderror
@@ -381,7 +381,7 @@
             </label>
             <input name="tim3_nimop" type="text" placeholder="Nim Operator" class="w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary @error('tim3_nimop') border-red-500 @enderror" value="{{ old('tim3_nimop', $rac->tim3_nimop) }}">
             @error('tim3_nimop')
-            <div class="text-red-500">
+            <div class="text-sm text-red-600">
                 {{ $message }}
             </div>
             @enderror
@@ -392,7 +392,7 @@
             </label>
             <input name="tim3_contact_wa" type="text" placeholder="WA" class="w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary @error('tim3_contact_wa') border-red-500 @enderror" value="{{ old('tim3_contact_wa', $rac->tim3_contact_wa) }}">
             @error('tim3_contact_wa')
-            <div class="text-red-500">
+            <div class="text-sm text-red-600">
                 {{ $message }}
             </div>
             @enderror
@@ -403,7 +403,7 @@
             </label>
             <input name="tim3_contact_line" type="text" placeholder="LINE" class="w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary @error('tim3_contact_line') border-red-500 @enderror" value="{{ old('tim3_contact_line', $rac->tim3_contact_line) }}">
             @error('tim3_contact_line')
-            <div class="text-red-500">
+            <div class="text-sm text-red-600">
                 {{ $message }}
             </div>
             @enderror
@@ -414,7 +414,7 @@
             </label>
             <input name="tim3_email" type="text" placeholder="Email" class="w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary @error('tim3_email') border-red-500 @enderror" value="{{ old('tim3_email', $rac->tim3_email) }}">
             @error('tim3_email')
-            <div class="text-red-500">
+            <div class="text-sm text-red-600">
                 {{ $message }}
             </div>
             @enderror
@@ -437,12 +437,34 @@
           @endif
           <input type="file" id="payment_proof" name="payment_proof" class="w-full cursor-pointer rounded-lg border-[1.5px] border-stroke bg-transparent font-normal outline-none transition file:mr-5 file:border-collapse file:cursor-pointer file:border-0 file:border-r file:border-solid file:border-stroke file:bg-whiter file:px-5 file:py-3 file:hover:bg-primary file:hover:bg-opacity-10 focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter @error('payment_proof') border-red-500 @enderror" onchange="previewImage()"/>
           @error('payment_proof')
-          <div class="text-red-500">
+          <div class="text-sm text-red-600">
               {{ $message }}
           </div>
           @enderror
         </div>
       </div>
+      <div class="grid grid-cols-1 gap-9 sm:grid-cols-3">
+        <div class="p-6.5 ">
+      <label for="status" class="text-sm font-medium text-black">
+        Select Role
+    </label>
+    <div x-data="{ isOptionSelected: false }" class="relative z-20 bg-white">
+        <select class="relative z-20 w-full appearance-none rounded border bg-transparent py-3 pl-5 pr-12 outline-none transition focus:border-primary active:border-primary @error('status') border-red-500 @enderror @change="isOptionSelected = true" name="status" id="status">
+          @if($rac->status == 'Pending' || $rac->status == 'Approved')
+          <option value="Pending" {{ old('status', $rac->status) == 'Pending' ? 'selected' : '' }}>Pending</option>
+          <option value="Approved" {{ old('status', $rac->status) == 'Approved' ? 'selected' : '' }}>Approved</option>
+      @else
+          <option value="Pending" class="text-body">Pending</option>
+          <option value="Approved" class="text-body">Approved</option>
+      @endif
+            @error('status')
+              <div class="text-sm text-red-600">
+                {{ $message }}
+              </div>
+            @enderror
+        </select>
+      </div>
+    </div>
     </div>
   <div>
     <button type="submit" class="mt-3 mb-2 bg-primary inline-flex items-center justify-center rounded-md px-4 py-2 text-center font-medium text-white hover:bg-opacity-90 lg:px-3 xl:px-3">

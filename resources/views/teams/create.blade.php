@@ -101,8 +101,8 @@
                     @endif
                 @endforeach
 
-                <h2 class="w-full text-center font-taruno text-white hidden">Remaining Slots: {{ 20 - $count }}</h2>
-                <h2 class="w-full text-center font-taruno text-white text-sm py-2">Select Number Of Teams To Be Registered</h2>
+                <h2 class="w-full text-center font-ltmuseumreg text-white hidden">Remaining Slots: {{ 20 - $count }}</h2>
+                <h2 class="w-full text-center font-ltmuseumreg text-white text-xl py-2">Select Number Of Teams To Be Registered</h2>
 
                 @if ($count >= 20)
                     <h2 class="w-full text-center font-taruno">Kuota Tim Habis</h2>

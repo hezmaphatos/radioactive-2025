@@ -35,7 +35,9 @@ Route::get('/', function () {
 Route::controller(LoginController::class)->group(function () {
     Route::get('/login', 'index')->name('login');
     Route::post('/login', 'authenticate');
-    
+
+    Route::get('/signup', 'signup_view');
+    Route::post('/signup', 'signup');
 });
 
 Route::get('/logout', function (Request $request) {
@@ -94,9 +96,9 @@ Route::get('/closing-night', function () {
 Route::controller(TeamDataController::class)->group(function(){
     Route::get('/rac', 'index');
     Route::get('/rac/register', 'create');
-    Route::get('/rac/register', function(){
-        return view('welcome');
-    });
+    // Route::get('/rac/register', function(){
+    //     return view('welcome');
+    // });
     Route::post('/rac/store', 'store');
     Route::get('/rac/show', 'show');
     Route::get('/rac/{id}/edit', 'edit');

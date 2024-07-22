@@ -80,10 +80,10 @@
                 src="../images/logo.webm" alt="logo" loading="lazy" />
         </div>
     </div>
-    <div class="font-taruno2 text-lg md:text-3xl text-white flex justify-center text-center pt-24 mb-6 mx-4 hidden">
+    <div class="font-taruno2 text-lg md:text-3xl text-white flex justify-center text-center pt-24 mb-6 mx-4">
         FORM PENGUMPULAN VOC
     </div>
-    <form action="/voc/store" class="pb-24 hidden" enctype="multipart/form-data" method="post">
+    <form action="/voc/store" class="pb-24" enctype="multipart/form-data" method="post">
         <div class="flex justify-center align-middle form-container">
             <div class="flex flex-col w-[400px] max-w-[95vw]">
                 @if (session()->has('success'))

@@ -16,7 +16,7 @@ class IsAdmin
     public function handle(Request $request, Closure $next): Response
     {
         if (!auth()->check() || !in_array(auth()->user()->role_id, [1, 2])) {
-            abort(403);
+            return redirect('/login');
         }
         return $next($request);
     }

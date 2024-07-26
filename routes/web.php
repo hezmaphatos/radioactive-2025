@@ -12,6 +12,7 @@ use App\Http\Controllers\TicketController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TeamDataController;
 use App\Http\Controllers\VocController;
+use Illuminate\Support\Facades\Artisan;
 
 /*
 |--------------------------------------------------------------------------
@@ -132,3 +133,7 @@ Route::get('/doorprize', function(){
 Route::get('/{any}', function () {
     return redirect('/');
 })->where('any', '.*');
+
+Route::get('/linkstorage', function () {
+    Artisan::call('storage:link');
+});

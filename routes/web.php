@@ -24,11 +24,11 @@ use App\Http\Controllers\VocController;
 |
 */
 
-Route::get('/', function () {
+Route::get('/2023', function () {
     return view('Home.index');
 });
 
-Route::get('/soon', function(){
+Route::get('/', function(){
     return view('Home.soon');
 });
 

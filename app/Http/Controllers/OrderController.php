@@ -82,7 +82,7 @@ class OrderController extends Controller
             // Set your Merchant Server Key
             \Midtrans\Config::$serverKey = config('midtrans.server_key');
             // Set to Development/Sandbox Environment (default). Set to true for Production Environment (accept real transaction).
-            \Midtrans\Config::$isProduction = true;
+            \Midtrans\Config::$isProduction = false;
             // Set sanitization on (default)
             \Midtrans\Config::$isSanitized = true;
             // Set 3DS transaction for credit card to true
@@ -111,6 +111,8 @@ class OrderController extends Controller
     {
         $serverKey = config('midtrans.server_key');
         $hashed = hash("sha512", $request->order_id . $request->status_code . $request->gross_amount . $serverKey);
+
+        // dd($request);
 
         if ($hashed == $request->signature_key) {
             if ($request -> transaction_status == 'capture' or $request -> transaction_status == 'settlement') {

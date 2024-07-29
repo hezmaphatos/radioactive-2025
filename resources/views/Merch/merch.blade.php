@@ -15,18 +15,18 @@
 
 <body class="overflow-x-hidden bg-black text-white">
     {{-- <nav id="header" class="fixed navbar bg-transparent justify-center gap-16 z-40 transition-all duration-700">
-        <a class="font-taruno text-white text-xs underline underline-offset-4 decoration-[#FFF000] cursor-pointer"
+        <a class="font-Brody Rawk text-white text-xs underline underline-offset-4 decoration-[#FFF000] cursor-pointer"
             href="/">HOME</a>
         <a
-            class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer">VO
+            class="font-Brody Rawk text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer">VO
             CHALLENGE</a>
         <a
-            class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer">RAC</a>
-        <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
+            class="font-Brody Rawk text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer">RAC</a>
+        <a class="font-Brody Rawk text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
             href="ticket">CLOSING
             NIGHT</a>
         @auth
-            <a class="font-taruno text-white text-xs no-underline hover:underline cursor-pointer" href="/logout">LOGOUT</a>
+            <a class="font-Brody Rawk text-white text-xs no-underline hover:underline cursor-pointer" href="/logout">LOGOUT</a>
         @endauth
     </nav> --}}
     <div id="header" x-data="{ isOpen: false }"
@@ -39,20 +39,20 @@
                 </svg>
             </button>
             <div class="pr-4 hidden space-x-6 lg:inline-block">
-                <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
+                <a class="font-Brody Rawk text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
                     href="https://umnradioactive.com/">HOME</a>
-                <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
+                <a class="font-Brody Rawk text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
                     href="https://umnradioactive.com/voc">VO
                     CHALLENGE</a>
-                <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
+                <a class="font-Brody Rawk text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
                     href="https://umnradioactive.com/rac">RAC</a>
-                <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
+                <a class="font-Brody Rawk text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
                     href="https://umnradioactive.com/closing-night">CLOSING
                     NIGHT</a>
-                <a class="font-taruno text-white text-xs underline underline-offset-4 decoration-[#FFF000] cursor-pointer"
+                <a class="font-Brody Rawk text-white text-xs underline underline-offset-4 decoration-[#FFF000] cursor-pointer"
                     href="https://merch.umnradioactive.com/">MERCHANDISE</a>
                 @auth
-                    <a class="font-taruno text-white text-xs no-underline hover:underline cursor-pointer"
+                    <a class="font-Brody Rawk text-white text-xs no-underline hover:underline cursor-pointer"
                         href="/logout">LOGOUT</a>
                 @endauth
             </div>
@@ -61,20 +61,20 @@
                 <div class="fixed left-0 w-full h-52 p-5 bg-white rounded-lg shadow-xl top-16" x-show="isOpen"
                     @click.away=" isOpen = false">
                     <div class="flex flex-col space-y-6">
-                        <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
+                        <a class="font-Brody Rawk text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
                             href="https://umnradioactive.com/">HOME</a>
-                        <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
+                        <a class="font-Brody Rawk text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
                             href="https://umnradioactive.com/voc">VO
                             CHALLENGE</a>
-                        <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
+                        <a class="font-Brody Rawk text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
                             href="https://umnradioactive.com/rac">RAC</a>
-                        <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
+                        <a class="font-Brody Rawk text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
                             href="https://umnradioactive.com/closing-night">CLOSING
                             NIGHT</a>
-                        <a class="font-taruno text-black text-xs underline underline-offset-4 decoration-[#0E0EC0] cursor-pointer"
+                        <a class="font-Brody Rawk text-black text-xs underline underline-offset-4 decoration-[#0E0EC0] cursor-pointer"
                             href="https://merch.umnradioactive.com/">MERCHANDISE</a>
                         @auth
-                            <a class="font-taruno text-white text-xs no-underline hover:underline cursor-pointer"
+                            <a class="font-Brody Rawk text-white text-xs no-underline hover:underline cursor-pointer"
                                 href="/logout">LOGOUT</a>
                         @endauth
                     </div>
@@ -182,13 +182,13 @@
                 <div class="pl-2 md:pl-0">
 
                     <div class="mt-5">
-                        <p class="mt-5 font-taruno text-white text-lg">{{ $merch->name }}</p>
+                        <p class="mt-5 font-Brody Rawk text-white text-lg">{{ $merch->name }}</p>
                         @if ($merch->id == 3)
-                            <p class="text-[11px] font-taruno text-gray-500"><i>Illustrated by Radioactive</i></p>
-                            <p class="mt-5 font-taruno text-white text-lg">{{ $merch->name }}</p>
+                            <p class="text-[11px] font-Brody Rawk text-gray-500"><i>Illustrated by Radioactive</i></p>
+                            <p class="mt-5 font-Brody Rawk text-white text-lg">{{ $merch->name }}</p>
                         @endif
                         @if ($merch->id == 4)
-                            <p class="text-[11px] font-taruno text-gray-500"><i>With Zipper</i></p>
+                            <p class="text-[11px] font-Brody Rawk text-gray-500"><i>With Zipper</i></p>
                         @endif
                     </div>
                     <p class="mt-1 font-sans text-white text-sm">Rp {{ number_format($merch->price, 0, ',', '.') }}
@@ -196,13 +196,13 @@
                     <div id="indicators-carousel" class="relative w-full h-full" data-carousel="static">
                         <div class="z-30 inline-flex gap-4 h-3 overflow-hidden justify-center mt-[20px]">
                             <div type="button"
-                                class="h-[2px] w-[126px] cursor-pointer no-underline text-white font-taruno text-[13px]"
+                                class="h-[2px] w-[126px] cursor-pointer no-underline text-white font-Brody Rawk text-[13px]"
                                 aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"
                                 class="relative">
                                 <p class="absolute top-1">Description</p>
                             </div>
                             <div type="button"
-                                class="h-[2px] w-[100px] cursor-pointer no-underline text-white font-taruno text-[13px]"
+                                class="h-[2px] w-[100px] cursor-pointer no-underline text-white font-Brody Rawk text-[13px]"
                                 data-carousel-slide-to="1" class="relative">
                                 <p class="absolute top-1">Shipping</p>
                             </div>
@@ -455,7 +455,7 @@
                                 <div class="flex justify-center gap-1" action="" method="post">
                                     @csrf
                                     <input type="button" value="-" id="decrement"
-                                        class="border-[1px] border-white w-1/6 p-3 text-xs text-white bg-[#0E0EC0] cursor-pointer"
+                                        class="border-[1px] border-white w-1/6 p-3 text-xs text-white bg-[#D61525] cursor-pointer"
                                         onclick="button(this)"></input>
 
                                     <input id="qty" type="number" name="qty" min="1"
@@ -463,11 +463,11 @@
                                         class="p-2 w-auto text-lg text-black dark:text-white"></input>
 
                                     <input type="button" value="+" id="increment"
-                                        class="border-[1px] border-white w-1/6 p-3 text-xs text-white bg-[#0E0EC0] cursor-pointer"
+                                        class="border-[1px] border-white w-1/6 p-3 text-xs text-white bg-[#D61525] cursor-pointer"
                                         onclick="button(this)"></input>
                                     @if ($merch->table && $merch->id == 1)
                                         <select name="size" id="size1"
-                                            class="w-11/12 text-center dark:text-white font-taruno text-[.8rem] text-gray-800 cursor-pointer">
+                                            class="w-11/12 text-center dark:text-white font-Brody Rawk text-[.8rem] text-gray-800 cursor-pointer">
                                             <option value="XS">XS</option>
                                             <option value="S">S</option>
                                             <option value="M">M</option>
@@ -478,7 +478,7 @@
                                     @endif
                                     @if ($merch->table && $merch->id == 2)
                                         <select name="size" id="size2"
-                                            class="w-11/12 text-center font-taruno text-[.8rem] text-gray-800  cursor-pointer">
+                                            class="w-11/12 text-center font-Brody Rawk text-[.8rem] text-gray-800  cursor-pointer">
                                             <option value="S">S</option>
                                             <option value="M">M</option>
                                             <option value="L">L</option>
@@ -492,9 +492,9 @@
                                 <div class="grid gap-3 mt-5">
                                     <input type="hidden" name="id" value="{{ $merch->id }}">
                                     <input value="Add to Cart" type="submit"
-                                        class="w-full font-taruno border-solid border-[1px] border-white p-3 text-xs text-white bg-[#0E0EC0] cursor-pointer"></input>
+                                        class="w-full font-Brody Rawk border-solid border-[1px] border-white p-3 text-xs text-white bg-[#D61525] cursor-pointer"></input>
                                     <a href='/'
-                                        class="text-center font-taruno border-solid border-[1px] border-white p-3 text-xs text-white bg-[#0E0EC0] no-underline cursor-pointer">Back
+                                        class="text-center font-Brody Rawk border-solid border-[1px] border-white p-3 text-xs text-white bg-[#D61525] no-underline cursor-pointer">Back
                                         to Merch</a>
                                 </div>
                             </div>
@@ -505,7 +505,7 @@
     </div>
     <div class="flex justify-center w-full align-middle">
         <div class="px-6 text-left">
-            <h2 class="font-taruno text-white">NOTES</h2>
+            <h2 class="font-Brody Rawk text-white">NOTES</h2>
             <ul class="list-disc ml-[17px]">
                 <li class="text-white text-[15px]">TIDAK MENERIMA SEGALA JENIS BENTUK PENUKARAN TERMASUK
                     PENUKARAN MODEL, WARNA, DAN SIZE
@@ -524,7 +524,7 @@
         @if ($merch->table && $merch->id == 1)
             <table border="1"
                 class="w-full justify-center gap-3 border-white border-[1px] md:w-4/5 sm:w-full lg:w-1/2 text-white">
-                <tr class="border-[1px] bg-[#0E0EC0]">
+                <tr class="border-[1px] bg-[#D61525]">
                     <th>Size</th>
                     <th>Width<br>(cm)</th>
                     <th>Length<br>(cm)</th>
@@ -648,31 +648,31 @@
             <div class="lg:container flex flex-col justify-evenly py-3 my-10 gap-4 text-center md:text-left">
                 <a href="https://umnradioactive.com/"
                     class="no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer">
-                    <h5 class="text-xs font-taruno font-medium text-white">
+                    <h5 class="text-xs font-Brody Rawk font-medium text-white">
                         <b>HOME</b>
                     </h5>
                 </a>
                 <a href="https://umnradioactive.com/voc"
                     class="no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer">
-                    <h5 class="text-xs font-taruno font-medium text-white">
+                    <h5 class="text-xs font-Brody Rawk font-medium text-white">
                         <b>VO CHALLENGE</b>
                     </h5>
                 </a>
                 <a href="https://umnradioactive.com/rac"
                     class="no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer">
-                    <h5 class="text-xs font-taruno font-medium text-white">
+                    <h5 class="text-xs font-Brody Rawk font-medium text-white">
                         <b>RAC</b>
                     </h5>
                 </a>
                 <a href="https://umnradioactive.com/closing-night"
                     class="no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer">
-                    <h5 class="text-xs font-taruno font-medium text-white">
+                    <h5 class="text-xs font-Brody Rawk font-medium text-white">
                         <b>CLOSING NIGHT</b>
                     </h5>
                 </a>
                 <a href="https://merch.umnradioactive.com"
                     class="no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer">
-                    <h5 class="text-xs font-taruno font-medium text-white">
+                    <h5 class="text-xs font-Brody Rawk font-medium text-white">
                         <b>MERCHANDISE</b>
                     </h5>
                 </a>
@@ -735,7 +735,7 @@
 
         </div>
         <div class="flex justify-center align-middle mt-10 text-center">
-            <p class="mb-2 text-xs font-taruno font-medium text-white">&copy; UMN RADIOACTIVE 2023</p>
+            <p class="mb-2 text-xs font-Brody Rawk font-medium text-white">&copy; UMN RADIOACTIVE 2023</p>
         </div>
     </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

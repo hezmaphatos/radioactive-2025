@@ -31,13 +31,6 @@ Route::get('/', function () {
 Route::get('/soon', function(){
     return view('Home.soon');
 });
-Route::get('/merch', function () {
-    return view('Merch.index');
-});
-
-// Route::get('/voc', function () {
-//     return view('VOC.index');
-// });
 
 Route::controller(LoginController::class)->group(function () {
     Route::get('/login', 'index')->name('login');
@@ -96,8 +89,6 @@ Route::get('/closing-night', function () {
     return view('Tickets.index');
 });
 
-// Route::resource('rac', TeamDataController::class);
-
 Route::controller(TeamDataController::class)->group(function(){
     Route::get('/rac', 'index');
     Route::get('/rac/register', 'create');
@@ -135,6 +126,17 @@ Route::get('/doorprize', function(){
 // Route::get('/rac', function(){
 //     return view('Rac.index');
 // });
+
+Route::controller(MerchController::class)->group(function(){
+    Route::get('/merch', 'index');
+    Route::get('/merch/{merch:id}', 'show');
+    Route::prefix('/merch/admin')->group(function(){
+        Route::get('/new', 'create');
+        Route::post('/store', 'store');
+        Route::get('/{merch:id}/addimage', 'addImage');
+        Route::post('/{merch:id}/storeimage', 'storeImage');
+    });
+});
 
 Route::get('/{any}', function () {
     return redirect('/');

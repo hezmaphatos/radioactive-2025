@@ -31,4 +31,8 @@ class Merch extends Model
     public function merchvariations(): HasMany{
         return $this->hasMany(MerchVariation::class);
     }
+
+    public function images(): HasMany{
+        return $this->hasMany(MerchImage::class);
+    }
 }

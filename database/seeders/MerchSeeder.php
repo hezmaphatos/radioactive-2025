@@ -14,45 +14,45 @@ class MerchSeeder extends Seeder
     public function run(): void
     {
         //
-        Merch::create([
-            'name' => 'T-Shirt',
-            'description' => 'T-Shirt',
-            'image' => 't-shirt.jpg',
-            'price' => 100000,
-            'stock' => 10,
-        ]);
+        // Merch::create([
+        //     'name' => 'T-Shirt',
+        //     'description' => 'T-Shirt',
+        //     'image' => 't-shirt.jpg',
+        //     'price' => 100000,
+        //     'stock' => 10,
+        // ]);
 
-        Merch::create([
-            'name' => 'Hoodie',
-            'description' => 'Hoodie',
-            'image' => 't-shirt.jpg',
-            'price' => 200000,
-            'stock' => 10,
-        ]);
+        // Merch::create([
+        //     'name' => 'Hoodie',
+        //     'description' => 'Hoodie',
+        //     'image' => 't-shirt.jpg',
+        //     'price' => 200000,
+        //     'stock' => 10,
+        // ]);
 
-        Merch::create([
-            'name' => 'Jacket',
-            'description' => 'Jacket',
-            'image' => 't-shirt.jpg',
-            'price' => 300000,
-            'stock' => 10,
-        ]);
+        // Merch::create([
+        //     'name' => 'Jacket',
+        //     'description' => 'Jacket',
+        //     'image' => 't-shirt.jpg',
+        //     'price' => 300000,
+        //     'stock' => 10,
+        // ]);
 
-        Merch::create([
-            'name' => 'Hat',
-            'description' => 'Hat',
-            'image' => 't-shirt.jpg',
-            'price' => 50000,
-            'stock' => 10,
-        ]);
+        // Merch::create([
+        //     'name' => 'Hat',
+        //     'description' => 'Hat',
+        //     'image' => 't-shirt.jpg',
+        //     'price' => 50000,
+        //     'stock' => 10,
+        // ]);
 
-        Merch::create([
-            'name' => 'Pants',
-            'description' => 'Pants',
-            'image' => 't-shirt.jpg',
-            'price' => 150000,
-            'stock' => 10,
-        ]);
+        // Merch::create([
+        //     'name' => 'Pants',
+        //     'description' => 'Pants',
+        //     'image' => 't-shirt.jpg',
+        //     'price' => 150000,
+        //     'stock' => 10,
+        // ]);
 
     }
 }

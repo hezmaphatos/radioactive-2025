@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Merch;
 use App\Http\Requests\StoreMerchRequest;
 use App\Http\Requests\UpdateMerchRequest;
+use App\Models\MerchImage;
+use Illuminate\Http\Request;
 
 class MerchController extends Controller
 {
@@ -14,25 +16,29 @@ class MerchController extends Controller
     public function index()
     {
         //
-        return view('Merch.index');
+        $merches = Merch::all();
+        return view('Merch.index', ['merches' => $merches]);
     }
 
-    public function cart() {
+    public function cart()
+    {
         $cart = session('cart');
         return view('Merch.cart')->with('cart', $cart);
     }
 
-    public function addToCart($id_merch) {
+    public function addToCart($id_merch)
+    {
         $cart = session('cart');
         $merch = Merch::find($id_merch);
         $cart[$id_merch] = $merch;
-        
+
         session(['cart' => $cart]);
 
         return redirect('/cart');
     }
 
-    public function removeFromCart($id_merch) {
+    public function removeFromCart($id_merch)
+    {
         $cart = session('cart');
         unset($cart[$id_merch]);
         session(['cart' => $cart]);
@@ -40,7 +46,8 @@ class MerchController extends Controller
         return redirect('/cart');
     }
 
-    public function checkout() {
+    public function checkout()
+    {
         $cart = session('cart');
         return view('Merch.checkout')->with('cart', $cart);
     }
@@ -51,14 +58,56 @@ class MerchController extends Controller
     public function create()
     {
         //
+        return view('Merch.Admin.new');
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreMerchRequest $request)
+    public function store(Request $request)
     {
         //
+        $validData = $request->validate([
+            'name' => 'required',
+            'description' => 'required',
+            'image' => 'required|image|file|max:10240',
+            'price' => 'required',
+            'stock' => 'required',
+        ]);
+
+        if ($request->file('image')) {
+            $validData['image'] = $request->file('image')->storePublicly('merch_images', 'public');
+        }
+
+        Merch::create($validData);
+
+        return redirect('/merch/admin/new')->with([
+            'success' => 'Merch Baru Telah Ditambahkan',
+            'name' => $request->name,
+            'price' => $request->price,
+            'stock' => $request->stock
+        ]);
+    }
+
+    public function addImage(Merch $merch){
+        return view('Merch.Admin.addimage', ['merch' => $merch]);
+    }
+
+    public function storeImage(Request $request, Merch $merch){
+        $validData = $request->validate([
+            'description' => 'required',
+            'image' => 'required|image|file|max:10240'
+        ]);
+
+        if ($request->file('image')) {
+            $validData['image'] = $request->file('image')->storePublicly('merch_images', 'public');
+        }
+
+        $validData['merch_id'] = $merch->id;
+
+        MerchImage::create($validData);
+
+        return redirect('/merch/admin/'.$merch->id.'/addimage');
     }
 
     /**
@@ -67,6 +116,7 @@ class MerchController extends Controller
     public function show(Merch $merch)
     {
         //
+        return view('Merch.merch', ['merch' => $merch]);
     }
 
     /**
@@ -80,7 +130,7 @@ class MerchController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateMerchRequest $request, Merch $merch)
+    public function update(Request $request, Merch $merch)
     {
         //
     }

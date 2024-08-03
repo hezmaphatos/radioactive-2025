@@ -14,8 +14,7 @@ class MerchController extends Controller
     public function index()
     {
         //
-        $merch = Merch::all();
-        return view('Merch.index')->with('merch', $merch);
+        return view('Merch.index');
     }
 
     public function cart() {

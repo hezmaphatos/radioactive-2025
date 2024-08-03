@@ -31,6 +31,13 @@ Route::get('/', function () {
 Route::get('/soon', function(){
     return view('Home.soon');
 });
+Route::get('/merch', function () {
+    return view('Merch.index');
+});
+
+// Route::get('/voc', function () {
+//     return view('VOC.index');
+// });
 
 Route::controller(LoginController::class)->group(function () {
     Route::get('/login', 'index')->name('login');

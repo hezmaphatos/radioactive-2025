@@ -51,7 +51,7 @@
                     href="/closing-night">CLOSING
                     NIGHT</a>
                 <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
-                    href="https://merch.umnradioactive.com/">MERCHANDISE</a>
+                    href="/merch">MERCHANDISE</a>
             </div>
 
             <div class="mobile-navbar">
@@ -69,7 +69,7 @@
                             href="/closing-night">CLOSING
                             NIGHT</a>
                         <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
-                            href="https://merch.umnradioactive.com/">MERCHANDISE</a>
+                            href="/merch">MERCHANDISE</a>
                     </div>
                 </div>
             </div>
@@ -299,7 +299,7 @@
         <footer class="bg-gradient-to-b from-transparent to-[#0E0EC0] pt-56 pb-16">
             <div class="flex flex-col w-full justify-center md:items-center md:flex-row">
                 <div class="flex justify-center lg:container w-full">
-                    <img src="/images/LOGO RA.webp" alt="" class="h-40 object-contain">
+                    <img src="/images/LOGO RA.png" alt="" class="h-40 object-contain">
                 </div>
                 <div class="lg:container flex flex-col justify-evenly py-3 my-10 gap-4 text-center md:text-left">
                     <a href="/"

@@ -130,11 +130,16 @@ Route::get('/doorprize', function(){
 Route::controller(MerchController::class)->group(function(){
     Route::get('/merch', 'index');
     Route::get('/merch/{merch:id}', 'show');
+    // Route::get('/merch/admin/dashboard', 'dashboard');
     Route::prefix('/merch/admin')->group(function(){
         Route::get('/new', 'create');
         Route::post('/store', 'store');
         Route::get('/{merch:id}/addimage', 'addImage');
         Route::post('/{merch:id}/storeimage', 'storeImage');
+        Route::get('/dashboard', 'dashboard');
+        Route::get('/{merch:id}/edit', 'edit');
+        Route::put('/{merch:id}/update', 'update');
+        Route::delete('/image/{merchImage:id}/delete', 'deleteImage');
     });
 });
 

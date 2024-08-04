@@ -126,7 +126,7 @@
                         </span>
                     </button>
 
-                    <div class="z-30 flex gap-4 overflow-hidden justify-center mt-[20px] mb-[100px]">
+                    <div class="z-30 flex gap-4 overflow-hidden justify-center mt-[20px]">
                         <img type="button" class="w-[50px] h-[70px] border-[1px] border-white" aria-current="true"
                             aria-label="Image" data-carousel-slide-to="0"
                             src="{{ asset('storage/' . $merch->image) }}" />
@@ -135,7 +135,7 @@
                             $count = 1;
                         @endphp
                         @foreach ($merch->images as $picture)
-                            <img type="button" class="w-[50px] h-[70px] border-[1px] border-white"
+                            <img type="button" class="w-[50px] h-[70px] border-[1px] border-white hover:cursor-pointer"
                                 aria-current="true" aria-label="{{$picture->description}}" data-carousel-slide-to="{{ $count }}"
                                 src="{{ asset('storage/' . $picture->image) }}" />
                             @php
@@ -146,11 +146,10 @@
                 </div>
 
                 <div class="pl-2 md:pl-0">
-
                     <div class="mt-5">
                         <p class="mt-5 font-taruno text-white text-lg">{{ $merch->name }}</p>
                     </div>
-                    <p class="mt-1 font-sans text-white text-sm">Rp {{ number_format($merch->price, 0, ',', '.') }}
+                    <p class="mt-1 font-pathway text-white text-xl">Rp {{ number_format($merch->price, 0, ',', '.') }}
                     </p>
                     <div id="indicators-carousel" class="relative w-full h-full" data-carousel="static">
                         <div class="z-30 inline-flex gap-4 h-3 overflow-hidden justify-center mt-[20px]">
@@ -169,8 +168,8 @@
                         </div>
                         <div class="relative w-full h-[130px] overflow-hidden">
 
-                            <div class="hidden duration-700 ease-in-out" data-carousel-item="">
-                                <p>{{ $merch->description }}</p>
+                            <div class="hidden duration-700 ease-in-out overflow-y-scroll" data-carousel-item="">
+                                <p>{!! $merch->description !!}</p>
                             </div>
                             <div class="hidden duration-700 ease-in-out w-full" data-carousel-item>
                                 <ul class="list-disc ml-[17px]">

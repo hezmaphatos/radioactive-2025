@@ -89,3 +89,18 @@
   font-weight: normal;
   font-style: normal;
 }
+
+.dataTables_length select{
+  background-color: white;
+}
+
+.dataTables_filter input {
+  border: 1px solid;
+  background-color: white;
+  padding-left: 5px;
+}
+
+#posts_table{
+  color-scheme: only light !important;
+  color: black;
+}

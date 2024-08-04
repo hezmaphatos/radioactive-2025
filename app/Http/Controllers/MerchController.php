@@ -7,6 +7,7 @@ use App\Http\Requests\StoreMerchRequest;
 use App\Http\Requests\UpdateMerchRequest;
 use App\Models\MerchImage;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class MerchController extends Controller
 {
@@ -89,11 +90,13 @@ class MerchController extends Controller
         ]);
     }
 
-    public function addImage(Merch $merch){
+    public function addImage(Merch $merch)
+    {
         return view('Merch.Admin.addimage', ['merch' => $merch]);
     }
 
-    public function storeImage(Request $request, Merch $merch){
+    public function storeImage(Request $request, Merch $merch)
+    {
         $validData = $request->validate([
             'description' => 'required',
             'image' => 'required|image|file|max:10240'
@@ -107,7 +110,15 @@ class MerchController extends Controller
 
         MerchImage::create($validData);
 
-        return redirect('/merch/admin/'.$merch->id.'/addimage');
+        return redirect('/merch/admin/' . $merch->id . '/addimage')->with('success', 'Merch Image Uploaded');
+    }
+
+    public function deleteImage(MerchImage $merchImage){
+        Storage::delete($merchImage->image);
+        //ini belom bisa delete imagenya dari storage folder, gatau caranya gimana pls bantu
+        $merch_id = $merchImage->merch_id;
+        $merchImage->delete();
+        return redirect('/merch/admin/'. $merch_id.'/edit')->with('success', 'Merch Image Removed');
     }
 
     /**
@@ -119,12 +130,20 @@ class MerchController extends Controller
         return view('Merch.merch', ['merch' => $merch]);
     }
 
+    public function dashboard()
+    {
+        $merches = Merch::all();
+
+        return view('Merch.Admin.dashboard', ['merches' => $merches]);
+    }
+
     /**
      * Show the form for editing the specified resource.
      */
     public function edit(Merch $merch)
     {
         //
+        return view('Merch.Admin.edit', ['merch'=>$merch]);
     }
 
     /**
@@ -133,6 +152,25 @@ class MerchController extends Controller
     public function update(Request $request, Merch $merch)
     {
         //
+        $validData = $request->validate([
+            'name' => 'required',
+            'description' => 'required',
+            'price' => 'required',
+            'stock' => 'required',
+        ]);
+
+        if ($request->file('image')) {
+            if ($request->old_image) {
+                Storage::delete($request->old_image);
+            }
+            $validData['image'] = $request->file('image')->storePublicly('merch_images', 'public');
+        }
+
+        dd($validData);
+
+        $merch->update($validData);
+
+        return redirect('/merch/admin/'.$merch->id.'/edit')->with('success', 'Merch Details Updated');
     }
 
     /**

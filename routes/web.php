@@ -12,6 +12,7 @@ use App\Http\Controllers\TicketController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TeamDataController;
 use App\Http\Controllers\VocController;
+use Illuminate\Support\Facades\Artisan;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,13 +25,13 @@ use App\Http\Controllers\VocController;
 |
 */
 
-Route::get('/', function () {
+Route::get('/2023', function () {
     return view('Home.index');
 });
 
-// Route::get('/voc', function () {
-//     return view('VOC.index');
-// });
+Route::get('/', function(){
+    return view('Home.soon');
+});
 
 Route::controller(LoginController::class)->group(function () {
     Route::get('/login', 'index')->name('login');
@@ -131,6 +132,10 @@ Route::get('/doorprize', function(){
 //     return view('Rac.index');
 // });
 
-Route::get('/{any}', function () {
-    return redirect('/');
-})->where('any', '.*');
+// Route::get('/{any}', function () {
+//     return redirect('/');
+// })->where('any', '.*');
+
+Route::get('/linkstorage', function () {
+    Artisan::call('storage:link');
+});

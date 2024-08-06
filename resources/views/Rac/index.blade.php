@@ -42,11 +42,11 @@
         <h4 class="font-taruno2 text-3xl text-white text-center mt-12 mb-8">RADIO ANNOUNCING COMPETITION</h4>
         <div class="px-8 md:px-20 lg:px-48">
             <p class="lg:px-44 font-pathway text-lg text-white text-justify ">Radio Announcing Competition merupakan
-                rangkaian acara utama RADIOACTIVE. Lomba ini merupa kan ajang untuk siswa SMA dan mahasiswa
-                se-Jabodetabek untuk memperluas wawasan dan men- gasah kemampuan di dunia broadcasting Radio Announcing
+                rangkaian acara utama RADIOACTIVE. Lomba ini merupakan ajang untuk siswa SMA dan mahasiswa
+                se-Jabodetabek untuk memperluas wawasan dan mengasah kemampuan di dunia broadcasting Radio Announcing
                 Competition ini memiliki konsep yang sesuai dengan nilai utama RADIOACTIVE 2023, yaitu get out from
                 comfort zone. Tujuan dari lomba ini adalah untuk mengasah kreativitas peserta dalam membuat siaran dan
-                secara tidak langsung mem- berikan informasi hingga mengajak para peserta untuk keluar dari zona nyaman
+                secara tidak langsung memberikan informasi hingga mengajak para peserta untuk keluar dari zona nyaman
                 mereka.
             </p>
         </div>
@@ -66,14 +66,34 @@
         </div>
     </div>
 
-    <div id="timeline" class="hidden md:flex flex-col justify-center items-center my-32 mb-28" data-aos="fade-up">
+    {{-- <div id="timeline" class="hidden md:flex flex-col justify-center items-center my-32 mb-28" data-aos="fade-up">
         <img class="md:h-96 sm:h-0 px-2 max-w-[90%] object-contain" src="/images/TIMELINE RAC.png" alt="" />
     </div>
 
     <div id="timelineHP" class="flex flex-col justify-center items-center my-32 mb-28 md:hidden" data-aos="fade-up">
         <img class="w-80 sm:w-[60%] sm:min-w-40 px-2" src="/images/TIMELINE RAC HP.png" alt="" />
-    </div>
+    </div> --}}
 
+    <div id="timeline" class="my-20 mx-auto max-w-[34.15em]">
+        <div id="checkpoint checkpoint-odd" class="border-l-3 border-white pl-12 translate-x-[17em]">
+            <div>
+                <h2 class="mb-2">Date 1 : Pendaftaran</h2>
+                <p class="leading-[27px] text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam atque sit tenetur commodi vel illo amet natus, corporis, facilis magni voluptate quibusdam quis ducimus ipsum ullam itaque labore voluptatibus! Reprehenderit!</p>
+            </div>
+        </div>
+        <div id="checkpoint checkpoint-even" class="border-l-3 border-white pl-12 translate-x-[17em]">
+            <div>
+                <h2 class="mb-2">Date 2 : Seleksi</h2>
+                <p class="leading-[27px] text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam atque sit tenetur commodi vel illo amet natus, corporis, facilis magni voluptate quibusdam quis ducimus ipsum ullam itaque labore voluptatibus! Reprehenderit!</p>
+            </div>
+        </div>
+        <div class="checkpoint checkpoint-odd">
+            <div>
+                <h2 class="mb-2">Date 3 : Pemberitahuan Hasil Seleksi</h2>
+                <p class="leading-[27px] text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam atque sit tenetur commodi vel illo amet natus, corporis, facilis magni voluptate quibusdam quis ducimus ipsum ullam itaque labore voluptatibus! Reprehenderit!</p>
+            </div>
+        </div>
+    </div>
 
 
     <footer class="bg-gradient-to-b from-transparent to-[#0E0EC0] pt-56 pb-16">

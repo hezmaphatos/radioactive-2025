@@ -27,6 +27,9 @@ export default {
             objectPosition: {
                 "center-bottom": "center bottom",
             },
+            screens: {
+                'm-s': '1000px',
+            },
         },
     },
     plugins: [require("daisyui")],

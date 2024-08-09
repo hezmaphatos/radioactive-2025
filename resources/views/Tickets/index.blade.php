@@ -490,8 +490,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
     <script>
         var today = new Date();
-        var presaleStartTime = new Date('2023-10-01');
-        var presaleEndTime = new Date('2023-11-18T00:00:00+07:00');
+        var presaleStartTime = new Date('2024-10-01');
+        var presaleEndTime = new Date('2024-11-18T00:00:00+07:00');
 
         var earlySold = 0; //ger help!
 

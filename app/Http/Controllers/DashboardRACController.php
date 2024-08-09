@@ -11,10 +11,54 @@ class DashboardRACController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
+        $racs = rac::latest();
+        
+        if ($request->has('search')) {
+            $search = $request->input('search');
+            
+            $racs->where(function($query) use ($search) {
+                $query->where('tim1_penyiar1', 'like', '%' . $search . '%')
+                      ->orWhere('tim1_penyiar2', 'like', '%' . $search . '%')
+                      ->orWhere('tim1_operator', 'like', '%' . $search . '%')
+                      ->orWhere('tim1_institusi', 'like', '%' . $search . '%')
+                      ->orWhere('tim1_nims1', 'like', '%' . $search . '%')
+                      ->orWhere('tim1_nims2', 'like', '%' . $search . '%')
+                      ->orWhere('tim1_nimop', 'like', '%' . $search . '%')
+                      ->orWhere('tim1_contact_wa', 'like', '%' . $search . '%')
+                      ->orWhere('tim1_contact_line', 'like', '%' . $search . '%')
+                      ->orWhere('tim1_nama', 'like', '%' . $search . '%')
+                      ->orWhere('tim1_email', 'like', '%' . $search . '%')
+                      ->orWhere('tim2_penyiar1', 'like', '%' . $search . '%')
+                      ->orWhere('tim2_penyiar2', 'like', '%' . $search . '%')
+                      ->orWhere('tim2_operator', 'like', '%' . $search . '%')
+                      ->orWhere('tim2_institusi', 'like', '%' . $search . '%')
+                      ->orWhere('tim2_nims1', 'like', '%' . $search . '%')
+                      ->orWhere('tim2_nims2', 'like', '%' . $search . '%')
+                      ->orWhere('tim2_nimop', 'like', '%' . $search . '%')
+                      ->orWhere('tim2_contact_wa', 'like', '%' . $search . '%')
+                      ->orWhere('tim2_contact_line', 'like', '%' . $search . '%')
+                      ->orWhere('tim2_nama', 'like', '%' . $search . '%')
+                      ->orWhere('tim2_email', 'like', '%' . $search . '%')
+                      ->orWhere('tim3_penyiar1', 'like', '%' . $search . '%')
+                      ->orWhere('tim3_penyiar2', 'like', '%' . $search . '%')
+                      ->orWhere('tim3_operator', 'like', '%' . $search . '%')
+                      ->orWhere('tim3_institusi', 'like', '%' . $search . '%')
+                      ->orWhere('tim3_nims1', 'like', '%' . $search . '%')
+                      ->orWhere('tim3_nims2', 'like', '%' . $search . '%')
+                      ->orWhere('tim3_nimop', 'like', '%' . $search . '%')
+                      ->orWhere('tim3_contact_wa', 'like', '%' . $search . '%')
+                      ->orWhere('tim3_contact_line', 'like', '%' . $search . '%')
+                      ->orWhere('tim3_nama', 'like', '%' . $search . '%')
+                      ->orWhere('tim3_email', 'like', '%' . $search . '%');
+            });
+        }
+
+        $racs = $racs->paginate(5)->withQueryString();
+
         return view('Dashboard.RAC.index', [
-            'racs' => rac::all()
+            'racs' => $racs
         ]);
     }
 

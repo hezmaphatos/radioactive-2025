@@ -26,7 +26,9 @@ use Illuminate\Support\Facades\Artisan;
 */
 
 Route::get('/2023', function () {
-    return view('Home.index');
+    return view('Home.index', [
+        "title" => "Home"
+    ]);
 });
 
 Route::get('/', function(){
@@ -47,6 +49,12 @@ Route::get('/logout', function (Request $request) {
     $request->session()->regenerateToken();
 
     return redirect('/');
+});
+
+Route::get('/mac', function () {
+    return view('Mac.mac', [
+        "title" => "MAC"
+    ]);
 });
 
 Route::controller(OrderController::class)->group(function () {

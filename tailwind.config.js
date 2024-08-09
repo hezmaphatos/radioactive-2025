@@ -11,6 +11,7 @@ export default {
                 pathway: ["Pathway Extreme"],
                 taruno: ["Taruno Wide"],
                 taruno2: ["Taruno Wide Outline"],
+                ltmuseum: ['LT Museum'],
                 brodyrawk: ["Brody Rawk"],
                 'ltmuseum-bold': ['LTMuseum-Bold', 'sans-serif'],
                 'ltmuseum-bolditalic': ['LTMuseum-BoldItalic', 'sans-serif'],

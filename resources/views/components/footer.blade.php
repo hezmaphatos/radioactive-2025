@@ -76,9 +76,8 @@
                 class="text-sm font-ltmuseum text-white no-underline hover:underline hover:underline-offset-8 hover:decoration-[#D61525] cursor-pointer">
                     CLOSING NIGHT
             </a>
-            <a href="https://merch.umnradioactive.com/"
-                class="text-sm font-ltmuseum text-white no-underline hover:underline hover:underline-offset-8 hover:decoration-[#D61525] cursor-pointer">
-                    MERCHANDISE
+            <a href="/merch" class="text-sm font-ltmuseum text-white no-underline hover:underline hover:underline-offset-8 hover:decoration-[#D61525] cursor-pointer">
+                MERCHANDISE
             </a>
         </div>
         
@@ -109,7 +108,7 @@
                 class="text-sm font-ltmuseum text-white no-underline hover:underline hover:underline-offset-4 hover:decoration-[#D61525] cursor-pointer">
                     CLOSING NIGHT
             </a>
-            <a href="https://merch.umnradioactive.com/"
+            <a href="/merch"
                 class="text-sm font-ltmuseum text-white no-underline hover:underline hover:underline-offset-4 hover:decoration-[#D61525] cursor-pointer">
                     MERCHANDISE
             </a>

@@ -126,19 +126,5 @@
         AOS.init();
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
-    <script>
-        window.addEventListener('scroll', function() {
-            var header = document.getElementById('header');
-            if (window.scrollY > 0) {
-                header.classList.remove('bg-transparent');
-                header.classList.add('bg-[#0E0EC0]');
-            } else {
-                header.classList.add('bg-transparent');
-                header.classList.remove('bg-[#0E0EC0]');
-            }
-        });
-    </script>
 </body>
-
-</html>
 @endsection

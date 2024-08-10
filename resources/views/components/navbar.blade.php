@@ -32,7 +32,7 @@
         <a class="menu-item font-ltmuseum text-white text-sm no-underline hover:underline hover:underline-offset-8 hover:decoration-[#D61525] cursor-pointer active:decoration-[#d6152581]"
             href="/closing-night">CLOSING
             NIGHT</a>
-        <a class="menu-item font-ltmuseum text-white text-sm no-underline hover:underline hover:underline-offset-8 hover:decoration-[#D61525] cursor-pointer active:decoration-[#d6152581]" href="https://merch.umnradioactive.com/">MERCHANDISE</a>
+        <a class="menu-item font-ltmuseum text-white text-sm no-underline hover:underline hover:underline-offset-8 hover:decoration-[#D61525] cursor-pointer active:decoration-[#d6152581]" href="/merch">MERCHANDISE</a>
             <div class="absolute right-2">
                 @auth
                 <div id="dropdownButton" class="relative select-none">
@@ -71,7 +71,7 @@
                     href="/closing-night">CLOSING
                     NIGHT</a>
                 <a class="font-ltmuseum text-white text-sm tracking-wide no-underline hover:underline hover:underline-offset-8 hover:decoration-black cursor-pointer active:decoration-[#0000002d]"
-                    href="https://merch.umnradioactive.com/">MERCHANDISE</a>
+                    href="/merch">MERCHANDISE</a>
                 @auth
                 <a class="font-ltmuseum text-white text-sm tracking-wide no-underline hover:underline hover:underline-offset-8 hover:decoration-black cursor-pointer active:decoration-[#0000002d]"
                 href="/logout">LOG OUT</a>

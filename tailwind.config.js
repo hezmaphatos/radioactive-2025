@@ -32,6 +32,7 @@ export default {
             },
             screens: {
                 "m-s": "1000px",
+            },
             colors: {
                 white: "#FFFFFF",
                 body: "#64748B",
@@ -142,6 +143,6 @@ export default {
                 "card-2": "0px 1px 2px rgba(0, 0, 0, 0.05)",
             },
         },
-    }
+    },
     plugins: [require("daisyui")],
 };

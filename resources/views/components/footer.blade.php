@@ -54,8 +54,6 @@
             </div>
     </div>
 
-
-
     <div class=" flex justify-between items-center border-t border-red-300">
         <div class=" ml-6">
             <img src="/images/LOGO RADIOACTIVE 2024 png.png" alt="" class="w-28">
@@ -66,8 +64,8 @@
                 class="text-sm font-ltmuseum text-white underline underline-offset-8 decoration-[#D61525] cursor-pointer">
                     HOME
             </a>
-            <a href="/voc" class="  text-sm font-ltmuseum text-white no-underline hover:underline hover:underline-offset-8 hover:decoration-[#D61525] cursor-pointer"
-            >VO CHALLENGE
+            <a href="/mac" class="  text-sm font-ltmuseum text-white no-underline hover:underline hover:underline-offset-8 hover:decoration-[#D61525] cursor-pointer"
+            >MAC
             </a>
             
             <a href="/rac"
@@ -90,8 +88,6 @@
     </div>
     </div>
 
-
-
 <div class="mobile-footer md:hidden pt-14">
     <div class="">
         <div class="flex justify-center mt-4">
@@ -102,10 +98,9 @@
                 class="text-sm font-ltmuseum text-white underline underline-offset-4 decoration-[#D61525] cursor-pointer">
                     HOME
             </a>
-            <a href="/voc" class="  text-sm font-ltmuseum text-white no-underline hover:underline hover:underline-offset-4 hover:decoration-[#D61525] cursor-pointer"
-            >VO CHALLENGE
+            <a href="/mac" class="  text-sm font-ltmuseum text-white no-underline hover:underline hover:underline-offset-4 hover:decoration-[#D61525] cursor-pointer"
+            >MAC
             </a>
-            
             <a href="/rac"
                 class="text-sm font-ltmuseum text-white no-underline hover:underline hover:underline-offset-4 hover:decoration-[#D61525] cursor-pointer">
                     RAC
@@ -182,8 +177,6 @@
                 <p class="pb-1 flex justify-center text-xs font-ltmuseum tracking-[0.4em] text-[#D61525] pt-2 border-t border-red-300"
                 >&copy;UMN RADIOACTIVE 2024</p>
             </div>
-
     </div>
-
 </div>
 </footer>

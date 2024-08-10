@@ -113,18 +113,17 @@
             </div> -->
         </div>
         @endforeach
-        <div id="shopping-cart" class="w-full fixed bottom-5 right-5 flex justify-end">
+        <div id="shopping-cart" class="fixed bottom-5 right-5 flex justify-end">
             <div
                 class="rounded-full bg-white w-[60px] h-[60px] flex justify-center items-center cursor-pointer transform transition duration-500 hover:scale-110">
                 <i class="fas fa-shopping-cart fa-xl" style="color: black;"></i>
             </div>
         </div>
     </div>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
 </body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
 @endsection

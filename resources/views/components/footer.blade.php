@@ -1,4 +1,4 @@
-<footer class=" pt-8">
+<footer class="pt-8">
     <div class="hidden md:block">
     <div class="hidden md:flex justify-between">
         <div class="">
@@ -76,9 +76,10 @@
                 class="text-sm font-ltmuseum text-white no-underline hover:underline hover:underline-offset-8 hover:decoration-[#D61525] cursor-pointer">
                     CLOSING NIGHT
             </a>
-            <a href="/merch" class="text-sm font-ltmuseum text-white no-underline hover:underline hover:underline-offset-8 hover:decoration-[#D61525] cursor-pointer">
+            <a href="/merch"
+            class="text-sm font-ltmuseum text-white no-underline hover:underline hover:underline-offset-8 hover:decoration-[#D61525] cursor-pointer">
                 MERCHANDISE
-            </a>
+        </a>
         </div>
         
         <div class=" flex mr-10">

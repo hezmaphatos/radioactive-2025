@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,4 +25,88 @@
 @yield('container')
 
 @include('components.footer')
+<script>
+    window.addEventListener('scroll', function() {
+        var header = document.getElementById('header');
+        if (window.scrollY > 0) {
+            header.classList.remove('bg-transparent', 'border-transparent');
+            header.classList.add('bg-[#D61525]', 'border');
+        } else {
+            header.classList.add('bg-transparent', 'border-transparent' );
+            header.classList.remove('bg-[#D61525]');
+        }
+    });
+</script>
+<script>
+    window.addEventListener('scroll', function() {
+        var item = document.getElementById('homeItem');
+        if (window.scrollY > 0) {
+            item.classList.remove('decoration-[#D61525]');
+            item.classList.add('decoration-black');
+        } else {
+            item.classList.add('decoration-[#D61525]');
+            item.classList.remove('decoration-black');
+        }
+    });
+</script>
+<script>
+   window.addEventListener('scroll', function() {
+        var menuItems = document.querySelectorAll('.login-item');
+        menuItems.forEach(function(menuItem) {
+        if (window.scrollY > 0) {
+            menuItem.classList.remove('hover:ring-1', 'hover:ring-white', 'ring-[#D61525]');
+            menuItem.classList.add('ring-1', 'ring-black', 'hover:ring-2');
+        } else {    
+            menuItem.classList.add('hover:ring-1', 'hover:ring-white', 'ring-[#D61525]'); 
+            menuItem.classList.remove('ring-1', 'ring-black', 'hover:ring-2');
+        }
+    });
+    });
+</script>
+<script>
+    window.addEventListener('scroll', function() {
+        var svgIcon = document.getElementById('fill');
+        if (window.scrollY > 0) {
+            svgIcon.setAttribute('fill', 'black');
+        } else {
+            svgIcon.setAttribute('fill', '#D61525');
+        }
+    });
+</script>
+<script>
+   window.addEventListener('scroll', function() {
+        var menuItems = document.querySelectorAll('.menu-item');
+        menuItems.forEach(function(menuItem) {
+        if (window.scrollY > 0) {
+            menuItem.classList.remove('hover:decoration-[#D61525]');
+            menuItem.classList.add('hover:decoration-black');
+        } else {
+            menuItem.classList.add('hover:decoration-[#D61525]');
+            menuItem.classList.remove('hover:decoration-black');
+        }
+    });
+    });
+</script>
+<script>
+function toggleDropdown() {
+    let dropdown = document.querySelector('#dropdownButton #dropdown');
+    dropdown.classList.toggle("hidden");
+}
+
+window.addEventListener('click', function (e) {
+    const dropdown = document.querySelector('#dropdown');
+    const dropdownButton = document.querySelector('#dropdownButton');
+    const fill = document.querySelector('#fill');
+    if (!dropdownButton.contains(e.target)) {
+        dropdown.classList.add('hidden');
+        fill.classList.toggle('rotate-180');
+    }
+});
+
+const fill = document.querySelector('#fill');
+    fill.addEventListener('click', () => {
+    fill.classList.toggle('transform');
+    fill.classList.toggle('rotate-180');
+  });
+</script>
 </html>

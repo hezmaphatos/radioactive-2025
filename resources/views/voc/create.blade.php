@@ -18,13 +18,7 @@
 
 </head>
 
-<body class="antialiased">
-    <div>
-        <video autoplay loop muted
-            class="fixed -z-10 w-auto lg:w-full md:min-w-full md:min-h-full max-w-fit object-cover" loading="lazy">
-            <source src="/images/BACKGROUND_DESKTOP.webm" type="video/webm">
-        </video>
-    </div>
+<body class="antialiased bg-black">
     <div id="header" x-data="{ isOpen: false }"
         class="fixed navbar bg-[#0E0EC0] justify-center gap-16 z-40 transition-all duration-700">
         <div class="flex items-center justify-between">
@@ -70,20 +64,18 @@
             </div>
         </div>
     </div>
-    <div class="font-taruno font-bold text-lg md:text-3xl text-white flex justify-center text-center pt-24 mx-4">
+    <div class="font-ltmuseumbold font-bold text-3xl md:text-4xl text-white flex justify-center text-center pt-24 mx-12 md:mx-24">
         Thank you Revends for joining Voice Over Challenge! The winner will be announced on October 7th 2023
     </div>
     <div id="section-1" class="max-w-4xl mx-auto">
         <div class="relative flex flex-col items-center" data-aos="fade-up">
-            <img class="object-cover -mt-4 md:-mt-28 z-0" src="../images/BACKGROUND LOGO.webp" alt="background logo" />
-            <video autoplay loop muted class="object-cover -mt-4 md:-mt-0 z-30 w-[640px] absolute"
-                src="../images/logo.webm" alt="logo" loading="lazy" />
+            <img class="object-cover mt-4 md:mt-16 z-0" src="../images/logo2024.png" alt="background logo" />
         </div>
     </div>
-    <div class="font-taruno2 text-lg md:text-3xl text-white flex justify-center text-center pt-24 mb-6 mx-4 hidden">
+    <div class="font-ltmuseumbold text-3xl md:text-4xl text-white flex justify-center text-center pt-24 mb-6 mx-4">
         FORM PENGUMPULAN VOC
     </div>
-    <form action="/voc/store" class="pb-24 hidden" enctype="multipart/form-data" method="post">
+    <form action="/voc/store" class="pb-24" enctype="multipart/form-data" method="post">
         <div class="flex justify-center align-middle form-container">
             <div class="flex flex-col w-[400px] max-w-[95vw]">
                 @if (session()->has('success'))
@@ -94,13 +86,13 @@
                         <p>Pengumpulan Berhasil, Terimakasih Revends!</p>
                     </div>
                 @endif
-                <div class="w-full form-content shadow-md  px-8 py-3 mb-10 font-pathway shadow-[#FFF000]">
-                    <div class="w-full font-taruno text-md md:text-lg text-white text-center">Data VOC</div>
+                <div class="w-full form-content shadow-md  px-8 py-3 mb-10 font-pathway shadow-[#D61625]">
+                    <div class="w-full font-ltmuseumreg text-xl md:text-2xl text-white text-center">Data VOC</div>
                     @csrf
                     <div>
                         <div class="mb-1">
                             <label class="block form-label text-sm mb-0" for="">
-                                <span class="">Nama Lengkap</span>
+                                <span class="font-ltmuseumreg">Nama Lengkap</span>
                             </label>
                             <div>
                                 <input
@@ -114,7 +106,7 @@
                         </div>
                         <div class="mb-1">
                             <div>
-                                <label class="block form-label text-sm mb-0" for="">Usia</label>
+                                <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">Usia</label>
                             </div>
                             <div>
                                 <input
@@ -128,7 +120,7 @@
                         </div>
                         <div class="mb-1">
                             <div>
-                                <label class="block form-label text-sm mb-0" for="">Nomor Telepon/WA</label>
+                                <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">Nomor Telepon/WA</label>
                             </div>
                             <div>
                                 <input
@@ -144,7 +136,7 @@
 
                     <div class="mb-1">
                         <div>
-                            <label class="block form-label text-sm mb-0" for="">Institusi/Organisasi
+                            <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">Institusi/Organisasi
                                 Asal</label>
                         </div>
                         <div>
@@ -161,7 +153,7 @@
                     <div>
                         <div class="mb-1">
                             <div>
-                                <label class="block form-label text-sm mb-0" for="">NIM</label>
+                                <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">NIM</label>
                             </div>
                             <div>
                                 <input
@@ -175,7 +167,7 @@
                         </div>
                         <div class="mb-1">
                             <div>
-                                <label class="block form-label text-sm mb-0" for="">E-mail</label>
+                                <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">E-mail</label>
                             </div>
                             <div>
                                 <input
@@ -188,7 +180,7 @@
                         </div>
                         <div class="mb-1">
                             <div>
-                                <label class="block form-label text-sm mb-0" for="">Username Tiktok</label>
+                                <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">Username Tiktok</label>
                             </div>
                             <div>
                                 <input
@@ -205,7 +197,7 @@
                     <div>
                         <div class="mb-1">
                             <div>
-                                <label class="block form-label text-sm mb-0" for="">Link Video VOC</label>
+                                <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">Link Video VOC</label>
                             </div>
                             <div>
                                 <input
@@ -220,7 +212,7 @@
                     </div>
 
                     <div class="mt-4">
-                        <button class="button-submit font-taruno text-white bg-[#0E0EC0] w-full text-sm px-5 py-1"
+                        <button class="button-submit font-ltmuseumreg text-white bg-[#D61625] w-full text-xl md:text-2xl px-5 py-1"
                             type="submit" onclick="return confirm('Pastikan data yang dimasukkan benar adanya')">
                             Daftar
                         </button>
@@ -252,7 +244,7 @@
     }
 
     .form-input:focus {
-        border-bottom: solid 4px #FFF000;
+        border-bottom: solid 4px #D61625;
     }
 
     .button-submit {

@@ -12,6 +12,7 @@ use App\Http\Controllers\TicketController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TeamDataController;
 use App\Http\Controllers\VocController;
+use Illuminate\Support\Facades\Artisan;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,18 +25,26 @@ use App\Http\Controllers\VocController;
 |
 */
 
-Route::get('/', function () {
-    return view('Home.index');
+Route::get('/2023', function () {
+    return view('Home.index', [
+        "title" => "Home"
+    ]);
 });
 
-// Route::get('/voc', function () {
-//     return view('VOC.index');
-// });
+Route::get('/', function(){
+    return view('Home.soon');
+});
+
+Route::get('/mac', function () {
+    return view('Mac.mac');
+});
 
 Route::controller(LoginController::class)->group(function () {
     Route::get('/login', 'index')->name('login');
     Route::post('/login', 'authenticate');
-    
+
+    Route::get('/signup', 'signup_view');
+    Route::post('/signup', 'signup');
 });
 
 Route::get('/logout', function (Request $request) {
@@ -46,6 +55,12 @@ Route::get('/logout', function (Request $request) {
     $request->session()->regenerateToken();
 
     return redirect('/');
+});
+
+Route::get('/mac', function () {
+    return view('Mac.mac', [
+        "title" => "MAC"
+    ]);
 });
 
 Route::controller(OrderController::class)->group(function () {
@@ -129,6 +144,10 @@ Route::get('/doorprize', function(){
 //     return view('Rac.index');
 // });
 
-Route::get('/{any}', function () {
-    return redirect('/');
-})->where('any', '.*');
+// Route::get('/{any}', function () {
+//     return redirect('/');
+// })->where('any', '.*');
+
+Route::get('/linkstorage', function () {
+    Artisan::call('storage:link');
+});

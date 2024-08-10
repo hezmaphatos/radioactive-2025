@@ -35,6 +35,10 @@ Route::get('/', function(){
     return view('Home.soon');
 });
 
+Route::get('/mac', function () {
+    return view('Mac.mac');
+});
+
 Route::controller(LoginController::class)->group(function () {
     Route::get('/login', 'index')->name('login');
     Route::post('/login', 'authenticate');

@@ -66,15 +66,15 @@
             </div>
         </div>
     </div>
-    <div class="font-taruno2 text-lg md:text-3xl text-white flex justify-center text-center mb-6 pt-20">
+    <div class="font-ltmuseumbold text-3xl md:text-4xl text-white flex justify-center text-center mb-6 pt-20">
         FORM PENDAFTARAN RAC
     </div>
     @if ($amount == 1)
         <form action="/rac/store" class="pb-24" enctype="multipart/form-data" method="post">
             <div class="flex justify-center align-middle form-container">
                 <div class="flex flex-col w-[400px] max-w-[95vw]">
-                    <div class="w-full form-content shadow-md  px-8 py-3 mb-10 font-pathway shadow-[#FFF000]">
-                        <div class="w-full font-taruno text-md md:text-lg text-white text-center">Data Tim</div>
+                    <div class="w-full form-content shadow-md  px-8 py-3 mb-10 font-pathway shadow-[#D61625]">
+                        <div class="w-full font-ltmuseumreg text-xl md:text-2xl text-white text-center">Data Tim</div>
                         @csrf
                         @if (session()->has('success'))
                             <div class="text-sm text-green-500" role="alert">{{ session('success') }}</div>
@@ -82,7 +82,7 @@
                         <div>
                             <div class="mb-1">
                                 <label class="block form-label text-sm mb-0" for="">
-                                    <span class="">Nama Tim</span>
+                                    <span class="font-ltmuseumreg">Nama Tim</span>
                                 </label>
                                 <div>
                                     <input required
@@ -96,7 +96,7 @@
                             </div>
                             <div class="mb-1">
                                 <label class="block form-label text-sm mb-0" for="">
-                                    <span class="">Penyiar 1</span>
+                                    <span class="font-ltmuseumreg">Penyiar 1</span>
                                 </label>
                                 <div>
                                     <input required
@@ -110,7 +110,7 @@
                             </div>
                             <div class="mb-1">
                                 <div>
-                                    <label class="block form-label text-sm mb-0" for="">Penyiar
+                                    <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">Penyiar
                                         2</label>
                                 </div>
                                 <div>
@@ -125,7 +125,7 @@
                             </div>
                             <div class="mb-1">
                                 <div>
-                                    <label class="block form-label text-sm mb-0" for="">Operator</label>
+                                    <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">Operator</label>
                                 </div>
                                 <div>
                                     <input required
@@ -141,7 +141,7 @@
 
                         <div class="mb-1">
                             <div>
-                                <label class="block form-label text-sm mb-0" for="">Institusi/Organisasi
+                                <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">Institusi/Organisasi
                                     Asal</label>
                             </div>
                             <div>
@@ -158,7 +158,7 @@
                         <div>
                             <div class="mb-1">
                                 <div>
-                                    <label class="block form-label text-sm mb-0" for="">NIM
+                                    <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">NIM
                                         Penyiar
                                         1</label>
                                 </div>
@@ -174,7 +174,7 @@
                             </div>
                             <div class="mb-1">
                                 <div>
-                                    <label class="block form-label text-sm mb-0" for="">NIM
+                                    <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">NIM
                                         Penyiar
                                         2</label>
                                 </div>
@@ -190,7 +190,7 @@
                             </div>
                             <div class="mb-1">
                                 <div>
-                                    <label class="block form-label text-sm mb-0" for="">NIM
+                                    <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">NIM
                                         Operator</label>
                                 </div>
                                 <div>
@@ -208,13 +208,13 @@
                         <div>
                             <div class="mb-1">
                                 <div>
-                                    <label class="block form-label text-sm mb-0" for="">Nomor WA
+                                    <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">Nomor WA
                                         Perwakilan</label>
                                 </div>
                                 <div>
                                     <input required
-                                        class="block @error('tim1_contact_wa') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
-                                        type="number" placeholder="" name="tim1_contact_wa"
+                                        class="block @error('tim1_contact_wa') border-red-500 @enderror shadow appearance-none border w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
+                                        type="number" placeholder="Nomor WA Perwakilan" name="tim1_contact_wa"
                                         value="{{ old('tim1_contact_wa') }}">
                                     @error('tim1_contact_wa')
                                         <div class="text-sm text-red-600">{{ $message }}</div>
@@ -223,13 +223,13 @@
                             </div>
                             <div class="mb-1">
                                 <div>
-                                    <label class="block form-label text-sm mb-0" for="">ID Line
+                                    <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">ID Line
                                         Perwakilan</label>
                                 </div>
                                 <div>
                                     <input required
                                         class="block @error('tim1_contact_line') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
-                                        type="text" placeholder="" name="tim1_contact_line"
+                                        type="text" placeholder="ID Line Perwakilan" name="tim1_contact_line"
                                         value="{{ old('tim1_contact_line') }}">
                                     @error('tim1_contact_line')
                                         <div class="text-sm text-red-600">{{ $message }}</div>
@@ -238,12 +238,12 @@
                             </div>
                             <div class="mb-1">
                                 <div>
-                                    <label class="block form-label text-sm mb-0" for="">Email</label>
+                                    <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">Email</label>
                                 </div>
                                 <div>
                                     <input required
                                         class="block @error('tim1_email') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
-                                        type="email" placeholder="" name="tim1_email"
+                                        type="email" placeholder="Email" name="tim1_email"
                                         value="{{ old('tim1_email') }}">
                                     @error('tim1_email')
                                         <div class="text-sm text-red-600">{{ $message }}</div>
@@ -252,15 +252,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-full form-content shadow-md  px-8 py-3 mb-4 font-pathway shadow-[#FFF000]">
+                    <div class="w-full form-content shadow-md px-8 py-3 mb-4 font-pathway shadow-[#D61625]">
                         <div class="mb-1">
                             <div>
                                 <label
-                                    class="block font-taruno text-center text-md md:text-lg text- form-label text-sm mb-0"
+                                    class="block font-ltmuseumreg text-center text-xl md:text-2xl form-label mb-0"
                                     for="">Bukti Pembayaran</label>
                             </div>
                             <div>
-                                <h6 class="text-sm">Pembayaran sebesar Rp 125.000,~ ke BCA 8831917474 a/n RAUDHAH SALSABILA SURBAKTI</h6>
+                                <h6 class="text-lg font-ltmuseumreg">Pembayaran sebesar Rp 125.000,~ ke BCA 8831917474 a/n RAUDHAH SALSABILA SURBAKTI</h6>
                             </div>
                             <div>
                                 <input required
@@ -273,7 +273,7 @@
                         </div>
 
                         <div class="">
-                            <button class="button-submit font-taruno text-white bg-[#0E0EC0] w-full text-sm px-5 py-1"
+                            <button class="button-submit font-ltmuseumbold text-white bg-[#D61625] w-full text-xl md:text-2xl px-5 py-1"
                                 type="submit" onclick="return confirm('Pastikan data yang dimasukkan benar adanya')">
                                 Daftar
                             </button>
@@ -285,21 +285,21 @@
     @elseif($amount == 2)
         <form action="/rac/store" class="pb-24" enctype="multipart/form-data" method="post">
             <div class="flex justify-center align-middle form-container">
-                <div class="flex flex-col w-[800px] max-w-[95vw]">
+                <div class="flex flex-col w-[400px] max-w-[95vw]">
                     <div
-                        class="flex justify-center flex-wrap w-full form-content shadow-md py-3 mb-10 font-pathway shadow-[#FFF000]">
-                        <div class="w-full font-taruno text-md md:text-lg text-white text-center">Data Tim</div>
+                        class="flex justify-center flex-wrap w-full form-content shadow-md px-8 py-3 mb-10 font-pathway shadow-[#D61625]">
+                        <div class="w-full font-ltmuseumreg text-xl md:text-2xl text-white text-center">Data Tim</div>
                         @csrf
                         @if (session()->has('success'))
                             <div class="text-sm text-green-500" role="alert">{{ session('success') }}</div>
                         @endif
 
                         <div class="min-w-2/5 w-[340px] my-1 mx-4">
-                            <div class="font-taruno text-xl">TIM 1</div>
+                            <div class="font-ltmuseumreg text-xl md:text-2xl">TIM 1</div>
                             <div>
                                 <div class="mb-1">
                                     <label class="block form-label text-sm mb-0" for="">
-                                        <span class="">Nama Tim</span>
+                                        <span class="font-ltmuseumreg">Nama Tim</span>
                                     </label>
                                     <div>
                                         <input required
@@ -313,7 +313,7 @@
                                 </div>
                                 <div class="mb-1">
                                     <label class="block form-label text-sm mb-0" for="">
-                                        <span class="">Penyiar 1</span>
+                                        <span class="font-ltmuseumreg">Penyiar 1</span>
                                     </label>
                                     <div>
                                         <input required
@@ -327,7 +327,7 @@
                                 </div>
                                 <div class="mb-1">
                                     <div>
-                                        <label class="block form-label text-sm mb-0" for="">Penyiar
+                                        <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">Penyiar
                                             2</label>
                                     </div>
                                     <div>
@@ -342,7 +342,7 @@
                                 </div>
                                 <div class="mb-1">
                                     <div>
-                                        <label class="block form-label text-sm mb-0" for="">Operator</label>
+                                        <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">Operator</label>
                                     </div>
                                     <div>
                                         <input required
@@ -358,7 +358,7 @@
 
                             <div class="mb-1">
                                 <div>
-                                    <label class="block form-label text-sm mb-0" for="">Institusi/Organisasi
+                                    <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">Institusi/Organisasi
                                         Asal</label>
                                 </div>
                                 <div>
@@ -375,7 +375,7 @@
                             <div>
                                 <div class="mb-1">
                                     <div>
-                                        <label class="block form-label text-sm mb-0" for="">NIM
+                                        <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">NIM
                                             Penyiar
                                             1</label>
                                     </div>
@@ -391,7 +391,7 @@
                                 </div>
                                 <div class="mb-1">
                                     <div>
-                                        <label class="block form-label text-sm mb-0" for="">NIM
+                                        <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">NIM
                                             Penyiar
                                             2</label>
                                     </div>
@@ -407,7 +407,7 @@
                                 </div>
                                 <div class="mb-1">
                                     <div>
-                                        <label class="block form-label text-sm mb-0" for="">NIM
+                                        <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">NIM
                                             Operator</label>
                                     </div>
                                     <div>
@@ -425,13 +425,13 @@
                             <div>
                                 <div class="mb-1">
                                     <div>
-                                        <label class="block form-label text-sm mb-0" for="">Nomor WA
+                                        <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">Nomor WA
                                             Perwakilan</label>
                                     </div>
                                     <div>
                                         <input required
                                             class="block @error('tim1_contact_wa') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
-                                            type="number" placeholder="" name="tim1_contact_wa"
+                                            type="number" placeholder="Nomor WA Perwakilan" name="tim1_contact_wa"
                                             value="{{ old('tim1_contact_wa') }}">
                                         @error('tim1_contact_wa')
                                             <div class="text-sm text-red-600">{{ $message }}</div>
@@ -440,14 +440,14 @@
                                 </div>
                                 <div class="mb-1">
                                     <div>
-                                        <label class="block form-label text-sm mb-0" for="">ID
+                                        <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">ID
                                             Line
                                             Perwakilan</label>
                                     </div>
                                     <div>
                                         <input required
                                             class="block @error('tim1_contact_line') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
-                                            type="text" placeholder="" name="tim1_contact_line"
+                                            type="text" placeholder="ID Line Perwakilan" name="tim1_contact_line"
                                             value="{{ old('tim1_contact_line') }}">
                                         @error('tim1_contact_line')
                                             <div class="text-sm text-red-600">{{ $message }}</div>
@@ -456,12 +456,12 @@
                                 </div>
                                 <div class="mb-1">
                                     <div>
-                                        <label class="block form-label text-sm mb-0" for="">Email</label>
+                                        <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">Email</label>
                                     </div>
                                     <div>
                                         <input required
                                             class="block @error('tim1_email') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
-                                            type="email" placeholder="" name="tim1_email"
+                                            type="email" placeholder="Email" name="tim1_email"
                                             value="{{ old('tim1_email') }}">
                                         @error('tim1_email')
                                             <div class="text-sm text-red-600">{{ $message }}</div>
@@ -472,11 +472,11 @@
                         </div>
 
                         <div class="min-w-2/5 w-[340px] my-1 mx-4">
-                            <div class="font-taruno text-xl">TIM 2</div>
+                            <div class="font-ltmuseumreg text-xl md:text-2xl">TIM 2</div>
                             <div>
                                 <div class="mb-1">
                                     <label class="block form-label text-sm mb-0" for="">
-                                        <span class="">Nama Tim</span>
+                                        <span class="font-ltmuseumreg">Nama Tim</span>
                                     </label>
                                     <div>
                                         <input required
@@ -490,7 +490,7 @@
                                 </div>
                                 <div class="mb-1">
                                     <label class="block form-label text-sm mb-0" for="">
-                                        <span class="">Penyiar 1</span>
+                                        <span class="font-ltmuseumreg">Penyiar 1</span>
                                     </label>
                                     <div>
                                         <input required
@@ -504,7 +504,7 @@
                                 </div>
                                 <div class="mb-1">
                                     <div>
-                                        <label class="block form-label text-sm mb-0" for="">Penyiar
+                                        <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">Penyiar
                                             2</label>
                                     </div>
                                     <div>
@@ -519,7 +519,7 @@
                                 </div>
                                 <div class="mb-1">
                                     <div>
-                                        <label class="block form-label text-sm mb-0" for="">Operator</label>
+                                        <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">Operator</label>
                                     </div>
                                     <div>
                                         <input required
@@ -535,7 +535,7 @@
 
                             <div class="mb-1">
                                 <div>
-                                    <label class="block form-label text-sm mb-0" for="">Institusi/Organisasi
+                                    <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">Institusi/Organisasi
                                         Asal</label>
                                 </div>
                                 <div>
@@ -552,7 +552,7 @@
                             <div>
                                 <div class="mb-1">
                                     <div>
-                                        <label class="block form-label text-sm mb-0" for="">NIM
+                                        <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">NIM
                                             Penyiar
                                             1</label>
                                     </div>
@@ -568,7 +568,7 @@
                                 </div>
                                 <div class="mb-1">
                                     <div>
-                                        <label class="block form-label text-sm mb-0" for="">NIM
+                                        <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">NIM
                                             Penyiar
                                             2</label>
                                     </div>
@@ -584,7 +584,7 @@
                                 </div>
                                 <div class="mb-1">
                                     <div>
-                                        <label class="block form-label text-sm mb-0" for="">NIM
+                                        <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">NIM
                                             Operator</label>
                                     </div>
                                     <div>
@@ -602,13 +602,13 @@
                             <div>
                                 <div class="mb-1">
                                     <div>
-                                        <label class="block form-label text-sm mb-0" for="">Nomor WA
+                                        <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">Nomor WA
                                             Perwakilan</label>
                                     </div>
                                     <div>
                                         <input required
                                             class="block @error('tim2_contact_wa') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
-                                            type="number" placeholder="" name="tim2_contact_wa"
+                                            type="number" placeholder="Nomor WA Perwakilan" name="tim2_contact_wa"
                                             value="{{ old('tim2_contact_wa') }}">
                                         @error('tim2_contact_wa')
                                             <div class="text-sm text-red-600">{{ $message }}</div>
@@ -617,14 +617,14 @@
                                 </div>
                                 <div class="mb-1">
                                     <div>
-                                        <label class="block form-label text-sm mb-0" for="">ID
+                                        <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">ID
                                             Line
                                             Perwakilan</label>
                                     </div>
                                     <div>
                                         <input required
                                             class="block @error('tim2_contact_line') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
-                                            type="text" placeholder="" name="tim2_contact_line"
+                                            type="text" placeholder="ID Line Perwakilan" name="tim2_contact_line"
                                             value="{{ old('tim2_contact_line') }}">
                                         @error('tim2_contact_line')
                                             <div class="text-sm text-red-600">{{ $message }}</div>
@@ -633,12 +633,12 @@
                                 </div>
                                 <div class="mb-1">
                                     <div>
-                                        <label class="block form-label text-sm mb-0" for="">Email</label>
+                                        <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">Email</label>
                                     </div>
                                     <div>
                                         <input required
                                             class="block @error('tim2_email') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
-                                            type="email" placeholder="" name="tim2_email"
+                                            type="email" placeholder="Email" name="tim2_email"
                                             value="{{ old('tim2_email') }}">
                                         @error('tim2_email')
                                             <div class="text-sm text-red-600">{{ $message }}</div>
@@ -650,15 +650,15 @@
                     </div>
                     <div class="flex justify-center w-full">
                         <div
-                            class="w-1/2 min-w-[340px] my-1 form-content shadow-md  px-6 py-3 mb-4 font-pathway shadow-[#FFF000]">
+                            class="w-1/2 min-w-[340px] my-1 form-content shadow-md  px-6 py-3 mb-4 font-pathway shadow-[#D61625]">
                             <div class="mb-1">
                                 <div>
                                     <label
-                                        class="block font-taruno text-center text-md md:text-lg form-label text-sm mb-0"
+                                        class="block font-ltmuseumreg text-center text-xl md:text-2xl form-label mb-0"
                                         for="">Bukti Pembayaran</label>
                                 </div>
                                 <div>
-                                    <h6 class="text-sm">Pembayaran sebesar Rp 200.000,~ ke BCA 8831917474 a/n RAUDHAH SALSABILA SURBAKTI</h6>
+                                    <h6 class="text-lg font-ltmuseumreg">Pembayaran sebesar Rp 200.000,~ ke BCA 8831917474 a/n RAUDHAH SALSABILA SURBAKTI</h6>
                                 </div>
                                 <div>
                                     <input required
@@ -672,7 +672,7 @@
 
                             <div class="">
                                 <button
-                                    class="button-submit font-taruno text-white bg-[#0E0EC0] w-full text-sm px-5 py-1"
+                                    class="button-submit font-ltmuseumreg text-white bg-[#D61625] w-full text-xl md:text-2xl px-5 py-1"
                                     type="submit"
                                     onclick="return confirm('Pastikan data yang dimasukkan benar adanya')">
                                     Daftar
@@ -687,21 +687,21 @@
     @elseif($amount == 3)
         <form action="/rac/store" class="pb-24" enctype="multipart/form-data" method="post">
             <div class="flex justify-center align-middle form-container">
-                <div class="flex flex-col w-[1200px] max-w-[95vw]">
+                <div class="flex flex-col w-[400px] md:w-[1200px] max-w-[95vw]">
                     <div
-                        class="flex flex-row flex-wrap justify-center w-full form-content shadow-md  py-3 mb-10 font-pathway shadow-[#FFF000]">
-                        <div class="w-full font-taruno text-md md:text-lg text-white text-center">Data Tim</div>
+                        class="flex flex-row flex-wrap justify-center w-full form-content shadow-md px-8 py-3 mb-10 font-pathway shadow-[#D61625]">
+                        <div class="w-full font-ltmuseumreg text-xl md:text-2xl text-white text-center">Data Tim</div>
                         @csrf
                         @if (session()->has('success'))
                             <div class="text-sm text-green-500" role="alert">{{ session('success') }}</div>
                         @endif
 
                         <div class="min-w-[30%] w-[340px] my-1 mx-4">
-                            <div class="font-taruno text-xl">TIM 1</div>
+                            <div class="font-ltmuseumreg text-xl md:text-2xl">TIM 1</div>
                             <div>
                                 <div class="mb-1">
                                     <label class="block form-label text-sm mb-0" for="">
-                                        <span class="">Nama Tim</span>
+                                        <span class="font-ltmuseumreg">Nama Tim</span>
                                     </label>
                                     <div>
                                         <input required
@@ -715,7 +715,7 @@
                                 </div>
                                 <div class="mb-1">
                                     <label class="block form-label text-sm mb-0" for="">
-                                        <span class="">Penyiar 1</span>
+                                        <span class="font-ltmuseumreg">Penyiar 1</span>
                                     </label>
                                     <div>
                                         <input required
@@ -729,7 +729,7 @@
                                 </div>
                                 <div class="mb-1">
                                     <div>
-                                        <label class="block form-label text-sm mb-0" for="">Penyiar
+                                        <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">Penyiar
                                             2</label>
                                     </div>
                                     <div>
@@ -744,7 +744,7 @@
                                 </div>
                                 <div class="mb-1">
                                     <div>
-                                        <label class="block form-label text-sm mb-0" for="">Operator</label>
+                                        <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">Operator</label>
                                     </div>
                                     <div>
                                         <input required
@@ -760,7 +760,7 @@
 
                             <div class="mb-1">
                                 <div>
-                                    <label class="block form-label text-sm mb-0" for="">Institusi/Organisasi
+                                    <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">Institusi/Organisasi
                                         Asal</label>
                                 </div>
                                 <div>
@@ -777,7 +777,7 @@
                             <div>
                                 <div class="mb-1">
                                     <div>
-                                        <label class="block form-label text-sm mb-0" for="">NIM
+                                        <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">NIM
                                             Penyiar
                                             1</label>
                                     </div>
@@ -793,7 +793,7 @@
                                 </div>
                                 <div class="mb-1">
                                     <div>
-                                        <label class="block form-label text-sm mb-0" for="">NIM
+                                        <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">NIM
                                             Penyiar
                                             2</label>
                                     </div>
@@ -809,7 +809,7 @@
                                 </div>
                                 <div class="mb-1">
                                     <div>
-                                        <label class="block form-label text-sm mb-0" for="">NIM
+                                        <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">NIM
                                             Operator</label>
                                     </div>
                                     <div>
@@ -827,13 +827,13 @@
                             <div>
                                 <div class="mb-1">
                                     <div>
-                                        <label class="block form-label text-sm mb-0" for="">Nomor WA
+                                        <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">Nomor WA
                                             Perwakilan</label>
                                     </div>
                                     <div>
                                         <input required
                                             class="block @error('tim1_contact_wa') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
-                                            type="number" placeholder="" name="tim1_contact_wa"
+                                            type="number" placeholder="Nomor WA Perwakilan" name="tim1_contact_wa"
                                             value="{{ old('tim1_contact_wa') }}">
                                         @error('tim1_contact_wa')
                                             <div class="text-sm text-red-600">{{ $message }}</div>
@@ -842,14 +842,14 @@
                                 </div>
                                 <div class="mb-1">
                                     <div>
-                                        <label class="block form-label text-sm mb-0" for="">ID
+                                        <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">ID
                                             Line
                                             Perwakilan</label>
                                     </div>
                                     <div>
                                         <input required
                                             class="block @error('tim1_contact_line') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
-                                            type="text" placeholder="" name="tim1_contact_line"
+                                            type="text" placeholder="ID Line Perwakilan" name="tim1_contact_line"
                                             value="{{ old('tim1_contact_line') }}">
                                         @error('tim1_contact_line')
                                             <div class="text-sm text-red-600">{{ $message }}</div>
@@ -858,12 +858,12 @@
                                 </div>
                                 <div class="mb-1">
                                     <div>
-                                        <label class="block form-label text-sm mb-0" for="">Email</label>
+                                        <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">Email</label>
                                     </div>
                                     <div>
                                         <input required
                                             class="block @error('tim1_email') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
-                                            type="email" placeholder="" name="tim1_email"
+                                            type="email" placeholder="Email" name="tim1_email"
                                             value="{{ old('tim1_email') }}">
                                         @error('tim1_email')
                                             <div class="text-sm text-red-600">{{ $message }}</div>
@@ -874,11 +874,11 @@
                         </div>
 
                         <div class="min-w-[30%] w-[340px] my-1 mx-4">
-                            <div class="font-taruno text-xl">TIM 2</div>
+                            <div class="font-ltmuseumreg text-xl md:text-2xl">TIM 2</div>
                             <div>
                                 <div class="mb-1">
                                     <label class="block form-label text-sm mb-0" for="">
-                                        <span class="">Nama Tim</span>
+                                        <span class="font-ltmuseumreg">Nama Tim</span>
                                     </label>
                                     <div>
                                         <input required
@@ -892,7 +892,7 @@
                                 </div>
                                 <div class="mb-1">
                                     <label class="block form-label text-sm mb-0" for="">
-                                        <span class="">Penyiar 1</span>
+                                        <span class="font-ltmuseumreg">Penyiar 1</span>
                                     </label>
                                     <div>
                                         <input required
@@ -906,7 +906,7 @@
                                 </div>
                                 <div class="mb-1">
                                     <div>
-                                        <label class="block form-label text-sm mb-0" for="">Penyiar
+                                        <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">Penyiar
                                             2</label>
                                     </div>
                                     <div>
@@ -921,7 +921,7 @@
                                 </div>
                                 <div class="mb-1">
                                     <div>
-                                        <label class="block form-label text-sm mb-0" for="">Operator</label>
+                                        <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">Operator</label>
                                     </div>
                                     <div>
                                         <input required
@@ -937,7 +937,7 @@
 
                             <div class="mb-1">
                                 <div>
-                                    <label class="block form-label text-sm mb-0" for="">Institusi/Organisasi
+                                    <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">Institusi/Organisasi
                                         Asal</label>
                                 </div>
                                 <div>
@@ -954,7 +954,7 @@
                             <div>
                                 <div class="mb-1">
                                     <div>
-                                        <label class="block form-label text-sm mb-0" for="">NIM
+                                        <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">NIM
                                             Penyiar
                                             1</label>
                                     </div>
@@ -970,7 +970,7 @@
                                 </div>
                                 <div class="mb-1">
                                     <div>
-                                        <label class="block form-label text-sm mb-0" for="">NIM
+                                        <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">NIM
                                             Penyiar
                                             2</label>
                                     </div>
@@ -986,7 +986,7 @@
                                 </div>
                                 <div class="mb-1">
                                     <div>
-                                        <label class="block form-label text-sm mb-0" for="">NIM
+                                        <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">NIM
                                             Operator</label>
                                     </div>
                                     <div>
@@ -1004,13 +1004,13 @@
                             <div>
                                 <div class="mb-1">
                                     <div>
-                                        <label class="block form-label text-sm mb-0" for="">Nomor WA
+                                        <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">Nomor WA
                                             Perwakilan</label>
                                     </div>
                                     <div>
                                         <input required
                                             class="block @error('tim2_contact_wa') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
-                                            type="number" placeholder="" name="tim2_contact_wa"
+                                            type="number" placeholder="Nomor WA Perwakilan" name="tim2_contact_wa"
                                             value="{{ old('tim2_contact_wa') }}">
                                         @error('tim2_contact_wa')
                                             <div class="text-sm text-red-600">{{ $message }}</div>
@@ -1019,14 +1019,14 @@
                                 </div>
                                 <div class="mb-1">
                                     <div>
-                                        <label class="block form-label text-sm mb-0" for="">ID
+                                        <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">ID
                                             Line
                                             Perwakilan</label>
                                     </div>
                                     <div>
                                         <input required
                                             class="block @error('tim2_contact_line') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
-                                            type="text" placeholder="" name="tim2_contact_line"
+                                            type="text" placeholder="ID Line Perwakilan" name="tim2_contact_line"
                                             value="{{ old('tim2_contact_line') }}">
                                         @error('tim2_contact_line')
                                             <div class="text-sm text-red-600">{{ $message }}</div>
@@ -1035,12 +1035,12 @@
                                 </div>
                                 <div class="mb-1">
                                     <div>
-                                        <label class="block form-label text-sm mb-0" for="">Email</label>
+                                        <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">Email</label>
                                     </div>
                                     <div>
                                         <input required
                                             class="block @error('tim2_email') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
-                                            type="email" placeholder="" name="tim2_email"
+                                            type="email" placeholder="Email" name="tim2_email"
                                             value="{{ old('tim2_email') }}">
                                         @error('tim2_email')
                                             <div class="text-sm text-red-600">{{ $message }}</div>
@@ -1051,11 +1051,11 @@
                         </div>
 
                         <div class="min-w-[30%] w-[340px] my-1 mx-4">
-                            <div class="font-taruno text-xl">TIM 3</div>
+                            <div class="font-ltmuseumreg text-xl md:text-2xl">TIM 3</div>
                             <div>
                                 <div class="mb-1">
                                     <label class="block form-label text-sm mb-0" for="">
-                                        <span class="">Nama Tim</span>
+                                        <span class="font-ltmuseumreg">Nama Tim</span>
                                     </label>
                                     <div>
                                         <input required
@@ -1069,7 +1069,7 @@
                                 </div>
                                 <div class="mb-1">
                                     <label class="block form-label text-sm mb-0" for="">
-                                        <span class="">Penyiar 1</span>
+                                        <span class="font-ltmuseumreg">Penyiar 1</span>
                                     </label>
                                     <div>
                                         <input required
@@ -1083,7 +1083,7 @@
                                 </div>
                                 <div class="mb-1">
                                     <div>
-                                        <label class="block form-label text-sm mb-0" for="">Penyiar
+                                        <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">Penyiar
                                             2</label>
                                     </div>
                                     <div>
@@ -1098,7 +1098,7 @@
                                 </div>
                                 <div class="mb-1">
                                     <div>
-                                        <label class="block form-label text-sm mb-0" for="">Operator</label>
+                                        <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">Operator</label>
                                     </div>
                                     <div>
                                         <input required
@@ -1114,7 +1114,7 @@
 
                             <div class="mb-1">
                                 <div>
-                                    <label class="block form-label text-sm mb-0" for="">Institusi/Organisasi
+                                    <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">Institusi/Organisasi
                                         Asal</label>
                                 </div>
                                 <div>
@@ -1131,7 +1131,7 @@
                             <div>
                                 <div class="mb-1">
                                     <div>
-                                        <label class="block form-label text-sm mb-0" for="">NIM
+                                        <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">NIM
                                             Penyiar
                                             1</label>
                                     </div>
@@ -1147,7 +1147,7 @@
                                 </div>
                                 <div class="mb-1">
                                     <div>
-                                        <label class="block form-label text-sm mb-0" for="">NIM
+                                        <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">NIM
                                             Penyiar
                                             2</label>
                                     </div>
@@ -1163,7 +1163,7 @@
                                 </div>
                                 <div class="mb-1">
                                     <div>
-                                        <label class="block form-label text-sm mb-0" for="">NIM
+                                        <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">NIM
                                             Operator</label>
                                     </div>
                                     <div>
@@ -1181,13 +1181,13 @@
                             <div>
                                 <div class="mb-1">
                                     <div>
-                                        <label class="block form-label text-sm mb-0" for="">Nomor WA
+                                        <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">Nomor WA
                                             Perwakilan</label>
                                     </div>
                                     <div>
                                         <input required
                                             class="block @error('tim3_contact_wa') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
-                                            type="number" placeholder="" name="tim3_contact_wa"
+                                            type="number" placeholder="Nomor WA Perwakilan" name="tim3_contact_wa"
                                             value="{{ old('tim3_contact_wa') }}">
                                         @error('tim3_contact_wa')
                                             <div class="text-sm text-red-600">{{ $message }}</div>
@@ -1196,14 +1196,14 @@
                                 </div>
                                 <div class="mb-1">
                                     <div>
-                                        <label class="block form-label text-sm mb-0" for="">ID
+                                        <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">ID
                                             Line
                                             Perwakilan</label>
                                     </div>
                                     <div>
                                         <input required
                                             class="block @error('tim3_contact_line') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
-                                            type="text" placeholder="" name="tim3_contact_line"
+                                            type="text" placeholder="ID Line Perwakilan" name="tim3_contact_line"
                                             value="{{ old('tim3_contact_line') }}">
                                         @error('tim3_contact_line')
                                             <div class="text-sm text-red-600">{{ $message }}</div>
@@ -1212,12 +1212,12 @@
                                 </div>
                                 <div class="mb-1">
                                     <div>
-                                        <label class="block form-label text-sm mb-0" for="">Email</label>
+                                        <label class="block form-label text-sm mb-0 font-ltmuseumreg" for="">Email</label>
                                     </div>
                                     <div>
                                         <input required
                                             class="block @error('tim3_email') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
-                                            type="email" placeholder="" name="tim3_email"
+                                            type="email" placeholder="Email" name="tim3_email"
                                             value="{{ old('tim3_email') }}">
                                         @error('tim3_email')
                                             <div class="text-sm text-red-600">{{ $message }}</div>
@@ -1229,15 +1229,15 @@
                     </div>
                     <div class="flex justify-center w-full">
                         <div
-                            class="min-w-[33%] w-[340px] my-1 form-content shadow-md  px-6 py-3 mb-4 font-pathway shadow-[#FFF000]">
+                            class="min-w-[33%] w-[340px] my-1 form-content shadow-md  px-6 py-3 mb-4 font-pathway shadow-[#D61625]">
                             <div class="mb-1">
                                 <div>
                                     <label
-                                        class="block font-taruno text-center text-md md:text-lg form-label text-sm mb-0"
+                                        class="block font-ltmuseumreg text-center text-xl md:text-2xl form-label mb-0"
                                         for="">Bukti Pembayaran</label>
                                 </div>
                                 <div>
-                                    <h6 class="text-sm">Pembayaran sebesar Rp 300.000,~ ke BCA 8831917474 a/n RAUDHAH SALSABILA SURBAKTI</h6>
+                                    <h6 class="text-lg font-ltmuseumreg">Pembayaran sebesar Rp 300.000,~ ke BCA 8831917474 a/n RAUDHAH SALSABILA SURBAKTI</h6>
                                 </div>
                                 <div>
                                     <input required
@@ -1251,7 +1251,7 @@
 
                             <div class="">
                                 <button
-                                    class="button-submit font-taruno text-white bg-[#0E0EC0] w-full text-sm px-5 py-1"
+                                    class="button-submit font-ltmuseumreg text-white bg-[#D61625] w-full text-xl md:text-2xl px-5 py-1"
                                     type="submit"
                                     onclick="return confirm('Pastikan data yang dimasukkan benar adanya')">
                                     Daftar
@@ -1278,7 +1278,7 @@
     }
 
     .form-input:focus {
-        border-bottom: solid 4px #FFF000;
+        border-bottom: solid 4px #D61625;
     }
 
     .button-submit {

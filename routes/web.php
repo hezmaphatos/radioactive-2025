@@ -36,7 +36,9 @@ Route::get('/', function(){
 Route::controller(LoginController::class)->group(function () {
     Route::get('/login', 'index')->name('login');
     Route::post('/login', 'authenticate');
-    
+
+    Route::get('/signup', 'signup_view');
+    Route::post('/signup', 'signup');
 });
 
 Route::get('/logout', function (Request $request) {

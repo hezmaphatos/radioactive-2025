@@ -37,6 +37,16 @@
 }
 
 @font-face {
+  font-family: 'LT Museum Bold';
+  src: url("fonts/LTMuseum-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'LT Museum Reguler';
+  src: url("fonts/LTMuseum-Reg.ttf") format("truetype");
+}
+
+@font-face {
   font-family: 'Brody Rawk';
   src: url("fonts/Brody-Rawk.ttf") format("truetype");
 }

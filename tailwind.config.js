@@ -31,9 +31,13 @@ export default {
                 "center-bottom": "center bottom",
             },
             screens: {
+                'm-s': '1000px',
+            },
+
                 "m-s": "1000px",
             },
         },
     },
     plugins: [require("daisyui")],
 };
+

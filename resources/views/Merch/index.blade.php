@@ -1,38 +1,144 @@
-{{-- list merch --}}
+@extends('layouts.main')
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>List Merch</title>
-</head>
-<body>
-    <h1>List Merch</h1>
-    <table border="1" cellpadding="10">
-        <tr>
-            <th>No</th>
-            <th>Name</th>
-            <th>Price</th>
-        </tr>
+@section('container')
+<body class="overflow-x-hidden bg-black">
+    <div class="justify-center align-middle items-center">
+        <div id="indicators-carousel" class="relative w-full" data-carousel="static">
+
+            <div class="relative h-56 overflow-hidden md:h-96 rounded-lg">
+
+                <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                    <img src="/images/CarouselImg1.jpg" class="absolute block w-full object-cover">
+                </div>
+
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="/images/img2.jpg" class="absolute block w-full object-contain">
+                </div>
+
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="/images/img3.jpg" class="absolute block w-full object-contain">
+                </div>
+
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="/images/img4.jpg" class="absolute block w-full object-contain">
+                </div>
+
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="/images/img5.jpg" class="absolute block w-full object-contain">
+                </div>
+            </div>
+
+            <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+                <button type="button" class="w-3 h-3 rounded-full bg-transparent border-[1px] border-white"
+                    aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                <button type="button" class="w-3 h-3 rounded-full bg-transparent border-[1px] border-white"
+                    aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                <button type="button" class="w-3 h-3 rounded-full bg-transparent border-[1px] border-white"
+                    aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                <button type="button" class="w-3 h-3 rounded-full bg-transparent border-[1px] border-white"
+                    aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                <button type="button" class="w-3 h-3 rounded-full bg-transparent border-[1px] border-white"
+                    aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+            </div>
+
+            <button type="button"
+                class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-prev>
+                <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full dark:group-hover:bg-gray-800/60">
+                    <svg class="w-4 h-4 text-white dark:text-gray-600" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5 1 1 5l4 4" />
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button"
+                class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-next>
+                <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full dark:group-hover:bg-gray-800/60 ">
+                    <svg class="w-4 h-4 text-white dark:text-gray-600" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 9 4-4-4-4" />
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
+        </div>
         <?php $no = 1; ?>
-        @foreach($merch as $obj)
-            <tr>
-                <td>{{$no++}}</td>
-                <td>{{$obj->name}}</td>
-                <td>{{$obj->price}}</td>
-                <td>
-                    <a href="{{url($obj->id.'/cart/')}}">Add to Cart</a>
-                </td>
-            </tr>
+        <div id="merch_items" class="mt-[6rem] p-[30px] flex flex-wrap w-full justify-center content-center gap-10">
+            @foreach ($merch as $obj)
+                <div id="merch1" class="relative">
+                    <div id="item-img"
+                        class="mb-[7rem] w-[250px] h-[350px] border-solid border-[1px] border-white transform transition duration-500 hover:scale-[1.03]">
+                        <img src="/images/merch1.jpg" class="object-cover w-full h-full" />
+                        <p class="mt-5 font-taruno text-white text-[15px]">{{ $obj->name }}</p>
+                        <p class="mt-1 font-sans text-white text-sm">{{ $obj->price }}</p>
+                    </div>
+                </div>
+
+                <!-- <div id="merch2" class="relative">
+                <div id="item-img" class="mb-[7rem] w-[250px] h-[350px] border-solid border-[1px] border-white transform transition duration-500 hover:scale-[1.03]">
+                    <img src=" " class="object-cover w-full h-full"/>
+                    <p class="mt-5 font-taruno text-white text-[15px]">T-Shirt Electric Blue</p>
+                    <p class="mt-1 font-sans text-white text-sm">Rp 50.000</p>
+                </div>
+            </div>
+
+            <div id="merch3" class="relative">
+                <div id="item-img" class="mb-[7rem] w-[250px] h-[350px] border-solid border-[1px] border-white transform transition duration-500 hover:scale-[1.03]">
+                    <img src=" " class="object-cover w-full h-full"/>
+                    <p class="mt-5 font-taruno text-white text-[15px]">T-Shirt Electric Blue</p>
+                    <p class="mt-1 font-sans text-white text-sm">Rp 50.000</p>
+                </div>
+            </div>
+
+            <div id="merch4" class="relative">
+                <div id="item-img" class="mb-[7rem] w-[250px] h-[350px] border-solid border-[1px] border-white transform transition duration-500 hover:scale-[1.03]">
+                    <img src=" " class="object-cover w-full h-full"/>
+                    <p class="mt-5 font-taruno text-white text-[15px]">T-Shirt Electric Blue</p>
+                    <p class="mt-1 font-sans text-white text-sm">Rp 50.000</p>
+                </div>
+            </div>
+
+            <div id="merch5" class="relative">
+                <div id="item-img" class="mb-[7rem] w-[250px] h-[350px] border-solid border-[1px] border-white transform transition duration-500 hover:scale-[1.03]">
+                    <img src=" " class="object-cover w-full h-full"/>
+                    <p class="mt-5 font-taruno text-white text-[15px]">T-Shirt Electric Blue</p>
+                    <p class="mt-1 font-sans text-white text-sm">Rp 50.000</p>
+                </div>
+            </div> -->
+        </div>
         @endforeach
-        <tr>
-            <td colspan="3"></td>
-            <td>
-                <a href="{{url('/cart')}}">Cart</a>
-            </td>
-        </tr>
-    </table>
+        <div id="shopping-cart" class="w-full fixed bottom-5 right-5 flex justify-end">
+            <div
+                class="rounded-full bg-white w-[60px] h-[60px] flex justify-center items-center cursor-pointer transform transition duration-500 hover:scale-110">
+                <i class="fas fa-shopping-cart fa-xl" style="color: black;"></i>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
+    <script>
+        window.addEventListener('scroll', function() {
+            var header = document.getElementById('header');
+            if (window.scrollY > 0) {
+                header.classList.remove('bg-transparent');
+                header.classList.add('bg-[#0E0EC0]');
+            } else {
+                header.classList.add('bg-transparent');
+                header.classList.remove('bg-[#0E0EC0]');
+            }
+        });
+    </script>
 </body>
+
 </html>
+@endsection

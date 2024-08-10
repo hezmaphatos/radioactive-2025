@@ -14,7 +14,9 @@ class VocController extends Controller
      */
     public function index()
     {
-        return view('VOC.index');
+        return view('VOC.index', [
+            "title" => "Home"
+        ]);
     }
 
     public function dashboard(){

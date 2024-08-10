@@ -53,7 +53,7 @@ class LoginController extends Controller
             // regenerate biar ga kena session fixation
             $request->session()->regenerate();
 
-            return redirect()->intended('/');
+            return redirect()->intended('/dashboard');
         }
 
         return back()->withErrors([

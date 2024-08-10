@@ -1,17 +1,6 @@
-<!DOCTYPE html>
-<html>
+@extends('layouts.main')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet" />
-    @vite('resources/css/app.css')
-    <title>UMN Radioactive 2023</title>
-</head>
-
+@section('container')
 <body class="overflow-x-hidden bg-black h-full">
     {{-- <div>
         <video autoplay loop muted
@@ -114,7 +103,7 @@
     </div>
 
     <div class=" lg:-mb-0 lg:my-16" data-aos="fade-up">
-        <h2 id="title" class="font-taruno2 text-white text-center my-10 mx-4">VOICEOVER CHALLENGE</h2>
+        <h2 id="title" class="font-taruno2 text-white text-center my-10 mx-4">VOICEOVERR CHALLENGE</h2>
         <div id="description" class="px-8 md:px-20 lg:px-80">
             <p class="font-pathway text-sm text-white text-justify md:text-center md:pb-0">Voice Over Challenge
                 merupakan salah satu rangkaian acara RADIOACTIVE 2023. Voice Over Challenge bertujuan untuk mengasah
@@ -436,15 +425,15 @@
             // var handbook = document.getElementById("handbookbtn");
             // var submitbtn = document.getElementById('submitbtn')
 
-            // function checkTime() {
-            //     if (CurrentDate >= HandbookDate) {
-            //         // handbookbtn.removeAttribute("disabled");
-            //         submitbtn.removeAttribute("disabled");
-            //     }
-            // }
+             function checkTime() {
+                 if (CurrentDate >= HandbookDate) {
+                      handbookbtn.removeAttribute("disabled");
+                     submitbtn.removeAttribute("disabled");
+                 }
+             }
 
-            // checkTime();
-            // setInterval(checkTime, 1000);
+             checkTime();
+             setInterval(checkTime, 1000);
         </script>
 </body>
 
@@ -454,5 +443,4 @@
       mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
     } */
 </style>
-
-</html>
+@endsection

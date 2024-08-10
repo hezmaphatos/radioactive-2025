@@ -1,14 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini Announcing Challenge</title>
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <meta name="description" content="A mini announcing challenge for 2024.">
-    @vite('resources/css/app.css')
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-</head>
+@extends('layouts.main')
+
+@section('container')
 <body class="text-white" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('tes1.jpg') center/cover fixed;">
 
 
@@ -89,5 +81,4 @@
         downloadSection.scrollIntoView({ behavior: 'smooth' });
     }
 </script>
-
-</html>
+@endsection

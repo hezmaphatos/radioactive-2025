@@ -26,8 +26,7 @@
         <a id="homeItem" class="font-ltmuseum text-white text-sm underline underline-offset-8 decoration-[#D61525] cursor-pointer active:decoration-[#d6152581]"
             href="/">HOME</a>
         <a class="menu-item font-ltmuseum text-white text-sm no-underline hover:underline hover:underline-offset-8 hover:decoration-[#D61525] cursor-pointer active:decoration-[#d6152581]"
-            href="/voc">VO
-            CHALLENGE</a>
+            href="/mac">MAC</a>
         <a class="menu-item font-ltmuseum text-white text-sm no-underline hover:underline hover:underline-offset-8 hover:decoration-[#D61525] cursor-pointer active:decoration-[#d6152581]"
             href="/rac">RAC</a>
         <a class="menu-item font-ltmuseum text-white text-sm no-underline hover:underline hover:underline-offset-8 hover:decoration-[#D61525] cursor-pointer active:decoration-[#d6152581]"
@@ -65,8 +64,7 @@
                 <a class="font-ltmuseum text-white text-sm tracking-wide underline underline-offset-8 decoration-black cursor-pointer active:decoration-[#0000002d]"
                     href="/">HOME</a>
                 <a class="font-ltmuseum text-white text-sm tracking-wide no-underline hover:underline hover:underline-offset-8 hover:decoration-black cursor-pointer active:decoration-[#0000002d]"
-                    href="/voc">VO
-                    CHALLENGE</a>
+                    href="/mac">MAC</a>
                 <a class="font-ltmuseum text-white text-sm tracking-wide no-underline hover:underline hover:underline-offset-8 hover:decoration-black cursor-pointer active:decoration-[#0000002d]"
                     href="/rac">RAC</a>
                 <a class="font-ltmuseum text-white text-sm tracking-wide no-underline hover:underline hover:underline-offset-8 hover:decoration-black cursor-pointer active:decoration-[#0000002d]"

@@ -41,7 +41,15 @@ Route::get('/', function(){
 });
 
 Route::get('/mac', function () {
-    return view('Mac.mac');
+    return view('Mac.mac', [
+        "title" => "MAC"
+    ]);
+});
+
+Route::get('/closing-night', function () {
+    return view('closing.index', [
+        "title" => "closing"
+    ]);
 });
 
 Route::controller(LoginController::class)->group(function () {
@@ -67,12 +75,6 @@ Route::get('/logout', function (Request $request) {
     $request->session()->regenerateToken();
 
     return redirect('/');
-});
-
-Route::get('/mac', function () {
-    return view('Mac.mac', [
-        "title" => "MAC"
-    ]);
 });
 
 Route::controller(OrderController::class)->group(function () {
@@ -105,11 +107,6 @@ Route::get('/cart/{id}', [MerchController::class, 'removeFromCart']);
 Route::get('/merch-checkout', [MerchController::class, 'checkout']);
 
 Route::get('/send', [MailController::class, 'index']);
-Route::get('/closing-night', function () {
-    return view('Tickets.index', [
-        "title" => "closing"
-    ]);
-});
 
 // Route::resource('rac', TeamDataController::class);
 
@@ -155,6 +152,7 @@ Route::get('/dashboard', function(){
 Route::get('/linkstorage', function () {
     Artisan::call('storage:link');
 });
+
 Route::resource('/dashboard/users', DashboardUserController::class)->middleware('superadmin');
 Route::resource('/dashboard/vocs', DashboardVOCController::class)->middleware('admin');
 Route::resource('/dashboard/racs', DashboardRACController::class)->middleware('admin');
@@ -179,8 +177,4 @@ Route::controller(CartController::class)->group(function () {
     Route::get('/checkout', 'checkout');
     Route::get('/dashboard/cart', 'dashboard')->middleware('auth');
     Route::get('approval/{id}/{status}', 'approval')->middleware('auth');
-}); 
-
-// Route::get('/{any}', function () {
-//     return redirect('/');
-// })->where('any', '.*');
+});

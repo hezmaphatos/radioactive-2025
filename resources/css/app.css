@@ -1,101 +1,101 @@
 @tailwind base;
 
 @layer base {
-  h1 {
-    @apply text-2xl;
-  }
+    h1 {
+        @apply text-2xl;
+    }
 
-  h2 {
-    @apply text-xl;
-  }
+    h2 {
+        @apply text-xl;
+    }
 
-  h3 {
-    @apply text-lg;
-  }
+    h3 {
+        @apply text-lg;
+    }
 
-  a {
-    @apply text-blue-600 underline;
-  }
+    a {
+        @apply text-blue-600 underline;
+    }
 }
 
 @tailwind components;
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Taruno Wide';
-  src: url("fonts/TarunoWide-Regular.otf") format("opentype");
+    font-family: "Taruno Wide";
+    src: url("fonts/TarunoWide-Regular.otf") format("opentype");
 }
 
 @font-face {
-  font-family: 'Taruno Wide Outline';
-  src: url("fonts/TarunoWideOutline-Regular.otf") format("opentype");
+    font-family: "Taruno Wide Outline";
+    src: url("fonts/TarunoWideOutline-Regular.otf") format("opentype");
 }
 
 @font-face {
-  font-family: 'Pathway Extreme';
-  src: url("fonts/PathwayExtreme.ttf") format("truetype");
+    font-family: "Pathway Extreme";
+    src: url("fonts/PathwayExtreme.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'LT Museum Bold';
-  src: url("fonts/LTMuseum-Bold.ttf") format("truetype");
+    font-family: "LT Museum Bold";
+    src: url("fonts/LTMuseum-Bold.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'LT Museum Reguler';
-  src: url("fonts/LTMuseum-Reg.ttf") format("truetype");
+    font-family: "LT Museum Reguler";
+    src: url("fonts/LTMuseum-Reg.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Brody Rawk';
-  src: url("fonts/Brody-Rawk.ttf") format("truetype");
+    font-family: "Brody Rawk";
+    src: url("fonts/Brody-Rawk.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'LTMuseum-Bold';
-  src: url('fonts/LTMuseum-Bold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
+    font-family: "LTMuseum-Bold";
+    src: url("fonts/LTMuseum-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'LTMuseum-BoldItalic';
-  src: url('fonts/LTMuseum-BoldItalic.ttf') format('truetype');
-  font-weight: bold;
-  font-style: italic;
+    font-family: "LTMuseum-BoldItalic";
+    src: url("fonts/LTMuseum-BoldItalic.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
 }
 
 @font-face {
-  font-family: 'LTMuseum-Inline';
-  src: url('fonts/LTMuseum-Inline.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+    font-family: "LTMuseum-Inline";
+    src: url("fonts/LTMuseum-Inline.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'LTMuseum-Ital';
-  src: url('fonts/LTMuseum-Ital.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
+    font-family: "LTMuseum-Ital";
+    src: url("fonts/LTMuseum-Ital.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
 }
 
 @font-face {
-  font-family: 'LTMuseum-Light';
-  src: url('fonts/LTMuseum-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
+    font-family: "LTMuseum-Light";
+    src: url("fonts/LTMuseum-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'LTMuseum-LightItalic';
-  src: url('fonts/LTMuseum-LightItalic.ttf') format('truetype');
-  font-weight: 300;
-  font-style: italic;
+    font-family: "LTMuseum-LightItalic";
+    src: url("fonts/LTMuseum-LightItalic.ttf") format("truetype");
+    font-weight: 300;
+    font-style: italic;
 }
 
 @font-face {
-  font-family: 'LTMuseum-Reg';
-  src: url('fonts/LTMuseum-Reg.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+    font-family: "LTMuseum-Reg";
+    src: url("fonts/LTMuseum-Reg.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }

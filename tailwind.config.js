@@ -9,17 +9,24 @@ export default {
         extend: {
             fontFamily: {
                 pathway: ["Pathway Extreme"],
-                taruno: ["Taruno Wide"],
-                taruno2: ["Taruno Wide Outline"],
+                brody: ['"Brody Rawk"', 'sans-serif'],
+                museum: ['"LT Museum"', 'sans-serif'],
             },
             spacing: {
-                76: "19rem",
-                500: "31rem",
+
             },
             objectPosition: {
                 "center-bottom": "center bottom",
             },
+            letterSpacing: {
+                12: '0.75rem',
+                8: '0.5rem',
+            },
+            screens: {
+                'm-s':'1000px',
+            },
         },
+
     },
     plugins: [require("daisyui")],
 };

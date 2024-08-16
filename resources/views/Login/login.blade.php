@@ -23,6 +23,10 @@
                                     @endforeach
                                 </ul>
                             </div>
+                            @elseif (session()->has('status'))
+                            <div class="text-green-500 text-center">
+                                {{ session('status') }}
+                            </div>
                         @endif
                         <div class="relative w-full min-w-[200px] h-11">
                             <p class="font-ltmuseumbold text-xl">EMAIL</p>

@@ -28,6 +28,19 @@
         <p class="text-center font-brody text-base text-white z-20 tracking-12">THE MOST SPECTACULAR ANNUAL EVENT BY
         </p>
         <img class="w-20 md:w-24 z-16" src="images/LOGO UMN RADIO.webp" alt="UMN Radio Logo">
+@extends('layouts.main')
+
+@section('container')
+<body class="overflow-x-hidden bg-black">
+    <div id="button1"
+        class="fixed bottom-12 end-4 md:bottom-20 md:end-20 flex justify-center items-center z-50 animate-bounce"
+        data-aos="fade-up">
+        <a href="/closing-night/#ticket" class="no-underline">
+            <button
+                class="rounded-[100%] h-[5.5rem] md:h-32 aspect-square bg-[#0E0EC0] text-white border-white font-taruno text-2xs md:text-sm p-2 md:p-4 font-bold border-2 hover:bg-[#FFF000] hover:text-[#0E0EC0]">
+                GET YOUR TICKETS
+            </button>
+        </a>
     </div>
     <div class="relative flex flex-col items-center" data-aos="fade-up" data-aos-duration="3000">
         <img class="object-cover -mt-4 md:-mt-28 z-0" src="images/logo.png" alt="background logo" />
@@ -75,6 +88,11 @@
         <div class="marquee marquee-w">
             <span class="font-museum text-2xl text-white text-justify md:text-center tracking-8">DARE TO STRIVE DARE
                 TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE</span>
+  
+    <div id="section-1" class="pt-24 max-w-4xl mx-auto">
+        <div data-aos="fade-up" class="flex flex-col md:flex-row items-center justify-center gap-4">
+            <p class="text-center font-taruno text-xs text-white z-20">THE MOST SPECTACULAR ANNUAL EVENT BY </p>
+            <img class="w-20 md:w-24 z-16" src="images/LOGO UMN RADIO.webp">
         </div>
         <div class="marquee marquee2 marquee-w">
             <span class="font-museum text-2xl text-white text-justify md:text-center tracking-8"> DARE TO STRIVE
@@ -88,9 +106,6 @@
         </div>
     </div>
 </div>
-
-
-
 
 <!-- <div id="upcoming-events" class="mt-8 lg:mb-0 lg:my-16 relative" data-aos="fade-up" data-aos-duration="3000" >
         <h4 class="font-brody md:text-3xl text-white text-center my-12 tracking-8">UPCOMING EVENTS</h4>
@@ -479,3 +494,20 @@
 </body>
 
 </html>
+        <div id="after" class="-mb-20 md:-mb-0 md:my-24" data-aos="fade-up">
+            <h2 class="font-taruno2 text-white text-center mb-6 mt-6">AFTER MOVIE</h2>
+            <div class="w-full flex justify-center">
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/noafJ76PHeM?si=x_X9yxOawXxH8Id2" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
+    </body>
+@endsection

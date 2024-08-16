@@ -24,7 +24,7 @@ class TicketNotify extends Mailable
 
     public function build()
     {
-        return $this->from('radioactive2023@example.com', 'UMN RadioActive 2023')
+        return $this->from('radioactive2024@example.com', 'UMN RadioActive 2024')
         ->subject($this->data['subject'])->view('mail.ticket-notify')->with('data', $this->data);
     }
 

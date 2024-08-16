@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header {
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background: #000000ba;
+    font-weight: bold;
+    font-family: lt;
+    z-index: 1;
+}
+.nav {
+    display: flex;
+    gap: 20px;
+}
+.nav div {
+    cursor: pointer;
+}
+.banner {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+    height: 400px;
+}
+.img_parent {
+    height: 90%;
+    width: 100%;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.bigtitle {
+    font-size: 32px;
+    font-family: lt;
+    font-weight: bold;
+}
+.flex {
+    display: flex;
+}
+.fcolumn {
+    flex-direction: column;
+}
+.align-items-center {
+    align-items: center;
+}
+.position-relative {
+    position: relative;
+}
+.gap {
+    gap: 32px;
+}
+.button {
+    color: white;
+    font-weight: bold;
+    background: red;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    font-family: lt;
+}
+.paragraph {
+    text-align: center;
+    width: 90%;
+    font-family: lt;
+    font-size: 20px;
+}
+.hfull {
+    height: 80%;
+}
+.tickets {
+    width: 300px;
+}
+.details_parent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.tickets_parent {
+    display: flex;
+}
+.title {
+    padding: 50px 30px;
+    font-size: 32px;
+    text-align: center;
+    font-family: brody;
+}
+.social-media div {
+    cursor: pointer;
+}
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: lt;
+}
+.item {
+    color: white;
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid gainsboro;
+    padding-bottom: 20px;
+}
+.foot-menu {
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+}
+.foot-menu div {
+    cursor: pointer;
+}
+@media screen and (max-width: 900px) {
+    .banner {
+        width: 100%;
+    }
+    .button {
+        font-size: 13px;
+    }
+    .bigtitle {
+        font-size: 24px;
+    }
+    .tickets_parent {
+        /*        flex-direction: column;*/
+    }
+    .tickets {
+        width: 128px;
+    }
+    .paragraph {
+        font-size: 12px;
+    }
+    .title {
+        font-size: 11px;
+        padding: 20px 10px;
+    }
+    .foot-menu {
+        font-size: 10px;
+        gap: 10px;
+        white-space: nowrap;
+    }
+    .item {
+        width: 90%;
+    }
+}

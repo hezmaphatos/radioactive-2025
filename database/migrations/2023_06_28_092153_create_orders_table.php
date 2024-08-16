@@ -15,10 +15,15 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email');
-            $table->string('phone');
+            $table->string('wa');
+            $table->string('line');
+            $table->unsignedBigInteger('merch_id');
             $table->integer('qty');
             $table->bigInteger('total_price');
-            $table->enum('status', ['Unpaid', 'Paid', 'Used', 'Canceled', 'Expired']);
+            $table->string('size')->default('');
+            $table->string('tee')->default('');
+            $table->string('image');
+            $table->enum('status', ['Unpaid', 'Paid', 'Canceled']);
             $table->timestamps();
         });
     }

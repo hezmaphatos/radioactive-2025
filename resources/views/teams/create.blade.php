@@ -67,10 +67,9 @@
             </div>
         </div>
     </div>
-    <div class="font-taruno2 text-lg md:text-3xl text-white flex justify-center text-center pt-20 mb-6">RAC Registration
-    </div>
+    <div class="font-ltmuseumbold text-3xl md:text-4xl text-white flex justify-center text-center pt-20 mb-6">RAC Registration</div>
     <div class="flex justify-center align-middle form-container">
-        <div class="content-container px-4 py-4 flex flex-col w-[400px] max-w-[95vw]">
+        <div class="content-container px-4 py-4 flex flex-col w-[400px] shadow-md shadow-[#D61625] max-w-[95vw] ">
             @if (session()->has('success'))
                 <div class="text-sm text-green-500" role="alert">{{ session('success') }}</div>
             @endif
@@ -102,46 +101,46 @@
                     @endif
                 @endforeach
 
-                <h2 class="w-full text-center font-taruno text-white hidden">Remaining Slots: {{ 20 - $count }}</h2>
-                <h2 class="w-full text-center font-taruno text-white text-sm py-2">Select Number Of Teams To Be Registered</h2>
+                <h2 class="w-full text-center font-ltmuseumreg text-white hidden">Remaining Slots: {{ 20 - $count }}</h2>
+                <h2 class="w-full text-center font-ltmuseumreg text-white text-xl py-2">Select Number Of Teams To Be Registered</h2>
 
                 @if ($count >= 20)
                     <h2 class="w-full text-center font-taruno">Kuota Tim Habis</h2>
                 @elseif ($count >= 19)
                     <a href="/rac/form/1">
-                        <button class="button-submit font-taruno text-white bg-[#0E0EC0] w-full text-sm px-5 py-1 my-1"
+                        <button class="button-submit font-ltmuseumbold text-white bg-[#D61625] w-full text-sm px-5 py-1 my-1"
                             type="submit">
                             Satu Tim
                         </button>
                     </a>
                 @elseif($count >= 18)
                     <a href="/rac/form/1">
-                        <button class="button-submit font-taruno text-white bg-[#0E0EC0] w-full text-sm px-5 py-1 my-1"
+                        <button class="button-submit font-ltmuseumbold text-white bg-[#D61625] w-full text-sm px-5 py-1 my-1"
                             type="submit">
                             Satu Tim
                         </button>
                     </a>
                     <a href="/rac/form/2">
-                        <button class="button-submit font-taruno text-white bg-[#0E0EC0] w-full text-sm px-5 py-1 my-1"
+                        <button class="button-submit font-ltmuseumbold text-white bg-[#D61625] w-full text-sm px-5 py-1 my-1"
                             type="submit">
                             Dua Tim
                         </button>
                     </a>
                 @else
                     <a href="/rac/form/1">
-                        <button class="button-submit font-taruno text-white bg-[#0E0EC0] w-full text-sm px-5 py-1 my-1"
+                        <button class="button-submit font-ltmuseumbold text-white bg-[#D61625] w-full text-sm px-5 py-1 my-1"
                             type="submit">
                             Satu Tim
                         </button>
                     </a>
                     <a href="/rac/form/2">
-                        <button class="button-submit font-taruno text-white bg-[#0E0EC0] w-full text-sm px-5 py-1 my-1"
+                        <button class="button-submit font-ltmuseumbold text-white bg-[#D61625] w-full text-sm px-5 py-1 my-1"
                             type="submit">
                             Dua Tim
                         </button>
                     </a>
                     <a href="/rac/form/3">
-                        <button class="button-submit font-taruno text-white bg-[#0E0EC0] w-full text-sm px-5 py-1 my-1"
+                        <button class="button-submit font-ltmuseumbold text-white bg-[#D61625] w-full text-sm px-5 py-1 my-1"
                             type="submit">
                             Tiga Tim
                         </button>
@@ -149,19 +148,19 @@
                 @endif
             @else
                 <a href="/rac/form/1">
-                    <button class="button-submit font-taruno text-white bg-[#0E0EC0] w-full text-sm px-5 py-1 my-1"
+                    <button class="button-submit font-ltmuseumbold text-white bg-[#D61625] w-full text-sm px-5 py-1 my-1"
                         type="submit">
                         Satu Tim
                     </button>
                 </a>
                 <a href="/rac/form/2">
-                    <button class="button-submit font-taruno text-white bg-[#0E0EC0] w-full text-sm px-5 py-1 my-1"
+                    <button class="button-submit font-ltmuseumbold text-white bg-[#D61625] w-full text-sm px-5 py-1 my-1"
                         type="submit">
                         Dua Tim
                     </button>
                 </a>
                 <a href="/rac/form/3">
-                    <button class="button-submit font-taruno text-white bg-[#0E0EC0] w-full text-sm px-5 py-1 my-1"
+                    <button class="button-submit font-ltmuseumbold text-white bg-[#D61625] w-full text-sm px-5 py-1 my-1"
                         type="submit">
                         Tiga Tim
                     </button>

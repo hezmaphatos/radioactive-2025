@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\rac;
 use App\Models\rac_teams;
 use Illuminate\Http\Request;
 
@@ -11,16 +12,14 @@ class TeamDataController extends Controller
     public function index()
     {
         //
-        return view('teams.index');
+        return view('teams.index', [
+            "title" => "RAC"
+        ]);
     }
 
     /**
      * Display a listing of the resource.
      */
-    public function dashboard(){
-        $rac_teams = rac_teams::all();
-        return view('teams.dashboard', ['rac_teams' => $rac_teams]);
-    }
 
     public function confirmation_redirect(){
         return view('teams.redirect');
@@ -32,7 +31,7 @@ class TeamDataController extends Controller
     public function create()
     {
         //
-        $rac_teams = rac_teams::all();
+        $rac_teams = rac::all();
         return view('teams.create', ['count'=>$rac_teams->count(), 'rac_teams'=>$rac_teams]);
     }
 
@@ -83,7 +82,7 @@ class TeamDataController extends Controller
         ]);
 
         // $team = new rac_teams();
-        rac_teams::create([
+        rac::create([
             'tim1_penyiar1'=>$request->tim1_penyiar1,
             'tim1_penyiar2'=>$request->tim1_penyiar2,
             'tim1_operator'=>$request->tim1_operator,
@@ -123,17 +122,7 @@ class TeamDataController extends Controller
             'payment_proof'=>$request->file('payment_proof')->storePublicly('payment_images', 'public'),
             'status'=>'Pending'
         ]);
-        // $team->tim1_penyiar1 = $request->tim1_penyiar1;
-        // $team->tim1_penyiar2 = $request->tim1_penyiar2;
-        // $team->tim1_operator = $request->tim1_operator;
-        // $team->tim1_institusi = $request->tim1_institusi;
-        // $team->tim1_nims1 = $request->tim1_nims1;
-        // $team->tim1_nims2 = $request->tim1_nims2;
-        // $team->tim1_nimop = $request->tim1_nimop;
-        // $team->tim1_contact_wa = $request->tim1_contact_wa;
-        // $team->tim1_contact_line = $request->tim1_contact_line;
-        // $team->payment_proof = $request->file('payment_proof')->storePublicly('payment_images', 'public');
-        // $team->save();
+
         return redirect('/rac/confirmation')->with(array('success'=> "Pendaftaran berhasil."
         ,
             'tim1_nama' => $request->tim1_nama,
@@ -160,10 +149,6 @@ class TeamDataController extends Controller
     public function edit($id)
     {
         //
-        $team = rac_teams::findOrFail($id);
-        return view('teams.edit',[
-            'team'=>$team
-        ]);
     }
 
 
@@ -173,18 +158,6 @@ class TeamDataController extends Controller
     public function update(Request $request, rac_teams $rac_teams, $id)
     {
         //
-        $rules = $request->validate([
-            'status' => 'required|max:255'
-        ]);
-
-        $target_team = rac_teams::findOrFail($id);
-        $target_team->status = $request->status;
-        $target_team->save();
-        return redirect('/teams');
-
-        // rac_teams::where('id', $request->id)->update([
-        //     'status'=>$request->status
-        // ]);
     }
 
     /**

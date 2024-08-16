@@ -9,8 +9,8 @@ export default {
         extend: {
             fontFamily: {
                 pathway: ["Pathway Extreme"],
-                brody: ['"Brody Rawk"', 'sans-serif'],
-                museum: ['"LT Museum"', 'sans-serif'],
+                brody: ['"Brody Rawk"', "sans-serif"],
+                museum: ['"LT Museum"', "sans-serif"],
                 taruno: ["Taruno Wide"],
                 taruno2: ["Taruno Wide Outline"],
                 ltmuseumbold: ["LT Museum Bold"],
@@ -25,17 +25,17 @@ export default {
                 "ltmuseum-lightitalic": ["LTMuseum-LightItalic", "sans-serif"],
                 "ltmuseum-reg": ["LTMuseum-Reg", "sans-serif"],
             },
-            spacing: {
-            },
+            spacing: {},
             objectPosition: {
                 "center-bottom": "center bottom",
             },
             letterSpacing: {
-                12: '0.75rem',
-                8: '0.5rem',
+                12: "0.75rem",
+                8: "0.5rem",
             },
             screens: {
-                'm-s':'1000px',
+                "m-s": "1000px",
+            },
             colors: {
                 white: "#FFFFFF",
                 body: "#64748B",
@@ -146,7 +146,6 @@ export default {
                 "card-2": "0px 1px 2px rgba(0, 0, 0, 0.05)",
             },
         },
-
     },
     plugins: [require("daisyui")],
 };

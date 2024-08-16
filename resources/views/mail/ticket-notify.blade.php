@@ -18,7 +18,7 @@ Thanks,<br>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>UMN RadioActive 2023</title>
+    <title>UMN RadioActive 2024</title>
 </head>
 
 <body>
@@ -26,8 +26,8 @@ Thanks,<br>
     <p>We are delighted to inform you that your ticket booking has been successfully processed. Your tickets for the
         upcoming event have been issued and are ready for use. Please find the details below:</p>
 
-    <p>Event: UMN Radioactive 2023's Closing Night : Neo World</p>
-    <p>Date: 18 November 2023</p>
+    <p>Event: UMN Radioactive 2024's Closing Night : Neo World</p>
+    <p>Date: 18 November 2024</p>
     <p>Time: 17.30 - until end</p>
     <p>Venue: Lapangan Parkir UMN</p>
 

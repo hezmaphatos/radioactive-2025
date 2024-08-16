@@ -18,7 +18,7 @@ Thanks,<br>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>UMN Radioactive 2023 | Order Submission</title>
+    <title>UMN Radioactive 2024 | Order Submission</title>
 </head>
 
 <body>

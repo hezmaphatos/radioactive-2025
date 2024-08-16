@@ -36,6 +36,53 @@
     src: url("fonts/PathwayExtreme.ttf") format("truetype");
 }
 
+.marquee {
+  position: absolute;
+  display: block;
+  margin: auto auto;
+  white-space: nowrap;
+  overflow: hidden;
+  min-width: 100%;
+  height: 100%;
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 100%; /* Push the text outside the visible area initially (to the right) */
+  text-align: center; /* Center align the text */
+  white-space: nowrap; /* Prevent wrapping */
+  animation: marquee 15s linear infinite; /* Apply the normal marquee animation */
+}
+
+.marquee2 span {
+  animation-delay: 7.5s; /* Delay the start of the animation for the second marquee */
+}
+
+.marquee-reverse span {
+  padding-right: 100%; /* Push the text outside the visible area initially (to the left) */
+  text-align: center; /* Center align the text */
+  white-space: nowrap; /* Prevent wrapping */
+  animation: marquee-reverse 15s linear infinite; /* Apply the reverse marquee animation */
+}
+
+@keyframes marquee {
+  0% {
+      transform: translate(0, 0); /* Start from the initial position */
+  }
+  100% {
+      transform: translate(-100%, 0); /* Move leftwards by 100% of container width */
+  }
+}
+
+@keyframes marquee-reverse {
+  0% {
+      transform: translate(100%, 0); /* Start from the initial position (offscreen to the right) */
+  }
+  100% {
+      transform: translate(0, 0); /* Move leftwards to the initial position */
+  }
+}
+
 @font-face {
     font-family: "LT Museum Bold";
     src: url("fonts/LTMuseum-Bold.ttf") format("truetype");

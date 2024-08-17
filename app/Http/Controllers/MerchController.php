@@ -21,7 +21,8 @@ class MerchController extends Controller
         //
         $merch = Merch::all();
         return view('Merch.index', [
-            'merch' => $merch
+            'merch' => $merch,
+            'title' => 'merch'
         ]);
     }
 

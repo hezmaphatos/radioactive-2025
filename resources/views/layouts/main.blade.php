@@ -40,14 +40,15 @@
         </script>
         <script>
             window.addEventListener('scroll', function() {
-                var item = document.getElementById('homeItem');
-                if (window.scrollY > 0) {
-                    item.classList.remove('decoration-[#D61525]');
-                    item.classList.add('decoration-black');
-                } else {
-                    item.classList.add('decoration-[#D61525]');
-                    item.classList.remove('decoration-black');
-                }
+                var links = document.querySelectorAll('.menu-item');
+
+                links.forEach(function(link) {
+                    if (window.scrollY > 0) {
+                        link.style.textDecorationColor = 'black';
+                    } else {
+                        link.style.textDecorationColor = '#D61525';
+                    }
+                });
             });
         </script>
         <script>
@@ -60,30 +61,6 @@
                 } else {    
                     menuItem.classList.add('hover:ring-1', 'hover:ring-white', 'ring-[#D61525]'); 
                     menuItem.classList.remove('ring-1', 'ring-black', 'hover:ring-2');
-                }
-            });
-            });
-        </script>
-        <script>
-            window.addEventListener('scroll', function() {
-                var svgIcon = document.getElementById('fill');
-                if (window.scrollY > 0) {
-                    svgIcon.setAttribute('fill', 'black');
-                } else {
-                    svgIcon.setAttribute('fill', '#D61525');
-                }
-            });
-        </script>
-        <script>
-           window.addEventListener('scroll', function() {
-                var menuItems = document.querySelectorAll('.menu-item');
-                menuItems.forEach(function(menuItem) {
-                if (window.scrollY > 0) {
-                    menuItem.classList.remove('hover:decoration-[#D61525]');
-                    menuItem.classList.add('hover:decoration-black');
-                } else {
-                    menuItem.classList.add('hover:decoration-[#D61525]');
-                    menuItem.classList.remove('hover:decoration-black');
                 }
             });
             });

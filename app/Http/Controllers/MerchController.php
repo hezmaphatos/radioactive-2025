@@ -228,8 +228,9 @@ class MerchController extends Controller
         return view('Merch.userdash', ['merchOrders' => $merchOrders]);
     }
 
-    public function showOrder($merchOrder)
+    public function showOrder(MerchOrder $merchOrder)
     {
+        // dd($merchOrder);
         return view('Merch.showorder', ['merchOrder'=>$merchOrder]);
     }
 

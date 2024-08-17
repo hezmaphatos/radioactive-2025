@@ -1,13 +1,13 @@
 @extends('layouts.main')
 
 @section('container')
+<head>
+	@vite('resources/css/home.css')
+</head>
 <body class="overflow-x-hidden bg-black">
-    <div id="button1"
-        class="fixed bottom-12 end-4 md:bottom-20 md:end-20 flex justify-center items-center z-50 animate-bounce"
-        data-aos="fade-up">
+    <div id="button1" class="fixed bottom-12 end-4 md:bottom-20 md:end-20 flex justify-center items-center z-50 animate-bounce" data-aos="fade-up">
         <a href="/closing-night/#ticket" class="no-underline">
-            <button
-                class="rounded-[100%] h-[5.5rem] md:h-32 aspect-square bg-[#D61525] text-white border-white font-museum text-2xs md:text-sm p-2 md:p-4 font-bold border-2 hover:bg-[#FFF000] hover:text-[#D61525]">
+            <button class="rounded-[100%] h-[5.5rem] md:h-32 aspect-square bg-[#D61525] text-white border-white font-museum text-2xs md:text-sm p-2 md:p-4 font-bold border-2 hover:bg-[#FFF000] hover:text-[#D61525]">
                 GET YOUR TICKETS
             </button>
         </a>
@@ -28,10 +28,11 @@
 <div id="about-us" class="flex flex-col justify-center items-center h-screen mt-0 mb-0 px-4 sm:px-8" data-aos="fade-up" data-aos-duration="1500">
     <h4 class="font-brody text-5xl sm:text-6xl md:text-8xl text-white text-center my-6 sm:my-12 tracking-wider">ABOUT US</h4>
     <div class="px-4 sm:px-8 md:px-20 lg:px-48">
+        <p class="font-museum text-base sm:text-lg md:text-xl text-white text-justify md:text-center tracking-wider mb-6">
+            RADIOACTIVE adalah Acara off air tahunan yang diselenggarakan oleh UMN Radio, radio komunitas Universitas Multimedia Nusantara. Pertama kali diadakan di tahun 2015, RADIOACTIVE 2024 merupakan kali ke-10 acara ini diselenggarakan.
+        </p>
         <p class="font-museum text-base sm:text-lg md:text-xl text-white text-justify md:text-center tracking-wider">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel cursus nisi. Fusce dictum maximus eros.
-            Mauris convallis nunc non odio lobortis tincidunt. Vestibulum ultrices vel lectus a pharetra. Nullam at
-            molestie mauris, posuere accumsan eros. Aenean congue eget massa id sollicitudin.
+            RADIOACTIVE 2024 mengangkat tema “RADIOACTIVE 2024: Resilience Era”, dengan tagline “Dare to Strive”, serta bertujuan agar individu yang telah berevolusi mampu mempertahankan perubahannya dan mengembangkannya dalam perjuangan tanpa ada rasa cukup.
         </p>
     </div>
 </div>
@@ -39,7 +40,7 @@
 <div id="marquee-section" class="">
     <div class="overflow-hidden whitespace-nowrap">
         <div class="marquee marquee-w">
-            <span class="font-museum text-2xl text-white text-justify md:text-center tracking-8">DARE TO STRIVE DARE
+            <span class="max font-museum text-2xl text-white text-justify md:text-center tracking-8">DARE TO STRIVE DARE
                 TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE</span>
         </div>
         <div class="marquee marquee2 marquee-w">
@@ -58,19 +59,15 @@
 <div id="marquee-section" class="mt-8 mb-16">
     <div class="overflow-hidden whitespace-nowrap">
         <div class="marquee marquee-w">
-            <span class="font-museum text-2xl text-white text-justify md:text-center tracking-8">DARE TO STRIVE DARE
-                TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE</span>
-  
-    <div id="section-1" class="pt-24 max-w-4xl mx-auto">
+            <span class="font-museum text-2xl text-white text-justify md:text-center tracking-8">DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE</span>
+        </div>
         <div class="marquee marquee2 marquee-w">
-            <span class="font-museum text-2xl text-white text-justify md:text-center tracking-8"> DARE TO STRIVE
-                DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE </span>
+            <span class="font-museum text-2xl text-white text-justify md:text-center tracking-8"> DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE </span>
         </div>
     </div>
     <div class="overflow-hidden whitespace-nowrap">
         <div class="marquee marquee-w marquee-reverse">
-            <span class="font-museum text-2xl text-white text-justify md:text-center tracking-8">DARE TO STRIVE DARE
-                TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE</span>
+            <span class="font-museum text-2xl text-white text-justify md:text-center tracking-8">DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE</span>
         </div>
     </div>
 </div>
@@ -178,31 +175,25 @@
         <div class="mx-auto max-w-[34.15em]">
             <div id="checkpoint" class="border-2 border-white pl-12 m-s:translate-x-[19em] rounded-2xl p-6 mb-4 mt-4">
                 <div>
-                    <h2 class="mb-2">Date 1 : Pendaftaran</h2>
+                    <h2 class="mb-2">2 - 9 September 2024 :<a href="/mac" class="no-underline"> Mini Annoucing Challenge</a></h2>
                     <p class="leading-[27px] text-gray-300">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam atque sit tenetur commodi vel
-                        illo amet natus, corporis, facilis magni voluptate quibusdam quis ducimus ipsum ullam itaque
-                        labore voluptatibus! Reprehenderit!
+                        Mini Annoucing Challenge merupakan salah satu rangkaian acara RADIOACTIVE 2024. Mini Annoucing Challenge bertujuan untuk mengasah skill para peserta dalam bidang siaran. Dalam challenge ini, peserta tidak dibatasi untuk berkreasi. Teknis dari Mini Annoucing Challenge ini adalah peserta dapat siaran menggunakan tema dan 3 kata yang sudah dipilih secara acak. Disisi lain, challenge ini juga dapat meningkatkan awareness untuk rangkaian acara berikutnya.
                     </p>
                 </div>
             </div>
             <div id="checkpoint" class="border-2 border-white pl-12 m-s:-translate-x-[19em] rounded-2xl p-6 mb-4 mt-4">
                 <div>
-                    <h2 class="mb-2">Date 2 : Seleksi</h2>
+                    <h2 class="mb-2">2 September 2024 - 12 Oktober 2024 : <a href="/rac" class="no-underline">Radio Announcing Competition</a></h2>
                     <p class="leading-[27px] text-gray-300">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam atque sit tenetur commodi vel
-                        illo amet natus, corporis, facilis magni voluptate quibusdam quis ducimus ipsum ullam itaque
-                        labore voluptatibus! Reprehenderit!
+                        Radio Announcing Competition merupakan rangkaian acara utama RADIOACTIVE. Lomba ini merupa kan ajang untuk siswa SMA dan mahasiswa se-Jabodetabek untuk memperluas wawasan dan mengasah kemampuan di dunia broadcasting. Radio Announcing Competition ini memiliki konsep yang sesuai dengan nilai utama RADIOACTIVE 2024, yaitu “Surviving the Maze”. Tujuan dari lomba ini adalah untuk mengasah kreativitas peserta dalam membuat siaran dan secara tidak langsung memberikan informasi hingga mengajak para peserta untuk menggambarkan perjuangan manusia dalam menghadapi rintangan dan lika-liku kehidupan.
                     </p>
                 </div>
             </div>
             <div id="checkpoint" class="border-2 border-white pl-12 m-s:translate-x-[19em] rounded-2xl p-6 mb-4 mt-4">
                 <div>
-                    <h2 class="mb-2">Date 3 : Pemberitahuan Hasil Seleksi</h2>
+                    <h2 class="mb-2">2 November 2024 : <a href="/closing-night" class="no-underline">CLOSING NIGHT</a></h2>
                     <p class="leading-[27px] text-gray-300">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam atque sit tenetur commodi vel
-                        illo amet natus, corporis, facilis magni voluptate quibusdam quis ducimus ipsum ullam itaque
-                        labore voluptatibus! Reprehenderit!
+                        Closing Night merupakan puncak dan penutup dari rangkaian acara RADIOACTIVE 2024 yang akan dilaksanakan secara offline. Kegiatan ini bertujuan untuk meningkatkan awareness dan engagement RADIOACTIVE sebagai acara tahunan dari UMN Radio. Konsep Closing Night tahun ini adalah “Valiant Against Fear” , Radioactive 2024 mengajak seluruh peserta dan panitia untuk dapat bertahan setelah keluar dari zona nyaman mereka. Untuk closing night Radioactive tahun ini akan diadakan secara intimate karena untuk berusaha bertahan di zona nyaman, tahap awal yang dapat dilakukan adalah berfokus di skala yang kecil terlebih dahulu, kemudian baru dilanjutkan ke skala yang lebih besar.
                     </p>
                 </div>
             </div>
@@ -299,18 +290,6 @@
     AOS.init();
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
-<script>
-    window.addEventListener('scroll', function () {
-        var header = document.getElementById('header');
-        if (window.scrollY > 0) {
-            header.classList.remove('bg-transparent');
-            header.classList.add('bg-[#0E0EC0]');
-        } else {
-            header.classList.add('bg-transparent');
-            header.classList.remove('bg-[#0E0EC0]');
-        }
-    });
-</script>
 <script>
     document.addEventListener('DOMContentLoaded', () => {
         const carousel = document.getElementById('carousel');

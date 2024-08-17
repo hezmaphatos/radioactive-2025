@@ -20,10 +20,10 @@ class MerchOrderDetail extends Model
     ];
 
     public function merchOrder(): BelongsTo{
-        return $this->belongsTo(MerchOrder::class);
+        return $this->belongsTo(MerchOrder::class, 'id', 'order_id');
     }
 
     public function merch(): HasOne{
-        return $this->hasOne(Merch::class);
+        return $this->hasOne(Merch::class, 'id', 'merch_id');
     }
 }

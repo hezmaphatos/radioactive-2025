@@ -13,10 +13,10 @@
 </head>
 
 <body class="bg-white flex justify-center overflow-scroll p-16 gap-8 flex-wrap">
+    @if (session()->has('success'))
+        <div class="text-sm text-green-500 w-full text-center" role="alert">{{ session('success') }}</div>
+    @endif
     <div class="flex justify-center bg-gray-300 p-4 rounded drop-shadow-xl w-80 max-w-screen-sm">
-        @if (session()->has('success'))
-            <div class="text-sm text-green-500" role="alert">{{ session('success') }}</div>
-        @endif
         <form action="/merch/admin/{{ $merch->id }}/update" class="" enctype="multipart/form-data"
             method="post">
             @csrf
@@ -97,26 +97,130 @@
             </button>
         </form>
     </div>
-    <div
-        class="flex justify-center items-center align-middle bg-gray-300 p-4 rounded drop-shadow-xl flex-wrap w-80 max-w-screen-sm gap-4">
+    <div class="bg-gray-300 p-4 rounded drop-shadow-xl flex-wrap w-80 max-w-screen-sm gap-8">
         <div class="w-full font-taruno text-md md:text-lg text-black text-center">Merch Images</div>
-        @foreach ($merch->images as $picture)
-            <div class="rounded p-2 bg-gray-100">
-                <img class="w-48 object-contain" src="{{ asset('storage/' . $picture->image) }}" alt="">
-                <p class="text-black text-center w-full">{{ $picture->description }}</p
-                    class="text-black text-center w-full">
-                <form action="/merch/admin/image/{{ $picture->id }}/delete" method="post" class="inline">
-                    @method('delete')
-                    @csrf
-                    <button onclick="return confirm('Are you sure you want to delete image?')" type="submit"
-                        class="bg-red-500 hover:bg-red-400 text-white font-bold px-2 rounded">
-                        Delete</button>
-                </form>
-            </div>
-        @endforeach
-        <a href="/merch/admin/1/addimage">
+        <div class="flex gap-4 flex-wrap w-full justify-center">
+            @foreach ($merch->images as $picture)
+                <div class="rounded p-2 bg-gray-100">
+                    <img class="w-48 object-contain" src="{{ asset('storage/' . $picture->image) }}" alt="">
+                    <p class="text-black text-center w-full">{{ $picture->description }}</p>
+                    <form action="/merch/admin/image/{{ $picture->id }}/delete" method="post" class="inline">
+                        @method('delete')
+                        @csrf
+                        <button onclick="return confirm('Are you sure you want to delete image?')" type="submit"
+                            class="bg-red-500 hover:bg-red-400 text-white font-bold px-2 rounded">
+                            Delete</button>
+                    </form>
+                </div>
+            @endforeach
+        </div>
+        <a href="/merch/admin/{{ $merch->id }}/addimage">
             <button class="text-white bg-black w-full text-sm px-5 py-1 rounded text-center">
                 Add Image
+            </button>
+        </a>
+    </div>
+    <div class=" bg-gray-300 p-4 rounded drop-shadow-xl flex-wrap w-80 max-w-screen-sm">
+        <div class="w-full font-taruno text-md md:text-lg text-black text-center h-fit">Merch Variants</div>
+        <div class="flex gap-4 flex-wrap">
+            @foreach ($merch->merchvariations as $variation)
+                <div class="rounded p-2 bg-gray-100 w-full h-fit">
+                    <form id="form-{{ $variation->id }}" action="/merch/admin/{{$variation->id}}/updatevariation" method="POST"
+                        enctype="multipart/form-data">
+                        @csrf
+                        @method('put')
+                        <div class="flex flex-nowrap">
+                            <p class="text-black w-full font-bold">Description: </p>
+                            <input required
+                                class="block @error('description') border-red-500 @enderror shadow appearance-none bg-white text-black placeholder-slate-400 border border-black w-full px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
+                                type="text" placeholder="" name="description"
+                                value="{{ old('description', $variation->description) }}" disabled>
+                            @error('description')
+                                <div class="text-sm text-red-600">{{ $message }}</div>
+                            @enderror
+                        </div>
+                        <div class="flex flex-nowrap">
+                            <p class="text-black w-full font-bold">Stock: </p>
+                            <input required
+                                class="block @error('stock') border-red-500 @enderror shadow appearance-none bg-white text-black placeholder-slate-400 border border-black w-full px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
+                                type="number" placeholder="" name="stock"
+                                value="{{ old('stock', $variation->stock) }}" disabled>
+                            @error('stock')
+                                <div class="text-sm text-red-600">{{ $message }}</div>
+                            @enderror
+                        </div>
+                        <div class="flex flex-nowrap">
+                            <p class="text-black w-full font-bold">Additional Price: </p>
+                            <input required
+                                class="block @error('additional_price') border-red-500 @enderror shadow appearance-none bg-white text-black placeholder-slate-400 border border-black w-full px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
+                                type="number" placeholder="" name="additional_price"
+                                value="{{ old('additional_price', $variation->additional_price) }}" disabled>
+                            @error('additional_price')
+                                <div class="text-sm text-red-600">{{ $message }}</div>
+                            @enderror
+                        </div>
+                        <div class="flex space-x-2">
+                            <button id="saveButton-{{ $variation->id }}" type="submit"
+                                class="bg-yellow-500 hover:bg-yellow-400 text-white font-bold px-2 rounded hidden">
+                                Save
+                            </button>
+                            <button type="button" onclick="cancelEditing({{ $variation->id }})"
+                                class="bg-gray-500 hover:bg-gray-400 text-white font-bold px-2 rounded hidden"
+                                id="cancelButton-{{ $variation->id }}">
+                                Cancel
+                            </button>
+                        </div>
+                    </form>
+                    <br>
+                    <form action="/merch/admin/{{ $variation->id }}/delete" method="post" class="inline">
+                        @method('delete')
+                        @csrf
+                        <button onclick="return confirm('Are you sure you want to delete image?')" type="submit"
+                            class="bg-red-500 hover:bg-red-400 text-white font-bold px-2 rounded">
+                            Delete
+                        </button>
+                    </form>
+                    <button onclick="enableEditing({{ $variation->id }})" type="button"
+                        class="bg-yellow-500 hover:bg-yellow-400 text-white font-bold px-2 rounded">
+                        Edit
+                    </button>
+                </div>
+
+                <script>
+                    function enableEditing(id) {
+                        const form = document.getElementById('form-' + id);
+                        const inputs = form.querySelectorAll('input[type="text"], input[type="number"]');
+                        inputs.forEach(input => {
+                            input.disabled = false;
+                        });
+
+                        // Show the Save and Cancel buttons
+                        document.getElementById('saveButton-' + id).classList.remove('hidden');
+                        document.getElementById('cancelButton-' + id).classList.remove('hidden');
+                    }
+
+                    function cancelEditing(id) {
+                        const form = document.getElementById('form-' + id);
+                        const inputs = form.querySelectorAll('input[type="text"], input[type="number"]');
+
+                        // Reset the form to its initial state
+                        form.reset();
+
+                        // Disable the inputs again
+                        inputs.forEach(input => {
+                            input.disabled = true;
+                        });
+
+                        // Hide the Save and Cancel buttons
+                        document.getElementById('saveButton-' + id).classList.add('hidden');
+                        document.getElementById('cancelButton-' + id).classList.add('hidden');
+                    }
+                </script>
+            @endforeach
+        </div>
+        <a href="/merch/admin/{{ $merch->id }}/addvariation">
+            <button class="text-white bg-black w-full text-sm px-5 py-1 rounded text-center">
+                Add Variation
             </button>
         </a>
     </div>

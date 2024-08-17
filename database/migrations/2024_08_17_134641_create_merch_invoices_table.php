@@ -11,12 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('merch_variations', function (Blueprint $table) {
+        Schema::create('merch_invoices', function (Blueprint $table) {
             $table->id();
-            $table->integer('merch_id');
-            $table->string('description');
-            $table->integer('stock')->nullable();
-            $table->bigInteger('additional_price')->nullable();
             $table->timestamps();
         });
     }
@@ -26,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('merch_variations');
+        Schema::dropIfExists('merch_invoices');
     }
 };

@@ -16,54 +16,71 @@
     @vite('resources/css/app.css')
 </head>
 
-<body class="h-screen bg-white flex justify-center items-center align-middle">
-    <div class="container w-full mx-auto px-2">
-        <div id='table_container' class="p-4 mt-6 lg:mt-0 rounded shadow bg-white">
-            <table id="posts_table" class="stripe hover" style="width:100%; padding-top: 1em;  padding-bottom: 1em;">
-                <thead>
-                    <tr>
-                        <th data-priority="0">Merch ID</th>
-                        <th data-priority="1">Name</th>
-                        <th data-priority="2">Description</th>
-                        <th data-priority="3">Price</th>
-                        <th data-priority="4">Stock</th>
-                        <th data-priority="5">Image</th>
-                        <th data-priority="6">Actions</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach ($merches as $merch)
-                        <tr>
-                            <td>{{ $merch->id }}</td>
-                            <td>{{ $merch->name }}</td>
-                            <td>{{ $merch->description }}</td>
-                            <td>{{ $merch->price }}</td>
-                            <td>{{ $merch->stock }}</td>
-                            <td><img src="{{ asset('storage/' . $merch->image) }}" alt=""
-                                    class="my-1 object-contain h-32"></td>
-                            <td>
-                                <div class=" flex flex-wrap">
-                                    <a href="/merch/admin/{{ $merch->id }}/edit">
-                                        <button
-                                            class="bg-yellow-500 hover:bg-yellow-400 text-white font-bold py-1 px-2 border-b-4 border-yellow-700 hover:border-yellow-500 rounded">
-                                            Edit</button>
-                                    </a>
-                                    <form action="/merch/admin/{{ $merch->id }}/delete" method="post" class="inline">
-                                        @method('delete')
-                                        @csrf
-                                        <button onclick="return confirm('Are you sure you want to delete merch?')"
-                                            type="submit"
-                                            class="bg-red-500 hover:bg-red-400 text-white font-bold py-1 px-2 border-b-4 border-red-700 hover:border-red-500 rounded">
-                                            Delete</button>
-                                    </form>
-                                </div>
-                            </td>
-                        </tr>
-                    @endforeach
-                </tbody>
-            </table>
+<body class="h-screen bg-white flex flex-wrap justify-center align-middle items-center">
+    <div class="">
+        <div class="">
+            <a href="/merch/admin/new">
+                <button
+                    class="bg-green-500 hover:bg-green-400 text-white font-bold py-1 px-2 border-b-4 border-green-700 hover:border-green-500 rounded">
+                    New Merch</button>
+            </a>
+            @if (session()->has('success'))
+                <div class="text-sm text-green-500" role="alert">{{ session('success') }}</div>
+            @endif
         </div>
-        <!--/Card-->
+
+        <div class="container w-full mx-auto px-2">
+            <div id='table_container' class="p-4 mt-6 lg:mt-0 rounded shadow bg-white">
+                <table id="posts_table" class="stripe hover"
+                    style="width:100%; padding-top: 1em;  padding-bottom: 1em;">
+                    <thead>
+                        <tr>
+                            <th data-priority="0">Merch ID</th>
+                            <th data-priority="1">Name</th>
+                            <th data-priority="2">Description</th>
+                            <th data-priority="3">Price</th>
+                            <th data-priority="4">Stock</th>
+                            <th data-priority="5">Image</th>
+                            <th data-priority="6">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach ($merches as $merch)
+                            <tr>
+                                <td>{{ $merch->id }}</td>
+                                <td>{{ $merch->name }}</td>
+                                <td>
+                                    <div class="max-h-48 overflow-scroll">{{ $merch->description }}</div>
+                                </td>
+                                <td>{{ $merch->price }}</td>
+                                <td>{{ $merch->stock }}</td>
+                                <td><img src="{{ asset('storage/' . $merch->image) }}" alt=""
+                                        class="my-1 object-contain h-32"></td>
+                                <td>
+                                    <div class=" flex flex-wrap">
+                                        <a href="/merch/admin/{{ $merch->id }}/edit">
+                                            <button
+                                                class="bg-yellow-500 hover:bg-yellow-400 text-white font-bold py-1 px-2 border-b-4 border-yellow-700 hover:border-yellow-500 rounded">
+                                                Edit</button>
+                                        </a>
+                                        <form action="/merch/admin/{{ $merch->id }}/delete" method="post"
+                                            class="inline">
+                                            @method('delete')
+                                            @csrf
+                                            <button onclick="return confirm('Are you sure you want to delete merch?')"
+                                                type="submit"
+                                                class="bg-red-500 hover:bg-red-400 text-white font-bold py-1 px-2 border-b-4 border-red-700 hover:border-red-500 rounded">
+                                                Delete</button>
+                                        </form>
+                                    </div>
+                                </td>
+                            </tr>
+                        @endforeach
+                    </tbody>
+                </table>
+            </div>
+            <!--/Card-->
+        </div>
     </div>
 
 

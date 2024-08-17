@@ -24,6 +24,6 @@ class Cart extends Model
     }
 
     public function merch(): HasOne {
-        return $this->hasOne(Merch::class);
+        return $this->hasOne(Merch::class, 'id', 'merch_id');
     }
 }

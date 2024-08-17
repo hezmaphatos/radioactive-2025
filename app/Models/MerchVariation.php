@@ -13,6 +13,7 @@ class MerchVariation extends Model
     protected $fillable = [
         'merch_id',
         'description',
+        'stock',
         'additional_price'
     ];
 

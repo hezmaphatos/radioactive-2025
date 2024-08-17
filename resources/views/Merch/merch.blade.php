@@ -135,8 +135,10 @@
                             $count = 1;
                         @endphp
                         @foreach ($merch->images as $picture)
-                            <img type="button" class="w-[50px] h-[70px] border-[1px] border-white hover:cursor-pointer"
-                                aria-current="true" aria-label="{{$picture->description}}" data-carousel-slide-to="{{ $count }}"
+                            <img type="button"
+                                class="w-[50px] h-[70px] border-[1px] border-white hover:cursor-pointer"
+                                aria-current="true" aria-label="{{ $picture->description }}"
+                                data-carousel-slide-to="{{ $count }}"
                                 src="{{ asset('storage/' . $picture->image) }}" />
                             @php
                                 $count++;
@@ -182,6 +184,25 @@
                             </div>
                         </div>
                     </div>
+                    <div class="">
+                        <form action="/merch/cart/add" enctype="multipart/form-data" method="POST">
+                            @csrf
+                            <p>Size</p>
+                            <select name="variation" id="variation_select"
+                                class="">
+                                <option disabled selected value> -- select variation -- </option>
+                                @foreach ($merch->merchvariations as $merchvariation)
+                                    <option value="{{ $merchvariation->description }}">{{ $merchvariation->description }} ({{$merchvariation->stock}})</option>
+                                @endforeach
+                            </select>
+                            <p>Quantity</p>
+                            <input name="quantity" min="1" value="1" type="number">
+                            <input hidden type="text" name="merch_id" value="{{$merch->id}}">
+                            <button type="submit" class="bg-white text-black">
+                                Add to Cart
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -195,11 +216,9 @@
                 </li>
                 <li class="text-white text-[15px]">TIDAK MENERIMA PENGEMBALIAN DANA ATAS PESANAN YANG
                     TELAH DILAKUKAN</li>
-                @if ($merch->id == 3 || $merch->id == 4 || $merch->id == 5)
-                    <li class="text-white text-[15px]">BARANG YANG SUDAH DITERIMA TIDAK DAPAT DITUKARKAN
-                        KEMBALI
-                    </li>
-                @endif
+                <li class="text-white text-[15px]">BARANG YANG SUDAH DITERIMA TIDAK DAPAT DITUKARKAN
+                    KEMBALI
+                </li>
             </ul>
         </div>
     </div>

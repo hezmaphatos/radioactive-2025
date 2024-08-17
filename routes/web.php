@@ -78,11 +78,11 @@ Route::middleware('guest')->controller(ResetPasswordController::class)->group(fu
     Route::post('/reset-password', 'reset')->name('password.update');;
 });
 
-Route::get('/merch', [MerchController::class, 'index']);
-Route::get('/cart', [MerchController::class, 'cart']);
-Route::get('/{id}/cart', [MerchController::class, 'addToCart']);
-Route::get('/cart/{id}', [MerchController::class, 'removeFromCart']);
-Route::get('/merch-checkout', [MerchController::class, 'checkout']);
+// Route::get('/merch', [MerchController::class, 'index']);
+// Route::get('/cart', [MerchController::class, 'cart']);
+// Route::get('/{id}/cart', [MerchController::class, 'addToCart']);
+// Route::get('/cart/{id}', [MerchController::class, 'removeFromCart']);
+// Route::get('/merch-checkout', [MerchController::class, 'checkout']);
 
 Route::get('/send', [MailController::class, 'index']);
 Route::get('/closing-night', function () {
@@ -128,18 +128,40 @@ Route::get('/doorprize', function(){
 // });
 
 Route::controller(MerchController::class)->group(function(){
-    Route::get('/merch', 'index');
-    Route::get('/merch/{merch:id}', 'show');
-    // Route::get('/merch/admin/dashboard', 'dashboard');
+    Route::prefix('/merch')->group(function(){
+        Route::get('/checkoutdetails', 'checkout')->middleware('auth');
+        Route::post('/checkout', 'order')->middleware('auth');
+        Route::get('/orders', 'userDashboard')->middleware('auth');
+        Route::get('/order/{merchOrder:id}', 'showOrder')->middleware('auth');
+        Route::get('/{merch:id}', 'show');
+        Route::get('/', 'index');
+    });
+    
+    Route::get('/cart', 'cart')->middleware('auth');
+    Route::post('/merch/cart/add', 'addToCart')->middleware('auth');
+    Route::delete('/cart/{cart:id}/remove', 'removeFromCart')->middleware('auth');
+    Route::put('/cart/{cart:id}/updateqty', 'updateCartQuantity')->middleware('auth');
+
+    Route::prefix('/admin/orders')->group(function(){
+        Route::get('/dashboard', 'ordersDashboard')->middleware('auth');
+        Route::put('/{merchOrder:id}/approve', 'approval')->middleware('auth');
+        Route::put('/{merchOrder:id}/cancel', 'cancel')->middleware('auth');
+        Route::put('/{merchOrder:id}/suspend', 'suspend')->middleware('auth');
+    });
+
     Route::prefix('/merch/admin')->group(function(){
         Route::get('/new', 'create');
         Route::post('/store', 'store');
         Route::get('/{merch:id}/addimage', 'addImage');
+        Route::get('/{merch:id}/addvariation', 'addVariation');
         Route::post('/{merch:id}/storeimage', 'storeImage');
+        Route::post('/{merch:id}/storevariation', 'storeVariation');
+        Route::put('/{merchvariation:id}/updatevariation', 'updateVariation');
         Route::get('/dashboard', 'dashboard');
         Route::get('/{merch:id}/edit', 'edit');
         Route::put('/{merch:id}/update', 'update');
         Route::delete('/image/{merchImage:id}/delete', 'deleteImage');
+        Route::delete('/image/{merch:id}/delete', 'destroy');
     });
 });
 

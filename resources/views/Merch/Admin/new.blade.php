@@ -12,96 +12,105 @@
     @vite('resources/css/app.css')
 </head>
 
-<body class="bg-white flex justify-center items-center align-middle overflow-scroll p-16 min-h-screen">
-    <form action="/merch/admin/store" class="" enctype="multipart/form-data" method="post">
-        <div class="flex justify-center align-middle form-container">
-            <div class="flex flex-col w-[400px] max-w-[95vw]">
-                <div class="w-full form-content px-8 py-3 mb-10 font-pathway bg-gray-300 rounded">
-                    <div class="w-full font-taruno text-md md:text-lg text-black text-center">Data Merch</div>
-                    @csrf
-                    @if (session()->has('success'))
-                        <div class="text-sm text-green-500" role="alert">{{ session('success') }}</div>
-                    @endif
-                    <div>
-                        <div class="mb-1">
-                            <label class="block form-label text-sm mb-0 text-black" for="">
-                                <span class="">Nama Merch</span>
-                            </label>
-                            <div>
-                                <input required
-                                    class="block @error('name') border-red-500 @enderror shadow appearance-none border text-black bg-white border-black  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
-                                    type="text" placeholder="Nama Merch" name="name" value="{{ old('name') }}">
-                                @error('name')
-                                    <div class="text-sm text-red-600">{{ $message }}</div>
-                                @enderror
+<body class="bg-white min-h-screen flex justify-center align-middle items-center overflow-scroll">
+    <div class="flex justify-center align-middle items-center flex-wrap gap-4">
+        <a href="/merch/admin/dashboard">
+            <button class="button-submit text-white bg-black w-full text-sm px-5 py-1 text-center">Back to
+                Dashboard</button>
+        </a>
+        <form action="/merch/admin/store" class="w-full" enctype="multipart/form-data" method="post">
+            <div class="flex justify-center align-middle form-container">
+                <div class="flex flex-col w-[400px] max-w-[95vw]">
+                    <div class="w-full form-content px-8 py-3 mb-10 font-pathway bg-gray-300 rounded">
+                        <div class="w-full font-taruno text-md md:text-lg text-black text-center">Data Merch</div>
+                        @csrf
+                        @if (session()->has('success'))
+                            <div class="text-sm text-green-500" role="alert">{{ session('success') }}</div>
+                        @endif
+                        <div>
+                            <div class="mb-1">
+                                <label class="block form-label text-sm mb-0 text-black" for="">
+                                    <span class="">Nama Merch</span>
+                                </label>
+                                <div>
+                                    <input required
+                                        class="block @error('name') border-red-500 @enderror shadow appearance-none border text-black bg-white border-black  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
+                                        type="text" placeholder="Nama Merch" name="name"
+                                        value="{{ old('name') }}">
+                                    @error('name')
+                                        <div class="text-sm text-red-600">{{ $message }}</div>
+                                    @enderror
+                                </div>
                             </div>
-                        </div>
-                        <div class="mb-1">
-                            <label class="block form-label text-sm mb-0 text-black" for="">
-                                <span class="">Deskripsi Merch</span>
-                            </label>
-                            <div>
-                                <textarea
-                                    class="block @error('description') border-red-500 @enderror shadow appearance-none border text-black bg-white border-black  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
-                                    name="description" id="" cols="30" rows="5" required>{{ old('description') }}</textarea>
-                                @error('name')
-                                    <div class="text-sm text-red-600">{{ $message }}</div>
-                                @enderror
+                            <div class="mb-1">
+                                <label class="block form-label text-sm mb-0 text-black" for="">
+                                    <span class="">Deskripsi Merch</span>
+                                </label>
+                                <div>
+                                    <textarea
+                                        class="block @error('description') border-red-500 @enderror shadow appearance-none border text-black bg-white border-black  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
+                                        name="description" id="" cols="30" rows="5" required>{{ old('description') }}</textarea>
+                                    @error('name')
+                                        <div class="text-sm text-red-600">{{ $message }}</div>
+                                    @enderror
+                                </div>
                             </div>
-                        </div>
-                        <div class="mb-1">
-                            <label class="block form-label text-sm mb-0 text-black" for="">
-                                <span class="">Harga</span>
-                            </label>
-                            <div>
-                                <input required
-                                    class="block @error('price') border-red-500 @enderror shadow appearance-none border text-black bg-white border-black  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
-                                    type="number" placeholder="100000" name="price" value="{{ old('price') }}">
-                                @error('price')
-                                    <div class="text-sm text-red-600">{{ $message }}</div>
-                                @enderror
+                            <div class="mb-1">
+                                <label class="block form-label text-sm mb-0 text-black" for="">
+                                    <span class="">Harga</span>
+                                </label>
+                                <div>
+                                    <input required
+                                        class="block @error('price') border-red-500 @enderror shadow appearance-none border text-black bg-white border-black  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
+                                        type="number" placeholder="100000" name="price" value="{{ old('price') }}">
+                                    @error('price')
+                                        <div class="text-sm text-red-600">{{ $message }}</div>
+                                    @enderror
+                                </div>
                             </div>
-                        </div>
-                        <div class="mb-1">
-                            <label class="block form-label text-sm mb-0 text-black" for="">
-                                <span class="">Stock</span>
-                            </label>
-                            <div>
-                                <input required
-                                    class="block @error('stock') border-red-500 @enderror shadow appearance-none border text-black bg-white border-black  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
-                                    type="number" placeholder="100" name="stock" value="{{ old('stock') }}">
-                                @error('stock')
-                                    <div class="text-sm text-red-600">{{ $message }}</div>
-                                @enderror
+                            <div class="mb-1">
+                                <label class="block form-label text-sm mb-0 text-black" for="">
+                                    <span class="">Stock</span>
+                                </label>
+                                <div>
+                                    <input required
+                                        class="block @error('stock') border-red-500 @enderror shadow appearance-none border text-black bg-white border-black  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
+                                        type="number" placeholder="100" name="stock" value="{{ old('stock') }}">
+                                    @error('stock')
+                                        <div class="text-sm text-red-600">{{ $message }}</div>
+                                    @enderror
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="mb-4">
-                            <label class="block form-label text-sm mb-0 text-black text-black" for="">
-                                <span class="">Cover Image</span>
-                            </label>
-                            <input
-                                class="block @error('image') border-red-500 @enderror w-full text-xs bg-white text-black"
-                                type="file" accept="image/*" name="image" id="image" onchange="previewImage()">
+                            <div class="mb-4">
+                                <label class="block form-label text-sm mb-0 text-black text-black" for="">
+                                    <span class="">Cover Image</span>
+                                </label>
+                                <input
+                                    class="block @error('image') border-red-500 @enderror w-full text-xs bg-white text-black"
+                                    type="file" accept="image/*" name="image" id="image"
+                                    onchange="previewImage()">
 
-                            <label class="block form-label text-sm mb-0 text-black text-black" for="">
-                                <span class="">Preview</span>
-                            </label>
-                            <img src="" alt="" class="img-preview h-80 hidden">
-                            @error('image')
-                                <div class="text-sm text-red-600">{{ $message }}</div>
-                            @enderror
+                                <label class="block form-label text-sm mb-0 text-black text-black" for="">
+                                    <span class="">Preview</span>
+                                </label>
+                                <img src="" alt="" class="img-preview h-80 hidden">
+                                @error('image')
+                                    <div class="text-sm text-red-600">{{ $message }}</div>
+                                @enderror
+                            </div>
+
+                            <button
+                                class="button-submit text-white bg-black w-full text-sm px-5 py-1 rounded text-center"
+                                type="submit" onclick="return confirm('Pastikan data yang dimasukkan benar adanya')">
+                                Submit
+                            </button>
                         </div>
-
-                        <button class="button-submit text-white bg-black w-full text-sm px-5 py-1 rounded text-center"
-                            type="submit" onclick="return confirm('Pastikan data yang dimasukkan benar adanya')">
-                            Submit
-                        </button>
                     </div>
                 </div>
             </div>
-        </div>
-    </form>
+        </form>
+    </div>
 </body>
 
 <script>

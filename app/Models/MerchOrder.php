@@ -16,12 +16,13 @@ class MerchOrder extends Model
         'email',
         'phone',
         'line',
+        'payment_image',
         'cumulative_price',
         'status'
     ];
 
     public function orderDetails(): HasMany{
-        return $this->hasMany(MerchOrderDetail::class);
+        return $this->hasMany(MerchOrderDetail::class, 'order_id', 'id');
     }
 
     public function user(): BelongsTo{

@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('email')->nullable();
             $table->string('phone')->nullable();
             $table->string('line')->nullable();
+            $table->text('payment_image');
             $table->bigInteger('cumulative_price');
             $table->string('status');
             $table->timestamps();

@@ -13,7 +13,7 @@
     @vite('resources/css/app.css')
 </head>
 
-<body class="overflow-x-hidden bg-black text-white">
+<body class=" bg-black text-white">
     {{-- <nav id="header" class="fixed navbar bg-transparent justify-center gap-16 z-40 transition-all duration-700">
         <a class="font-taruno text-white text-xs underline underline-offset-4 decoration-[#FFF000] cursor-pointer"
             href="/">HOME</a>
@@ -83,9 +83,9 @@
         </div>
     </div>
     <div class="grid lg:gap-20 md:gap-20 pt-32">
-        <div class="grid justify-center">
-            <div class="flex items-center gap-20 mb-10 flex-wrap justify-center">
-                <div id="indicators-carousel" class="relative w-[350px] h-[400px] justify-center"
+        <div class="grid justify-center font-ltmuseum-reg">
+            <div class="flex gap-20 mb-10 flex-wrap justify-center">
+                <div id="indicators-carousel" class="relative w-[315px] h-[360px] md:w-[350px] md:h-[400px] justify-center"
                     data-carousel="static">
                     <div class="m-auto relative overflow-hidden w-5/6 h-full rounded-lg border-[1px] border-white">
                         <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
@@ -149,20 +149,20 @@
 
                 <div class="pl-2 md:pl-0">
                     <div class="mt-5">
-                        <p class="mt-5 font-taruno text-white text-lg">{{ $merch->name }}</p>
+                        <p class="mt-10 font-brodyrawk text-[#ff0015] text-5xl">{{ $merch->name }}</p>
                     </div>
-                    <p class="mt-1 font-pathway text-white text-xl">Rp {{ number_format($merch->price, 0, ',', '.') }}
+                    <p class="mt-1 font-ltmuseum-bold text-white text-3xl">Rp {{ number_format($merch->price, 0, ',', '.') }}
                     </p>
-                    <div id="indicators-carousel" class="relative w-full h-full" data-carousel="static">
+                    <div id="indicators-carousel" class="relative" data-carousel="static">
                         <div class="z-30 inline-flex gap-4 h-3 overflow-hidden justify-center mt-[20px]">
                             <div type="button"
-                                class="h-[2px] w-[126px] cursor-pointer no-underline text-white font-taruno text-[13px]"
+                                class="h-[2px] w-[95px] cursor-pointer no-underline text-white font-brodyrawk text-[15px] text-center"
                                 aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"
                                 class="relative">
                                 <p class="absolute top-1">Description</p>
                             </div>
                             <div type="button"
-                                class="h-[2px] w-[100px] cursor-pointer no-underline text-white font-taruno text-[13px]"
+                                class="h-[2px] w-[75px] cursor-pointer no-underline text-white font-brodyrawk text-[15px] text-center"
                                 data-carousel-slide-to="1" class="relative">
                                 <p class="absolute top-1">Shipping</p>
                             </div>
@@ -184,30 +184,65 @@
                             </div>
                         </div>
                     </div>
-                    <div class="">
-                        <form action="/merch/cart/add" enctype="multipart/form-data" method="POST">
+                    <div class="p-4">
+                        <form action="/merch/cart/add" enctype="multipart/form-data" method="POST" class="">
                             @csrf
-                            <p>Size</p>
-                            <select name="variation" id="variation_select"
-                                class="">
-                                <option disabled selected value> -- select variation -- </option>
-                                @foreach ($merch->merchvariations as $merchvariation)
-                                    <option value="{{ $merchvariation->description }}">{{ $merchvariation->description }} ({{$merchvariation->stock}})</option>
-                                @endforeach
-                            </select>
-                            <p>Quantity</p>
-                            <input name="quantity" min="1" value="1" type="number">
-                            <input hidden type="text" name="merch_id" value="{{$merch->id}}">
-                            <button type="submit" class="bg-white text-black">
+                            <div class="my-2">
+                                <h1>Order Now</h1>
+                                <p>Size</p>
+                                <select name="variation" id="variation_select"
+                                    class="w-full bg-gray-900 border-2 border-[#d61525] text-white px-2 py-1">
+                                    <option disabled selected value> -- select variation -- </option>
+                                    @foreach ($merch->merchvariations as $merchvariation)
+                                        <option value="{{ $merchvariation->description }}">
+                                            {{ $merchvariation->description }} ({{ $merchvariation->stock }})</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                            <div class="my-2">
+                                <p>Quantity</p>
+                                <input name="quantity" min="1" value="1" type="number"
+                                    class="w-full bg-gray-900 border-2 border-[#d61525] text-white px-2 py-1">
+                            </div>
+                            <input hidden type="text" name="merch_id" value="{{ $merch->id }}">
+                            <button type="submit"
+                                class="w-full text-white border-2 bg-[#d61525] border-white px-2 py-1 hover:bg-red-500 font-ltmuseum-bold my-1">
                                 Add to Cart
                             </button>
                         </form>
+                        <div class="w-full mt-2">
+                            @if ($links->count()>0)
+                                <h1>Other Options</h1>
+                            @endif
+                            @foreach ($links as $link)
+                                <a href="{{ $link->link }}" target="_blank">
+                                    <button
+                                        class="w-full text-white border-2 my-1
+                                        @if (strtolower($link->type) == "tokopedia")
+                                            bg-green-500 
+                                            hover:bg-green-400
+                                        @elseif (strtolower($link->type) == "shopee")
+                                            bg-orange-600 
+                                            hover:bg-orange-400
+                                        @elseif (strtolower($link->type) == "tiktok")
+                                            bg-gray-900 
+                                            hover:bg-gray-700
+                                        @else
+                                        bg-[#d61525] 
+                                        hover:bg-red-500 
+                                        @endif
+                                        border-white px-2 py-1 font-ltmuseum-bold">
+                                        {{ $link->title }}
+                                    </button>
+                                </a>
+                            @endforeach
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="flex justify-center w-full align-middle">
+    <div class="flex justify-center w-full align-middle ">
         <div class="px-6 text-left">
             <h2 class="font-taruno text-white">NOTES</h2>
             <ul class="list-disc ml-[17px]">

@@ -125,8 +125,8 @@
         <div class="flex gap-4 flex-wrap">
             @foreach ($merch->merchvariations as $variation)
                 <div class="rounded p-2 bg-gray-100 w-full h-fit">
-                    <form id="form-{{ $variation->id }}" action="/merch/admin/{{$variation->id}}/updatevariation" method="POST"
-                        enctype="multipart/form-data">
+                    <form id="form-{{ $variation->id }}" action="/merch/admin/{{ $variation->id }}/updatevariation"
+                        method="POST" enctype="multipart/form-data">
                         @csrf
                         @method('put')
                         <div class="flex flex-nowrap">
@@ -175,7 +175,7 @@
                     <form action="/merch/admin/{{ $variation->id }}/delete" method="post" class="inline">
                         @method('delete')
                         @csrf
-                        <button onclick="return confirm('Are you sure you want to delete image?')" type="submit"
+                        <button onclick="return confirm('Are you sure you want to delete variation?')" type="submit"
                             class="bg-red-500 hover:bg-red-400 text-white font-bold px-2 rounded">
                             Delete
                         </button>
@@ -224,6 +224,111 @@
             </button>
         </a>
     </div>
+    <div class="bg-gray-300 p-4 rounded drop-shadow-xl flex-wrap w-80 max-w-screen-sm">
+        <div class="w-full font-taruno text-md md:text-lg text-black text-center h-fit">Merch Links</div>
+        <div class="flex gap-4 flex-wrap">
+            @foreach ($merch->merchlinks as $link)
+                <div class="rounded p-2 bg-gray-100 w-full h-fit">
+                    <form id="linkform-{{ $link->id }}" action="/merch/admin/{{ $link->id }}/updatelink"
+                        method="POST" enctype="multipart/form-data">
+                        @csrf
+                        @method('put')
+                        <div class="flex flex-nowrap">
+                            <p class="text-black w-full font-bold">Type: </p>
+                            <input required
+                                class="block @error('type') border-red-500 @enderror shadow appearance-none bg-white text-black placeholder-slate-400 border border-black w-full px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
+                                type="text" placeholder="" name="type" value="{{ old('type', $link->type) }}"
+                                disabled>
+                            @error('type')
+                                <div class="text-sm text-red-600">{{ $message }}</div>
+                            @enderror
+                        </div>
+                        <div class="flex flex-nowrap">
+                            <p class="text-black w-full font-bold">Title: </p>
+                            <input required
+                                class="block @error('title') border-red-500 @enderror shadow appearance-none bg-white text-black placeholder-slate-400 border border-black w-full px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
+                                type="text" placeholder="" name="title"
+                                value="{{ old('title', $link->title) }}" disabled>
+                            @error('title')
+                                <div class="text-sm text-red-600">{{ $message }}</div>
+                            @enderror
+                        </div>
+                        <div class="flex flex-nowrap">
+                            <p class="text-black w-full font-bold">Link: </p>
+                            <input required
+                                class="block @error('link') border-red-500 @enderror shadow appearance-none bg-white text-black placeholder-slate-400 border border-black w-full px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
+                                type="url" placeholder="" name="link" value="{{ old('link', $link->link) }}"
+                                disabled>
+                            @error('link')
+                                <div class="text-sm text-red-600">{{ $message }}</div>
+                            @enderror
+                        </div>
+                        <div class="flex space-x-2">
+                            <button id="linksaveButton-{{ $link->id }}" type="submit"
+                                class="bg-yellow-500 hover:bg-yellow-400 text-white font-bold px-2 rounded hidden">
+                                Save
+                            </button>
+                            <button type="button" onclick="cancelEditingLink({{ $link->id }})"
+                                class="bg-gray-500 hover:bg-gray-400 text-white font-bold px-2 rounded hidden"
+                                id="linkcancelButton-{{ $link->id }}">
+                                Cancel
+                            </button>
+                        </div>
+                    </form>
+                    <br>
+                    <form action="/merch/admin/{{ $link->id }}/deletelink" method="post" class="inline">
+                        @method('delete')
+                        @csrf
+                        <button onclick="return confirm('Are you sure you want to delete this link?')" type="submit"
+                            class="bg-red-500 hover:bg-red-400 text-white font-bold px-2 rounded">
+                            Delete
+                        </button>
+                    </form>
+                    <button onclick="enableEditingLink({{ $link->id }})" type="button"
+                        class="bg-yellow-500 hover:bg-yellow-400 text-white font-bold px-2 rounded">
+                        Edit
+                    </button>
+                </div>
+
+                <script>
+                    function enableEditingLink(id) {
+                        const form = document.getElementById('linkform-' + id);
+                        const inputs = form.querySelectorAll('input[type="text"], input[type="url"]');
+                        inputs.forEach(input => {
+                            input.disabled = false;
+                        });
+
+                        // Show the Save and Cancel buttons
+                        document.getElementById('linksaveButton-' + id).classList.remove('hidden');
+                        document.getElementById('linkcancelButton-' + id).classList.remove('hidden');
+                    }
+
+                    function cancelEditingLink(id) {
+                        const form = document.getElementById('linkform-' + id);
+                        const inputs = form.querySelectorAll('input[type="text"], input[type="url"]');
+
+                        // Reset the form to its initial state
+                        form.reset();
+
+                        // Disable the inputs again
+                        inputs.forEach(input => {
+                            input.disabled = true;
+                        });
+
+                        // Hide the Save and Cancel buttons
+                        document.getElementById('linksaveButton-' + id).classList.add('hidden');
+                        document.getElementById('linkcancelButton-' + id).classList.add('hidden');
+                    }
+                </script>
+            @endforeach
+        </div>
+        <a href="/merch/admin/{{ $merch->id }}/addlink">
+            <button class="text-white bg-black w-full text-sm px-5 py-1 rounded text-center">
+                Add Link
+            </button>
+        </a>
+    </div>
+
 </body>
 
 <script>

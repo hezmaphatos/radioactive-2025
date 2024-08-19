@@ -7,6 +7,7 @@ use App\Http\Requests\StoreMerchRequest;
 use App\Http\Requests\UpdateMerchRequest;
 use App\Models\Cart;
 use App\Models\MerchImage;
+use App\Models\MerchLink;
 use App\Models\MerchOrder;
 use App\Models\MerchOrderDetail;
 use App\Models\MerchVariation;
@@ -240,7 +241,6 @@ class MerchController extends Controller
         return view('Merch.admin.ordersdash', ['orders' => $orders]);
     }
 
-
     public function resetCart()
     {
         if (Auth::check()) {
@@ -370,7 +370,8 @@ class MerchController extends Controller
     public function show(Merch $merch)
     {
         //
-        return view('Merch.merch', ['merch' => $merch]);
+        $links = $merch->merchlinks;
+        return view('Merch.merch', ['merch' => $merch, 'links' => $links]);
     }
 
     public function dashboard()
@@ -422,5 +423,50 @@ class MerchController extends Controller
         //
         $merch->delete();
         return redirect('/merch/admin/dashboard')->with('success', 'Merch Deleted');
+    }
+
+    public function addLink(Merch $merch)
+    {
+        return view('Merch.Admin.addlink', ['merch' => $merch]);
+    }
+
+    public function storeLink(Request $request, Merch $merch)
+    {
+        $validData = $request->validate([
+            'type' => 'required|string|max:255',
+            'title' => 'required|string|max:255',
+            'link' => 'required|url|max:255',
+        ]);
+
+        $validData['merch_id'] = $merch->id;
+
+        MerchLink::create($validData);
+
+        return redirect('/merch/admin/' . $merch->id . '/addlink')->with('success', 'Merch Link Added');
+    }
+
+    public function updateLink(Request $request, $linkId)
+    {   
+        $link = MerchLink::where('id', $linkId)->first();
+        // dd($link);
+        $validData = $request->validate([
+            'type' => 'required|string|max:255',
+            'title' => 'required|string|max:255',
+            'link' => 'required|url|max:255',
+        ]);
+
+        $link->update($validData);
+
+        return redirect('/merch/admin/' . $link->merch_id . '/edit')->with('success', 'Merch Link Updated');
+    }
+
+    public function deleteLink($linkId)
+    {   
+        $link = MerchLink::where('id', $linkId)->first();
+        // dd($link);
+        $merch_id = $link->merch_id;
+        $link->delete();
+
+        return redirect('/merch/admin/' . $merch_id . '/edit')->with('success', 'Merch Link Removed');
     }
 }

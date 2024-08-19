@@ -157,11 +157,16 @@ Route::controller(MerchController::class)->group(function(){
         Route::post('/{merch:id}/storeimage', 'storeImage');
         Route::post('/{merch:id}/storevariation', 'storeVariation');
         Route::put('/{merchvariation:id}/updatevariation', 'updateVariation');
+        Route::delete('/{merchvariation:id}/delete', 'deleteVariation');
         Route::get('/dashboard', 'dashboard');
         Route::get('/{merch:id}/edit', 'edit');
         Route::put('/{merch:id}/update', 'update');
         Route::delete('/image/{merchImage:id}/delete', 'deleteImage');
         Route::delete('/image/{merch:id}/delete', 'destroy');
+        Route::get('/{merch:id}/addlink', 'addLink');
+        Route::post('/{merch:id}/storelink', 'storeLink');
+        Route::put('/{id}/updatelink', 'updateLink');
+        Route::delete('/{id}/deletelink', 'deleteLink');
     });
 });
 

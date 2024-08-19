@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('container')
-<body class="text-white">
+<body class="text-white bg-black">
     {{-- <div>
         <video autoplay loop muted
             class="fixed -z-10 w-auto lg:w-full md:min-w-full md:min-h-full max-w-fit object-cover" loading="lazy">
@@ -27,14 +27,16 @@
         <div class="flex items-center text-justify opacity-50">
             <img src="{{ asset('images/IGGY BINGUNG.png') }}" class="grid grid-cols-2 gap-2 place-content-start w-65 h-48 bg-gradient-to-b from-transparent to-[#FA0202]">
             <p class="text-[0.7em] max-w-4xl sm:text-xl m-6 justify-center" style="letter-spacing: 5px;" data-aos="slide-up" data-aos-delay="50">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel cursus nisi. Fusce dictum maximus eros. Mauris convallis nunc non odio lobortis tincidunt. Vestibulum ultrices vel lectus a pharetra. Nullam at molestie mauris, posuere accumsan eros. Aenean congue eget massa id sollicitudin. Etiam eu turpis at magna sagittis rutrum eget in lorem. Sed et orci quis sapien finibus consectetur. Curabitur ut metus id enim pulvinar bibendum ut mollis erat.
+                Radio Announcing Competition merupakan rangkaian acara utama RADIOACTIVE. Lomba ini merupa kan ajang untuk siswa SMA dan mahasiswa se-Jabodetabek untuk memperluas wawasan dan mengasah kemampuan di dunia broadcasting. 
+
+                Radio Announcing Competition ini memiliki konsep yang sesuai dengan nilai utama RADIOACTIVE 2024, yaitu “Surviving the Maze”. Tujuan dari lomba ini adalah untuk mengasah kreativitas peserta dalam membuat siaran dan secara tidak langsung memberikan informasi hingga mengajak para peserta untuk menggambarkan perjuangan manusia dalam menghadapi rintangan dan lika-liku kehidupan.
             </p>
         </div>
         <div class="absolute bottom-10 right-10 z-10">
             <span class="text-red-800 text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-10xl font-bold" data-aos="fade-up" data-aos-delay="100">RAC</span>
         </div>
     </section>
-
+{{-- 
     <section class="min-h-screen items-center justify-between max-w-5xl mx-auto mt-40 p-4 font-['LT_Museum',sans-serif]">
         <div id="title" class="text-center my-8 px-4">
             <h1 class="m-[0.3em] text-2xl sm:text-3xl md:text-4xl italic">THE JUDGES</h1>
@@ -49,12 +51,12 @@
                 <h2 class="mb-2">Judge 2</h2>
             </div>
         </div>
-    </section>
+    </section> --}}
     
     <section class="min-h-screen max-w font-['LT_Museum',sans-serif] p-4" id="timeline">
         <div id="title" class="text-center my-8 px-4">
             <h1 class="m-[0.3em] md:text-[3em] italic" style="letter-spacing: 5px;">TIMELINE RADIO ANNOUNCING COMPETITION 2024</h1>
-            <p class="text-white md:text-xl tracking-widest">------</p>
+            <p class="text-white md:text-xl tracking-widest">DARE TO STRIVE</p>
         </div>
         <div class="relative" data-aos="zoom-in-right" data-aos-delay="100">
             <div class="absolute left-1/2 h-full w-px bg-white hidden m-s:block"></div>

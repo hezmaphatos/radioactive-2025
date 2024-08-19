@@ -5,15 +5,15 @@
 	@vite('resources/css/home.css')
 </head>
 <body class="overflow-x-hidden bg-black">
-    <div id="button1" class="fixed bottom-12 end-4 md:bottom-20 md:end-20 flex justify-center items-center z-50 animate-bounce" data-aos="fade-up">
+    {{-- <div id="button1" class="fixed bottom-12 end-4 md:bottom-10 md:end-20 flex justify-center items-center z-50 animate-bounce">
         <a href="/closing-night/#ticket" class="no-underline">
             <button class="rounded-[100%] h-[5.5rem] md:h-32 aspect-square bg-[#D61525] text-white border-white font-museum text-2xs md:text-sm p-2 md:p-4 font-bold border-2 hover:bg-[#FFF000] hover:text-[#D61525]">
                 GET YOUR TICKETS
             </button>
         </a>
-    </div>
-    <div class="relative flex flex-col items-center" data-aos="fade-up" data-aos-duration="3000">
-        <div data-aos="fade-up" class="flex flex-col md:flex-row items-center justify-center gap-4 mt-18">
+    </div> --}}
+    <div class="relative flex flex-col items-center" data-aos-duration="3000">
+        <div class="flex flex-col md:flex-row items-center justify-center gap-4 mt-18">
             <p class="text-center font-museum text-xs text-white z-20">THE MOST SPECTACULAR ANNUAL EVENT BY </p>
             <img class="w-20 md:w-24 z-16" src="images/LOGO UMN RADIO.webp">
         </div>
@@ -37,40 +37,34 @@
     </div>
 </div>
 
-<div id="marquee-section" class="">
-    <div class="overflow-hidden whitespace-nowrap">
-        <div class="marquee marquee-w">
-            <span class="max font-museum text-2xl text-white text-justify md:text-center tracking-8">DARE TO STRIVE DARE
-                TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE</span>
+<div id="marquee-section" class="mt-8 mb-16">
+    <div class="overflow-hidden">
+        <div class="marquee">
+            <span class="max font-museum text-2xl text-white tracking-8">
+                DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE 
+            </span>
         </div>
-        <div class="marquee marquee2 marquee-w">
-            <span class="font-museum text-2xl text-white text-justify md:text-center tracking-8"> DARE TO STRIVE
-                DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE </span>
+        <div class="marquee marquee-copy">
+            <span class="max font-museum text-2xl text-white tracking-8">
+                DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE 
+            </span>
         </div>
     </div>
-    <div class="overflow-hidden whitespace-nowrap">
-        <div class="marquee marquee-w marquee-reverse">
-            <span class="font-museum text-2xl text-white text-justify md:text-center tracking-8">DARE TO STRIVE DARE
-                TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE</span>
+    <div class="overflow-hidden mt-4">
+        <div class="marquee marquee-reverse">
+            <span class="font-museum text-2xl text-white tracking-8">
+                DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE 
+            </span>
+        </div>
+        <div class="marquee marquee-reverse marquee-copy">
+            <span class="font-museum text-2xl text-white tracking-8">
+                DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE 
+            </span>
         </div>
     </div>
 </div>
 
-<div id="marquee-section" class="mt-8 mb-16">
-    <div class="overflow-hidden whitespace-nowrap">
-        <div class="marquee marquee-w">
-            <span class="font-museum text-2xl text-white text-justify md:text-center tracking-8">DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE</span>
-        </div>
-        <div class="marquee marquee2 marquee-w">
-            <span class="font-museum text-2xl text-white text-justify md:text-center tracking-8"> DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE </span>
-        </div>
-    </div>
-    <div class="overflow-hidden whitespace-nowrap">
-        <div class="marquee marquee-w marquee-reverse">
-            <span class="font-museum text-2xl text-white text-justify md:text-center tracking-8">DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE</span>
-        </div>
-    </div>
-</div>
+
 
 <!-- <div id="upcoming-events" class="mt-8 lg:mb-0 lg:my-16 relative" data-aos="fade-up" data-aos-duration="3000" >
         <h4 class="font-brody md:text-3xl text-white text-center my-12 tracking-8">UPCOMING EVENTS</h4>
@@ -168,14 +162,14 @@
     <div id="title" class="text-center my-8 px-4">
         <h1 class="font-brody md:text-3xl text-white text-center my-12 tracking-8 m-[0.3em] md:text-[3em] italic"
             style="letter-spacing: 5px;">GENERAL TIMELINE</h1>
-        <p class="text-white md:text-xl tracking-widest">------</p>
+        {{-- <p class="text-white md:text-xl tracking-widest">------</p> --}}
     </div>
     <div class="relative" data-aos="zoom-in-right" data-aos-delay="100">
         <div class="absolute left-1/2 h-full w-px bg-white hidden m-s:block"></div>
         <div class="mx-auto max-w-[34.15em]">
             <div id="checkpoint" class="border-2 border-white pl-12 m-s:translate-x-[19em] rounded-2xl p-6 mb-4 mt-4">
                 <div>
-                    <h2 class="mb-2">2 - 9 September 2024 :<a href="/mac" class="no-underline"> Mini Annoucing Challenge</a></h2>
+                    <h2 class="mb-2">2 - 9 September 2024 :<a href="/mac" class="no-underline text-white hover:text-[#D61525]"> Mini Annoucing Challenge</a></h2>
                     <p class="leading-[27px] text-gray-300">
                         Mini Annoucing Challenge merupakan salah satu rangkaian acara RADIOACTIVE 2024. Mini Annoucing Challenge bertujuan untuk mengasah skill para peserta dalam bidang siaran. Dalam challenge ini, peserta tidak dibatasi untuk berkreasi. Teknis dari Mini Annoucing Challenge ini adalah peserta dapat siaran menggunakan tema dan 3 kata yang sudah dipilih secara acak. Disisi lain, challenge ini juga dapat meningkatkan awareness untuk rangkaian acara berikutnya.
                     </p>
@@ -183,7 +177,7 @@
             </div>
             <div id="checkpoint" class="border-2 border-white pl-12 m-s:-translate-x-[19em] rounded-2xl p-6 mb-4 mt-4">
                 <div>
-                    <h2 class="mb-2">2 September 2024 - 12 Oktober 2024 : <a href="/rac" class="no-underline">Radio Announcing Competition</a></h2>
+                    <h2 class="mb-2">2 September 2024 - 12 Oktober 2024 : <a href="/rac" class="no-underline text-white hover:text-[#D61525]">Radio Announcing Competition</a></h2>
                     <p class="leading-[27px] text-gray-300">
                         Radio Announcing Competition merupakan rangkaian acara utama RADIOACTIVE. Lomba ini merupa kan ajang untuk siswa SMA dan mahasiswa se-Jabodetabek untuk memperluas wawasan dan mengasah kemampuan di dunia broadcasting. Radio Announcing Competition ini memiliki konsep yang sesuai dengan nilai utama RADIOACTIVE 2024, yaitu “Surviving the Maze”. Tujuan dari lomba ini adalah untuk mengasah kreativitas peserta dalam membuat siaran dan secara tidak langsung memberikan informasi hingga mengajak para peserta untuk menggambarkan perjuangan manusia dalam menghadapi rintangan dan lika-liku kehidupan.
                     </p>
@@ -191,7 +185,7 @@
             </div>
             <div id="checkpoint" class="border-2 border-white pl-12 m-s:translate-x-[19em] rounded-2xl p-6 mb-4 mt-4">
                 <div>
-                    <h2 class="mb-2">2 November 2024 : <a href="/closing-night" class="no-underline">CLOSING NIGHT</a></h2>
+                    <h2 class="mb-2">2 November 2024 : <a href="/closing-night" class="no-underline text-white hover:text-[#D61525]">CLOSING NIGHT</a></h2>
                     <p class="leading-[27px] text-gray-300">
                         Closing Night merupakan puncak dan penutup dari rangkaian acara RADIOACTIVE 2024 yang akan dilaksanakan secara offline. Kegiatan ini bertujuan untuk meningkatkan awareness dan engagement RADIOACTIVE sebagai acara tahunan dari UMN Radio. Konsep Closing Night tahun ini adalah “Valiant Against Fear” , Radioactive 2024 mengajak seluruh peserta dan panitia untuk dapat bertahan setelah keluar dari zona nyaman mereka. Untuk closing night Radioactive tahun ini akan diadakan secara intimate karena untuk berusaha bertahan di zona nyaman, tahap awal yang dapat dilakukan adalah berfokus di skala yang kecil terlebih dahulu, kemudian baru dilanjutkan ke skala yang lebih besar.
                     </p>
@@ -203,7 +197,7 @@
 
 
 
-<div id="partners" class="-mb-20 md:-mb-0 md:my-24 mt-16" data-aos="fade-up">
+{{-- <div id="partners" class="-mb-20 md:-mb-0 md:my-24 mt-16" data-aos="fade-up">
     <div class="container mx-auto flex flex-col lg:flex-row items-center lg:justify-between">
         <!-- Text -->
         <div data-aos="zoom-in-right" data-aos-delay="400"
@@ -247,10 +241,10 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 
 <!-- Sponsors Section -->
-<div id="sponsors" class="py-16">
+{{-- <div id="sponsors" class="py-16">
     <div data-aos="zoom-in-right" data-aos-delay="400"
         class="container mx-auto flex flex-col lg:flex-row items-center lg:justify-between">
         <!-- Images -->
@@ -272,16 +266,13 @@
             <h2 class="font-brody md:text-5xl my-12 tracking-8 text-red-600">SPONSORS</h2>
         </div>
     </div>
-</div>
+</div> --}}
 
 
 <div id="after" class="-mb-20 md:-mb-0 md:my-24" data-aos="fade-up">
     <h2 class="font-brody md:text-3xl text-white text-center my-12 tracking-8">AFTER MOVIE</h2>
     <div class="w-full flex justify-center">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/noafJ76PHeM?si=x_X9yxOawXxH8Id2"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/noafJ76PHeM?si=5ho9Ad32GabxdrVT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 </div>
 

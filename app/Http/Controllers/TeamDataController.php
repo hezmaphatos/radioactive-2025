@@ -22,7 +22,9 @@ class TeamDataController extends Controller
      */
 
     public function confirmation_redirect(){
-        return view('teams.redirect');
+        return view('teams.redirect', [
+            'title' => 'RAC'
+        ]);
     }
 
     /**
@@ -30,10 +32,14 @@ class TeamDataController extends Controller
      */
     public function create()
     {
-        //
         $rac_teams = rac::all();
-        return view('teams.create', ['count'=>$rac_teams->count(), 'rac_teams'=>$rac_teams]);
+        return view('teams.create', [
+            'count' => $rac_teams->count(),
+            'rac_teams' => $rac_teams,
+            'title' => 'RAC'
+        ]);
     }
+    
 
     /**
      * Store a newly created resource in storage.
@@ -169,6 +175,8 @@ class TeamDataController extends Controller
     }
 
     public function form($amount){
-        return view('teams.form', compact("amount"));
+        return view('teams.form', compact("amount"), [
+            'title' => 'Rac'
+        ]);
     }
 }

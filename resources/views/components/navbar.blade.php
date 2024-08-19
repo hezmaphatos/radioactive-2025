@@ -24,7 +24,7 @@
 
     <div class="hidden gap-3 lg:flex pr-4">
         <a id="homeItem" 
-        class="font-ltmuseum text-white text-sm cursor-pointer 
+        class="menu-item font-ltmuseum text-white text-sm cursor-pointer 
         {{ ($title === 'Home') ? 'underline underline-offset-4 decoration-[#d6152581]' : 'no-underline hover:underline hover:underline-offset-4 hover:decoration-[#d6152581]' }}" 
         href="/">
         HOME
@@ -52,7 +52,7 @@
             <div class="absolute right-2">
                 @auth
                 <div id="dropdownButton" class="relative select-none">
-                <div onclick="toggleDropdown()" class="font-ltmuseum text-xs text-white flex justify-start mx-4 italic tracking-widest"
+                <div onclick="toggleDropdown()" class="font-ltmuseum text-xs text-white flex justify-start mx-4 tracking-widest"
                 >Welcome, {{ auth()->user()->name }} 
                     <svg id="fill"  class="w-4 mx-2 cursor-pointer" fill="#D61525" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
                      viewBox="0 0 330 330" xml:space="preserve">

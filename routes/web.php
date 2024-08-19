@@ -30,7 +30,7 @@ use App\Models\User;
 |
 */
 
-// Route::get('/2023', function () {
+// Route::get('/', function () {
 //     return view('Home.index', [
 //         "title" => "Home"
 //     ]);
@@ -48,7 +48,7 @@ Route::get('/', function(){
 
 // Route::get('/closing-night', function () {
 //     return view('closing.index', [
-//         "title" => "closing"
+//         "title" => "closing-night"
 //     ]);
 // });
 
@@ -90,8 +90,8 @@ Route::get('/', function(){
 //     Route::post('/checkout', 'checkout');
 //     Route::get('/invoice/{id}', 'invoice');
 
-    // debug only *nanti dihapus*
-    // Route::get('/approve', 'approve_ticket');
+//     // debug only *nanti dihapus*
+//     Route::get('/approve', 'approve_ticket');
 // });
 
 // Route::controller(TicketController::class)->group(function (){
@@ -110,23 +110,23 @@ Route::get('/', function(){
 
 // Route::resource('rac', TeamDataController::class);
 
-// Route::controller(TeamDataController::class)->group(function(){
-//     Route::get('/rac', 'index');
-//     Route::get('/rac/register', 'create');
+Route::controller(TeamDataController::class)->group(function(){
+    Route::get('/rac', 'index');
+    Route::get('/rac/register', 'create');
     // Route::get('/rac/register', function(){
     //     return view('welcome');
     // });
-//     Route::post('/rac/store', 'store');
-//     Route::get('/rac/form/{amount}', 'form');
-//     Route::get('/rac/confirmation', 'confirmation_redirect');
-// });
+    // Route::post('/rac/store', 'store');
+    // Route::get('/rac/form/{amount}', 'form');
+    // Route::get('/rac/confirmation', 'confirmation_redirect');
+});
 
 // Route::controller(VocController::class)->group(function () {
 //     Route::get('/voc', 'index');
 //     Route::get('/voc/submission', 'create');
-    // Route::get('/voc/submission', function(){
-    //     return view('welcome');
-    // });
+//     Route::get('/voc/submission', function(){
+//         return view('welcome');
+//     });
 //     Route::post('/voc/store', 'store');
 //     Route::get('/voc/show', 'show');
 //     Route::get('/voc/{id}/edit', 'edit');

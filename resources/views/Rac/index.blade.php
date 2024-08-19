@@ -21,7 +21,9 @@
         <div class="flex items-center text-justify opacity-50">
             <img src="{{ asset('images/IGGY BINGUNG.png') }}" class="grid grid-cols-2 gap-2 place-content-start w-65 h-48 bg-gradient-to-b from-transparent to-[#FA0202]">
             <p class="text-[0.7em] max-w-4xl sm:text-xl m-6 justify-center" style="letter-spacing: 5px;" data-aos="slide-up" data-aos-delay="50">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel cursus nisi. Fusce dictum maximus eros. Mauris convallis nunc non odio lobortis tincidunt. Vestibulum ultrices vel lectus a pharetra. Nullam at molestie mauris, posuere accumsan eros. Aenean congue eget massa id sollicitudin. Etiam eu turpis at magna sagittis rutrum eget in lorem. Sed et orci quis sapien finibus consectetur. Curabitur ut metus id enim pulvinar bibendum ut mollis erat.
+                Radio Announcing Competition merupakan rangkaian acara utama RADIOACTIVE. Lomba ini merupa kan ajang untuk siswa SMA dan mahasiswa se-Jabodetabek untuk memperluas wawasan dan mengasah kemampuan di dunia broadcasting. 
+
+                Radio Announcing Competition ini memiliki konsep yang sesuai dengan nilai utama RADIOACTIVE 2024, yaitu “Surviving the Maze”. Tujuan dari lomba ini adalah untuk mengasah kreativitas peserta dalam membuat siaran dan secara tidak langsung memberikan informasi hingga mengajak para peserta untuk menggambarkan perjuangan manusia dalam menghadapi rintangan dan lika-liku kehidupan.
             </p>
         </div>
         <div class="absolute bottom-10 right-10 z-10">

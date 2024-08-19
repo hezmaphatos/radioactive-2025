@@ -5,9 +5,12 @@
 
 
 <section class="flex min-h-screen flex-col justify-center items-center text-center px-4 font-['Brody_Rawk',sans-serif]">
-    <h1 class="text-[24px] md:text-[48px] font-bold mb-8 mt-auto text-red-800" style="letter-spacing: 5px;" data-aos="fade-up">Mini Announcing Challenge</h1>
+    <h1 class="text-[24px] md:text-[48px] font-bold mb-8 text-red-800 mt-25" style="letter-spacing: 5px;" data-aos="fade-up">Mini Announcing Challenge</h1>
     <p class="text-[9px] max-w-4xl sm:text-[20px] mb-8" style="letter-spacing: 5px;" data-aos="fade-up" data-aos-delay="100">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel cursus nisi. Fusce dictum maximus eros. Mauris convallis nunc non odio lobortis tincidunt. Vestibulum ultrices vel lectus a pharetra. Nullam at molestie mauris, posuere accumsan eros. Aenean congue eget massa id sollicitudin. Etiam eu turpis at magna sagittis rutrum eget in lorem. Sed et orci quis sapien finibus consectetur. Curabitur ut metus id enim pulvinar bibendum ut mollis erat.
+        Radio Announcing Competition merupakan rangkaian acara utama RADIOACTIVE. Lomba ini merupa kan ajang untuk siswa SMA dan mahasiswa se-Jabodetabek untuk memperluas wawasan dan mengasah kemampuan di dunia broadcasting. 
+    </p>
+    <p class="text-[9px] max-w-4xl sm:text-[20px] mb-8" style="letter-spacing: 5px;" data-aos="fade-up" data-aos-delay="100">
+        Radio Announcing Competition ini memiliki konsep yang sesuai dengan nilai utama RADIOACTIVE 2024, yaitu “Surviving the Maze”. Tujuan dari lomba ini adalah untuk mengasah kreativitas peserta dalam membuat siaran dan secara tidak langsung memberikan informasi hingga mengajak para peserta untuk menggambarkan perjuangan manusia dalam menghadapi rintangan dan lika-liku kehidupan.
     </p>
     <nav class="flex justify-between w-full max-w-2xl mb-8 mt-5 text-[15px] m-s:text-[20px] ">
         <a href="#" class="no-underline text-white md:text-base font-['LT_Museum',sans-serif] hover:text-red-500" onclick="scrollToDownload()">HANDBOOK & PENDAFTARAN</a>
@@ -20,8 +23,8 @@
 </section>
 
 <section class="relative bg-black min-h-screen flex items-center justify-center font-['Brody_Rawk',sans-serif]" id="download">
-    <div class="absolute inset-0 h-[88%]" data-aos="fade-right" data-aos-delay="500">
-        <img src="tes1.jpg" alt="Background Image" class="w-full h-full object-cover">
+    <div class="absolute inset-0 h-[100%]" data-aos="fade-right" data-aos-delay="500">
+        <img src="images/FOTO VO CHALLENGE.webp" alt="Background Image" class="w-full h-full object-cover">
         <div class="absolute inset-0 bg-black opacity-50"></div>
     </div>
     <div class="absolute flex left-0 bottom-5 opacity-50">
@@ -36,7 +39,7 @@
 <section class="min-h-screen timeline max-w font-['LT_Museum',sans-serif]" id="timeline">
     <div id="title" class="text-center my-10">
         <h1 class="m-[48px] md:text-5xl italic" style="letter-spacing: 5px;">TIMELINE MINI ANNOUNCING CHALLENGE 2024</h1>
-        <p class="text-white md:text-xl tracking-widest">INI MOTTONYA</p>
+        <p class="text-white md:text-xl tracking-widest">DARE TO STRIVE</p>
     </div>
     <div class="relative" data-aos="zoom-in-right" data-aos-delay="100">
         <div class="absolute left-1/2 h-full w-px bg-white hidden m-s:block"></div>

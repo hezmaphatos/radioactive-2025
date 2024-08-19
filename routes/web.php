@@ -145,9 +145,9 @@ Route::controller(TeamDataController::class)->group(function(){
 //     ]);
 // })->middleware('admin');
 
-Route::get('/{any}', function () {
-    return redirect('/');
-})->where('any', '.*');
+// Route::get('/{any}', function () {
+//     return redirect('/');
+// })->where('any', '.*');
 
 Route::get('/linkstorage', function () {
     Artisan::call('storage:link');

@@ -191,7 +191,7 @@
                                 <h1>Order Now</h1>
                                 <p>Size</p>
                                 <select name="variation" id="variation_select"
-                                    class="w-full bg-gray-900 border-2 border-[#d61525] text-white px-2 py-1">
+                                    class="w-full bg-gray-900 border-2 border-[#d61525] text-white px-2 py-1 rounded">
                                     <option disabled selected value> -- select variation -- </option>
                                     @foreach ($merch->merchvariations as $merchvariation)
                                         <option value="{{ $merchvariation->description }}">
@@ -202,11 +202,11 @@
                             <div class="my-2">
                                 <p>Quantity</p>
                                 <input name="quantity" min="1" value="1" type="number"
-                                    class="w-full bg-gray-900 border-2 border-[#d61525] text-white px-2 py-1">
+                                    class="w-full bg-gray-900 border-2 border-[#d61525] text-white px-2 py-1 rounded">
                             </div>
                             <input hidden type="text" name="merch_id" value="{{ $merch->id }}">
                             <button type="submit"
-                                class="w-full text-white border-2 bg-[#d61525] border-white px-2 py-1 hover:bg-red-500 font-ltmuseum-bold my-1">
+                                class="w-full text-white border-2 bg-[#d61525] border-white rounded px-2 py-1 hover:bg-red-500 font-ltmuseum-bold my-1">
                                 Add to Cart
                             </button>
                         </form>
@@ -231,7 +231,7 @@
                                         bg-[#d61525] 
                                         hover:bg-red-500 
                                         @endif
-                                        border-white px-2 py-1 font-ltmuseum-bold">
+                                        border-white rounded px-2 py-1 font-ltmuseum-bold">
                                         {{ $link->title }}
                                     </button>
                                 </a>

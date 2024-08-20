@@ -8,6 +8,7 @@
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/3a9b6894e0.js" crossorigin="anonymous"></script>
     <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
     @vite('resources/css/app.css')
@@ -97,6 +98,14 @@
             fill.classList.toggle('transform');
             fill.classList.toggle('rotate-180');
           });
+        </script>
+        <script>
+            window.onload = function() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth" // Optional: Adds smooth scrolling
+    });
+};
         </script>
     </body>
 </html>

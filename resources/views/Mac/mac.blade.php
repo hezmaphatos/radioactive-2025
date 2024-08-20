@@ -5,17 +5,26 @@
 
 
 <section class="flex min-h-screen flex-col justify-center items-center text-center px-4 font-['Brody_Rawk',sans-serif]">
-    <h1 class="text-[24px] md:text-[48px] font-bold mb-8 text-red-800 mt-25" style="letter-spacing: 5px;" data-aos="fade-up">Mini Announcing Challenge</h1>
+    <h1 class="text-[24px] md:text-[48px] font-bold mb-8 text-red-800 mt-20" style="letter-spacing: 5px;" data-aos="fade-up">Mini Announcing Challenge</h1>
     <p class="text-[9px] max-w-4xl sm:text-[20px] mb-8" style="letter-spacing: 5px;" data-aos="fade-up" data-aos-delay="100">
         Radio Announcing Competition merupakan rangkaian acara utama RADIOACTIVE. Lomba ini merupa kan ajang untuk siswa SMA dan mahasiswa se-Jabodetabek untuk memperluas wawasan dan mengasah kemampuan di dunia broadcasting. 
     </p>
     <p class="text-[9px] max-w-4xl sm:text-[20px] mb-8" style="letter-spacing: 5px;" data-aos="fade-up" data-aos-delay="100">
         Radio Announcing Competition ini memiliki konsep yang sesuai dengan nilai utama RADIOACTIVE 2024, yaitu “Surviving the Maze”. Tujuan dari lomba ini adalah untuk mengasah kreativitas peserta dalam membuat siaran dan secara tidak langsung memberikan informasi hingga mengajak para peserta untuk menggambarkan perjuangan manusia dalam menghadapi rintangan dan lika-liku kehidupan.
     </p>
-    <nav class="flex justify-between w-full max-w-2xl mb-8 mt-5 text-[15px] m-s:text-[20px] ">
-        <a href="#" class="no-underline text-white md:text-base font-['LT_Museum',sans-serif] hover:text-red-500" onclick="scrollToDownload()">HANDBOOK & PENDAFTARAN</a>
-        <a href="#" class="no-underline text-white md:text-base font-['LT_Museum',sans-serif] hover:text-red-500" onclick="scrollToTimeline()">TIMELINE</a>
+    <nav class="flex flex-col sm:flex-row justify-between w-full max-w-2xl mb-8 text-[15px] sm:text-[20px] overflow-x-hidden">
+        <a class="no-underline py-4 px-6 sm:px-2" onclick="scrollToDownload()">
+            <button class="text-white border-white w-full sm:w-60 h-12 sm:h-16 p-2 sm:p-4 text-2xs sm:text-sm font-bold border-2 hover:bg-[#0F0F0F] hover:text-[#FA0202]">
+                HANDBOOK & PENDAFTARAN
+            </button>
+        </a>
+        <a class="no-underline py-4 px-6 sm:px-2 mt-2 sm:mt-0" onclick="scrollToTimeline()">
+            <button class="text-white border-white w-full sm:w-60 h-12 sm:h-16 p-2 sm:p-4 text-2xs sm:text-sm font-bold border-2 hover:bg-[#0F0F0F] hover:text-[#FA0202]">
+                TIMELINE
+            </button>
+        </a>
     </nav>
+    
     <p class="mb-4 mt-auto animate-bounce">Scroll Down</p>
     <svg class="w-6 h-20 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-label="Scroll down icon">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -27,7 +36,7 @@
         <img src="images/FOTO VO CHALLENGE.webp" alt="Background Image" class="w-full h-full object-cover">
         <div class="absolute inset-0 bg-black opacity-50"></div>
     </div>
-    <div class="absolute flex left-0 bottom-5 opacity-50">
+    <div class="absolute flex left-0 bottom-5 opacity-100">
         <button class="bg-black border border-white text-white px-4 py-2 hover:bg-white transition duration-300 hover:text-black">Handbook</button>
         <button class="bg-black border border-white text-white px-4 py-2 hover:bg-white transition duration-300 hover:text-black">Pendaftaran</button>  
     </div>

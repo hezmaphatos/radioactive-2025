@@ -5,16 +5,16 @@
 	@vite('resources/css/home.css')
 </head>
 <body class="overflow-x-hidden bg-black">
-    {{-- <div id="button1" class="fixed bottom-12 end-4 md:bottom-10 md:end-20 flex justify-center items-center z-50 animate-bounce">
+    <div id="button1" class="fixed bottom-1 end-4 md:bottom-10 md:end-20 flex justify-center items-center z-50 animate-bounce">
         <a href="/closing-night/#ticket" class="no-underline">
-            <button class="rounded-[100%] h-[5.5rem] md:h-32 aspect-square bg-[#D61525] text-white border-white font-museum text-2xs md:text-sm p-2 md:p-4 font-bold border-2 hover:bg-[#FFF000] hover:text-[#D61525]">
+            <button class="rounded-[100%] h-[5.5rem] md:h-32 aspect-square bg-[#D61525] text-white border-white font-ltmuseum text-2xs md:text-sm p-2 md:p-4 font-bold border-2 hover:bg-[#FFF000] hover:text-[#D61525]">
                 GET YOUR TICKETS
             </button>
         </a>
-    </div> --}}
+    </div>
     <div class="relative flex flex-col items-center" data-aos-duration="3000">
         <div class="flex flex-col md:flex-row items-center justify-center gap-4 mt-18">
-            <p class="text-center font-museum text-xs text-white z-20">THE MOST SPECTACULAR ANNUAL EVENT BY </p>
+            <p class="text-center text-xs text-white z-20 font-ltmuseum">THE MOST SPECTACULAR ANNUAL EVENT BY </p>
             <img class="w-20 md:w-24 z-16" src="images/LOGO UMN RADIO.webp">
         </div>
         <img class="object-cover -mt-4 md:-mt-28 z-0" src="images/logo.png" alt="background logo" />
@@ -26,12 +26,12 @@
     </div>
 
 <div id="about-us" class="flex flex-col justify-center items-center h-screen mt-0 mb-0 px-4 sm:px-8" data-aos="fade-up" data-aos-duration="1500">
-    <h4 class="font-brody text-5xl sm:text-6xl md:text-8xl text-white text-center my-6 sm:my-12 tracking-wider">ABOUT US</h4>
+    <h4 class="font-brodyrawk text-5xl sm:text-6xl md:text-8xl text-white text-center my-6 sm:my-12 tracking-wider">ABOUT US</h4>
     <div class="px-4 sm:px-8 md:px-20 lg:px-48">
-        <p class="font-museum text-base sm:text-lg md:text-xl text-white text-justify md:text-center tracking-wider mb-6">
+        <p class="font-ltmuseum text-base sm:text-lg md:text-xl text-white text-justify md:text-center tracking-wider mb-6">
             RADIOACTIVE adalah Acara off air tahunan yang diselenggarakan oleh UMN Radio, radio komunitas Universitas Multimedia Nusantara. Pertama kali diadakan di tahun 2015, RADIOACTIVE 2024 merupakan kali ke-10 acara ini diselenggarakan.
         </p>
-        <p class="font-museum text-base sm:text-lg md:text-xl text-white text-justify md:text-center tracking-wider">
+        <p class="font-ltmuseum text-base sm:text-lg md:text-xl text-white text-justify md:text-center tracking-wider">
             RADIOACTIVE 2024 mengangkat tema “RADIOACTIVE 2024: Resilience Era”, dengan tagline “Dare to Strive”, serta bertujuan agar individu yang telah berevolusi mampu mempertahankan perubahannya dan mengembangkannya dalam perjuangan tanpa ada rasa cukup.
         </p>
     </div>
@@ -40,24 +40,24 @@
 <div id="marquee-section" class="mt-8 mb-16">
     <div class="overflow-hidden">
         <div class="marquee">
-            <span class="max font-museum text-2xl text-white tracking-8">
+            <span class="max font-ltmuseum text-2xl text-white tracking-8">
                 DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE 
             </span>
         </div>
         <div class="marquee marquee-copy">
-            <span class="max font-museum text-2xl text-white tracking-8">
+            <span class="max font-ltmuseum text-2xl text-white tracking-8">
                 DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE 
             </span>
         </div>
     </div>
     <div class="overflow-hidden mt-4">
         <div class="marquee marquee-reverse">
-            <span class="font-museum text-2xl text-white tracking-8">
+            <span class="font-ltmuseum text-2xl text-white tracking-8">
                 DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE 
             </span>
         </div>
         <div class="marquee marquee-reverse marquee-copy">
-            <span class="font-museum text-2xl text-white tracking-8">
+            <span class="font-ltmuseum text-2xl text-white tracking-8">
                 DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE 
             </span>
         </div>
@@ -275,6 +275,44 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/noafJ76PHeM?si=5ho9Ad32GabxdrVT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 </div>
+
+<div class="flex">
+    <!-- Left Sidebar -->
+    <div class="w-1/4 p-6">
+        <h1 class="text-xl font-bold text-yellow-600 mb-4">EXCELSIOR 2024</h1>
+        <h2 class="text-4xl font-bold mb-6">Kilas balik acara tahun sebelumnya!</h2>
+        <ul>
+            <li class="text-yellow-600 mb-2"><a href="#">ALL</a></li>
+            <li class="text-gray-500 mb-2"><a href="#">2023</a></li>
+            <li class="text-gray-500"><a href="#">2022</a></li>
+        </ul>
+    </div>
+
+    <!-- Gallery Section -->
+    <div class="flex-1 grid grid-cols-3 gap-4">
+        <!-- First Column -->
+        <div class="space-y-4">
+            <img src="image1.jpg" class="w-full h-auto">
+            <img src="image2.jpg" class="w-full h-auto">
+            <img src="image3.jpg" class="w-full h-auto">
+        </div>
+        
+        <!-- Second Column -->
+        <div class="space-y-4">
+            <img src="image4.jpg" class="w-full h-auto">
+            <img src="image5.jpg" class="w-full h-auto">
+            <img src="image6.jpg" class="w-full h-auto">
+        </div>
+        
+        <!-- Third Column -->
+        <div class="space-y-4">
+            <img src="image7.jpg" class="w-full h-auto">
+            <img src="image8.jpg" class="w-full h-auto">
+            <img src="image9.jpg" class="w-full h-auto">
+        </div>
+    </div>
+</div>
+
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>

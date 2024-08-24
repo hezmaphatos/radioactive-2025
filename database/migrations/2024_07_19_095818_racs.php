@@ -24,8 +24,6 @@ return new class extends Migration
             $table->string('tim1_nimop');
             $table->string('tim1_contact_wa');
             $table->string('tim1_contact_line');
-            $table->string('tim1_nama');
-            $table->string('tim1_email');
 
             $table->string('tim2_penyiar1')->nullable();
             $table->string('tim2_penyiar2')->nullable();

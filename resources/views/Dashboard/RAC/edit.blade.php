@@ -21,7 +21,7 @@
         @csrf       
     <div class="rounded-sm border border-stroke bg-white shadow-default">
       <div class="grid grid-cols-1 gap-9 sm:grid-cols-3">
-        @if($rac->tim1_nama)
+        @if($rac->tim1_institusi)
         <div class="flex flex-col gap-9">
             <div class="rounded-sm border border-stroke bg-white shadow-default">
             <div class="border-b border-stroke px-6.5 py-4">
@@ -30,17 +30,6 @@
               </h3>
             </div>
             <div class="flex flex-col gap-5.5 p-6.5">
-              <div>
-                <label class="mb-3 block text-sm font-medium text-black">
-                  Nama Tim
-                </label>
-                <input name="tim1_nama" type="text" placeholder="Nama Tim" class="w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary @error('tim1_nama') border-red-500 @enderror" value="{{ old('tim1_nama', $rac->tim1_nama) }}">
-                @error('tim1_nama')
-                <div class="text-sm text-red-600">
-                    {{ $message }}
-                </div>
-                @enderror
-              </div>
               <div>
                 <label class="mb-3 block text-sm font-medium text-black">
                   Penyiar 1
@@ -140,22 +129,11 @@
                 </div>
                 @enderror
               </div>
-              <div>
-                <label class="mb-3 block text-sm font-medium text-black">
-                  Email
-                </label>
-                <input name="tim1_email" type="text" placeholder="Email" class="w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary @error('tim1_email') border-red-500 @enderror" value="{{ old('tim1_email', $rac->tim1_email) }}">
-                @error('tim1_email')
-                <div class="text-sm text-red-600">
-                    {{ $message }}
-                </div>
-                @enderror
-              </div>
             </div>
           </div>
         </div>
         @endif
-        @if($rac->tim2_nama)
+        @if($rac->tim2_institusi)
         <div class="flex flex-col gap-9">
           <div class="rounded-sm border border-stroke bg-white shadow-default">
           <div class="border-b border-stroke px-6.5 py-4">
@@ -164,17 +142,6 @@
             </h3>
           </div>
           <div class="flex flex-col gap-5.5 p-6.5">
-            <div>
-              <label class="mb-3 block text-sm font-medium text-black">
-                Nama Tim
-              </label>
-              <input name="tim2_nama" type="text" placeholder="Nama Tim" class="w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary @error('tim2_nama') border-red-500 @enderror" value="{{ old('tim2_nama', $rac->tim2_nama) }}">
-              @error('tim2_nama')
-              <div class="text-sm text-red-600">
-                  {{ $message }}
-              </div>
-              @enderror
-            </div>
             <div>
               <label class="mb-3 block text-sm font-medium text-black">
                 Penyiar 1
@@ -274,22 +241,11 @@
               </div>
               @enderror
             </div>
-            <div>
-              <label class="mb-3 block text-sm font-medium text-black">
-                Email
-              </label>
-              <input name="tim2_email" type="text" placeholder="Email" class="w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary @error('tim2_email') border-red-500 @enderror" value="{{ old('tim2_email', $rac->tim2_email) }}">
-              @error('tim2_email')
-              <div class="text-sm text-red-600">
-                  {{ $message }}
-              </div>
-              @enderror
-            </div>
             </div>
           </div>
         </div>        
         @endif
-      @if($rac->tim3_nama)
+      @if($rac->tim3_institusi)
       <div class="flex flex-col gap-9">
         <div class="rounded-sm border border-stroke bg-white shadow-default">
         <div class="border-b border-stroke px-6.5 py-4">
@@ -298,17 +254,6 @@
           </h3>
         </div>
         <div class="flex flex-col gap-5.5 p-6.5">
-          <div>
-            <label class="mb-3 block text-sm font-medium text-black">
-              Nama Tim
-            </label>
-            <input name="tim3_nama" type="text" placeholder="Nama Tim" class="w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary @error('tim3_nama') border-red-500 @enderror" value="{{ old('tim3_nama', $rac->tim3_nama) }}">
-            @error('tim3_nama')
-            <div class="text-sm text-red-600">
-                {{ $message }}
-            </div>
-            @enderror
-          </div>
           <div>
             <label class="mb-3 block text-sm font-medium text-black">
               Penyiar 1
@@ -403,17 +348,6 @@
             </label>
             <input name="tim3_contact_line" type="text" placeholder="LINE" class="w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary @error('tim3_contact_line') border-red-500 @enderror" value="{{ old('tim3_contact_line', $rac->tim3_contact_line) }}">
             @error('tim3_contact_line')
-            <div class="text-sm text-red-600">
-                {{ $message }}
-            </div>
-            @enderror
-          </div>
-          <div>
-            <label class="mb-3 block text-sm font-medium text-black">
-              Email
-            </label>
-            <input name="tim3_email" type="text" placeholder="Email" class="w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary @error('tim3_email') border-red-500 @enderror" value="{{ old('tim3_email', $rac->tim3_email) }}">
-            @error('tim3_email')
             <div class="text-sm text-red-600">
                 {{ $message }}
             </div>

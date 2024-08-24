@@ -38,7 +38,7 @@
     </div>
     <div class="absolute flex left-0 bottom-5 opacity-100">
         <button class="bg-black border border-white text-white px-4 py-2 hover:bg-white transition duration-300 hover:text-black">Handbook</button>
-        <button class="bg-black border border-white text-white px-4 py-2 hover:bg-white transition duration-300 hover:text-black">Pendaftaran</button>  
+        <button class="bg-black border border-white text-white px-4 py-2 hover:bg-white transition duration-300 hover:text-black">Pendaftaran</button>
     </div>
     <div class="absolute bottom-10 right-10 z-10">
         <span class="text-red-800 text-5xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-10xl font-bold" data-aos="fade-up" data-aos-delay="100">MAC</span>

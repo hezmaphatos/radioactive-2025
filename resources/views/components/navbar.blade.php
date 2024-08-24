@@ -1,8 +1,8 @@
 <div id="header" x-data="{ isOpen: false }" class=" fixed navbar bg-transparent lg:justify-center justify-end gap-16 z-40 transition-all duration-700 pr-4 border-transparent">
 
 <div class="absolute left-0 ">
-    <img src="{{ url('/images/LOGO RADIOACTIVE 2024 png.png') }}" alt="image" class="w-14 lg:w-16 ml-2 mt-2">
-    <div class="menu-item ml-0 font-ltmuseum text-white text-sm tracking-wide"
+    <img src="{{ url('images/LOGO RADIOACTIVE 2024.png') }}" alt="image" class="w-14 lg:w-16 ml-2 mt-2">
+    <div class="menu-item ml-0 font-brodyrawk text-white text-sm tracking-wide mt-1"
         >RADIOACTIVE</div>   
 </div>
 
@@ -21,31 +21,30 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
     </button>
-
     <div class="hidden gap-3 lg:flex pr-4">
         <a id="homeItem" 
         class="menu-item font-ltmuseum text-white text-sm cursor-pointer 
-        {{ ($title === 'Home') ? 'underline underline-offset-4 decoration-[#d6152581]' : 'no-underline hover:underline hover:underline-offset-4 hover:decoration-[#d6152581]' }}" 
+        {{ ($title === 'Home') ? 'underline underline-offset-4 decoration-[#D61525] decoration-2' : 'no-underline hover:underline hover:underline-offset-4 hover:decoration-[#d6152581] decoration-2' }}" 
         href="/">
         HOME
     </a>
     <a id="macItem" class="menu-item font-ltmuseum text-white text-sm cursor-pointer 
-        {{ ($title === 'MAC') ? 'underline underline-offset-4 decoration-[#d6152581]' : 'no-underline hover:underline hover:underline-offset-4 hover:decoration-[#d6152581]' }}" 
+        {{ ($title === 'MAC') ? 'underline underline-offset-4 decoration-[#D61525] decoration-2' : 'no-underline hover:underline hover:underline-offset-4 hover:decoration-[#d6152581] decoration-2' }}" 
         href="/mac">
         MAC
     </a>
     <a id="racItem" class="menu-item font-ltmuseum text-white text-sm cursor-pointer 
-        {{ ($title === 'RAC') ? 'underline underline-offset-4 decoration-[#d6152581]' : 'no-underline hover:underline hover:underline-offset-4 hover:decoration-[#d6152581]' }}" 
+        {{ ($title === 'RAC') ? 'underline underline-offset-4 decoration-[#D61525] decoration-2' : 'no-underline hover:underline hover:underline-offset-4 hover:decoration-[#d6152581] decoration-2' }}" 
         href="/rac">
         RAC
     </a>
     <a id="closingNightItem" class="menu-item font-ltmuseum text-white text-sm cursor-pointer 
-        {{ ($title === 'closing-night') ? 'underline underline-offset-4 decoration-[#d6152581]' : 'no-underline hover:underline hover:underline-offset-4 hover:decoration-[#d6152581]' }}" 
+        {{ ($title === 'closing-night') ? 'underline underline-offset-4 decoration-[#D61525] decoration-2' : 'no-underline hover:underline hover:underline-offset-4 hover:decoration-[#d6152581] decoration-2' }}" 
         href="/closing-night">
         CLOSING NIGHT
     </a>
     <a id="merchItem" class="menu-item font-ltmuseum text-white text-sm cursor-pointer 
-        {{ ($title === 'merch') ? 'underline underline-offset-4 decoration-[#d6152581]' : 'no-underline hover:underline hover:underline-offset-4 hover:decoration-[#d6152581]' }}" 
+        {{ ($title === 'merch') ? 'underline underline-offset-4 decoration-[#D61525] decoration-2' : 'no-underline hover:underline hover:underline-offset-4 hover:decoration-[#d6152581] decoration-2' }}" 
         href="/merch">
         MERCHANDISE
     </a>
@@ -61,7 +60,7 @@
                     s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"/>
                     </svg>
                 </div>
-                <div><a id="dropdown" class="login-item absolute left-5 bg-[#D61525] mx-auto px-3 font-semibold no-underline text-white rounded-md text-xs top-[22px] ring-[#D61525] hover:ring-1 hover:ring-white hover:bg-[#d61525e7] active:bg-[#d6152581] hidden w-[100px] h-[20px] text-center" 
+                <div><a id="dropdown" class="login-item absolute right-12 bg-[#D61525] mx-auto px-3 font-semibold no-underline text-white rounded-md text-xs top-[22px] ring-[#D61525] hover:ring-1 hover:ring-white hover:bg-[#d61525e7] active:bg-[#d6152581] hidden w-[100px] h-[20px] text-center" 
                 href="/logout">LOG OUT</a></div>
                 </div>
                 @else
@@ -72,29 +71,28 @@
                 @endauth
     </div>
     </div>
-
     <div class="mobile-navbar">
         <div class="lg:hidden fixed right-2 h-62 p-5 bg-[#D61525] rounded-lg shadow-xl top-[4.5rem]" x-show="isOpen"
             @click.away="isOpen = false">
             <div class="flex flex-col space-y-5 px-2">
                 <a class="font-ltmuseum text-white text-sm tracking-wide cursor-pointer 
-                    {{ ($title === 'Home') ? 'underline underline-offset-8 decoration-black' : 'no-underline hover:underline hover:underline-offset-8 hover:decoration-black' }} active:decoration-[#0000002d]"
+                    {{ ($title === 'Home') ? 'underline underline-offset-4  decoration-black' : 'no-underline hover:underline hover:underline-offset-4  hover:decoration-black' }} active:decoration-[#0000002d]"
                     href="/">HOME</a>
                 <a class="font-ltmuseum text-white text-sm tracking-wide cursor-pointer 
-                    {{ ($title === 'MAC') ? 'underline underline-offset-8 decoration-black' : 'no-underline hover:underline hover:underline-offset-8 hover:decoration-black' }} active:decoration-[#0000002d]"
+                    {{ ($title === 'MAC') ? 'underline underline-offset-4  decoration-black' : 'no-underline hover:underline hover:underline-offset-4  hover:decoration-black' }} active:decoration-[#0000002d]"
                     href="/mac">MAC</a>
                 <a class="font-ltmuseum text-white text-sm tracking-wide cursor-pointer 
-                    {{ ($title === 'RAC') ? 'underline underline-offset-8 decoration-black' : 'no-underline hover:underline hover:underline-offset-8 hover:decoration-black' }} active:decoration-[#0000002d]"
+                    {{ ($title === 'RAC') ? 'underline underline-offset-4  decoration-black' : 'no-underline hover:underline hover:underline-offset-4  hover:decoration-black' }} active:decoration-[#0000002d]"
                     href="/rac">RAC</a>
                 <a class="font-ltmuseum text-white text-sm tracking-wide cursor-pointer 
-                    {{ ($title === 'closing-night') ? 'underline underline-offset-8 decoration-black' : 'no-underline hover:underline hover:underline-offset-8 hover:decoration-black' }} active:decoration-[#0000002d]"
+                    {{ ($title === 'closing-night') ? 'underline underline-offset-4  decoration-black' : 'no-underline hover:underline hover:underline-offset-4  hover:decoration-black' }} active:decoration-[#0000002d]"
                     href="/closing-night">CLOSING NIGHT</a>
                 <a class="font-ltmuseum text-white text-sm tracking-wide cursor-pointer 
-                    {{ ($title === 'merch') ? 'underline underline-offset-8 decoration-black' : 'no-underline hover:underline hover:underline-offset-8 hover:decoration-black' }} active:decoration-[#0000002d]"
+                    {{ ($title === 'merch') ? 'underline underline-offset-4  decoration-black' : 'no-underline hover:underline hover:underline-offset-4  hover:decoration-black' }} active:decoration-[#0000002d]"
                     href="/merch">MERCHANDISE</a>
                 @auth
                 <a class="font-ltmuseum text-white text-sm tracking-wide cursor-pointer 
-                    {{ ($title === 'logout') ? 'underline underline-offset-8 decoration-black' : 'no-underline hover:underline hover:underline-offset-8 hover:decoration-black' }} active:decoration-[#0000002d]"
+                    {{ ($title === 'logout') ? 'underline underline-offset-4  decoration-black' : 'no-underline hover:underline hover:underline-offset-4  hover:decoration-black' }} active:decoration-[#0000002d]"
                     href="/logout">LOG OUT</a>
                 @else
                 <a class="login-item hidden lg:block no-underline rounded-full ring-[#D61525] hover:ring-1 hover:ring-white" 

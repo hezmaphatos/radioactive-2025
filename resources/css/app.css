@@ -21,20 +21,20 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
+/* @font-face {
     font-family: "Taruno Wide";
     src: url("fonts/TarunoWide-Regular.otf") format("opentype");
-}
+} */
 
-@font-face {
+/* @font-face {
     font-family: "Taruno Wide Outline";
     src: url("fonts/TarunoWideOutline-Regular.otf") format("opentype");
-}
+} */
 
-@font-face {
+/* @font-face {
     font-family: "Pathway Extreme";
     src: url("fonts/PathwayExtreme.ttf") format("truetype");
-}
+} */
 
 @font-face {
     font-family: "LT Museum Bold";

@@ -1,5 +1,5 @@
 <footer class="pt-8 bg-black">
-    <div class="hidden md:block">
+    <div class="hidden md:block mt-auto">
     <div class="hidden md:flex justify-between">
         <div class="">
             <p class="ml-6 text-xs font-ltmuseum tracking-[0.4em] text-[#D61525]">&copy;UMN RADIOACTIVE 2024</p>
@@ -55,8 +55,8 @@
     </div>
 
     <div class=" flex justify-between items-center border-t border-red-300">
-        <div class=" ml-6">
-            <img src="/images/LOGO RADIOACTIVE 2024 png.png" alt="" class="w-28">
+        <div class="ml-6">
+            <img src="/images/LOGO RADIOACTIVE 2024.png" alt="" class="w-28">
         </div>
 
         <div class="flex justify-center gap-4">
@@ -91,7 +91,7 @@
 <div class="mobile-footer md:hidden pt-14">
     <div class="">
         <div class="flex justify-center mt-4">
-            <img src="/images/LOGO RADIOACTIVE 2024 png.png" alt="" class="w-56 pt-4">
+            <img src="/images/LOGO RADIOACTIVE 2024.png" alt="" class="w-56 pt-4">
         </div>
         <div class="flex flex-col mb-2 ml-16 tracking-[0.1em]">
             <a href="/"

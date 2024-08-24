@@ -10,10 +10,10 @@ use App\Http\Controllers\MailController;
 use App\Http\Controllers\MerchController;
 use App\Http\Controllers\TicketController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\TeamDataController;
-use App\Http\Controllers\VocController;
+use App\Http\Controllers\MacController;
+use App\Http\Controllers\RacController;
 use App\Http\Controllers\DashboardUserController;
-use App\Http\Controllers\DashboardVOCController;
+use App\Http\Controllers\DashboardMACController;
 use App\Http\Controllers\DashboardRACController;
 use App\Http\Controllers\MerchOrderController;
 use App\Http\Controllers\CartController;
@@ -39,12 +39,6 @@ use App\Models\User;
 Route::get('/', function(){
     return view('Home.soon');
 });
-
-// Route::get('/mac', function () {
-//     return view('Mac.mac', [
-//         "title" => "MAC"
-//     ]);
-// });
 
 // Route::get('/closing-night', function () {
 //     return view('closing.index', [
@@ -91,7 +85,7 @@ Route::get('/', function(){
 //     Route::get('/invoice/{id}', 'invoice');
 
 //     // debug only *nanti dihapus*
-//     Route::get('/approve', 'approve_ticket');
+//     // Route::get('/approve', 'approve_ticket');
 // });
 
 // Route::controller(TicketController::class)->group(function (){
@@ -108,36 +102,26 @@ Route::get('/', function(){
 
 // Route::get('/send', [MailController::class, 'index']);
 
-// Route::resource('rac', TeamDataController::class);
-
-Route::controller(TeamDataController::class)->group(function(){
-    Route::get('/rac', 'index');
-    Route::get('/rac/register', 'create');
-    // Route::get('/rac/register', function(){
-    //     return view('welcome');
-    // });
-    // Route::post('/rac/store', 'store');
-    // Route::get('/rac/form/{amount}', 'form');
-    // Route::get('/rac/confirmation', 'confirmation_redirect');
-});
-
-// Route::controller(VocController::class)->group(function () {
-//     Route::get('/voc', 'index');
-//     Route::get('/voc/submission', 'create');
-//     Route::get('/voc/submission', function(){
-//         return view('welcome');
-//     });
-//     Route::post('/voc/store', 'store');
-//     Route::get('/voc/show', 'show');
-//     Route::get('/voc/{id}/edit', 'edit');
-//     Route::post('/voc/update', 'update');
-//     Route::post('/voc/delete', 'destroy');
-//     Route::get('/voc/dashboard', 'dashboard');
+// Route::controller(MacController::class)->group(function () {
+//     Route::get('/mac', 'index');
+//     Route::get('/mac/submission', 'create');
+//     Route::post('/mac/store', 'store');
 // });
 
-// Route::get('/doorprize', function(){
-//     return view('RNG.index');
-// })->middleware('auth');
+// Route::controller(RacController::class)->group(function(){
+//     Route::get('/rac', 'index');
+//     Route::get('/rac/register', 'create');
+//     // Route::get('/rac/register', function(){
+//     //     return view('welcome');
+//     // });
+//     Route::post('/rac/store', 'store');
+//     Route::get('/rac/form/{amount}', 'form');
+//     Route::get('/rac/confirmation', 'confirmation_redirect');
+// });
+
+// // Route::get('/doorprize', function(){
+// //     return view('RNG.index');
+// // })->middleware('auth');
 
 // Route::get('/dashboard', function(){
 //     return view('Dashboard.index', [
@@ -145,16 +129,16 @@ Route::controller(TeamDataController::class)->group(function(){
 //     ]);
 // })->middleware('admin');
 
-// Route::get('/{any}', function () {
-//     return redirect('/');
-// })->where('any', '.*');
+Route::get('/{any}', function () {
+    return redirect('/');
+})->where('any', '.*');
 
-Route::get('/linkstorage', function () {
-    Artisan::call('storage:link');
-});
+// Route::get('/linkstorage', function () {
+//     Artisan::call('storage:link');
+// });
 
 // Route::resource('/dashboard/users', DashboardUserController::class)->middleware('superadmin');
-// Route::resource('/dashboard/vocs', DashboardVOCController::class)->middleware('admin');
+// Route::resource('/dashboard/macs', DashboardMACController::class)->middleware('admin');
 // Route::resource('/dashboard/racs', DashboardRACController::class)->middleware('admin');
 
 // Route::controller(MerchOrderController::class)->group(function () {

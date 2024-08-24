@@ -12,14 +12,13 @@
         <div class="w-full h-screen flex items-center justify-center">
             <img class="h-auto max-w-full max-h-full" src="{{ asset('images/LOGO RADIOACTIVE 2024.png') }}" alt="Radioactive 2024 Logo">
         </div>
-        <div class="container absolute top-0 left-1/2 transform -translate-x-1/2 z-40 mx-auto p-8 flex items-start justify-center">
-            <img src="{{ url('images/LOGO UMN RADIO.webp') }}" alt="Image" class="h-20" />
+        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 z-40 p-8">
+            <img src="{{ url('images/LOGO UMN RADIO.webp') }}" alt="Image" class="h-16 md:h-10 lg:h-24" />
         </div>
         <div class="container mx-auto p-4">
             <form action="{{ route('password.email') }}" method="post">
                 <div class="flex flex-col bg-clip-border rounded-xl bg-white bg-opacity-75 text-gray-700 shadow-md absolute top-2/4 left-2/4 mt-5 w-full max-w-[24rem] -translate-y-2/4 -translate-x-2/4">
-                    <h3 class="font-ltmuseumbold text-2xl font-bold text-black text-center mt-9">Forgot Your Password?</h3>
-                    
+                    <h3 class="font-ltmuseumbold text-2xl font-bold text-black text-center mt-9">Forgot Your Password?</h3>               
                     @if ($message = session('status'))
                         <div class="text-green-500 text-center mt-3">
                             {{ $message }}

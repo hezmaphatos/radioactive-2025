@@ -1,5 +1,5 @@
 <footer class="pt-8 bg-black">
-    <div class="hidden md:block mt-auto">
+    <div class="hidden md:block">
     <div class="hidden md:flex justify-between">
         <div class="">
             <p class="ml-6 text-xs font-ltmuseum tracking-[0.4em] text-[#D61525]">&copy;UMN RADIOACTIVE 2024</p>

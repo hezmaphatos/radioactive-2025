@@ -34,8 +34,6 @@ return new class extends Migration
             $table->string('tim2_nimop')->nullable();
             $table->string('tim2_contact_wa')->nullable();
             $table->string('tim2_contact_line')->nullable();
-            $table->string('tim2_nama')->nullable();
-            $table->string('tim2_email')->nullable();
 
             $table->string('tim3_penyiar1')->nullable();
             $table->string('tim3_penyiar2')->nullable();
@@ -46,8 +44,6 @@ return new class extends Migration
             $table->string('tim3_nimop')->nullable();
             $table->string('tim3_contact_wa')->nullable();
             $table->string('tim3_contact_line')->nullable();
-            $table->string('tim3_nama')->nullable();
-            $table->string('tim3_email')->nullable();
 
             $table->string('payment_proof');
             $table->string('status');

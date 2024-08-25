@@ -31,9 +31,17 @@ class MerchController extends Controller
 
     public function cart()
     {
+        $flag = false;
+
         $carts = Cart::where('user_id', auth()->user()->id)->get();
+
+        foreach ($carts as $cart) {
+            if ($cart->variation()->stock < $cart->quantity) {
+                $flag = !$flag;
+            }
+        }
         // dd($carts);
-        return view('Merch.cart', ['carts'=>$carts]);
+        return view('Merch.cart', ['carts'=>$carts, 'flag' => $flag]);
     }
 
     public function addToCartOld($id_merch)
@@ -59,7 +67,6 @@ class MerchController extends Controller
             $merchvariation = MerchVariation::where('description', $request->variation)
             ->where('merch_id', $request->merch_id)
             ->first();
-
 
             $price = $request->quantity * ($merch->price + $merchvariation->additional_price);
 
@@ -130,9 +137,17 @@ class MerchController extends Controller
 
     public function checkout()
     {
+        $flag = false;
+        
         $carts = auth()->user()->carts;
+
+        foreach ($carts as $cart) {
+            if ($cart->variation()->stock < $cart->quantity) {
+                $flag = !$flag;
+            }
+        }
         // dd($carts);
-        return view('Merch.checkout')->with('carts', $carts);
+        return view('Merch.checkout', ['carts' => $carts, 'flag' => $flag]);
     }
 
     public function order(Request $request){
@@ -169,6 +184,15 @@ class MerchController extends Controller
                 ]);
 
                 $cumulative_price += $cart->total_price;
+
+                $cart->merch->stock = $cart->merch->stock - $cart->quantity;
+                $cart->merch->update();
+
+                $merchvariation = MerchVariation::where('description', $cart->variation)
+                ->where('merch_id', $cart->merch_id)
+                ->first();
+                $merchvariation->stock = $merchvariation->stock - $cart->quantity;
+                $merchvariation->update();
 
                 $cart->delete();
             }

@@ -111,8 +111,7 @@
         </div>
         <?php $no = 1; ?>
         <div id="merch_items" class="mt-[6rem] p-[30px] flex flex-wrap w-full justify-center content-center gap-10">
-
-            <div class="grid grid-cols-3 gap-4">
+            <div class="flex flex-wrap gap-4">
                 @foreach ($merches as $merch)
                     <a id="merch{{$merch->id}}" class="relative" href="/merch/{{$merch->id}}">
                         <div id="item-img"

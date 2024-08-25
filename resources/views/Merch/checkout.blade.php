@@ -6,11 +6,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3a9b6894e0.js" crossorigin="anonymous"></script>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>List Merch</title>
+    <title>Radioactive UMN</title>
+    @vite('resources/css/app.css')
 </head>
 
-<body>
+<body class="bg-white min-h-screen text-black">
     <h1>Order Merch</h1>
 
     <table border="1" cellpadding="10">
@@ -26,19 +31,25 @@
         $cumulative_price = 0;
         ?>
         @foreach ($carts as $cart)
-            <tr>
+            <tr class="@if ($cart->variation()->stock < $cart->quantity) bg-red-300 @endif">
                 <td>{{ $no++ }}</td>
                 <td>{{ $cart->merch->name }}</td>
                 <td>
                     <form action="/cart/{{ $cart->id }}/updateqty" enctype="multipart/form-data" method="POST">
                         @csrf
                         @method('put')
-                        <input type="number" name="quantity" min="0" value="{{ $cart->quantity }}">
+                        <input type="number" name="quantity" min="0" value="{{ $cart->quantity }}"
+                            class="bg-white text-black border border-1 border-black">
                         <button type="submit">Update</button>
                     </form>
                 </td>
                 <td>{{ $cart->variation }}</td>
                 <td>{{ $cart->total_price }}</td>
+                @if ($cart->variation()->stock < $cart->quantity)
+                    <td>
+                        Stock tidak cukup. Stock tersisa {{ $cart->variation()->stock }}
+                    </td>
+                @endif
             </tr>
             @php
                 $cumulative_price += $cart->total_price;
@@ -48,24 +59,27 @@
 
     <br />
 
-    <form action="/merch/checkout" method="POST" enctype="multipart/form-data">
+    <form action="/merch/checkout" method="POST" enctype="multipart/form-data" class="w-[500px] max-w-screen">
         @csrf
         <div class="mb-3 flex flex-col">
             <label for="name" class="">Nama</label>
             <input disabled type="text" name="name" id="name" placeholder="Iggy"
-                value="{{ auth()->user()->name }}">
+                class="bg-white text-black border border-black" value="{{ auth()->user()->name }}">
         </div>
         <div class="mb-3 flex flex-col">
             <label for="email" class="">Email</label>
-            <input type="email" name="email" id="email" placeholder="iggy@gmail.com">
+            <input type="email" name="email" id="email" placeholder="iggy@gmail.com"
+                class="bg-white text-black border border-black">
         </div>
         <div class="mb-3 flex flex-col">
             <label for="phone" class="">Phone</label>
-            <input type="number" name="phone" id="phone" placeholder="081710771077">
+            <input type="number" name="phone" id="phone" placeholder="081710771077"
+                class="bg-white text-black border border-black">
         </div>
         <div class="mb-3 flex flex-col">
             <label for="line" class="">ID Line</label>
-            <input type="text" name="line" id="line" placeholder="ID Line">
+            <input type="text" name="line" id="line" placeholder="ID Line"
+                class="bg-white text-black border border-black">
         </div>
         <div class="mb-3 flex flex-col">
             <label for="cumulative_price" class="">Amount Owed</label>
@@ -74,13 +88,18 @@
         </div>
         <div class="mb-3 flex flex-col">
             <label for="cumulative_price" class="">Upload Payment Proof</label>
-            <p>Transfer to xxxx a/n xxxx xxxx in the right amount ({{ $cumulative_price }})</p>
-            <input class=""
-                type="file" accept="image/*" name="payment_image" id="payment_image" onchange="previewImage()">
+            <p>Transfer to xxxx a/n xxxx xxxx in the right amount (Rp
+                {{ number_format($cumulative_price, 0, ',', '.') }})</p>
+            <input class="text-black" type="file" accept="image/*" name="payment_image" id="payment_image"
+                onchange="previewImage()">
             <img src="" alt="" class="img-preview h-80 hidden">
         </div>
 
-        <button type="submit" class="text-red-800">GAS!</button>
+        @if ($flag)
+            <p>Kurangi jumlah atau hapus item untuk melanjutkan checkout</p>
+        @else
+            <button type="submit" class="text-red-800">GAS!</button>
+        @endif
     </form>
 </body>
 

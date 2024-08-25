@@ -23,6 +23,11 @@ class Merch extends Model
         return $data;
     }
 
+    public function total_stock()
+    {
+        return $this->merchvariations->sum('stock');
+    }
+
     public function detail_merch($id) {
         $data = Merch::find($id);
         return $data;
@@ -39,4 +44,5 @@ class Merch extends Model
     public function merchlinks(): HasMany{
         return $this->hasMany(MerchLink::class);
     }
+
 }

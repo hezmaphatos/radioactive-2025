@@ -2,15 +2,22 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3a9b6894e0.js" crossorigin="anonymous"></script>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cart</title>
+    <title>Radioactive UMN</title>
+    @vite('resources/css/app.css')
 </head>
-<body>
+
+<body class="bg-white min-h-screen text-black">
     <h1>Cart</h1>
-    <a href="{{url('/merch')}}">Back to Merch</a>
+    <a href="{{ url('/merch') }}">Back to Merch</a>
 
     @if (empty($carts))
         <p>Cart is empty</p>
@@ -24,36 +31,46 @@
                 <th>Total Price</th>
             </tr>
             <?php $no = 1; ?>
-            @foreach($carts as $cart)
-                <tr>
-                    <td>{{$no++}}</td>
-                    <td>{{$cart->merch->name}}</td>
+            @foreach ($carts as $cart)
+                <tr class="@if ($cart->variation()->stock < $cart->quantity) bg-red-300 @endif">
+                    <td>{{ $no++ }}</td>
+                    <td>{{ $cart->merch->name }}</td>
                     <td>
-                        <form action="/cart/{{$cart->id}}/updateqty" enctype="multipart/form-data" method="POST">
+                        <form action="/cart/{{ $cart->id }}/updateqty" enctype="multipart/form-data" method="POST">
                             @csrf
                             @method('put')
-                            <input type="number" name="quantity" min="0" value="{{$cart->quantity}}">
+                            <input type="number" name="quantity" min="0" value="{{ $cart->quantity }}" class="bg-white text-black">
                             <button type="submit">Update</button>
                         </form>
                     </td>
-                    <td>{{$cart->variation}}</td>
-                    <td>{{$cart->total_price}}</td>
+                    <td>{{ $cart->variation }}</td>
+                    <td>{{ $cart->total_price }}</td>
                     <td>
-                        <form action="/cart/{{$cart->id}}/remove" method="POST" enctype="multipart/form-data">
+                        <form action="/cart/{{ $cart->id }}/remove" method="POST" enctype="multipart/form-data">
                             @method('delete')
                             @csrf
                             <button>Remove</button>
                         </form>
                     </td>
+                    @if ($cart->variation()->stock < $cart->quantity)
+                        <td>
+                            Stock tidak cukup. Stock tersisa {{$cart->variation()->stock}}
+                        </td>
+                    @endif
                 </tr>
             @endforeach
             <tr>
                 <td colspan="5"></td>
                 <td>
-                    <a href="{{url('/merch/checkoutdetails')}}">Checkout</a>
+                    @if ($flag)
+                        <p>Kurangi jumlah atau hapus item untuk melanjutkan checkout</p>
+                    @else
+                        <a href="{{ url('/merch/checkoutdetails') }}">Checkout</a>
+                    @endif
                 </td>
             </tr>
         </table>
     @endif
 </body>
+
 </html>

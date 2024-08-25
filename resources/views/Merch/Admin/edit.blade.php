@@ -66,9 +66,9 @@
                     <span class="">Stock</span>
                 </label>
                 <div>
-                    <input required
+                    <input required disabled
                         class="block @error('stock') border-red-500 @enderror shadow appearance-none bg-white text-black placeholder-slate-400 border border-black w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
-                        type="number" placeholder="100" name="stock" value="{{ old('stock', $merch->stock) }}">
+                            type="number" name="stock" value="{{ old('stock', $merch->total_stock()) }}">
                     @error('stock')
                         <div class="text-sm text-red-600">{{ $message }}</div>
                     @enderror

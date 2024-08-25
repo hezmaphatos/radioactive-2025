@@ -85,7 +85,8 @@
     <div class="grid lg:gap-20 md:gap-20 pt-32">
         <div class="grid justify-center font-ltmuseum-reg">
             <div class="flex gap-20 mb-10 flex-wrap justify-center">
-                <div id="indicators-carousel" class="relative w-[315px] h-[360px] md:w-[350px] md:h-[400px] justify-center"
+                <div id="indicators-carousel"
+                    class="relative w-[315px] h-[360px] md:w-[350px] md:h-[400px] justify-center"
                     data-carousel="static">
                     <div class="m-auto relative overflow-hidden w-5/6 h-full rounded-lg border-[1px] border-white">
                         <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
@@ -148,10 +149,11 @@
                 </div>
 
                 <div class="pl-2 md:pl-0">
-                    <div class="mt-5">
-                        <p class="mt-10 font-brodyrawk text-[#ff0015] text-5xl">{{ $merch->name }}</p>
+                    <div class="mt-5 md:mt-auto">
+                        <p class="mt-10 md:mt-auto font-brodyrawk text-[#ff0015] text-5xl">{{ $merch->name }}</p>
                     </div>
-                    <p class="mt-1 font-ltmuseum-bold text-white text-3xl">Rp {{ number_format($merch->price, 0, ',', '.') }}
+                    <p class="mt-1 font-ltmuseum-bold text-white text-3xl">Rp
+                        {{ number_format($merch->price, 0, ',', '.') }}
                     </p>
                     <div id="indicators-carousel" class="relative" data-carousel="static">
                         <div class="z-30 inline-flex gap-4 h-3 overflow-hidden justify-center mt-[20px]">
@@ -168,8 +170,7 @@
                             </div>
 
                         </div>
-                        <div class="relative w-full h-[130px] overflow-hidden">
-
+                        <div class="relative w-full h-[100px] overflow-hidden">
                             <div class="hidden duration-700 ease-in-out overflow-y-scroll" data-carousel-item="">
                                 <p>{!! $merch->description !!}</p>
                             </div>
@@ -187,50 +188,64 @@
                     <div class="p-4">
                         <form action="/merch/cart/add" enctype="multipart/form-data" method="POST" class="">
                             @csrf
-                            <div class="my-2">
-                                <h1>Order Now</h1>
-                                <p>Size</p>
-                                <select name="variation" id="variation_select"
-                                    class="w-full bg-gray-900 border-2 border-[#d61525] text-white px-2 py-1 rounded">
-                                    <option disabled selected value> -- select variation -- </option>
-                                    @foreach ($merch->merchvariations as $merchvariation)
-                                        <option value="{{ $merchvariation->description }}">
-                                            {{ $merchvariation->description }} ({{ $merchvariation->stock }})</option>
-                                    @endforeach
-                                </select>
-                            </div>
-                            <div class="my-2">
-                                <p>Quantity</p>
-                                <input name="quantity" min="1" value="1" type="number"
-                                    class="w-full bg-gray-900 border-2 border-[#d61525] text-white px-2 py-1 rounded">
+                            <h1>Order Now</h1>
+                            <div class="flex flex-wrap gap-4">
+                                <div class="my-2 w-2/5">
+                                    <p>Size</p>
+                                    <select name="variation" id="variation_select" required
+                                        class="w-full bg-gray-900 border-2 border-[#d61525] text-white px-2 py-1 rounded">
+                                        <option disabled selected value> select variant</option>
+                                        @foreach ($merch->merchvariations as $merchvariation)
+                                            <option value="{{ $merchvariation->description }}" data-stock="{{ $merchvariation->stock }}">
+                                                {{ $merchvariation->description }} (Stock: {{ $merchvariation->stock }})
+                                            </option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                                <div class="my-2 w-1/5">
+                                    <p>Quantity</p>
+                                    <input name="quantity" id="quantity_input" min="1" value="1"
+                                        type="number" required
+                                        class="w-full bg-gray-900 border-2 border-[#d61525] text-white px-2 py-1 rounded">
+                                </div>
                             </div>
                             <input hidden type="text" name="merch_id" value="{{ $merch->id }}">
                             <button type="submit"
-                                class="w-full text-white border-2 bg-[#d61525] border-white rounded px-2 py-1 hover:bg-red-500 font-ltmuseum-bold my-1">
+                                class="text-white border-2 bg-[#d61525] border-white rounded px-2 py-1 hover:bg-red-500 font-ltmuseum-bold my-1">
                                 Add to Cart
                             </button>
                         </form>
+
+                        <script>
+                            document.getElementById('variation_select').addEventListener('change', function() {
+                                const selectedOption = this.options[this.selectedIndex];
+                                const stock = selectedOption.getAttribute('data-stock');
+
+                                const quantityInput = document.getElementById('quantity_input');
+                                quantityInput.max = stock;
+                                quantityInput.value = Math.min(quantityInput.value, stock); // Adjust current value if needed
+                            });
+                        </script>
+
                         <div class="w-full mt-2">
-                            @if ($links->count()>0)
+                            @if ($links->count() > 0)
                                 <h1>Other Options</h1>
                             @endif
                             @foreach ($links as $link)
                                 <a href="{{ $link->link }}" target="_blank">
                                     <button
-                                        class="w-full text-white border-2 my-1
-                                        @if (strtolower($link->type) == "tokopedia")
-                                            bg-green-500 
+                                        class="min-w-[100px] text-white border-2 my-1
+                                        @if (strtolower($link->type) == 'tokopedia') bg-green-500 
                                             hover:bg-green-400
-                                        @elseif (strtolower($link->type) == "shopee")
+                                        @elseif (strtolower($link->type) == 'shopee')
                                             bg-orange-600 
                                             hover:bg-orange-400
-                                        @elseif (strtolower($link->type) == "tiktok")
+                                        @elseif (strtolower($link->type) == 'tiktok')
                                             bg-gray-900 
                                             hover:bg-gray-700
                                         @else
                                         bg-[#d61525] 
-                                        hover:bg-red-500 
-                                        @endif
+                                        hover:bg-red-500 @endif
                                         border-white rounded px-2 py-1 font-ltmuseum-bold">
                                         {{ $link->title }}
                                     </button>
@@ -244,8 +259,8 @@
     </div>
     <div class="flex justify-center w-full align-middle ">
         <div class="px-6 text-left">
-            <h2 class="font-taruno text-white">NOTES</h2>
-            <ul class="list-disc ml-[17px]">
+            <h2 class="font-brodyrawk text-white">NOTES</h2>
+            <ul class="list-disc ml-[17px] font-ltmuseum-reg">
                 <li class="text-white text-[15px]">TIDAK MENERIMA SEGALA JENIS BENTUK PENUKARAN TERMASUK
                     PENUKARAN MODEL, WARNA, DAN SIZE
                 </li>

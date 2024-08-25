@@ -51,4 +51,8 @@ class User extends Authenticatable
     public function merchOrders(): HasMany{
         return $this->hasMany(MerchOrder::class);
     }
+
+    public function merchPreorders(): HasMany{
+        return $this->hasMany(MerchPreorder::class);
+    }
 }

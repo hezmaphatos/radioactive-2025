@@ -1,16 +1,13 @@
 @extends('layouts.main')
 
 @section('container')
-<body class="text-white" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('tes1.jpg') center/cover fixed;">
+<body class="text-white bg-black">
 
 
 <section class="flex min-h-screen flex-col justify-center items-center text-center px-4 font-['Brody_Rawk',sans-serif]">
     <h1 class="text-[24px] md:text-[48px] font-bold mb-8 text-red-800 mt-20" style="letter-spacing: 5px;" data-aos="fade-up">Mini Announcing Challenge</h1>
     <p class="text-[9px] max-w-4xl sm:text-[20px] mb-8" style="letter-spacing: 5px;" data-aos="fade-up" data-aos-delay="100">
-        Radio Announcing Competition merupakan rangkaian acara utama RADIOACTIVE. Lomba ini merupa kan ajang untuk siswa SMA dan mahasiswa se-Jabodetabek untuk memperluas wawasan dan mengasah kemampuan di dunia broadcasting. 
-    </p>
-    <p class="text-[9px] max-w-4xl sm:text-[20px] mb-8" style="letter-spacing: 5px;" data-aos="fade-up" data-aos-delay="100">
-        Radio Announcing Competition ini memiliki konsep yang sesuai dengan nilai utama RADIOACTIVE 2024, yaitu “Surviving the Maze”. Tujuan dari lomba ini adalah untuk mengasah kreativitas peserta dalam membuat siaran dan secara tidak langsung memberikan informasi hingga mengajak para peserta untuk menggambarkan perjuangan manusia dalam menghadapi rintangan dan lika-liku kehidupan.
+        Mini Annoucing Challenge merupakan salah satu rangkaian acara RADIOACTIVE 2024. Mini Annoucing Challenge bertujuan untuk mengasah skill para peserta dalam bidang siaran. Dalam challenge ini, peserta tidak dibatasi untuk berkreasi. Teknis dari Mini Annoucing Challenge ini adalah peserta dapat siaran menggunakan tema dan 3 kata yang sudah dipilih secara acak. Disisi lain, challenge ini juga dapat meningkatkan awareness untuk rangkaian acara berikutnya.
     </p>
     <nav class="flex flex-col sm:flex-row justify-between w-full max-w-2xl mb-8 text-[15px] sm:text-[20px] overflow-x-hidden">
         <a class="no-underline py-4 px-6 sm:px-2" onclick="scrollToDownload()">
@@ -55,9 +52,9 @@
         <div class="mx-auto max-w-[65%] m-s:max-w-[34.15em]">
             <div id="checkpoint" class="border-2 border-white pl-12 m-s:translate-x-[19em] rounded-2xl p-6 mb-4 mt-4">
                 <div>
-                    <h2 class="mb-2">Date 1 : Pendaftaran</h2>
+                    <h2 class="mb-2 text-[#D61525]">2 - 9 September 2024 : <text class="text-white">Pendaftaran</text></h2>
                     <p class="text-[10px] text-gray-300 m-s:text-[16px]">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam atque sit tenetur commodi vel illo amet natus, corporis, facilis magni voluptate quibusdam quis ducimus ipsum ullam itaque labore voluptatibus! Reprehenderit!
+                        Pendaftaran dapat melalui form atau mengunjungi langsung dibooth
                     </p>
                 </div>
             </div>

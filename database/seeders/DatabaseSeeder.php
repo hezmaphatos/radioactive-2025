@@ -28,6 +28,18 @@ class DatabaseSeeder extends Seeder
             'roles' => 'User'
         ]);
 
+        Role::create([
+            'roles' => 'Acara'
+        ]);
+
+        Role::create([
+            'roles' => 'Sponsor'
+        ]);
+
+        Role::create([
+            'roles' => 'Keuangan'
+        ]);
+
         User::create([
             'name' => 'Admin',
             'email' => 'admin@admin.com',

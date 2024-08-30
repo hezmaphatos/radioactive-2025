@@ -9,7 +9,7 @@ export default {
         extend: {
             fontFamily: {
                 pathway: ["Pathway Extreme"],
-                brody: ['"Brody Rawk"', "sans-serif"],
+                brody: [" ", "sans-serif"],
                 museum: ['"LT Museum"', "sans-serif"],
                 taruno: ["Taruno Wide"],
                 taruno2: ["Taruno Wide Outline"],

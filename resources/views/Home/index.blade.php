@@ -199,7 +199,7 @@
 
 
 
-{{-- <div id="partners" class="-mb-20 md:-mb-0 md:my-24 mt-16" data-aos="fade-up">
+<div id="partners" class="-mb-20 md:-mb-0 md:my-24 mt-16" data-aos="fade-up">
     <div class="container mx-auto flex flex-col lg:flex-row items-center lg:justify-between">
         <!-- Text -->
         <div data-aos="zoom-in-right" data-aos-delay="400"
@@ -209,77 +209,100 @@
         <!-- Images -->
         <div class="w-full lg:w-1/2">
             <div class="grid grid-cols-4 gap-4">
-                <img data-aos="zoom-in-right" data-aos-delay="200" class="h-auto md:w-40 md:mx-8 mb-2"
-                    src="/images/logo-imkom.webp" alt="" />
-                <img data-aos="zoom-in-right" data-aos-delay="400" class="h-auto md:w-40 md:mx-8 mb-2"
-                    src="/images/ubradio.webp" alt="" />
-                <img data-aos="zoom-in-right" data-aos-delay="600" class="h-auto md:w-40 md:mx-8 mb-2"
-                    src="/images/ultimagz.webp" alt="" />
-                <img data-aos="zoom-in-right" data-aos-delay="800" class="h-auto md:w-40 md:mx-8 mb-2"
-                    src="/images/funradio.webp" alt="" />
-                <img data-aos="zoom-in-right" data-aos-delay="1000" class="h-auto md:w-40 md:mx-8 mb-2"
-                    src="/images/radiountar.webp" alt="" />
-                <img data-aos="zoom-in-right" data-aos-delay="1200" class="h-auto md:w-40 md:mx-8 mb-2"
-                    src="/images/LOGO-ERAFM-UNJ.webp" alt="" />
-                <img data-aos="zoom-in-right" data-aos-delay="1400" class="h-auto md:w-40 md:mx-8 mb-2"
-                    src="/images/infolombasch.webp" alt="" />
-                <img data-aos="zoom-in-right" data-aos-delay="1600" class="h-auto md:w-40 md:mx-8 mb-2"
-                    src="/images/medialomba.webp" alt="" />
-                <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/logo-event.list.webp" alt="" />
-                <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/eventcampus.webp" alt="" />
-                <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/t-radio.webp" alt="" />
-                <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/logo-eventmahasiswa8.webp" alt="" />
-                <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/eventcenter.webp" alt="" />
-                <img class="h-auto md:w-40 md:mx-8 mb-2 rounded bg-[#ffffff7d]" src="/images/eventnetwork.webp"
-                    alt="" />
-                <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/Logo-Eventhunter.id.webp" alt="" />
-                <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/umntv.webp" alt="" />
-                <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/fourtyfiveradio.webp" alt="" />
-                <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/eventapaaja.webp" alt="" />
-                <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/infoevent.webp" alt="" />
-                <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/LOGO-UBV-Radio.webp" alt="" />
-                <img class="h-auto md:w-40 md:mx-8 mb-2 rounded bg-[#ffffff7d]" src="/images/moestopo.webp" alt="" />
-                <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/Se7enline-Radio.webp" alt="" />
-            </div>
+                <div class="h-40 w-40 md:mx-8 mb-2">
+                    <img data-aos="zoom-in-right" data-aos-delay="200" class="w-full h-full object-contain" src="/images/LOGO MEDPAR/LOGO BEM UMN PUTIH.png" alt="" />
+                </div>
+                <div class="h-40 w-40 md:mx-8 mb-2">
+                    <img data-aos="zoom-in-right" data-aos-delay="400" class="w-full h-full object-contain" src="/images/LOGO MEDPAR/Logo Acara Kampus.png" alt="" />
+                </div>
+                <div class="h-40 w-40 md:mx-8 mb-2">
+                    <img data-aos="zoom-in-right" data-aos-delay="600" class="w-full h-full object-contain" src="/images/LOGO MEDPAR/LOGO BERITA LOMBA JPEG.jpeg" alt="" />
+                </div>
+                <div class="h-40 w-40 md:mx-8 mb-2">
+                    <img data-aos="zoom-in-right" data-aos-delay="800" class="w-full h-full object-contain" src="/images/LOGO MEDPAR/Logo Eventnya Mahasiswa.png" alt="" />
+                </div>
+                <div class="h-40 w-40 md:mx-8 mb-2">
+                    <img data-aos="zoom-in-right" data-aos-delay="1000" class="w-full h-full object-contain" src="/images/LOGO MEDPAR/fourtyfiveradio.webp" alt="" />
+                </div>
+                <div class="h-40 w-40 md:mx-8 mb-2">
+                    <img data-aos="zoom-in-right" data-aos-delay="1200" class="w-full h-full object-contain" src="/images/LOGO MEDPAR/LOGO HMFILM.PNG" alt="" />
+                </div>
+                <div class="h-40 w-40 md:mx-8 mb-2">
+                    <img data-aos="zoom-in-right" data-aos-delay="1400" class="w-full h-full object-contain" src="/images/LOGO MEDPAR/logo imkom.png" alt="" />
+                </div>
+                <div class="h-40 w-40 md:mx-8 mb-2">
+                    <img data-aos="zoom-in-right" data-aos-delay="1600" class="w-full h-full object-contain" src="/images/LOGO MEDPAR/Logo Kacamata Lomba.png" alt="" />
+                </div>
+                <div class="h-40 w-40 md:mx-8 mb-2">
+                    <img data-aos="zoom-in-right" data-aos-delay="1800" class="w-full h-full object-contain" src="/images/LOGO MEDPAR/Logo lspr radio .jpg" alt="" />
+                </div>
+                <div class="h-40 w-40 md:mx-8 mb-2">
+                    <img data-aos="zoom-in-right" data-aos-delay="2000" class="w-full h-full object-contain" src="/images/LOGO MEDPAR/logo milenials radio.png" alt="" />
+                </div>
+                <div class="h-40 w-40 md:mx-8 mb-2">
+                    <img data-aos="zoom-in-right" data-aos-delay="2200" class="w-full h-full object-contain" src="/images/LOGO MEDPAR/LOGO MOESTOPO.jpg" alt="" />
+                </div>
+                <div class="h-40 w-40 md:mx-8 mb-2">
+                    <img data-aos="zoom-in-right" data-aos-delay="2400" class="w-full h-full object-contain" src="/images/LOGO MEDPAR/Logo Mradio .PNG" alt="" />
+                </div>
+                <div class="h-40 w-40 md:mx-8 mb-2">
+                    <img data-aos="zoom-in-right" data-aos-delay="2600" class="w-full h-full object-contain" src="/images/LOGO MEDPAR/LOGO ORI.png" alt="" />
+                </div>
+                <div class="h-40 w-40 md:mx-8 mb-2">
+                    <img data-aos="zoom-in-right" data-aos-delay="2800" class="w-full h-full object-contain" src="/images/LOGO MEDPAR/Logo Radio Untar.PNG" alt="" />
+                </div>
+                <div class="h-40 w-40 md:mx-8 mb-2">
+                    <img data-aos="zoom-in-right" data-aos-delay="3000" class="w-full h-full object-contain" src="/images/LOGO MEDPAR/Logo SMI Putih.png" alt="" />
+                </div>
+                <div class="h-40 w-40 md:mx-8 mb-2">
+                    <img data-aos="zoom-in-right" data-aos-delay="3200" class="w-full h-full object-contain" src="/images/LOGO MEDPAR/Point Kampus.png" alt="" />
+                </div>
+                <div class="h-40 w-40 md:mx-8 mb-2">
+                    <img data-aos="zoom-in-right" data-aos-delay="3400" class="w-full h-full object-contain" src="/images/LOGO MEDPAR/unpar.jpg" alt="" />
+                </div>
+            </div>         
         </div>
     </div>
-</div> --}}
+</div>
 
 <!-- Sponsors Section -->
-{{-- <div id="sponsors" class="py-16">
+<div id="sponsors" class="py-16">
     <div data-aos="zoom-in-right" data-aos-delay="400"
         class="container mx-auto flex flex-col lg:flex-row items-center lg:justify-between">
         <!-- Images -->
         <div class="w-full lg:w-1/2">
             <div class="grid grid-cols-3 gap-4">
-                <div class="bg-black border border-white aspect-w-1 aspect-h-1"></div>
-                <div class="bg-black border border-white aspect-w-1 aspect-h-1"></div>
-                <div class="bg-black border border-white aspect-w-1 aspect-h-1"></div>
-                <div class="bg-black border border-white aspect-w-1 aspect-h-1"></div>
-                <div class="bg-black border border-white aspect-w-1 aspect-h-1"></div>
-                <div class="bg-black border border-white aspect-w-1 aspect-h-1"></div>
-                <div class="bg-black border border-white aspect-w-1 aspect-h-1"></div>
-                <div class="bg-black border border-white aspect-w-1 aspect-h-1"></div>
-                <div class="bg-black border border-white aspect-w-1 aspect-h-1"></div>
+                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
+                    <img src="/images/LOGO SPONSOR/ALLOBANK (2) XS.png" alt="" class="w-full h-full object-contain">
+                </div>
+                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
+                    <img src="/images/LOGO SPONSOR/AMATERASUN XS.png" alt="" class="w-full h-full object-contain">
+                </div>
+                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
+                    <img src="/images/LOGO SPONSOR/detik event (ticketing partner).png" alt="" class="w-full h-full object-contain">
+                </div>
+                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
+                    <img src="/images/LOGO SPONSOR/ITOEN WHITE XS.png" alt="" class="w-full h-full object-contain">
+                </div>
+                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
+                    <img src="/images/LOGO SPONSOR/LOGO CAP PANDA.PNG" alt="" class="w-full h-full object-contain">
+                </div>
+                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
+                    <img src="/images/LOGO SPONSOR/PUYO XS.png" alt="" class="w-full h-full object-contain">
+                </div>
+                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
+                    <img src="/images/LOGO SPONSOR/SARI ROTI XS.png" alt="" class="w-full h-full object-contain">
+                </div>
             </div>
-        </div>
+                    </div>
         <!-- Text -->
         <div class="w-full lg:w-1/2 mt-12 lg:mt-0 lg:text-right text-center">
             <h2 class="font-brody md:text-5xl my-12 tracking-8 text-red-600">SPONSORS</h2>
         </div>
     </div>
-</div> --}}
-
-
-{{-- <div id="after" class="-mb-20 md:-mb-0 md:my-24" data-aos="fade-up">
-    <h2 class="font-brody md:text-3xl text-white text-center my-12 tracking-8">AFTER MOVIE</h2>
-    <div class="w-full flex justify-center">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/noafJ76PHeM?si=5ho9Ad32GabxdrVT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-</div> --}}
+</div>
 
 <div class="flex flex-wrap md:flex-nowrap px-4 md:px-12 mt-10 space-y-8 md:space-y-0">
-    <!-- Left Sidebar -->
     <div class="w-full md:w-1/4 p-4 md:p-6">
         <h1 class="text-lg md:text-xl font-brodyrawk text-[#D61525] mb-2 md:mb-4">UMN RADIOACTIVE 2023</h1>
         <h2 class="text-2xl md:text-4xl font-bold mb-4 md:mb-6 font-ltmuseumbold text-white">Kilas balik acara tahun sebelumnya!</h2>
@@ -327,11 +350,12 @@
     </div>
 </div>
 
-
-
-
-
-
+<div id="after" class="-mb-20 md:-mb-0 md:my-24" data-aos="fade-up">
+    <h2 class="font-brodyrawk md:text-3xl text-white text-center my-12 tracking-8">AFTER MOVIE</h2>
+    <div class="w-full flex justify-center">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/noafJ76PHeM?si=5ho9Ad32GabxdrVT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</div>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>

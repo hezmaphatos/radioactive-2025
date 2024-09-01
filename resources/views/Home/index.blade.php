@@ -306,54 +306,54 @@
             <div class="w-full md:flex-1 grid gap-2 md:gap-4" id="gallery">
                 <!-- MAC Section -->
                 <div class="filter-item grid grid-cols-2 sm:grid-cols-3 gap-2 md:gap-4" data-category="voc">
-                    <img src="images/VOC/1.jpg"
+                    <img src="images/VOC/1.webp"
                         class="w-full h-48 object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer"
                         onclick="openPopup(this.src)">
-                    <img src="images/VOC/2.jpg"
+                    <img src="images/VOC/2.webp"
                         class="w-full h-48 object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer"
                         onclick="openPopup(this.src)">
-                    <img src="images/VOC/3.jpg"
+                    <img src="images/VOC/3.webp"
                         class="w-full h-48 object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer"
                         onclick="openPopup(this.src)">
-                    <img src="images/VOC/4.jpg"
+                    <img src="images/VOC/4.webp"
                         class="w-full h-48 object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer"
                         onclick="openPopup(this.src)">
                 </div>
 
                 <!-- RAC Section -->
                 <div class="filter-item grid grid-cols-2 sm:grid-cols-3 gap-2 md:gap-4" data-category="rac">
-                    <img src="images/RAC/1.jpg"
+                    <img src="images/RAC/1.webp"
                         class="w-full h-48 object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer"
                         onclick="openPopup(this.src)">
-                    <img src="images/RAC/2.jpg"
+                    <img src="images/RAC/2.webp"
                         class="w-full h-48 object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer"
                         onclick="openPopup(this.src)">
-                    <img src="images/RAC/3.jpg"
+                    <img src="images/RAC/3.webp"
                         class="w-full h-48 object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer"
                         onclick="openPopup(this.src)">
-                    <img src="images/RAC/4.jpg"
+                    <img src="images/RAC/4.webp"
                         class="w-full h-48 object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer"
                         onclick="openPopup(this.src)">
-                    <img src="images/RAC/5.jpg"
+                    <img src="images/RAC/5.webp"
                         class="w-full h-48 object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer"
                         onclick="openPopup(this.src)">
-                    <img src="images/RAC/6.jpg"
+                    <img src="images/RAC/6.webp"
                         class="w-full h-48 object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer"
                         onclick="openPopup(this.src)">
                 </div>
 
                 <!-- Closing Night Section -->
                 <div class="filter-item grid grid-cols-2 sm:grid-cols-3 gap-2 md:gap-4" data-category="closing-night">
-                    <img src="images/CLOSING NIGHT/1.jpg"
+                    <img src="images/CLOSING NIGHT/1.webp"
                         class="w-full h-48 object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer"
                         onclick="openPopup(this.src)">
-                    <img src="images/CLOSING NIGHT/2.jpg"
+                    <img src="images/CLOSING NIGHT/2.webp"
                         class="w-full h-48 object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer"
                         onclick="openPopup(this.src)">
-                    <img src="images/CLOSING NIGHT/3.jpg"
+                    <img src="images/CLOSING NIGHT/3.webp"
                         class="w-full h-48 object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer"
                         onclick="openPopup(this.src)">
-                    <img src="images/CLOSING NIGHT/4.jpg"
+                    <img src="images/CLOSING NIGHT/4.webp"
                         class="w-full h-48 object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer"
                         onclick="openPopup(this.src)">
                 </div>

@@ -2,15 +2,8 @@
 
 @section('container')
 <body class="overflow-x-hidden h-full">
-    {{-- <div>
-        <video autoplay loop muted
-            class="fixed -z-10 w-auto lg:w-full md:min-w-full md:min-h-full max-w-fit object-cover" loading="lazy">
-            <source src="/images/BACKGROUND_DESKTOP.webm" type="video/webm">
-        </video>
-    </div> --}}
-
     <div class="pt-16">
-        <img class="w-full h-48 md:h-80 object-cover" src="/images/FOTO CLOSING-NIGHT.JPG" alt="" />
+        <img class="w-full h-48 md:h-80 object-cover" src="/images/FOTO CLOSING-NIGHT.webp" alt="" />
     </div>
     <div class="-mb-20 lg:-mb-0 lg:my-16" data-aos="fade-up">
         <h2 id="title" class="font-brodyrawk text-white text-center my-12 text-4xl">CLOSING NIGHT</h2>

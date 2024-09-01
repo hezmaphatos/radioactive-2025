@@ -51,7 +51,7 @@
 
         <div class=" flex justify-between items-center border-t border-red-300">
             <div class="ml-6">
-                <img src="/images/LOGO RADIOACTIVE 2024.png" alt="" class="w-28">
+                <img src="/images/LOGO RADIOACTIVE 2024.webp" alt="" class="w-28">
             </div>
 
             <div class="flex justify-center gap-4">
@@ -109,7 +109,7 @@
     <div class="mobile-footer md:hidden pt-14">
         <div class="">
             <div class="flex justify-center mt-4">
-                <img src="/images/LOGO RADIOACTIVE 2024.png" alt="" class="w-56 pt-4">
+                <img src="/images/LOGO RADIOACTIVE 2024.webp" alt="" class="w-56 pt-4">
             </div>
             <div class="flex flex-col mb-2 ml-16 tracking-[0.1em]">
                 @if (isset($title))

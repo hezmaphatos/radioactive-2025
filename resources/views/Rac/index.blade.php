@@ -11,7 +11,7 @@
     <section class="flex min-h-screen flex-col justify-center items-center text-center font-['Brody_Rawk',sans-serif]">
         <div class="w-full pt-16 relative">
             <h1 class="text 2xl md:text-4xl s:text-[1.5em] font-bold mb-5 mt-auto text-[#d61525] p-6" style="letter-spacing: 5px;" data-aos="fade-up">Radio Announcing Competition</h1>
-            <img class="w-full h-96 md:h-115 object-cover object-center -z-10" src="{{ asset('images/FOTO RAC 2.png') }}" alt="">
+            <img class="w-full h-96 md:h-115 object-cover object-center -z-10" src="{{ asset('images/FOTO RAC 2.webp') }}" alt="">
         </div>
 <nav class="flex flex-col md:flex-row justify-between w-full max-w-2xl mb-8 mt-5 s:text-[0.5em] space-y-2 md:space-y-0 md:space-x-4 px-4">
     <button class="flex-1 bg-black border border-white text-white px-4 py-2 hover:bg-white transition duration-300 hover:text-black tracking-[1px]" onclick="scrollToDownload()">HANDBOOK & PENDAFTARAN</button>
@@ -25,7 +25,7 @@
 
     <section id="desc" class="min-h-screen flex flex-col md:flex-row items-center justify-center font-['Brody_Rawk',sans-serif] relative bg-black">
         <div class="w-full md:w-1/2 h-1/2 md:h-full relative">
-            <img src="{{ asset('images/IGGY BINGUNG.png') }}" class="w-full h-full object-cover opacity-100 bg-gradient-to-b from-transparent to-[#FA0202]" alt="IGGY BINGUNG">
+            <img src="{{ asset('images/IGGY BINGUNG.webp') }}" class="w-full h-full object-cover opacity-100 bg-gradient-to-b from-transparent to-[#FA0202]" alt="IGGY BINGUNG">
             <div class="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent"></div>
         </div>
         

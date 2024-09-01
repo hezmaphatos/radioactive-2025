@@ -22,7 +22,7 @@
                 <img class="w-20 md:w-24 z-16" src="images/LOGO UMN RADIO.webp" alt="UMN Radio Logo">
             </div>
             <div class="relative flex flex-col items-center mt-10" data-aos="fade-up" data-aos-duration="3000">
-                <img class="object-cover h-[400px] w-[800px] z-0" src="images/LOGO RADIOACTIVE 2024.png"
+                <img class="object-cover h-[400px] w-[800px] z-0" src="images/LOGO RADIOACTIVE 2024.webp"
                     alt="background logo" />
             </div>
         </div>
@@ -137,7 +137,7 @@
                 class="container mx-auto flex justify-center md:justify-around flex-wrap items-center align-middle">
                 <h2 class="font-brodyrawk md:text-5xl text-3xl text-center my-12 tracking-[4px] text-red-600">EXCLUSIVE
                     RADIO PARTNER</h2>
-                <img src="/images/LOGO MEDPAR/LOGO MUSTANG.png" alt="" class="md:w-96 w-64 object-contain">
+                <img src="/images/LOGO MEDPAR/LOGO MUSTANG.webp" alt="" class="md:w-96 w-64 object-contain">
             </div>
         </div>
 
@@ -152,25 +152,25 @@
                         {{-- L --}}
                         <div class="col-span-6 flex justify-center">
                             <img class="w-[70%] md:w-1/2 md:h-64 object-contain"
-                                src="/images/LOGO MEDPAR/logo milenials radio.png" alt="" />
+                                src="/images/LOGO MEDPAR/logo milenials radio.webp" alt="" />
                         </div>
 
                         {{-- M --}}
                         <div class="col-span-6 grid grid-cols-2">
                             <div class="col-span-1 flex justify-center">
-                                <img class="object-contain md:w-1/2 md:h-48" src="/images/LOGO MEDPAR/Logo SMI Putih.png"
+                                <img class="object-contain md:w-1/2 md:h-48" src="/images/LOGO MEDPAR/Logo SMI Putih.webp"
                                     alt="" />
                             </div>
                             <div class="col-span-1 flex justify-center">
                                 <img class="object-contain md:w-1/2 md:h-48"
-                                    src="/images/LOGO MEDPAR/Logo Ultimagz Putih.png" alt="" />
+                                    src="/images/LOGO MEDPAR/Logo Ultimagz Putih.webp" alt="" />
                             </div>
                             <div class="col-span-1 flex justify-center">
-                                <img class="object-contain md:w-1/2 md:h-48" src="/images/LOGO MEDPAR/Logo lspr radio .jpg"
+                                <img class="object-contain md:w-1/2 md:h-48" src="/images/LOGO MEDPAR/Logo lspr radio .webp"
                                     alt="" />
                             </div>
                             <div class="col-span-1 flex justify-center">
-                                <img class="object-contain md:w-1/2 md:h-48" src="/images/LOGO MEDPAR/Logo Mradio .PNG"
+                                <img class="object-contain md:w-1/2 md:h-48" src="/images/LOGO MEDPAR/Logo Mradio .webp"
                                     alt="" />
                             </div>
                         </div>
@@ -178,7 +178,7 @@
                         {{-- S --}}
                         <div class="col-span-6 grid grid-cols-4 gap-1">
                             <div class="col-span-1">
-                                <img src="/images/LOGO MEDPAR/LOGO BEM UMN PUTIH.png" alt=""
+                                <img src="/images/LOGO MEDPAR/LOGO BEM UMN PUTIH.webp" alt=""
                                     class="w-full object-contain md:h-24">
                             </div>
                             {{-- <div class="col-span-1">
@@ -198,23 +198,23 @@
                                     alt="" />
                             </div>
                             <div class="col-span-1">
-                                <img class="w-full object-contain md:h-24" src="/images/LOGO MEDPAR/LOGO HMFILM.PNG"
+                                <img class="w-full object-contain md:h-24" src="/images/LOGO MEDPAR/LOGO HMFILM.webp"
                                     alt="" />
                             </div>
                             <div class="col-span-1">
-                                <img class="w-full object-contain md:h-24" src="/images/LOGO MEDPAR/logo imkom.png"
+                                <img class="w-full object-contain md:h-24" src="/images/LOGO MEDPAR/logo imkom.webp"
                                     alt="" />
                             </div>
                             <div class="col-span-1">
                                 <img class="w-full object-contain md:h-24"
-                                    src="/images/LOGO MEDPAR/Logo Kacamata Lomba.png" alt="" />
+                                    src="/images/LOGO MEDPAR/Logo Kacamata Lomba.webp" alt="" />
                             </div>
                             <div class="col-span-1">
                                 <img class="w-full object-contain md:h-24" src="/images/LOGO MEDPAR/LOGO_MOESTOPO.webp"
                                     alt="" />
                             </div>
                             <div class="col-span-1">
-                                <img class="w-full object-contain md:h-24" src="/images/LOGO MEDPAR/LOGO ORI.png"
+                                <img class="w-full object-contain md:h-24" src="/images/LOGO MEDPAR/LOGO ORI.webp"
                                     alt="" />
                             </div>
                             {{-- <div class="col-span-1">
@@ -226,7 +226,7 @@
                                     alt="" />
                             </div> --}}
                             <div class="col-span-1">
-                                <img class="w-full object-contain md:h-24" src="/images/LOGO MEDPAR/unpar.jpg"
+                                <img class="w-full object-contain md:h-24" src="/images/LOGO MEDPAR/unpar.webp"
                                     alt="" />
                             </div>
                         </div>
@@ -242,7 +242,7 @@
                 class="container mx-auto flex justify-center md:justify-around flex-wrap items-center align-middle">
                 <h2 class="font-brodyrawk md:text-5xl text-3xl text-center my-5 tracking-[4px] text-red-600">TICKETING
                     PARTNER</h2>
-                <img src="/images/LOGO SPONSOR/detik event.png" alt="" class="md:w-96 w-64 object-contain">
+                <img src="/images/LOGO SPONSOR/detik event.webp" alt="" class="md:w-96 w-64 object-contain">
             </div>
         </div>
 
@@ -254,27 +254,27 @@
                 <div class="w-full lg:w-1/2">
                     <div class="grid grid-cols-3 gap-4">
                         <div class="bg-black border border-white aspect-w-1 aspect-h-1 rounded-lg">
-                            <img src="/images/LOGO SPONSOR/ALLOBANK (2) XS.png" alt=""
+                            <img src="/images/LOGO SPONSOR/ALLOBANK (2) XS.webp" alt=""
                                 class="w-full h-full object-contain">
                         </div>
                         <div class="bg-black border border-white aspect-w-1 aspect-h-1 rounded-lg">
-                            <img src="/images/LOGO SPONSOR/AMATERASUN XS.png" alt=""
+                            <img src="/images/LOGO SPONSOR/AMATERASUN XS.webp" alt=""
                                 class="w-full h-full object-contain">
                         </div>
                         <div class="bg-black border border-white aspect-w-1 aspect-h-1 rounded-lg">
-                            <img src="/images/LOGO SPONSOR/ITOEN WHITE XS.png" alt=""
+                            <img src="/images/LOGO SPONSOR/ITOEN WHITE XS.webp" alt=""
                                 class="w-full h-full object-contain">
                         </div>
                         <div class="bg-black border border-white aspect-w-1 aspect-h-1 rounded-lg">
-                            <img src="/images/LOGO SPONSOR/LOGO CAP PANDA.PNG" alt=""
+                            <img src="/images/LOGO SPONSOR/LOGO CAP PANDA.webp" alt=""
                                 class="w-full h-full object-contain">
                         </div>
                         <div class="bg-black border border-white aspect-w-1 aspect-h-1 rounded-lg">
-                            <img src="/images/LOGO SPONSOR/PUYO XS.png" alt=""
+                            <img src="/images/LOGO SPONSOR/PUYO XS.webp" alt=""
                                 class="w-full h-full object-contain">
                         </div>
                         <div class="bg-black border border-white aspect-w-1 aspect-h-1 rounded-lg">
-                            <img src="/images/LOGO SPONSOR/SARI ROTI XS.png" alt=""
+                            <img src="/images/LOGO SPONSOR/SARI ROTI XS.webp" alt=""
                                 class="w-full h-full object-contain">
                         </div>
                     </div>

@@ -12,7 +12,7 @@
 <body>
     <section class="bg-black h-screen relative">
         <div class="w-full h-screen flex items-center justify-center">
-            <img class="h-auto max-w-full max-h-full" src="{{ asset('images/LOGO RADIOACTIVE 2024.png') }}" alt="Radioactive 2024 Logo">
+            <img class="h-auto max-w-full max-h-full" src="{{ asset('images/LOGO RADIOACTIVE 2024.webp') }}" alt="Radioactive 2024 Logo">
         </div>
         <div class="absolute top-0 left-1/2 transform -translate-x-1/2 z-40 p-8">
             <img src="{{ url('images/LOGO UMN RADIO.webp') }}" alt="Image" class="h-16 md:h-10 lg:h-24" />

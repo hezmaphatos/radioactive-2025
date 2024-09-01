@@ -30,7 +30,7 @@
 
 <section class="relative bg-black min-h-screen flex items-center justify-center font-['Brody_Rawk',sans-serif]" id="download">
     <div class="absolute inset-0 h-[100%]" data-aos="fade-right" data-aos-delay="500">
-        <img src="images/FOTO MAC.png" alt="Background Image" class="w-full h-full object-cover">
+        <img src="images/FOTO MAC.webp" alt="Background Image" class="w-full h-full object-cover">
         <div class="absolute inset-0 bg-black opacity-50"></div>
     </div>
     <div class="absolute flex left-0 bottom-5 opacity-100">
@@ -42,7 +42,7 @@
     </div>
 </section>
 
-<section class="min-h-screen timeline max-w font-['LT_Museum',sans-serif]" id="timeline">
+<section class="min-h-screen timeline font-['LT_Museum',sans-serif]" id="timeline">
     <div id="title" class="text-center my-10">
         <h1 class="md:m-10 m-4 md:text-5xl italic font-brodyrawk" style="letter-spacing: 5px;">TIMELINE MINI ANNOUNCING CHALLENGE 2024</h1>
         <p class="text-white md:text-xl tracking-widest font-ltmuseum">DARE TO STRIVE</p>

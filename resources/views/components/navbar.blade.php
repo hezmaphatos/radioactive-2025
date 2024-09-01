@@ -9,7 +9,7 @@
     <div class="flex items-center justify-between">
         @auth
             <div onclick="toggleDropdown()"
-                class="lg:hidden font-ltmuseum text-xs text-white flex justify-start mx-4 tracking-widest">
+                class="lg:hidden font-ltmuseumbold text-xs text-white flex justify-start mx-4 tracking-widest">
                 Welcome, {{ auth()->user()->name }}
             </div>
         @else

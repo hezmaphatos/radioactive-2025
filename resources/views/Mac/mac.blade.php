@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('container')
-<body class="text-white bg-black">
+<body class="text-white">
 
 
 <section class="flex min-h-screen flex-col justify-center align-middle items-center text-center px-4 font-['Brody_Rawk',sans-serif]">
@@ -34,8 +34,8 @@
         <div class="absolute inset-0 bg-black opacity-50"></div>
     </div>
     <div class="absolute flex left-0 bottom-5 opacity-100">
-        <button class="bg-black border border-white text-white px-4 py-2 hover:bg-white transition duration-300 hover:text-black">Handbook</button>
-        <button class="bg-black border border-white text-white px-4 py-2 hover:bg-white transition duration-300 hover:text-black">Pendaftaran</button>
+        <button class="bg-black border border-white text-white px-4 py-2 hover:bg-white transition duration-300 hover:text-black"><a href="https://drive.google.com/file/d/14iJn1t1djJVTXIiuQWvgExBh6DQ_IQbu/view" class="text-white no-underline hover:text-black" target="_blank">Handbook</a></button>
+        <button class="bg-black border border-white text-white px-4 py-2 hover:bg-white transition duration-300 hover:text-black"><a href="https://forms.gle/XTN1WX2vDHp6veNn7" class="text-white no-underline hover:text-black" target="_blank">Pendaftaran</a></button>
     </div>
     <div class="absolute bottom-10 right-5 md:right-10 z-10">
         <span class="text-[#d61525] text-5xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-10xl font-bold" data-aos="fade-up" data-aos-delay="100">MAC</span>

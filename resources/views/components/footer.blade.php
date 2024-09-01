@@ -1,4 +1,4 @@
-<footer class="pt-8 bg-black">
+<footer class="mt-12 pt-8 bg-black">
     <div class="hidden md:block">
         <div class="hidden md:flex justify-between">
             <div class="">

@@ -15,13 +15,11 @@
     <title>UMN Radioactive 2024</title>
 </head>
 
-    <body>
-        {{-- <div>
-            <video autoplay loop muted
-                class="fixed -z-10 w-auto lg:w-full md:min-w-full md:min-h-full max-w-fit object-cover" loading="lazy">
-                <source src="/images/BACKGROUND_DESKTOP.webm" type="video/webm">
-            </video>
-        </div> --}}
+    <body>      
+        <div>
+            <img src="/images/BG WEB.png" alt="Background Image"
+                class="fixed -z-10 w-auto lg:w-full md:min-w-full md:min-h-full max-w-fit object-cover brightness-[25%]" loading="lazy">
+        </div>
         @include('components.navbar')
 
         @yield('container')

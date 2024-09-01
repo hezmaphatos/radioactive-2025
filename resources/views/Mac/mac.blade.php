@@ -42,7 +42,7 @@
     </div>
 </section>
 
-<section class="min-h-screen timeline font-['LT_Museum',sans-serif]" id="timeline">
+<section class="timeline max-w font-['LT_Museum',sans-serif]" id="timeline">
     <div id="title" class="text-center my-10">
         <h1 class="md:m-10 m-4 md:text-5xl italic font-brodyrawk" style="letter-spacing: 5px;">TIMELINE MINI ANNOUNCING CHALLENGE 2024</h1>
         <p class="text-white md:text-xl tracking-widest font-ltmuseum">DARE TO STRIVE</p>

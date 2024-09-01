@@ -41,6 +41,8 @@
                   <tr class="bg-gray-2 text-left">
                       <th class="px-4 py-4 font-medium text-black xl:pl-11 text-center">Reg ID</th>
                       <th class="px-4 py-4 font-medium text-black">Institusi Asal</th>
+                      <th class="px-4 py-4 font-medium text-black">Nama Tim</th>
+                      <th class="px-4 py-4 font-medium text-black">Email</th>
                       <th class="px-4 py-4 font-medium text-black">Penyiar 1</th>
                       <th class="px-4 py-4 font-medium text-black">Penyiar 2</th>
                       <th class="px-4 py-4 font-medium text-black">Operator</th>
@@ -71,22 +73,28 @@
                               <p class="text-black">{{ $rac->tim3_institusi }}</p>
                             @endif
                           </td>
-                          {{-- <td class="border-b border-[#eee] px-4 py-5">
+                          <td class="border-b border-[#eee] px-4 py-5">
+                            @if($rac->tim1_nama)
+                              <p class="text-black">{{ $rac->tim1_nama }}</p>
+                            @endif
                             @if($rac->tim2_nama)
                               <p class="text-black">{{ $rac->tim2_nama }}</p>
                             @endif
                             @if($rac->tim3_nama)
                               <p class="text-black">{{ $rac->tim3_nama }}</p>
                             @endif
-                          </td> --}}
-                          {{-- <td class="border-b border-[#eee] px-4 py-5">
+                          </td>
+                          <td class="border-b border-[#eee] px-4 py-5">
+                            @if($rac->tim1_email)
+                              <p class="text-black">{{ $rac->tim1_email }}</p>
+                            @endif
                             @if($rac->tim2_email)
                                 <p class="text-black">{{ $rac->tim2_email }}</p>
                             @endif
                             @if($rac->tim3_email)
                                 <p class="text-black">{{ $rac->tim3_email }}</p>
                             @endif
-                          </td> --}}
+                          </td>
                           <td class="border-b border-[#eee] px-4 py-5">
                             @if($rac->tim1_penyiar1)
                               <p class="text-black">{{ $rac->tim1_penyiar1 }}</p>

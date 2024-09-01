@@ -20,11 +20,11 @@
                             <div>
                                 <div class="mb-1">
                                     <label class="block form-label text-sm mb-0" for="">
-                                        <span class="">Nama Tim</span>
+                                        <span class="font-ltmuseumbold">Nama Tim</span>
                                     </label>
                                     <div>
                                         <input required
-                                            class="block @error('tim1_nama') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
+                                            class="block @error('tim1_nama') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline font-ltmuseumreg"
                                             type="text" placeholder="Nama Tim" name="tim1_nama"
                                             value="{{ old('tim1_nama') }}">
                                         @error('tim1_nama')
@@ -181,12 +181,14 @@
                                 </div>
                                 <div class="mb-1">
                                     <div>
-                                        <label class="block form-label text-sm mb-0" for="">Email</label>
+                                        <label class="block form-label text-sm mb-0 font-ltmuseumbold" for="">
+                                            Email
+                                        </label>
                                     </div>
                                     <div>
                                         <input required
-                                            class="block @error('tim1_email') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
-                                            type="email" placeholder="" name="tim1_email"
+                                            class="block @error('tim1_email') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline font-ltmuseumreg"
+                                            type="email" placeholder="Email Perwakilan" name="tim1_email"
                                             value="{{ old('tim1_email') }}">
                                         @error('tim1_email')
                                             <div class="text-sm text-red-600">{{ $message }}</div>
@@ -255,12 +257,12 @@
                                 <div class="font-ltmuseumbold text-xl md:text-2xl">TIM 1</div>
                                 <div>
                                     <div class="mb-1">
-                                        <label class="block form-label text-sm mb-0" for="">
+                                        <label class="block form-label text-sm mb-0 font-ltmuseumbold" for="">
                                             <span class="">Nama Tim</span>
                                         </label>
                                         <div>
                                             <input required
-                                                class="block @error('tim1_nama') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
+                                                class="block @error('tim1_nama') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline font-ltmuseumreg"
                                                 type="text" placeholder="Nama Tim" name="tim1_nama"
                                                 value="{{ old('tim1_nama') }}">
                                             @error('tim1_nama')
@@ -421,12 +423,12 @@
                                     </div>
                                     <div class="mb-1">
                                         <div>
-                                            <label class="block form-label text-sm mb-0" for="">Email</label>
+                                            <label class="block form-label text-sm mb-0 font-ltmuseumbold" for="">Email</label>
                                         </div>
                                         <div>
                                             <input required
-                                                class="block @error('tim1_email') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
-                                                type="email" placeholder="" name="tim1_email"
+                                                class="block @error('tim1_email') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline font-ltmuseumreg"
+                                                type="email" placeholder="Email Perwakilan" name="tim1_email"
                                                 value="{{ old('tim1_email') }}">
                                             @error('tim1_email')
                                                 <div class="text-sm text-red-600">{{ $message }}</div>
@@ -440,12 +442,12 @@
                                 <div class="font-ltmuseumbold text-xl md:text-2xl">TIM 2</div>
                                 <div>
                                     <div class="mb-1">
-                                        <label class="block form-label text-sm mb-0" for="">
+                                        <label class="block form-label text-sm mb-0 font-ltmuseumbold" for="">
                                             <span class="">Nama Tim</span>
                                         </label>
                                         <div>
                                             <input required
-                                                class="block @error('tim2_nama') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
+                                                class="block @error('tim2_nama') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline font-ltmuseumreg"
                                                 type="text" placeholder="Nama Tim" name="tim2_nama"
                                                 value="{{ old('tim2_nama') }}">
                                             @error('tim2_nama')
@@ -606,12 +608,12 @@
                                     </div>
                                     <div class="mb-1">
                                         <div>
-                                            <label class="block form-label text-sm mb-0" for="">Email</label>
+                                            <label class="block form-label text-sm mb-0 font-ltmuseumbold" for="">Email</label>
                                         </div>
                                         <div>
                                             <input required
-                                                class="block @error('tim2_email') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
-                                                type="email" placeholder="" name="tim2_email"
+                                                class="block @error('tim2_email') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline font-ltmuseumreg"
+                                                type="email" placeholder="Email Perwakilan" name="tim2_email"
                                                 value="{{ old('tim2_email') }}">
                                             @error('tim2_email')
                                                 <div class="text-sm text-red-600">{{ $message }}</div>

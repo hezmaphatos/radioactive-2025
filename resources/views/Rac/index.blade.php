@@ -64,7 +64,7 @@
         </div>
     </section> --}}
     
-    <section class="min-h-screen max-w font-ltmuseumreg p-4" id="timeline">
+    <section class="max-w font-ltmuseumreg p-4" id="timeline">
         <div id="title" class="text-center my-8 px-4">
             <h1 class="m-[0.3em] md:text-[3em] italic mt-15 font-brodyrawk" style="letter-spacing: 5px;">TIMELINE RADIO ANNOUNCING COMPETITION 2024</h1>
             <p class="text-white md:text-xl tracking-widest">DARE TO STRIVE</p>

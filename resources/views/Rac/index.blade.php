@@ -106,10 +106,9 @@
                 <a target="_"
                     href="https://drive.google.com/file/d/1gczHFV8MbNXSiDMOPcF3sCDbENeUkKwU/view?usp=drivesdk"
                     class="no-underline py-4 px-6">
-                    <button
-                        class="text-white border-white w-60 md:h-16 p-4 text-sm tracking-[1px] md:text-sm font-bold border-2 hover:bg-[#0F0F0F] hover:text-[#FA0202]">
-                        DOWNLOAD HANDBOOK
-                    </button>
+                    <a href="https://drive.google.com/file/d/1Z_lqcidtYFlSIUy-Qr1vr4P1LsmOQjeb/view?usp=drivesdk"
+                        class="text-white border-white w-60 md:h-16 p-4 text-sm tracking-[1px] md:text-sm font-bold border-2 hover:bg-[#0F0F0F] hover:text-[#FA0202]">HANDBOOK
+                    </a>
                 </a>
             </div>
             <div id="button2" class="my-3">

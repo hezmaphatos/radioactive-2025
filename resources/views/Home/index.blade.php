@@ -4,7 +4,7 @@
 <head>
 	@vite('resources/css/home.css')
 </head>
-<body class="overflow-x-hidden bg-black">
+<body class="overflow-x-hidden">
     {{-- <div id="button1" class="fixed bottom-1 end-4 md:bottom-10 md:end-20 flex justify-center items-center z-50 animate-bounce">
         <a href="/closing-night/#ticket" class="no-underline">
             <button class="rounded-[100%] h-[5.5rem] md:h-32 aspect-square bg-[#D61525] text-white border-white font-ltmuseum text-2xs md:text-sm p-2 md:p-4 font-bold border-2 hover:bg-[#FFF000] hover:text-[#D61525]">
@@ -212,6 +212,7 @@
         <div class="w-full lg:w-1/2 mt-12 lg:mt-0 lg:text-right text-center">
             <h2 class="font-brodyrawk md:text-4xl my-12 tracking-8 text-red-600">EXCLUSIVE RADIO PARTNER</h2>
         </div>
+    </div>
 </div>
 
 <div id="partners" class="-mb-20 md:-mb-0 md:my-24 mt-16 py-16 px-4" data-aos="fade-up">

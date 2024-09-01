@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+const plugin = require('tailwindcss/plugin');
+module.exports = {
     content: [
         "./resources/**/*.blade.php",
         "./resources/**/*.js",
@@ -9,13 +10,13 @@ export default {
         extend: {
             fontFamily: {
                 pathway: ["Pathway Extreme"],
-                brody: [" ", "sans-serif"],
-                museum: ['"LT Museum"', "sans-serif"],
+                brody: ["Brody Rawk", "sans-serif"],
+                museum: ["LT Museum", "sans-serif"],
                 taruno: ["Taruno Wide"],
                 taruno2: ["Taruno Wide Outline"],
                 ltmuseumbold: ["LT Museum Bold"],
+                ltmuseum: ["LT Museum Reguler"],
                 ltmuseumreg: ["LT Museum Reguler"],
-                ltmuseum: ["LT Museum"],
                 brodyrawk: ["Brody Rawk"],
                 "ltmuseum-bold": ["LTMuseum-Bold", "sans-serif"],
                 "ltmuseum-bolditalic": ["LTMuseum-BoldItalic", "sans-serif"],

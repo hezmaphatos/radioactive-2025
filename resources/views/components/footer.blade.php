@@ -2,7 +2,7 @@
     <div class="hidden md:block">
         <div class="hidden md:flex justify-between">
             <div class="">
-                <p class="ml-6 text-xs font-ltmuseum tracking-[0.4em] text-[#D61525]">&copy;UMN RADIOACTIVE 2024</p>
+                <p class="ml-6 text-xs font-ltmuseumbold tracking-[0.4em] text-[#D61525]">&copy;UMN RADIOACTIVE 2024</p>
             </div>
             <div class="flex space-x-8 mr-4 mb-2 ">
                 <a href="mailto:mediarelation.radioactive@gmail.com" target="_blank" class="text-[#D61525]">
@@ -57,46 +57,46 @@
             <div class="flex justify-center gap-4">
                 @if (isset($title))
                     <a href="/"
-                        class="text-sm font-ltmuseum text-white underline underline-offset-8 decoration-[#D61525] cursor-pointer {{ $title === 'Home' ? 'underline underline-offset-8 decoration-[#D61525]' : 'no-underline hover:underline hover:underline-offset-8 hover:decoration-[#D61525] cursor-pointer' }}">
+                        class="text-sm font-ltmuseumbold text-white underline underline-offset-8 decoration-[#D61525] cursor-pointer {{ $title === 'Home' ? 'underline underline-offset-8 decoration-[#D61525]' : 'no-underline hover:underline hover:underline-offset-8 hover:decoration-[#D61525] cursor-pointer' }}">
                         HOME
                     </a>
                     <a href="/mac"
-                        class="text-sm font-ltmuseum text-white underline underline-offset-8 decoration-[#D61525] cursor-pointer {{ $title === 'MAC' ? 'underline underline-offset-8 decoration-[#D61525]' : 'no-underline hover:underline hover:underline-offset-8 hover:decoration-[#D61525] cursor-pointer' }}">MAC
+                        class="text-sm font-ltmuseumbold text-white underline underline-offset-8 decoration-[#D61525] cursor-pointer {{ $title === 'MAC' ? 'underline underline-offset-8 decoration-[#D61525]' : 'no-underline hover:underline hover:underline-offset-8 hover:decoration-[#D61525] cursor-pointer' }}">MAC
                     </a>
 
                     <a href="/rac"
-                        class="text-sm font-ltmuseum text-white underline underline-offset-8 decoration-[#D61525] cursor-pointer {{ $title === 'RAC' ? 'underline underline-offset-8 decoration-[#D61525]' : 'no-underline hover:underline hover:underline-offset-8 hover:decoration-[#D61525] cursor-pointer' }}">
+                        class="text-sm font-ltmuseumbold text-white underline underline-offset-8 decoration-[#D61525] cursor-pointer {{ $title === 'RAC' ? 'underline underline-offset-8 decoration-[#D61525]' : 'no-underline hover:underline hover:underline-offset-8 hover:decoration-[#D61525] cursor-pointer' }}">
                         RAC
                     </a>
                     <a href="/closing-night"
-                        class="text-sm font-ltmuseum text-white underline underline-offset-8 decoration-[#D61525] cursor-pointer {{ $title === 'closing-night' ? 'underline underline-offset-8 decoration-[#D61525]' : 'no-underline hover:underline hover:underline-offset-8 hover:decoration-[#D61525] cursor-pointer' }}">
+                        class="text-sm font-ltmuseumbold text-white underline underline-offset-8 decoration-[#D61525] cursor-pointer {{ $title === 'closing-night' ? 'underline underline-offset-8 decoration-[#D61525]' : 'no-underline hover:underline hover:underline-offset-8 hover:decoration-[#D61525] cursor-pointer' }}">
                         CLOSING NIGHT
                     </a>
-                    <a href="/merch"
-                        class="text-sm font-ltmuseum text-white underline underline-offset-8 decoration-[#D61525] cursor-pointer {{ $title === 'merch' ? 'underline underline-offset-8 decoration-[#D61525]' : 'no-underline hover:underline hover:underline-offset-8 hover:decoration-[#D61525] cursor-pointer' }}">
+                    {{-- <a href="/merch"
+                        class="text-sm font-ltmuseumbold text-white underline underline-offset-8 decoration-[#D61525] cursor-pointer {{ $title === 'merch' ? 'underline underline-offset-8 decoration-[#D61525]' : 'no-underline hover:underline hover:underline-offset-8 hover:decoration-[#D61525] cursor-pointer' }}">
                         MERCHANDISE
-                    </a>
+                    </a> --}}
                 @else
                     <a href="/"
-                        class="text-sm font-ltmuseum text-white underline-offset-8 decoration-[#D61525] cursor-pointer no-underline hover:underline hover:underline-offset-8 hover:decoration-[#D61525]">
+                        class="text-sm font-ltmuseumbold text-white underline-offset-8 decoration-[#D61525] cursor-pointer no-underline hover:underline hover:underline-offset-8 hover:decoration-[#D61525]">
                         HOME
                     </a>
                     <a href="/mac"
-                        class="text-sm font-ltmuseum text-white underline-offset-8 decoration-[#D61525] cursor-pointer no-underline hover:underline hover:underline-offset-8 hover:decoration-[#D61525]">MAC
+                        class="text-sm font-ltmuseumbold text-white underline-offset-8 decoration-[#D61525] cursor-pointer no-underline hover:underline hover:underline-offset-8 hover:decoration-[#D61525]">MAC
                     </a>
 
                     <a href="/rac"
-                        class="text-sm font-ltmuseum text-white underline-offset-8 decoration-[#D61525] cursor-pointer no-underline hover:underline hover:underline-offset-8 hover:decoration-[#D61525]">
+                        class="text-sm font-ltmuseumbold text-white underline-offset-8 decoration-[#D61525] cursor-pointer no-underline hover:underline hover:underline-offset-8 hover:decoration-[#D61525]">
                         RAC
                     </a>
                     <a href="/closing-night"
-                        class="text-sm font-ltmuseum text-white underline-offset-8 decoration-[#D61525] cursor-pointer no-underline hover:underline hover:underline-offset-8 hover:decoration-[#D61525]">
+                        class="text-sm font-ltmuseumbold text-white underline-offset-8 decoration-[#D61525] cursor-pointer no-underline hover:underline hover:underline-offset-8 hover:decoration-[#D61525]">
                         CLOSING NIGHT
                     </a>
-                    <a href="/merch"
-                        class="text-sm font-ltmuseum text-white underline-offset-8 decoration-[#D61525] cursor-pointer no-underline hover:underline hover:underline-offset-8 hover:decoration-[#D61525]">
+                    {{-- <a href="/merch"
+                        class="text-sm font-ltmuseumbold text-white underline-offset-8 decoration-[#D61525] cursor-pointer no-underline hover:underline hover:underline-offset-8 hover:decoration-[#D61525]">
                         MERCHANDISE
-                    </a>
+                    </a> --}}
                 @endif
             </div>
 
@@ -114,44 +114,44 @@
             <div class="flex flex-col mb-2 ml-16 tracking-[0.1em]">
                 @if (isset($title))
                     <a href="/"
-                        class="text-sm font-ltmuseum text-white {{ $title === 'Home' ? 'underline underline-offset-4 decoration-[#D61525] cursor-pointer' : 'no-underline hover:underline hover:underline-offset-4 hover:decoration-[#D61525] cursor-pointer' }}">
+                        class="text-sm font-ltmuseumbold text-white {{ $title === 'Home' ? 'underline underline-offset-4 decoration-[#D61525] cursor-pointer' : 'no-underline hover:underline hover:underline-offset-4 hover:decoration-[#D61525] cursor-pointer' }}">
                         HOME
                     </a>
                     <a href="/mac"
-                        class="  text-sm font-ltmuseum text-white {{ $title === 'MAC' ? 'underline underline-offset-4 decoration-[#D61525] cursor-pointer' : 'no-underline hover:underline hover:underline-offset-4 hover:decoration-[#D61525] cursor-pointer' }}">MAC
+                        class="  text-sm font-ltmuseumbold text-white {{ $title === 'MAC' ? 'underline underline-offset-4 decoration-[#D61525] cursor-pointer' : 'no-underline hover:underline hover:underline-offset-4 hover:decoration-[#D61525] cursor-pointer' }}">MAC
                     </a>
                     <a href="/rac"
-                        class="text-sm font-ltmuseum text-white {{ $title === 'RAC' ? 'underline underline-offset-4 decoration-[#D61525] cursor-pointer' : 'no-underline hover:underline hover:underline-offset-4 hover:decoration-[#D61525] cursor-pointer' }}">
+                        class="text-sm font-ltmuseumbold text-white {{ $title === 'RAC' ? 'underline underline-offset-4 decoration-[#D61525] cursor-pointer' : 'no-underline hover:underline hover:underline-offset-4 hover:decoration-[#D61525] cursor-pointer' }}">
                         RAC
                     </a>
                     <a href="/closing-night"
-                        class="text-sm font-ltmuseum text-white {{ $title === 'closing-night' ? 'underline underline-offset-4 decoration-[#D61525] cursor-pointer' : 'no-underline hover:underline hover:underline-offset-4 hover:decoration-[#D61525] cursor-pointer' }}">
+                        class="text-sm font-ltmuseumbold text-white {{ $title === 'closing-night' ? 'underline underline-offset-4 decoration-[#D61525] cursor-pointer' : 'no-underline hover:underline hover:underline-offset-4 hover:decoration-[#D61525] cursor-pointer' }}">
                         CLOSING NIGHT
                     </a>
-                    <a href="/merch"
-                        class="text-sm font-ltmuseum text-white {{ $title === 'merch' ? 'underline underline-offset-4 decoration-[#D61525] cursor-pointer' : 'no-underline hover:underline hover:underline-offset-4 hover:decoration-[#D61525] cursor-pointer' }}">
+                    {{-- <a href="/merch"
+                        class="text-sm font-ltmuseumbold text-white {{ $title === 'merch' ? 'underline underline-offset-4 decoration-[#D61525] cursor-pointer' : 'no-underline hover:underline hover:underline-offset-4 hover:decoration-[#D61525] cursor-pointer' }}">
                         MERCHANDISE
-                    </a>
+                    </a> --}}
                 @else
                     <a href="/"
-                        class="text-sm font-ltmuseum text-white no-underline hover:underline hover:underline-offset-4 hover:decoration-[#D61525] cursor-pointer">
+                        class="text-sm font-ltmuseumbold text-white no-underline hover:underline hover:underline-offset-4 hover:decoration-[#D61525] cursor-pointer">
                         HOME
                     </a>
                     <a href="/mac"
-                        class="text-sm font-ltmuseum text-white no-underline hover:underline hover:underline-offset-4 hover:decoration-[#D61525] cursor-pointer">MAC
+                        class="text-sm font-ltmuseumbold text-white no-underline hover:underline hover:underline-offset-4 hover:decoration-[#D61525] cursor-pointer">MAC
                     </a>
                     <a href="/rac"
-                        class="text-sm font-ltmuseum text-white no-underline hover:underline hover:underline-offset-4 hover:decoration-[#D61525] cursor-pointer">
+                        class="text-sm font-ltmuseumbold text-white no-underline hover:underline hover:underline-offset-4 hover:decoration-[#D61525] cursor-pointer">
                         RAC
                     </a>
                     <a href="/closing-night"
-                        class="text-sm font-ltmuseum text-white no-underline hover:underline hover:underline-offset-4 hover:decoration-[#D61525] cursor-pointer}">
+                        class="text-sm font-ltmuseumbold text-white no-underline hover:underline hover:underline-offset-4 hover:decoration-[#D61525] cursor-pointer}">
                         CLOSING NIGHT
                     </a>
-                    <a href="/merch"
-                        class="text-sm font-ltmuseum text-white no-underline hover:underline hover:underline-offset-4 hover:decoration-[#D61525] cursor-pointer">
+                    {{-- <a href="/merch"
+                        class="text-sm font-ltmuseumbold text-white no-underline hover:underline hover:underline-offset-4 hover:decoration-[#D61525] cursor-pointer">
                         MERCHANDISE
-                    </a>
+                    </a> --}}
                 @endif
             </div>
             <div class="flex ml-16 mb-4 ">
@@ -163,7 +163,7 @@
                 </div>
             </div>
             <div class="flex ml-16 mr-4 mb-4 flex-col ">
-                <div class="font-thin font-ltmuseum text-white text-sm mr-4 mb-2 tracking-[0.1em]">CONTACT US:</div>
+                <div class="font-thin font-ltmuseumbold text-white text-sm mr-4 mb-2 tracking-[0.1em]">CONTACT US:</div>
                 <div class="flex space-x-8 mr-4 mb-2">
                     <a href="mailto:mediarelation.radioactive@gmail.com" target="_blank"
                         class="text-white h-8 w-8 bg-[#D61525] rounded-full">

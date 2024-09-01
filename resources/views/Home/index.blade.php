@@ -210,7 +210,7 @@
                                     src="/images/LOGO MEDPAR/Logo Kacamata Lomba.png" alt="" />
                             </div>
                             <div class="col-span-1">
-                                <img class="w-full object-contain md:h-24" src="/images/LOGO MEDPAR/LOGO MOESTOPO.jpg"
+                                <img class="w-full object-contain md:h-24" src="/images/LOGO MEDPAR/LOGO_MOESTOPO.jpg"
                                     alt="" />
                             </div>
                             <div class="col-span-1">
@@ -292,13 +292,13 @@
                 <h2 class="text-2xl md:text-4xl font-bold mb-4 md:mb-6 font-ltmuseumbold text-white">Flashback to last year's thrills!</h2>
                 <div class="flex flex-wrap justify-center items-center align-middle gap-4">
                     <div class=""><a data-filter="all"
-                            class="filter-link no-underline font-ltmuseumbold text-[#d61525]">ALL</a></div>
+                            class="filter-link no-underline font-ltmuseumbold text-[#d61525] hover:cursor-pointer">ALL</a></div>
                     <div class=""><a data-filter="voc"
-                            class="filter-link no-underline font-ltmuseumbold text-[#d61525]">VOC</a></div>
+                            class="filter-link no-underline font-ltmuseumbold text-[#d61525] hover:cursor-pointer">VOC</a></div>
                     <div class=""><a data-filter="rac"
-                            class="filter-link no-underline font-ltmuseumbold text-[#d61525]">RAC</a></div>
+                            class="filter-link no-underline font-ltmuseumbold text-[#d61525] hover:cursor-pointer">RAC</a></div>
                     <div class=""><a data-filter="closing-night"
-                            class="filter-link no-underline font-ltmuseumbold text-[#d61525]">CLOSING NIGHT</a></div>
+                            class="filter-link no-underline font-ltmuseumbold text-[#d61525] hover:cursor-pointer">CLOSING NIGHT</a></div>
                 </div>
             </div>
 
@@ -371,7 +371,7 @@
             <h2 class="font-brodyrawk md:text-3xl text-white text-center my-12 tracking-8">AFTER MOVIE RADIOACTIVE 2023
             </h2>
             <div class="w-full flex justify-center">
-                <iframe height="315" src="https://www.youtube.com/embed/noafJ76PHeM?si=5ho9Ad32GabxdrVT"
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/noafJ76PHeM?si=5ho9Ad32GabxdrVT"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

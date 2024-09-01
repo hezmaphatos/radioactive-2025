@@ -10,7 +10,7 @@ class RacController extends Controller
     public function index()
     {
         //
-        return view('RAC.index', [
+        return view('Rac.index', [
             "title" => "RAC"
         ]);
     }
@@ -20,7 +20,7 @@ class RacController extends Controller
      */
 
     public function confirmation_redirect(){
-        return view('RAC.redirect', [
+        return view('Rac.redirect', [
             'title' => 'RAC'
         ]);
     }
@@ -31,7 +31,7 @@ class RacController extends Controller
     public function create()
     {
         $rac_teams = rac::all();
-        return view('RAC.create', [
+        return view('Rac.create', [
             'count' => $rac_teams->count(),
             'rac_teams' => $rac_teams,
             'title' => 'RAC'
@@ -169,7 +169,7 @@ class RacController extends Controller
     }
 
     public function form($amount){
-        return view('RAC.form', compact("amount"), [
+        return view('Rac.form', compact("amount"), [
             'title' => 'RAC'
         ]);
     }

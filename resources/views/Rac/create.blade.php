@@ -2,7 +2,7 @@
 
 @section('container')
 
-<body class="antialiased bg-black min-h-screen">
+<body class="antialiased min-h-screen">
     <div class="font-brodyrawk text-3xl md:text-4xl text-white flex justify-center text-center pt-20 mb-6">RAC Registration</div>
     <div class="flex justify-center align-middle form-container">
         <div class="content-container px-4 py-4 flex flex-col w-[400px] shadow-md shadow-[#D61625] max-w-[95vw] ">
@@ -117,7 +117,7 @@
         border-radius: 3px;
         border: solid 3px white;
     }
-            <style>
+
             html, body {
     height: 100%;
 }
@@ -134,8 +134,5 @@ main {
 footer {
     margin-top: auto;
 }
-        </style>
 </style>
-
-</html>
 @endsection

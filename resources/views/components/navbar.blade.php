@@ -25,40 +25,40 @@
         </button>
         <div class="hidden gap-3 lg:flex pr-4">
             <a id="homeItem"
-                class="menu-item font-ltmuseum text-white text-sm cursor-pointer 
+                class="menu-item font-ltmuseumbold text-white text-sm cursor-pointer 
         {{ $title === 'Home' ? 'underline underline-offset-4 decoration-[#D61525] decoration-2' : 'no-underline hover:underline hover:underline-offset-4 hover:decoration-[#d6152581] decoration-2' }}"
                 href="/">
                 HOME
             </a>
             <a id="macItem"
-                class="menu-item font-ltmuseum text-white text-sm cursor-pointer 
+                class="menu-item font-ltmuseumbold text-white text-sm cursor-pointer 
         {{ $title === 'MAC' ? 'underline underline-offset-4 decoration-[#D61525] decoration-2' : 'no-underline hover:underline hover:underline-offset-4 hover:decoration-[#d6152581] decoration-2' }}"
                 href="/mac">
                 MAC
             </a>
             <a id="racItem"
-                class="menu-item font-ltmuseum text-white text-sm cursor-pointer 
+                class="menu-item font-ltmuseumbold text-white text-sm cursor-pointer 
         {{ $title === 'RAC' ? 'underline underline-offset-4 decoration-[#D61525] decoration-2' : 'no-underline hover:underline hover:underline-offset-4 hover:decoration-[#d6152581] decoration-2' }}"
                 href="/rac">
                 RAC
             </a>
             <a id="closingNightItem"
-                class="menu-item font-ltmuseum text-white text-sm cursor-pointer 
+                class="menu-item font-ltmuseumbold text-white text-sm cursor-pointer 
         {{ $title === 'closing-night' ? 'underline underline-offset-4 decoration-[#D61525] decoration-2' : 'no-underline hover:underline hover:underline-offset-4 hover:decoration-[#d6152581] decoration-2' }}"
                 href="/closing-night">
                 CLOSING NIGHT
             </a>
-            <a id="merchItem"
-                class="menu-item font-ltmuseum text-white text-sm cursor-pointer 
+            {{-- <a id="merchItem"
+                class="menu-item font-ltmuseumbold text-white text-sm cursor-pointer 
         {{ $title === 'merch' ? 'underline underline-offset-4 decoration-[#D61525] decoration-2' : 'no-underline hover:underline hover:underline-offset-4 hover:decoration-[#d6152581] decoration-2' }}"
                 href="/merch">
                 MERCHANDISE
-            </a>
+            </a> --}}
             <div class="absolute right-2">
                 @auth
                     <div id="dropdownButton" class="relative select-none">
                         <div onclick="toggleDropdown()"
-                            class="font-ltmuseum text-xs text-white flex justify-start mx-4 tracking-widest">Welcome,
+                            class="font-ltmuseumbold text-xs text-white flex justify-start mx-4 tracking-widest">Welcome,
                             {{ auth()->user()->name }}
                             <svg id="fill" class="w-4 mx-2 cursor-pointer" fill="#D61525" version="1.1" id="Layer_1"
                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -75,7 +75,7 @@
                 @else
                     <a class="login-item hidden lg:block no-underline  rounded-full ring-[#D61525] hover:ring-1 hover:ring-white"
                         href="/login"><span
-                            class="flex font-ltmuseum text-white text-sm tracking-wide no-underline px-5 py-1 rounded-full hover:bg-[#d61525e7] active:bg-[#d615253c]  bg-[#D61525] cursor-pointer">LOGIN</span></a>
+                            class="flex font-ltmuseumbold text-white text-sm tracking-wide no-underline px-5 py-1 rounded-full hover:bg-[#d61525e7] active:bg-[#d615253c]  bg-[#D61525] cursor-pointer">LOGIN</span></a>
                 @endauth
             </div>
         </div>
@@ -83,30 +83,30 @@
             <div class="lg:hidden fixed right-2 h-62 p-5 bg-[#D61525] rounded-lg shadow-xl top-[4.5rem]" x-show="isOpen"
                 @click.away="isOpen = false">
                 <div class="flex flex-col space-y-5 px-2">
-                    <a class="font-ltmuseum text-white text-sm tracking-wide cursor-pointer 
+                    <a class="font-ltmuseumbold text-white text-sm tracking-wide cursor-pointer 
                     {{ $title === 'Home' ? 'underline underline-offset-4  decoration-black' : 'no-underline hover:underline hover:underline-offset-4  hover:decoration-black' }} active:decoration-[#0000002d]"
                         href="/">HOME</a>
-                    <a class="font-ltmuseum text-white text-sm tracking-wide cursor-pointer 
+                    <a class="font-ltmuseumbold text-white text-sm tracking-wide cursor-pointer 
                     {{ $title === 'MAC' ? 'underline underline-offset-4  decoration-black' : 'no-underline hover:underline hover:underline-offset-4  hover:decoration-black' }} active:decoration-[#0000002d]"
                         href="/mac">MAC</a>
-                    <a class="font-ltmuseum text-white text-sm tracking-wide cursor-pointer 
+                    <a class="font-ltmuseumbold text-white text-sm tracking-wide cursor-pointer 
                     {{ $title === 'RAC' ? 'underline underline-offset-4  decoration-black' : 'no-underline hover:underline hover:underline-offset-4  hover:decoration-black' }} active:decoration-[#0000002d]"
                         href="/rac">RAC</a>
-                    <a class="font-ltmuseum text-white text-sm tracking-wide cursor-pointer 
+                    <a class="font-ltmuseumbold text-white text-sm tracking-wide cursor-pointer 
                     {{ $title === 'closing-night' ? 'underline underline-offset-4  decoration-black' : 'no-underline hover:underline hover:underline-offset-4  hover:decoration-black' }} active:decoration-[#0000002d]"
                         href="/closing-night">CLOSING NIGHT</a>
-                    <a class="font-ltmuseum text-white text-sm tracking-wide cursor-pointer 
+                    {{-- <a class="font-ltmuseumbold text-white text-sm tracking-wide cursor-pointer 
                     {{ $title === 'merch' ? 'underline underline-offset-4  decoration-black' : 'no-underline hover:underline hover:underline-offset-4  hover:decoration-black' }} active:decoration-[#0000002d]"
-                        href="/merch">MERCHANDISE</a>
+                        href="/merch">MERCHANDISE</a> --}}
                     @auth
-                        <a class="font-ltmuseum text-white text-sm tracking-wide cursor-pointer 
+                        <a class="font-ltmuseumbold text-white text-sm tracking-wide cursor-pointer 
                     {{ $title === 'logout' ? 'underline underline-offset-4  decoration-black' : 'no-underline hover:underline hover:underline-offset-4  hover:decoration-black' }} active:decoration-[#0000002d]"
                             href="/logout">LOG OUT</a>
                     @else
                         <a class="login-item hidden lg:block no-underline rounded-full ring-[#D61525] hover:ring-1 hover:ring-white"
                             href="/login">
                             <span
-                                class="flex font-ltmuseum text-white text-sm tracking-wide no-underline px-5 py-1 rounded-full hover:bg-[#d61525e7] active:bg-[#d615253c] bg-[#D61525] cursor-pointer">
+                                class="flex font-ltmuseumbold text-white text-sm tracking-wide no-underline px-5 py-1 rounded-full hover:bg-[#d61525e7] active:bg-[#d615253c] bg-[#D61525] cursor-pointer">
                                 LOGIN
                             </span>
                         </a>

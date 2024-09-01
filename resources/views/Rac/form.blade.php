@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('container')
-<body class="antialiased bg-black min-h-screen">
+<body class="antialiased min-h-screen">
     <div class="font-brodyrawk text-3xl md:text-4xl text-white flex justify-center text-center mb-6 pt-20">
         FORM PENDAFTARAN RAC
     </div>

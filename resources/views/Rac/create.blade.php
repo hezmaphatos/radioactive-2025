@@ -75,12 +75,6 @@
                             Dua Tim
                         </button>
                     </a>
-                    <a href="/rac/form/3">
-                        <button class="button-submit font-ltmuseumbold text-white bg-[#D61625] w-full text-sm px-5 py-1 my-1"
-                            type="submit">
-                            Tiga Tim
-                        </button>
-                    </a>
                 @endif
             @else
                 <a href="/rac/form/1">
@@ -93,12 +87,6 @@
                     <button class="button-submit font-ltmuseumbold text-white bg-[#D61625] w-full text-sm px-5 py-1 my-1"
                         type="submit">
                         Dua Tim
-                    </button>
-                </a>
-                <a href="/rac/form/3">
-                    <button class="button-submit font-ltmuseumbold text-white bg-[#D61625] w-full text-sm px-5 py-1 my-1"
-                        type="submit">
-                        Tiga Tim
                     </button>
                 </a>
             @endif

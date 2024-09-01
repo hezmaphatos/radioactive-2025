@@ -55,6 +55,8 @@ class RacController extends Controller
             'tim1_nimop' => 'required|max:255',
             'tim1_contact_wa' => 'required|max:255',
             'tim1_contact_line' => 'required|max:255',
+            'tim1_nama' => 'required|max:255',
+            'tim1_email' => 'required|max:255',
 
             'tim2_penyiar1' => 'max:255',
             'tim2_penyiar2' => 'max:255',
@@ -94,6 +96,8 @@ class RacController extends Controller
             'tim1_nimop'=>$request->tim1_nimop,
             'tim1_contact_wa'=>$request->tim1_contact_wa,
             'tim1_contact_line'=>$request->tim1_contact_line,
+            'tim1_nama' => $request->tim1_nama,
+            'tim1_email' => $request->tim1_email,
 
             'tim2_penyiar1'=>$request->tim2_penyiar1,
             'tim2_penyiar2'=>$request->tim2_penyiar2,

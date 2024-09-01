@@ -18,6 +18,7 @@ use App\Http\Controllers\DashboardRACController;
 use App\Http\Controllers\MerchOrderController;
 use App\Http\Controllers\CartController;
 use App\Models\User;
+use Illuminate\Support\Facades\Artisan;
 
 /*
 |--------------------------------------------------------------------------

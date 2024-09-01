@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('container')
-<body class="text-white bg-black">
+<body class="text-white">
     {{-- <div>
         <video autoplay loop muted
             class="fixed -z-10 w-auto lg:w-full md:min-w-full md:min-h-full max-w-fit object-cover" loading="lazy">
@@ -74,26 +74,26 @@
             <div class="mx-auto max-w-[34.15em]">
                 <div id="checkpoint" class="border-2 border-white m-s:translate-x-[19em] rounded-2xl p-6 mb-4 mt-4">
                     <div>
-                        <h2 class="mb-2">Date 1 : Pendaftaran</h2>
-                        <p class="leading-[27px] text-gray-300">
+                        <h2 class="text-[#D61525]">2 - 30 September 2024 : <text class="text-white">Pendaftaran</text></h2>
+                        {{-- <p class="leading-[27px] text-gray-300">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam atque sit tenetur commodi vel illo amet natus, corporis, facilis magni voluptate quibusdam quis ducimus ipsum ullam itaque labore voluptatibus! Reprehenderit!
-                        </p>
+                        </p> --}}
                     </div>
                 </div>
                 <div id="checkpoint" class="border-2 border-white m-s:-translate-x-[19em] rounded-2xl p-6 mb-4 mt-4">
                     <div>
-                        <h2 class="mb-2">Date 2 : Seleksi</h2>
-                        <p class="leading-[27px] text-gray-300">
+                        <h2 class="text-[#D61525]">5 Oktober 2024: <text class="text-white">Technical Meeting</text></h2>
+                        {{-- <p class="leading-[27px] text-gray-300">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam atque sit tenetur commodi vel illo amet natus, corporis, facilis magni voluptate quibusdam quis ducimus ipsum ullam itaque labore voluptatibus! Reprehenderit!
-                        </p>
+                        </p> --}}
                     </div>
                 </div>
                 <div id="checkpoint" class="border-2 border-white m-s:translate-x-[19em] rounded-2xl p-6 mb-4 mt-4">
                     <div>
-                        <h2 class="mb-2">Date 3 : Pemberitahuan Hasil Seleksi</h2>
-                        <p class="leading-[27px] text-gray-300">
+                        <h2 class="text-[#D61525]">12 Oktober 2024: <text class="text-white">Pelaksanaan Lomba Rac</text></h2>
+                        {{-- <p class="leading-[27px] text-gray-300">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam atque sit tenetur commodi vel illo amet natus, corporis, facilis magni voluptate quibusdam quis ducimus ipsum ullam itaque labore voluptatibus! Reprehenderit!
-                        </p>
+                        </p> --}}
                     </div>
                 </div>
             </div>
@@ -103,22 +103,20 @@
     <section id="download" class="max-w font-brodyrawk">
         <div class="flex flex-col md:flex-row justify-center sm:py-16 items-center mt-15" data-aos="fade-up">
             <div id="button1" class="my-3">
-                <a target="_"
-                    href="https://drive.google.com/file/d/1gczHFV8MbNXSiDMOPcF3sCDbENeUkKwU/view?usp=drivesdk"
-                    class="no-underline py-4 px-6">
-                    <a href="https://drive.google.com/file/d/1Z_lqcidtYFlSIUy-Qr1vr4P1LsmOQjeb/view?usp=drivesdk"
-                        class="text-white border-white w-60 md:h-16 p-4 text-sm tracking-[1px] md:text-sm font-bold border-2 hover:bg-[#0F0F0F] hover:text-[#FA0202]">HANDBOOK
-                    </a>
+                <a href="https://drive.google.com/file/d/1Z_lqcidtYFlSIUy-Qr1vr4P1LsmOQjeb/view?usp=drivesdk"
+                    class="text-white border-white w-60 md:h-16 p-4 text-sm tracking-[1px] md:text-sm font-bold border-2 hover:bg-[#0F0F0F] hover:text-[#FA0202] no-underline flex items-center justify-center"
+                    target="_blank">HANDBOOK
                 </a>
             </div>
             <div id="button2" class="my-3">
-                <a href="/rac/register" class="no-underline py-4 px-6">
+                <a href="/rac/register" class="no-underline py-4 px-6 flex items-center justify-center">
                     <button disabled id="btnReg"
-                        class="disabled:bg-gray-400 disabled:cursor-not-allowed text-white border-white w-60 md:h-16 p-4 text-sm tracking-[1px] md:text-sm font-bold border-2 hover:bg-[#0F0F0F] hover:text-[#FA0202] disabled:text-white">
+                        class="disabled:bg-gray-400 disabled:cursor-not-allowed text-white border-white w-60 md:h-16 p-4 text-sm tracking-[1px] md:text-sm font-bold border-2 hover:bg-[#0F0F0F] hover:text-[#FA0202] disabled:text-white flex items-center justify-center">
                         REGISTER HERE
                     </button>
                 </a>
             </div>
+            
         </div>
     </section>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

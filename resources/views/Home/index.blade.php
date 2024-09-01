@@ -1,11 +1,13 @@
 @extends('layouts.main')
 
 @section('container')
-<head>
-	@vite('resources/css/home.css')
-</head>
-<body class="overflow-x-hidden">
-    {{-- <div id="button1" class="fixed bottom-1 end-4 md:bottom-10 md:end-20 flex justify-center items-center z-50 animate-bounce">
+
+    <head>
+        @vite('resources/css/home.css')
+    </head>
+
+    <body class="overflow-x-hidden">
+        {{-- <div id="button1" class="fixed bottom-1 end-4 md:bottom-10 md:end-20 flex justify-center items-center z-50 animate-bounce">
         <a href="/closing-night/#ticket" class="no-underline">
             <button class="rounded-[100%] h-[5.5rem] md:h-32 aspect-square bg-[#D61525] text-white border-white font-ltmuseum text-2xs md:text-sm p-2 md:p-4 font-bold border-2 hover:bg-[#FFF000] hover:text-[#D61525]">
                 GET YOUR TICKETS
@@ -72,130 +74,182 @@
             </div>
         </div>
 
-<section class="min-h-screen max-w font-['LT_Museum',sans-serif] p-4" id="timeline">
-    <div id="title" class="text-center my-8 px-4">
-        <h1 class="font-brody md:text-3xl text-white text-center my-12 tracking-8 m-[0.3em] md:text-[3em] italic"
-            style="letter-spacing: 5px;">GENERAL TIMELINE</h1>
-        {{-- <p class="text-white md:text-xl tracking-widest">------</p> --}}
-    </div>
-    <div class="relative" data-aos="zoom-in-right" data-aos-delay="100">
-        <div class="absolute left-1/2 h-full w-px bg-white hidden m-s:block"></div>
-        <div class="mx-auto max-w-[34.15em]">
-            <div id="checkpoint" class="border-2 border-white pl-12 m-s:translate-x-[19em] rounded-2xl p-6 mb-4 mt-4">
-                <div>
-                    <h2 class="mb-2 text-[#D61525]">2 - 9 September 2024 :<a href="/mac" class="no-underline text-white hover:opacity-50"> Mini Annoucing Challenge</a></h2>
-                    <p class="leading-[27px] text-gray-300">
-                        Mini Annoucing Challenge merupakan salah satu rangkaian acara RADIOACTIVE 2024. Mini Annoucing Challenge bertujuan untuk mengasah skill para peserta dalam bidang siaran. Dalam challenge ini, peserta tidak dibatasi untuk berkreasi. Teknis dari Mini Annoucing Challenge ini adalah peserta dapat siaran menggunakan tema dan 3 kata yang sudah dipilih secara acak. Disisi lain, challenge ini juga dapat meningkatkan awareness untuk rangkaian acara berikutnya.
-                    </p>
+        <section class="min-h-screen max-w font-ltmuseumreg p-4" id="timeline">
+            <div id="title" class="text-center my-8 px-4">
+                <h1 class="font-brody md:text-3xl text-white text-center my-12 tracking-8 m-[0.3em] md:text-[3em] italic"
+                    style="letter-spacing: 5px;">GENERAL TIMELINE</h1>
+                {{-- <p class="text-white md:text-xl tracking-widest">------</p> --}}
+            </div>
+            <div class="relative" data-aos="zoom-in-right" data-aos-delay="100">
+                <div class="absolute left-1/2 h-full w-px bg-white hidden m-s:block"></div>
+                <div class="mx-auto max-w-[34.15em]">
+                    <div id="checkpoint" class="border-2 border-white m-s:translate-x-[19em] rounded-2xl p-6 mb-4 mt-4">
+                        <div>
+                            <h2 class="mb-2 text-[#D61525]">2 - 9 September 2024 :<a href="/mac"
+                                    class="no-underline text-white"> Mini Annoucing Challenge</a></h2>
+                            <p class="leading-[27px] text-gray-300">
+                                Mini Annoucing Challenge merupakan salah satu rangkaian acara RADIOACTIVE 2024. Mini
+                                Annoucing Challenge bertujuan untuk mengasah skill para peserta dalam bidang siaran. Dalam
+                                challenge ini, peserta tidak dibatasi untuk berkreasi. Teknis dari Mini Annoucing Challenge
+                                ini adalah peserta dapat siaran menggunakan tema dan 3 kata yang sudah dipilih secara acak.
+                                Disisi lain, challenge ini juga dapat meningkatkan awareness untuk rangkaian acara
+                                berikutnya.
+                            </p>
+                        </div>
+                    </div>
+                    <div id="checkpoint" class="border-2 border-white m-s:-translate-x-[19em] rounded-2xl p-6 mb-4 mt-4">
+                        <div>
+                            <h2 class="mb-2 text-[#D61525]">2 September 2024 - 12 Oktober 2024 : <a href="/rac"
+                                    class="no-underline text-white">Radio Announcing Competition</a></h2>
+                            <p class="leading-[27px] text-gray-300">
+                                Radio Announcing Competition merupakan rangkaian acara utama RADIOACTIVE. Lomba ini merupa
+                                kan ajang untuk siswa SMA dan mahasiswa se-Jabodetabek untuk memperluas wawasan dan mengasah
+                                kemampuan di dunia broadcasting. Radio Announcing Competition ini memiliki konsep yang
+                                sesuai dengan nilai utama RADIOACTIVE 2024, yaitu “Surviving the Maze”. Tujuan dari lomba
+                                ini adalah untuk mengasah kreativitas peserta dalam membuat siaran dan secara tidak langsung
+                                memberikan informasi hingga mengajak para peserta untuk menggambarkan perjuangan manusia
+                                dalam menghadapi rintangan dan lika-liku kehidupan.
+                            </p>
+                        </div>
+                    </div>
+                    <div id="checkpoint" class="border-2 border-white m-s:translate-x-[19em] rounded-2xl p-6 mb-4 mt-4">
+                        <div>
+                            <h2 class="mb-2 text-[#D61525]">2 November 2024 : <a href="/closing-night"
+                                    class="no-underline text-white">CLOSING NIGHT</a></h2>
+                            <p class="leading-[27px] text-gray-300">
+                                Closing Night merupakan puncak dan penutup dari rangkaian acara RADIOACTIVE 2024 yang akan
+                                dilaksanakan secara offline. Kegiatan ini bertujuan untuk meningkatkan awareness dan
+                                engagement RADIOACTIVE sebagai acara tahunan dari UMN Radio. Konsep Closing Night tahun ini
+                                adalah “Valiant Against Fear” , Radioactive 2024 mengajak seluruh peserta dan panitia untuk
+                                dapat bertahan setelah keluar dari zona nyaman mereka. Untuk closing night Radioactive tahun
+                                ini akan diadakan secara intimate karena untuk berusaha bertahan di zona nyaman, tahap awal
+                                yang dapat dilakukan adalah berfokus di skala yang kecil terlebih dahulu, kemudian baru
+                                dilanjutkan ke skala yang lebih besar.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div id="checkpoint" class="border-2 border-white pl-12 m-s:-translate-x-[19em] rounded-2xl p-6 mb-4 mt-4">
-                <div>
-                    <h2 class="mb-2 text-[#D61525]">2 September 2024 - 12 Oktober 2024 : <a href="/rac" class="no-underline text-white hover:opacity-50">Radio Announcing Competition</a></h2>
-                    <p class="leading-[27px] text-gray-300">
-                        Radio Announcing Competition merupakan rangkaian acara utama RADIOACTIVE. Lomba ini merupa kan ajang untuk siswa SMA dan mahasiswa se-Jabodetabek untuk memperluas wawasan dan mengasah kemampuan di dunia broadcasting. Radio Announcing Competition ini memiliki konsep yang sesuai dengan nilai utama RADIOACTIVE 2024, yaitu “Surviving the Maze”. Tujuan dari lomba ini adalah untuk mengasah kreativitas peserta dalam membuat siaran dan secara tidak langsung memberikan informasi hingga mengajak para peserta untuk menggambarkan perjuangan manusia dalam menghadapi rintangan dan lika-liku kehidupan.
-                    </p>
-                </div>
-            </div>
-            <div id="checkpoint" class="border-2 border-white pl-12 m-s:translate-x-[19em] rounded-2xl p-6 mb-4 mt-4">
-                <div>
-                    <h2 class="mb-2 text-[#D61525]">2 November 2024 : <a href="/closing-night" class="no-underline text-white hover:opacity-50">CLOSING NIGHT</a></h2>
-                    <p class="leading-[27px] text-gray-300">
-                        Closing Night merupakan puncak dan penutup dari rangkaian acara RADIOACTIVE 2024 yang akan dilaksanakan secara offline. Kegiatan ini bertujuan untuk meningkatkan awareness dan engagement RADIOACTIVE sebagai acara tahunan dari UMN Radio. Konsep Closing Night tahun ini adalah “Valiant Against Fear” , Radioactive 2024 mengajak seluruh peserta dan panitia untuk dapat bertahan setelah keluar dari zona nyaman mereka. Untuk closing night Radioactive tahun ini akan diadakan secara intimate karena untuk berusaha bertahan di zona nyaman, tahap awal yang dapat dilakukan adalah berfokus di skala yang kecil terlebih dahulu, kemudian baru dilanjutkan ke skala yang lebih besar.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<div class="py-16 px-4">
-    <div data-aos="zoom-in-right" data-aos-delay="400"
-        class="container mx-auto flex flex-col lg:flex-row items-center lg:justify-between">
-        <!-- Images -->
-        <div class="w-full lg:w-1/2">
-            <div class="grid grid-cols-3 gap-4">
-                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
-                    <img src="/images/LOGO MEDPAR/LOGO MUSTANG.png" alt="" class="w-full h-full object-contain">
+        <div class="px-4">
+            <div data-aos="zoom-in-up" data-aos-delay="400"
+                class="container mx-auto flex justify-center md:justify-around flex-wrap items-center align-middle">
+                <h2 class="font-brodyrawk md:text-5xl text-3xl text-center my-12 tracking-[4px] text-red-600">EXCLUSIVE
+                    RADIO PARTNER</h2>
+                <img src="/images/LOGO MEDPAR/LOGO MUSTANG.png" alt="" class="md:w-96 w-64 object-contain">
+            </div>
+        </div>
+
+        <div id="partners" class="-mb-20 md:-mb-0 md:my-24 mt-8 px-4" data-aos="fade-up">
+            <div class="container mx-auto flex flex-col lg:flex-row items-center lg:justify-between">
+                <!-- Text -->
+                <div data-aos="zoom-in-up" data-aos-delay="400" class="w-full lg:w-2/5 lg:mb-0 lg:text-left text-center">
+                    <h2 class="font-brodyrawk md:text-5xl text-3xl my-12 tracking-[4px] text-red-600">PARTNERS</h2>
+                </div>
+                <div class="w-full lg:w-3/5">
+                    <div class="grid grid-cols-6 gap-4">
+                        {{-- L --}}
+                        <div class="col-span-6 flex justify-center">
+                            <img class="w-[70%] md:w-1/2 md:h-64 object-contain"
+                                src="/images/LOGO MEDPAR/logo milenials radio.png" alt="" />
+                        </div>
+
+                        {{-- M --}}
+                        <div class="col-span-6 grid grid-cols-2">
+                            <div class="col-span-1 flex justify-center">
+                                <img class="object-contain md:w-1/2 md:h-48" src="/images/LOGO MEDPAR/Logo SMI Putih.png"
+                                    alt="" />
+                            </div>
+                            <div class="col-span-1 flex justify-center">
+                                <img class="object-contain md:w-1/2 md:h-48"
+                                    src="/images/LOGO MEDPAR/Logo Ultimagz Putih.png" alt="" />
+                            </div>
+                            <div class="col-span-1 flex justify-center">
+                                <img class="object-contain md:w-1/2 md:h-48" src="/images/LOGO MEDPAR/Logo lspr radio .jpg"
+                                    alt="" />
+                            </div>
+                            <div class="col-span-1 flex justify-center">
+                                <img class="object-contain md:w-1/2 md:h-48" src="/images/LOGO MEDPAR/Logo Mradio .PNG"
+                                    alt="" />
+                            </div>
+                        </div>
+
+                        {{-- S --}}
+                        <div class="col-span-6 grid grid-cols-4 gap-1">
+                            <div class="col-span-1">
+                                <img src="/images/LOGO MEDPAR/LOGO BEM UMN PUTIH.png" alt=""
+                                    class="w-full object-contain md:h-24">
+                            </div>
+                            {{-- <div class="col-span-1">
+                                <img src="/images/LOGO MEDPAR/Logo Acara Kampus.png" alt=""
+                                    class="w-full object-contain md:h-24">
+                            </div> --}}
+                            {{-- <div class="col-span-1">
+                                <img src="/images/LOGO MEDPAR/LOGO BERITA LOMBA JPEG.jpeg" alt=""
+                                    class="w-full object-contain md:h-24">
+                            </div> --}}
+                            {{-- <div class="col-span-1">
+                                <img class="w-full object-contain md:h-24"
+                                    src="/images/LOGO MEDPAR/Logo Eventnya Mahasiswa.png" alt="" />
+                            </div> --}}
+                            <div class="col-span-1">
+                                <img class="w-full object-contain md:h-24" src="/images/LOGO MEDPAR/fourtyfiveradio.webp"
+                                    alt="" />
+                            </div>
+                            <div class="col-span-1">
+                                <img class="w-full object-contain md:h-24" src="/images/LOGO MEDPAR/LOGO HMFILM.PNG"
+                                    alt="" />
+                            </div>
+                            <div class="col-span-1">
+                                <img class="w-full object-contain md:h-24" src="/images/LOGO MEDPAR/logo imkom.png"
+                                    alt="" />
+                            </div>
+                            <div class="col-span-1">
+                                <img class="w-full object-contain md:h-24"
+                                    src="/images/LOGO MEDPAR/Logo Kacamata Lomba.png" alt="" />
+                            </div>
+                            <div class="col-span-1">
+                                <img class="w-full object-contain md:h-24" src="/images/LOGO MEDPAR/LOGO MOESTOPO.jpg"
+                                    alt="" />
+                            </div>
+                            <div class="col-span-1">
+                                <img class="w-full object-contain md:h-24" src="/images/LOGO MEDPAR/LOGO ORI.png"
+                                    alt="" />
+                            </div>
+                            {{-- <div class="col-span-1">
+                                <img class="w-full object-contain md:h-24" src="/images/LOGO MEDPAR/Logo Radio Untar.PNG"
+                                    alt="" />
+                            </div> --}}
+                            {{-- <div class="col-span-1">
+                                <img class="w-full object-contain md:h-24" src="/images/LOGO MEDPAR/Point Kampus.png"
+                                    alt="" />
+                            </div> --}}
+                            <div class="col-span-1">
+                                <img class="w-full object-contain md:h-24" src="/images/LOGO MEDPAR/unpar.jpg"
+                                    alt="" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- Text -->
-        <div class="w-full lg:w-1/2 mt-12 lg:mt-0 lg:text-right text-center">
-            <h2 class="font-brodyrawk md:text-4xl my-12 tracking-8 text-red-600">EXCLUSIVE RADIO PARTNER</h2>
+        <div class="w-full flex justify-center">
+            <hr class="w-[90%] my-24">
         </div>
-    </div>
-</div>
-
-<div id="partners" class="-mb-20 md:-mb-0 md:my-24 mt-16 py-16 px-4" data-aos="fade-up">
-    <div class="container mx-auto flex flex-col lg:flex-row items-center lg:justify-between">
-        <!-- Text -->
-        <div data-aos="zoom-in-right" data-aos-delay="400"
-            class="w-full lg:w-1/2 mb-12 lg:mb-0 lg:text-left text-center">
-            <h2 class="font-brodyrawk md:text-5xl my-12 tracking-8 text-red-600">PARTNERS</h2>
+        <div class="px-4">
+            <div data-aos="zoom-in-up" data-aos-delay="400"
+                class="container mx-auto flex justify-center md:justify-around flex-wrap items-center align-middle">
+                <h2 class="font-brodyrawk md:text-5xl text-3xl text-center my-5 tracking-[4px] text-red-600">TICKETING
+                    PARTNER</h2>
+                <img src="/images/LOGO SPONSOR/detik event.png" alt="" class="md:w-96 w-64 object-contain">
+            </div>
         </div>
-        <div class="w-full lg:w-1/2">
-            <div class="grid grid-cols-3 gap-4">
-                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
-                    <img src="/images/LOGO MEDPAR/LOGO BEM UMN PUTIH.png" alt="" class="w-full h-full object-contain">
-                </div>
-                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
-                    <img src="/images/LOGO MEDPAR/Logo Acara Kampus.png" alt="" class="w-full h-full object-contain">
-                </div>
-                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
-                    <img src="/images/LOGO MEDPAR/LOGO BERITA LOMBA JPEG.jpeg" alt="" class="w-full h-full object-contain">
-                </div>              
-                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
-                    <img class="w-full h-full object-contain" src="/images/LOGO MEDPAR/Logo Eventnya Mahasiswa.png" alt="" />
-                </div>
-                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
-                    <img class="w-full h-full object-contain" src="/images/LOGO MEDPAR/fourtyfiveradio.webp" alt="" />
-                </div>
-                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
-                    <img class="w-full h-full object-contain" src="/images/LOGO MEDPAR/LOGO HMFILM.PNG" alt="" />
-                </div>
-                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
-                    <img class="w-full h-full object-contain" src="/images/LOGO MEDPAR/logo imkom.png" alt="" />
-                </div>
-                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
-                    <img class="w-full h-full object-contain" src="/images/LOGO MEDPAR/Logo Kacamata Lomba.png" alt="" />
-                </div>
-                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
-                    <img class="w-full h-full object-contain" src="/images/LOGO MEDPAR/Logo lspr radio .jpg" alt="" />
-                </div>
-                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
-                    <img class="w-full h-full object-contain" src="/images/LOGO MEDPAR/logo milenials radio.png" alt="" />
-                </div>
-                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
-                    <img class="w-full h-full object-contain" src="/images/LOGO MEDPAR/LOGO MOESTOPO.jpg" alt="" />
-                </div>
-                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
-                    <img class="w-full h-full object-contain" src="/images/LOGO MEDPAR/Logo Mradio .PNG" alt="" />
-                </div>
-                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
-                    <img class="w-full h-full object-contain" src="/images/LOGO MEDPAR/LOGO ORI.png" alt="" />
-                </div>
-                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
-                    <img class="w-full h-full object-contain" src="/images/LOGO MEDPAR/Logo Radio Untar.PNG" alt="" />
-                </div>
-                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
-                    <img class="w-full h-full object-contain" src="/images/LOGO MEDPAR/Logo SMI Putih.png" alt="" />
-                </div>
-                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
-                    <img class="w-full h-full object-contain" src="/images/LOGO MEDPAR/Point Kampus.png" alt="" />
-                </div>
-                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
-                    <img class="w-full h-full object-contain" src="/images/LOGO MEDPAR/unpar.jpg" alt="" />
-                </div>
-            </div>         
-        </div>
-    </div>
-</div>
 
         <!-- Sponsors Section -->
-        <div id="sponsors" class="py-16">
+        <div id="sponsors" class="md:py-16">
             <div data-aos="zoom-in-right" data-aos-delay="400"
-                class="container mx-auto flex flex-col lg:flex-row items-center lg:justify-between">
+                class="container mx-auto flex justify-center flex-wrap-reverse lg:justify-around">
                 <!-- Images -->
                 <div class="w-full lg:w-1/2">
                     <div class="grid grid-cols-3 gap-4">
@@ -205,10 +259,6 @@
                         </div>
                         <div class="bg-black border border-white aspect-w-1 aspect-h-1 rounded-lg">
                             <img src="/images/LOGO SPONSOR/AMATERASUN XS.png" alt=""
-                                class="w-full h-full object-contain">
-                        </div>
-                        <div class="bg-black border border-white aspect-w-1 aspect-h-1 rounded-lg">
-                            <img src="/images/LOGO SPONSOR/detik event (ticketing partner).png" alt=""
                                 class="w-full h-full object-contain">
                         </div>
                         <div class="bg-black border border-white aspect-w-1 aspect-h-1 rounded-lg">
@@ -230,27 +280,26 @@
                     </div>
                 </div>
                 <!-- Text -->
-                <div class="w-full lg:w-1/2 mt-12 lg:mt-0 lg:text-right text-center">
-                    <h2 class="font-brody md:text-5xl my-12 tracking-8 text-red-600">SPONSORS</h2>
+                <div class="w-full lg:w-1/2 lg:mt-0 lg:text-right text-center flex justify-end items-center align-middle">
+                    <h2 class="font-brodyrawk md:text-5xl text-3xl my-12 tracking-[4px] text-red-600">SPONSORS</h2>
                 </div>
             </div>
         </div>
 
-        <div class="flex flex-wrap md:flex-nowrap px-4 md:px-12 mt-10 space-y-8 md:space-y-0">
+        <div class="flex flex-wrap md:flex-nowrap px-4 md:px-12 mt-20 space-y-8 md:space-y-0">
             <div class="w-full md:w-1/4 p-4 md:p-6">
                 <h1 class="text-lg md:text-xl font-brodyrawk text-[#D61525] mb-2 md:mb-4">UMN RADIOACTIVE 2023</h1>
-                <h2 class="text-2xl md:text-4xl font-bold mb-4 md:mb-6 font-ltmuseumbold text-white">Kilas balik acara
-                    tahun sebelumnya!</h2>
-                <ul class="sm:flex md:block">
-                    <li class="text-yellow-600 mb-1 md:mb-2"><a data-filter="all"
-                            class="filter-link hover:opacity-50 no-underline font-ltmuseumreg">ALL</a></li>
-                    <li class="text-gray-500 mb-1 md:mb-2"><a data-filter="voc"
-                            class="filter-link hover:opacity-50  no-underline font-ltmuseumreg">VOC</a></li>
-                    <li class="text-gray-500 mb-1 md:mb-2"><a data-filter="rac"
-                            class="filter-link hover:opacity-50  no-underline font-ltmuseumreg">RAC</a></li>
-                    <li class="text-gray-500"><a data-filter="closing-night"
-                            class="filter-link hover:opacity-50  no-underline font-ltmuseumreg">CLOSING NIGHT</a></li>
-                </ul>
+                <h2 class="text-2xl md:text-4xl font-bold mb-4 md:mb-6 font-ltmuseumbold text-white">Flashback to last year's thrills!</h2>
+                <div class="flex flex-wrap justify-center items-center align-middle gap-4">
+                    <div class=""><a data-filter="all"
+                            class="filter-link no-underline font-ltmuseumbold text-[#d61525]">ALL</a></div>
+                    <div class=""><a data-filter="voc"
+                            class="filter-link no-underline font-ltmuseumbold text-[#d61525]">VOC</a></div>
+                    <div class=""><a data-filter="rac"
+                            class="filter-link no-underline font-ltmuseumbold text-[#d61525]">RAC</a></div>
+                    <div class=""><a data-filter="closing-night"
+                            class="filter-link no-underline font-ltmuseumbold text-[#d61525]">CLOSING NIGHT</a></div>
+                </div>
             </div>
 
             <!-- Gallery Section -->
@@ -258,54 +307,54 @@
                 <!-- MAC Section -->
                 <div class="filter-item grid grid-cols-2 sm:grid-cols-3 gap-2 md:gap-4" data-category="voc">
                     <img src="images/VOC/1.jpg"
-                        class="w-full h-48 object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer hover:opacity-50"
+                        class="w-full h-48 object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer"
                         onclick="openPopup(this.src)">
                     <img src="images/VOC/2.jpg"
-                        class="w-full h-48 object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer hover:opacity-50"
+                        class="w-full h-48 object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer"
                         onclick="openPopup(this.src)">
                     <img src="images/VOC/3.jpg"
-                        class="w-full h-48 object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer hover:opacity-50"
+                        class="w-full h-48 object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer"
                         onclick="openPopup(this.src)">
                     <img src="images/VOC/4.jpg"
-                        class="w-full h-48 object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer hover:opacity-50"
+                        class="w-full h-48 object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer"
                         onclick="openPopup(this.src)">
                 </div>
 
                 <!-- RAC Section -->
                 <div class="filter-item grid grid-cols-2 sm:grid-cols-3 gap-2 md:gap-4" data-category="rac">
                     <img src="images/RAC/1.jpg"
-                        class="w-full h-48 object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer hover:opacity-50"
+                        class="w-full h-48 object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer"
                         onclick="openPopup(this.src)">
                     <img src="images/RAC/2.jpg"
-                        class="w-full h-48 object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer hover:opacity-50"
+                        class="w-full h-48 object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer"
                         onclick="openPopup(this.src)">
                     <img src="images/RAC/3.jpg"
-                        class="w-full h-48 object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer hover:opacity-50"
+                        class="w-full h-48 object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer"
                         onclick="openPopup(this.src)">
                     <img src="images/RAC/4.jpg"
-                        class="w-full h-48 object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer hover:opacity-50"
+                        class="w-full h-48 object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer"
                         onclick="openPopup(this.src)">
                     <img src="images/RAC/5.jpg"
-                        class="w-full h-48 object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer hover:opacity-50"
+                        class="w-full h-48 object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer"
                         onclick="openPopup(this.src)">
                     <img src="images/RAC/6.jpg"
-                        class="w-full h-48 object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer hover:opacity-50"
+                        class="w-full h-48 object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer"
                         onclick="openPopup(this.src)">
                 </div>
 
                 <!-- Closing Night Section -->
                 <div class="filter-item grid grid-cols-2 sm:grid-cols-3 gap-2 md:gap-4" data-category="closing-night">
                     <img src="images/CLOSING NIGHT/1.jpg"
-                        class="w-full h-48 object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer hover:opacity-50"
+                        class="w-full h-48 object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer"
                         onclick="openPopup(this.src)">
                     <img src="images/CLOSING NIGHT/2.jpg"
-                        class="w-full h-48 object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer hover:opacity-50"
+                        class="w-full h-48 object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer"
                         onclick="openPopup(this.src)">
                     <img src="images/CLOSING NIGHT/3.jpg"
-                        class="w-full h-48 object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer hover:opacity-50"
+                        class="w-full h-48 object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer"
                         onclick="openPopup(this.src)">
                     <img src="images/CLOSING NIGHT/4.jpg"
-                        class="w-full h-48 object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer hover:opacity-50"
+                        class="w-full h-48 object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer"
                         onclick="openPopup(this.src)">
                 </div>
             </div>
@@ -319,9 +368,10 @@
         </div>
 
         <div id="after" class="-mb-20 md:-mb-0 md:my-24" data-aos="fade-up">
-            <h2 class="font-brodyrawk md:text-3xl text-white text-center my-12 tracking-8">AFTER MOVIE</h2>
+            <h2 class="font-brodyrawk md:text-3xl text-white text-center my-12 tracking-8">AFTER MOVIE RADIOACTIVE 2023
+            </h2>
             <div class="w-full flex justify-center">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/noafJ76PHeM?si=5ho9Ad32GabxdrVT"
+                <iframe height="315" src="https://www.youtube.com/embed/noafJ76PHeM?si=5ho9Ad32GabxdrVT"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

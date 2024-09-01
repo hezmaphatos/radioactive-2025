@@ -2,7 +2,7 @@
 
 @section('container')
 
-<body class="antialiased bg-black min-h-screen">
+<body class="antialiased min-h-screen">
     <div class="font-ltmuseumbold text-3xl md:text-4xl text-white flex justify-center text-center pt-20 mb-6">Confirmation
         Page
     </div>

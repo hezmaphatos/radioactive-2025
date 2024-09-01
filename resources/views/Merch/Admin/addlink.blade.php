@@ -19,7 +19,7 @@
             <button class="button-submit text-white bg-black w-full text-sm px-5 py-1 text-center">Back to Edit
                 Page</button>
         </a>
-        <form action="/merch/admin/link/{{ $merch->id }}/storelink" class="pb-24 w-full" enctype="multipart/form-data"
+        <form action="/merch/admin/{{ $merch->id }}/storelink" class="pb-24 w-full" enctype="multipart/form-data"
             method="post">
             <div class="flex justify-center align-middle form-container">
                 <div class="flex flex-col w-[400px] max-w-[95vw]">

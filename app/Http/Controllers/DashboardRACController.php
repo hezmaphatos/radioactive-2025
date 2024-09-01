@@ -28,8 +28,6 @@ class DashboardRACController extends Controller
                       ->orWhere('tim1_nimop', 'like', '%' . $search . '%')
                       ->orWhere('tim1_contact_wa', 'like', '%' . $search . '%')
                       ->orWhere('tim1_contact_line', 'like', '%' . $search . '%')
-                      ->orWhere('tim1_nama', 'like', '%' . $search . '%')
-                      ->orWhere('tim1_email', 'like', '%' . $search . '%')
                       ->orWhere('tim2_penyiar1', 'like', '%' . $search . '%')
                       ->orWhere('tim2_penyiar2', 'like', '%' . $search . '%')
                       ->orWhere('tim2_operator', 'like', '%' . $search . '%')
@@ -39,8 +37,6 @@ class DashboardRACController extends Controller
                       ->orWhere('tim2_nimop', 'like', '%' . $search . '%')
                       ->orWhere('tim2_contact_wa', 'like', '%' . $search . '%')
                       ->orWhere('tim2_contact_line', 'like', '%' . $search . '%')
-                      ->orWhere('tim2_nama', 'like', '%' . $search . '%')
-                      ->orWhere('tim2_email', 'like', '%' . $search . '%')
                       ->orWhere('tim3_penyiar1', 'like', '%' . $search . '%')
                       ->orWhere('tim3_penyiar2', 'like', '%' . $search . '%')
                       ->orWhere('tim3_operator', 'like', '%' . $search . '%')
@@ -49,9 +45,7 @@ class DashboardRACController extends Controller
                       ->orWhere('tim3_nims2', 'like', '%' . $search . '%')
                       ->orWhere('tim3_nimop', 'like', '%' . $search . '%')
                       ->orWhere('tim3_contact_wa', 'like', '%' . $search . '%')
-                      ->orWhere('tim3_contact_line', 'like', '%' . $search . '%')
-                      ->orWhere('tim3_nama', 'like', '%' . $search . '%')
-                      ->orWhere('tim3_email', 'like', '%' . $search . '%');
+                      ->orWhere('tim3_contact_line', 'like', '%' . $search . '%');
             });
         }
 

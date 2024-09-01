@@ -34,8 +34,8 @@
         <div class="absolute inset-0 bg-black opacity-50"></div>
     </div>
     <div class="absolute flex left-0 bottom-5 opacity-100">
-        <button class="bg-black border border-white text-white px-4 py-2 hover:bg-white transition duration-300 hover:text-black"><a href="https://drive.google.com/file/d/14iJn1t1djJVTXIiuQWvgExBh6DQ_IQbu/view" class="text-white no-underline hover:text-black" target="_blank">Handbook</a></button>
-        <button class="bg-black border border-white text-white px-4 py-2 hover:bg-white transition duration-300 hover:text-black"><a href="https://forms.gle/XTN1WX2vDHp6veNn7" class="text-white no-underline hover:text-black" target="_blank">Pendaftaran</a></button>
+        <a href="https://drive.google.com/file/d/14iJn1t1djJVTXIiuQWvgExBh6DQ_IQbu/view" class="bg-black border border-white text-white px-4 py-2 hover:bg-white transition duration-300 hover:text-black no-underline" target="_blank">Handbook</a>
+        <a href="https://forms.gle/XTN1WX2vDHp6veNn7" class="bg-black border border-white text-white px-4 py-2 hover:bg-white transition duration-300 hover:text-black no-underline" target="_blank">Pendaftaran</a>
     </div>
     <div class="absolute bottom-10 right-5 md:right-10 z-10">
         <span class="text-[#d61525] text-5xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-10xl font-bold" data-aos="fade-up" data-aos-delay="100">MAC</span>
@@ -53,12 +53,12 @@
             <div id="checkpoint" class="border-2 border-white m-s:translate-x-[19em] rounded-2xl p-6 mb-4 mt-4">
                 <div>
                     <h2 class="mb-2 text-[#D61525]">2 - 9 September 2024 : <text class="text-white">Pendaftaran</text></h2>
-                    <p class="text-[10px] text-gray-300 m-s:text-[16px]">
+                    {{-- <p class="text-[10px] text-gray-300 m-s:text-[16px]">
                         Pendaftaran dapat melalui form atau mengunjungi langsung dibooth
-                    </p>
+                    </p> --}}
                 </div>
             </div>
-            <div id="checkpoint" class="border-2 border-white m-s:-translate-x-[19em] rounded-2xl p-6 mb-4 mt-4">
+            {{-- <div id="checkpoint" class="border-2 border-white m-s:-translate-x-[19em] rounded-2xl p-6 mb-4 mt-4">
                 <div>
                     <h2 class="mb-2">Date 2 : Seleksi</h2>
                     <p class="text-[10px] text-gray-300 m-s:text-[16px]">
@@ -73,7 +73,7 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam atque sit tenetur commodi vel illo amet natus, corporis, facilis magni voluptate quibusdam quis ducimus ipsum ullam itaque labore voluptatibus! Reprehenderit!
                     </p>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
 </section>

@@ -197,68 +197,82 @@
     </div>
 </section>
 
+<div class="py-16 px-4">
+    <div data-aos="zoom-in-right" data-aos-delay="400"
+        class="container mx-auto flex flex-col lg:flex-row items-center lg:justify-between">
+        <!-- Images -->
+        <div class="w-full lg:w-1/2">
+            <div class="grid grid-cols-3 gap-4">
+                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
+                    <img src="/images/LOGO MEDPAR/LOGO MUSTANG.png" alt="" class="w-full h-full object-contain">
+                </div>
+            </div>
+        </div>
+        <!-- Text -->
+        <div class="w-full lg:w-1/2 mt-12 lg:mt-0 lg:text-right text-center">
+            <h2 class="font-brodyrawk md:text-4xl my-12 tracking-8 text-red-600">EXCLUSIVE RADIO PARTNER</h2>
+        </div>
+</div>
 
-
-<div id="partners" class="-mb-20 md:-mb-0 md:my-24 mt-16" data-aos="fade-up">
+<div id="partners" class="-mb-20 md:-mb-0 md:my-24 mt-16 py-16 px-4" data-aos="fade-up">
     <div class="container mx-auto flex flex-col lg:flex-row items-center lg:justify-between">
         <!-- Text -->
         <div data-aos="zoom-in-right" data-aos-delay="400"
             class="w-full lg:w-1/2 mb-12 lg:mb-0 lg:text-left text-center">
-            <h2 class="font-brody md:text-5xl my-12 tracking-8 text-red-600">PARTNERS</h2>
+            <h2 class="font-brodyrawk md:text-5xl my-12 tracking-8 text-red-600">PARTNERS</h2>
         </div>
-        <!-- Images -->
         <div class="w-full lg:w-1/2">
-            <div class="grid grid-cols-4 gap-4">
-                <div class="h-40 w-40 md:mx-8 mb-2">
-                    <img data-aos="zoom-in-right" data-aos-delay="200" class="w-full h-full object-contain" src="/images/LOGO MEDPAR/LOGO BEM UMN PUTIH.png" alt="" />
+            <div class="grid grid-cols-3 gap-4">
+                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
+                    <img src="/images/LOGO MEDPAR/LOGO BEM UMN PUTIH.png" alt="" class="w-full h-full object-contain">
                 </div>
-                <div class="h-40 w-40 md:mx-8 mb-2">
-                    <img data-aos="zoom-in-right" data-aos-delay="400" class="w-full h-full object-contain" src="/images/LOGO MEDPAR/Logo Acara Kampus.png" alt="" />
+                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
+                    <img src="/images/LOGO MEDPAR/Logo Acara Kampus.png" alt="" class="w-full h-full object-contain">
                 </div>
-                <div class="h-40 w-40 md:mx-8 mb-2">
-                    <img data-aos="zoom-in-right" data-aos-delay="600" class="w-full h-full object-contain" src="/images/LOGO MEDPAR/LOGO BERITA LOMBA JPEG.jpeg" alt="" />
+                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
+                    <img src="/images/LOGO MEDPAR/LOGO BERITA LOMBA JPEG.jpeg" alt="" class="w-full h-full object-contain">
+                </div>              
+                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
+                    <img class="w-full h-full object-contain" src="/images/LOGO MEDPAR/Logo Eventnya Mahasiswa.png" alt="" />
                 </div>
-                <div class="h-40 w-40 md:mx-8 mb-2">
-                    <img data-aos="zoom-in-right" data-aos-delay="800" class="w-full h-full object-contain" src="/images/LOGO MEDPAR/Logo Eventnya Mahasiswa.png" alt="" />
+                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
+                    <img class="w-full h-full object-contain" src="/images/LOGO MEDPAR/fourtyfiveradio.webp" alt="" />
                 </div>
-                <div class="h-40 w-40 md:mx-8 mb-2">
-                    <img data-aos="zoom-in-right" data-aos-delay="1000" class="w-full h-full object-contain" src="/images/LOGO MEDPAR/fourtyfiveradio.webp" alt="" />
+                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
+                    <img class="w-full h-full object-contain" src="/images/LOGO MEDPAR/LOGO HMFILM.PNG" alt="" />
                 </div>
-                <div class="h-40 w-40 md:mx-8 mb-2">
-                    <img data-aos="zoom-in-right" data-aos-delay="1200" class="w-full h-full object-contain" src="/images/LOGO MEDPAR/LOGO HMFILM.PNG" alt="" />
+                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
+                    <img class="w-full h-full object-contain" src="/images/LOGO MEDPAR/logo imkom.png" alt="" />
                 </div>
-                <div class="h-40 w-40 md:mx-8 mb-2">
-                    <img data-aos="zoom-in-right" data-aos-delay="1400" class="w-full h-full object-contain" src="/images/LOGO MEDPAR/logo imkom.png" alt="" />
+                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
+                    <img class="w-full h-full object-contain" src="/images/LOGO MEDPAR/Logo Kacamata Lomba.png" alt="" />
                 </div>
-                <div class="h-40 w-40 md:mx-8 mb-2">
-                    <img data-aos="zoom-in-right" data-aos-delay="1600" class="w-full h-full object-contain" src="/images/LOGO MEDPAR/Logo Kacamata Lomba.png" alt="" />
+                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
+                    <img class="w-full h-full object-contain" src="/images/LOGO MEDPAR/Logo lspr radio .jpg" alt="" />
                 </div>
-                <div class="h-40 w-40 md:mx-8 mb-2">
-                    <img data-aos="zoom-in-right" data-aos-delay="1800" class="w-full h-full object-contain" src="/images/LOGO MEDPAR/Logo lspr radio .jpg" alt="" />
+                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
+                    <img class="w-full h-full object-contain" src="/images/LOGO MEDPAR/logo milenials radio.png" alt="" />
                 </div>
-                <div class="h-40 w-40 md:mx-8 mb-2">
-                    <img data-aos="zoom-in-right" data-aos-delay="2000" class="w-full h-full object-contain" src="/images/LOGO MEDPAR/logo milenials radio.png" alt="" />
+                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
+                    <img class="w-full h-full object-contain" src="/images/LOGO MEDPAR/LOGO MOESTOPO.jpg" alt="" />
                 </div>
-                <div class="h-40 w-40 md:mx-8 mb-2">
-                    <img data-aos="zoom-in-right" data-aos-delay="2200" class="w-full h-full object-contain" src="/images/LOGO MEDPAR/LOGO MOESTOPO.jpg" alt="" />
+                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
+                    <img class="w-full h-full object-contain" src="/images/LOGO MEDPAR/Logo Mradio .PNG" alt="" />
                 </div>
-                <div class="h-40 w-40 md:mx-8 mb-2">
-                    <img data-aos="zoom-in-right" data-aos-delay="2400" class="w-full h-full object-contain" src="/images/LOGO MEDPAR/Logo Mradio .PNG" alt="" />
+                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
+                    <img class="w-full h-full object-contain" src="/images/LOGO MEDPAR/LOGO ORI.png" alt="" />
                 </div>
-                <div class="h-40 w-40 md:mx-8 mb-2">
-                    <img data-aos="zoom-in-right" data-aos-delay="2600" class="w-full h-full object-contain" src="/images/LOGO MEDPAR/LOGO ORI.png" alt="" />
+                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
+                    <img class="w-full h-full object-contain" src="/images/LOGO MEDPAR/Logo Radio Untar.PNG" alt="" />
                 </div>
-                <div class="h-40 w-40 md:mx-8 mb-2">
-                    <img data-aos="zoom-in-right" data-aos-delay="2800" class="w-full h-full object-contain" src="/images/LOGO MEDPAR/Logo Radio Untar.PNG" alt="" />
+                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
+                    <img class="w-full h-full object-contain" src="/images/LOGO MEDPAR/Logo SMI Putih.png" alt="" />
                 </div>
-                <div class="h-40 w-40 md:mx-8 mb-2">
-                    <img data-aos="zoom-in-right" data-aos-delay="3000" class="w-full h-full object-contain" src="/images/LOGO MEDPAR/Logo SMI Putih.png" alt="" />
+                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
+                    <img class="w-full h-full object-contain" src="/images/LOGO MEDPAR/Point Kampus.png" alt="" />
                 </div>
-                <div class="h-40 w-40 md:mx-8 mb-2">
-                    <img data-aos="zoom-in-right" data-aos-delay="3200" class="w-full h-full object-contain" src="/images/LOGO MEDPAR/Point Kampus.png" alt="" />
-                </div>
-                <div class="h-40 w-40 md:mx-8 mb-2">
-                    <img data-aos="zoom-in-right" data-aos-delay="3400" class="w-full h-full object-contain" src="/images/LOGO MEDPAR/unpar.jpg" alt="" />
+                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
+                    <img class="w-full h-full object-contain" src="/images/LOGO MEDPAR/unpar.jpg" alt="" />
                 </div>
             </div>         
         </div>
@@ -266,38 +280,39 @@
 </div>
 
 <!-- Sponsors Section -->
-<div id="sponsors" class="py-16">
+<div id="sponsors" class="py-16 px-4">
     <div data-aos="zoom-in-right" data-aos-delay="400"
         class="container mx-auto flex flex-col lg:flex-row items-center lg:justify-between">
         <!-- Images -->
         <div class="w-full lg:w-1/2">
             <div class="grid grid-cols-3 gap-4">
-                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
+                <div class="bg-black border border-white">
                     <img src="/images/LOGO SPONSOR/ALLOBANK (2) XS.png" alt="" class="w-full h-full object-contain">
                 </div>
-                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
+                <div class="bg-black border border-white">
                     <img src="/images/LOGO SPONSOR/AMATERASUN XS.png" alt="" class="w-full h-full object-contain">
                 </div>
-                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
+                <div class="bg-black border border-white">
                     <img src="/images/LOGO SPONSOR/detik event (ticketing partner).png" alt="" class="w-full h-full object-contain">
                 </div>
-                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
+                <div class="bg-black border border-white">
                     <img src="/images/LOGO SPONSOR/ITOEN WHITE XS.png" alt="" class="w-full h-full object-contain">
                 </div>
-                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
+                <div class="bg-black border border-white">
                     <img src="/images/LOGO SPONSOR/LOGO CAP PANDA.PNG" alt="" class="w-full h-full object-contain">
                 </div>
-                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
+                <div class="bg-black border border-white">
                     <img src="/images/LOGO SPONSOR/PUYO XS.png" alt="" class="w-full h-full object-contain">
                 </div>
-                <div class="bg-black border border-white aspect-w-1 aspect-h-1">
+                <div class="bg-black border border-white">
                     <img src="/images/LOGO SPONSOR/SARI ROTI XS.png" alt="" class="w-full h-full object-contain">
                 </div>
             </div>
-                    </div>
+        </div>
+        
         <!-- Text -->
         <div class="w-full lg:w-1/2 mt-12 lg:mt-0 lg:text-right text-center">
-            <h2 class="font-brody md:text-5xl my-12 tracking-8 text-red-600">SPONSORS</h2>
+            <h2 class="font-brodyrawk md:text-5xl my-12 tracking-8 text-red-600">SPONSORS</h2>
         </div>
     </div>
 </div>

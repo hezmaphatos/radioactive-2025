@@ -64,10 +64,10 @@
                           </td>
                           <td class="border-b border-[#eee] px-4 py-5">
                             @if($rac->tim1_institusi)
-                              <p class="text-black">{{ $rac->tim1_institusi }}</p>
+                              <p class="text-black bg-teal-100">{{ $rac->tim1_institusi }}</p>
                             @endif
                             @if($rac->tim2_institusi)
-                              <p class="text-black">{{ $rac->tim2_institusi }}</p>
+                              <p class="text-black bg-fuchsia-200">{{ $rac->tim2_institusi }}</p>
                             @endif
                             @if($rac->tim3_institusi)
                               <p class="text-black">{{ $rac->tim3_institusi }}</p>
@@ -75,10 +75,10 @@
                           </td>
                           <td class="border-b border-[#eee] px-4 py-5">
                             @if($rac->tim1_nama)
-                              <p class="text-black">{{ $rac->tim1_nama }}</p>
+                              <p class="text-black bg-teal-100">{{ $rac->tim1_nama }}</p>
                             @endif
                             @if($rac->tim2_nama)
-                              <p class="text-black">{{ $rac->tim2_nama }}</p>
+                              <p class="text-black bg-fuchsia-200">{{ $rac->tim2_nama }}</p>
                             @endif
                             @if($rac->tim3_nama)
                               <p class="text-black">{{ $rac->tim3_nama }}</p>
@@ -86,10 +86,10 @@
                           </td>
                           <td class="border-b border-[#eee] px-4 py-5">
                             @if($rac->tim1_email)
-                              <p class="text-black">{{ $rac->tim1_email }}</p>
+                              <p class="text-black bg-teal-100">{{ $rac->tim1_email }}</p>
                             @endif
                             @if($rac->tim2_email)
-                                <p class="text-black">{{ $rac->tim2_email }}</p>
+                                <p class="text-black bg-fuchsia-200">{{ $rac->tim2_email }}</p>
                             @endif
                             @if($rac->tim3_email)
                                 <p class="text-black">{{ $rac->tim3_email }}</p>
@@ -97,10 +97,10 @@
                           </td>
                           <td class="border-b border-[#eee] px-4 py-5">
                             @if($rac->tim1_penyiar1)
-                              <p class="text-black">{{ $rac->tim1_penyiar1 }}</p>
+                              <p class="text-black bg-teal-100">{{ $rac->tim1_penyiar1 }}</p>
                             @endif
                             @if($rac->tim2_penyiar1)
-                                <p class="text-black">{{ $rac->tim2_penyiar1 }}</p>
+                                <p class="text-black bg-fuchsia-200">{{ $rac->tim2_penyiar1 }}</p>
                             @endif
                             @if($rac->tim3_penyiar1)
                                 <p class="text-black">{{ $rac->tim3_penyiar1 }}</p>
@@ -108,10 +108,10 @@
                           </td>
                           <td class="border-b border-[#eee] px-4 py-5">
                             @if($rac->tim1_penyiar2)
-                              <p class="text-black">{{ $rac->tim1_penyiar2 }}</p>
+                              <p class="text-black bg-teal-100">{{ $rac->tim1_penyiar2 }}</p>
                             @endif
                             @if($rac->tim2_penyiar2)
-                                <p class="text-black">{{ $rac->tim2_penyiar2 }}</p>
+                                <p class="text-black bg-fuchsia-200">{{ $rac->tim2_penyiar2 }}</p>
                             @endif
                             @if($rac->tim3_penyiar2)
                                 <p class="text-black">{{ $rac->tim3_penyiar2 }}</p>
@@ -119,10 +119,10 @@
                           </td>
                           <td class="border-b border-[#eee] px-4 py-5">
                             @if($rac->tim1_operator)
-                              <p class="text-black">{{ $rac->tim1_operator }}</p>
+                              <p class="text-black bg-teal-100">{{ $rac->tim1_operator }}</p>
                             @endif
                             @if($rac->tim2_operator)
-                                <p class="text-black">{{ $rac->tim2_operator }}</p>
+                                <p class="text-black bg-fuchsia-200">{{ $rac->tim2_operator }}</p>
                             @endif
                             @if($rac->tim3_operator)
                                 <p class="text-black">{{ $rac->tim3_operator }}</p>
@@ -130,10 +130,10 @@
                           </td>
                           <td class="border-b border-[#eee] px-4 py-5">
                             @if($rac->tim1_nims1)
-                              <p class="text-black">{{ $rac->tim1_nims1 }}</p>
+                              <p class="text-black bg-teal-100">{{ $rac->tim1_nims1 }}</p>
                             @endif
                             @if($rac->tim2_nims1)
-                                <p class="text-black">{{ $rac->tim2_nims1 }}</p>
+                                <p class="text-black bg-fuchsia-200">{{ $rac->tim2_nims1 }}</p>
                             @endif
                             @if($rac->tim3_nims1)
                                 <p class="text-black">{{ $rac->tim3_nims1 }}</p>
@@ -141,10 +141,10 @@
                           </td>
                           <td class="border-b border-[#eee] px-4 py-5">
                             @if($rac->tim1_nims2)
-                              <p class="text-black">{{ $rac->tim1_nims2 }}</p>
+                              <p class="text-black bg-teal-100">{{ $rac->tim1_nims2 }}</p>
                             @endif
                             @if($rac->tim2_nims2)
-                              <p class="text-black">{{ $rac->tim2_nims2 }}</p>
+                              <p class="text-black bg-fuchsia-200">{{ $rac->tim2_nims2 }}</p>
                             @endif
                             @if($rac->tim3_nims2)
                               <p class="text-black">{{ $rac->tim3_nims2 }}</p>
@@ -152,10 +152,10 @@
                           </td>
                           <td class="border-b border-[#eee] px-4 py-5">
                             @if($rac->tim1_nimop)
-                                <p class="text-black">{{ $rac->tim1_nimop }}</p>
+                                <p class="text-black bg-teal-100">{{ $rac->tim1_nimop }}</p>
                             @endif
                             @if($rac->tim2_nimop)
-                                <p class="text-black">{{ $rac->tim2_nimop }}</p>
+                                <p class="text-black bg-fuchsia-200">{{ $rac->tim2_nimop }}</p>
                             @endif
                             @if($rac->tim3_nimop)
                                 <p class="text-black">{{ $rac->tim3_nimop }}</p>
@@ -163,10 +163,10 @@
                           </td>
                           <td class="border-b border-[#eee] px-4 py-5">
                             @if($rac->tim1_contact_wa)
-                                <p class="text-black">{{ $rac->tim1_contact_wa }}</p>
+                                <p class="text-black bg-teal-100">{{ $rac->tim1_contact_wa }}</p>
                             @endif
                             @if($rac->tim2_contact_wa)
-                                <p class="text-black">{{ $rac->tim2_contact_wa }}</p>
+                                <p class="text-black bg-fuchsia-200">{{ $rac->tim2_contact_wa }}</p>
                             @endif    
                             @if($rac->tim3_contact_wa)
                                 <p class="text-black">{{ $rac->tim3_contact_wa }}</p>
@@ -174,10 +174,10 @@
                           </td>
                           <td class="border-b border-[#eee] px-4 py-5">
                             @if($rac->tim1_contact_line)
-                                <p class="text-black">{{ $rac->tim1_contact_line }}</p>
+                                <p class="text-black bg-teal-100">{{ $rac->tim1_contact_line }}</p>
                             @endif
                             @if($rac->tim2_contact_line)
-                                <p class="text-black">{{ $rac->tim2_contact_line }}</p>
+                                <p class="text-black bg-fuchsia-200">{{ $rac->tim2_contact_line }}</p>
                             @endif   
                             @if($rac->tim3_contact_line)
                                 <p class="text-black">{{ $rac->tim3_contact_line }}</p>

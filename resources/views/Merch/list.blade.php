@@ -9,50 +9,98 @@
         <div
             class="z-30 absolute w-full flex md:h-[500px] bg-black opacity-[.5] lg:h-[900px] h-[300px] justify-center items-center">
         </div>
+        
         <div class="z-30 absolute w-full flex md:h-[430px] lg:h-[800px] h-[325px] justify-center items-center">
-            <img src="/images/CAROUSEL/NEO.webp" class="md:w-1/3 lg:w-1/3 w-1/2  sm:w-1/3">
+            
         </div>
         <div id="indicators-carousel" class="relative w-full" data-carousel="slide">
-a
-            <div class="relative  overflow-hidden z-0 md:h-96 lg:h-[800px] h-[275px] rounded-lg object-top">
-                <div class="hidden duration-300 ease-in-out" data-carousel-item="active">
-                    <div class="absolute flex w-screen md:h-96 lg:h-[800px] h-[275px]">
-                        <img src="/images/CAROUSEL/4.webp" class="block w-1/4 lg:h-full md:h-full h-[100vw] object-cover lg:object-center">
-                        <img src="/images/CAROUSEL/3.webp" class="block w-1/2 lg:h-full md:h-full h-[100vw] object-cover lg:object-center">
-                        <img src="/images/CAROUSEL/6.webp" class="block w-1/4 lg:h-full md:h-full h-[100vw] object-cover lg:object-center">
-                    </div>
-                </div>
-
-                <div class="hidden duration-300 ease-in-out" data-carousel-item>
-                    <img src="/images/CAROUSEL/2.webp"
-                        class="absolute block w-full lg:h-[110vw] md:h-[150vw] h-[150vw] object-cover lg:object-center">
-                </div>
-
-                <div class="hidden duration-300 ease-in-out" data-carousel-item>
-                    <img src="/images/CAROUSEL/1.webp"
-                        class="absolute block w-full lg:h-[110vw] md:h-[120vw] h-[155vw] object-cover lg:object-center">
-                </div>
-
-                <div class="hidden duration-300 ease-in-out" data-carousel-item>
-                    <img src="/images/CAROUSEL/6.webp" class="absolute block w-full h-full object-cover">
-                </div>
-
-                <div class="hidden duration-300 ease-in-out" data-carousel-item>
-                    <img src="/images/CAROUSEL/5.webp" class="absolute block w-full lg:h-[70vw] md:h-[75vw] sm:h-[70vw] h-[90vw] object-cover">
-                </div>
+        <div class="relative overflow-hidden z-0 md:h-96 lg:h-[800px] h-[275px] rounded-lg object-top">
+    <!-- Logo positioned at the top-left corner with increased size -->
+    <img src="/images/LOGO RA.png" alt="Logo RA" class="absolute top-4 left-4 w-24 h-24 object-contain z-10">
+        <div class="relative overflow-hidden z-0 md:h-96 lg:h-[800px] h-[275px] rounded-lg object-top">
+    <!-- Carousel Item -->
+    <div class="hidden duration-300 ease-in-out" data-carousel-item="active">
+        <div class="flex w-full md:h-96 lg:h-[800px] h-[275px]">
+            
+            <!-- Text content on the left -->
+            <div class="flex flex-col justify-center items-start pl-10 w-1/4 space-y-2">
+                <h1 class="text-white text-4xl font-bold font-brody rawk">NAMA BAJU</h1>
+                <div class="flex space-x-2"> <!-- Added flex container for horizontal alignment -->
+        <h3 class="text-white text-xl font-bold font-brody rawk">Size</h3>
+        <h3 class="text-white text-xl font-bold font-brody rawk">XS S M L XL XXL</h3>
+    </div>
+</div>
+            <!-- Image to the right -->
+            <img src="/images/CAROUSEL/4.webp" class="block w-1/2 h-auto object-contain"> <!-- Smaller centered image -->
+            <img src="/images/CAROUSEL/3.webp" class="block h-1/2 w-auto object-contain">
             </div>
-            <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-                <button type="button" class="w-3 h-3 rounded-full bg-transparent border-[1px] border-white"
-                    aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-                <button type="button" class="w-3 h-3 rounded-full bg-transparent border-[1px] border-white"
-                    aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-                <button type="button" class="w-3 h-3 rounded-full bg-transparent border-[1px] border-white"
-                    aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-                <button type="button" class="w-3 h-3 rounded-full bg-transparent border-[1px] border-white"
-                    aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-                <button type="button" class="w-3 h-3 rounded-full bg-transparent border-[1px] border-white"
-                    aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
-            </div>
+        </div>
+            
+    </div>
+
+    <!-- Other carousel items follow similar structure -->
+    <div class="hidden duration-300 ease-in-out" data-carousel-item>
+        <div class="flex w-full md:h-96 lg:h-[800px] h-[275px]">
+        <div class="flex flex-col justify-center items-start pl-10 w-1/4 space-y-2">
+                <h1 class="text-white text-4xl font-bold font-brody rawk">NAMA BAJU</h1>
+                <div class="flex space-x-2"> <!-- Added flex container for horizontal alignment -->
+        <h3 class="text-white text-xl font-bold font-brody rawk">Size</h3>
+        <h3 class="text-white text-xl font-bold font-brody rawk">XS S M L XL XXL</h3>
+    </div>
+</div>
+<img src="/images/CAROUSEL/3.webp" class="block w-1/2 h-auto object-contain"> <!-- Smaller centered image -->
+</div>
+    </div>
+
+    <!-- Repeat for other carousel items -->
+    <div class="hidden duration-300 ease-in-out" data-carousel-item>
+        <div class="flex w-full md:h-96 lg:h-[800px] h-[275px]">
+        <div class="flex flex-col justify-center items-start pl-10 w-1/4 space-y-2">
+                <h1 class="text-white text-4xl font-bold font-brody rawk">NAMA BAJU</h1>
+                <div class="flex space-x-2"> <!-- Added flex container for horizontal alignment -->
+        <h3 class="text-white text-xl font-bold font-brody rawk">Size</h3>
+        <h3 class="text-white text-xl font-bold font-brody rawk">XS S M L XL XXL</h3>
+    </div>
+</div>
+<img src="/images/CAROUSEL/5.webp" class="block w-1/2 h-auto object-contain"> <!-- Smaller centered image -->
+</div>
+    </div>
+
+    <div class="hidden duration-300 ease-in-out" data-carousel-item>
+        <div class="flex w-full md:h-96 lg:h-[800px] h-[275px]">
+        <div class="flex flex-col justify-center items-start pl-10 w-1/4 space-y-2">
+                <h1 class="text-white text-4xl font-bold font-brody rawk">NAMA BAJU</h1>
+                <div class="flex space-x-2"> <!-- Added flex container for horizontal alignment -->
+        <h3 class="text-white text-xl font-bold font-brody rawk">Size</h3>
+        <h3 class="text-white text-xl font-bold font-brody rawk">XS S M L XL XXL</h3>
+    </div>
+</div>
+<img src="/images/CAROUSEL/6.webp" class="block w-1/2 h-auto object-contain"> <!-- Smaller centered image -->
+</div>
+    </div>
+
+    <div class="hidden duration-300 ease-in-out" data-carousel-item>
+        <div class="flex w-full md:h-96 lg:h-[800px] h-[275px]">
+        <div class="flex flex-col justify-center items-start pl-10 w-1/4 space-y-2">
+                <h1 class="text-white text-4xl font-bold font-brody rawk">NAMA BAJU</h1>
+                <div class="flex space-x-2"> <!-- Added flex container for horizontal alignment -->
+        <h3 class="text-white text-xl font-bold font-brody rawk">Size</h3>
+        <h3 class="text-white text-xl font-bold font-brody rawk">XS S M L XL XXL</h3>
+    </div>
+</div>
+<img src="/images/CAROUSEL/2.webp" class="block w-1/2 h-auto object-contain"> <!-- Smaller centered image -->
+</div>
+    </div>
+</div>
+
+<div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+    <button type="button" class="w-3 h-3 rounded-full bg-transparent border-[1px] border-white" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+    <button type="button" class="w-3 h-3 rounded-full bg-transparent border-[1px] border-white" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+    <button type="button" class="w-3 h-3 rounded-full bg-transparent border-[1px] border-white" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+    <button type="button" class="w-3 h-3 rounded-full bg-transparent border-[1px] border-white" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+    <button type="button" class="w-3 h-3 rounded-full bg-transparent border-[1px] border-white" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+</div>
+
 
             <button type="button"
                 class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"

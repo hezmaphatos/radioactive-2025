@@ -52,7 +52,7 @@
         <div class="mx-auto max-w-[65%] m-s:max-w-[34.15em]">
             <div id="checkpoint" class="border-2 border-white m-s:translate-x-[19em] rounded-2xl p-6 mb-4 mt-4">
                 <div>
-                    <h2 class="mb-2 text-[#D61525]">2 - 9 September 2024 : <text class="text-white">Pendaftaran</text></h2>
+                    <h2 class="text-[#D61525]">2 - 9 September 2024 : <text class="text-white">Pendaftaran</text></h2>
                     {{-- <p class="text-[10px] text-gray-300 m-s:text-[16px]">
                         Pendaftaran dapat melalui form atau mengunjungi langsung dibooth
                     </p> --}}

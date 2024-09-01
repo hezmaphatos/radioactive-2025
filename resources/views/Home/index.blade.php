@@ -210,7 +210,7 @@
                                     src="/images/LOGO MEDPAR/Logo Kacamata Lomba.png" alt="" />
                             </div>
                             <div class="col-span-1">
-                                <img class="w-full object-contain md:h-24" src="/images/LOGO MEDPAR/LOGO_MOESTOPO.jpg"
+                                <img class="w-full object-contain md:h-24" src="/images/LOGO MEDPAR/LOGO_MOESTOPO.webp"
                                     alt="" />
                             </div>
                             <div class="col-span-1">
@@ -247,7 +247,7 @@
         </div>
 
         <!-- Sponsors Section -->
-        <div id="sponsors" class="md:py-16">
+        <div id="sponsors" class="md:py-16 px-4">
             <div data-aos="zoom-in-right" data-aos-delay="400"
                 class="container mx-auto flex justify-center flex-wrap-reverse lg:justify-around">
                 <!-- Images -->
@@ -290,7 +290,7 @@
             <div class="w-full md:w-1/4 p-4 md:p-6">
                 <h1 class="text-lg md:text-xl font-brodyrawk text-[#D61525] mb-2 md:mb-4">UMN RADIOACTIVE 2023</h1>
                 <h2 class="text-2xl md:text-4xl font-bold mb-4 md:mb-6 font-ltmuseumbold text-white">Flashback to last year's thrills!</h2>
-                <div class="flex flex-wrap justify-center items-center align-middle gap-4">
+                <div class="flex flex-wrap items-center align-middle gap-4">
                     <div class=""><a data-filter="all"
                             class="filter-link no-underline font-ltmuseumbold text-[#d61525] hover:cursor-pointer">ALL</a></div>
                     <div class=""><a data-filter="voc"

@@ -42,7 +42,7 @@ Route::get('/', function () {
 // });
 
 Route::get('/closing-night', function () {
-    return view('closing.index', [
+    return view('Closing.index', [
         "title" => "closing-night"
     ]);
 });

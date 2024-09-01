@@ -186,35 +186,71 @@
                         </div>
                     </div>
                     <div class="p-4">
-                        <form action="/merch/cart/add" enctype="multipart/form-data" method="POST" class="">
-                            @csrf
-                            <h1>Order Now</h1>
-                            <div class="flex flex-wrap gap-4">
-                                <div class="my-2 w-2/5">
-                                    <p>Size</p>
-                                    <select name="variation" id="variation_select" required
-                                        class="w-full bg-gray-900 border-2 border-[#d61525] text-white px-2 py-1 rounded">
-                                        <option disabled selected value> select variant</option>
-                                        @foreach ($merch->merchvariations as $merchvariation)
-                                            <option value="{{ $merchvariation->description }}" data-stock="{{ $merchvariation->stock }}">
-                                                {{ $merchvariation->description }} (Stock: {{ $merchvariation->stock }})
-                                            </option>
-                                        @endforeach
-                                    </select>
+                        @if ($merch->total_stock() > 0)
+                            <form action="/merch/cart/add" enctype="multipart/form-data" method="POST"
+                                class="">
+                                @csrf
+                                <h1>Order Now</h1>
+                                <div class="flex flex-wrap gap-4">
+                                    <div class="my-2 w-2/5">
+                                        <p>Size</p>
+                                        <select name="variation" id="variation_select" required
+                                            class="w-full bg-gray-900 border-2 border-[#d61525] text-white px-2 py-1 rounded">
+                                            <option disabled selected value> select variant</option>
+                                            @foreach ($merch->merchvariations as $merchvariation)
+                                                <option value="{{ $merchvariation->description }}"
+                                                    data-stock="{{ $merchvariation->stock }}">
+                                                    {{ $merchvariation->description }} (Stock:
+                                                    {{ $merchvariation->stock }})
+                                                </option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                    <div class="my-2 w-1/5">
+                                        <p>Quantity</p>
+                                        <input name="quantity" id="quantity_input" min="1" value="1"
+                                            type="number" required
+                                            class="w-full bg-gray-900 border-2 border-[#d61525] text-white px-2 py-1 rounded">
+                                    </div>
                                 </div>
-                                <div class="my-2 w-1/5">
-                                    <p>Quantity</p>
-                                    <input name="quantity" id="quantity_input" min="1" value="1"
-                                        type="number" required
-                                        class="w-full bg-gray-900 border-2 border-[#d61525] text-white px-2 py-1 rounded">
+                                <input hidden type="text" name="merch_id" value="{{ $merch->id }}">
+                                <button type="submit"
+                                    class="text-white border-2 bg-[#d61525] border-white rounded px-2 py-1 hover:bg-red-500 font-ltmuseum-bold my-1">
+                                    Add to Cart
+                                </button>
+                            </form>
+                        @else
+                            <form action="/merch/cart/addpreorder" enctype="multipart/form-data" method="POST"
+                                class="">
+                                @csrf
+                                <h1>Preorder</h1>
+                                <div class="flex flex-wrap gap-4">
+                                    <div class="my-2 w-2/5">
+                                        <p>Size</p>
+                                        <select name="variation" required
+                                            class="w-full bg-gray-900 border-2 border-[#d61525] text-white px-2 py-1 rounded">
+                                            <option disabled selected value> select variant</option>
+                                            @foreach ($merch->merchvariations as $merchvariation)
+                                                <option value="{{ $merchvariation->description }}">
+                                                    {{ $merchvariation->description }}
+                                                </option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                    <div class="my-2 w-1/5">
+                                        <p>Quantity</p>
+                                        <input name="quantity"min="1" value="1"
+                                            type="number" required
+                                            class="w-full bg-gray-900 border-2 border-[#d61525] text-white px-2 py-1 rounded">
+                                    </div>
                                 </div>
-                            </div>
-                            <input hidden type="text" name="merch_id" value="{{ $merch->id }}">
-                            <button type="submit"
-                                class="text-white border-2 bg-[#d61525] border-white rounded px-2 py-1 hover:bg-red-500 font-ltmuseum-bold my-1">
-                                Add to Cart
-                            </button>
-                        </form>
+                                <input hidden type="text" name="merch_id" value="{{ $merch->id }}">
+                                <button type="submit"
+                                    class="text-white border-2 bg-[#d61525] border-white rounded px-2 py-1 hover:bg-red-500 font-ltmuseum-bold my-1">
+                                    Add to Preorder Cart
+                                </button>
+                            </form>
+                        @endif
 
                         <script>
                             document.getElementById('variation_select').addEventListener('change', function() {

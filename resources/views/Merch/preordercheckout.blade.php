@@ -16,7 +16,7 @@
 </head>
 
 <body class="bg-white min-h-screen text-black">
-    <h1>Order Merch</h1>
+    <h1>Preorder Merch</h1>
     @if ($errors->has('error'))
         <div class="alert alert-danger">
             {{ $errors->first('error') }}
@@ -36,11 +36,11 @@
         $cumulative_price = 0;
         ?>
         @foreach ($carts as $cart)
-            <tr class="@if ($cart->variation()->stock < $cart->quantity) bg-red-300 @endif">
+            <tr class="">
                 <td>{{ $no++ }}</td>
                 <td>{{ $cart->merch->name }}</td>
                 <td>
-                    <form action="/cart/{{ $cart->id }}/updateqty" enctype="multipart/form-data" method="POST">
+                    <form action="/cart/{{ $cart->id }}/updatepreorderqty" enctype="multipart/form-data" method="POST">
                         @csrf
                         @method('put')
                         <input type="number" name="quantity" min="0" value="{{ $cart->quantity }}"
@@ -50,11 +50,6 @@
                 </td>
                 <td>{{ $cart->variation }}</td>
                 <td>{{ $cart->total_price }}</td>
-                @if ($cart->variation()->stock < $cart->quantity)
-                    <td>
-                        Stock tidak cukup. Stock tersisa {{ $cart->variation()->stock }}
-                    </td>
-                @endif
             </tr>
             @php
                 $cumulative_price += $cart->total_price;
@@ -64,7 +59,7 @@
 
     <br />
 
-    <form action="/merch/checkout" method="POST" enctype="multipart/form-data" class="w-[500px] max-w-screen">
+    <form action="/merch/preordercheckout" method="POST" enctype="multipart/form-data" class="w-[500px] max-w-screen">
         @csrf
         <div class="mb-3 flex flex-col">
             <label for="name" class="">Nama</label>
@@ -99,12 +94,7 @@
                 onchange="previewImage()">
             <img src="" alt="" class="hidden img-preview h-80 ">
         </div>
-
-        @if ($flag)
-            <p>Kurangi jumlah atau hapus item untuk melanjutkan checkout</p>
-        @else
-            <button type="submit" class="text-red-800">GAS!</button>
-        @endif
+<button type="submit" class="text-red-800">GAS!</button>
     </form>
 </body>
 

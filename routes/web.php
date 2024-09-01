@@ -94,11 +94,11 @@ Route::controller(TicketController::class)->group(function (){
     Route::get('/show-qr/{ticket_code}', 'show_qr');
 });
 
-Route::get('/merch', [MerchController::class, 'index']);
-Route::get('/cart', [MerchController::class, 'cart']);
-Route::get('/{id}/cart', [MerchController::class, 'addToCart']);
-Route::get('/cart/{id}', [MerchController::class, 'removeFromCart']);
-Route::get('/merch-checkout', [MerchController::class, 'checkout']);
+// Route::get('/merch', [MerchController::class, 'index']);
+// Route::get('/cart', [MerchController::class, 'cart']);
+// Route::get('/{id}/cart', [MerchController::class, 'addToCart']);
+// Route::get('/cart/{id}', [MerchController::class, 'removeFromCart']);
+// Route::get('/merch-checkout', [MerchController::class, 'checkout']);
 
 Route::get('/send', [MailController::class, 'index']);
 

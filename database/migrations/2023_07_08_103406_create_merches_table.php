@@ -17,8 +17,7 @@ return new class extends Migration
             $table->text('description');
             $table->string('image');
             $table->bigInteger('price');
-            $table->integer('qty')->default(0);
-            $table->string('size')->default('');
+            $table->integer('stock');
             $table->timestamps();
         });
     }

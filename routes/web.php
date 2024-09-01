@@ -30,94 +30,94 @@ use App\Models\User;
 |
 */
 
-// Route::get('/', function () {
-//     return view('Home.index', [
-//         "title" => "Home"
-//     ]);
-// });
-
-Route::get('/', function(){
-    return view('Home.soon');
+Route::get('/', function () {
+    return view('Home.index', [
+        "title" => "Home"
+    ]);
 });
 
-// Route::get('/closing-night', function () {
-//     return view('closing.index', [
-//         "title" => "closing-night"
-//     ]);
+// Route::get('/', function(){
+//     return view('Home.soon');
 // });
 
-// Route::controller(LoginController::class)->group(function () {
-//     Route::get('/login', 'index')->name('login');
-//     Route::post('/login', 'authenticate');
+Route::get('/closing-night', function () {
+    return view('closing.index', [
+        "title" => "closing-night"
+    ]);
+});
 
-//     Route::get('/signup', 'signup_view')->middleware('guest');
-//     Route::post('/signup', 'signup');
-// });
+Route::controller(LoginController::class)->group(function () {
+    Route::get('/login', 'index')->name('login');
+    Route::post('/login', 'authenticate');
 
-// Route::middleware('guest')->controller(ResetPasswordController::class)->group(function() {
-//     Route::get('/forgot-password', 'index')->name('password.request');
-//     Route::post('/forgot-password', 'forgot_password')->name('password.email');
-//     Route::get('/reset-password/{token}', 'reset_token')->name('password.reset');
-//     Route::post('/reset-password', 'reset')->name('password.update');;
-// });
+    Route::get('/signup', 'signup_view')->middleware('guest');
+    Route::post('/signup', 'signup');
+});
 
-// Route::get('/logout', function (Request $request) {
-//     Auth::logout();
+Route::middleware('guest')->controller(ResetPasswordController::class)->group(function() {
+    Route::get('/forgot-password', 'index')->name('password.request');
+    Route::post('/forgot-password', 'forgot_password')->name('password.email');
+    Route::get('/reset-password/{token}', 'reset_token')->name('password.reset');
+    Route::post('/reset-password', 'reset')->name('password.update');;
+});
 
-//     $request->session()->invalidate();
+Route::get('/logout', function (Request $request) {
+    Auth::logout();
 
-//     $request->session()->regenerateToken();
+    $request->session()->invalidate();
 
-//     return redirect('/');
-// });
+    $request->session()->regenerateToken();
 
-// Route::controller(OrderController::class)->group(function () {
-//     // Route::get('/ticket', 'index'); 
+    return redirect('/');
+});
+
+Route::controller(OrderController::class)->group(function () {
+    // Route::get('/ticket', 'index'); 
 
 
-//     // Route::get('/custom-order', 'custom_order');
-//     Route::get('/order/{quantity}/personal-information', 'order');  
+    // Route::get('/custom-order', 'custom_order');
+    Route::get('/order/{quantity}/personal-information', 'order');  
 
-//     Route::post('/order/{quantity}/ticket-information', 'ticket_information'); 
+    Route::post('/order/{quantity}/ticket-information', 'ticket_information'); 
 
     
-//     Route::post('/checkout', 'checkout');
-//     Route::get('/invoice/{id}', 'invoice');
+    Route::post('/checkout', 'checkout');
+    Route::get('/invoice/{id}', 'invoice');
 
-//     // debug only *nanti dihapus*
-//     // Route::get('/approve', 'approve_ticket');
-// });
+    // debug only *nanti dihapus*
+    // Route::get('/approve', 'approve_ticket');
+});
 
-// Route::controller(TicketController::class)->group(function (){
+Route::controller(TicketController::class)->group(function (){
 
-//     Route::get('/ticket-redeem/{ticket_code}', 'ticket_redeem')->middleware('auth');
-//     Route::get('/show-qr/{ticket_code}', 'show_qr');
-// });
+    Route::get('/ticket-redeem/{ticket_code}', 'ticket_redeem')->middleware('auth');
+    Route::get('/show-qr/{ticket_code}', 'show_qr');
+});
 
-// Route::get('/merch', [MerchController::class, 'index']);
-// Route::get('/cart', [MerchController::class, 'cart']);
-// Route::get('/{id}/cart', [MerchController::class, 'addToCart']);
-// Route::get('/cart/{id}', [MerchController::class, 'removeFromCart']);
-// Route::get('/merch-checkout', [MerchController::class, 'checkout']);
+Route::get('/merch', [MerchController::class, 'index']);
+Route::get('/cart', [MerchController::class, 'cart']);
+Route::get('/{id}/cart', [MerchController::class, 'addToCart']);
+Route::get('/cart/{id}', [MerchController::class, 'removeFromCart']);
+Route::get('/merch-checkout', [MerchController::class, 'checkout']);
 
-// Route::get('/send', [MailController::class, 'index']);
+Route::get('/send', [MailController::class, 'index']);
 
-// Route::controller(MacController::class)->group(function () {
-//     Route::get('/mac', 'index');
-//     Route::get('/mac/submission', 'create');
-//     Route::post('/mac/store', 'store');
-// });
+Route::controller(MacController::class)->group(function () {
+    Route::get('/mac', 'index');
+    Route::get('/mac/submission', 'create');
+    Route::post('/mac/store', 'store');
+});
 
-// Route::controller(RacController::class)->group(function(){
-//     Route::get('/rac', 'index');
-//     Route::get('/rac/register', 'create');
-//     // Route::get('/rac/register', function(){
-//     //     return view('welcome');
-//     // });
-//     Route::post('/rac/store', 'store');
-//     Route::get('/rac/form/{amount}', 'form');
-//     Route::get('/rac/confirmation', 'confirmation_redirect');
-// });
+Route::controller(RacController::class)->group(function(){
+    Route::get('/rac', 'index');
+    Route::get('/rac/register', 'create');
+    // Route::get('/rac/register', function(){
+    //     return view('welcome');
+    // });
+    Route::post('/rac/store', 'store');
+    Route::get('/rac/form/{amount}', 'form');
+    Route::get('/rac/confirmation', 'confirmation_redirect');
+});
 
 Route::controller(MerchController::class)->group(function(){
     Route::get('/merch/admin', 'admin');

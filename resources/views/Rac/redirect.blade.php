@@ -14,7 +14,7 @@
                     <div class="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 my-4 rounded w-[400px]"
                         role="alert">
                         <p class="font-bold font-ltmuseumreg">Success</p>
-                        <p class="font-ltmuseumreg">Pendaftaran Berhasil, Terimakasih Revends!</p>
+                        <p class="font-ltmuseumreg">Pendaftaran Berhasil, Terimakasih!</p>
                     </div>
                 </div>
             @endif

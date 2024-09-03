@@ -19,8 +19,6 @@ class IsSuperAdmin
             return redirect('/login');
         }
         
-
-        
         return $next($request);
     }
 }

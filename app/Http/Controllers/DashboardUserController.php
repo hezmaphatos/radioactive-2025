@@ -91,16 +91,20 @@ class DashboardUserController extends Controller
     {
         $rules = [
             'name' => 'required|max:255',
-            'password' => 'required|string|min:8',
             'role_id' => 'required'
         ];
         
         if ($request->email != $user->email) {
-            $rules['email'] = 'required|email|unique:user';
+            $rules['email'] = 'required|email|unique:users';
+        }
+        
+        if ($request->filled('password')) {
+            $rules['password'] = 'string|min:8';
         }
         
         $validatedData = $request->validate($rules);
         
+        // Remove the password from the validated data if it's not filled
         if (!$request->filled('password')) {
             unset($validatedData['password']);
         }

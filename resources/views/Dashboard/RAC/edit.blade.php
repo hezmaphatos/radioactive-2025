@@ -1,4 +1,4 @@
-@extends('dashboard.layouts.main')
+@extends('Dashboard.layouts.main')
 
 @section('container')
 <div class="mb-3 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">

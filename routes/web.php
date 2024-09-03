@@ -192,7 +192,7 @@ Route::get('/dashboard', function(){
 
 Route::resource('/dashboard/users', DashboardUserController::class)->middleware('superadmin');
 // Route::resource('/dashboard/macs', DashboardMACController::class)->middleware('admin');
-Route::resource('/dashboard/racs', DashboardRACController::class)->middleware('admin');
+Route::resource('/dashboard/racs', DashboardRACController::class)->middleware('acara');
 
 Route::controller(MerchOrderController::class)->group(function () {
     Route::get('/order', 'order');

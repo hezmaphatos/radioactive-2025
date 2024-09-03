@@ -61,7 +61,7 @@ class DashboardMACController extends Controller
      */
     public function edit(mac $mac)
     {
-        return view('Dashboard.Mac.edit', [
+        return view('Dashboard.MAC.edit', [
             'mac' => $mac
         ]);
     }

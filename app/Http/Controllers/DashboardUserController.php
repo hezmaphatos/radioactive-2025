@@ -40,7 +40,7 @@ class DashboardUserController extends Controller
      */
     public function create()
     {
-        return view('dashboard.user.create', [
+        return view('Dashboard.User.create', [
             'users' => User::all(),
             'roles' => Role::all()
         ]);
@@ -77,7 +77,7 @@ class DashboardUserController extends Controller
      */
     public function edit(User $user)
     {
-        return view('dashboard.user.edit', [
+        return view('Dashboard.User.edit', [
             'user' => $user,
             'users' => User::all(),
             'roles' => Role::all()

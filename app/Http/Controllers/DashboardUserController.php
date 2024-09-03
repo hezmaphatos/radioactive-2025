@@ -29,7 +29,7 @@ class DashboardUserController extends Controller
         
         $users = $users->paginate(5)->withQueryString();
         
-        return view('dashboard.User.index', [
+        return view('Dashboard.User.index', [
             'users' => $users
         ]);
         

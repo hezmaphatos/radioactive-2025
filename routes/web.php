@@ -191,7 +191,7 @@ Route::get('/dashboard', function(){
 })->middleware('admin');
 
 Route::resource('/dashboard/users', DashboardUserController::class)->middleware('superadmin');
-Route::resource('/dashboard/macs', DashboardMACController::class)->middleware('admin');
+// Route::resource('/dashboard/macs', DashboardMACController::class)->middleware('admin');
 Route::resource('/dashboard/racs', DashboardRACController::class)->middleware('admin');
 
 Route::controller(MerchOrderController::class)->group(function () {

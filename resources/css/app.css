@@ -19,21 +19,6 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'Taruno Wide';
-    src: url("fonts/TarunoWide-Regular.otf") format("opentype");
-}
-
-@font-face {
-    font-family: 'Taruno Wide Outline';
-    src: url("fonts/TarunoWideOutline-Regular.otf") format("opentype");
-}
-
-@font-face {
-    font-family: 'Pathway Extreme';
-    src: url("fonts/PathwayExtreme.ttf") format("truetype");
-}
-
-@font-face {
   font-family: 'Brody Rawk';
   src: url("fonts/Brody\ Rawk.ttf") format("truetype");
 }

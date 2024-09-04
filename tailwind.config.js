@@ -8,9 +8,24 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                pathway: ["Pathway Extreme"],
+                brodyrawk: ["Pathway Extreme"],
+                LTMuseum: ["Taruno Wide"],
+                taruno2: ["Taruno Wide Outline"],
+                brody: ["Brody Rawk", "sans-serif"],
+                museum: ["LT Museum", "sans-serif"],
                 taruno: ["Taruno Wide"],
                 taruno2: ["Taruno Wide Outline"],
+                ltmuseumbold: ["LT Museum Bold"],
+                ltmuseum: ["LT Museum Reguler"],
+                ltmuseumreg: ["LT Museum Reguler"],
+                brodyrawk: ["Brody Rawk"],
+                "ltmuseum-bold": ["LTMuseum-Bold", "sans-serif"],
+                "ltmuseum-bolditalic": ["LTMuseum-BoldItalic", "sans-serif"],
+                "ltmuseum-inline": ["LTMuseum-Inline", "sans-serif"],
+                "ltmuseum-ital": ["LTMuseum-Ital", "sans-serif"],
+                "ltmuseum-light": ["LTMuseum-Light", "sans-serif"],
+                "ltmuseum-lightitalic": ["LTMuseum-LightItalic", "sans-serif"],
+                "ltmuseum-reg": ["LTMuseum-Reg", "sans-serif"],
             },
             spacing: {
                 76: "19rem",

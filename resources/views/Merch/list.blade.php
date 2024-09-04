@@ -3,9 +3,7 @@
 @section('container')
 <body class="overflow-x-hidden bg-black">
     <div class="justify-center align-middle items-center">
-        <!-- <div class="relative lg:h-[600px] overflow-hidden md:h-96 h-[275px] rounded-lg" data-carousel-item="">
-            <img src="/images/CarouselImg1.webp" class="absolute block w-full lg:h-[40vw] md:h-[80vw] h-[75vw] object-cover lg:object-center">
-        </div> -->
+       
         <div
             class="z-30 absolute w-full flex md:h-[500px] bg-black opacity-[.5] lg:h-[900px] h-[300px] justify-center items-center">
         </div>
@@ -15,54 +13,38 @@
         </div>
         <div id="indicators-carousel" class="relative w-full" data-carousel="slide">
         <div class="relative overflow-hidden z-0 md:h-96 lg:h-[800px] h-[275px] rounded-lg object-top">
-    <!-- Logo positioned at the top-left corner with increased size -->
-    <img src="/images/LOGO RA.png" alt="Logo RA" class="absolute top-4 left-4 w-24 h-24 object-contain z-10">
+   
+    <img src="/images/LOGO RA.png" alt="Logo RA" class="absolute top-0 left-4 w-44 h-44 object-contain z-10">
         <div class="relative overflow-hidden z-0 md:h-96 lg:h-[800px] h-[275px] rounded-lg object-top">
-    <!-- Carousel Item -->
+   
     <div class="hidden duration-300 ease-in-out" data-carousel-item="active">
         <div class="flex w-full md:h-96 lg:h-[800px] h-[275px]">
             
-            <!-- Text content on the left -->
             <div class="flex flex-col justify-center items-start pl-10 w-1/4 space-y-2">
-                <h1 class="text-white text-4xl font-bold font-brody rawk">NAMA BAJU</h1>
-                <div class="flex space-x-2"> <!-- Added flex container for horizontal alignment -->
-        <h3 class="text-white text-xl font-bold font-brody rawk">Size</h3>
-        <h3 class="text-white text-xl font-bold font-brody rawk">XS S M L XL XXL</h3>
+                <h1 class="text-white text-4xl font-bold font-Brody Rawk">NAMA BAJU</h1>
+                <div class="flex space-x-2"> 
+        <h3 class="text-white text-2xl font-bold font-brody rawk">Size</h3>
+        <h3 class="text-white text-2xl font-bold font-brody rawk">XS S M L XL XXL</h3>
     </div>
 </div>
-            <!-- Image to the right -->
-            <img src="/images/CAROUSEL/4.webp" class="block w-1/2 h-auto object-contain"> <!-- Smaller centered image -->
+           
+            <img src="/images/CAROUSEL/4.webp" class="block w-1/2 h-auto object-contain">
             <img src="/images/CAROUSEL/3.webp" class="block h-1/2 w-auto object-contain">
             </div>
         </div>
             
     </div>
 
-    <!-- Other carousel items follow similar structure -->
     <div class="hidden duration-300 ease-in-out" data-carousel-item>
         <div class="flex w-full md:h-96 lg:h-[800px] h-[275px]">
         <div class="flex flex-col justify-center items-start pl-10 w-1/4 space-y-2">
                 <h1 class="text-white text-4xl font-bold font-brody rawk">NAMA BAJU</h1>
-                <div class="flex space-x-2"> <!-- Added flex container for horizontal alignment -->
-        <h3 class="text-white text-xl font-bold font-brody rawk">Size</h3>
-        <h3 class="text-white text-xl font-bold font-brody rawk">XS S M L XL XXL</h3>
+                <div class="flex space-x-2"> 
+        <h3 class="text-white text-2xl font-bold font-brody rawk">Size</h3>
+        <h3 class="text-white text-2xl font-bold font-brody rawk">XS S M L XL XXL</h3>
     </div>
 </div>
-<img src="/images/CAROUSEL/3.webp" class="block w-1/2 h-auto object-contain"> <!-- Smaller centered image -->
-</div>
-    </div>
-
-    <!-- Repeat for other carousel items -->
-    <div class="hidden duration-300 ease-in-out" data-carousel-item>
-        <div class="flex w-full md:h-96 lg:h-[800px] h-[275px]">
-        <div class="flex flex-col justify-center items-start pl-10 w-1/4 space-y-2">
-                <h1 class="text-white text-4xl font-bold font-brody rawk">NAMA BAJU</h1>
-                <div class="flex space-x-2"> <!-- Added flex container for horizontal alignment -->
-        <h3 class="text-white text-xl font-bold font-brody rawk">Size</h3>
-        <h3 class="text-white text-xl font-bold font-brody rawk">XS S M L XL XXL</h3>
-    </div>
-</div>
-<img src="/images/CAROUSEL/5.webp" class="block w-1/2 h-auto object-contain"> <!-- Smaller centered image -->
+<img src="/images/CAROUSEL/3.webp" class="block w-1/2 h-auto object-contain"> 
 </div>
     </div>
 
@@ -70,12 +52,12 @@
         <div class="flex w-full md:h-96 lg:h-[800px] h-[275px]">
         <div class="flex flex-col justify-center items-start pl-10 w-1/4 space-y-2">
                 <h1 class="text-white text-4xl font-bold font-brody rawk">NAMA BAJU</h1>
-                <div class="flex space-x-2"> <!-- Added flex container for horizontal alignment -->
-        <h3 class="text-white text-xl font-bold font-brody rawk">Size</h3>
-        <h3 class="text-white text-xl font-bold font-brody rawk">XS S M L XL XXL</h3>
+                <div class="flex space-x-2"> 
+        <h3 class="text-white text-2xl font-bold font-brody rawk">Size</h3>
+        <h3 class="text-white text-2xl font-bold font-brody rawk">XS S M L XL XXL</h3>
     </div>
 </div>
-<img src="/images/CAROUSEL/6.webp" class="block w-1/2 h-auto object-contain"> <!-- Smaller centered image -->
+<img src="/images/CAROUSEL/5.webp" class="block w-1/2 h-auto object-contain">
 </div>
     </div>
 
@@ -83,12 +65,25 @@
         <div class="flex w-full md:h-96 lg:h-[800px] h-[275px]">
         <div class="flex flex-col justify-center items-start pl-10 w-1/4 space-y-2">
                 <h1 class="text-white text-4xl font-bold font-brody rawk">NAMA BAJU</h1>
-                <div class="flex space-x-2"> <!-- Added flex container for horizontal alignment -->
-        <h3 class="text-white text-xl font-bold font-brody rawk">Size</h3>
-        <h3 class="text-white text-xl font-bold font-brody rawk">XS S M L XL XXL</h3>
+                <div class="flex space-x-2"> 
+        <h3 class="text-white text-2xl font-bold font-brody rawk">Size</h3>
+        <h3 class="text-white text-2xl font-bold font-brody rawk">XS S M L XL XXL</h3>
     </div>
 </div>
-<img src="/images/CAROUSEL/2.webp" class="block w-1/2 h-auto object-contain"> <!-- Smaller centered image -->
+<img src="/images/CAROUSEL/6.webp" class="block w-1/2 h-auto object-contain">
+</div>
+    </div>
+
+    <div class="hidden duration-300 ease-in-out" data-carousel-item>
+        <div class="flex w-full md:h-96 lg:h-[800px] h-[275px]">
+        <div class="flex flex-col justify-center items-start pl-10 w-1/4 space-y-2">
+                <h1 class="text-white text-4xl font-bold font-Brody Rawk">NAMA BAJU</h1>
+                <div class="flex space-x-2"> 
+        <h3 class="text-white text-2xl font-bold font-brody rawk">Size</h3>
+        <h3 class="text-white text-2xl font-bold font-brody rawk">XS S M L XL XXL</h3>
+    </div>
+</div>
+<img src="/images/CAROUSEL/2.webp" class="block w-1/2 h-auto object-contain">
 </div>
     </div>
 </div>

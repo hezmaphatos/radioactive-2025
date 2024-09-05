@@ -22,8 +22,8 @@
             method="post">
             <div class="flex justify-center align-middle form-container">
                 <div class="flex flex-col w-[400px] max-w-[95vw]">
-                    <div class="w-full form-content px-8 py-3 mb-10 font-pathway bg-gray-300">
-                        <div class="w-full font-taruno text-md md:text-lg text-black text-center">Add Variation</div>
+                    <div class="w-full form-content px-8 py-3 mb-10 font-ltmuseum bg-gray-300">
+                        <div class="w-full font-ltmuseumbold text-md md:text-lg text-black text-center">Add Variation</div>
                         @csrf
                         @if (session()->has('success'))
                             <div class="text-sm text-green-500" role="alert">{{ session('success') }}</div>

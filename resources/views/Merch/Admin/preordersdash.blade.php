@@ -12,6 +12,9 @@
 </head>
 
 <body class="min-h-screen overflow-scroll bg-white text-black">
+    <div class="w-full flex justify-center p-4">
+        <a href="/merch/admin" class="text-white bg-black px-2 py-1 rounded">Back</a>
+    </div>
     <div class="container w-full mx-auto px-2">
         <div class="p-4 mt-6 lg:mt-0 rounded shadow bg-white">
             <h1 class="font-taruno">Orders</h1>
@@ -73,7 +76,8 @@
                                     enctype="multipart/form-data">
                                     @method('put')
                                     @csrf
-                                    <button type="submit" onclick="return confirm('Are you sure you want to send order approval email?')"
+                                    <button type="submit"
+                                        onclick="return confirm('Are you sure you want to send order approval email?')"
                                         class="p-2 bg-lime-400 text-lime-900 rounded-xl hover:bg-lime-300">
                                         Approve
                                     </button>
@@ -82,7 +86,11 @@
                                     enctype="multipart/form-data">
                                     @method('put')
                                     @csrf
-                                    <button type="submit" class="p-2 bg-red-700 text-red-950 rounded-xl hover:bg-red-500" onclick="return confirm('Are you sure you want to send order cancellation email?')">
+                                    <input type="text" placeholder="Reason" name="reason"
+                                        class="bg-white text-black border border-1 border-black">
+                                    <button type="submit"
+                                        class="p-2 bg-red-700 text-red-950 rounded-xl hover:bg-red-500"
+                                        onclick="return confirm('Are you sure you want to send order cancellation email?')">
                                         Cancel
                                     </button>
                                 </form>
@@ -90,7 +98,11 @@
                                     enctype="multipart/form-data">
                                     @method('put')
                                     @csrf
-                                    <button type="submit" class="p-2 bg-yellow-500 text-yellow-950 rounded-xl hover:bg-yellow-300" onclick="return confirm('Are you sure you want to send order suspension email?')">
+                                    <input type="text" placeholder="Reason" name="reason"
+                                        class="bg-white text-black border border-1 border-black">
+                                    <button type="submit"
+                                        class="p-2 bg-yellow-500 text-yellow-950 rounded-xl hover:bg-yellow-300"
+                                        onclick="return confirm('Are you sure you want to send order suspension email?')">
                                         Suspend
                                     </button>
                                 </form>

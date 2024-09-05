@@ -83,56 +83,74 @@
         </div>
     </div>
     <div class="justify-center align-middle items-center">
-        <!-- <div class="relative lg:h-[600px] overflow-hidden md:h-96 h-[275px] rounded-lg" data-carousel-item="">
-            <img src="/images/CarouselImg1.webp" class="absolute block w-full lg:h-[40vw] md:h-[80vw] h-[75vw] object-cover lg:object-center">
-        </div> -->
+       
         <div
             class="z-30 absolute w-full flex md:h-[500px] bg-black opacity-[.5] lg:h-[900px] h-[300px] justify-center items-center">
         </div>
+        
         <div class="z-30 absolute w-full flex md:h-[430px] lg:h-[800px] h-[325px] justify-center items-center">
-            <img src="/images/CAROUSEL/NEO.webp" class="md:w-1/3 lg:w-1/3 w-1/2  sm:w-1/3">
+            
         </div>
         <div id="indicators-carousel" class="relative w-full" data-carousel="slide">
-a
-            <div class="relative  overflow-hidden z-0 md:h-96 lg:h-[800px] h-[275px] rounded-lg object-top">
-                <div class="hidden duration-300 ease-in-out" data-carousel-item="active">
-                    <div class="absolute flex w-screen md:h-96 lg:h-[800px] h-[275px]">
-                        <img src="/images/CAROUSEL/4.webp" class="block w-1/4 lg:h-full md:h-full h-[100vw] object-cover lg:object-center">
-                        <img src="/images/CAROUSEL/3.webp" class="block w-1/2 lg:h-full md:h-full h-[100vw] object-cover lg:object-center">
-                        <img src="/images/CAROUSEL/6.webp" class="block w-1/4 lg:h-full md:h-full h-[100vw] object-cover lg:object-center">
-                    </div>
-                </div>
+        <div class="relative overflow-hidden z-0 md:h-96 lg:h-[800px] h-[275px] rounded-lg object-top">
+   
+        <div class="relative overflow-hidden z-0 md:h-96 lg:h-[800px] h-[275px] rounded-lg object-top">
+    <img src="/images/LOGO RA.png" alt="Logo RA" class="absolute inset-0 m-auto w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-80 lg:h-80 object-contain z-40">
+    
+    <div class="relative h-full w-full">
+    <div class="hidden duration-300 ease-in-out" data-carousel-item="active">
+        <div class="relative w-full h-full">
+            <img src="/images/CAROUSEL/1.JPG" class="absolute inset-0 w-full h-full object-cover">
+        </div>
+    </div>
 
-                <div class="hidden duration-300 ease-in-out" data-carousel-item>
-                    <img src="/images/CAROUSEL/2.webp"
-                        class="absolute block w-full lg:h-[110vw] md:h-[150vw] h-[150vw] object-cover lg:object-center">
+        <div class="hidden duration-300 ease-in-out" data-carousel-item>
+            <div class="flex w-full md:h-96 lg:h-[800px] h-[275px]">
+                <div class="flex flex-col justify-center items-start pl-2 md:pl-4 lg:pl-8 w-full md:w-1/4 space-y-1">
+                    <div class="flex flex-wrap space-x-1 md:space-x-2 lg:space-x-4"></div>
                 </div>
-
-                <div class="hidden duration-300 ease-in-out" data-carousel-item>
-                    <img src="/images/CAROUSEL/1.webp"
-                        class="absolute block w-full lg:h-[110vw] md:h-[120vw] h-[155vw] object-cover lg:object-center">
-                </div>
-
-                <div class="hidden duration-300 ease-in-out" data-carousel-item>
-                    <img src="/images/CAROUSEL/6.webp" class="absolute block w-full h-full object-cover">
-                </div>
-
-                <div class="hidden duration-300 ease-in-out" data-carousel-item>
-                    <img src="/images/CAROUSEL/5.webp" class="absolute block w-full lg:h-[70vw] md:h-[75vw] sm:h-[70vw] h-[90vw] object-cover">
-                </div>
+                <img src="/images/CAROUSEL/2.JPG" class="absolute inset-0 w-full h-full object-cover">
             </div>
-            <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-                <button type="button" class="w-3 h-3 rounded-full bg-transparent border-[1px] border-white"
-                    aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-                <button type="button" class="w-3 h-3 rounded-full bg-transparent border-[1px] border-white"
-                    aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-                <button type="button" class="w-3 h-3 rounded-full bg-transparent border-[1px] border-white"
-                    aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-                <button type="button" class="w-3 h-3 rounded-full bg-transparent border-[1px] border-white"
-                    aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-                <button type="button" class="w-3 h-3 rounded-full bg-transparent border-[1px] border-white"
-                    aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+        </div>
+
+        <div class="hidden duration-300 ease-in-out" data-carousel-item>
+            <div class="flex w-full md:h-96 lg:h-[800px] h-[275px]">
+                <div class="flex flex-col justify-center items-start pl-2 md:pl-4 lg:pl-8 w-full md:w-1/4 space-y-1">
+                    <div class="flex flex-wrap space-x-1 md:space-x-2 lg:space-x-4"></div>
+                </div>
+                <img src="/images/CAROUSEL/3.JPG" class="absolute inset-0 w-full h-full object-cover">
             </div>
+        </div>
+
+        <div class="hidden duration-300 ease-in-out" data-carousel-item>
+            <div class="flex w-full md:h-96 lg:h-[800px] h-[275px]">
+                <div class="flex flex-col justify-center items-start pl-2 md:pl-4 lg:pl-8 w-full md:w-1/4 space-y-1">
+                    <div class="flex flex-wrap space-x-1 md:space-x-2 lg:space-x-4"></div>
+                </div>
+                <img src="/images/CAROUSEL/4.JPG" class="absolute inset-0 w-full h-full object-cover">
+            </div>
+        </div>
+
+        <div class="hidden duration-300 ease-in-out" data-carousel-item>
+            <div class="flex w-full md:h-96 lg:h-[800px] h-[275px]">
+                <div class="flex flex-col justify-center items-start pl-2 md:pl-4 lg:pl-8 w-full md:w-1/4 space-y-1">
+                    <div class="flex flex-wrap space-x-1 md:space-x-2 lg:space-x-4"></div>
+                </div>
+                <img src="/images/CAROUSEL/5.JPG" class="absolute inset-0 w-full h-full object-cover">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+    <button type="button" class="w-3 h-3 rounded-full bg-transparent border-[1px] border-white" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+    <button type="button" class="w-3 h-3 rounded-full bg-transparent border-[1px] border-white" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+    <button type="button" class="w-3 h-3 rounded-full bg-transparent border-[1px] border-white" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+    <button type="button" class="w-3 h-3 rounded-full bg-transparent border-[1px] border-white" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+    <button type="button" class="w-3 h-3 rounded-full bg-transparent border-[1px] border-white" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+</div>
+
 
             <button type="button"
                 class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"

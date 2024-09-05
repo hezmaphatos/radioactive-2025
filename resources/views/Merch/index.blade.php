@@ -6,37 +6,37 @@
     <div class="justify-center align-middle items-center">
         <div id="indicators-carousel" class="relative w-full" data-carousel="static">
 
-            <div class="relative overflow-hidden md:h-[500px]">
+            <div class="relative overflow-hidden h-[400px] md:h-[500px]">
 
-                <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                <div class="hidden duration-700 ease-in-out pt-16" data-carousel-item="active">
                     <img src="/images/CAROUSEL/1.webp"
                         class="flex h-full w-full object-center object-cover brightness-50">
                 </div>
 
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <div class="hidden duration-700 ease-in-out pt-16" data-carousel-item>
                     <img src="/images/CAROUSEL/2.webp"
                         class="flex h-full w-full object-center object-cover brightness-50">
                 </div>
 
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="/images/CAROUSEL/3.webp"
+                <div class="hidden duration-700 ease-in-out pt-16" data-carousel-item>
+                    <img src="/images/CAROUSEL/8.png"
                         class="flex h-full w-full object-center object-cover brightness-50">
                 </div>
 
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="/images/CAROUSEL/4.webp"
+                <div class="hidden duration-700 ease-in-out pt-16" data-carousel-item>
+                    <img src="/images/CAROUSEL/9.png"
                         class="flex h-full w-full object-center object-cover brightness-50">
                 </div>
 
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="/images/CAROUSEL/5.webp"
+                <div class="hidden duration-700 ease-in-out pt-16" data-carousel-item>
+                    <img src="/images/CAROUSEL/6.png"
                         class="flex h-full w-full object-center object-cover brightness-50">
                 </div>
 
             </div>
 
-            <div class="absolute inset-0 flex flex-col items-center justify-center pointer-events-none z-50">
-                <img src="/images/LOGO RA.png" alt="Logo" class="w-30 md:w-64 h-16 md:h-32 object-cover ">
+            <div class="absolute inset-0 flex flex-col items-center justify-center pointer-events-none z-20">
+                <img src="/images/LOGO RA.png" alt="Logo" class="w-64 h-32 md:w-80 md:h-40 object-cover ">
                 <div class="text-white text-5xl font-brodyrawk mt-1">
                     COLLECTION
                 </div>
@@ -106,10 +106,10 @@
             </div>
 
             <div id="shopping-cart" class="w-full fixed bottom-5 right-5 flex justify-end">
-                <div
-                    class="rounded-full bg-white w-[60px] h-[60px] flex justify-center items-center cursor-pointer transform transition duration-500 hover:scale-110">
-                    <i class="fas fa-shopping-cart fa-xl" style="color: black;"></i>
-                </div>
+                <a href="/cart"
+                    class="rounded-full no-underline bg-red-600 w-[60px] h-[60px] flex justify-center items-center cursor-pointer transform transition duration-500 hover:scale-110">
+                    <i class="fas fa-shopping-cart fa-xl" style="color: white;"></i>
+                </a>
             </div>
         </div>
 

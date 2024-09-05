@@ -225,7 +225,7 @@
                                     @if ($merch->id == 2)
                                         <li class="text-white text-[15px]">Premium soft cotton combed 24s</li>
                                         <li class="text-white text-[15px]">Regular cut and easy to wear</li>
-                                        <li class="text-white text-[15px]">7 sizes S - 4XL</li>
+                                        <li class="text-white text-[15px]">6 sizes XS - XXL</li>
                                         <li class="text-white text-[15px]">Model is 155cm and wearing size M</li>
                                     @endif
                                     @if ($merch->id == 3)
@@ -288,7 +288,7 @@
                                                     required>
                                                 <label for="tee"
                                                     class="inline-flex items-center gap-3 w-full p-3 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
-                                                    <img class="w-1/12" src="/images/KAOSBIRU/1-KAOSBIRU.webp" />
+                                                    <img class="w-1/12" src="/images/KAOSPUTIH/1-KAOSPUTIH.JPG" />
                                                     <div class="block">
                                                         <div class="w-full">Turbulent Revolution Tee</div>
                                                     </div>
@@ -299,7 +299,7 @@
                                                     value="Celestial Revy Tee" class="hidden peer">
                                                 <label for="tee1"
                                                     class="inline-flex items-center gap-3 w-full p-3 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
-                                                    <img class="w-1/12" src="/images/KAOSPUTIH/1-KAOSPUTIH.webp" />
+                                                    <img class="w-1/12" src="/images/KAOSPUTIH/1-KAOSPUTIH.JPG" />
                                                     <div class="block">
                                                         <div class="w-full">Celestial Revy Tee</div>
                                                     </div>
@@ -538,7 +538,7 @@
                     <td>69</td>
                     <td>15</td>
                     <td>25</td>
-                    <td>Rp 95.000,-</td>
+                    <td>Rp 120.000,-</td>
                 </tr>
                 <tr>
                     <td>S</td>
@@ -546,7 +546,7 @@
                     <td>72</td>
                     <td>16</td>
                     <td>25</td>
-                    <td>Rp 95.000,-</td>
+                    <td>Rp 120.000,-</td>
                 </tr>
                 <tr>
                     <td>M</td>
@@ -554,7 +554,7 @@
                     <td>73</td>
                     <td>16</td>
                     <td>29</td>
-                    <td>Rp 95.000,-</td>
+                    <td>Rp 120.000,-</td>
                 </tr>
                 <tr>
                     <td>L</td>
@@ -562,7 +562,7 @@
                     <td>76</td>
                     <td>17</td>
                     <td>31</td>
-                    <td>Rp 95.000,-</td>
+                    <td>Rp 120.000,-</td>
                 </tr>
                 <tr>
                     <td>XL</td>
@@ -570,15 +570,15 @@
                     <td>78</td>
                     <td>17</td>
                     <td>33</td>
-                    <td>Rp 95.000,-</td>
+                    <td>Rp 120.000,-</td>
                 </tr>
                 <tr>
                     <td>XXL</td>
                     <td>70</td>
                     <td>80</td>
                     <td>19</td>
-                    <td>31</td>
-                    <td>Rp 105.000,-</td>
+                    <td>35</td>
+                    <td>Rp 130.000,-</td>
                 </tr>
             </table>
         @endif
@@ -586,52 +586,60 @@
             <table border="1"
                 class="w-full justify-center gap-3 border-white border-[1px] md:w-4/5 sm:w-full lg:w-1/2 text-white">
                 <tr class="border-[1px] bg-[#D61525]">
-                    <th>Size</th>
+                <th>Size</th>
                     <th>Width<br>(cm)</th>
                     <th>Length<br>(cm)</th>
+                    <th>Shoulders<br>(cm)</th>
+                    <th>Hands<br>(cm)</th>
                     <th>Price<br>(Rp)</th>
                 </tr>
                 <tr>
+                    <td>XS</td>
+                    <td>54</td>
+                    <td>69</td>
+                    <td>15</td>
+                    <td>25</td>
+                    <td>Rp 110.000,-</td>
+                </tr>
+                <tr>
                     <td>S</td>
-                    <td>47</td>
-                    <td>70</td>
-                    <td>Rp 95.000,-</td>
+                    <td>57</td>
+                    <td>72</td>
+                    <td>16</td>
+                    <td>25</td>
+                    <td>Rp 110.000,-</td>
                 </tr>
                 <tr>
                     <td>M</td>
-                    <td>51</td>
-                    <td>71</td>
-                    <td>Rp 95.000,-</td>
+                    <td>59</td>
+                    <td>73</td>
+                    <td>16</td>
+                    <td>29</td>
+                    <td>Rp 110.000,-</td>
                 </tr>
                 <tr>
                     <td>L</td>
-                    <td>55</td>
-                    <td>73</td>
-                    <td>Rp 95.000,-</td>
+                    <td>62</td>
+                    <td>76</td>
+                    <td>17</td>
+                    <td>31</td>
+                    <td>Rp 110.000,-</td>
                 </tr>
                 <tr>
                     <td>XL</td>
-                    <td>59</td>
-                    <td>76</td>
-                    <td>Rp 95.000,-</td>
-                </tr>
-                <tr>
-                    <td>2XL</td>
-                    <td>64</td>
-                    <td>80</td>
-                    <td>Rp 100.000,-</td>
-                </tr>
-                <tr>
-                    <td>3XL</td>
-                    <td>67</td>
-                    <td>83</td>
-                    <td>Rp 105.000,-</td>
-                </tr>
-                <tr>
-                    <td>4XL</td>
-                    <td>70</td>
-                    <td>86</td>
+                    <td>66</td>
+                    <td>78</td>
+                    <td>17</td>
+                    <td>33</td>
                     <td>Rp 110.000,-</td>
+                </tr>
+                <tr>
+                    <td>XXL</td>
+                    <td>70</td>
+                    <td>80</td>
+                    <td>19</td>
+                    <td>35</td>
+                    <td>Rp 120.000,-</td>
                 </tr>
             </table>
         @endif

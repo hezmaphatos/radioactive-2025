@@ -14,81 +14,54 @@
         <div id="indicators-carousel" class="relative w-full" data-carousel="slide">
         <div class="relative overflow-hidden z-0 md:h-96 lg:h-[800px] h-[275px] rounded-lg object-top">
    
-        <img src="/images/LOGO RA.png" alt="Logo RA" class="absolute top-0 left-4 w-20 h-20 sm:w-30 sm:h-30 md:w-32 md:h-32 lg:w-40 lg:h-40 object-contain z-10">
-<div class="relative overflow-hidden z-0 md:h-96 lg:h-[800px] h-[275px] rounded-lg object-top">
-
-   
+        <div class="relative overflow-hidden z-0 md:h-96 lg:h-[800px] h-[275px] rounded-lg object-top">
+    <img src="/images/LOGO RA.png" alt="Logo RA" class="absolute inset-0 m-auto w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-80 lg:h-80 object-contain z-40">
+    
+    <div class="relative h-full w-full">
     <div class="hidden duration-300 ease-in-out" data-carousel-item="active">
-        <div class="flex w-full md:h-96 lg:h-[800px] h-[275px]">
-            
-        <div class="flex flex-col justify-center items-start pl-2 md:pl-4 lg:pl-8 w-full md:w-1/4 space-y-1">
-    <h1 class="text-white text-base md:text-lg lg:text-2xl font-bold font-brody rawk">NAMA BAJU</h1>
-    <div class="flex flex-wrap space-x-1 md:space-x-2 lg:space-x-4">
-    <h3 class="text-white text-base md:text-lg lg:text-xl font-bold font-LTMuseum">Size</h3>
-    <h3 class="text-white text-base md:text-lg lg:text-xl font-bold font-LTMuseum">XS S M L XL XXL</h3>
-</div>
+        <div class="relative w-full h-full">
+            <img src="/images/CAROUSEL/1.JPG" class="absolute inset-0 w-full h-full object-cover">
+        </div>
+    </div>
 
-</div>
-           
-            <img src="/images/CAROUSEL/4.webp" class="block w-1/2 h-auto object-contain">
-            <img src="/images/CAROUSEL/3.webp" class="block h-1/2 w-auto object-contain">
+        <div class="hidden duration-300 ease-in-out" data-carousel-item>
+            <div class="flex w-full md:h-96 lg:h-[800px] h-[275px]">
+                <div class="flex flex-col justify-center items-start pl-2 md:pl-4 lg:pl-8 w-full md:w-1/4 space-y-1">
+                    <div class="flex flex-wrap space-x-1 md:space-x-2 lg:space-x-4"></div>
+                </div>
+                <img src="/images/CAROUSEL/2.JPG" class="absolute inset-0 w-full h-full object-cover">
             </div>
         </div>
-            
-    </div>
 
-    <div class="hidden duration-300 ease-in-out" data-carousel-item>
-        <div class="flex w-full md:h-96 lg:h-[800px] h-[275px]">
-        <div class="flex flex-col justify-center items-start pl-2 md:pl-4 lg:pl-8 w-full md:w-1/4 space-y-1">
-    <h1 class="text-white text-base md:text-lg lg:text-2xl font-bold font-brody rawk">NAMA BAJU</h1>
-    <div class="flex flex-wrap space-x-1 md:space-x-2 lg:space-x-4">
-    <h3 class="text-white text-base md:text-lg lg:text-xl font-bold font-LTMuseum">Size</h3>
-    <h3 class="text-white text-base md:text-lg lg:text-xl font-bold font-LTMuseum">XS S M L XL XXL</h3>
-</div>
-</div>
-<img src="/images/CAROUSEL/3.webp" class="block w-1/2 h-auto object-contain"> 
-</div>
-    </div>
+        <div class="hidden duration-300 ease-in-out" data-carousel-item>
+            <div class="flex w-full md:h-96 lg:h-[800px] h-[275px]">
+                <div class="flex flex-col justify-center items-start pl-2 md:pl-4 lg:pl-8 w-full md:w-1/4 space-y-1">
+                    <div class="flex flex-wrap space-x-1 md:space-x-2 lg:space-x-4"></div>
+                </div>
+                <img src="/images/CAROUSEL/3.JPG" class="absolute inset-0 w-full h-full object-cover">
+            </div>
+        </div>
 
-    <div class="hidden duration-300 ease-in-out" data-carousel-item>
-        <div class="flex w-full md:h-96 lg:h-[800px] h-[275px]">
-        <div class="flex flex-col justify-center items-start pl-2 md:pl-4 lg:pl-8 w-full md:w-1/4 space-y-1">
-    <h1 class="text-white text-base md:text-lg lg:text-2xl font-bold font-brody rawk">NAMA BAJU</h1>
-    <div class="flex flex-wrap space-x-1 md:space-x-2 lg:space-x-4">
-    <h3 class="text-white text-base md:text-lg lg:text-xl font-bold font-LTMuseum">Size</h3>
-    <h3 class="text-white text-base md:text-lg lg:text-xl font-bold font-LTMuseum">XS S M L XL XXL</h3>
-</div>
-</div>
-<img src="/images/CAROUSEL/5.webp" class="block w-1/2 h-auto object-contain">
-</div>
-    </div>
+        <div class="hidden duration-300 ease-in-out" data-carousel-item>
+            <div class="flex w-full md:h-96 lg:h-[800px] h-[275px]">
+                <div class="flex flex-col justify-center items-start pl-2 md:pl-4 lg:pl-8 w-full md:w-1/4 space-y-1">
+                    <div class="flex flex-wrap space-x-1 md:space-x-2 lg:space-x-4"></div>
+                </div>
+                <img src="/images/CAROUSEL/4.JPG" class="absolute inset-0 w-full h-full object-cover">
+            </div>
+        </div>
 
-    <div class="hidden duration-300 ease-in-out" data-carousel-item>
-        <div class="flex w-full md:h-96 lg:h-[800px] h-[275px]">
-        <div class="flex flex-col justify-center items-start pl-2 md:pl-4 lg:pl-8 w-full md:w-1/4 space-y-1">
-    <h1 class="text-white text-base md:text-lg lg:text-2xl font-bold font-brody rawk">NAMA BAJU</h1>
-    <div class="flex flex-wrap space-x-1 md:space-x-2 lg:space-x-4">
-    <h3 class="text-white text-base md:text-lg lg:text-xl font-bold font-LTMuseum">Size</h3>
-    <h3 class="text-white text-base md:text-lg lg:text-xl font-bold font-LTMuseum">XS S M L XL XXL</h3>
-</div>
-</div>
-<img src="/images/CAROUSEL/6.webp" class="block w-1/2 h-auto object-contain">
-</div>
+        <div class="hidden duration-300 ease-in-out" data-carousel-item>
+            <div class="flex w-full md:h-96 lg:h-[800px] h-[275px]">
+                <div class="flex flex-col justify-center items-start pl-2 md:pl-4 lg:pl-8 w-full md:w-1/4 space-y-1">
+                    <div class="flex flex-wrap space-x-1 md:space-x-2 lg:space-x-4"></div>
+                </div>
+                <img src="/images/CAROUSEL/5.JPG" class="absolute inset-0 w-full h-full object-cover">
+            </div>
+        </div>
     </div>
+</div>
 
-    <div class="hidden duration-300 ease-in-out" data-carousel-item>
-        <div class="flex w-full md:h-96 lg:h-[800px] h-[275px]">
-        <div class="flex flex-col justify-center items-start pl-2 md:pl-4 lg:pl-8 w-full md:w-1/4 space-y-1">
-    <h1 class="text-white text-base md:text-lg lg:text-2xl font-bold font-brody rawk">NAMA BAJU</h1>
-    <div class="flex flex-wrap space-x-1 md:space-x-2 lg:space-x-4">
-    <h3 class="text-white text-base md:text-lg lg:text-xl font-bold font-LTMuseum">Size</h3>
-    <h3 class="text-white text-base md:text-lg lg:text-xl font-bold font-LTMuseum">XS S M L XL XXL</h3>
-</div>
-</div>
-<img src="/images/CAROUSEL/2.webp" class="block w-1/2 h-auto object-contain">
-</div>
-    </div>
-</div>
 
 <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
     <button type="button" class="w-3 h-3 rounded-full bg-transparent border-[1px] border-white" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>

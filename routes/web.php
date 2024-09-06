@@ -95,11 +95,11 @@ Route::controller(TicketController::class)->group(function (){
     Route::get('/show-qr/{ticket_code}', 'show_qr');
 });
 
-Route::get('/merch', [MerchController::class, 'index']);
-Route::get('/cart', [MerchController::class, 'cart']);
-Route::get('/{id}/cart', [MerchController::class, 'addToCart']);
-Route::get('/cart/{id}', [MerchController::class, 'removeFromCart']);
-Route::get('/merch-checkout', [MerchController::class, 'checkout']);
+// Route::get('/merch', [MerchController::class, 'index']);
+// Route::get('/cart', [MerchController::class, 'cart']);
+// Route::get('/{id}/cart', [MerchController::class, 'addToCart']);
+// Route::get('/cart/{id}', [MerchController::class, 'removeFromCart']);
+// Route::get('/merch-checkout', [MerchController::class, 'checkout']);
 
 Route::get('/send', [MailController::class, 'index']);
 
@@ -194,27 +194,27 @@ Route::resource('/dashboard/users', DashboardUserController::class)->middleware(
 // Route::resource('/dashboard/macs', DashboardMACController::class)->middleware('admin');
 Route::resource('/dashboard/racs', DashboardRACController::class)->middleware('acara');
 
-Route::controller(MerchOrderController::class)->group(function () {
-    Route::get('/order', 'order');
-    Route::post('/order', 'order');
-    Route::get('/reset-cart', 'resetCart');
-});
+// Route::controller(MerchOrderController::class)->group(function () {
+//     Route::get('/order', 'order');
+//     Route::post('/order', 'order');
+//     Route::get('/reset-cart', 'resetCart');
+// });
 
-Route::controller(MerchController::class)->group(function () {
-    Route::get('/merch', 'home');
-    Route::get('/cart', 'cart');
-    Route::post('/cart/{id}', 'addToCart');
-    Route::get('item/', 'merch');
-    Route::get('item/{id}', 'ShowItem');
+// Route::controller(MerchController::class)->group(function () {
+//     Route::get('/merch', 'home');
+//     Route::get('/cart', 'cart');
+//     Route::post('/cart/{id}', 'addToCart');
+//     Route::get('item/', 'merch');
+//     Route::get('item/{id}', 'ShowItem');
 
-});
+// });
 
-Route::controller(CartController::class)->group(function () {
-    Route::get('/cart/{id}', 'removeFromCart');
-    Route::get('/checkout', 'checkout');
-    Route::get('/dashboard/cart', 'dashboard')->middleware('auth');
-    Route::get('approval/{id}/{status}', 'approval')->middleware('auth');
-});
+// Route::controller(CartController::class)->group(function () {
+//     Route::get('/cart/{id}', 'removeFromCart');
+//     Route::get('/checkout', 'checkout');
+//     Route::get('/dashboard/cart', 'dashboard')->middleware('auth');
+//     Route::get('approval/{id}/{status}', 'approval')->middleware('auth');
+// });
 
 // Route::get('/{any}', function () {
 //     return redirect('/');

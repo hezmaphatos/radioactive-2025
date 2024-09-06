@@ -21,7 +21,7 @@
             method="post">
             @csrf
             @method('put')
-            <div class="w-full font-taruno text-md md:text-lg text-black text-center">Edit Merch</div>
+            <div class="w-full font-ltmuseumbold text-md md:text-lg text-black text-center">Edit Merch</div>
             <div class="mb-1">
                 <label class="block form-label text-sm mb-0 text-black" for="">
                     <span class="">Nama Merch</span>
@@ -98,7 +98,7 @@
         </form>
     </div>
     <div class="bg-gray-300 p-4 rounded drop-shadow-xl flex-wrap w-80 max-w-screen-sm gap-8">
-        <div class="w-full font-taruno text-md md:text-lg text-black text-center">Merch Images</div>
+        <div class="w-full font-ltmuseumbold text-md md:text-lg text-black text-center">Merch Images</div>
         <div class="flex gap-4 flex-wrap w-full justify-center">
             @foreach ($merch->images as $picture)
                 <div class="rounded p-2 bg-gray-100">
@@ -121,7 +121,7 @@
         </a>
     </div>
     <div class=" bg-gray-300 p-4 rounded drop-shadow-xl flex-wrap w-80 max-w-screen-sm">
-        <div class="w-full font-taruno text-md md:text-lg text-black text-center h-fit">Merch Variants</div>
+        <div class="w-full font-ltmuseumbold text-md md:text-lg text-black text-center h-fit">Merch Variants</div>
         <div class="flex gap-4 flex-wrap">
             @foreach ($merch->merchvariations as $variation)
                 <div class="rounded p-2 bg-gray-100 w-full h-fit">
@@ -225,7 +225,7 @@
         </a>
     </div>
     <div class="bg-gray-300 p-4 rounded drop-shadow-xl flex-wrap w-80 max-w-screen-sm">
-        <div class="w-full font-taruno text-md md:text-lg text-black text-center h-fit">Merch Links</div>
+        <div class="w-full font-ltmuseumbold text-md md:text-lg text-black text-center h-fit">Merch Links</div>
         <div class="flex gap-4 flex-wrap">
             @foreach ($merch->merchlinks as $link)
                 <div class="rounded p-2 bg-gray-100 w-full h-fit">

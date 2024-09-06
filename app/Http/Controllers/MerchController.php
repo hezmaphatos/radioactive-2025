@@ -7,6 +7,7 @@ use App\Models\Order;
 use App\Models\User;
 use App\Http\Requests\StoreMerchRequest;
 use App\Http\Requests\UpdateMerchRequest;
+use App\Mail\SendMail;
 use App\Models\Cart;
 use App\Models\MerchImage;
 use App\Models\MerchLink;
@@ -18,6 +19,7 @@ use App\Models\MerchPreorderDetail;
 use App\Models\MerchVariation;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Redis;
 use Illuminate\Support\Facades\Storage;
@@ -105,7 +107,7 @@ class MerchController extends Controller
                 ]);
             }
 
-            return Redirect::back();
+            return redirect('/cart');
         } else {
             return redirect('/login');
         }
@@ -155,7 +157,7 @@ class MerchController extends Controller
                 ]);
             }
 
-            return Redirect::back();
+            return redirect('/cart');
         } else {
             return redirect('/login');
         }
@@ -303,6 +305,36 @@ class MerchController extends Controller
 
             $order->update(['cumulative_price'=>$cumulative_price]);
 
+            $data = [
+                'subject' => '[Radioactive - Order Placed]',
+                'view' => 'mail.order-placed',
+                'receiver' => $user->name,
+                'order_id' => $order->id,
+                'total_price' => $order->cumulative_price
+            ];
+
+            try {
+                Mail::to($order->email)->send(new SendMail($data));
+                // return response()->json([
+                //     'status' => 'success',
+                //     'message' => 'Email sent successfully'
+                // ]);
+
+
+            } catch (\Throwable $th) {
+                $errorMessage = $th->getMessage(); // Get the error message
+                $errorCode = $th->getCode(); // Get the error code (if available)
+
+                // Additional handling or logging of the error information can be done here
+
+                return response()->json([
+                    'status' => 'error',
+                    'message' => 'Email failed to send',
+                    'error_message' => $errorMessage, // Return the error message in the JSON response
+                    'error_code' => $errorCode // Return the error code in the JSON response
+                ]);
+            }
+
             return redirect('/cart');
         } else {
             return redirect('/login');
@@ -358,6 +390,36 @@ class MerchController extends Controller
 
             $order->update(['cumulative_price'=>$cumulative_price]);
 
+            $data = [
+                'subject' => '[Radioactive - Preorder Placed]',
+                'view' => 'mail.preorder-placed',
+                'receiver' => $user->name,
+                'order_id' => $order->id,
+                'total_price' => $order->cumulative_price
+            ];
+
+            try {
+                Mail::to($order->email)->send(new SendMail($data));
+                // return response()->json([
+                //     'status' => 'success',
+                //     'message' => 'Email sent successfully'
+                // ]);
+
+
+            } catch (\Throwable $th) {
+                $errorMessage = $th->getMessage(); // Get the error message
+                $errorCode = $th->getCode(); // Get the error code (if available)
+
+                // Additional handling or logging of the error information can be done here
+
+                return response()->json([
+                    'status' => 'error',
+                    'message' => 'Email failed to send',
+                    'error_message' => $errorMessage, // Return the error message in the JSON response
+                    'error_code' => $errorCode // Return the error code in the JSON response
+                ]);
+            }
+
             return redirect('/cart');
         } else {
             return redirect('/login');
@@ -379,6 +441,35 @@ class MerchController extends Controller
 
         //bikin invoice
         //email approve, link ke invoice
+        $data = [
+            'subject' => '[Radioactive - Order Confirmed]',
+            'view' => 'mail.order-confirmed',
+            'receiver' => $merchOrder->user->name,
+            'order_id' => $merchOrder->id,
+            'total_price' => $merchOrder->cumulative_price
+        ];
+
+        try {
+            Mail::to($merchOrder->email)->send(new SendMail($data));
+            // return response()->json([
+            //     'status' => 'success',
+            //     'message' => 'Email sent successfully'
+            // ]);
+
+
+        } catch (\Throwable $th) {
+            $errorMessage = $th->getMessage(); // Get the error message
+            $errorCode = $th->getCode(); // Get the error code (if available)
+
+            // Additional handling or logging of the error information can be done here
+
+            return response()->json([
+                'status' => 'error',
+                'message' => 'Email failed to send',
+                'error_message' => $errorMessage, // Return the error message in the JSON response
+                'error_code' => $errorCode // Return the error code in the JSON response
+            ]);
+        }
 
         return redirect('/admin/orders/dashboard')->with('success', 'Order Approved');
     }
@@ -394,11 +485,40 @@ class MerchController extends Controller
 
         //bikin invoice
         //email approve, link ke invoice
+        $data = [
+            'subject' => '[Radioactive - Preorder Confirmed]',
+            'view' => 'mail.preorder-confirmed',
+            'receiver' => $merchPreorder->user->name,
+            'order_id' => $merchPreorder->id,
+            'total_price' => $merchPreorder->cumulative_price
+        ];
+
+        try {
+            Mail::to($merchPreorder->email)->send(new SendMail($data));
+            // return response()->json([
+            //     'status' => 'success',
+            //     'message' => 'Email sent successfully'
+            // ]);
+
+
+        } catch (\Throwable $th) {
+            $errorMessage = $th->getMessage(); // Get the error message
+            $errorCode = $th->getCode(); // Get the error code (if available)
+
+            // Additional handling or logging of the error information can be done here
+
+            return response()->json([
+                'status' => 'error',
+                'message' => 'Email failed to send',
+                'error_message' => $errorMessage, // Return the error message in the JSON response
+                'error_code' => $errorCode // Return the error code in the JSON response
+            ]);
+        }
 
         return redirect('/admin/preorders/dashboard')->with('success', 'Order Approved');
     }
 
-    public function cancel(MerchOrder $merchOrder)
+    public function cancel(MerchOrder $merchOrder, Request $request)
     {
         $merchOrder->update([
             'status' => 'Cancelled'
@@ -408,11 +528,41 @@ class MerchController extends Controller
         $name = $merchOrder->user->name;
 
         //email cancel
+        $data = [
+            'subject' => '[Radioactive - Order Cancelled]',
+            'view' => 'mail.order-cancel',
+            'receiver' => $merchOrder->user->name,
+            'order_id' => $merchOrder->id,
+            'total_price' => $merchOrder->cumulative_price,
+            'reason' => $request->reason
+        ];
+
+        try {
+            Mail::to($merchOrder->email)->send(new SendMail($data));
+            // return response()->json([
+            //     'status' => 'success',
+            //     'message' => 'Email sent successfully'
+            // ]);
+
+
+        } catch (\Throwable $th) {
+            $errorMessage = $th->getMessage(); // Get the error message
+            $errorCode = $th->getCode(); // Get the error code (if available)
+
+            // Additional handling or logging of the error information can be done here
+
+            return response()->json([
+                'status' => 'error',
+                'message' => 'Email failed to send',
+                'error_message' => $errorMessage, // Return the error message in the JSON response
+                'error_code' => $errorCode // Return the error code in the JSON response
+            ]);
+        }
 
         return redirect('/admin/orders/dashboard')->with('success', 'Order Cancelled');
     }
 
-    public function cancelPreorder(MerchPreorder $merchPreorder)
+    public function cancelPreorder(MerchPreorder $merchPreorder, Request $request)
     {
         $merchPreorder->update([
             'status' => 'Cancelled'
@@ -422,11 +572,41 @@ class MerchController extends Controller
         $name = $merchPreorder->user->name;
 
         //email cancel
+        $data = [
+            'subject' => '[Radioactive - Preorder Cancelled]',
+            'view' => 'mail.preorder-cancel',
+            'receiver' => $merchPreorder->user->name,
+            'order_id' => $merchPreorder->id,
+            'total_price' => $merchPreorder->cumulative_price,
+            'reason' => $request->reason
+        ];
+
+        try {
+            Mail::to($merchPreorder->email)->send(new SendMail($data));
+            // return response()->json([
+            //     'status' => 'success',
+            //     'message' => 'Email sent successfully'
+            // ]);
+
+
+        } catch (\Throwable $th) {
+            $errorMessage = $th->getMessage(); // Get the error message
+            $errorCode = $th->getCode(); // Get the error code (if available)
+
+            // Additional handling or logging of the error information can be done here
+
+            return response()->json([
+                'status' => 'error',
+                'message' => 'Email failed to send',
+                'error_message' => $errorMessage, // Return the error message in the JSON response
+                'error_code' => $errorCode // Return the error code in the JSON response
+            ]);
+        }
 
         return redirect('/admin/preorders/dashboard')->with('success', 'Order Cancelled');
     }
 
-    public function suspend(MerchOrder $merchOrder)
+    public function suspend(MerchOrder $merchOrder, Request $request)
     {
         $merchOrder->update([
             'status' => 'Suspended'
@@ -436,11 +616,41 @@ class MerchController extends Controller
         $name = $merchOrder->user->name;
 
         //email suspen, suruh kontak tim RA
+        $data = [
+            'subject' => '[Radioactive - Order Suspended]',
+            'view' => 'mail.order-suspend',
+            'receiver' => $merchOrder->user->name,
+            'order_id' => $merchOrder->id,
+            'total_price' => $merchOrder->cumulative_price,
+            'reason' => $request->reason
+        ];
+
+        try {
+            Mail::to($merchOrder->email)->send(new SendMail($data));
+            // return response()->json([
+            //     'status' => 'success',
+            //     'message' => 'Email sent successfully'
+            // ]);
+
+
+        } catch (\Throwable $th) {
+            $errorMessage = $th->getMessage(); // Get the error message
+            $errorCode = $th->getCode(); // Get the error code (if available)
+
+            // Additional handling or logging of the error information can be done here
+
+            return response()->json([
+                'status' => 'error',
+                'message' => 'Email failed to send',
+                'error_message' => $errorMessage, // Return the error message in the JSON response
+                'error_code' => $errorCode // Return the error code in the JSON response
+            ]);
+        }
 
         return redirect('/admin/orders/dashboard')->with('success', 'Order Suspended');
     }
 
-    public function suspendPreorder(MerchPreorder $merchPreorder)
+    public function suspendPreorder(MerchPreorder $merchPreorder, Request $request)
     {
         $merchPreorder->update([
             'status' => 'Suspended'
@@ -450,6 +660,36 @@ class MerchController extends Controller
         $name = $merchPreorder->user->name;
 
         //email suspen, suruh kontak tim RA
+        $data = [
+            'subject' => '[Radioactive - Order Suspended]',
+            'view' => 'mail.preorder-suspend',
+            'receiver' => $merchPreorder->user->name,
+            'order_id' => $merchPreorder->id,
+            'total_price' => $merchPreorder->cumulative_price,
+            'reason' => $request->reason
+        ];
+
+        try {
+            Mail::to($merchPreorder->email)->send(new SendMail($data));
+            // return response()->json([
+            //     'status' => 'success',
+            //     'message' => 'Email sent successfully'
+            // ]);
+
+
+        } catch (\Throwable $th) {
+            $errorMessage = $th->getMessage(); // Get the error message
+            $errorCode = $th->getCode(); // Get the error code (if available)
+
+            // Additional handling or logging of the error information can be done here
+
+            return response()->json([
+                'status' => 'error',
+                'message' => 'Email failed to send',
+                'error_message' => $errorMessage, // Return the error message in the JSON response
+                'error_code' => $errorCode // Return the error code in the JSON response
+            ]);
+        }
 
         return redirect('/admin/preorders/dashboard')->with('success', 'Order Suspended');
     }
@@ -464,6 +704,35 @@ class MerchController extends Controller
         $name = $merchPreorder->user->name;
 
         //email konfirmasi pesanan sudah bisa diambil
+        $data = [
+            'subject' => '[Radioactive - Preorder Confirmed]',
+            'view' => 'mail.preorder-confirmed',
+            'receiver' => $merchPreorder->user->name,
+            'order_id' => $merchPreorder->id,
+            'total_price' => $merchPreorder->cumulative_price
+        ];
+
+        try {
+            Mail::to($merchPreorder->email)->send(new SendMail($data));
+            // return response()->json([
+            //     'status' => 'success',
+            //     'message' => 'Email sent successfully'
+            // ]);
+
+
+        } catch (\Throwable $th) {
+            $errorMessage = $th->getMessage(); // Get the error message
+            $errorCode = $th->getCode(); // Get the error code (if available)
+
+            // Additional handling or logging of the error information can be done here
+
+            return response()->json([
+                'status' => 'error',
+                'message' => 'Email failed to send',
+                'error_message' => $errorMessage, // Return the error message in the JSON response
+                'error_code' => $errorCode // Return the error code in the JSON response
+            ]);
+        }
 
         return redirect('/admin/preorders/dashboard')->with('success', 'Order Suspended');
     }

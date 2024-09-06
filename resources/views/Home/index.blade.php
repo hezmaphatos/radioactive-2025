@@ -359,7 +359,7 @@
                 </div>
             </div>
 
-            <div id="popup" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden z-50"
+            <div id="popup" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden z-30"
                 onclick="closePopup()">
                 <div class="relative" onclick="event.stopPropagation();">
                     <img id="popupImage" class="w-full h-auto max-w-md md:max-w-xl rounded-lg shadow-lg">

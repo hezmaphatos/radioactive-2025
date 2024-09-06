@@ -162,7 +162,7 @@
                     <img src="/images/LOGO UMN.webp" alt="" class="h-20">
                 </div>
             </div>
-            <div class="flex ml-16 mr-4 mb-4 flex-col ">
+            <div class="flex ml-16 mr-4 mb-2 flex-col ">
                 <div class="font-thin font-ltmuseumbold text-white text-sm mr-4 mb-2 tracking-[0.1em]">CONTACT US:</div>
                 <div class="flex space-x-8 mr-4 mb-2">
                     <a href="mailto:mediarelation.radioactive@gmail.com" target="_blank"
@@ -217,7 +217,7 @@
             </div>
             <div class="">
                 <p
-                    class="pb-1 flex justify-center text-xs font-ltmuseum tracking-[0.4em] text-[#D61525] pt-2 border-t border-red-300 h-9">
+                    class="pb-1 flex justify-center text-xs font-ltmuseum tracking-[0.4em] text-[#D61525] pt-2 border-t h-9">
                     &copy;UMN RADIOACTIVE 2024</p>
             </div>
         </div>

@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Mail;
 use App\Mail\SendMail;
-use App\Models\MerchPreOrder;
+use App\Models\MerchPreorder;
 use Illuminate\Http\Request;
 
 class DashboardPreorderController extends Controller

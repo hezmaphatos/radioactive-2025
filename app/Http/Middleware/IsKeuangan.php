@@ -6,7 +6,7 @@ use Closure;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-class IsAdmin
+class IsKeuangan
 {
     /**
      * Handle an incoming request.
@@ -15,7 +15,7 @@ class IsAdmin
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if (!auth()->check() || !in_array(auth()->user()->role_id, [1, 2, 4, 6])) {
+        if (!auth()->check() || !in_array(auth()->user()->role_id, [1, 2, 6])) {
             return redirect('/login');
         }
         return $next($request);

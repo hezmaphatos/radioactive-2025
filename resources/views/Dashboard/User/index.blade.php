@@ -62,7 +62,7 @@
               <td>
                 <p class="text-black">{{ $user->role->roles }}
               </td>
-              <td class="border-b border-[#eee] py-5">
+              <td class="border-b border-[#eee] px-4 py-5">
                 <div class="flex items-center space-x-3.5">
                   <button class="hover:text-primary">
                     <a href="/dashboard/users/{{ $user->id }}/edit">

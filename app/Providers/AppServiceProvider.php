@@ -21,12 +21,20 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        Gate::define('super admin', function(User $user){
+        Gate::define('superadmin', function(User $user){
             return $user->role_id == 1;
         });
 
         Gate::define('admin', function(User $user){
-            return $user->role_id == 2;
+            return in_array($user->role_id, [1, 2]);
         });
+
+        Gate::define('acara', function(User $user){
+            return in_array($user->role_id, [1, 2, 4]);
+        });
+        
+        Gate::define('keuangan', function(User $user){
+            return in_array($user->role_id, [1, 2, 6]);
+        });        
     }
 }

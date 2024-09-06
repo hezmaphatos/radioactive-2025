@@ -107,7 +107,7 @@ class MerchController extends Controller
                 ]);
             }
 
-            return Redirect::back();
+            return redirect('/cart');
         } else {
             return redirect('/login');
         }
@@ -157,7 +157,7 @@ class MerchController extends Controller
                 ]);
             }
 
-            return Redirect::back();
+            return redirect('/cart');
         } else {
             return redirect('/login');
         }

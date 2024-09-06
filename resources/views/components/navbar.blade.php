@@ -27,52 +27,52 @@
             @if (isset($title))
                 <a id="homeItem"
                     class="menu-item font-ltmuseumbold text-white text-sm cursor-pointer 
-        {{ $title === 'Home' ? 'underline underline-offset-4 decoration-[#D61525] decoration-2' : 'no-underline hover:underline hover:underline-offset-4 hover:decoration-[#d6152581] decoration-2' }}"
+        {{ $title === 'Home' ? 'underline underline-offset-4 decoration-[#D61525] decoration-2' : 'no-underline hover:underline hover:underline-offset-4 hover:decoration-[#d6152581] hover:decoration-2' }}"
                     href="/">
                     HOME
                 </a>
                 <a id="macItem"
                     class="menu-item font-ltmuseumbold text-white text-sm cursor-pointer 
-        {{ $title === 'MAC' ? 'underline underline-offset-4 decoration-[#D61525] decoration-2' : 'no-underline hover:underline hover:underline-offset-4 hover:decoration-[#d6152581] decoration-2' }}"
+        {{ $title === 'MAC' ? 'underline underline-offset-4 decoration-[#D61525] decoration-2' : 'no-underline hover:underline hover:underline-offset-4 hover:decoration-[#d6152581] hover:decoration-2' }}"
                     href="/mac">
                     MAC
                 </a>
                 <a id="racItem"
                     class="menu-item font-ltmuseumbold text-white text-sm cursor-pointer 
-        {{ $title === 'RAC' ? 'underline underline-offset-4 decoration-[#D61525] decoration-2' : 'no-underline hover:underline hover:underline-offset-4 hover:decoration-[#d6152581] decoration-2' }}"
+        {{ $title === 'RAC' ? 'underline underline-offset-4 decoration-[#D61525] decoration-2' : 'no-underline hover:underline hover:underline-offset-4 hover:decoration-[#d6152581] hover:decoration-2' }}"
                     href="/rac">
                     RAC
                 </a>
                 <a id="closingNightItem"
                     class="menu-item font-ltmuseumbold text-white text-sm cursor-pointer 
-        {{ $title === 'closing-night' ? 'underline underline-offset-4 decoration-[#D61525] decoration-2' : 'no-underline hover:underline hover:underline-offset-4 hover:decoration-[#d6152581] decoration-2' }}"
+        {{ $title === 'closing-night' ? 'underline underline-offset-4 decoration-[#D61525] decoration-2' : 'no-underline hover:underline hover:underline-offset-4 hover:decoration-[#d6152581] hover:decoration-2' }}"
                     href="/closing-night">
                     CLOSING NIGHT
                 </a>
                 {{-- <a id="merchItem"
                     class="menu-item font-ltmuseumbold text-white text-sm cursor-pointer 
-        {{ $title === 'merch' ? 'underline underline-offset-4 decoration-[#D61525] decoration-2' : 'no-underline hover:underline hover:underline-offset-4 hover:decoration-[#d6152581] decoration-2' }}"
+        {{ $title === 'merch' ? 'underline underline-offset-4 decoration-[#D61525] decoration-2' : 'no-underline hover:underline hover:underline-offset-4 hover:decoration-[#d6152581] hover:decoration-2' }}"
                     href="/merch">
                     MERCHANDISE
                 </a> --}}
             @else
                 <a id="homeItem"
-                    class="menu-item font-ltmuseumbold text-white text-sm cursor-pointer no-underline hover:underline hover:underline-offset-4 hover:decoration-[#d6152581] decoration-2"
+                    class="menu-item font-ltmuseumbold text-white text-sm cursor-pointer no-underline hover:underline hover:underline-offset-4 hover:decoration-[#d6152581] hover:decoration-2"
                     href="/">
                     HOME
                 </a>
                 <a id="macItem"
-                    class="menu-item font-ltmuseumbold text-white text-sm cursor-pointer no-underline hover:underline hover:underline-offset-4 hover:decoration-[#d6152581] decoration-2"
+                    class="menu-item font-ltmuseumbold text-white text-sm cursor-pointer no-underline hover:underline hover:underline-offset-4 hover:decoration-[#d6152581] hover:decoration-2"
                     href="/mac">
                     MAC
                 </a>
                 <a id="racItem"
-                    class="menu-item font-ltmuseumbold text-white text-sm cursor-pointer no-underline hover:underline hover:underline-offset-4 hover:decoration-[#d6152581] decoration-2"
+                    class="menu-item font-ltmuseumbold text-white text-sm cursor-pointer no-underline hover:underline hover:underline-offset-4 hover:decoration-[#d6152581] hover:decoration-2"
                     href="/rac">
                     RAC
                 </a>
                 <a id="closingNightItem"
-                    class="menu-item font-ltmuseumbold text-white text-sm cursor-pointer no-underline hover:underline hover:underline-offset-4 hover:decoration-[#d6152581] decoration-2"
+                    class="menu-item font-ltmuseumbold text-white text-sm cursor-pointer no-underline hover:underline hover:underline-offset-4 hover:decoration-[#d6152581] hover:decoration-2"
                     href="/closing-night">
                     CLOSING NIGHT
                 </a>

@@ -49,7 +49,7 @@
             </div>
         </div>
 
-        <div class=" flex justify-between items-center border-t border-red-300">
+        <div class=" flex justify-between items-center border-t">
             <div class="ml-6">
                 <img src="/images/LOGO RADIOACTIVE 2024.webp" alt="" class="w-28">
             </div>

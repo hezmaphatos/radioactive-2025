@@ -3,20 +3,19 @@
 @section('container')
 <body class="text-white">
 
-
 <section class="flex min-h-screen flex-col justify-center align-middle items-center text-center px-4 font-['Brody_Rawk',sans-serif]">
-    <h1 class="text-[24px] md:text-[48px] font-bold mb-8 text-[#d61525] mt-20" style="letter-spacing: 5px;" data-aos="fade-up">Mini Announcing Challenge</h1>
+    <h1 class="text-[24px] md:text-[48px] font-bold mb-8 text-[#d61525] xl:mt-50 mt-18" style="letter-spacing: 5px;" data-aos="fade-up">Mini Announcing Challenge</h1>
     <p class="md:text-lg max-w-4xl text-base mb-8 font-ltmuseumreg" data-aos="fade-up" data-aos-delay="100">
         Mini Annoucing Challenge merupakan salah satu rangkaian acara RADIOACTIVE 2024. Mini Annoucing Challenge bertujuan untuk mengasah skill para peserta dalam bidang siaran. Dalam challenge ini, peserta tidak dibatasi untuk berkreasi. Teknis dari Mini Annoucing Challenge ini adalah peserta dapat siaran menggunakan tema dan 3 kata yang sudah dipilih secara acak. Disisi lain, challenge ini juga dapat meningkatkan awareness untuk rangkaian acara berikutnya.
     </p>
-    <nav class="flex flex-col sm:flex-row justify-between w-full max-w-2xl mb-8 text-[15px] sm:text-[20px] overflow-x-hidden">
+    <nav class="flex flex-col-2 sm:flex-row justify-center w-full max-w-2xl mb-8 text-[15px] sm:text-[20px] overflow-x-hidden">
         <a class="no-underline py-4 px-6 sm:px-2" onclick="scrollToDownload()">
             <button class="text-white border-white w-full sm:w-60 h-12 sm:h-16 p-2 sm:p-4 text-2xs sm:text-sm font-bold border-2 hover:bg-[#0F0F0F] hover:text-[#FA0202]">
                 HANDBOOK & PENDAFTARAN
             </button>
         </a>
-        <a class="no-underline py-4 px-6 sm:px-2 mt-2 sm:mt-0" onclick="scrollToTimeline()">
-            <button class="text-white tracking-[1px] border-white w-full sm:w-60 h-12 sm:h-16 p-2 sm:p-4 text-2xs sm:text-sm font-bold border-2 hover:bg-[#0F0F0F] hover:text-[#FA0202]">
+        <a class="no-underline py-4 px-6 sm:px-2" onclick="scrollToTimeline()">
+            <button class="text-white  border-white w-full sm:w-60 h-12 sm:h-16 p-2 sm:p-4 text-2xs sm:text-sm font-bold border-2 hover:bg-[#0F0F0F] hover:text-[#FA0202]">
                 TIMELINE
             </button>
         </a>

@@ -86,7 +86,7 @@
                     <div id="checkpoint" class="border-2 border-white m-s:translate-x-[19em] rounded-2xl p-6 mb-4 mt-4">
                         <div>
                             <h2 class="mb-2 text-[#D61525]">2 - 9 September 2024 :<a href="/mac"
-                                    class="no-underline text-white"> Mini Annoucing Challenge</a></h2>
+                                    class="no-underline text-white hover:opacity-50"> Mini Annoucing Challenge</a></h2>
                             <p class="leading-[27px] text-gray-300">
                                 Mini Annoucing Challenge merupakan salah satu rangkaian acara RADIOACTIVE 2024. Mini
                                 Annoucing Challenge bertujuan untuk mengasah skill para peserta dalam bidang siaran. Dalam
@@ -100,7 +100,7 @@
                     <div id="checkpoint" class="border-2 border-white m-s:-translate-x-[19em] rounded-2xl p-6 mb-4 mt-4">
                         <div>
                             <h2 class="mb-2 text-[#D61525]">2 September 2024 - 12 Oktober 2024 : <a href="/rac"
-                                    class="no-underline text-white">Radio Announcing Competition</a></h2>
+                                    class="no-underline text-white hover:opacity-50">Radio Announcing Competition</a></h2>
                             <p class="leading-[27px] text-gray-300">
                                 Radio Announcing Competition merupakan rangkaian acara utama RADIOACTIVE. Lomba ini merupa
                                 kan ajang untuk siswa SMA dan mahasiswa se-Jabodetabek untuk memperluas wawasan dan mengasah
@@ -115,7 +115,7 @@
                     <div id="checkpoint" class="border-2 border-white m-s:translate-x-[19em] rounded-2xl p-6 mb-4 mt-4">
                         <div>
                             <h2 class="mb-2 text-[#D61525]">2 November 2024 : <a href="/closing-night"
-                                    class="no-underline text-white">CLOSING NIGHT</a></h2>
+                                    class="no-underline text-white hover:opacity-50">CLOSING NIGHT</a></h2>
                             <p class="leading-[27px] text-gray-300">
                                 Closing Night merupakan puncak dan penutup dari rangkaian acara RADIOACTIVE 2024 yang akan
                                 dilaksanakan secara offline. Kegiatan ini bertujuan untuk meningkatkan awareness dan
@@ -292,13 +292,13 @@
                 <h2 class="text-2xl md:text-4xl font-bold mb-4 md:mb-6 font-ltmuseumbold text-white">Flashback to last year's thrills!</h2>
                 <div class="flex flex-wrap items-center align-middle gap-4">
                     <div class=""><a data-filter="all"
-                            class="filter-link no-underline font-ltmuseumbold text-[#d61525] hover:cursor-pointer">ALL</a></div>
+                            class="filter-link no-underline font-ltmuseumbold text-[#d61525] hover:cursor-pointer hover:opacity-50">ALL</a></div>
                     <div class=""><a data-filter="voc"
-                            class="filter-link no-underline font-ltmuseumbold text-[#d61525] hover:cursor-pointer">VOC</a></div>
+                            class="filter-link no-underline font-ltmuseumbold text-[#d61525] hover:cursor-pointer hover:opacity-50">VOC</a></div>
                     <div class=""><a data-filter="rac"
-                            class="filter-link no-underline font-ltmuseumbold text-[#d61525] hover:cursor-pointer">RAC</a></div>
+                            class="filter-link no-underline font-ltmuseumbold text-[#d61525] hover:cursor-pointer hover:opacity-50">RAC</a></div>
                     <div class=""><a data-filter="closing-night"
-                            class="filter-link no-underline font-ltmuseumbold text-[#d61525] hover:cursor-pointer">CLOSING NIGHT</a></div>
+                            class="filter-link no-underline font-ltmuseumbold text-[#d61525] hover:cursor-pointer hover:opacity-50">CLOSING NIGHT</a></div>
                 </div>
             </div>
 

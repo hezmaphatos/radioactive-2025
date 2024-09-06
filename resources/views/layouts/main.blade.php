@@ -50,7 +50,7 @@
                 });
             });
         </script>
-        <script>
+<script>
     window.addEventListener('scroll', function() {
         var svg = document.querySelector('#fill');
         
@@ -101,7 +101,7 @@
             window.onload = function() {
     window.scrollTo({
         top: 0,
-        behavior: "smooth" // Optional: Adds smooth scrolling
+        behavior: "smooth"
     });
 };
         </script>

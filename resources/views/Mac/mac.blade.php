@@ -8,7 +8,7 @@
     <p class="md:text-lg max-w-4xl text-base mb-8 font-ltmuseumreg" data-aos="fade-up" data-aos-delay="100">
         Mini Annoucing Challenge merupakan salah satu rangkaian acara RADIOACTIVE 2024. Mini Annoucing Challenge bertujuan untuk mengasah skill para peserta dalam bidang siaran. Dalam challenge ini, peserta tidak dibatasi untuk berkreasi. Teknis dari Mini Annoucing Challenge ini adalah peserta dapat siaran menggunakan tema dan 3 kata yang sudah dipilih secara acak. Disisi lain, challenge ini juga dapat meningkatkan awareness untuk rangkaian acara berikutnya.
     </p>
-    <nav class="flex flex-col-2 sm:flex-row justify-center w-full max-w-2xl mb-8 text-[15px] sm:text-[20px] overflow-x-hidden">
+    <nav class="flex flex-col sm:flex-row justify-center w-full max-w-2xl mb-8 text-[15px] sm:text-[20px] overflow-x-hidden">
         <a class="no-underline py-4 px-6 sm:px-2" onclick="scrollToDownload()">
             <button class="text-white border-white w-full sm:w-60 h-12 sm:h-16 p-2 sm:p-4 text-2xs sm:text-sm font-bold border-2 hover:bg-[#0F0F0F] hover:text-[#FA0202]">
                 HANDBOOK & PENDAFTARAN
@@ -21,7 +21,7 @@
         </a>
     </nav>
     
-    <p class="mb-4 mt-auto animate-bounce">Scroll Down</p>
+    <p class="mb-4 animate-bounce">Scroll Down</p>
     <svg class="w-6 h-20 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-label="Scroll down icon">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
     </svg>

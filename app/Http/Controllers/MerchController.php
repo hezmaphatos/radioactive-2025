@@ -830,7 +830,6 @@ class MerchController extends Controller
             'description' => 'required',
             'image' => 'required|image|file|max:10240',
             'price' => 'required',
-            'stock' => 'required',
         ]);
 
         if ($request->file('image')) {
@@ -952,7 +951,6 @@ class MerchController extends Controller
             'name' => 'required',
             'description' => 'required',
             'price' => 'required',
-            'stock' => 'required',
         ]);
 
         if ($request->file('image')) {

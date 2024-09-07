@@ -15,9 +15,13 @@ use App\Http\Controllers\RacController;
 use App\Http\Controllers\DashboardUserController;
 use App\Http\Controllers\DashboardMACController;
 use App\Http\Controllers\DashboardRACController;
+use App\Http\Controllers\DashboardMerchController;
+use App\Http\Controllers\DashboardOrderController;
+use App\Http\Controllers\DashboardPreorderController;
 use App\Http\Controllers\MerchOrderController;
 use App\Http\Controllers\CartController;
 use App\Models\User;
+use App\Models\Merch;
 use Illuminate\Support\Facades\Artisan;
 
 /*
@@ -121,7 +125,7 @@ Route::controller(RacController::class)->group(function(){
 });
 
 Route::controller(MerchController::class)->group(function(){
-    Route::get('/merch/admin', 'admin');
+    Route::get('/merch/admin', 'admin')->middleware('admin');
 
     Route::prefix('/merch')->group(function(){
         Route::get('/checkoutdetails', 'checkout')->middleware('auth');
@@ -131,8 +135,8 @@ Route::controller(MerchController::class)->group(function(){
         Route::get('/orders', 'userDashboard')->middleware('auth');
         Route::get('/order/{merchOrder:id}', 'showOrder')->middleware('auth');
         Route::get('/preorder/{merchPreorder:id}', 'showPreorder')->middleware('auth');
-        Route::get('/{merch:id}', 'show');
-        Route::get('/', 'index');
+        Route::get('/{merch:id}', 'show')->middleware('auth');
+        Route::get('/', 'index')->middleware('auth');
     });
     
     Route::get('/cart', 'cart')->middleware('auth');
@@ -143,23 +147,23 @@ Route::controller(MerchController::class)->group(function(){
     Route::put('/cart/{cart:id}/updateqty', 'updateCartQuantity')->middleware('auth');
     Route::put('/cart/{merchPreorderCart:id}/updatepreorderqty', 'updatePreorderCartQuantity')->middleware('auth');
 
-    Route::prefix('/admin/orders')->group(function(){
-        Route::get('/dashboard', 'ordersDashboard')->middleware('auth');
-        Route::put('/{merchOrder:id}/approve', 'approval')->middleware('auth');
-        Route::put('/{merchOrder:id}/cancel', 'cancel')->middleware('auth');
-        Route::put('/{merchOrder:id}/suspend', 'suspend')->middleware('auth');
-        Route::put('/{merchOrder:id}/finish', 'finish')->middleware('auth');
+    Route::prefix('/admin/orders')->middleware('admin')->group(function(){
+        Route::get('/dashboard', 'ordersDashboard');
+        Route::put('/{merchOrder:id}/approve', 'approval');
+        Route::put('/{merchOrder:id}/cancel', 'cancel');
+        Route::put('/{merchOrder:id}/suspend', 'suspend');
+        Route::put('/{merchOrder:id}/finish', 'finish');
     });
-    Route::prefix('/admin/preorders')->group(function(){
-        Route::get('/dashboard', 'preordersDashboard')->middleware('auth');
-        Route::put('/{merchPreorder:id}/approvepreorder', 'approvalPreorder')->middleware('auth');
-        Route::put('/{merchPreorder:id}/cancelpreorder', 'cancelPreorder')->middleware('auth');
-        Route::put('/{merchPreorder:id}/suspendpreorder', 'suspendPreorder')->middleware('auth');
-        Route::put('/{merchPreorder:id}/confirmpreorder', 'confirmPreorder')->middleware('auth');
-        Route::put('/{merchPreorder:id}/finishpreorder', 'finishPreorder')->middleware('auth');
+    Route::prefix('/admin/preorders')->middleware('admin')->group(function(){
+        Route::get('/dashboard', 'preordersDashboard');
+        Route::put('/{merchPreorder:id}/approvepreorder', 'approvalPreorder');
+        Route::put('/{merchPreorder:id}/cancelpreorder', 'cancelPreorder');
+        Route::put('/{merchPreorder:id}/suspendpreorder', 'suspendPreorder');
+        Route::put('/{merchPreorder:id}/confirmpreorder', 'confirmPreorder');
+        Route::put('/{merchPreorder:id}/finishpreorder', 'finishPreorder');
     });
 
-    Route::prefix('/merch/admin')->group(function(){
+    Route::prefix('/merch/admin')->middleware('admin')->group(function(){
         Route::get('/new', 'create');
         Route::post('/store', 'store');
         Route::get('/{merch:id}/addimage', 'addImage');
@@ -186,13 +190,52 @@ Route::get('/linkstorage', function () {
 
 Route::get('/dashboard', function(){
     return view('Dashboard.index', [
-        'users' => User::all()
+        'users' => User::all(),
+        'merches' => Merch::all()
     ]);
 })->middleware('admin');
 
 Route::resource('/dashboard/users', DashboardUserController::class)->middleware('superadmin');
 // Route::resource('/dashboard/macs', DashboardMACController::class)->middleware('admin');
 Route::resource('/dashboard/racs', DashboardRACController::class)->middleware('acara');
+Route::resource('/dashboard/merches', DashboardMerchController::class)->middleware('keuangan');
+Route::controller(DashboardMerchController::class)->group(function () {
+    Route::prefix('/dashboard/merches')->group(function(){
+        Route::get('/{merch:id}/addimage', 'addImage');
+        Route::get('/{merch:id}/edit', 'edit');
+        Route::get('/{merch:id}/addimage', 'addImage');
+        Route::get('/{merch:id}/addvariation', 'addVariation');
+        Route::post('/{merch:id}/storeimage', 'storeImage');
+        Route::post('/{merch:id}/storevariation', 'storeVariation');
+        Route::put('/{merchvariation:id}/updatevariation', 'updateVariation');
+        Route::delete('/{merchvariation:id}/delete', 'deleteVariation');
+        Route::delete('/image/{merchImage:id}/delete', 'deleteImage');
+        Route::delete('/image/{merch:id}/delete', 'destroy');
+        Route::get('/{merch:id}/addlink', 'addLink');
+        Route::post('/{merch:id}/storelink', 'storeLink');
+        Route::put('/{id}/updatelink', 'updateLink');
+        Route::delete('/{id}/deletelink', 'deleteLink');
+    });
+});
+Route::resource('/dashboard/orders', DashboardOrderController::class)->middleware('keuangan');
+Route::controller(DashboardOrderController::class)->group(function () {
+    Route::prefix('/dashboard/orders')->group(function(){
+        Route::put('/{merchOrder:id}/approve', 'approval');
+        Route::put('/{merchOrder:id}/cancel', 'cancel');
+        Route::put('/{merchOrder:id}/suspend', 'suspend');
+        Route::put('/{merchOrder:id}/finish', 'finish');
+    });
+});
+Route::resource('/dashboard/preorders', DashboardPreorderController::class)->middleware('keuangan');
+Route::controller(DashboardPreorderController::class)->group(function () {
+    Route::prefix('/dashboard/orders')->group(function(){
+        Route::put('/{merchPreorder:id}/approvepreorder', 'approvalPreorder');
+        Route::put('/{merchPreorder:id}/cancelpreorder', 'cancelPreorder');
+        Route::put('/{merchPreorder:id}/suspendpreorder', 'suspendPreorder');
+        Route::put('/{merchPreorder:id}/confirmpreorder', 'confirmPreorder');
+        Route::put('/{merchPreorder:id}/finishpreorder', 'finishPreorder');
+    });
+});
 
 // Route::controller(MerchOrderController::class)->group(function () {
 //     Route::get('/order', 'order');

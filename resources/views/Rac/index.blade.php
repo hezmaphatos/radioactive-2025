@@ -18,7 +18,7 @@
     <button class="flex-1 bg-black border border-white text-white px-4 py-2 hover:bg-white transition duration-300 hover:text-black tracking-[1px]" onclick="scrollToTimeline()">TIMELINE</button>  
 </nav>
         <p class="mb-4 mt-auto animate-bounce">Scroll Down</p>
-        <svg class="w-6 h-20 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-label="Scroll down icon">
+        <svg class="w-6 h-20 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-label="Scroll down icon" onClick="scrollDown()">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
         </svg>
     </section>
@@ -47,22 +47,27 @@
         </div>
     </section>
     
-{{-- 
-    <section class="min-h-screen items-center justify-between max-w-5xl mx-auto mt-40 p-4 font-['LT_Museum',sans-serif]">
+    <section class="min-h-screen items-center justify-between max-w-5xl mx-auto mt-20 sm:mt-40 p-4 font-['LT_Museum',sans-serif]">
         <div id="title" class="text-center my-8 px-4">
             <h1 class="m-[0.3em] text-2xl sm:text-3xl md:text-4xl italic">THE JUDGES</h1>
         </div>
-        <div id="judges" class="flex flex-col sm:flex-row justify-center gap-6 mt-10">
-            <div id="judge1" class="p-8 text-center" data-aos="fade-up" data-aos-delay="100">
-                <img src="{{ asset('images/gojo satoru.webp') }}" class="w-28 h-28 sm:w-32 sm:h-32 mx-auto mb-4 rounded">
-                <h2 class="mb-2">Judge 1</h2>
+        <div id="judges" class="flex flex-col sm:flex-row justify-center gap-6 mt-20 sm:mt-40">
+            <div id="judge1" class="p-4 text-center" data-aos="fade-up" data-aos-delay="100">
+                <div class="rotating-border w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 mx-auto mb-4 rounded-full relative overflow-hidden">
+                    <div class="absolute inset-0.5 bg-black rounded-full z-10"></div>
+                    <img src="{{ asset('images/reza_bima.JPG') }}" class="absolute inset-0.5 w-[calc(100%-4px)] h-[calc(100%-4px)] object-cover object-center rounded-full z-20" alt="Reza Bima">
+                </div>
+                <h2 class="mb-2 text-lg sm:text-xl">Reza Bima</h2>
             </div>
-            <div id="judge2" class="p-8 text-center" data-aos="fade-up" data-aos-delay="200">
-                <img src="{{ asset('images/tony-stark.png') }}" class="w-28 h-28 sm:w-32 sm:h-32 mx-auto mb-4 rounded">
-                <h2 class="mb-2">Judge 2</h2>
+            <div id="judge2" class="p-4 text-center" data-aos="fade-up" data-aos-delay="200">
+                <div class="rotating-border w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 mx-auto mb-4 rounded-full relative overflow-hidden">
+                    <div class="absolute inset-0.5 bg-black rounded-full z-10"></div>
+                    <img src="{{ asset('images/dina_janidya.png') }}" class="absolute inset-0.5 w-[calc(100%-4px)] h-[calc(100%-4px)] object-cover object-center rounded-full z-20" alt="Dina Janidya">
+                </div>
+                <h2 class="mb-2 text-lg sm:text-xl">Dina Janidya</h2>
             </div>
         </div>
-    </section> --}}
+    </section>
     
     <section class="max-w font-ltmuseumreg p-4" id="timeline">
         <div id="title" class="text-center my-8 px-4">
@@ -101,7 +106,7 @@
     </section>
 
     <section id="download" class="max-w font-brodyrawk">
-        <div class="flex flex-col md:flex-row justify-center sm:py-16 items-center mt-15" data-aos="fade-up">
+        <div class="flex flex-col md:flex-row justify-center sm:py-16 items-center mt-35" data-aos="fade-up">
             <div id="button1" class="my-3">
                 <a href="https://drive.google.com/file/d/1Z_lqcidtYFlSIUy-Qr1vr4P1LsmOQjeb/view?usp=drivesdk"
                     class="text-white border-white w-60 md:h-16 p-4 text-sm tracking-[1px] md:text-sm font-bold border-2 hover:bg-[#0F0F0F] hover:text-[#FA0202] no-underline flex items-center justify-center"
@@ -119,6 +124,39 @@
             
         </div>
     </section>
+    <style>
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    
+        .rotating-border::before {
+            content: '';
+            position: absolute;
+            z-index: 5;
+            left: -50%;
+            top: -50%;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(
+                #FF0000 0deg,
+                transparent 40deg,
+                transparent 60deg,
+                #FF0000 90deg,
+                #FF0000 180deg,
+                transparent 220deg,
+                transparent 240deg,
+                #FF0000 270deg,
+                #FF0000 360deg
+            );
+            animation: rotate 4s linear infinite;
+        }
+    </style>
+    
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
@@ -152,6 +190,19 @@
             handbookSection.scrollIntoView({ behavior: 'smooth' });
         }
     </script>
+    <script>
+        function scrollDown() {
+            const nextSection = document.querySelector('section:nth-of-type(2)');
+            if (nextSection) {
+                nextSection.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                window.scrollTo({
+                    top: window.innerHeight,
+                    behavior: 'smooth'
+                });
+            }
+        }
+        </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 </body>
 @endsection

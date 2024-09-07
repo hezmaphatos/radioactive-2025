@@ -1,7 +1,7 @@
 @extends('Dashboard.layouts.main')
 
 @section('container')
-<h2 class="text-title-md2 font-bold text-black dark:text-white">
+<h2 class="text-title-md2 font-bold text-black">
   Dashboard Home
 </h2>
       <div class="mx-auto max-w-screen-2xl p-4 md:p-6 2xl:p-10">
@@ -49,13 +49,13 @@
 
                             <!-- Card Item Start -->
           <div
-          class="rounded-sm border border-stroke bg-white px-7.5 py-6 shadow-default dark:border-strokedark dark:bg-boxdark"
+          class="rounded-sm border border-stroke bg-white px-7.5 py-6 shadow-default"
         >
           <div
-            class="flex h-11.5 w-11.5 items-center justify-center rounded-full bg-meta-2 dark:bg-meta-4"
+            class="flex h-11.5 w-11.5 items-center justify-center rounded-full bg-meta-2"
           >
             <svg
-              class="fill-primary dark:fill-white"
+              class="fill-primary"
               width="22"
               height="22"
               viewBox="0 0 22 22"
@@ -76,7 +76,7 @@
           <div class="mt-4 flex items-end justify-between">
             <div>
               <h4
-                class="text-title-md font-bold text-black dark:text-white"
+                class="text-title-md font-bold text-black"
               >
               {{ $merches-> count()}}
               </h4>

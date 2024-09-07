@@ -49,12 +49,12 @@
                     href="/closing-night">
                     CLOSING NIGHT
                 </a>
-                {{-- <a id="merchItem"
+                <a id="merchItem"
                     class="menu-item font-ltmuseumbold text-white text-sm cursor-pointer 
         {{ $title === 'merch' ? 'underline underline-offset-4 decoration-[#D61525] decoration-2' : 'no-underline hover:underline hover:underline-offset-4 hover:decoration-[#d6152581] hover:decoration-2' }}"
                     href="/merch">
                     MERCHANDISE
-                </a> --}}
+                </a>
             @else
                 <a id="homeItem"
                     class="menu-item font-ltmuseumbold text-white text-sm cursor-pointer no-underline hover:underline hover:underline-offset-4 hover:decoration-[#d6152581] hover:decoration-2"
@@ -76,11 +76,11 @@
                     href="/closing-night">
                     CLOSING NIGHT
                 </a>
-                {{-- <a id="merchItem"
-                    class="menu-item font-ltmuseumbold text-white text-sm cursor-pointer no-underline hover:underline hover:underline-offset-4 hover:decoration-[#d6152581] decoration-2"
+                <a id="merchItem"
+                    class="menu-item font-ltmuseumbold text-white text-sm cursor-pointer no-underline hover:underline hover:underline-offset-4 hover:decoration-[#d6152581] decoration-2 hover:decoration-2"
                     href="/merch">
                     MERCHANDISE
-                </a> --}}
+                </a>
             @endif
 
             <div class="absolute right-2">
@@ -126,9 +126,9 @@
                         <a class="font-ltmuseumbold text-white text-sm tracking-wide cursor-pointer 
                     {{ $title === 'closing-night' ? 'underline underline-offset-4  decoration-black' : 'no-underline hover:underline hover:underline-offset-4  hover:decoration-black' }} active:decoration-[#0000002d]"
                             href="/closing-night">CLOSING NIGHT</a>
-                        {{-- <a class="font-ltmuseumbold text-white text-sm tracking-wide cursor-pointer 
+                        <a class="font-ltmuseumbold text-white text-sm tracking-wide cursor-pointer 
                     {{ $title === 'merch' ? 'underline underline-offset-4  decoration-black' : 'no-underline hover:underline hover:underline-offset-4  hover:decoration-black' }} active:decoration-[#0000002d]"
-                            href="/merch">MERCHANDISE</a> --}}
+                            href="/merch">MERCHANDISE</a>
                         @auth
                             <a class="font-ltmuseumbold text-white text-sm tracking-wide cursor-pointer 
                     {{ $title === 'logout' ? 'underline underline-offset-4  decoration-black' : 'no-underline hover:underline hover:underline-offset-4  hover:decoration-black' }} active:decoration-[#0000002d]"
@@ -151,8 +151,8 @@
                             href="/rac">RAC</a>
                         <a class="font-ltmuseumbold text-white text-sm tracking-wide cursor-pointer no-underline hover:underline hover:underline-offset-4  hover:decoration-black active:decoration-[#0000002d]"
                             href="/closing-night">CLOSING NIGHT</a>
-                        {{-- <a class="font-ltmuseumbold text-white text-sm tracking-wide cursor-pointer no-underline hover:underline hover:underline-offset-4  hover:decoration-black active:decoration-[#0000002d]"
-                            href="/merch">MERCHANDISE</a> --}}
+                        <a class="font-ltmuseumbold text-white text-sm tracking-wide cursor-pointer no-underline hover:underline hover:underline-offset-4  hover:decoration-black active:decoration-[#0000002d]"
+                            href="/merch">MERCHANDISE</a>
                         @auth
                             <a class="font-ltmuseumbold text-white text-sm tracking-wide cursor-pointer no-underline hover:underline hover:underline-offset-4  hover:decoration-black active:decoration-[#0000002d]"
                                 href="/logout">LOG OUT</a>

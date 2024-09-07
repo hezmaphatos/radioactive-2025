@@ -17,7 +17,7 @@
 <body class="min-h-screen overflow-scroll bg-white text-black">
     <div class="container w-full mx-auto px-2">
         <div class="p-4 mt-6 lg:mt-0 rounded shadow bg-white">
-            <h1 class="font-taruno">Orders</h1>
+            <h1 class="font-taruno">Preorders</h1>
             @if (session()->has('success'))
                 <div class="text-sm text-green-500" role="alert">{{ session('success') }}</div>
             @endif
@@ -42,7 +42,7 @@
                         <td>{{ $order->id }}</td>
                         <td>{{ $order->user->name }}</td>
                         <td>{{ $order->email }}</td>
-                        <td>{{ $order->whatsapp }}</td>
+                        <td>{{ $order->phone }}</td>
                         <td>{{ $order->line }}</td>
                         <td>
                             @foreach ($order->preorderDetails as $orderDetail)

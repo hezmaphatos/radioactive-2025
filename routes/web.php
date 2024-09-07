@@ -135,8 +135,8 @@ Route::controller(MerchController::class)->group(function(){
         Route::get('/orders', 'userDashboard')->middleware('auth');
         Route::get('/order/{merchOrder:id}', 'showOrder')->middleware('auth');
         Route::get('/preorder/{merchPreorder:id}', 'showPreorder')->middleware('auth');
-        Route::get('/{merch:id}', 'show')->middleware('auth');
-        Route::get('/', 'index')->middleware('auth');
+        Route::get('/{merch:id}', 'show');
+        Route::get('/', 'index');
     });
     
     Route::get('/cart', 'cart')->middleware('auth');

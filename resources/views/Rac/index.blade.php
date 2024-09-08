@@ -23,7 +23,7 @@
         </svg>
     </section>
 
-    <section id="desc" class="min-h-screen flex flex-col md:flex-row items-center justify-center font-['Brody_Rawk',sans-serif] relative bg-black">
+    <section id="desc" class="flex flex-col md:flex-row items-center justify-center font-['Brody_Rawk',sans-serif] relative bg-black">
         <div class="w-full md:w-1/2 h-1/2 md:h-full relative">
             <img src="{{ asset('images/IGGY BINGUNG.webp') }}" class="w-full h-full object-cover opacity-100 bg-gradient-to-b from-transparent to-[#FA0202]" alt="IGGY BINGUNG">
             <div class="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent"></div>
@@ -47,22 +47,22 @@
         </div>
     </section>
     
-    <section class="min-h-screen items-center justify-between max-w-5xl mx-auto mt-20 sm:mt-40 p-4 font-['LT_Museum',sans-serif]">
+    <section class="items-center justify-between max-w-5xl mx-auto mt-10 p-4 font-ltmuseum">
         <div id="title" class="text-center my-8 px-4">
-            <h1 class="m-[0.3em] text-2xl sm:text-3xl md:text-4xl italic">THE JUDGES</h1>
+            <h1 class="m-[0.3em] text-2xl sm:text-3xl md:text-4xl italic font-brodyrawk tracking-[4px]">THE JUDGES</h1>
         </div>
-        <div id="judges" class="flex flex-col sm:flex-row justify-center gap-6 mt-20 sm:mt-40">
+        <div id="judges" class="flex flex-col sm:flex-row justify-center gap-6 ">
             <div id="judge1" class="p-4 text-center" data-aos="fade-up" data-aos-delay="100">
                 <div class="rotating-border w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 mx-auto mb-4 rounded-full relative overflow-hidden">
                     <div class="absolute inset-0.5 bg-black rounded-full z-10"></div>
-                    <img src="{{ asset('images/reza_bima.JPG') }}" class="absolute inset-0.5 w-[calc(100%-4px)] h-[calc(100%-4px)] object-cover object-center rounded-full z-20" alt="Reza Bima">
+                    <img src="{{ asset('images/reza_bima.webp') }}" class="absolute inset-0.5 w-[calc(100%-4px)] h-[calc(100%-4px)] object-cover object-center rounded-full z-20" alt="Reza Bima">
                 </div>
                 <h2 class="mb-2 text-lg sm:text-xl">Reza Bima</h2>
             </div>
             <div id="judge2" class="p-4 text-center" data-aos="fade-up" data-aos-delay="200">
                 <div class="rotating-border w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 mx-auto mb-4 rounded-full relative overflow-hidden">
                     <div class="absolute inset-0.5 bg-black rounded-full z-10"></div>
-                    <img src="{{ asset('images/dina_janidya.png') }}" class="absolute inset-0.5 w-[calc(100%-4px)] h-[calc(100%-4px)] object-cover object-center rounded-full z-20" alt="Dina Janidya">
+                    <img src="{{ asset('images/dina_janidya.webp') }}" class="absolute inset-0.5 w-[calc(100%-4px)] h-[calc(100%-4px)] object-cover object-center rounded-full z-20" alt="Dina Janidya">
                 </div>
                 <h2 class="mb-2 text-lg sm:text-xl">Dina Janidya</h2>
             </div>

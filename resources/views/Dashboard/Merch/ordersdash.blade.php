@@ -7,7 +7,7 @@
 <head>
     <title>Dashboard</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    @vite('resources/css/app.css')
+    @vite('resources/css/dashboard.css')
     <!--Regular Datatables CSS-->
     <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet">
     <!--Responsive Extension Datatables CSS-->

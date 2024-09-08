@@ -72,10 +72,10 @@
                         class="text-sm font-ltmuseumbold text-white underline underline-offset-8 decoration-[#D61525] cursor-pointer {{ $title === 'closing-night' ? 'underline underline-offset-8 decoration-[#D61525]' : 'no-underline hover:underline hover:underline-offset-8 hover:decoration-[#D61525] cursor-pointer' }}">
                         CLOSING NIGHT
                     </a>
-                    {{-- <a href="/merch"
+                    <a href="/merch"
                         class="text-sm font-ltmuseumbold text-white underline underline-offset-8 decoration-[#D61525] cursor-pointer {{ $title === 'merch' ? 'underline underline-offset-8 decoration-[#D61525]' : 'no-underline hover:underline hover:underline-offset-8 hover:decoration-[#D61525] cursor-pointer' }}">
                         MERCHANDISE
-                    </a> --}}
+                    </a>
                 @else
                     <a href="/"
                         class="text-sm font-ltmuseumbold text-white underline-offset-8 decoration-[#D61525] cursor-pointer no-underline hover:underline hover:underline-offset-8 hover:decoration-[#D61525]">
@@ -93,10 +93,10 @@
                         class="text-sm font-ltmuseumbold text-white underline-offset-8 decoration-[#D61525] cursor-pointer no-underline hover:underline hover:underline-offset-8 hover:decoration-[#D61525]">
                         CLOSING NIGHT
                     </a>
-                    {{-- <a href="/merch"
+                    <a href="/merch"
                         class="text-sm font-ltmuseumbold text-white underline-offset-8 decoration-[#D61525] cursor-pointer no-underline hover:underline hover:underline-offset-8 hover:decoration-[#D61525]">
                         MERCHANDISE
-                    </a> --}}
+                    </a>
                 @endif
             </div>
 
@@ -128,10 +128,10 @@
                         class="text-sm font-ltmuseumbold text-white {{ $title === 'closing-night' ? 'underline underline-offset-4 decoration-[#D61525] cursor-pointer' : 'no-underline hover:underline hover:underline-offset-4 hover:decoration-[#D61525] cursor-pointer' }}">
                         CLOSING NIGHT
                     </a>
-                    {{-- <a href="/merch"
+                    <a href="/merch"
                         class="text-sm font-ltmuseumbold text-white {{ $title === 'merch' ? 'underline underline-offset-4 decoration-[#D61525] cursor-pointer' : 'no-underline hover:underline hover:underline-offset-4 hover:decoration-[#D61525] cursor-pointer' }}">
                         MERCHANDISE
-                    </a> --}}
+                    </a>
                 @else
                     <a href="/"
                         class="text-sm font-ltmuseumbold text-white no-underline hover:underline hover:underline-offset-4 hover:decoration-[#D61525] cursor-pointer">
@@ -148,10 +148,10 @@
                         class="text-sm font-ltmuseumbold text-white no-underline hover:underline hover:underline-offset-4 hover:decoration-[#D61525] cursor-pointer}">
                         CLOSING NIGHT
                     </a>
-                    {{-- <a href="/merch"
+                    <a href="/merch"
                         class="text-sm font-ltmuseumbold text-white no-underline hover:underline hover:underline-offset-4 hover:decoration-[#D61525] cursor-pointer">
                         MERCHANDISE
-                    </a> --}}
+                    </a>
                 @endif
             </div>
             <div class="flex ml-16 mb-4 ">

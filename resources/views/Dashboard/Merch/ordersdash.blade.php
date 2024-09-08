@@ -42,7 +42,7 @@
                         <td>{{ $order->id }}</td>
                         <td>{{ $order->user->name }}</td>
                         <td>{{ $order->email }}</td>
-                        <td>{{ $order->whatsapp }}</td>
+                        <td>{{ $order->phone }}</td>
                         <td>{{ $order->line }}</td>
                         <td>
                             @foreach ($order->orderDetails as $orderDetail)

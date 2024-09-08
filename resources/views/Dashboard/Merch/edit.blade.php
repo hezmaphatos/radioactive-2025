@@ -63,7 +63,7 @@
                 </div>
                 @enderror
               </div>
-              <div>
+              <div class="hidden">
                 <label class="mb-3 block text-sm font-medium text-black">
                   Stock
                 </label>

@@ -35,7 +35,8 @@ class DashboardMerchController extends Controller
         $merches = $merches->paginate(5)->withQueryString();
 
         return view('Dashboard.Merch.index', [
-            'merches' => $merches
+            'merches' => $merches,
+            'title' => 'merch'
         ]);
     }
 

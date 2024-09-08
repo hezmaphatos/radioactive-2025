@@ -33,7 +33,7 @@ class MerchController extends Controller
     {
         //
         $merches = Merch::all();
-        return view('Merch.index', ['merches' => $merches]);
+        return view('Merch.index', ['merches' => $merches, 'title' => 'merch']);
     }
 
     public function cart()
@@ -49,7 +49,7 @@ class MerchController extends Controller
             }
         }
         // dd($carts);
-        return view('Merch.cart', ['carts'=>$carts, 'preorderCarts' => $preorderCarts, 'flag' => $flag]);
+        return view('Merch.cart', ['carts'=>$carts, 'preorderCarts' => $preorderCarts, 'flag' => $flag, 'title' => 'merch']);
     }
 
     public function addToCartOld($id_merch)
@@ -830,6 +830,7 @@ class MerchController extends Controller
             'description' => 'required',
             'image' => 'required|image|file|max:10240',
             'price' => 'required',
+            'stock' => 'required',
         ]);
 
         if ($request->file('image')) {
@@ -922,7 +923,7 @@ class MerchController extends Controller
     {
         //
         $links = $merch->merchlinks;
-        return view('Merch.merch', ['merch' => $merch, 'links' => $links]);
+        return view('Merch.merch', ['merch' => $merch, 'links' => $links, 'title' => 'merch']);
     }
 
     public function dashboard()

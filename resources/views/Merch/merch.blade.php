@@ -113,9 +113,12 @@
                                             <p>Size</p>
                                             <select name="variation" id="variation_select" required
                                                 class="w-full bg-gray-900 border-2 border-[#d61525] text-white px-2 py-1 rounded">
-                                                <option disabled selected value> select variant</option>
+                                                <option disabled selected value>select variant</option>
                                                 @foreach ($merch->merchvariations as $merchvariation)
                                                     <option value="{{ $merchvariation->description }}"
+                                                        @if ($merchvariation->stock<1)
+                                                            disabled
+                                                        @endif
                                                         data-stock="{{ $merchvariation->stock }}">
                                                         {{ $merchvariation->description }} (Stock:
                                                         {{ $merchvariation->stock }})
@@ -224,111 +227,70 @@
                 </ul>
             </div>
         </div>
-         
-        <div class="flex w-full justify-center text-center mt-5 text-white dark:text-gray-800 align-middle">
-        @if ($merch->table && $merch->id == 1)
-            <table border="1"
-                class="w-full justify-center gap-3 border-white border-[1px] md:w-4/5 sm:w-full lg:w-1/2 text-white">
-                <tr class="border-[1px] bg-[#0E0EC0]">
-                    <th>Size</th>
-                    <th>Width<br>(cm)</th>
-                    <th>Length<br>(cm)</th>
-                    <th>Shoulders<br>(cm)</th>
-                    <th>Hands<br>(cm)</th>
-                    <th>Price<br>(Rp)</th>
-                </tr>
-                <tr>
-                    <td>XS</td>
-                    <td>54</td>
-                    <td>69</td>
-                    <td>15</td>
-                    <td>25</td>
-                    <td>Rp 110.000,-</td>
-                </tr>
-                <tr>
-                    <td>S</td>
-                    <td>57</td>
-                    <td>72</td>
-                    <td>16</td>
-                    <td>25</td>
-                    <td>Rp 110.000,-</td>
-                </tr>
-                <tr>
-                    <td>M</td>
-                    <td>59</td>
-                    <td>73</td>
-                    <td>16</td>
-                    <td>29</td>
-                    <td>Rp 110.000,-</td>
-                </tr>
-                <tr>
-                    <td>L</td>
-                    <td>62</td>
-                    <td>76</td>
-                    <td>17</td>
-                    <td>31</td>
-                    <td>Rp 110.000,-</td>
-                </tr>
-                <tr>
-                    <td>XL</td>
-                    <td>66</td>
-                    <td>78</td>
-                    <td>17</td>
-                    <td>33</td>
-                    <td>Rp 110.000,-</td>
-                </tr>
-                <tr>
-                    <td>XXL</td>
-                    <td>70</td>
-                    <td>80</td>
-                    <td>19</td>
-                    <td>31</td>
-                    <td>Rp 120.000,-</td>
-                </tr>
-            </table>
-        @endif
-        @if ($merch->table && $merch->id == 2)
-            <table border="1"
-                class="w-full justify-center gap-3 border-white border-[1px] md:w-4/5 sm:w-full lg:w-1/2 text-white">
-                <tr class="border-[1px] bg-[#0E0EC0]">
-                    <th>Size</th>
-                    <th>Width<br>(cm)</th>
-                    <th>Length<br>(cm)</th>
-                    <th>Price<br>(Rp)</th>
-                </tr>
-                <tr>
-                    <td>S</td>
-                    <td>47</td>
-                    <td>70</td>
-                    <td>Rp 120.000,-</td>
-                </tr>
-                <tr>
-                    <td>M</td>
-                    <td>51</td>
-                    <td>71</td>
-                    <td>Rp 120.000,-</td>
-                </tr>
-                <tr>
-                    <td>L</td>
-                    <td>55</td>
-                    <td>73</td>
-                    <td>Rp 120.000,-</td>
-                </tr>
-                <tr>
-                    <td>XL</td>
-                    <td>59</td>
-                    <td>76</td>
-                    <td>Rp 120.000,-</td>
-                </tr>
-                <tr>
-                    <td>2XL</td>
-                    <td>64</td>
-                    <td>80</td>
-                    <td>Rp 130.000,-</td>
-                </tr>
-            </table>
-        @endif
-    </div>
+
+        <div class="flex w-full justify-center text-center mt-5 text-white align-middle font-ltmuseum text-sm">
+            @if ($merch->id == 1 or $merch->id==2)
+                <table border="1"
+                    class="w-full justify-center gap-3 border-white border-[1px] md:w-4/5 sm:w-full lg:w-1/2 text-white">
+                    <tr class="border-[1px] bg-red-500">
+                        <th>Size</th>
+                        <th>Width<br>(cm)</th>
+                        <th>Length<br>(cm)</th>
+                        <th>Shoulders<br>(cm)</th>
+                        <th>Hands<br>(cm)</th>
+                        <th>Price<br>(Rp)</th>
+                    </tr>
+                    <tr>
+                        <td>XS</td>
+                        <td>54</td>
+                        <td>69</td>
+                        <td>15</td>
+                        <td>25</td>
+                        <td>Rp 110.000,-</td>
+                    </tr>
+                    <tr>
+                        <td>S</td>
+                        <td>57</td>
+                        <td>72</td>
+                        <td>16</td>
+                        <td>25</td>
+                        <td>Rp 110.000,-</td>
+                    </tr>
+                    <tr>
+                        <td>M</td>
+                        <td>59</td>
+                        <td>73</td>
+                        <td>16</td>
+                        <td>29</td>
+                        <td>Rp 110.000,-</td>
+                    </tr>
+                    <tr>
+                        <td>L</td>
+                        <td>62</td>
+                        <td>76</td>
+                        <td>17</td>
+                        <td>31</td>
+                        <td>Rp 110.000,-</td>
+                    </tr>
+                    <tr>
+                        <td>XL</td>
+                        <td>66</td>
+                        <td>78</td>
+                        <td>17</td>
+                        <td>33</td>
+                        <td>Rp 110.000,-</td>
+                    </tr>
+                    <tr>
+                        <td>XXL</td>
+                        <td>70</td>
+                        <td>80</td>
+                        <td>19</td>
+                        <td>31</td>
+                        <td>Rp 120.000,-</td>
+                    </tr>
+                </table>
+            @endif
+        </div>
         <div id="shopping-cart" class="w-full fixed bottom-5 right-5 flex justify-end">
             <a href="/cart"
                 class="rounded-full no-underline bg-red-600 w-[60px] h-[60px] flex justify-center items-center cursor-pointer transform transition duration-500 hover:scale-110">

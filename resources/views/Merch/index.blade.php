@@ -84,17 +84,44 @@
         </div>
         <?php $no = 1; ?>
         <div id="merch_items" class="mt-[6rem] p-[30px] flex flex-wrap w-full justify-center content-center gap-10">
-            <div class="flex flex-wrap gap-4">
+            <div class="flex flex-wrap gap-4 justify-center">
                 @foreach ($merches as $merch)
-                    <a id="merch{{$merch->id}}" class="relative" href="/merch/{{$merch->id}}">
-                        <div id="item-img"
-                            class="mb-[7rem] w-[250px] h-[350px] border-solid border-[1px] border-white transform transition duration-500 hover:scale-[1.03]">
+                    <a id="merch{{$merch->id}}" class="relative no-underline" href="/merch/{{$merch->id}}">
+                        <div id="item-img" class="mb-[7rem] w-[250px] h-[350px] border-solid border-[1px] border-white transform transition duration-500 hover:scale-[1.03]">
                             <img src="{{asset('storage/'.$merch->image)}}" class="object-cover w-full h-full" />
-                            <p class="mt-5 font-LT Museum text-white text-[15px]">{{$merch->name}}</p>
-                            <p class="mt-1 font-sans text-white text-sm">{{'Rp ' . number_format($merch->price, 0, ',', '.')}}</p>
+                            <p class="mt-3 font-ltmuseumbold text-white text-[15px]">{{$merch->name}}</p>
+                            <p class="mt-1 font-ltmuseumreg text-white text-sm">{{'Rp ' . number_format($merch->price, 0, ',', '.')}}</p>
                         </div>
                     </a>
                 @endforeach
+                <a id="merch{{$merch->id}}" class="relative no-underline" href="/merch/{{$merch->id}}">
+                    <div id="item-img" class="mb-[7rem] w-[250px] h-[350px] border-solid border-[1px] border-white transform transition duration-500 hover:scale-[1.03]">
+                        <img src="{{asset('storage/'.$merch->image)}}" class="object-cover w-full h-full" />
+                        <p class="mt-3 font-ltmuseumbold text-white text-[15px]">{{$merch->name}}</p>
+                        <p class="mt-1 font-ltmuseumreg text-white text-sm">{{'Rp ' . number_format($merch->price, 0, ',', '.')}}</p>
+                    </div>
+                </a>
+                <a id="merch{{$merch->id}}" class="relative no-underline" href="/merch/{{$merch->id}}">
+                    <div id="item-img" class="mb-[7rem] w-[250px] h-[350px] border-solid border-[1px] border-white transform transition duration-500 hover:scale-[1.03]">
+                        <img src="{{asset('storage/'.$merch->image)}}" class="object-cover w-full h-full" />
+                        <p class="mt-3 font-ltmuseumbold text-white text-[15px]">{{$merch->name}}</p>
+                        <p class="mt-1 font-ltmuseumreg text-white text-sm">{{'Rp ' . number_format($merch->price, 0, ',', '.')}}</p>
+                    </div>
+                </a>
+                <a id="merch{{$merch->id}}" class="relative no-underline" href="/merch/{{$merch->id}}">
+                    <div id="item-img" class="mb-[7rem] w-[250px] h-[350px] border-solid border-[1px] border-white transform transition duration-500 hover:scale-[1.03]">
+                        <img src="{{asset('storage/'.$merch->image)}}" class="object-cover w-full h-full" />
+                        <p class="mt-3 font-ltmuseumbold text-white text-[15px]">{{$merch->name}}</p>
+                        <p class="mt-1 font-ltmuseumreg text-white text-sm">{{'Rp ' . number_format($merch->price, 0, ',', '.')}}</p>
+                    </div>
+                </a>
+                <a id="merch{{$merch->id}}" class="relative no-underline" href="/merch/{{$merch->id}}">
+                    <div id="item-img" class="mb-[7rem] w-[250px] h-[350px] border-solid border-[1px] border-white transform transition duration-500 hover:scale-[1.03]">
+                        <img src="{{asset('storage/'.$merch->image)}}" class="object-cover w-full h-full" />
+                        <p class="mt-3 font-ltmuseumbold text-white text-[15px]">{{$merch->name}}</p>
+                        <p class="mt-1 font-ltmuseumreg text-white text-sm">{{'Rp ' . number_format($merch->price, 0, ',', '.')}}</p>
+                    </div>
+                </a>
                 {{-- <div id="merch2" class="relative">
                     <div id="item-img"
                         class="mb-[7rem] w-[250px] h-[350px] border-solid border-[1px] border-white transform transition duration-500 hover:scale-[1.03]">

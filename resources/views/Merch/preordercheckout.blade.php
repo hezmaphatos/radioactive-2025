@@ -128,8 +128,8 @@
                 </div>
                 <div class="mb-3 flex flex-col">
                     <label for="cumulative_price" class="text-white">Upload Payment Proof</label>
-                    <p class="text-white">Transfer to xxxx a/n xxxx xxxx in the right amount (Rp
-                        {{ number_format($cumulative_price, 0, ',', '.') }})</p>
+                        <p class="text-white">Transfer to BCA <text class="text-blue-500">6600448160</text> a/n Helena Hanna Haryadi in the right amount (Rp
+                        {{ number_format($cumulative_price, 0, ',', '.') }}) add information <text class="text-red-500">(Nama Merch/Bundle)-(Quantity)</text></p>         
                     <input class="text-white" type="file" accept="image/*" name="payment_image" id="payment_image"
                         onchange="previewImage()">
                     <img src="" alt="" class="hidden img-preview h-80 ">

@@ -75,7 +75,7 @@
                 @enderror
               </div>
               <div>
-                <label for="image" class="mb-3 block text-sm font-medium text-black dark:text-white">
+                <label for="image" class="mb-3 block text-sm font-medium text-black">
                     Cover Image
                 </label>
                 <input type="hidden" name="oldImage" value="{{ $merch->image }}">

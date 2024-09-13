@@ -224,6 +224,8 @@
                     <li class="text-white text-[15px]">BARANG YANG SUDAH DITERIMA TIDAK DAPAT DITUKARKAN
                         KEMBALI
                     </li>
+                    <li class="text-white text-[15px]">UNTUK PERTANYAAN LEBIH LANJUT, KONTAK NOMOR BERIKUT: WA 08116559500 (Frickson) atau LINE @frickson3
+                    </li>
                 </ul>
             </div>
         </div>

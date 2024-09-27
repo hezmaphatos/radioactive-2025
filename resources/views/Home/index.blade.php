@@ -229,6 +229,14 @@
                                 <img class="w-full object-contain md:h-24" src="/images/LOGO MEDPAR/unpar.webp"
                                     alt="" />
                             </div>
+                            <div class="col-span-1">
+                                <img class="w-full object-contain md:h-24" src="/images/LOGO MEDPAR/Logo Acarakampus.png"
+                                    alt="" />
+                            </div>
+                            <div class="col-span-1">
+                                <img class="w-full object-contain md:h-24" src="/images/LOGO MEDPAR/LOGO BERITA LOMBA.jpeg"
+                                    alt="" />
+                            </div>
                         </div>
                     </div>
                 </div>

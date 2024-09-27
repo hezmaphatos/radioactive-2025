@@ -219,11 +219,11 @@
                             <div class="">
                                 <button
                                     class="button-submit font-ltmuseumbold text-white bg-[#D61625] w-full text-xl md:text-2xl px-5 py-1"
-                                    type="button" data-modal-target="#confirmationModal">
+                                    type="submit" onclick="return confirm('Pastikan data yang dimasukkan benar adanya.')">
                                     Daftar
                                 </button>
                             </div>
-                            <div id="confirmationModal"
+                            {{-- <div id="confirmationModal"
                                 class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
                                 <div class="bg-white w-11/12 md:w-1/3 p-5 rounded-lg shadow-lg">
                                     <h2 class="font-ltmuseumbold text-xl mb-4 text-black">Konfirmasi Pendaftaran</h2>
@@ -236,7 +236,7 @@
                                             type="submit">Daftar</button>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
@@ -648,11 +648,11 @@
                                 <div class="">
                                     <button
                                         class="button-submit font-ltmuseumbold text-white bg-[#D61625] w-full text-xl md:text-2xl px-5 py-1"
-                                        type="button" data-modal-target="#confirmationModal">
+                                        type="submit" onclick="return confirm('Pastikan data yang dimasukkan benar adanya.')">
                                         Daftar
                                     </button>
                                 </div>
-                                <div id="confirmationModal"
+                                {{-- <div id="confirmationModal"
                                     class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
                                     <div class="bg-white w-11/12 md:w-1/3 p-5 rounded-lg shadow-lg">
                                         <h2 class="font-ltmuseumbold text-xl mb-4 text-black">Konfirmasi Pendaftaran</h2>
@@ -665,7 +665,7 @@
                                                 type="submit">Daftar</button>
                                         </div>
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </div>
@@ -1265,11 +1265,11 @@
                                 <div class="">
                                     <button
                                         class="button-submit font-ltmuseumbold text-white bg-[#D61625] w-full text-xl md:text-2xl px-5 py-1"
-                                        type="button" data-modal-target="#confirmationModal">
+                                        type="submit" onclick="return confirm('Pastikan data yang dimasukkan benar adanya.')">
                                         Daftar
                                     </button>
                                 </div>
-                                <div id="confirmationModal"
+                                {{-- <div id="confirmationModal"
                                     class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
                                     <div class="bg-white w-11/12 md:w-1/3 p-5 rounded-lg shadow-lg">
                                         <h2 class="font-ltmuseumbold text-xl mb-4 text-black">Konfirmasi Pendaftaran</h2>
@@ -1282,7 +1282,7 @@
                                                 type="submit">Daftar</button>
                                         </div>
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </div>
@@ -1290,7 +1290,7 @@
             </form>
         @endif
     </body>
-    <script>
+    {{-- <script>
         document.querySelectorAll('[data-modal-target]').forEach(button => {
             button.addEventListener('click', () => {
                 const modal = document.querySelector(button.getAttribute('data-modal-target'));
@@ -1311,7 +1311,7 @@
                 modal.classList.add('hidden');
             }
         });
-    </script>
+    </script> --}}
     <style>
         .form-content {
             background-color: rgb(45, 45, 45);

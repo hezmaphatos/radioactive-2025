@@ -225,7 +225,7 @@
       </div>
   </div>
           <div class="d-flex justify-content-center">
-            {{-- {{ $vocs->links() }} --}}
+            {{ $racs->links() }}
         </div>
       </div>
 

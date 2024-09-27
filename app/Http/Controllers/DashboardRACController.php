@@ -13,7 +13,7 @@ class DashboardRACController extends Controller
      */
     public function index(Request $request)
     {
-        $racs = rac::latest();
+        $racs = rac::oldest();
         
         if ($request->has('search')) {
             $search = $request->input('search');

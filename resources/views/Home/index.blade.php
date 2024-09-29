@@ -182,10 +182,6 @@
                                     class="w-full object-contain md:h-24">
                             </div>
                             {{-- <div class="col-span-1">
-                                <img src="/images/LOGO MEDPAR/Logo Acara Kampus.png" alt=""
-                                    class="w-full object-contain md:h-24">
-                            </div> --}}
-                            {{-- <div class="col-span-1">
                                 <img src="/images/LOGO MEDPAR/LOGO BERITA LOMBA JPEG.jpeg" alt=""
                                     class="w-full object-contain md:h-24">
                             </div> --}}
@@ -230,13 +226,26 @@
                                     alt="" />
                             </div>
                             <div class="col-span-1">
-                                <img class="w-full object-contain md:h-24" src="/images/LOGO MEDPAR/Logo Acarakampus.png"
+                                <img class="w-full object-contain md:h-24" src="/images/LOGO MEDPAR/Logo Acarakampus.com.webp"
                                     alt="" />
                             </div>
                             <div class="col-span-1">
-                                <img class="w-full object-contain md:h-24" src="/images/LOGO MEDPAR/LOGO BERITA LOMBA.jpeg"
+                                <img class="w-full object-contain md:h-24" src="/images/LOGO MEDPAR/LOGO BERITA LOMBA PNG.webp"
                                     alt="" />
                             </div>
+                            <div class="col-span-1">
+                                <img class="w-full object-contain md:h-24" src="/images/LOGO MEDPAR/Logo Eventnya Mahasiswa.webp"
+                                    alt="" />
+                            </div>
+                            <div class="col-span-1">
+                                <img class="w-full object-contain md:h-24" src="/images/LOGO MEDPAR/Logo Radio Untar.webp"
+                                    alt="" />
+                            </div>
+                            <div class="col-span-1">
+                                <img class="w-full object-contain md:h-24" src="/images/LOGO MEDPAR/Point Kampus.webp"
+                                    alt="" />
+                            </div>
+
                         </div>
                     </div>
                 </div>

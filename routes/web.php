@@ -115,13 +115,13 @@ Route::controller(MacController::class)->group(function () {
 
 Route::controller(RacController::class)->group(function(){
     Route::get('/rac', 'index');
-    Route::get('/rac/register', 'create');
+    // Route::get('/rac/register', 'create');
     // Route::get('/rac/register', function(){
     //     return view('welcome');
     // });
-    Route::post('/rac/store', 'store');
-    Route::get('/rac/form/{amount}', 'form');
-    Route::get('/rac/confirmation', 'confirmation_redirect');
+    // Route::post('/rac/store', 'store');
+    // Route::get('/rac/form/{amount}', 'form');
+    // Route::get('/rac/confirmation', 'confirmation_redirect');
 });
 
 Route::controller(MerchController::class)->group(function(){

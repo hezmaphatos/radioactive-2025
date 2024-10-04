@@ -113,13 +113,21 @@
                     target="_blank">HANDBOOK
                 </a>
             </div>
-            <div id="button2" class="my-3">
+            {{-- <div id="button2" class="my-3">
                 <a href="/rac/register" class="no-underline py-4 px-6 flex items-center justify-center">
                     <button disabled id="btnReg"
                         class="disabled:bg-gray-400 disabled:cursor-not-allowed text-white border-white w-60 md:h-16 p-4 text-sm tracking-[1px] md:text-sm font-bold border-2 hover:bg-[#0F0F0F] hover:text-[#FA0202] disabled:text-white flex items-center justify-center">
                         REGISTER HERE
                     </button>
                 </a>
+            </div> --}}
+            <div id="button2" class="my-3">
+                <div class="no-underline py-4 px-6 flex items-center justify-center">
+                    <div disabled id="btnReg"
+                        class="disabled:bg-gray-400 disabled:cursor-not-allowed text-white border-white w-60 md:h-16 p-4 text-sm tracking-[1px] md:text-sm font-bold border-2 bg-gray-500 disabled:text-white flex items-center justify-center">
+                        REGISTER CLOSED
+                    </div>
+                </div>
             </div>
             
         </div>

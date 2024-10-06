@@ -13,14 +13,14 @@
             <br>
             <p class="font-ltmuseum text-md text-white text-justify md:text-center">Konsep Closing Night tahun Konsep Closing Night tahun ini adalah “Valiant Against Fear” , Radioactive 2024 mengajak seluruh peserta dan panitia untuk dapat bertahan setelah keluar dari zona nyaman mereka. Untuk closing night Radioactive tahun ini akan diadakan secara intimate karena untuk berusaha bertahan di zona nyaman, tahap awal yang dapat dilakukan adalah berfokus di skala yang kecil terlebih dahulu, kemudian baru dilanjutkan ke skala yang lebih besar.</p>
         </div>
-        {{-- <div id="button1" class="flex justify-center items-center mt-16" data-aos="fade-up">
-            <a href="#ticket" class="no-underline">
+        <div id="button1" class="flex justify-center items-center mt-16" data-aos="fade-up">
+            <a href="https://event.detik.com/525/closing-night-radioactive-2024------resilience-era---" class="no-underline" target="_blank">
                 <button
                     class="bg-[#D61525] text-white border-white p-6 text-2xs md:text-sm font-brodyrawk border-2 hover:bg-[#FFF000] hover:text-[#0E0EC0] rounded-lg">
                     GET YOUR TICKETS HERE
                 </button>
             </a>
-        </div> --}}
+        </div>
         {{-- <div id="gueststar" class="flex flex-col justify-center items-center my-16">
             <h4 class="font-brodyrawk md:text-xl text-white text-center font-bold mb-8" data-aos="fade-up">GUEST STARS
             </h4>

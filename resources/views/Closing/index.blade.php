@@ -21,43 +21,22 @@
                 </button>
             </a>
         </div>
-        {{-- <div id="gueststar" class="flex flex-col justify-center items-center my-16">
+        <div id="gueststar" class="flex flex-col justify-center items-center my-16">
             <h4 class="font-brodyrawk md:text-xl text-white text-center font-bold mb-8" data-aos="fade-up">GUEST STARS
             </h4>
-            <div id="mainGS" class="flex flex-col mb-12 relative" data-aos="fade-up">
-                <img class="h-72 w-96 md:h-[400px] md:w-[500px] object-cover" src="/images/FOTO GS LOMBA SIHIR.webp"
-                    alt="" />
-                <h4 class="font-ltmuseum text-xl text-white text-center font-bold">LOMBA SIHIR</h4>
-            </div>
             <div id="mdGS" class="flex flex-col md:flex-row flex-wrap justify-center gap-12 mt-8">
                 <div class="flex flex-col" data-aos="fade-up">
-                    <img class="h-64 w-72 md:h-72 md:w-80 object-cover" src="/images/FOTO GS karaokemon.webp"
+                    <img class="h-64 w-72 md:h-72 md:w-80 object-cover" src="/images/Dbatlayar.webp"
                         alt="" />
-                    <h4 class="font-ltmuseum text-white text-center font-bold">KARAOKEMON</h4>
+                    <h4 class="font-ltmuseum text-white text-center font-bold">Dbatlayar</h4>
                 </div>
                 <div class="flex flex-col" data-aos="fade-up">
-                    <img class="h-64 w-72 md:h-72 md:w-80 object-cover" src="/images/FOTO GS 90HP.webp"
+                    <img class="h-64 w-72 md:h-72 md:w-80 object-cover" src="/images/Photo_RS_2.webp"
                         alt="" />
-                    <h4 class="font-ltmuseum text-white text-center font-bold">90hp</h4>
+                    <h4 class="font-ltmuseum text-white text-center font-bold">Rumahsakit</h4>
                 </div>
             </div>
-            <div id="smGS" class="grid grid-cols-2 gap-4 justify-center md:gap-12 mt-16 mx-2">
-                <div class="flex flex-col" data-aos="fade-up">
-                    <div class="flex justify-center">
-                        <img class="h-56 w-64 md:h-64 md:w-72 object-cover" src="/images/FOTO GS liberal mistik.webp"
-                        alt="" />
-                    </div>
-                    <h4 class="font-ltmuseum text-white text-center font-bold">LIBERAL MISTEIK</h4>
-                </div>
-                <div class="flex flex-col" data-aos="fade-up">
-                    <div class="flex justify-center">
-                        <img class="h-56 w-64 md:h-64 md:w-72 object-cover" src="/images/FOTO GS the laidback horses.webp"
-                        alt="" />
-                    </div>
-                    <h4 class="font-ltmuseum text-white text-center font-bold">THE LAIDBACK HORSES</h4>
-                </div>
-            </div>
-        </div> --}}
+        </div>
         {{-- <div id="ticket" class="flex flex-col justify-center items-center mt-16">
             <h4 class="font-brodyrawk md:text-xl text-white text-center font-bold mb-16" data-aos="fade-up">GET YOUR
                 TICKETS</h4>

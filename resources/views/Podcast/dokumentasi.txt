@@ -1,0 +1,5 @@
+cara run page podcast:
+1. di terminal ketik "npm run dev"
+2. di terminal ketik "php artisan serve"
+3. buka link dari php artisan serve biasanya http://127.0.0.1:8000
+4. tambahkan "/podcast" di akhir link. Contoh: http://127.0.0.1:8000/podcast

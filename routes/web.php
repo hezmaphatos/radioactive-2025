@@ -45,6 +45,12 @@ Route::get('/', function () {
 //     return view('Home.soon');
 // });
 
+Route::get('/podcast', function () {
+    return view('Podcast.podcast', [
+        "title" => "Podcast Competition"
+    ]);
+});
+
 Route::get('/closing-night', function () {
     return view('Closing.index', [
         "title" => "closing-night"

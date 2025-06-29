@@ -3,7 +3,8 @@
 @section('container')
 
     <head>
-        @vite('resources/css/home.css')
+        @vite(['resources/css/app.css', 'resources/css/home.css'])
+
     </head>
 
     <body class="overflow-x-hidden">
@@ -17,29 +18,30 @@
         <div id="section-1" class="pt-32 max-w-4xl mx-auto">
             <div data-aos="zoom-in" data-aos-duration="3000" data-aos-anchor-placement="center-center"
                 class="flex flex-col md:flex-row items-center justify-center gap-4">
-                <p class="text-center font-brody text-base text-white z-20 tracking-10">THE MOST SPECTACULAR ANNUAL EVENT BY
+                <p class="text-center font-lavish text-base text-white z-20 tracking-10">THE MOST SPECTACULAR ANNUAL EVENT BY
                 </p>
                 <img class="w-20 md:w-24 z-16" src="images/LOGO UMN RADIO.webp" alt="UMN Radio Logo">
             </div>
             <div class="relative flex flex-col items-center mt-10" data-aos="fade-up" data-aos-duration="3000">
-                <img class="object-cover h-[400px] w-[800px] z-0" src="images/LOGO RADIOACTIVE 2024.webp"
+                <img class="object-cover h-[400px] w-[800px] z-0" src="images/LOGO RADIOACTIVE 2025 PNG.png"
                     alt="background logo" />
             </div>
         </div>
 
         <div id="about-us" class="flex flex-col justify-center items-center h-screen mt-0 mb-0 px-4 sm:px-8"
             data-aos="fade-up" data-aos-duration="1500">
-            <h4 class="font-brodyrawk text-5xl sm:text-6xl md:text-8xl text-white text-center my-6 sm:my-12 tracking-wider">
+            <h4 class="font-lavish text-5xl sm:text-6xl md:text-8xl text-white text-center my-6 sm:my-12 tracking-wider">
                 ABOUT US</h4>
+
             <div class="px-4 sm:px-8 md:px-20 lg:px-48">
                 <p
-                    class="font-ltmuseum text-base sm:text-lg md:text-xl text-white text-justify md:text-center tracking-wider mb-6">
+                    class="font-royalecoutureserif text-base sm:text-lg md:text-xl text-white text-justify md:text-center tracking-wider mb-6">
                     RADIOACTIVE adalah Acara off air tahunan yang diselenggarakan oleh UMN Radio, radio komunitas
                     Universitas Multimedia Nusantara. Pertama kali diadakan di tahun 2015, RADIOACTIVE 2024 merupakan kali
                     ke-10 acara ini diselenggarakan.
                 </p>
                 <p
-                    class="font-ltmuseum text-base sm:text-lg md:text-xl text-white text-justify md:text-center tracking-wider">
+                    class="font-royalecoutureserif text-base sm:text-lg md:text-xl text-white text-justify md:text-center tracking-wider">
                     RADIOACTIVE 2024 mengangkat tema “RADIOACTIVE 2024: Resilience Era”, dengan tagline “Dare to Strive”,
                     serta bertujuan agar individu yang telah berevolusi mampu mempertahankan perubahannya dan
                     mengembangkannya dalam perjuangan tanpa ada rasa cukup.
@@ -76,7 +78,7 @@
 
         <section class="min-h-screen max-w font-ltmuseumreg p-4" id="timeline">
             <div id="title" class="text-center my-8 px-4">
-                <h1 class="font-brody md:text-3xl text-white text-center my-12 tracking-8 m-[0.3em] md:text-[3em] italic"
+                <h1 class="font-lavish md:text-3xl text-white text-center my-12 tracking-8 m-[0.3em] md:text-[3em] italic"
                     style="letter-spacing: 5px;">GENERAL TIMELINE</h1>
                 {{-- <p class="text-white md:text-xl tracking-widest">------</p> --}}
             </div>
@@ -135,7 +137,7 @@
         <div class="px-4">
             <div data-aos="zoom-in-up" data-aos-delay="400"
                 class="container mx-auto flex justify-center md:justify-around flex-wrap items-center align-middle">
-                <h2 class="font-brodyrawk md:text-5xl text-3xl text-center my-12 tracking-[4px] text-red-600">EXCLUSIVE
+                <h2 class="font-lavish md:text-5xl text-3xl text-center my-12 tracking-[4px] text-red-600">EXCLUSIVE
                     RADIO PARTNER</h2>
                 <img src="/images/LOGO MEDPAR/LOGO MUSTANG.webp" alt="" class="md:w-96 w-64 object-contain">
             </div>
@@ -145,7 +147,7 @@
             <div class="container mx-auto flex flex-col lg:flex-row items-center lg:justify-between">
                 <!-- Text -->
                 <div data-aos="zoom-in-up" data-aos-delay="400" class="w-full lg:w-2/5 lg:mb-0 lg:text-left text-center">
-                    <h2 class="font-brodyrawk md:text-5xl text-3xl my-12 tracking-[4px] text-red-600">PARTNERS</h2>
+                    <h2 class="font-lavish md:text-5xl text-3xl my-12 tracking-[4px] text-red-600">PARTNERS</h2>
                 </div>
                 <div class="w-full lg:w-3/5">
                     <div class="grid grid-cols-6 gap-4">
@@ -257,7 +259,7 @@
         <div class="px-4">
             <div data-aos="zoom-in-up" data-aos-delay="400"
                 class="container mx-auto flex justify-center md:justify-around flex-wrap items-center align-middle">
-                <h2 class="font-brodyrawk md:text-5xl text-3xl text-center my-5 tracking-[4px] text-red-600">TICKETING
+                <h2 class="font-lavish md:text-5xl text-3xl text-center my-5 tracking-[4px] text-red-600">TICKETING
                     PARTNER</h2>
                 <img src="/images/LOGO SPONSOR/detik event.webp" alt="" class="md:w-96 w-64 object-contain">
             </div>
@@ -298,14 +300,14 @@
                 </div>
                 <!-- Text -->
                 <div class="w-full lg:w-1/2 lg:mt-0 lg:text-right text-center flex justify-end items-center align-middle">
-                    <h2 class="font-brodyrawk md:text-5xl text-3xl my-12 tracking-[4px] text-red-600">SPONSORS</h2>
+                    <h2 class="font-lavish md:text-5xl text-3xl my-12 tracking-[4px] text-red-600">SPONSORS</h2>
                 </div>
             </div>
         </div>
 
         <div class="flex flex-wrap md:flex-nowrap px-4 md:px-12 mt-20 space-y-8 md:space-y-0">
             <div class="w-full md:w-1/4 p-4 md:p-6">
-                <h1 class="text-lg md:text-xl font-brodyrawk text-[#D61525] mb-2 md:mb-4">UMN RADIOACTIVE 2023</h1>
+                <h1 class="text-lg md:text-xl font-lavish text-[#D61525] mb-2 md:mb-4">UMN RADIOACTIVE 2023</h1>
                 <h2 class="text-2xl md:text-4xl font-bold mb-4 md:mb-6 font-ltmuseumbold text-white">Flashback to last year's thrills!</h2>
                 <div class="flex flex-wrap items-center align-middle gap-4">
                     <div class=""><a data-filter="all"
@@ -385,7 +387,7 @@
         </div>
 
         <div id="after" class="-mb-20 md:-mb-0 md:my-24" data-aos="fade-up">
-            <h2 class="font-brodyrawk md:text-3xl text-white text-center my-12 tracking-8">AFTER MOVIE RADIOACTIVE 2023
+            <h2 class="font-brody md:text-3xl text-white text-center my-12 tracking-8">AFTER MOVIE RADIOACTIVE 2023
             </h2>
             <div class="w-full flex justify-center">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/noafJ76PHeM?si=5ho9Ad32GabxdrVT"

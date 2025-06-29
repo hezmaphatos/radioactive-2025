@@ -85,6 +85,20 @@
     font-style: normal;
 }
 
+@font-face {
+  font-family: "Lavish";
+  src: url("fonts/Lavish.ttf") format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Royale Couture Serif";
+  src: url("fonts/RoyaleCouture-Serif.otf") format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 .dataTables_length select {
     background-color: white;
 }

@@ -47,7 +47,7 @@
                     class="menu-item font-ltmuseumbold text-white text-sm cursor-pointer 
         {{ $title === 'closing-night' ? 'underline underline-offset-4 decoration-[#D61525] decoration-2' : 'no-underline hover:underline hover:underline-offset-4 hover:decoration-[#d6152581] hover:decoration-2' }}"
                     href="/closing-night">
-                    CLOSING NIGHT
+                    AWARDING NIGHT
                 </a>
                 <a id="merchItem"
                     class="menu-item font-ltmuseumbold text-white text-sm cursor-pointer 
@@ -74,7 +74,7 @@
                 <a id="closingNightItem"
                     class="menu-item font-ltmuseumbold text-white text-sm cursor-pointer no-underline hover:underline hover:underline-offset-4 hover:decoration-[#d6152581] hover:decoration-2"
                     href="/closing-night">
-                    CLOSING NIGHT
+                    AWARDING NIGHT
                 </a>
                 <a id="merchItem"
                     class="menu-item font-ltmuseumbold text-white text-sm cursor-pointer no-underline hover:underline hover:underline-offset-4 hover:decoration-[#d6152581] decoration-2 hover:decoration-2"

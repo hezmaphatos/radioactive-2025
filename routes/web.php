@@ -22,6 +22,7 @@ use App\Http\Controllers\MerchOrderController;
 use App\Http\Controllers\CartController;
 use App\Models\User;
 use App\Models\Merch;
+use App\Models\Cart;
 use Illuminate\Support\Facades\Artisan;
 
 /*

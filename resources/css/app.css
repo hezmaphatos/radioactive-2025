@@ -99,3 +99,14 @@
     color-scheme: only light !important;
     color: black;
 }
+
+/* kode dibawah ni yg no spinner itu bikin input number nggak ada vertical bar buat increment/decrement */
+.no-spinner::-webkit-inner-spin-button,
+.no-spinner::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.no-spinner {
+  -moz-appearance: textfield;
+}

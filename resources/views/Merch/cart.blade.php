@@ -25,7 +25,7 @@
 }
 
 .cart-checkout-container .card {
-  background-color: #fff;
+  background-color: snow;
   height: 100%;
 }
 
@@ -74,8 +74,7 @@
   display: flex;
   margin-bottom: 15px;
   border-radius: 8px;
-  background-image: linear-gradient(147deg, #D9E4B2 0%, #A8CBA0 74%);
-  background-color: #fff;
+  background-color: #debc41;
   transition: all 0.35s ease-in-out;
   opacity: 0;
   transform: scale(0.7);
@@ -148,7 +147,7 @@
 
 .details i {
   font-size: 10px !important;
-  color: red;
+  color: rgb(58, 134, 45);
 }
 
 .scroll-list__item a{
@@ -199,7 +198,7 @@
 
 
 .cart-checkout-container .price-calculation {
-  background-color: red;
+  background-color: #debc41;
   border-radius: 10px;
   padding: 10px;
 }
@@ -243,7 +242,7 @@
                               <img src="{{ asset('storage/' . $cart->merch->image) }}" alt="">
                                 <div class="details">
                                   <!-- if preorder then h1 Product 1 (Preorder) else baru h1 product 1 aja !-->
-                                    <h4 class="text-white" id="name">{{ $cart->merch->name }}</h4>
+                                    <h4 id="name">{{ $cart->merch->name }}</h4>
                                         <i class="fa-solid fa-tag"></i><span id="detail-merch"> {{ $cart->variation }}</span> 
                                         <br>
                                         <i class="fa-solid fa-money-bill"></i><span id="detail-merch" data-id="{{ $cart->id }}"> Rp {{ number_format($cart->total_price, 0, ',', '.') }}</span>
@@ -295,35 +294,35 @@
                             @csrf
                             <div class="flex flex-col">
                                 <label for="name" class="text-white">Nama</label>
-                                <input type="text" name="name" id="name" placeholder="Iggy"
+                                <input required type="text" name="name" id="name" placeholder="Iggy"
                                     class="bg-white text-black border border-black" value="{{ auth()->user()->name }}">
                             </div>
                             <div class="flex flex-col">
                                 <label for="email" class="text-white">Email</label>
-                                <input type="email" name="email" id="email" value="{{auth()->user()->email}}" placeholder="iggy@gmail.com"
+                                <input required type="email" name="email" id="email" value="{{auth()->user()->email}}" placeholder="iggy@gmail.com"
                                     class="bg-white text-black border border-black">
                             </div>
                             <div class="flex flex-col">
                                 <label for="phone" class="text-white">Phone</label>
-                                <input type="number" name="phone" id="phone" placeholder="081710771077"
+                                <input required type="number" name="phone" id="phone" placeholder="081710771077"
                                     class="bg-white text-black border border-black">
                             </div>
                             <div class="flex flex-col">
                                 <label for="line" class="text-white">ID Line</label>
-                                <input type="text" name="line" id="line" placeholder="ID Line"
+                                <input required type="text" name="line" id="line" placeholder="ID Line"
                                     class="bg-white text-black border border-black">
                             </div>
 
                         <div class="price-calculation my-3">
-                          <p>Subtotal Rp <span id="subtotal">{{ $cumulative_price }}</span></p>
-                          <p>Additional Rp <span id="additional">{{ $cumulative_additional_price }}</span></p>
-                          <p>Total Rp <span id="total">{{ $cumulative_price + $cumulative_additional_price }}</span></p>
+                          <p>Subtotal Rp <span id="subtotal">{{ number_format($cumulative_price, 0, ',', '.') }}</span></p>
+                          <p>Additional Rp <span id="additional">{{ number_format($cumulative_additional_price, 0, ',', '.') }}</span></p>
+                          <p>Total Rp <span id="total">{{ number_format($cumulative_price + $cumulative_additional_price,0, ',', '.') }}</span></p>
                         </div>
 
                             <div class="flex flex-col">
                                 <label for="cumulative_price" class="text-black">Upload Payment Proof</label>
                                 <p class="text-black">Transfer to BCA <text class="text-blue-500">6600448160</text> a/n Helena Hanna Haryadi in the right amount (Rp
-                                    {{ number_format($cumulative_price, 0, ',', '.') }}) add information <text class="text-red-500">(Nama Merch/Bundle)-(Quantity)</text></p>
+                                  <span id="total2">{{ number_format($cumulative_price + $cumulative_additional_price,0, ',', '.') }}</span>) add information <text class="text-red-500">(Nama Merch/Bundle)-(Quantity)</text></p>
                                 <input class="text-white my-2 rounded-lg" type="file" accept="image/*" name="payment_image" id="payment_image"
                                     onchange="previewImage()">
                                 <img src="" alt="" class="hidden img-preview h-100 my-2">
@@ -435,6 +434,7 @@
               $('#subtotal').text(response.subtotal);
               $('#additional').text(response.additional);
               $('#total').text(response.total);
+              $('#total2').text(response.total);
           },
           error: function () {
               alert('Gagal update quantity');

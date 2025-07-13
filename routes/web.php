@@ -41,15 +41,23 @@ Route::get('/', function () {
     ]);
 });
 
+
 // Route::get('/', function(){
 //     return view('Home.soon');
 // });
 
-Route::get('/closing-night', function () {
-    return view('Closing.index', [
-        "title" => "closing-night"
+Route::get('/podcast', function () {
+    return view('Podcast.podcast', [
+        "title" => "Podcast Competition"
     ]);
 });
+
+Route::get('/awarding', function () {
+    return view('Awarding.awarding', [
+        "title" => "Radioactive 2025 - Concert Experience"
+    ]);
+});
+
 
 Route::controller(LoginController::class)->group(function () {
     Route::get('/login', 'index')->name('login');

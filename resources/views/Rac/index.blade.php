@@ -1,7 +1,11 @@
 @extends('layouts.main')
 
 @section('container')
-<body class="text-white" style="background: url('{{ asset('images/footerbg.webp') }}') no-repeat center center fixed; background-size: cover;">
+<body class="text-white" style="
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('{{ asset('images/footerbg.webp') }}') no-repeat center center fixed;
+  background-size: cover;
+  background-blend-mode: darken;
+">
     
 <section class="flex min-h-screen flex-col justify-center items-center text-center px-4 font-['Brody_Rawk',sans-serif] relative">
 

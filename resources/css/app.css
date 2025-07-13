@@ -85,6 +85,42 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'RoyaleCoutureScript';
+    src: url("fonts/RoyaleCouture-Script.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RoyaleCoutureSerif';
+    src: url("fonts/RoyaleCouture-Serif.otf") format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RoyaleCoutureSans';
+    src: url("fonts/RoyaleCouture-Sans.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@layer base {
+    .font-royale {
+        font-family: 'RoyaleCoutureSans', sans-serif;
+    }
+    .font-royale-serif {
+        font-family: 'RoyaleCoutureSerif', serif;
+    }
+    .font-royale-script {
+        font-family: 'RoyaleCoutureScript', cursive;
+    }
+}
+
 .dataTables_length select {
     background-color: white;
 }

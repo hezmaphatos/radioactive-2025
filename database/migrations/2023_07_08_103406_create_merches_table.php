@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('image');
             $table->bigInteger('price');
             $table->integer('stock');
+            $table->string('type'); // 'merch' or 'preorder'
             $table->timestamps();
         });
     }

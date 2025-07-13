@@ -17,8 +17,8 @@
 
     <body>      
         <div>
-            <img src="/images/BG WEB.webp" alt="Background Image"
-                class="fixed -z-10 w-auto lg:w-full md:min-w-full md:min-h-full max-w-fit object-cover brightness-[25%]" loading="lazy">
+            <img src="/images/BG WEB 2025 TES.jpg" alt="Background Image"
+                class="fixed -z-10 w-auto lg:w-full md:min-w-full md:min-h-full max-w-fit object-cover brightness-[50%]" loading="lazy">
         </div>
         @include('components.navbar')
 

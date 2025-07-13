@@ -28,6 +28,12 @@
             </div>
         </div>
 
+        <div id="splitter">
+            <div>
+                <img src="images/Divider.png" style="width: 100vw; height: auto; display: block;" alt="Divider">
+            </div>
+        </div>
+
         <div id="about-us" class="flex flex-col justify-center items-center h-screen mt-0 mb-0 px-4 sm:px-8"
             data-aos="fade-up" data-aos-duration="1500">
             <h4 class="font-lavish text-5xl sm:text-6xl md:text-8xl text-white text-center my-6 sm:my-12 tracking-wider">
@@ -49,14 +55,15 @@
             </div>
         </div>
 
-        <div id="marquee-section" class="mt-8 mb-16">
+        
+        <!-- <div id="marquee-section" class="mt-8 mb-16">
             <div class="overflow-hidden">
                 <div class="marquee">
                     <span class="max font-ltmuseum text-2xl text-white tracking-8">
                         DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO
                         STRIVE
                     </span>
-                    <!-- Duplicate the text -->
+                    
                     <span class="max font-ltmuseum text-2xl text-white tracking-8">
                         DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO
                         STRIVE
@@ -67,14 +74,14 @@
                         DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO
                         STRIVE
                     </span>
-                    <!-- Duplicate the text -->
+                    
                     <span class="max font-ltmuseum text-2xl text-white tracking-8">
                         DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO
                         STRIVE
                     </span>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <section class="min-h-screen max-w font-ltmuseumreg p-4" id="timeline">
             <div id="title" class="text-center my-8 px-4">

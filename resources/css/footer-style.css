@@ -1,0 +1,124 @@
+footer {
+  background: url('footerbg.webp') no-repeat center center;
+  background-size: cover;
+  padding: 2rem 1rem;
+  color: black;
+  font-family: 'RoyaleCouture-Sans', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* supaya responsive */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer .menu,
+footer .logo,
+footer .social {
+  flex: 1 1 30%;
+  margin: 1rem;
+}
+
+footer .menu h3,
+footer .social h3 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+footer .menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer .menu ul li {
+  margin-bottom: 0.5rem;
+}
+
+footer .menu ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+footer .menu ul li a:hover {
+  text-decoration: underline;
+}
+
+footer .logo img {
+  max-width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+footer .social .social-icons a {
+  margin-right: 1rem;
+  display: inline-block;
+}
+
+footer .social .social-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+footer .social .umn-logo {
+  display: block;
+  margin-top: 1rem;
+  max-width: 120px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  font-weight: 600;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer .menu,
+  footer .logo,
+  footer .social {
+    flex: 1 1 100%;
+    margin: 0.5rem 0;
+  }
+
+  footer .menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  footer .menu ul li {
+    margin: 0.5rem 1rem;
+  }
+
+  footer .menu ul li a {
+    font-size: 0.9rem;
+  }
+
+  footer .logo img {
+    max-width: 120px;
+  }
+
+  footer .social .social-icons img {
+    width: 28px;
+    height: 28px;
+  }
+
+  footer .social .umn-logo {
+    max-width: 100px;
+    margin: 1rem auto 0;
+  }
+
+  .footer-bottom {
+    font-size: 0.9rem;
+  }
+}

@@ -32,11 +32,6 @@
 }
 
 @font-face {
-    font-family: "Brody Rawk";
-    src: url("fonts/Brody-Rawk.ttf") format("truetype");
-}
-
-@font-face {
     font-family: "LTMuseum-Bold";
     src: url("fonts/LTMuseum-Bold.ttf") format("truetype");
     font-weight: bold;
@@ -83,6 +78,17 @@
     src: url("fonts/LTMuseum-Reg.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'RoyaleCouture';
+    src: url('fonts/RoyaleCouture-Serif.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font-royale {
+    font-family: 'RoyaleCouture', sans-serif;
 }
 
 .dataTables_length select {

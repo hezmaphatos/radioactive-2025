@@ -52,6 +52,7 @@ module.exports = {
                 success: "#219653",
                 danger: "#D34053",
                 warning: "#FFA70B",
+                gold: "#e69f4e",
             },
             spacing: {
                 4.5: "1.125rem",

@@ -50,3 +50,40 @@
     }
 }
 
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #f0e68c, 0 0 15px #f0e68c, 0 0 20px #f0e68c;
+  }
+  50% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #ffd700, 0 0 30px #ffd700, 0 0 40px #ffd700;
+  }
+  100% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #f0e68c, 0 0 15px #f0e68c, 0 0 20px #f0e68c;
+  }
+}
+
+.glow-text {
+  animation: glow 2s ease-in-out infinite;
+}
+
+#left, #right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s ease-out;
+  width: 60vw; 
+  max-width: none; 
+  height: auto; 
+  z-index: 1;
+  pointer-events: none; 
+}
+
+#left {
+  left: -10vw;
+}
+
+#right {
+  right: -10vw;
+}
+
+

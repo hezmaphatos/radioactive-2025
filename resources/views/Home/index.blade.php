@@ -28,17 +28,25 @@
             </div>
         </div>
 
-        <div id="splitter">
+        <div class="parallax overflow-x-hidden ">
             <div>
-                <img src="images/Divider.png" style="width: 100vw; height: auto; display: block;" alt="Divider">
+                <img src="images/left.png" id="left">
+                <img src="images/right.png" id="right">
             </div>
         </div>
 
         <div id="about-us" class="flex flex-col justify-center items-center h-screen mt-0 mb-0 px-4 sm:px-8"
             data-aos="fade-up" data-aos-duration="1500">
-            <h4 class="font-lavish text-5xl sm:text-6xl md:text-8xl text-white text-center my-6 sm:my-12 tracking-wider">
-                ABOUT US</h4>
+            <div class="relative flex items-center justify-center h-screen w-full font-lavish">
+  <span class="absolute text-6xl font-extrabold text-transparent bg-gradient-to-r from-gold to-white bg-clip-text blur-xl opacity-60 select-none">
+    ABOUT US
+  </span>
+  <h1 class="relative z-10 glow-text bg-gradient-to-r from-gold to-white bg-clip-text text-transparent text-6xl font-extrabold">
+    ABOUT US
+  </h1>
+</div>
 
+            
             <div class="px-4 sm:px-8 md:px-20 lg:px-48">
                 <p
                     class="font-royalecoutureserif text-base sm:text-lg md:text-xl text-white text-justify md:text-center tracking-wider mb-6">
@@ -59,23 +67,23 @@
         <!-- <div id="marquee-section" class="mt-8 mb-16">
             <div class="overflow-hidden">
                 <div class="marquee">
-                    <span class="max font-ltmuseum text-2xl text-white tracking-8">
+                    <span class="max font-royalecoutureserift-2xl text-white tracking-8">
                         DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO
                         STRIVE
                     </span>
                     
-                    <span class="max font-ltmuseum text-2xl text-white tracking-8">
+                    <span class="max font-royalecoutureserift-2xl text-white tracking-8">
                         DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO
                         STRIVE
                     </span>
                 </div>
                 <div class="marquee-reverse mt-5">
-                    <span class="max font-ltmuseum text-2xl text-white tracking-8">
+                    <span class="max font-royalecoutureserift-2xl text-white tracking-8">
                         DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO
                         STRIVE
                     </span>
                     
-                    <span class="max font-ltmuseum text-2xl text-white tracking-8">
+                    <span class="max font-royalecoutureserift-2xl text-white tracking-8">
                         DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO
                         STRIVE
                     </span>
@@ -83,11 +91,20 @@
             </div>
         </div> -->
 
-        <section class="min-h-screen max-w font-ltmuseumreg p-4" id="timeline">
+        <section class="min-h-screen max-w font-royalecoutureserifp-4" id="timeline">
             <div id="title" class="text-center my-8 px-4">
-                <h1 class="font-lavish md:text-3xl text-white text-center my-12 tracking-8 m-[0.3em] md:text-[3em] italic"
-                    style="letter-spacing: 5px;">GENERAL TIMELINE</h1>
-                {{-- <p class="text-white md:text-xl tracking-widest">------</p> --}}
+                <div class="relative flex justify-center items-center min-h-screen">
+  <div class="relative flex items-center justify-center h-screen w-full font-lavish">
+  <span class="absolute text-6xl font-extrabold text-transparent bg-gradient-to-r from-gold to-white bg-clip-text blur-xl opacity-60 select-none">
+    GENERAL TIMELINE
+  </span>
+  <h1 class="relative z-10 glow-text bg-gradient-to-r from-gold to-white bg-clip-text text-transparent text-6xl font-extrabold">
+    GENERAL TIMELINE
+  </h1>
+</div>
+
+</h1>
+
             </div>
             <div class="relative" data-aos="zoom-in-right" data-aos-delay="100">
                 <div class="absolute left-1/2 h-full w-px bg-white hidden m-s:block"></div>
@@ -144,8 +161,15 @@
         <div class="px-4">
             <div data-aos="zoom-in-up" data-aos-delay="400"
                 class="container mx-auto flex justify-center md:justify-around flex-wrap items-center align-middle">
-                <h2 class="font-lavish md:text-5xl text-3xl text-center my-12 tracking-[4px] text-red-600">EXCLUSIVE
-                    RADIO PARTNER</h2>
+                <div class="relative text-center my-12 font-lavish">
+  <span class="absolute inset-0 text-3xl md:text-5xl font-extrabold text-transparent bg-gradient-to-r from-gold to-white bg-clip-text blur-xl opacity-60 select-none tracking-[4px]">
+    EXCLUSIVE RADIO PARTNER
+  </span>
+  <h2 class="relative z-10 glow-text text-3xl md:text-5xl font-extrabold text-transparent bg-gradient-to-r from-gold to-white bg-clip-text tracking-[4px]">
+    EXCLUSIVE RADIO PARTNER
+  </h2>
+</div>
+
                 <img src="/images/LOGO MEDPAR/LOGO MUSTANG.webp" alt="" class="md:w-96 w-64 object-contain">
             </div>
         </div>
@@ -154,7 +178,15 @@
             <div class="container mx-auto flex flex-col lg:flex-row items-center lg:justify-between">
                 <!-- Text -->
                 <div data-aos="zoom-in-up" data-aos-delay="400" class="w-full lg:w-2/5 lg:mb-0 lg:text-left text-center">
-                    <h2 class="font-lavish md:text-5xl text-3xl my-12 tracking-[4px] text-red-600">PARTNERS</h2>
+                    <div class="relative text-center my-12 font-lavish">
+  <span class="absolute inset-0 text-3xl md:text-5xl font-extrabold text-transparent bg-gradient-to-r from-gold to-white bg-clip-text blur-xl opacity-60 select-none tracking-[4px]">
+    PARTNERS
+  </span>
+
+  <h2 class="relative z-10 glow-text text-3xl md:text-5xl font-extrabold text-transparent bg-gradient-to-r from-gold to-white bg-clip-text tracking-[4px]">
+    PARTNERS
+  </h2>
+</div>
                 </div>
                 <div class="w-full lg:w-3/5">
                     <div class="grid grid-cols-6 gap-4">
@@ -266,8 +298,16 @@
         <div class="px-4">
             <div data-aos="zoom-in-up" data-aos-delay="400"
                 class="container mx-auto flex justify-center md:justify-around flex-wrap items-center align-middle">
-                <h2 class="font-lavish md:text-5xl text-3xl text-center my-5 tracking-[4px] text-red-600">TICKETING
-                    PARTNER</h2>
+                <div class="relative text-center my-5 font-lavish">
+  <span class="absolute inset-0 text-3xl md:text-5xl font-extrabold text-transparent bg-gradient-to-r from-gold to-white bg-clip-text blur-xl opacity-60 select-none tracking-[4px]">
+    TICKETING PARTNER
+  </span>
+
+  <h2 class="relative z-10 glow-text text-3xl md:text-5xl font-extrabold text-transparent bg-gradient-to-r from-gold to-white bg-clip-text tracking-[4px]">
+    TICKETING PARTNER
+  </h2>
+</div>
+
                 <img src="/images/LOGO SPONSOR/detik event.webp" alt="" class="md:w-96 w-64 object-contain">
             </div>
         </div>
@@ -307,7 +347,16 @@
                 </div>
                 <!-- Text -->
                 <div class="w-full lg:w-1/2 lg:mt-0 lg:text-right text-center flex justify-end items-center align-middle">
-                    <h2 class="font-lavish md:text-5xl text-3xl my-12 tracking-[4px] text-red-600">SPONSORS</h2>
+                    <div class="relative text-center my-12 font-lavish">
+  <span class="absolute inset-0 text-3xl md:text-5xl font-extrabold text-transparent bg-gradient-to-r from-gold to-white bg-clip-text blur-xl opacity-60 select-none tracking-[4px]">
+    SPONSORS
+  </span>
+
+  <h2 class="relative z-10 glow-text text-3xl md:text-5xl font-extrabold text-transparent bg-gradient-to-r from-gold to-white bg-clip-text tracking-[4px]">
+    SPONSORS
+  </h2>
+</div>
+
                 </div>
             </div>
         </div>
@@ -315,16 +364,25 @@
         <div class="flex flex-wrap md:flex-nowrap px-4 md:px-12 mt-20 space-y-8 md:space-y-0">
             <div class="w-full md:w-1/4 p-4 md:p-6">
                 <h1 class="text-lg md:text-xl font-lavish text-[#D61525] mb-2 md:mb-4">UMN RADIOACTIVE 2023</h1>
-                <h2 class="text-2xl md:text-4xl font-bold mb-4 md:mb-6 font-ltmuseumbold text-white">Flashback to last year's thrills!</h2>
+                <div class="relative text-center my-6 font-lavish">
+  <span class="absolute inset-0 text-2xl md:text-4xl font-bold text-transparent bg-gradient-to-r from-gold to-white bg-clip-text blur-xl opacity-60 select-none">
+    Flashback to last year's thrills!
+  </span>
+
+  <h2 class="relative z-10 glow-text text-2xl md:text-4xl font-bold text-transparent bg-gradient-to-r from-gold to-white bg-clip-text">
+    Flashback to last year's thrills!
+  </h2>
+</div>
+
                 <div class="flex flex-wrap items-center align-middle gap-4">
                     <div class=""><a data-filter="all"
-                            class="filter-link no-underline font-ltmuseumbold text-[#d61525] hover:cursor-pointer hover:opacity-50">ALL</a></div>
+                            class="filter-link no-underline font-royalecoutureserif text-[#d61525] hover:cursor-pointer hover:opacity-50">ALL</a></div>
                     <div class=""><a data-filter="voc"
-                            class="filter-link no-underline font-ltmuseumbold text-[#d61525] hover:cursor-pointer hover:opacity-50">VOC</a></div>
+                            class="filter-link no-underline font-royalecoutureserif text-[#d61525] hover:cursor-pointer hover:opacity-50">VOC</a></div>
                     <div class=""><a data-filter="rac"
-                            class="filter-link no-underline font-ltmuseumbold text-[#d61525] hover:cursor-pointer hover:opacity-50">RAC</a></div>
+                            class="filter-link no-underline font-royalecoutureserif text-[#d61525] hover:cursor-pointer hover:opacity-50">RAC</a></div>
                     <div class=""><a data-filter="closing-night"
-                            class="filter-link no-underline font-ltmuseumbold text-[#d61525] hover:cursor-pointer hover:opacity-50">CLOSING NIGHT</a></div>
+                            class="filter-link no-underline font-royalecoutureserif text-[#d61525] hover:cursor-pointer hover:opacity-50">CLOSING NIGHT</a></div>
                 </div>
             </div>
 
@@ -394,8 +452,15 @@
         </div>
 
         <div id="after" class="-mb-20 md:-mb-0 md:my-24" data-aos="fade-up">
-            <h2 class="font-brody md:text-3xl text-white text-center my-12 tracking-8">AFTER MOVIE RADIOACTIVE 2023
-            </h2>
+            <div class="relative text-center my-12 font-lavish">
+  <span class="absolute inset-0 text-xl md:text-3xl text-transparent bg-gradient-to-r from-gold to-white bg-clip-text blur-xl opacity-60 select-none tracking-[8px]">
+    AFTER MOVIE RADIOACTIVE 2023
+  </span>
+
+  <h2 class="relative z-10 glow-text text-xl md:text-3xl text-transparent bg-gradient-to-r from-gold to-white bg-clip-text tracking-[8px]">
+    AFTER MOVIE RADIOACTIVE 2023
+  </h2>
+</div>
             <div class="w-full flex justify-center">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/noafJ76PHeM?si=5ho9Ad32GabxdrVT"
                     title="YouTube video player" frameborder="0"
@@ -516,5 +581,17 @@
                 document.getElementById('popup').classList.add('hidden');
             }
         </script>
+        <script>
+  const left = document.getElementById('left');
+  const right = document.getElementById('right');
+
+  window.addEventListener('scroll', () => {
+    let value = window.scrollY;
+
+    left.style.transform = `translate(${value * -0.3}px, -50%)`;
+    right.style.transform = `translate(${value * 0.3}px, -50%)`;
+  });
+</script>
+
     </body>
 @endsection

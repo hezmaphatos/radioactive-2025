@@ -2,8 +2,8 @@
     class=" fixed navbar bg-transparent lg:justify-center justify-end gap-16 z-40 transition-all duration-700 pr-4 border-transparent">
 
     <div class="absolute left-0 ">
-        <img src="{{ url('images/LOGO RADIOACTIVE 2024.webp') }}" alt="image" class="w-14 lg:w-16 ml-2 mt-2">
-        <div class="menu-item ml-0 font-brodyrawk text-white text-sm tracking-wide mt-1">RADIOACTIVE</div>
+        <img src="{{ url('images/LOGO RADIOACTIVE 2025 PNG.png') }}" alt="image" class="w-14 lg:w-16 ml-2 mt-2">
+        <div class="menu-item ml-0 font-lavish text-white text-sm tracking-wide mt-1">RADIOACTIVE</div>
     </div>
 
     <div class="flex items-center justify-between">

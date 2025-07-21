@@ -3,173 +3,14 @@
 @section('container')
 
     <style>
-.cart-container {
-  padding-top: 30px;
-  overflow: hidden;
-}
-
-.scroll-list {
-  width: 100%;
-  max-width: 1500px;
-  padding: 25px;
-  margin-top: 50px;
-  max-height: 70vh;
-}
-
-.cart-checkout-container {
-  width: 100%;
-  max-width: 700px;
-  padding: 25px;
-  margin-top: 50px;
-  margin-right: auto;
-}
-
-.cart-checkout-container .card {
-  background-color: snow;
-  height: 100%;
-}
-
-.cart-checkout-container .card .card-content{
-  padding: 10px;
-}
-
-@media screen and (max-width: 768px) {
-  .scroll-list {
-      margin-top: 20px;
-  }
-}
-
-
-.scroll-list__wrp {
-  width: 100%;
-  height: 70vh;
-  overflow: auto;
-  padding: 50px;
-  box-shadow: 0px 7px 46px 0px rgba(0, 0, 0, 0.3);
-  background: rgba(255, 255, 255, 0.286);
-  border-radius: 8px;
-}
-
-
 .scroll-list__wrp .scrollbar-track {
   display: none !important;
 }
 
 @media screen and (max-width: 768px) {
-  .scroll-list {
-    height: 24vh;
-  }
-  .scroll-list__wrp {
-      padding: 25px;
-      height: 24vh;
-  }
   .is-hidden {
   display: none !important;
 }
-}
-
-.scroll-list__item {
-  width: 100%;
-  height: 16vh;
-  display: flex;
-  margin-bottom: 15px;
-  border-radius: 8px;
-  background-color: #debc41;
-  transition: all 0.35s ease-in-out;
-  opacity: 0;
-  transform: scale(0.7);
-  box-shadow: 0px 7px 16px 0px rgba(0, 0, 0, 0.2);
-  padding: 10px;
-}
-
-.scroll-list__item .details {
-  display: block;
-  margin-left: 20px;
-  width: 100%;
-}
-
-.scroll-list__item .details p {
-  font-size: 1.3em;
-}
-.quantity-cart input{
-  margin-top: 3px;
-  border-radius: 50px;
-  height: 25px;
-  outline: none;
-  border: none;
-}
-
-.quantity-cart button {
-  margin-top: 3px;
-  border-radius: 100px;
-  height: 25px;
-  width: 7%;
-}
-
-.quantity-cart button:focus {
-  outline: none;
-}
-
-.quantity-cart .qty-decrease {
-  background-color: rgb(223, 70, 70);
-  opacity: 0.5;
-  transition:all 0.35s ease-in-out;
-}
-
-.quantity-cart .qty-increase {
-  background-color: rgb(70, 223, 70);
-  opacity: 0.5;
-  transition:all 0.35s ease-in-out;
-}
-
-.quantity-cart button:hover {
-  opacity: 1;
-  transition:all 0.35s ease-in-out;
-}
-
-.cart-container .delete-item {
-  background-color: rgb(223, 70, 70);
-  border-radius: 500px;
-  height: 50%;
-  margin-top: 5%;
-  margin-right: 2%;
-  outline: none;
-}
-
-.cart-container .delete-item:hover {
-  background-color: red;
-    transition: all 0.35s ease-in-out;
-}
-
-.details #detail-merch {
-  font-size: 11px;
-}
-
-.details i {
-  font-size: 10px !important;
-  color: rgb(58, 134, 45);
-}
-
-.scroll-list__item a{
-  display: flex;
-  flex-direction: column;
-  width: 20%;
-  align-items: center;
-  justify-content: center;
-  font-size: 40px;
-  background-color: brown
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.scroll-list__item a:hover {
-  background-color: white;
-  color: red;
-}
-
-.scroll-list__item img {
-  max-width: 20%;
-  height: 100%;
-  border-radius: 10px;
 }
 
 .scroll-list__item.item-hide {
@@ -195,70 +36,41 @@
 .scroll-list__item:last-child {
   margin-bottom: 20vh;
 }
-
-
-.cart-checkout-container .price-calculation {
-  background-color: #debc41;
-  border-radius: 10px;
-  padding: 10px;
-}
-
-
     </style>
 
     <body class="min-h-screen text-black">
-
-            {{-- <h1 class="w-full text-center font-ltmuseum-bold text-white pt-30"> Cart</h1> --}}
-
-            <div class="cart-container flex flex-col gap-1 justify-between w-[90%] mx-[5%] md:flex-row">
-                <div class="scroll-list w-3/4">
+            <div class="cart-container flex flex-col gap-1 justify-between w-[90%] mx-[5%] md:flex-row pt-[30px] overflow-hidden">
+                <div class="scroll-list w-3/4 w-full max-w-[1500px] p-[25px] mt-[50px] max-h-[70vh] md:mt-[50px] mt-[20px] md:h-auto h-[24vh]">
                   <h1 class="text-white text-center">Cart</h1>
-                  <div class="scroll-list__wrp js-scroll-content js-scroll-list">
+                  <div class="scroll-list__wrp js-scroll-content js-scroll-list w-full h-[24vh] md:h-[70vh] overflow-auto p-[25px] md:p-[50px] shadow-[0px_7px_46px_0px_rgba(0,0,0,0.3)] bg-[#a3b18a7c] rounded-[8px]">
                         <div id="veryUniqueItems">
-                            <!-- <div class="scroll-list__item js-scroll-list-item">
-                                <img src="../images/logo.png" alt="">
-                                <div class="details">
-                                  {{-- <!-- if preorder then h1 Product 1 (Preorder) else baru h1 product 1 aja !--> --}}
-                                    <h1 id="name">Product 1</h1>
-                                    <p> 
-                                        <i class="fa-solid fa-user"></i><span id="tes">Variant/Size</span> 
-                                        <br>
-                                        <i class="fa-solid fa-money-bill"></i>Rp. <span id="tes">100.0000</span>
-                                    </p>
-                                </div>
-                                    <div class="flex items-center gap-2">
-                                      <button class="qty-decrease bg-red-500 text-white px-2" {{-- data-id="{{ $item->id }}" --}}>-</button>
-                                      <input type="number" class="qty-input w-12 text-center" value="1" min="1" {{-- data-id="{{ $item->id }}" --}}>
-                                      <button class="qty-increase bg-green-500 text-white px-2" {{-- data-id="{{ $item->id }}" --}}>+</button>
-                                    </div>
-                            </div> !-->
                             @php
                               $cumulative_price = 0;
                               $cumulative_additional_price = 0;
                             @endphp
                             @foreach ($carts as $cart)
-                            <div class="scroll-list__item js-scroll-list-item @if ($cart->variation()->stock < $cart->quantity) text-red-800 @endif">
+                            <div class="scroll-list__item js-scroll-list-item @if ($cart->variation()->stock < $cart->quantity) text-red-800 @endif w-full h-[16vh] flex mb-[15px] rounded-[8px] bg-[#DFF0D8] transition-all duration-[350ms] ease-in-out opacity-0 scale-[0.7] shadow-[0px_7px_16px_0px_rgba(0,0,0,0.2)] p-[10px]">
                             
-                              <img src="{{ asset('storage/' . $cart->merch->image) }}" alt="">
-                                <div class="details">
+                              <img src="{{ asset('storage/' . $cart->merch->image) }}" alt="" class="max-w-[20%] h-full rounded-[10px]">
+                                <div class="details block ml-[20px] w-full">
                                   <!-- if preorder then h1 Product 1 (Preorder) else baru h1 product 1 aja !-->
                                     <h4 id="name">{{ $cart->merch->name }}</h4>
-                                        <i class="fa-solid fa-tag"></i><span id="detail-merch"> {{ $cart->variation }}</span> 
+                                        <i class="fa-solid fa-tag text-[11px] text-[#3a862d]"></i><span id="detail-merch "> {{ $cart->variation }}</span> 
                                         <br>
-                                        <i class="fa-solid fa-money-bill"></i><span id="detail-merch" data-id="{{ $cart->id }}"> Rp {{ number_format($cart->total_price, 0, ',', '.') }}</span>
+                                        <i class="fa-solid fa-money-bill text-[11px] text-[#3a862d]"></i><span id="detail-merch " data-id="{{ $cart->id }}"> Rp {{ number_format($cart->total_price, 0, ',', '.') }}</span>
 
                                         <div class="flex items-center gap-2 quantity-cart">
                                           <button
-                                          class="qty-decrease w-8 h-8 flex items-center justify-center rounded-full bg-red-500 text-white disabled:opacity-50"
+                                          class="qty-decrease w-8 h-8 flex items-center justify-center rounded-full bg-red-500 text-white disabled:opacity-50 mt-[3px] rounded-[100px] h-[25px] w-[7%] outline-none hover:opacity-100 transition-all duration-[350ms] ease-in-out"
                                           data-id="{{ $cart->id }}"
                                           @if ($cart->quantity == 1) disabled @endif
                                         >
-                                          <p class="text-lg leading-none">-</p>
+                                          <p class="text-lg leading-none text-[1.3em]">-</p>
                                         </button>
 
-                                          <input type="number" class="qty-input w-12 no-spinner text-center" value="{{ $cart->quantity }}" min="1" max="{{ $cart->variation()->stock }}" data-id="{{ $cart->id }}" disabled>
+                                          <input type="number" class="qty-input w-12 no-spinner text-center mt-[3px] rounded-[50px] h-[25px] outline-none border-none" value="{{ $cart->quantity }}" min="1" max="{{ $cart->variation()->stock }}" data-id="{{ $cart->id }}" disabled>
                                           <button
-                                          class="qty-increase w-8 aspect-square flex items-center justify-center rounded-full bg-green-500 text-white text-lg leading-none disabled:opacity-50"
+                                          class="qty-increase w-8 aspect-square flex items-center justify-center rounded-full bg-green-500 text-white text-lg leading-none disabled:opacity-50 mt-[3px] rounded-[100px] h-[25px] w-[7%] outline-none hover:opacity-100 transition-all duration-[350ms] ease-in-out"
                                           data-id="{{ $cart->id }}"
                                           @if ($cart->variation()->stock <= $cart->quantity) disabled @endif
                                         >
@@ -270,7 +82,7 @@
                                       <form action="/cart/{{ $cart->id }}/remove" method="POST" enctype="multipart/form-data">
                                             @method('delete')
                                             @csrf
-                                            <button class="flex items-center delete-item text-white px-5" onclick="return confirm('Ingin menghapus item dari cart?')"> <i class="fa-solid fa-trash"></i> </button>
+                                            <button class="flex items-center delete-item text-white px-5 bg-red-600/60 hover:bg-red-600 rounded-full h-1/2 mt-[5%] mr-[2%] outline-none transition-all duration-[350ms] ease-in-out" onclick="return confirm('Ingin menghapus item dari cart?')"> <i class="fa-solid fa-trash"></i> </button>
                                       </form>
                                 @php
                                     $cumulative_price += $cart->total_price;
@@ -280,40 +92,46 @@
                                 </div>
                                 @endforeach
                                <div id="cart-check" data-cart-count="{{ $carts->count() }}"></div>
-                                <div class="scroll-list__item js-scroll-list-item is-hidden"></div>
-                                <!-- bikin if carts is 0 !-->
+                               @if ($carts->count() > 3)
+                                <div class="scroll-list__item js-scroll-list-item is-hidden w-full h-[16vh] flex mb-[15px] rounded-[8px] bg-[#DFF0D8] transition-all duration-[350ms] ease-in-out opacity-0 scale-[0.7] shadow-[0px_7px_16px_0px_rgba(0,0,0,0.2)] p-[10px]">No aitems in  the cart.</div>
+                                @endif
+                                @if ($carts->count() == 0)
+                                <div class="scroll-list__item js-scroll-list-item w-full h-[16vh] flex mb-[15px] rounded-[8px] bg-[#DFF0D8] transition-all duration-[350ms] ease-in-out opacity-0 scale-[0.7] shadow-[0px_7px_16px_0px_rgba(0,0,0,0.2)] p-[10px]">
+                                  <h1>No items in  the cart.</h1>
+                                </div>
+                                @endif
                         </div>
                     </div>
                 </div>
-                  <div class="cart-checkout-container w-1/4">
+                  <div class="cart-checkout-container w-1/4 w-full max-w-[700px] p-[25px] mt-[50px] mr-auto">
                     <h1 class="text-white text-center">Summary</h1>
-                    <div class="card">
-                      <div class="card-content">
+                    <div class="card bg-[#a3b18a7c] h-full">
+                      <div class="card-content p-[10px]">
                             <form action="/merch/checkout" method="POST" enctype="multipart/form-data"
                             class="font-ltmuseumreg">
                             @csrf
                             <div class="flex flex-col">
-                                <label for="name" class="text-white">Nama</label>
+                                <label class="text-[#F1F5F9]" for="name" class="">Nama</label>
                                 <input required type="text" name="name" id="name" placeholder="Iggy"
-                                    class="bg-white text-black border border-black" value="{{ auth()->user()->name }}">
+                                    class="bg-white text-[#1F2937] border-black" value="{{ auth()->user()->name }}">
                             </div>
                             <div class="flex flex-col">
-                                <label for="email" class="text-white">Email</label>
+                                <label class="text-[#F1F5F9]" for="email" class="">Email</label>
                                 <input required type="email" name="email" id="email" value="{{auth()->user()->email}}" placeholder="iggy@gmail.com"
-                                    class="bg-white text-black border border-black">
+                                    class="bg-white text-[#1F2937] border-black">
                             </div>
                             <div class="flex flex-col">
-                                <label for="phone" class="text-white">Phone</label>
+                                <label class="text-[#F1F5F9]" for="phone" class="">Phone</label>
                                 <input required type="number" name="phone" id="phone" placeholder="081710771077"
-                                    class="bg-white text-black border border-black">
+                                    class="bg-white text-[#1F2937] border-black">
                             </div>
                             <div class="flex flex-col">
-                                <label for="line" class="text-white">ID Line</label>
+                                <label class="text-[#F1F5F9]" for="line" class="">ID Line</label>
                                 <input required type="text" name="line" id="line" placeholder="ID Line"
-                                    class="bg-white text-black border border-black">
+                                    class="bg-white text-[#1F2937] border-black">
                             </div>
 
-                        <div class="price-calculation my-3">
+                        <div class="price-calculation my-3 bg-[#FDF6E3] rounded-[10px] p-[10px]">
                           <p>Subtotal Rp <span id="subtotal">{{ number_format($cumulative_price, 0, ',', '.') }}</span></p>
                           <p>Additional Rp <span id="additional">{{ number_format($cumulative_additional_price, 0, ',', '.') }}</span></p>
                           <p>Total Rp <span id="total">{{ number_format($cumulative_price + $cumulative_additional_price,0, ',', '.') }}</span></p>
@@ -334,9 +152,9 @@
                           
                                 <button type="submit" class="bg-red-600 text-white rounded-md px-2 py-2">Create Order!</button>
                             @endif
-                        </form>
-                      </div>
-                    </div>
+                     </div>
+                          </form>
+                   </div>
                   </div>
             </div>
 
@@ -424,7 +242,7 @@
           type: 'POST',
           data: {
               _token: "{{ csrf_token() }}",
-              _method: "PUT", // Laravel butuh ini karena HTML form gak bisa native PUT
+              _method: "PUT",
               quantity: newQty
           },
           success: function (response) {

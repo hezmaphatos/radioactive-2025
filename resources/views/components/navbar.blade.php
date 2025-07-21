@@ -3,7 +3,7 @@
 
     <div class="max-w-7xl mx-auto flex items-center justify-between relative">
 
-        <!-- Spacer kiri (untuk keseimbangan layout tengah) -->
+        <!-- Spacer kiri -->
         <div class="w-1/3 hidden lg:block"></div>
 
         <!-- Logo + Menu di Tengah -->
@@ -20,8 +20,8 @@
                         ['label' => 'HOME', 'href' => '/', 'desc' => 'Home', 'icon' => 'fa-home'],
                         ['label' => 'MAC', 'href' => '/mac', 'desc' => 'Mini Announcing Challenge', 'icon' => 'fa-microphone'],
                         ['label' => 'RAC', 'href' => '/rac', 'desc' => 'Radio Announcing Challenge', 'icon' => 'fa-broadcast-tower'],
-                        ['label' => 'CLOSING NIGHT', 'href' => '/closing-night', 'desc' => 'Closing Night', 'icon' => 'fa-moon'],
                         ['label' => 'PODCAST', 'href' => '/podcast', 'desc' => 'Podcast', 'icon' => 'fa-podcast'],
+                        ['label' => 'CLOSING NIGHT', 'href' => '/closing-night', 'desc' => 'Closing Night', 'icon' => 'fa-moon'],
                         ['label' => 'MERCH', 'href' => '/merch', 'desc' => 'Merch', 'icon' => 'fa-shopping-bag'],
                     ];
                 @endphp
@@ -41,6 +41,22 @@
             </nav>
         </div>
 
+        <!-- Desktop Login/Logout -->
+        <div class="absolute right-2 top-1/2 transform -translate-y-1/2 hidden lg:flex items-center space-x-4">
+            @auth
+                <span class="text-sm text-white tracking-widest">Welcome, {{ auth()->user()->name }}</span>
+                <a href="/logout"
+                    class="bg-[#f6e79c] hover:bg-white text-black px-4 py-1 text-sm font-semibold rounded-full no-underline transition">
+                    Logout
+                </a>
+            @else
+                <a href="/login"
+                    class="bg-[#f6e79c] hover:bg-white text-black px-5 py-1 text-sm font-semibold rounded-full no-underline transition">
+                    Login
+                </a>
+            @endauth
+        </div>
+
         <!-- Mobile Menu Button -->
         <div class="absolute right-4 top-1/2 transform -translate-y-1/2 lg:hidden">
             <button @click="isOpen = !isOpen" class="text-white">
@@ -49,26 +65,33 @@
                 </svg>
             </button>
         </div>
-
     </div>
 
-    <!-- Mobile Menu -->
+    <!-- Mobile Dropdown Menu -->
     <div x-show="isOpen" @click.away="isOpen = false"
-        class="lg:hidden mt-2 w-full bg-[#111] text-white rounded-md shadow-lg p-4 z-50">
+        class="lg:hidden mt-8 w-full bg-[#111] text-white rounded-md shadow-lg p-4 z-50">
         @foreach ($menus as $menu)
             <div class="flex items-center space-x-3 mb-4">
                 <i class="fas {{ $menu['icon'] }} w-5 h-5 text-white"></i>
                 <a href="{{ $menu['href'] }}" class="text-sm font-ltmuseumbold text-white no-underline">
                     {{ $menu['desc'] }}
-                    <!-- <div class="text-xs text-gray-400">{{ $menu['desc'] }}</div> -->
                 </a>
             </div>
         @endforeach
 
-        <!-- @auth
-            <a href="/logout" class="block text-red-400 text-sm mt-2">LOG OUT</a>
+        @auth
+            <div class="text-sm text-white text-center mb-2 tracking-widest">
+                Welcome, {{ auth()->user()->name }}
+            </div>
+            <a href="/logout"
+                class="block bg-[#f6e79c] text-black px-4 py-2 text-sm rounded-full text-center mt-2 font-semibold no-underline hover:bg-white transition">
+                Logout
+            </a>
         @else
-            <a href="/login" class="block bg-green-600 px-4 py-2 text-sm text-white rounded-full text-center mt-2">LOGIN</a>
-        @endauth -->
+            <a href="/login"
+                class="block bg-[#f6e79c] text-black px-4 py-2 text-sm rounded-full text-center mt-2 font-semibold no-underline hover:bg-white transition">
+                Login
+            </a>
+        @endauth
     </div>
 </div>

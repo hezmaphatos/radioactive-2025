@@ -75,21 +75,21 @@
     </div>
 
     <div id="judges" class="flex flex-col sm:flex-row justify-center gap-6 relative z-10">
-        <div id="judge1" class="p-4 text-center" data-aos="fade-up" data-aos-delay="100">
-                <div class="rotating-border w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 mx-auto mb-4 rounded-full relative overflow-hidden">
-                    <div class="absolute inset-0.5 bg-black rounded-full z-10"></div>
-                    <img src="{{ asset('images/reza_bima.webp') }}" class="absolute inset-0.5 w-[calc(100%-4px)] h-[calc(100%-4px)] object-cover object-center rounded-full z-20" alt="Reza Bima">
-                </div>
-                <h2 class="mb-2 text-lg sm:text-xl">Reza Bima</h2>
-            </div>
-            <div id="judge2" class="p-4 text-center" data-aos="fade-up" data-aos-delay="200">
-                <div class="rotating-border w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 mx-auto mb-4 rounded-full relative overflow-hidden">
-                    <div class="absolute inset-0.5 bg-black rounded-full z-10"></div>
-                    <img src="{{ asset('images/dina_janidya.webp') }}" class="absolute inset-0.5 w-[calc(100%-4px)] h-[calc(100%-4px)] object-cover object-center rounded-full z-20" alt="Dina Janidya">
-                </div>
-                <h2 class="mb-2 text-lg sm:text-xl">Dina Janidya</h2>
-            </div>
+    <div id="judge1" class="p-4 text-center" data-aos="fade-up" data-aos-delay="100">
+        <div class="w-64 h-64 mx-auto mb-4 relative">
+            <img src="{{ asset('images/reza_bima_nobg.webp') }}" alt="Reza Bima" class="w-44 h-44 object-cover object-top rounded-full absolute top-1/2 left-1/2 z-10 transform -translate-x-1/2 -translate-y-1/2">
+            <img src="{{ asset('images/judgesframe.webp') }}" alt="Frame" class="w-full h-full object-contain absolute inset-0 z-20 pointer-events-none">
         </div>
+        <h2 class="mb-2 text-lg sm:text-xl">Reza Bima</h2>
+    </div>
+    <div id="judge2" class="p-4 text-center" data-aos="fade-up" data-aos-delay="200">
+        <div class="w-64 h-64 mx-auto mb-4 relative">
+            <img src="{{ asset('images/judgesframe.webp') }}" alt="Frame" class="w-full h-full object-contain absolute inset-0 z-20 pointer-events-none">
+            <img src="{{ asset('images/dina_janidya.webp') }}" alt="Dina Janidya" class="w-44 h-44 object-cover object-top rounded-full absolute top-1/2 left-1/2 z-10 transform -translate-x-1/2 -translate-y-1/2">
+        </div>
+        <h2 class="mb-2 text-lg sm:text-xl">Dina Janidya</h2>
+    </div>
+</div>
     </section>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>

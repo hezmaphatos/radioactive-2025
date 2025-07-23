@@ -66,24 +66,47 @@
   animation: glow 2s ease-in-out infinite;
 }
 
-#left, #right {
+#left, #right,
+#bungakiri, #bungakanan {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   transition: transform 0.1s ease-out;
-  width: 60vw; 
-  max-width: none; 
-  height: auto; 
+  max-width: none;
+  height: auto;
   z-index: 1;
-  pointer-events: none; 
+  pointer-events: none;
 }
 
-#left {
-  left: -10vw;
-}
 
-#right {
+
+#right, #left {
   right: -10vw;
+  width: 60vw;
+  z-index: 2; /* Batu di atas bunga */
+  top: 63%;
+  bottom: 0;
+  transform: none;
 }
+
+
+body {
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+#logo {
+  filter: drop-shadow(0 0 10px #f0e68c );
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease-out;
+  z-index: 3;
+  pointer-events: none;
+}
+
 
 

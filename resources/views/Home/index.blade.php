@@ -15,25 +15,41 @@
             </button>
         </a>
     </div> --}}
-        <div id="section-1" class="pt-32 max-w-4xl mx-auto">
-            <div data-aos="zoom-in" data-aos-duration="3000" data-aos-anchor-placement="center-center"
-                class="flex flex-col md:flex-row items-center justify-center gap-4">
-                <p class="text-center font-lavish text-base text-white z-20 tracking-10">THE MOST SPECTACULAR ANNUAL EVENT BY
-                </p>
-                <img class="w-20 md:w-24 z-16" src="images/LOGO UMN RADIO.webp" alt="UMN Radio Logo">
-            </div>
-            <div class="relative flex flex-col items-center mt-10" data-aos="fade-up" data-aos-duration="3000">
-                <img class="object-cover h-[400px] w-[800px] z-0" src="images/LOGO RADIOACTIVE 2025 PNG.png"
-                    alt="background logo" />
-            </div>
-        </div>
+        
 
-        <div class="parallax overflow-x-hidden ">
-            <div>
-                <img src="images/left.png" id="left">
-                <img src="images/right.png" id="right">
-            </div>
-        </div>
+<div class="relative overflow-hidden h-screen w-screen">
+
+  <div class="pt-32 max-w-4xl mx-auto z-30 relative">
+    <div data-aos="zoom-in" data-aos-duration="3000" data-aos-anchor-placement="center-center"
+      class="flex flex-col md:flex-row items-center justify-center gap-4">
+      <p class="text-center font-lavish text-base text-white tracking-10">THE MOST SPECTACULAR ANNUAL EVENT BY</p>
+      <img class="w-20 md:w-24" src="images/LOGO UMN RADIO.webp" alt="UMN Radio Logo">
+    </div>
+  </div>
+
+
+<img src="images/BUNGAKIRI.png" id="bungakiri"
+  class="absolute left-[-60px] top-[5%] h-[500px] z-30" />
+
+<img src="images/BUNGAKANAN.png" id="bungakanan"
+  class="absolute right-[-60px] top-[5%] h-[500px] z-30" />
+
+
+
+<img src="images/left.png" id="left"
+  class="absolute left-0 bottom-[-80px] w-[300px] z-20" />
+
+<img src="images/right.png" id="right"
+  class="absolute right-0 bottom-[-80px] w-[300px] z-20" />
+
+  <div class="relative flex justify-center items-center mt-10 z-30"
+    data-aos="fade-up" data-aos-duration="3000">
+    <img id="logo" class="object-cover w-[90vw] max-w-[800px] h-[400px]" src="images/LOGO RADIOACTIVE 2025 PNG.png"
+      alt="background logo" />
+  </div>
+</div>
+
+
 
         <div id="about-us" class="flex flex-col justify-center items-center h-screen mt-0 mb-0 px-4 sm:px-8"
             data-aos="fade-up" data-aos-duration="1500">
@@ -584,12 +600,18 @@
         <script>
   const left = document.getElementById('left');
   const right = document.getElementById('right');
+  const bungakiri = document.getElementById('bungakiri');
+  const bungakanan = document.getElementById('bungakanan');
+  const logo = document.getElementById('logo');
 
   window.addEventListener('scroll', () => {
     let value = window.scrollY;
 
     left.style.transform = `translate(${value * -0.3}px, -50%)`;
     right.style.transform = `translate(${value * 0.3}px, -50%)`;
+    bungakiri.style.transform = `translate(${value * -0.3}px, -50%)`;
+    bungakanan.style.transform = `translate(${value * 0.3}px, -50%)`;
+    logo.style.transform = `translate(-50%, calc(-5% + ${value * 0.25}px))`;
   });
 </script>
 

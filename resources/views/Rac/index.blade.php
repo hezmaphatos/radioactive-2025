@@ -50,8 +50,8 @@
 
 @media screen and (max-width: 756px){
     .flipbook {
-        height: 30%;
-        width: 30%;
+        height: 300px;
+        width: 300px;
     }
 }
 

@@ -41,8 +41,8 @@
     <body class="min-h-screen text-black">
             <div class="cart-container flex flex-col gap-1 justify-between w-[90%] mx-[5%] md:flex-row pt-[30px] overflow-hidden">
                 <div class="scroll-list w-3/4 w-full max-w-[1500px] p-[25px] mt-[50px] max-h-[70vh] md:mt-[50px] mt-[20px] md:h-auto h-[24vh]">
-                  <h1 class="text-white text-center">Cart</h1>
-                  <div class="scroll-list__wrp js-scroll-content js-scroll-list w-full h-[24vh] md:h-[70vh] overflow-auto p-[25px] md:p-[50px] shadow-[0px_7px_46px_0px_rgba(0,0,0,0.3)] bg-[#a3b18a7c] rounded-[8px]">
+                  <h1 class="text-center text-[#f6e79c]" style="text-shadow: 0 0 10px #f6e79c, 0 0 20px #f6e79c;">Cart</h1>
+                  <div class="scroll-list__wrp js-scroll-content js-scroll-list w-full h-[24vh] md:h-[70vh] overflow-auto p-[25px] md:p-[50px] shadow-[0px_7px_46px_0px_rgba(0,0,0,0.3)] bg-[#a3b18a7c] rounded-[8px] border-2 border-solid border-[#f6e79c]">
                         <div id="veryUniqueItems">
                             @php
                               $cumulative_price = 0;
@@ -104,8 +104,8 @@
                     </div>
                 </div>
                   <div class="cart-checkout-container w-1/4 w-full max-w-[700px] p-[25px] mt-[50px] mr-auto">
-                    <h1 class="text-white text-center">Summary</h1>
-                    <div class="card bg-[#a3b18a7c] h-full">
+                    <h1 class="text-center text-[#f6e79c]" style="text-shadow: 0 0 10px #f6e79c#f6e79c, 0 0 20px #f6e79c;">Summary</h1>
+                    <div class="card bg-[#a3b18a7c] h-full border-2 border-solid border-[#f6e79c]">
                       <div class="card-content p-[10px]">
                             <form action="/merch/checkout" method="POST" enctype="multipart/form-data"
                             class="font-ltmuseumreg">
@@ -140,7 +140,7 @@
                             <div class="flex flex-col">
                                 <label for="cumulative_price" class="text-black">Upload Payment Proof</label>
                                 <p class="text-black">Transfer to BCA <text class="text-blue-500">6600448160</text> a/n Helena Hanna Haryadi in the right amount (Rp
-                                  <span id="total2">{{ number_format($cumulative_price + $cumulative_additional_price,0, ',', '.') }}</span>) add information <text class="text-red-500">(Nama Merch/Bundle)-(Quantity)</text></p>
+                                  <span id="total2">{{ number_format($cumulative_price + $cumulative_additional_price,0, ',', '.') }}</span>) add information <text class="text-[#f6e79c]">(Nama Merch/Bundle)-(Quantity)</text></p>
                                 <input class="text-white my-2 rounded-lg" type="file" accept="image/*" name="payment_image" id="payment_image"
                                     onchange="previewImage()">
                                 <img src="" alt="" class="hidden img-preview h-100 my-2">
@@ -150,7 +150,12 @@
                                 <p>Kurangi jumlah atau hapus item untuk melanjutkan checkout (Lakukan refresh setelah mengurangi jumlah)</p>
                             @else
                           
-                                <button type="submit" class="bg-red-600 text-white rounded-md px-2 py-2">Create Order!</button>
+<button class="bg-[#926C15] text-[#f6e79c] rounded-md px-4 py-2 font-bold border-2 border-[#f6e79c] 
+               hover:bg-[#f6e79c] hover:text-white hover:border-white transition-colors duration-500"
+        style="box-shadow: 0 0 10px #f6e79c, 0 0 20px #f6e79c;">
+  Create Order!
+</button>
+
                             @endif
                      </div>
                           </form>

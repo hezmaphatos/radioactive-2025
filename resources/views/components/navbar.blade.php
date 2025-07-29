@@ -21,7 +21,7 @@
                         ['label' => 'MAC', 'href' => '/mac', 'desc' => 'Mini Announcing Challenge', 'icon' => 'fa-microphone'],
                         ['label' => 'RAC', 'href' => '/rac', 'desc' => 'Radio Announcing Challenge', 'icon' => 'fa-broadcast-tower'],
                         ['label' => 'PODCAST', 'href' => '/podcast', 'desc' => 'Podcast', 'icon' => 'fa-podcast'],
-                        ['label' => 'CLOSING NIGHT', 'href' => '/closing-night', 'desc' => 'Closing Night', 'icon' => 'fa-moon'],
+                        ['label' => 'AWARDING NIGHT', 'href' => '/awarding-night', 'desc' => 'Awarding Night', 'icon' => 'fa-moon'],
                         ['label' => 'MERCH', 'href' => '/merch', 'desc' => 'Merch', 'icon' => 'fa-shopping-bag'],
                     ];
                 @endphp

@@ -89,91 +89,6 @@
             }
         }
 
-        .grass-sway-1 {
-            animation: sway-gentle 4s ease-in-out infinite;
-            transform-origin: bottom center;
-        }
-
-        .grass-sway-2 {
-            animation: sway-moderate 3.5s ease-in-out infinite;
-            transform-origin: bottom center;
-        }
-
-        .grass-sway-3 {
-            animation: sway-soft 5s ease-in-out infinite;
-            transform-origin: bottom center;
-        }
-
-        .grass-sway-4 {
-            animation: sway-light 4.2s ease-in-out infinite;
-            transform-origin: bottom center;
-        }
-
-        .grass-sway-5 {
-            animation: sway-calm 3.8s ease-in-out infinite;
-            transform-origin: bottom center;
-        }
-
-        @keyframes sway-gentle {
-            0%, 100% {
-                transform: rotate(0deg) translateX(0px);
-            }
-            25% {
-                transform: rotate(1.5deg) translateX(2px);
-            }
-            75% {
-                transform: rotate(-1.5deg) translateX(-2px);
-            }
-        }
-
-        @keyframes sway-moderate {
-            0%, 100% {
-                transform: rotate(0deg) translateX(0px);
-            }
-            30% {
-                transform: rotate(-2deg) translateX(-3px);
-            }
-            70% {
-                transform: rotate(2deg) translateX(3px);
-            }
-        }
-
-        @keyframes sway-soft {
-            0%, 100% {
-                transform: rotate(0deg) translateX(0px);
-            }
-            20% {
-                transform: rotate(1deg) translateX(1px);
-            }
-            80% {
-                transform: rotate(-1deg) translateX(-1px);
-            }
-        }
-
-        @keyframes sway-light {
-            0%, 100% {
-                transform: rotate(0deg) translateX(0px);
-            }
-            40% {
-                transform: rotate(-1.8deg) translateX(-2.5px);
-            }
-            60% {
-                transform: rotate(1.8deg) translateX(2.5px);
-            }
-        }
-
-        @keyframes sway-calm {
-            0%, 100% {
-                transform: rotate(0deg) translateX(0px);
-            }
-            35% {
-                transform: rotate(1.2deg) translateX(1.5px);
-            }
-            65% {
-                transform: rotate(-1.2deg) translateX(-1.5px);
-            }
-        }
-
         .hanging-plant-left {
             animation: hanging-sway-left 6s ease-in-out infinite;
             transform-origin: top center;
@@ -186,19 +101,19 @@
 
         @keyframes hanging-sway-left {
             0%, 100% {
-                transform: translateY(0px);
+                transform: rotate(-2deg);
             }
             50% {
-                transform: translateY(20px);
+                transform: rotate(2deg);
             }
         }
 
         @keyframes hanging-sway-right {
             0%, 100% {
-                transform: translateY(0px) scaleX(-1);
+                transform: rotate(2deg) scaleX(-1);
             }
             50% {
-                transform: translateY(25px) scaleX(-1);
+                transform: rotate(-2deg) scaleX(-1);
             }
         }
     </style>
@@ -272,20 +187,6 @@
                              className="w-full h-full object-contain opacity-100 m-0 p-0 hanging-plant-right" />
                     </div>
 
-                    <div className="absolute bottom-0 left-0 z-20 w-40 h-40 xs:w-48 xs:h-48 sm:w-56 sm:h-56 md:w-80 md:h-80 lg:w-[450px] lg:h-[450px] xl:w-[500px] xl:h-[500px] pointer-events-none -ml-6 xs:-ml-8 sm:-ml-5 md:-ml-8 mb-2 xs:mb-0 sm:-mb-16 md:-mb-32" 
-                         data-aos="fade-up-right" data-aos-duration="1200" data-aos-delay="800">
-                        <img src="{{ asset('images/BATU1.webp') }}" 
-                             alt="Batu Kiri" 
-                             className="w-full h-full object-contain opacity-100 m-0 p-0" />
-                    </div>
-
-                    <div className="absolute bottom-0 right-0 z-20 w-40 h-40 xs:w-48 xs:h-48 sm:w-56 sm:h-56 md:w-80 md:h-80 lg:w-[450px] lg:h-[450px] xl:w-[500px] xl:h-[500px] pointer-events-none -mr-6 xs:-mr-8 sm:-mr-5 md:-mr-8 mb-2 xs:mb-0 sm:-mb-16 md:-mb-32" 
-                         data-aos="fade-up-left" data-aos-duration="1200" data-aos-delay="800">
-                        <img src="{{ asset('images/BATU1.webp') }}" 
-                             alt="Batu Kanan" 
-                             className="w-full h-full object-contain opacity-100 m-0 p-0 scale-x-[-1]" />
-                    </div>
-
                     <div className="absolute bottom-0 left-0 right-0 h-32 z-5" 
                          style={gradientOverlayStyle}></div>
 
@@ -302,6 +203,7 @@
                                 <CustomButton 
                                     text="BUY TICKETS"
                                     variant="primary"
+                                    //onClick={() => window.location.href = 'https://example.com/tickets'} // Nanti diganti link pembelian tiket
                                 />
                                 <CustomButton 
                                     text="READ MORE"
@@ -310,24 +212,6 @@
                                 />
                             </div>
                         </div>
-                    </div>
-                    {/* Rumput di bawah Hero Section, memenuhi kiri-kanan tanpa celah */}
-                    <div className="absolute left-0 right-0 bottom-[-12px] xs:bottom-[-16px] sm:bottom-[-120px] md:bottom-[-60px] z-30 w-full h-[150px] xs:h-[200px] sm:h-[120px] md:h-[320px] pointer-events-none select-none flex items-end overflow-hidden">
-                        <img src="{{ asset('images/SEMAK-CROP1.webp') }}" alt="Rumput" className="h-[80px] xs:h-[110px] sm:h-[70px] md:h-[150px] w-[13%] min-w-[50px] xs:min-w-[60px] sm:min-w-[110px] md:min-w-[120px] object-cover -ml-2 xs:-ml-3 rotate-[-2deg] grass-sway-1" draggable="false" />
-                        <img src="{{ asset('images/SEMAK-CROP1.webp') }}" alt="Rumput" className="h-[100px] xs:h-[130px] sm:h-[80px] md:h-[200px] w-[11%] object-cover -ml-3 xs:-ml-4 sm:-ml-6 rotate-[4deg] opacity-80 grass-sway-2" draggable="false" />
-                        <img src="{{ asset('images/SEMAK-CROP1.webp') }}" alt="Rumput" className="h-[110px] xs:h-[150px] sm:h-[85px] md:h-[220px] w-[12%] object-cover -ml-3 xs:-ml-4 sm:-ml-6 rotate-[-5deg] opacity-90 grass-sway-3" draggable="false" />
-                        <img src="{{ asset('images/SEMAK-CROP1.webp') }}" alt="Rumput" className="h-[120px] xs:h-[160px] sm:h-[90px] md:h-[230px] w-[13%] object-cover -ml-4 xs:-ml-5 sm:-ml-7 rotate-[3deg] grass-sway-4" draggable="false" />
-                        <img src="{{ asset('images/SEMAK-CROP1.webp') }}" alt="Rumput" className="h-[130px] xs:h-[170px] sm:h-[95px] md:h-[260px] w-[14%] object-cover -ml-4 xs:-ml-5 sm:-ml-7 rotate-[-1deg] grass-sway-5" draggable="false" />
-                        <img src="{{ asset('images/SEMAK-CROP1.webp') }}" alt="Rumput" className="h-[100px] xs:h-[130px] sm:h-[80px] md:h-[200px] w-[11%] object-cover -ml-3 xs:-ml-4 sm:-ml-6 rotate-[6deg] opacity-80 grass-sway-1" draggable="false" />
-                        <img src="{{ asset('images/SEMAK-CROP1.webp') }}" alt="Rumput" className="h-[120px] xs:h-[160px] sm:h-[90px] md:h-[240px] w-[13%] object-cover -ml-4 xs:-ml-5 sm:-ml-7 rotate-[2deg] grass-sway-2" draggable="false" />
-                        <img src="{{ asset('images/SEMAK-CROP1.webp') }}" alt="Rumput" className="h-[130px] xs:h-[170px] sm:h-[95px] md:h-[250px] w-[13%] object-cover -ml-4 xs:-ml-5 sm:-ml-7 rotate-[-3deg] grass-sway-3" draggable="false" />
-                        <img src="{{ asset('images/SEMAK-CROP1.webp') }}" alt="Rumput" className="h-[90px] xs:h-[120px] sm:h-[70px] md:h-[180px] w-[10%] object-cover -ml-3 xs:-ml-4 sm:-ml-6 rotate-[-7deg] opacity-80 grass-sway-4" draggable="false" />
-                        <img src="{{ asset('images/SEMAK-CROP1.webp') }}" alt="Rumput" className="h-[130px] xs:h-[170px] sm:h-[95px] md:h-[260px] w-[14%] object-cover -ml-4 xs:-ml-5 sm:-ml-7 rotate-[1deg] grass-sway-5" draggable="false" />
-                        <img src="{{ asset('images/SEMAK-CROP1.webp') }}" alt="Rumput" className="h-[110px] xs:h-[150px] sm:h-[135px] md:h-[220px] w-[12%] object-cover -ml-4 xs:-ml-5 sm:-ml-7 rotate-[2deg] grass-sway-1" draggable="false" />
-                        <img src="{{ asset('images/SEMAK-CROP1.webp') }}" alt="Rumput" className="h-[120px] xs:h-[160px] sm:h-[155px] md:h-full w-[13%] object-cover -ml-4 xs:-ml-5 sm:-ml-7 rotate-[-2deg] grass-sway-2" draggable="false" />
-                        <img src="{{ asset('images/SEMAK-CROP1.webp') }}" alt="Rumput" className="h-[105px] xs:h-[140px] sm:h-[125px] md:h-[210px] w-[11%] object-cover -ml-3 xs:-ml-4 sm:-ml-6 rotate-[5deg] opacity-85 grass-sway-3" draggable="false" />
-                        <img src="{{ asset('images/SEMAK-CROP1.webp') }}" alt="Rumput" className="h-[125px] xs:h-[165px] sm:h-[150px] md:h-[245px] w-[12%] object-cover -ml-3 xs:-ml-4 sm:-ml-6 rotate-[-4deg] grass-sway-4" draggable="false" />
-                        <img src="{{ asset('images/SEMAK-CROP1.webp') }}" alt="Rumput" className="h-[135px] xs:h-[180px] sm:h-[175px] md:h-[280px] w-[13%] object-cover -ml-4 xs:-ml-5 sm:-ml-7 rotate-[1deg] grass-sway-5" draggable="false" />
                     </div>
                 </section>
             );
@@ -484,6 +368,7 @@
                                     <CustomButton 
                                         text="GET YOUR TICKET NOW"
                                         variant="primary"
+                                        //onClick={() => window.location.href = 'https://example.com/tickets'} // Nanti diganti link pembelian tiket
                                     />
                                 </div>
                             </div>

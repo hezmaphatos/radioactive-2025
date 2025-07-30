@@ -278,8 +278,8 @@
             );
         };
 
-        const JudgeCard = ({ name, description, delay = 0, flipDirection = 'left' }) => {
-            const photoStyle = {
+        const JudgeCard = ({ name, description, imageUrl, delay = 0, flipDirection = 'left' }) => {
+            const photoContainerStyle = {
                 background: 'linear-gradient(135deg, #2D3B28 0%, #1A2517 100%)',
                 boxShadow: '0 0 30px rgba(246, 231, 156, 0.2), inset 0 0 30px rgba(246, 231, 156, 0.1)'
             };
@@ -307,8 +307,10 @@
                     <div 
                         data-judge-photo
                         className="w-44 h-44 md:w-56 md:h-56 rounded-full flex items-center justify-center mb-8 border-4 border-yellow-200 relative overflow-hidden"
-                        style={photoStyle}
-                    />
+                        style={photoContainerStyle}
+                    >
+                        <img src={imageUrl} alt={name} className="w-full h-full object-cover" />
+                    </div>
                     
                     <h3 
                         className="text-2xl font-bold text-yellow-200 mb-2"
@@ -408,18 +410,19 @@
                             <JudgeCard 
                                 name="Nama juri 1"
                                 description="Deskripsi buat juri 1?"
+                                imageUrl="{{ asset('images/judges/judge1.png') }}"
                                 delay="100"
                                 flipDirection="left"
                             />
                             <JudgeCard 
                                 name="Nama juri 2"
                                 description="Deskripsi buat juri 2?"
+                                imageUrl="{{ asset('images/judges/judge2.png') }}"
                                 delay="300"
                                 flipDirection="right"
                             />
                         </div>
                         
-                        {/* Sign Up Section - moved before "Ready to take the challenge?" */}
                         <div 
                             data-aos="zoom-in"
                             data-aos-duration="1000"

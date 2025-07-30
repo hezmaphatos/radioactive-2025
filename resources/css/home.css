@@ -1,55 +1,55 @@
+/* Base styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+/* Marquee animations */
 .marquee {
-    position: relative;
-    display: flex;
-    /* Use flexbox for alignment */
-    width: 200%;
-    /* Double the width to accommodate the duplicated content */
-    animation: marquee 30s linear infinite;
+  position: relative;
+  display: flex;
+  width: 200%;
+  animation: marquee 30s linear infinite;
 }
 
 .marquee span {
-    flex-shrink: 0;
-    /* Prevent shrinking */
-    white-space: nowrap;
-    /* Prevent line breaks */
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .marquee-reverse {
-    position: relative;
-    display: flex;
-    /* Use flexbox for alignment */
-    width: 200%;
-    /* Double the width to accommodate the duplicated content */
-    animation: marquee-reverse 30s linear infinite;
+  position: relative;
+  display: flex;
+  width: 200%;
+  animation: marquee-reverse 30s linear infinite;
 }
 
 .marquee-reverse span {
-    flex-shrink: 0;
-    /* Prevent shrinking */
-    white-space: nowrap;
-    /* Prevent line breaks */
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 @keyframes marquee {
-    0% {
-        transform: translateX(0%);
-    }
-
-    100% {
-        transform: translateX(-100%);
-    }
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
 }
 
 @keyframes marquee-reverse {
-    0% {
-        transform: translateX(-100%);
-    }
-
-    100% {
-        transform: translateX(0%);
-    }
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(0%); }
 }
 
+/* Glow animation */
 @keyframes glow {
   0% {
     text-shadow: 0 0 5px #fff, 0 0 10px #f0e68c, 0 0 15px #f0e68c, 0 0 20px #f0e68c;
@@ -66,47 +66,524 @@
   animation: glow 2s ease-in-out infinite;
 }
 
-#left, #right,
-#bungakiri, #bungakanan {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: transform 0.1s ease-out;
-  max-width: none;
-  height: auto;
-  z-index: 1;
-  pointer-events: none;
+/* Parallax section */
+.parallax-section {
+  background-image: url('/public/images/BG PARALLAX2.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 
-
-
-#right, #left {
-  right: -10vw;
-  width: 60vw;
-  z-index: 2; /* Batu di atas bunga */
-  top: 63%;
-  bottom: 0;
-  transform: none;
-}
-
-
-body {
-    position: relative;
-    overflow-y: auto;
-    overflow-x: hidden;
-}
-
-
+/* Logo positioning */
 #logo {
-  filter: drop-shadow(0 0 10px #f0e68c );
+  filter: drop-shadow(0 0 10px #f0e68c);
   position: absolute;
-  top: 70%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: transform 0.1s ease-out;
   z-index: 3;
   pointer-events: none;
+  width: 90vw;
+  max-width: 800px;
+  height: auto;
+}
+
+/* Decorative elements base styles */
+#left, #right, #bungakiri, #bungakanan {
+  position: absolute;
+  transition: transform 0.1s ease-out;
+  pointer-events: none;
+}
+
+/* Bunga (flowers) positioning */
+#bungakiri, #bungakanan {
+  top: 25%;
+  z-index: 20;
+}
+
+#bungakiri {
+  left: -60px;
+  height: auto;
+  width: 500px;
+}
+
+#bungakanan {
+  right: -60px;
+  height: auto;
+  width: 500px;
+}
+
+/* Side decorative elements */
+#left, #right {
+  bottom: -220px;
+  z-index: 20;
+  width: 980px;
+  height: 1200px;
+}
+
+#left {
+  left: 0;
+}
+
+#right {
+  right: 0;
+}
+
+/* Leaves wrapper */
+.leaves-wrapper {
+  z-index: 25;
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 400px;
+  margin-top: -200px;
+}
+
+#leaveskiri, #leaveskanan {
+  position: absolute;
+  top: 0;
+  height: 400px;
+  width: auto;
+  z-index: 30;
+}
+
+#leaveskiri {
+  left: -30vw;
+  width: 150vw;
+}
+
+#leaveskanan {
+  right: -30vw;
+  width: 150vw;
+}
+
+/* Responsive breakpoints */
+
+/* Mobile First - Extra Small devices (phones, 320px and up) */
+@media (max-width: 480px) {
+  .parallax-section {
+    background-attachment: scroll; /* Better performance on mobile */
+  }
+  
+  #logo {
+    width: 95vw;
+    max-width: none;
+    top: 40%;
+  }
+  
+  #bungakiri, #bungakanan {
+    height: 250px;
+    top: 2%;
+    width: 130vw;     
+    height: 100vw;  
+  }
+  
+  #bungakiri {
+    left: -80px;
+   
+
+  }
+  
+  #bungakanan {
+    right: -80px;
+       
+
+  }
+  
+  #left, #right {
+    width: 200px;
+    bottom: -90px;
+    position: absolute; /* penting! */
+  z-index: 10;
+  width: 130vw;     
+    height: 100vw;  
+  }
+ 
+.leaves-wrapper {
+  z-index: 25;
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 400px;
+  margin-top: -200px;
+}
+
+#leaveskiri,
+#leaveskanan {
+  position: absolute;
+  top: 140px;
+  height: 100px;
+  width: auto;
+  z-index: 30;
+}
+
+#leaveskiri {
+  left: -50vw;
+  width: 150vw;
+}
+
+#leaveskanan {
+  right: -50vw;
+  width: 150vw;
+}
+}
+
+/* Small devices (landscape phones, tablets, 481px and up) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .parallax-section {
+    background-attachment: scroll;
+  }
+
+  #logo {
+    width: 85vw;
+    top: 40%;
+  }
+
+  #bungakiri, #bungakanan {
+    height: 350px;
+    top: 3%;
+    width: 130vw;
+    height: 100vw;
+  }
+
+  #bungakiri {
+    left: -70px;
+  }
+
+  #bungakanan {
+    right: -70px;
+  }
+
+  #left, #right {
+    bottom: -130px;
+    width: 110vw;
+    height: 100vw;
+  }
+
+  .leaves-wrapper {
+    height: 300px;
+    margin-top: -70px;
+    overflow: hidden;
+    width: 100vw;
+    position: relative;
+    z-index: 25;
+  }
+
+  #leaveskiri, #leaveskanan {
+    position: absolute;
+    top: 0;
+    height: 150px;
+    width: 150vw;
+    z-index: 30;
+  }
+
+  #leaveskiri {
+    left: -35vw;
+  }
+
+  #leaveskanan {
+    right: -35vw;
+  }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  #logo {
+    width: 80vw;
+    max-width: 600px;
+    top: 30%;
+  }
+
+  #bungakiri, #bungakanan {
+    height: 350px;
+    top: 3%;
+    width: 130vw;
+    height: 100vw;
+  }
+
+  #bungakiri {
+    left: -65px;
+  }
+
+  #bungakanan {
+    right: -65px;
+  }
+
+  #left, #right {
+    width: 110vw;
+    height: 100vw;
+    bottom: -200px;
+  }
+
+  .leaves-wrapper {
+    height: 350px;
+    margin-top: -100px;
+  }
+
+  #leaveskiri, #leaveskanan {
+    height: auto;
+    width: 100vw;
+    max-width: 1500px; /* batasan supaya ga over */
+  }
+
+  #leaveskiri {
+    left: -50vw;
+  }
+
+  #leaveskanan {
+    right: -50vw;
+  }
 }
 
 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  #logo {
+    width: 75vw;
+    max-width: 700px;
+    top: 30%;
+  }
 
+  #bungakiri, #bungakanan {
+    top: 2.5%;
+    width: 80vw;
+    height: 70vw;
+  }
+
+  #bungakiri {
+    left: -70px;
+  }
+
+  #bungakanan {
+    right: -70px;
+  }
+
+  #left, #right {
+    width: 75vw;
+    height: 70vw;
+    bottom: -170px;
+  }
+
+  .leaves-wrapper {
+    height: 350px;
+    margin-top: -100px;
+  }
+
+  #leaveskiri, #leaveskanan {
+    height: auto;
+    width: 280vw;
+    max-width: 1200px; /* batas maksimal biar ga kebablasan */
+  }
+
+  #leaveskiri {
+    left: -37vw;
+  }
+
+  #leaveskanan {
+    right: -37vw;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #logo {
+    width: 70vw;
+    max-width: 800px;
+    top: 30%;
+  }
+
+  #bungakiri, #bungakanan {
+    width: auto;
+    height: 85vw;
+    top: 2%;
+  }
+
+  #bungakiri {
+    left: -60px;
+  }
+
+  #bungakanan {
+    right: -60px;
+  }
+
+  #left, #right {
+    width: 80vw;
+    height: 70vw;
+    bottom: -200px;
+  }
+
+  .leaves-wrapper {
+    height: 350px;
+    margin-top: -140px;
+  }
+
+  #leaveskiri, #leaveskanan {
+    height: auto;
+    width: 280vw;
+    max-width: 1200px;
+  }
+
+  #leaveskiri {
+    left: -30vw;
+  }
+
+  #leaveskanan {
+    right: -30vw;
+  }
+}
+
+/* Landscape orientation adjustments */
+@media (orientation: landscape) and (max-height: 600px) {
+  .parallax-section {
+    height: 100vh;
+    background-attachment: scroll;
+  }
+
+  #logo {
+    top: 40%;
+    width: 60vw;
+    max-width: 500px;
+  }
+
+  #bungakiri, #bungakanan {
+    width: 130vw;
+    height: 200px;
+    top: 1%;
+  }
+
+  #bungakiri {
+    left: -50px;
+  }
+
+  #bungakanan {
+    right: -50px;
+  }
+
+  #left, #right {
+    width: 50vw;
+    height: 50vw;
+    bottom: -40px;
+  }
+
+  .leaves-wrapper {
+    height: 150px;
+    margin-top: -20px;
+  }
+
+  #leaveskiri, #leaveskanan {
+    height: 150px;
+    width: 300vw;
+    max-width: 1200px;
+  }
+
+  #leaveskiri {
+    left: -55vw;
+  }
+
+  #leaveskanan {
+    right: -55vw;
+  }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  #logo {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Prevent horizontal scrolling issues */
+@media (max-width: 767px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .px-4 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}
+
+/* Text scaling for better readability on small screens */
+@media (max-width: 480px) {
+  .text-6xl {
+    font-size: 2.5rem !important;
+  }
+  
+  .text-5xl {
+    font-size: 2rem !important;
+  }
+  
+  .text-4xl {
+    font-size: 1.75rem !important;
+  }
+  
+  .text-3xl {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .text-6xl {
+    font-size: 3rem !important;
+  }
+  
+  .text-5xl {
+    font-size: 2.5rem !important;
+  }
+  
+  .text-4xl {
+    font-size: 2rem !important;
+  }
+}
+
+/* YouTube embed responsive */
+@media (max-width: 767px) {
+  iframe[src*="youtube"] {
+    width: 100% !important;
+    height: 200px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  iframe[src*="youtube"] {
+    width: 100% !important;
+    height: 300px !important;
+  }
+}
+
+/* Gallery responsive adjustments */
+@media (max-width: 480px) {
+  .grid-cols-2 {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  }
+  
+  .h-48 {
+    height: 200px !important;
+  }
+}
+
+/* Partner logos responsive scaling */
+@media (max-width: 480px) {
+  .w-64 { width: 12rem !important; }
+  .w-40 { width: 8rem !important; }
+  .w-28 { width: 6rem !important; }
+  .w-20 { width: 4rem !important; }
+  .w-16 { width: 3rem !important; }
+  .w-12 { width: 2.5rem !important; }
+  
+  .md\\:w-80 { width: 14rem !important; }
+  .md\\:w-48 { width: 9rem !important; }
+  .md\\:w-36 { width: 7rem !important; }
+  .md\\:w-28 { width: 5rem !important; }
+  .md\\:w-24 { width: 4rem !important; }
+  .md\\:w-20 { width: 3.5rem !important; }
+}

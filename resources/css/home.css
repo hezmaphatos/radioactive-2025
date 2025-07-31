@@ -82,7 +82,7 @@ html {
 #logo {
   filter: drop-shadow(0 0 10px #f0e68c);
   position: absolute;
-  top: 60%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: transform 0.1s ease-out;
@@ -102,20 +102,20 @@ html {
 
 /* Bunga (flowers) positioning */
 #bungakiri, #bungakanan {
-  top: 25%;
+  top: 0%;
   z-index: 20;
+  width: 50vw;
+  height: auto;
 }
 
 #bungakiri {
   left: -60px;
-  height: auto;
-  width: 500px;
+  
 }
 
 #bungakanan {
   right: -60px;
-  height: auto;
-  width: 500px;
+
 }
 
 /* Side decorative elements */
@@ -387,54 +387,6 @@ html {
 
   #leaveskanan {
     right: -37vw;
-  }
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  #logo {
-    width: 70vw;
-    max-width: 800px;
-    top: 30%;
-  }
-
-  #bungakiri, #bungakanan {
-    width: auto;
-    height: 85vw;
-    top: 2%;
-  }
-
-  #bungakiri {
-    left: -60px;
-  }
-
-  #bungakanan {
-    right: -60px;
-  }
-
-  #left, #right {
-    width: 80vw;
-    height: 70vw;
-    bottom: -200px;
-  }
-
-  .leaves-wrapper {
-    height: 350px;
-    margin-top: -140px;
-  }
-
-  #leaveskiri, #leaveskanan {
-    height: auto;
-    width: 280vw;
-    max-width: 1200px;
-  }
-
-  #leaveskiri {
-    left: -30vw;
-  }
-
-  #leaveskanan {
-    right: -30vw;
   }
 }
 

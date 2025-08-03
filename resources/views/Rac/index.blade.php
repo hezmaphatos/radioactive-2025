@@ -1,6 +1,61 @@
 @extends('layouts.main')
 
 @section('container')
+<style>
+.rac-flipbook-container {
+    margin: auto;
+    height: 100%;
+    width: 70%;
+}
+
+.rac-flipbook {
+    width: 1000px;
+    height: 600px;
+}
+
+.rac-flipbook .hard {
+    color: #fff;
+    font-weight: bold;
+    border: none; 
+}
+
+.rac-flipbook .hard small{
+	font-style: italic;
+	font-weight: lighter;
+	opacity: 0.7;
+	font-size: 14px;
+}
+
+.rac-flipbook .page {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    gap: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.11);
+}
+
+.rac-flipbook .page img{
+    box-shadow: 0px 7px 46px 0px rgb(206, 206, 23);
+	width: 100%;
+    height: 100%;
+	object-fit: fill;
+	margin: auto;
+}
+
+.rac-flipbook .page small{
+	font-size: 14px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 756px){
+    .flipbook {
+        height: 30%;
+        width: 30%;
+    }
+}
+
+</style>
 <body class="text-white">
     {{-- <div>
         <video autoplay loop muted
@@ -105,6 +160,34 @@
         </div>
     </section>
 
+<div class="rac-flipbook-container flex justify-center items-center">
+<div class="rac-flipbook">
+    <div class="hard"><img src="images/rac-handbook/GUIDE BOOK RAC'24_page-0001.jpg" alt="" /></div>
+    <div class="hard"><img src="images/rac-handbook/GUIDE BOOK RAC'24_page-0002.jpg" alt="" /></div>
+    <div>
+                    <img src="images/rac-handbook/GUIDE BOOK RAC'24_page-0003.jpg" alt="" />
+                    </div>
+                    <div>
+                    <img src="images/rac-handbook/GUIDE BOOK RAC'24_page-0004.jpg" alt="" />
+
+                    </div>
+                    <div>
+                    <img src="images/rac-handbook/GUIDE BOOK RAC'24_page-0005.jpg" alt="" />
+        
+                    </div>
+                    <div>
+                    <img src="images/rac-handbook/GUIDE BOOK RAC'24_page-0006.jpg" alt="" />
+                    </div>
+                    <div>
+                    <img src="images/rac-handbook/GUIDE BOOK RAC'24_page-0007.jpg" alt="" />
+        
+                    </div>
+
+                        <div class="hard"><img src="images/rac-handbook/GUIDE BOOK RAC'24_page-0008.jpg" alt="" /></div>
+    <div class="hard"><img src="images/rac-handbook/GUIDE BOOK RAC'24_page-0009.jpg" alt="" /></div>
+  </div>
+</div>
+
     <section id="download" class="max-w font-brodyrawk">
         <div class="flex flex-col md:flex-row justify-center sm:py-16 items-center mt-35" data-aos="fade-up">
             <div id="button1" class="my-3">
@@ -112,6 +195,11 @@
                     class="text-white border-white w-60 md:h-16 p-4 text-sm tracking-[1px] md:text-sm font-bold border-2 hover:bg-[#0F0F0F] hover:text-[#FA0202] no-underline flex items-center justify-center"
                     target="_blank">HANDBOOK
                 </a>
+
+
+                
+
+
             </div>
             {{-- <div id="button2" class="my-3">
                 <a href="/rac/register" class="no-underline py-4 px-6 flex items-center justify-center">
@@ -212,5 +300,10 @@
         }
         </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+     <script src="/js/jquery.js"></script>
+<script src="/js/turn.js"></script>
+        <script>
+            $(".rac-flipbook").turn();
+        </script>
 </body>
 @endsection

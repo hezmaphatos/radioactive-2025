@@ -67,14 +67,10 @@
         {{-- About Us Content --}}
         <div class="px-4 sm:px-8 md:px-20 lg:px-48">
             <p class="font-royalecoutureserif text-sm sm:text-base md:text-lg lg:text-xl text-white text-justify md:text-center tracking-wider mb-4 sm:mb-6 leading-relaxed">
-                RADIOACTIVE adalah Acara off air tahunan yang diselenggarakan oleh UMN Radio, radio komunitas
-                Universitas Multimedia Nusantara. Pertama kali diadakan di tahun 2015, RADIOACTIVE 2025 merupakan kali
-                ke-10 acara ini diselenggarakan.
+                RADIOACTIVE adalah acara off air tahunan yang diselenggarakan oleh UMN Radio, radio komunitas Universitas Multimedia Nusantara. Pertama kali diadakan di tahun 2015, RADIOACTIVE 2025 merupakan kali ke-10 acara ini diselenggarakan.
             </p>
             <p class="font-royalecoutureserif text-sm sm:text-base md:text-lg lg:text-xl text-white text-justify md:text-center tracking-wider leading-relaxed">
-                RADIOACTIVE 2025 mengangkat tema "RADIOACTIVE 2025: Resilience Era", dengan tagline "Dare to Strive",
-                serta bertujuan agar individu yang telah berevolusi mampu mempertahankan perubahannya dan
-                mengembangkannya dalam perjuangan tanpa ada rasa cukup.
+                Pada tahun ini acara kami mengangkat tema “Radioactive 2025: Oriselle World” dengan tagline “Rise and Fell, Reveal Our Shell” yang berfokus pada perasaan damai yang muncul setelah mereka melewati berbagai macam tantangan. 
             </p>
         </div>
 
@@ -100,7 +96,7 @@
             <div class="md:grid md:grid-cols-2 md:gap-8 items-center">
                 <div class="border border-white rounded-2xl p-4 sm:p-6 bg-opacity-20 backdrop-blur-md text-white">
                     <h2 class="mb-2 text-sm sm:text-base md:text-lg text-gold font-bold">
-                        2 - 9 September 2025 : Mini Annoucing Challenge
+                        1 - 9 September 2025 : Mini Annoucing Challenge
                     </h2>
                     <p class="text-xs sm:text-sm md:text-base text-gray-300">
 Mini Annoucing Challenge merupakan salah satu rangkaian acara RADIOACTIVE 2025. Mini
@@ -118,7 +114,7 @@ Mini Annoucing Challenge merupakan salah satu rangkaian acara RADIOACTIVE 2025. 
                 <div></div>
                 <div class="border border-white rounded-2xl p-4 sm:p-6 bg-opacity-20 backdrop-blur-md text-white">
                     <h2 class="mb-2 text-sm sm:text-base md:text-lg text-gold font-bold">
-                        2 September – 12 Oktober 2025 : Radio Announcing Competition
+                        30 Agustus – 11 Oktober 2025 : Radio Announcing Competition
                     </h2>
                     <p class="text-xs sm:text-sm md:text-base text-gray-300">
 Radio Announcing Competition merupakan rangkaian acara utama RADIOACTIVE. Lomba ini merupa
@@ -135,7 +131,7 @@ Radio Announcing Competition merupakan rangkaian acara utama RADIOACTIVE. Lomba 
             <div class="md:grid md:grid-cols-2 md:gap-8 items-center">
                 <div class="border border-white rounded-2xl p-4 sm:p-6 bg-opacity-20 backdrop-blur-md text-white">
                     <h2 class="mb-2 text-sm sm:text-base md:text-lg text-gold font-bold">
-                        2 November 2025 : AWARDING NIGHT
+                        1 November 2025 : AWARDING NIGHT
                     </h2>
                     <p class="text-xs sm:text-sm md:text-base text-gray-300">
 Closing Night merupakan puncak dan penutup dari rangkaian acara RADIOACTIVE 2025 yang akan
@@ -147,7 +143,10 @@ Closing Night merupakan puncak dan penutup dari rangkaian acara RADIOACTIVE 2025
                                 yang dapat dilakukan adalah berfokus di skala yang kecil terlebih dahulu, kemudian baru
                                 dilanjutkan ke skala yang lebih besar.                    </p>
                 </div>
-                <div></div>
+                <div>
+
+                    {{-- ITEM 3 --}}
+                </div>
             </div>
         </div>
     </div>

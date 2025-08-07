@@ -36,4 +36,10 @@ class Cart extends Model
             ->first();
         return $merchvariation;
     }
+
+        public function getMerchVariationAttribute()
+        {
+            return $this->merch->merchvariations->firstWhere('description', $this->variation);
+        }
+
 }

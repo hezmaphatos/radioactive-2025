@@ -99,7 +99,7 @@
                         25 Agustus - 1 October 2025 : Podcast Competition
                     </h2>
                     <p class="text-xs sm:text-sm md:text-base text-gray-300">
-                    Podcast Competition merupakan rangkaian acara terbaru dari Radioactive. Lomba ini merupakan ajang untuk seluruh mahasiswa se-Jabodetabek mengasah kemampuan, dan kepercayaan diri dalam pemanfaatan media massa, khususnya di bidang podcast. UMN Radioactive berharap melalui kompetisi ini, generasi muda dapat mengembangkan kemampuan diri sebagai wujud mengekspresikan pendapat dan kreativitas yang dimiliki                    </p>
+                    dikasi tau faikar nnti                    </p>
                 </div>
                 <div></div>
             </div>
@@ -112,13 +112,7 @@
                         30 Agustus – 11 Oktober 2025 : Radio Announcing Competition
                     </h2>
                     <p class="text-xs sm:text-sm md:text-base text-gray-300">
-Radio Announcing Competition merupakan rangkaian acara utama RADIOACTIVE. Lomba ini merupa
-                                kan ajang untuk siswa SMA dan mahasiswa se-Jabodetabek untuk memperluas wawasan dan mengasah
-                                kemampuan di dunia broadcasting. Radio Announcing Competition ini memiliki konsep yang
-                                sesuai dengan nilai utama RADIOACTIVE 2025, yaitu "Surviving the Maze". Tujuan dari lomba
-                                ini adalah untuk mengasah kreativitas peserta dalam membuat siaran dan secara tidak langsung
-                                memberikan informasi hingga mengajak para peserta untuk menggambarkan perjuangan manusia
-                                dalam menghadapi rintangan dan lika-liku kehidupan.                    </p>
+                        dikasi tau faikar nnti                   </p>
                 </div>
             </div>
 
@@ -146,13 +140,7 @@ Radio Announcing Competition merupakan rangkaian acara utama RADIOACTIVE. Lomba 
                 1 November 2025 : Awarding Night
             </h2>
             <p class="text-xs sm:text-sm md:text-base text-gray-300">
-Radio Announcing Competition merupakan rangkaian acara utama RADIOACTIVE. Lomba ini merupa
-                        kan ajang untuk siswa SMA dan mahasiswa se-Jabodetabek untuk memperluas wawasan dan mengasah
-                        kemampuan di dunia broadcasting. Radio Announcing Competition ini memiliki konsep yang
-                        sesuai dengan nilai utama RADIOACTIVE 2025, yaitu "Surviving the Maze". Tujuan dari lomba
-                        ini adalah untuk mengasah kreativitas peserta dalam membuat siaran dan secara tidak langsung
-                        memberikan informasi hingga mengajak para peserta untuk menggambarkan perjuangan manusia
-                        dalam menghadapi rintangan dan lika-liku kehidupan.                    </p>
+                Awarding night Radioactive 2025 merupakan rangkaian acara terakhir dari Radioactive 2025. Dalam awarding night, kami ingin menjadikan acara ini sebagai malam perayaan dan apresiasi untuk setiap peserta serta crew yang sudah mengikuti seluruh rangkaian acara Radioactive 2025. Awarding night sendiri akan diadakan secara intimate agar sesuai dengan tema tahun ini yaitu, “Oriselle World” yang diharapkan dapat memberikan sebuah ketenangan bagi seluruh orang yang datang.                   </p>
         </div>
     </div>
         </div>

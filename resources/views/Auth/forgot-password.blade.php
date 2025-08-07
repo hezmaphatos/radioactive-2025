@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     @vite('resources/css/app.css')
-    <title>UMN RadioActive 2024 | Forgot Password</title>
+    <title>UMN RadioActive 2025 | Forgot Password</title>
 </head>
 <body>
-    <section class="bg-black h-screen relative">
+    <section class="bg-[#2d6229] h-screen relative">
         <div class="w-full h-screen flex items-center justify-center">
-            <img class="h-auto max-w-full max-h-full" src="{{ asset('images/LOGO RADIOACTIVE 2024.webp') }}" alt="Radioactive 2024 Logo">
+            <img class="h-auto max-w-full max-h-full" src="{{ asset('images/LOGO_RADIOACTIVE2025.png') }}" alt="Radioactive 2025 Logo">
         </div>
         <div class="absolute top-0 left-1/2 transform -translate-x-1/2 z-40 p-8">
             <img src="{{ url('images/LOGO UMN RADIO.webp') }}" alt="Image" class="h-16 md:h-10 lg:h-24" />
@@ -39,7 +39,7 @@
                             <input name="email" type="email" placeholder="Email" class="px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-[#D61625] focus:ring-[#D61625] block w-full rounded-xl sm:text-sm focus:ring-1 font-ltmuseumreg" required>
                         </div>
                         <div class="relative w-full min-w-[200px] h-11 mb-3">
-                            <button type="submit" class="bg-[#D61625] hover:bg-[#9B1625] text-white font-bold py-2 px-4 rounded-xl block w-full font-ltmuseumbold">Send Reset Link</button>
+                            <button type="submit" class="bg-[#f6e79c] hover:bg-[#b5aa72] text-white font-ltmuseumbold py-2 px-4 rounded-xl block w-full glow-text transition duration-300 ease-in-out">Send Reset Link</button>
                         </div>
                     </div>
                 </div>

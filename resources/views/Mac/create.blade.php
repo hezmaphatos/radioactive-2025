@@ -3,9 +3,9 @@
 @section('container')
 <body class="antialiased bg-black">
     <div class="font-brodyrawk text-2xl md:text-3xl lg:text-4xl text-white flex justify-center text-center pt-16 md:pt-24 mx-4 md:mx-8 lg:mx-12">
-        Thank you Revends for joining Mini Announcing Challenge! The winner will be announced on October 7th 2024
+        Thank you Revends for joining Mini Announcing Challenge! The winner will be announced on October 7th 2025
     </div>
-    <img class="object-cover mt-4 md:mt-16 z-0 mx-auto w-3/4 md:w-1/2 lg:w-1/3" src="/images/LOGO RADIOACTIVE 2024.png" alt="background logo" />
+    <img class="object-cover mt-4 md:mt-16 z-0 mx-auto w-3/4 md:w-1/2 lg:w-1/3" src="/images/LOGO_RADIOACTIVE2025.png" alt="background logo" />
     <div class="font-brodyrawk text-2xl md:text-3xl lg:text-4xl text-white flex justify-center text-center pt-16 mb-6 mx-4 md:mx-8 lg:mx-12">
         FORM PENGUMPULAN MAC
     </div>

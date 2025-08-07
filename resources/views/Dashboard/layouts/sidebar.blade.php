@@ -1,7 +1,7 @@
 <aside :class="sidebarToggle ? 'translate-x-0' : '-translate-x-full'" class="absolute left-0 top-0 z-9999 flex h-screen w-72.5 flex-col overflow-y-hidden bg-black2 duration-300 ease-linear lg:static lg:translate-x-0" @click.outside="sidebarToggle = false" >
   <div class="flex items-center justify-between gap-2 px-6 py-5.5 lg:py-6.5">
     <a href="/dashboard">
-      <img height="5px" src="{{ asset('images/LOGO RA.png') }}" alt="Brand">
+      <img height="5px" src="{{ asset('images/LOGO_RADIOACTIVE2025.png') }}" alt="Brand">
     </a>
     <button class="block lg:hidden" @click.stop="sidebarToggle = !sidebarToggle">
       <svg class="fill-current" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">

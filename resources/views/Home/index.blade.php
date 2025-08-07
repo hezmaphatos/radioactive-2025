@@ -96,15 +96,10 @@
             <div class="md:grid md:grid-cols-2 md:gap-8 items-center">
                 <div class="border border-white rounded-2xl p-4 sm:p-6 bg-opacity-20 backdrop-blur-md text-white">
                     <h2 class="mb-2 text-sm sm:text-base md:text-lg text-gold font-bold">
-                        1 - 9 September 2025 : Mini Annoucing Challenge
+                        25 Agustus - 1 October 2025 : Podcast Competition
                     </h2>
                     <p class="text-xs sm:text-sm md:text-base text-gray-300">
-Mini Annoucing Challenge merupakan salah satu rangkaian acara RADIOACTIVE 2025. Mini
-                                Annoucing Challenge bertujuan untuk mengasah skill para peserta dalam bidang siaran. Dalam
-                                challenge ini, peserta tidak dibatasi untuk berkreasi. Teknis dari Mini Annoucing Challenge
-                                ini adalah peserta dapat siaran menggunakan tema dan 3 kata yang sudah dipilih secara acak.
-                                Disisi lain, challenge ini juga dapat meningkatkan awareness untuk rangkaian acara
-                                berikutnya.                    </p>
+                    Podcast Competition merupakan rangkaian acara terbaru dari Radioactive. Lomba ini merupakan ajang untuk seluruh mahasiswa se-Jabodetabek mengasah kemampuan, dan kepercayaan diri dalam pemanfaatan media massa, khususnya di bidang podcast. UMN Radioactive berharap melalui kompetisi ini, generasi muda dapat mengembangkan kemampuan diri sebagai wujud mengekspresikan pendapat dan kreativitas yang dimiliki                    </p>
                 </div>
                 <div></div>
             </div>
@@ -131,23 +126,35 @@ Radio Announcing Competition merupakan rangkaian acara utama RADIOACTIVE. Lomba 
             <div class="md:grid md:grid-cols-2 md:gap-8 items-center">
                 <div class="border border-white rounded-2xl p-4 sm:p-6 bg-opacity-20 backdrop-blur-md text-white">
                     <h2 class="mb-2 text-sm sm:text-base md:text-lg text-gold font-bold">
-                        1 November 2025 : AWARDING NIGHT
+                        1 September - 9 September 2025 : Mini Announcing Challenge
                     </h2>
                     <p class="text-xs sm:text-sm md:text-base text-gray-300">
-Closing Night merupakan puncak dan penutup dari rangkaian acara RADIOACTIVE 2025 yang akan
-                                dilaksanakan secara offline. Kegiatan ini bertujuan untuk meningkatkan awareness dan
-                                engagement RADIOACTIVE sebagai acara tahunan dari UMN Radio. Konsep Closing Night tahun ini
-                                adalah "Valiant Against Fear" , Radioactive 2025 mengajak seluruh peserta dan panitia untuk
-                                dapat bertahan setelah keluar dari zona nyaman mereka. Untuk closing night Radioactive tahun
-                                ini akan diadakan secara intimate karena untuk berusaha bertahan di zona nyaman, tahap awal
-                                yang dapat dilakukan adalah berfokus di skala yang kecil terlebih dahulu, kemudian baru
-                                dilanjutkan ke skala yang lebih besar.                    </p>
+                        Mini Announcing Challenge merupakan salah satu rangkaian acara Radioactive 2025. Mini Announcing Challenge bertujuan untuk mengasah skill para peserta dalam bidang penyiaran. Dalam challenge ini, peserta tidak dibatasi untuk berkreasi. Teknis dari Mini Announcing Challenge ini adalah peserta dapat melakukan siaran salah satu program yang ada di UMN Radio. Peserta akan diberikan pilihan kata yang wajib untuk disebutkan di dalam siarannya. Di sisi lain, challenge ini juga dapat meningkatkan awareness untuk acara selanjutnya                    </p>
                 </div>
                 <div>
 
-                    {{-- ITEM 3 --}}
+                    
+                    
                 </div>
             </div>
+            {{-- ITEM 4 --}}
+            
+    <div class="md:grid md:grid-cols-2 md:gap-8 items-center">
+        <div></div>
+        <div class="border border-white rounded-2xl p-4 sm:p-6 bg-opacity-20 backdrop-blur-md text-white">
+            <h2 class="mb-2 text-sm sm:text-base md:text-lg text-gold font-bold">
+                1 November 2025 : Awarding Night
+            </h2>
+            <p class="text-xs sm:text-sm md:text-base text-gray-300">
+Radio Announcing Competition merupakan rangkaian acara utama RADIOACTIVE. Lomba ini merupa
+                        kan ajang untuk siswa SMA dan mahasiswa se-Jabodetabek untuk memperluas wawasan dan mengasah
+                        kemampuan di dunia broadcasting. Radio Announcing Competition ini memiliki konsep yang
+                        sesuai dengan nilai utama RADIOACTIVE 2025, yaitu "Surviving the Maze". Tujuan dari lomba
+                        ini adalah untuk mengasah kreativitas peserta dalam membuat siaran dan secara tidak langsung
+                        memberikan informasi hingga mengajak para peserta untuk menggambarkan perjuangan manusia
+                        dalam menghadapi rintangan dan lika-liku kehidupan.                    </p>
+        </div>
+    </div>
         </div>
     </div>
 </section>

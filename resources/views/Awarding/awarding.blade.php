@@ -282,14 +282,9 @@
                             <p className="font-lavish text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed break-words" 
                                style={textStyle} 
                                data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, aut sapiente quos exercitationem illo sit delectus officia dolore quo saepe inventore temporibus animi quam vero deserunt molestias aspernatur? Fugit, id? Lorem ipsum dolor sit amet consectetur adipisicing elit. Est autem, beatae, voluptatum amet quidem omnis aspernatur necessitatibus placeat numquam perferendis modi sequi sed. Dignissimos possimus tempora ea suscipit harum nihil.
+                                Awarding night Radioactive 2025 merupakan rangkaian acara terakhir dari Radioactive 2025. Dalam awarding night, kami ingin menjadikan acara ini sebagai malam perayaan dan apresiasi untuk setiap peserta serta crew yang sudah mengikuti seluruh rangkaian acara Radioactive 2025. Awarding night sendiri akan diadakan secara intimate agar sesuai dengan tema tahun ini yaitu, “Oriselle World” yang diharapkan dapat memberikan sebuah ketenangan bagi seluruh orang yang datang.
                             </p>
                             
-                            <p className="font-lavish text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed break-words" 
-                               style={textStyle} 
-                               data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nesciunt illum dolorem mollitia ullam, recusandae delectus sunt temporibus nihil corporis, quasi eius illo, saepe error id sapiente ea deleniti aliquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum laudantium soluta praesentium aspernatur, in aut numquam adipisci suscipit unde libero nulla itaque odio quisquam similique aliquam quidem quod nobis quos.
-                            </p>
                         </div>
                     </div>
                 </section>

@@ -211,7 +211,7 @@
                             className="text-base sm:text-lg md:text-xl lg:text-2xl max-w-4xl mb-12 text-gray-200 leading-relaxed font-sans text-center px-4 break-words"
                             style={descriptionStyle}
                         >
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            nnti dikasi tau faikar
                         </p>
                         
                         <div 
@@ -476,25 +476,6 @@
                         >
                         </div>
                         
-                        <div 
-                            data-aos="zoom-in-up"
-                            data-aos-duration="1000"
-                            data-aos-delay="200"
-                            data-aos-offset="150"
-                            className="mt-8 text-center p-12"
-                        >
-                            <div className="w-24 h-0.5 bg-yellow-200 mx-auto mb-8 opacity-80" />
-                            <a href="https://forms.gle/XTN1WX2vDHp6veNn7" target="_blank" class="no-underline">
-                            <h2 
-                                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-yellow-200 leading-tight tracking-wider mb-4 break-words text-center px-4 glow-text"
-                                style={challengeStyle}
-                            >
-                                Ready to take the challenge?
-                            </h2>
-                            </a>
-                            
-                            <div className="w-24 h-0.5 bg-yellow-200 mx-auto mt-4 opacity-80" />
-                        </div>
                     </div>
                 </section>
             );

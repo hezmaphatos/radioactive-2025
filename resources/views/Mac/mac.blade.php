@@ -25,10 +25,7 @@
                                 style="background: linear-gradient(90deg, transparent, #F6E79C, transparent);"></div>
                         </div>
                         <p class="text-base sm:text-lg max-w-3xl mx-auto mb-8" data-aos="fade-up" data-aos-delay="100">
-                            Mini Announcing Challenge merupakan salah satu rangkaian acara RADIOACTIVE 2025. Challenge ini
-                            bertujuan mengasah skill peserta dalam bidang siaran. Peserta bebas berkreasi menggunakan tema
-                            dan 3 kata yang dipilih secara acak, sekaligus meningkatkan awareness untuk rangkaian acara
-                            berikutnya.
+                            Mini Announcing Challenge merupakan salah satu rangkaian acara Radioactive 2025. Mini Announcing Challenge bertujuan untuk mengasah skill para peserta dalam bidang penyiaran. Dalam challenge ini, peserta tidak dibatasi untuk berkreasi. Teknis dari Mini Announcing Challenge ini adalah peserta dapat melakukan siaran salah satu program yang ada di UMN Radio. Peserta akan diberikan pilihan kata yang wajib untuk disebutkan di dalam siarannya. Di sisi lain, challenge ini juga dapat meningkatkan awareness untuk acara selanjutnya 
                         </p>
                     </section>
 
@@ -38,19 +35,19 @@
                         <div class="relative z-10 flex flex-col items-center w-full max-w-5xl">
 
                             {{-- TIMELINE --}}
-                            {{-- <div id="title" class="text-center my-8 px-4 relative z-10">
+                            <div id="title" class="text-center my-8 px-4 relative z-10">
                                 <h1 class="m-[0.3em] text-2xl sm:text-3xl md:text-4xl font-lavish tracking-[4px]"
                                     style="color: #f6e79c; text-shadow: 0 0 10px #f6e79c, 0 0 20px #f6e79c;">
                                     TIMELINE
-                                </h1> --}}
+                                </h1>
                                 {{-- Decorative underline --}}
-                                {{-- <div class="w-32 h-0.5 mx-auto mt-2 opacity-80"
+                                <div class="w-32 h-0.5 mx-auto mt-2 opacity-80"
                                     style="background: linear-gradient(90deg, transparent, #F6E79C, transparent);"></div>
-                            </div> --}}
-                            <!-- <p class="text-base sm:text-lg mb-8" data-aos="fade-up" data-aos-delay="100">
+                            </div>
+                             <p class="text-base sm:text-lg mb-8" data-aos="fade-up" data-aos-delay="100">
                                 {{-- isi timeline jika ada --}}
-                            </p> -->
-                            {{-- <div class="bg-black bg-opacity-60 border border-[#f6e79c] p-6 rounded-lg text-center w-full max-w-md mb-12"
+                            </p> 
+                            <div class="bg-black bg-opacity-60 border border-[#f6e79c] p-6 rounded-lg text-center w-full max-w-md mb-12"
                                 data-aos="fade-up" data-aos-delay="200">
                                 <h3 class="text-xl sm:text-2xl text-[#f6e79c] font-lavish mb-2">
                                     2-9 September 2025
@@ -58,7 +55,7 @@
                                 <p class="text-sm sm:text-base">
                                     Pendaftaran dibuka melalui Google Form atau kunjungi langsung booth kami.
                                 </p>
-                            </div> --}}
+                            </div>
 
                             {{-- HANDBOOK --}}
                             <div id="title" class="text-center my-8 px-4 relative z-10">

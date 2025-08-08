@@ -14,11 +14,7 @@
     </div>
 
     <p class="md:text-lg max-w-4xl text-base mb-8 font-lavish z-10 relative" data-aos="fade-up" data-aos-delay="100">
-        Radio Announcing Competition merupakan rangkaian acara utama RADIOACTIVE. 
-        Lomba ini merupakan ajang untuk siswa SMA dan mahasiswa se-Jabodetabek untuk 
-        memperluas wawasan dan mengasah kemampuan di dunia broadcasting. 
-        Kompetisi ini sesuai dengan nilai utama RADIOACTIVE 2025, yaitu “Surviving the Maze”. 
-        Lomba ini mengasah kreativitas dalam membuat siaran, serta menggambarkan perjuangan manusia dalam menghadapi rintangan kehidupan.
+        nnti dikasi tau faikar
     </p>
 
     <p class="mb-4 animate-bounce z-10 relative">Scroll Down</p>
@@ -45,6 +41,22 @@
                                     width="100%" height="100%"></iframe>
                             </div>
                         </div>
+
+                        {{-- READY TO TAKE THE CHALLENGE --}}
+                            <a href="https://forms.gle/XTN1WX2vDHp6veNn7" target="_blank" class="no-underline">
+                                <div id="title" class="text-center my-8 px-4 relative z-10" data-aos="fade-up">
+                                    <h1 class="m-[0.3em] text-2xl sm:text-3xl md:text-4xl font-lavish tracking-[4px] transition duration-300 hover:text-white"
+                                        style="color: #f6e79c; text-shadow: 0 0 10px #f6e79c, 0 0 20px #f6e79c;"
+                                        onmouseover="this.style.color='#ffffff'; this.style.textShadow='0 0 10px #ffffff, 0 0 20px #ffffff';"
+                                        onmouseout="this.style.color='#f6e79c'; this.style.textShadow='0 0 10px #f6e79c, 0 0 20px #f6e79c';">
+                                        READY TO TAKE THE CHALLENGE?
+                                    </h1>
+                                    {{-- Decorative underline --}}
+                                    <!-- <div class="w-32 h-0.5 mx-auto mt-2 opacity-80"
+                                        style="background: linear-gradient(90deg, transparent, #F6E79C, transparent);">
+                                    </div> -->
+                                </div>
+                            </a>
     </section>
 
 <section class="items-center justify-between max-w-5xl mx-auto mt-10 p-4 font-lavish relative">

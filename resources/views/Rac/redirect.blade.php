@@ -107,7 +107,7 @@
 
                     <p class="mx-2 my-2 font-ltmuseumreg">Screenshot layar ini dan silahkan melakukan konfirmasi pendaftaran
                         ke
-                        CP RAC Radioactive 2024
+                        CP RAC Radioactive 2025
                         <br>
                     <ul class="text-[#FFF000] mx-2 my-2">
                         <li class="font-ltmuseumreg">Whatsapp: 08119058838 (RARA)</li>

@@ -168,7 +168,7 @@
                             playsInline
                             className="w-full h-full object-cover"
                         >
-                            <source src="{{ asset('images/awarding/hero_podcast_burem.mp4') }}" type="video/mp4" />
+                            <source src="{{ asset('images/awarding/jadi.mp4') }}" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
                     </div>

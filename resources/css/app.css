@@ -32,11 +32,6 @@
 }
 
 @font-face {
-    font-family: "Brody Rawk";
-    src: url("fonts/Brody-Rawk.ttf") format("truetype");
-}
-
-@font-face {
     font-family: "LTMuseum-Bold";
     src: url("fonts/LTMuseum-Bold.ttf") format("truetype");
     font-weight: bold;
@@ -85,6 +80,20 @@
     font-style: normal;
 }
 
+@font-face {
+  font-family: "Lavish";
+  src: url("fonts/Lavish.ttf") format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Royale Couture Serif";
+  src: url("fonts/RoyaleCouture-Serif.otf") format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 .dataTables_length select {
     background-color: white;
 }
@@ -109,4 +118,21 @@
 
 .no-spinner {
   -moz-appearance: textfield;
+}
+
+/* Glow animation */
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #f0e68c, 0 0 15px #f0e68c, 0 0 20px #f0e68c;
+  }
+  50% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #ffd700, 0 0 30px #ffd700, 0 0 40px #ffd700;
+  }
+  100% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #f0e68c, 0 0 15px #f0e68c, 0 0 20px #f0e68c;
+  }
+}
+
+.glow-text {
+  animation: glow 2s ease-in-out infinite;
 }

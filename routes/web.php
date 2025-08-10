@@ -53,7 +53,7 @@ Route::get('/podcast', function () {
     ]);
 });
 
-Route::get('/awarding', function () {
+Route::get('/awarding-night', function () {
     return view('Awarding.awarding', [
         "title" => "Radioactive 2025 - Concert Experience"
     ]);

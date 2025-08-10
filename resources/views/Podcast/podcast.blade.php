@@ -196,7 +196,7 @@
                             data-aos="fade-up"
                             data-aos-delay="100"
                             data-aos-duration="1000"
-                            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-8 tracking-wider text-yellow-200 leading-tight font-serif relative z-20 px-2 break-words text-center"
+                            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-8 tracking-wider text-yellow-200 leading-tight font-serif relative z-20 px-2 break-words text-center glow-text"
                             style={titleStyle}
                         >
                             PODCAST COMPETITION
@@ -258,7 +258,7 @@
                             className="w-full flex flex-col items-center text-center p-12"
                         >
                             <h2 
-                                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-8 tracking-wider text-yellow-200 leading-tight break-words text-center"
+                                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font mb-8 tracking-wider text-yellow-200 leading-tight break-words text-center glow-text"
                                 style={titleStyle}
                             >
                                 HANDBOOK
@@ -270,7 +270,11 @@
                                 className="text-lg md:text-xl max-w-4xl text-gray-200 leading-relaxed break-words text-center"
                                 style={descriptionStyle}
                             >
-                                handbook disini
+                            <div class="w-full sm:w-[600px] h-[600px] bg-white rounded-md overflow-hidden shadow-lg mb-12"
+                                data-aos="zoom-in" data-aos-delay="100">
+                                <iframe src="https://drive.google.com/file/d/14iJn1t1djJVTXIiuQWvgExBh6DQ_IQbu/preview"
+                                    width="100%" height="100%"></iframe>
+                            </div>
                             </p>
                         </div>
                     </div>
@@ -395,7 +399,7 @@
                             data-aos="zoom-in"
                             data-aos-duration="1000"
                             data-aos-offset="200"
-                            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 tracking-wider text-yellow-200 leading-tight break-words text-center"
+                            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font mb-4 tracking-wider text-yellow-200 leading-tight break-words text-center glow-text"
                             style={titleStyle}
                         >
                             JUDGES
@@ -480,13 +484,14 @@
                             className="mt-8 text-center p-12"
                         >
                             <div className="w-24 h-0.5 bg-yellow-200 mx-auto mb-8 opacity-80" />
-                            
+                            <a href="https://forms.gle/XTN1WX2vDHp6veNn7" target="_blank" class="no-underline">
                             <h2 
-                                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-yellow-200 leading-tight tracking-wider mb-4 break-words text-center px-4"
+                                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-yellow-200 leading-tight tracking-wider mb-4 break-words text-center px-4 glow-text"
                                 style={challengeStyle}
                             >
                                 Ready to take the challenge?
                             </h2>
+                            </a>
                             
                             <div className="w-24 h-0.5 bg-yellow-200 mx-auto mt-4 opacity-80" />
                         </div>

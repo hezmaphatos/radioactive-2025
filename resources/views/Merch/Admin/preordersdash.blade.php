@@ -48,7 +48,7 @@
                             @foreach ($order->preorderDetails as $orderDetail)
                                 <div class="flex flex-col p-1 bg-slate-300 rounded-md my-1">
                                     <p>Product: {{ $orderDetail->merch->name }}</p>
-                                    <p>Qty: {{ $orderDetail->qty }}</p>
+                                    <p>Qty: {{ $orderDetail->quantity }}</p>
                                     <p>Variation: {{ $orderDetail->variation }}</p>
                                     <p>Price: {{ $orderDetail->total_price }}</p>
                                 </div>

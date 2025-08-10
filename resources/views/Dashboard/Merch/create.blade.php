@@ -73,6 +73,19 @@
                 @enderror
               </div>
               <div>
+                <label class="mb-3 block text-sm font-medium text-black">
+                  Tipe
+                </label>
+                <select required name="type" id="type" class="w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary @error('type') border-red-500 @enderror">
+                    <option value="">Pilih tipe</option>
+                    <option value="preorder" {{ old('type') == 'preorder' ? 'selected' : '' }}>Pre Order</option>
+                    <option value="regular" {{ old('type') == 'regular' ? 'selected' : '' }}>Not Pre Order</option>
+                </select>
+                @error('type')
+                <div class="text-sm text-red-600">{{ $message }}</div>
+                @enderror
+              </div>
+              <div>
                 <div>
                     <label for="image" class="mb-3 block text-sm font-medium text-black">
                         Cover Image

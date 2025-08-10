@@ -2,14 +2,13 @@
 
 @section('container')
 
-    <body class="bg-black text-white font-royale">
+    <body class=" text-white font-lavish">
 
         {{-- PARALLAX BACKGROUND WRAPPER --}}
-        <div class="bg-fixed bg-center bg-cover bg-no-repeat min-h-screen"
-            style="background-image: url('{{ asset('images/mac-bg.jpeg') }}');">
+        <div class="">
 
             {{-- Overlay --}}
-            <div class="bg-black bg-opacity-70 w-full h-full">
+            <div class="">
 
                 {{-- CONTENT --}}
                 <div class="max-w-7xl mx-auto">
@@ -17,7 +16,7 @@
                     {{-- BAGIAN 1 - JUDUL DAN DESKRIPSI --}}
                     <section class="min-h-screen flex flex-col justify-center items-center text-center px-4 py-16">
                         <div id="title" class="text-center my-8 px-4 relative z-10">
-                            <h1 class="m-[0.3em] text-2xl sm:text-3xl md:text-4xl font-royale-serif tracking-[4px]"
+                            <h1 class="m-[0.3em] text-2xl sm:text-3xl md:text-4xl font-lavish tracking-[4px]"
                                 style="color: #f6e79c; text-shadow: 0 0 10px #f6e79c, 0 0 20px #f6e79c;">
                                 MINI ANNOUNCING CHALLENGE
                             </h1>
@@ -26,10 +25,7 @@
                                 style="background: linear-gradient(90deg, transparent, #F6E79C, transparent);"></div>
                         </div>
                         <p class="text-base sm:text-lg max-w-3xl mx-auto mb-8" data-aos="fade-up" data-aos-delay="100">
-                            Mini Announcing Challenge merupakan salah satu rangkaian acara RADIOACTIVE 2025. Challenge ini
-                            bertujuan mengasah skill peserta dalam bidang siaran. Peserta bebas berkreasi menggunakan tema
-                            dan 3 kata yang dipilih secara acak, sekaligus meningkatkan awareness untuk rangkaian acara
-                            berikutnya.
+                            Mini Announcing Challenge merupakan salah satu rangkaian acara Radioactive 2025. Mini Announcing Challenge bertujuan untuk mengasah skill para peserta dalam bidang penyiaran. Dalam challenge ini, peserta tidak dibatasi untuk berkreasi. Teknis dari Mini Announcing Challenge ini adalah peserta dapat melakukan siaran salah satu program yang ada di UMN Radio. Peserta akan diberikan pilihan kata yang wajib untuk disebutkan di dalam siarannya. Di sisi lain, challenge ini juga dapat meningkatkan awareness untuk acara selanjutnya 
                         </p>
                     </section>
 
@@ -40,7 +36,7 @@
 
                             {{-- TIMELINE --}}
                             <div id="title" class="text-center my-8 px-4 relative z-10">
-                                <h1 class="m-[0.3em] text-2xl sm:text-3xl md:text-4xl font-royale-serif tracking-[4px]"
+                                <h1 class="m-[0.3em] text-2xl sm:text-3xl md:text-4xl font-lavish tracking-[4px]"
                                     style="color: #f6e79c; text-shadow: 0 0 10px #f6e79c, 0 0 20px #f6e79c;">
                                     TIMELINE
                                 </h1>
@@ -48,12 +44,12 @@
                                 <div class="w-32 h-0.5 mx-auto mt-2 opacity-80"
                                     style="background: linear-gradient(90deg, transparent, #F6E79C, transparent);"></div>
                             </div>
-                            <!-- <p class="text-base sm:text-lg mb-8" data-aos="fade-up" data-aos-delay="100">
+                             <p class="text-base sm:text-lg mb-8" data-aos="fade-up" data-aos-delay="100">
                                 {{-- isi timeline jika ada --}}
-                            </p> -->
+                            </p> 
                             <div class="bg-black bg-opacity-60 border border-[#f6e79c] p-6 rounded-lg text-center w-full max-w-md mb-12"
                                 data-aos="fade-up" data-aos-delay="200">
-                                <h3 class="text-xl sm:text-2xl text-[#f6e79c] font-royale-serif mb-2">
+                                <h3 class="text-xl sm:text-2xl text-[#f6e79c] font-lavish mb-2">
                                     2-9 September 2025
                                 </h3>
                                 <p class="text-sm sm:text-base">
@@ -63,7 +59,7 @@
 
                             {{-- HANDBOOK --}}
                             <div id="title" class="text-center my-8 px-4 relative z-10">
-                                <h1 class="m-[0.3em] text-2xl sm:text-3xl md:text-4xl font-royale-serif tracking-[4px]"
+                                <h1 class="m-[0.3em] text-2xl sm:text-3xl md:text-4xl font-lavish tracking-[4px]"
                                     style="color: #f6e79c; text-shadow: 0 0 10px #f6e79c, 0 0 20px #f6e79c;">
                                     HANDBOOK
                                 </h1>
@@ -80,7 +76,7 @@
                             {{-- READY TO TAKE THE CHALLENGE --}}
                             <a href="https://forms.gle/XTN1WX2vDHp6veNn7" target="_blank" class="no-underline">
                                 <div id="title" class="text-center my-8 px-4 relative z-10" data-aos="fade-up">
-                                    <h1 class="m-[0.3em] text-2xl sm:text-3xl md:text-4xl font-royale-serif tracking-[4px] transition duration-300 hover:text-white"
+                                    <h1 class="m-[0.3em] text-2xl sm:text-3xl md:text-4xl font-lavish tracking-[4px] transition duration-300 hover:text-white"
                                         style="color: #f6e79c; text-shadow: 0 0 10px #f6e79c, 0 0 20px #f6e79c;"
                                         onmouseover="this.style.color='#ffffff'; this.style.textShadow='0 0 10px #ffffff, 0 0 20px #ffffff';"
                                         onmouseout="this.style.color='#f6e79c'; this.style.textShadow='0 0 10px #f6e79c, 0 0 20px #f6e79c';">

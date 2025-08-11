@@ -25,7 +25,12 @@
                                 style="background: linear-gradient(90deg, transparent, #F6E79C, transparent);"></div>
                         </div>
                         <p class="text-base sm:text-lg max-w-3xl mx-auto mb-8" data-aos="fade-up" data-aos-delay="100">
-                            Mini Announcing Challenge merupakan salah satu rangkaian acara Radioactive 2025. Mini Announcing Challenge bertujuan untuk mengasah skill para peserta dalam bidang penyiaran. Dalam challenge ini, peserta tidak dibatasi untuk berkreasi. Teknis dari Mini Announcing Challenge ini adalah peserta dapat melakukan siaran salah satu program yang ada di UMN Radio. Peserta akan diberikan pilihan kata yang wajib untuk disebutkan di dalam siarannya. Di sisi lain, challenge ini juga dapat meningkatkan awareness untuk acara selanjutnya 
+                            Mini Announcing Challenge merupakan salah satu rangkaian acara Radioactive 2025. Mini Announcing
+                            Challenge bertujuan untuk mengasah skill para peserta dalam bidang penyiaran. Dalam challenge
+                            ini, peserta tidak dibatasi untuk berkreasi. Teknis dari Mini Announcing Challenge ini adalah
+                            peserta dapat melakukan siaran salah satu program yang ada di UMN Radio. Peserta akan diberikan
+                            pilihan kata yang wajib untuk disebutkan di dalam siarannya. Di sisi lain, challenge ini juga
+                            dapat meningkatkan awareness untuk acara selanjutnya
                         </p>
                     </section>
 
@@ -44,17 +49,60 @@
                                 <div class="w-32 h-0.5 mx-auto mt-2 opacity-80"
                                     style="background: linear-gradient(90deg, transparent, #F6E79C, transparent);"></div>
                             </div>
-                             <p class="text-base sm:text-lg mb-8" data-aos="fade-up" data-aos-delay="100">
-                                {{-- isi timeline jika ada --}}
-                            </p> 
-                            <div class="bg-black bg-opacity-60 border border-[#f6e79c] p-6 rounded-lg text-center w-full max-w-md mb-12"
-                                data-aos="fade-up" data-aos-delay="200">
-                                <h3 class="text-xl sm:text-2xl text-[#f6e79c] font-lavish mb-2">
-                                    2-9 September 2025
-                                </h3>
-                                <p class="text-sm sm:text-base">
-                                    Pendaftaran dibuka melalui Google Form atau kunjungi langsung booth kami.
-                                </p>
+                            <div class="relative max-w-5xl mx-auto" data-aos="zoom-in-right" data-aos-delay="100">
+                                <!-- Vertical Line -->
+                                <div class="absolute hidden md:block left-1/2 top-0 bottom-0 w-1 z-0"
+                                    style="background: linear-gradient(to bottom, transparent, #f6e79c, transparent); box-shadow: 0 0 10px #f6e79c;">
+                                </div>
+
+                                <!-- Timeline Items -->
+                                <div class="space-y-12">
+
+                                    <!-- ITEM 1 -->
+                                    <div class="md:grid md:grid-cols-2 md:gap-8 items-center">
+                                        <div class="border border-[#f6e79c] rounded-2xl p-4 sm:p-6 bg-black bg-opacity-40 backdrop-blur-md text-white shadow-lg"
+                                            style="box-shadow: 0 0 15px #f6e79c50;">
+                                            <h2 class="mb-2 text-sm sm:text-base md:text-lg font-bold"
+                                                style="color:#f6e79c; text-shadow:0 0 8px #f6e79c;">
+                                                Pendaftaran Mini Announcing Challenge
+                                            </h2>
+                                            <p class="text-xs sm:text-sm md:text-base text-gray-200">
+                                                1-9 September 2025
+                                            </p>
+                                        </div>
+                                        <div></div>
+                                    </div>
+
+                                    <!-- ITEM 2 -->
+                                    <div class="md:grid md:grid-cols-2 md:gap-8 items-center">
+                                        <div></div>
+                                        <div class="border border-[#f6e79c] rounded-2xl p-4 sm:p-6 bg-black bg-opacity-40 backdrop-blur-md text-white shadow-lg"
+                                            style="box-shadow: 0 0 15px #f6e79c50;">
+                                            <h2 class="mb-2 text-sm sm:text-base md:text-lg font-bold"
+                                                style="color:#f6e79c; text-shadow:0 0 8px #f6e79c;">
+                                                Pre-event Mini Announcing Challenge
+                                            </h2>
+                                            <p class="text-xs sm:text-sm md:text-base text-gray-200">
+                                                1-4 September 2025
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <!-- ITEM 3 -->
+                                    <div class="md:grid md:grid-cols-2 md:gap-8 items-center">
+                                        <div class="border border-[#f6e79c] rounded-2xl p-4 sm:p-6 bg-black bg-opacity-40 backdrop-blur-md text-white shadow-lg"
+                                            style="box-shadow: 0 0 15px #f6e79c50;">
+                                            <h2 class="mb-2 text-sm sm:text-base md:text-lg font-bold"
+                                                style="color:#f6e79c; text-shadow:0 0 8px #f6e79c;">
+                                                Pelaksanaan Mini Announcing Challenge
+                                            </h2>
+                                            <p class="text-xs sm:text-sm md:text-base text-gray-200">
+                                                2-9 September 2025
+                                            </p>
+                                        </div>
+                                        <div></div>
+                                    </div>
+                                </div>
                             </div>
 
                             {{-- HANDBOOK --}}
@@ -84,8 +132,8 @@
                                     </h1>
                                     {{-- Decorative underline --}}
                                     <!-- <div class="w-32 h-0.5 mx-auto mt-2 opacity-80"
-                                        style="background: linear-gradient(90deg, transparent, #F6E79C, transparent);">
-                                    </div> -->
+                                            style="background: linear-gradient(90deg, transparent, #F6E79C, transparent);">
+                                        </div> -->
                                 </div>
                             </a>
 

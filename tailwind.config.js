@@ -18,6 +18,8 @@ module.exports = {
                     ltmuseum: ["LT Museum Reguler"],
                     ltmuseumreg: ["LT Museum Reguler"],
                     brodyrawk: ["Brody Rawk"],
+                    lavish: ["Lavish"],
+                    royalecoutureserif: ["Royale Couture Serif"],
                     "ltmuseum-bold": ["LTMuseum-Bold", "sans-serif"],
                     "ltmuseum-bolditalic": ["LTMuseum-BoldItalic", "sans-serif"],
                     "ltmuseum-inline": ["LTMuseum-Inline", "sans-serif"],
@@ -25,6 +27,7 @@ module.exports = {
                     "ltmuseum-light": ["LTMuseum-Light", "sans-serif"],
                     "ltmuseum-lightitalic": ["LTMuseum-LightItalic", "sans-serif"],
                     "ltmuseum-reg": ["LTMuseum-Reg", "sans-serif"],
+                    
             },
             spacing: {},
             objectPosition: {
@@ -49,6 +52,7 @@ module.exports = {
                 success: "#219653",
                 danger: "#D34053",
                 warning: "#FFA70B",
+                gold: "#e69f4e",
             },
             spacing: {
                 4.5: "1.125rem",

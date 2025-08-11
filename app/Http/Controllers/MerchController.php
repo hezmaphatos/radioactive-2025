@@ -76,7 +76,7 @@ class MerchController extends Controller
             ->where('merch_id', $request->merch_id)
             ->first();
 
-            $price = $request->quantity * ($merch->price + $merchvariation->additional_price);
+            $price = $request->quantity * $merch->price;
 
             if (isset($carts[0])) {
                 foreach ($carts as $cart) {
@@ -192,12 +192,34 @@ class MerchController extends Controller
             $cart->delete();
         }else{
             $cart->quantity = $request->quantity;
-            $price = $request->quantity * ($merch->price + $merchvariation->additional_price);
+            $price = $request->quantity * $merch->price;
             $cart->total_price = $price;
             $cart->update();
         }
 
-        return redirect('/cart');
+        $carts = Cart::where('user_id', auth()->id())->get();
+
+        $cumulative_price = $carts->sum('total_price');
+        $cumulative_additional_price = $carts->sum(function ($cart) {
+            $merch = $cart->merch;
+            $variation = MerchVariation::where('description', $cart->variation)
+                ->where('merch_id', $merch->id)
+                ->first();
+
+            return $cart->quantity * ($variation->additional_price ?? 0);
+        });
+
+        $subtotal = $cumulative_price;
+        $total = $cumulative_price + $cumulative_additional_price;
+
+    return response()->json([
+        'success' => true,
+        'new_quantity' => $cart->quantity,
+        'new_total' => $cart->total_price,
+        'subtotal' => $subtotal,
+        'additional' => $cumulative_additional_price,
+        'total' => $total,
+    ]);
     }
 
     public function updatePreorderCartQuantity(MerchPreorderCart $merchPreorderCart, Request $request){

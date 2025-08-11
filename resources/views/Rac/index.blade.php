@@ -1,36 +1,20 @@
 @extends('layouts.main')
 
 @section('container')
-<body class="text-white" style="
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('{{ asset('images/footerbg.webp') }}') no-repeat center center fixed;
-  background-size: cover;
-  background-blend-mode: darken;
-">
+<body class="text-white">
     
-<section class="flex min-h-screen flex-col justify-center items-center text-center px-4 font-['Brody_Rawk',sans-serif] relative">
-
-    {{-- Background Decoration --}}
-    <div class="absolute inset-0 pointer-events-none" style="
-        background-image: 
-            radial-gradient(circle at 30% 70%, rgba(246, 231, 156, 0.08) 0%, transparent 50%),
-            radial-gradient(circle at 70% 30%, rgba(246, 231, 156, 0.06) 0%, transparent 50%);
-        z-index: 0;
-    "></div>
+<section class="flex min-h-screen flex-col justify-center items-center text-center px-4 font-lavish relative">
 
     <div id="title" class="text-center my-8 px-4 relative z-10">
-        <h1 class="m-[0.3em] text-2xl sm:text-3xl md:text-4xl font-royale tracking-[4px]" style="color: #f6e79c; text-shadow: 0 0 10px #f6e79c, 0 0 20px #f6e79c;">
+        <h1 class="m-[0.3em] text-2xl sm:text-3xl md:text-4xl font-lavish tracking-[4px]" style="color: #f6e79c; text-shadow: 0 0 10px #f6e79c, 0 0 20px #f6e79c;">
             RADIO ANNOUNCING COMPETITION
         </h1>
         {{-- Decorative underline --}}
         <div class="w-32 h-0.5 mx-auto mt-2 opacity-80" style="background: linear-gradient(90deg, transparent, #F6E79C, transparent);"></div>
     </div>
 
-    <p class="md:text-lg max-w-4xl text-base mb-8 font-royale z-10 relative" data-aos="fade-up" data-aos-delay="100">
-        Radio Announcing Competition merupakan rangkaian acara utama RADIOACTIVE. 
-        Lomba ini merupakan ajang untuk siswa SMA dan mahasiswa se-Jabodetabek untuk 
-        memperluas wawasan dan mengasah kemampuan di dunia broadcasting. 
-        Kompetisi ini sesuai dengan nilai utama RADIOACTIVE 2024, yaitu “Surviving the Maze”. 
-        Lomba ini mengasah kreativitas dalam membuat siaran, serta menggambarkan perjuangan manusia dalam menghadapi rintangan kehidupan.
+    <p class="md:text-lg max-w-4xl text-base mb-8 font-lavish z-10 relative" data-aos="fade-up" data-aos-delay="100">
+        nnti dikasi tau faikar
     </p>
 
     <p class="mb-4 animate-bounce z-10 relative">Scroll Down</p>
@@ -39,57 +23,50 @@
     </svg>
 </section>
 
-<section class="items-center justify-between max-w-5xl mx-auto mt-10 p-4 font-ltmuseum relative">
-    {{-- Handbook Background Decoration --}}
-    <div class="absolute inset-0 pointer-events-none" style="
-        background-image: 
-            radial-gradient(circle at 30% 70%, rgba(246, 231, 156, 0.08) 0%, transparent 50%),
-            radial-gradient(circle at 70% 30%, rgba(246, 231, 156, 0.06) 0%, transparent 50%);
-        z-index: 0;
-    "></div>
-
-    <div id="title" class="text-center my-8 px-4 relative z-10">
-        <h1 class="m-[0.3em] text-2xl sm:text-3xl md:text-4xl font-royale tracking-[4px]" style="color: #f6e79c; text-shadow: 0 0 10px #f6e79c, 0 0 20px #f6e79c;">
-    HANDBOOK
-    </h1>
-        {{-- Decorative underline --}}
-        <div class="w-32 h-0.5 mx-auto mt-2 opacity-80" style="background: linear-gradient(90deg, transparent, #F6E79C, transparent);"></div>
-    </div>
+    <section id="desc" class="flex flex-col md:flex-row items-center justify-center font-['Brody_Rawk',sans-serif] relative bg-black">
+        <div class="w-full md:w-1/2 h-1/2 md:h-full relative">
+            <img src="{{ asset('images/IGGY BINGUNG.webp') }}" class="w-full h-full object-cover opacity-100 bg-gradient-to-b from-transparent to-[#FA0202]" alt="IGGY BINGUNG">
+            <div class="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent"></div>
+        </div>
+        
+        <div class="w-full md:w-1/2 h-1/2 md:h-full flex flex-col justify-center p-6 md:p-12 text-white space-y-6 md:space-y-8 relative z-10">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold uppercase tracking-wider leading-tight text-[#d61525]" data-aos="fade-up" data-aos-delay="100">
+                Radio Announcing Competition
+            </h2>
+            <p class="text-sm sm:text-base md:text-lg leading-relaxed tracking-wide font-ltmuseumreg" data-aos="fade-up" data-aos-delay="150">
+                Radio Announcing Competition merupakan rangkaian acara utama RADIOACTIVE. Lomba ini merupakan ajang untuk siswa SMA dan mahasiswa se-Jabodetabek untuk memperluas wawasan dan mengasah kemampuan di dunia broadcasting.
+            </p>
+            <p class="text-sm sm:text-base md:text-lg leading-relaxed tracking-wide font-ltmuseumreg" data-aos="fade-up" data-aos-delay="200">
+                Kompetisi ini sesuai dengan nilai utama RADIOACTIVE 2024, yaitu “Surviving the Maze”. Lomba ini mengasah kreativitas dalam membuat siaran, serta menggambarkan perjuangan manusia dalam menghadapi rintangan kehidupan.
+            </p>
+            <p class="text-sm sm:text-base md:text-lg leading-relaxed tracking-wide" data-aos="fade-up">
+            <span class="absolute bottom right-6 text-[#d61525] text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold" data-aos="fade-up" data-aos-delay="250">
+                RAC
+            </span>
+            </p>
+        </div>
     </section>
-
-<section class="items-center justify-between max-w-5xl mx-auto mt-10 p-4 font-ltmuseum relative">
-    {{-- Judges Background Decoration --}}
-    <div class="absolute inset-0 pointer-events-none" style="
-        background-image: 
-            radial-gradient(circle at 30% 70%, rgba(246, 231, 156, 0.08) 0%, transparent 50%),
-            radial-gradient(circle at 70% 30%, rgba(246, 231, 156, 0.06) 0%, transparent 50%);
-        z-index: 0;
-    "></div>
-
-    <div id="title" class="text-center my-8 px-4 relative z-10">
-        <h1 class="m-[0.3em] text-2xl sm:text-3xl md:text-4xl font-royale tracking-[4px]" style="color: #f6e79c; text-shadow: 0 0 10px #f6e79c, 0 0 20px #f6e79c;">
-            JUDGES
-        </h1>
-        {{-- Decorative underline --}}
-        <div class="w-32 h-0.5 mx-auto mt-2 opacity-80" style="background: linear-gradient(90deg, transparent, #F6E79C, transparent);"></div>
-    </div>
-
-    <div id="judges" class="flex flex-col sm:flex-row justify-center gap-6 relative z-10">
-    <div id="judge1" class="p-4 text-center" data-aos="fade-up" data-aos-delay="100">
-        <div class="w-64 h-64 mx-auto mb-4 relative">
-            <img src="{{ asset('images/reza_bima_nobg.webp') }}" alt="Reza Bima" class="w-44 h-44 object-cover object-top rounded-full absolute top-1/2 left-1/2 z-10 transform -translate-x-1/2 -translate-y-1/2">
-            <img src="{{ asset('images/judgesframe.webp') }}" alt="Frame" class="w-full h-full object-contain absolute inset-0 z-20 pointer-events-none">
+    
+    <section class="items-center justify-between max-w-5xl mx-auto mt-10 p-4 font-ltmuseum">
+        <div id="title" class="text-center my-8 px-4">
+            <h1 class="m-[0.3em] text-2xl sm:text-3xl md:text-4xl italic font-brodyrawk tracking-[4px]">THE JUDGES</h1>
         </div>
-        <h2 class="mb-2 text-lg sm:text-xl">Reza Bima</h2>
-    </div>
-    <div id="judge2" class="p-4 text-center" data-aos="fade-up" data-aos-delay="200">
-        <div class="w-64 h-64 mx-auto mb-4 relative">
-            <img src="{{ asset('images/judgesframe.webp') }}" alt="Frame" class="w-full h-full object-contain absolute inset-0 z-20 pointer-events-none">
-            <img src="{{ asset('images/dina_janidya.webp') }}" alt="Dina Janidya" class="w-44 h-44 object-cover object-top rounded-full absolute top-1/2 left-1/2 z-10 transform -translate-x-1/2 -translate-y-1/2">
+        <div id="judges" class="flex flex-col sm:flex-row justify-center gap-6 ">
+            <div id="judge1" class="p-4 text-center" data-aos="fade-up" data-aos-delay="100">
+                <div class="rotating-border w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 mx-auto mb-4 rounded-full relative overflow-hidden">
+                    <div class="absolute inset-0.5 bg-black rounded-full z-10"></div>
+                    <img src="{{ asset('images/reza_bima.webp') }}" class="absolute inset-0.5 w-[calc(100%-4px)] h-[calc(100%-4px)] object-cover object-center rounded-full z-20" alt="Reza Bima">
+                </div>
+                <h2 class="mb-2 text-lg sm:text-xl">Reza Bima</h2>
+            </div>
+            <div id="judge2" class="p-4 text-center" data-aos="fade-up" data-aos-delay="200">
+                <div class="rotating-border w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 mx-auto mb-4 rounded-full relative overflow-hidden">
+                    <div class="absolute inset-0.5 bg-black rounded-full z-10"></div>
+                    <img src="{{ asset('images/dina_janidya.webp') }}" class="absolute inset-0.5 w-[calc(100%-4px)] h-[calc(100%-4px)] object-cover object-center rounded-full z-20" alt="Dina Janidya">
+                </div>
+                <h2 class="mb-2 text-lg sm:text-xl">Dina Janidya</h2>
+            </div>
         </div>
-        <h2 class="mb-2 text-lg sm:text-xl">Dina Janidya</h2>
-    </div>
-</div>
     </section>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>

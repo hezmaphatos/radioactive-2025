@@ -2,33 +2,33 @@
 
 @section('container')
 
-<body class="overflow-x-hidden">
+<body class="overflow-x-hidden fotn-lavish">
     <div class="justify-center align-middle items-center">
         <div id="indicators-carousel" class="relative w-full" data-carousel="static">
 
             <div class="relative overflow-hidden h-[400px] md:h-[500px]">
 
-                <div class="hidden duration-700 ease-in-out pt-16" data-carousel-item="active">
+                <div class="hidden duration-700 ease-in-out pt-0" data-carousel-item="active">
                     <img src="/images/CAROUSEL/1.webp"
                         class="flex h-full w-full object-center object-cover brightness-50">
                 </div>
 
-                <div class="hidden duration-700 ease-in-out pt-16" data-carousel-item>
+                <div class="hidden duration-700 ease-in-out pt-0" data-carousel-item>
                     <img src="/images/CAROUSEL/2.webp"
                         class="flex h-full w-full object-center object-cover brightness-50">
                 </div>
 
-                <div class="hidden duration-700 ease-in-out pt-16" data-carousel-item>
+                <div class="hidden duration-700 ease-in-out pt-0" data-carousel-item>
                     <img src="/images/CAROUSEL/8.png"
                         class="flex h-full w-full object-center object-cover brightness-50">
                 </div>
 
-                <div class="hidden duration-700 ease-in-out pt-16" data-carousel-item>
+                <div class="hidden duration-700 ease-in-out pt-0" data-carousel-item>
                     <img src="/images/CAROUSEL/9.png"
                         class="flex h-full w-full object-center object-cover brightness-50">
                 </div>
 
-                <div class="hidden duration-700 ease-in-out pt-16" data-carousel-item>
+                <div class="hidden duration-700 ease-in-out pt-0" data-carousel-item>
                     <img src="/images/CAROUSEL/6.png"
                         class="flex h-full w-full object-center object-cover brightness-50">
                 </div>
@@ -36,8 +36,8 @@
             </div>
 
             <div class="absolute inset-0 flex flex-col items-center justify-center pointer-events-none z-20">
-                <img src="/images/LOGO RA.png" alt="Logo" class="w-64 h-32 md:w-80 md:h-40 object-cover ">
-                <div class="text-white text-5xl font-brodyrawk mt-1">
+                <img src="/images/LOGO_RADIOACTIVE2025.png" alt="Logo" class="w-64 h-32 md:w-80 md:h-40 object-cover ">
+                <div class="text-white text-5xl font-lavish mt-1">
                     COLLECTION
                 </div>
             </div>
@@ -90,7 +90,7 @@
                         <div id="item-img" class="mb-[7rem] w-[250px] h-[350px] border-solid border-[1px] border-white transform transition duration-500 hover:scale-[1.03]">
                             <img src="{{asset('storage/'.$merch->image)}}" class="object-cover w-full h-full" />
                             <p class="mt-3 font-ltmuseumbold text-white text-[15px]">{{$merch->name}}</p>
-                            <p class="mt-1 font-ltmuseumreg text-white text-sm">{{'Rp ' . number_format($merch->price, 0, ',', '.')}}</p>
+                            <p class="mt-1 font-lavish text-white text-sm">{{'Rp ' . number_format($merch->price, 0, ',', '.')}}</p>
                         </div>
                     </a>
                 @endforeach
@@ -106,7 +106,7 @@
 
             <div id="shopping-cart" class="w-full fixed bottom-5 right-5 flex justify-end">
                 <a href="/cart"
-                    class="rounded-full no-underline bg-red-600 w-[60px] h-[60px] flex justify-center items-center cursor-pointer transform transition duration-500 hover:scale-110">
+                    class="rounded-full no-underline bg-[#f6e79c] w-[60px] h-[60px] flex justify-center items-center cursor-pointer transform transition duration-500 hover:scale-110">
                     <i class="fas fa-shopping-cart fa-xl" style="color: white;"></i>
                 </a>
             </div>

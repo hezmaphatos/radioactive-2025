@@ -14,13 +14,19 @@
             {{-- HERO SECTION --}}
             <section class="flex min-h-screen flex-col justify-center items-center text-center px-4 font-['Brody_Rawk',sans-serif] relative">
 
-                {{-- Background Decoration --}}
-                <div class="absolute inset-0 pointer-events-none" style="
-                    background-image: 
-                        radial-gradient(circle at 30% 70%, rgba(246, 231, 156, 0.08) 0%, transparent 50%),
-                        radial-gradient(circle at 70% 30%, rgba(246, 231, 156, 0.06) 0%, transparent 50%);
-                    z-index: 0;
-                "></div>
+    {{-- Background Decoration --}}
+    <div class="absolute inset-0 pointer-events-none" style="
+        background-image: 
+            radial-gradient(circle at 30% 70%, rgba(246, 231, 156, 0.08) 0%, transparent 50%),
+            radial-gradient(circle at 70% 30%, rgba(246, 231, 156, 0.06) 0%, transparent 50%);
+        z-index: 0;
+    "></div>
+
+    <div id="title" class="text-center my-8 px-4 relative z-10">
+        <h1 class="m-[0.3em] text-2xl sm:text-3xl md:text-4xl font-royale tracking-[4px]" style="color: #f6e79c; text-shadow: 0 0 10px #f6e79c, 0 0 20px #f6e79c;">
+<body class="text-white">
+    
+<section class="flex min-h-screen flex-col justify-center items-center text-center px-4 font-lavish relative">
 
                 <div id="title" class="text-center my-8 px-4 relative z-10">
                     <h1 class="m-[0.3em] text-2xl sm:text-3xl md:text-4xl font-lavish tracking-[4px]" style="color: #f6e79c; text-shadow: 0 0 10px #f6e79c, 0 0 20px #f6e79c;">
@@ -30,11 +36,8 @@
         <div class="w-32 h-0.5 mx-auto mt-2 opacity-80" style="background: linear-gradient(90deg, transparent, #F6E79C, transparent);"></div>
     </div>
     <p class="md:text-lg max-w-4xl text-base mb-8 font-royale z-10 relative" data-aos="fade-up" data-aos-delay="100">
-        Radio Announcing Competition merupakan rangkaian acara utama RADIOACTIVE. 
-        Lomba ini merupakan ajang untuk siswa SMA dan mahasiswa se-Jabodetabek untuk 
-        memperluas wawasan dan mengasah kemampuan di dunia broadcasting. 
-        Kompetisi ini sesuai dengan nilai utama RADIOACTIVE 2025. 
-        Lomba ini mengasah kreativitas dalam membuat siaran, serta menggambarkan perjuangan manusia dalam menghadapi rintangan kehidupan.
+        Radio Announcing Competition (RAC) merupakan rangkaian acara utama Radioactive. Lomba ini merupakan ajang bagi mahasiswa se-Jabodetabek untuk memperluas wawasan dan mengasah kemampuan di dunia broadcasting. Lomba ini bertujuan untuk mengasah kreativitas dalam membuat siaran dan membangun menjalin hubungan baik  antar radio kampus. 
+Dengan tema  Voice the Shell, Dare to Tell, RAC 2025 membawa harapan untuk memberi suara pada apa yang selama ini terpendam serta berani memulai mengungkapkan ide, opini dan cerita yang akan menjadi ciri khas masing-masing. Sekaligus ini perjalanan yang panjang menuju ketenangan, setiap individu diajak untuk bangkit dan berani mengekspresikan diri. Dalam dunia announcing, suara bukan sekadar bunyi, melainkan juga cerminan dari keberanian, pengalaman, dan perjalanan diri.
     </p>
 
     <p class="mb-4 animate-bounce z-10 relative">Scroll Down</p>

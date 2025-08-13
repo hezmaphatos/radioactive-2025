@@ -99,7 +99,12 @@
                         25 Agustus - 1 October 2025 : Podcast Competition
                     </h2>
                     <p class="text-xs sm:text-sm md:text-base text-gray-300">
-                    dikasi tau faikar nnti                    </p>
+                    Tahun ini, Radioactive 2025 dengan bangga mempersembahkan Podcast Competition pertama! Mengusung tema "Crack the Shell, Take the Next Step", kompetisi ini menjadi wadah bagi individu untuk berani melangkah keluar dari zona nyaman, membuka diri, dan menyuarakan isi pikiran melalui Podcast Competition.                  </p>
+                        <a href="/podcast" target="" class="no-underline m-[0.3em] sm:text-l md:text-xl font-lavish tracking-[4px] transition duration-300 hover:text-white" data-aos="fade-up" style="color: #f6e79c; text-shadow: 0 0 10px #f6e79c, 0 0 20px #f6e79c; transition: all 0.3s ease; transition: all 0.3s ease;"
+                                        onmouseover="this.style.color='#ffffff'; this.style.textShadow='0 0 10px #ffffff, 0 0 20px #ffffff';"
+                                        onmouseout="this.style.color='#f6e79c'; this.style.textShadow='0 0 10px #f6e79c, 0 0 20px #f6e79c';">
+                                Read More
+                            </a>
                 </div>
                 <div></div>
             </div>
@@ -112,7 +117,13 @@
                         30 Agustus – 11 Oktober 2025 : Radio Announcing Competition
                     </h2>
                     <p class="text-xs sm:text-sm md:text-base text-gray-300">
-                        dikasi tau faikar nnti                   </p>
+                        Radio Announcing Competition (RAC) merupakan rangkaian acara utama Radioactive. Lomba ini merupakan ajang bagi mahasiswa se-Jabodetabek untuk memperluas wawasan dan mengasah kemampuan di dunia broadcasting. Lomba ini bertujuan untuk mengasah kreativitas dalam membuat siaran dan membangun menjalin hubungan baik  antar radio kampus. 
+                    </p>
+                    <a href="/rac" target="" class="no-underline m-[0.3em] sm:text-l md:text-xl font-lavish tracking-[4px] transition duration-300 hover:text-white" data-aos="fade-up" style="color: #f6e79c; text-shadow: 0 0 10px #f6e79c, 0 0 20px #f6e79c; transition: all 0.3s ease; transition: all 0.3s ease;"
+                                        onmouseover="this.style.color='#ffffff'; this.style.textShadow='0 0 10px #ffffff, 0 0 20px #ffffff';"
+                                        onmouseout="this.style.color='#f6e79c'; this.style.textShadow='0 0 10px #f6e79c, 0 0 20px #f6e79c';">
+                                Read More
+                            </a>
                 </div>
             </div>
 
@@ -123,8 +134,13 @@
                         1 September - 9 September 2025 : Mini Announcing Challenge
                     </h2>
                     <p class="text-xs sm:text-sm md:text-base text-gray-300">
-                        Mini Announcing Challenge merupakan salah satu rangkaian acara Radioactive 2025. Mini Announcing Challenge bertujuan untuk mengasah skill para peserta dalam bidang penyiaran. Dalam challenge ini, peserta tidak dibatasi untuk berkreasi. Teknis dari Mini Announcing Challenge ini adalah peserta dapat melakukan siaran salah satu program yang ada di UMN Radio. Peserta akan diberikan pilihan kata yang wajib untuk disebutkan di dalam siarannya. Di sisi lain, challenge ini juga dapat meningkatkan awareness untuk acara selanjutnya                    </p>
-                </div>
+                        Mini Announcing Challenge merupakan salah satu rangkaian acara Radioactive 2025. Mini Announcing Challenge bertujuan untuk mengasah skill para peserta dalam bidang penyiaran. Dalam challenge ini, peserta tidak dibatasi untuk berkreasi.                   </p>
+                        <a href="/mac" target="" class="no-underline m-[0.3em] sm:text-l md:text-xl font-lavish tracking-[4px] transition duration-300 hover:text-white" data-aos="fade-up" style="color: #f6e79c; text-shadow: 0 0 10px #f6e79c, 0 0 20px #f6e79c; transition: all 0.3s ease; transition: all 0.3s ease;"
+                                        onmouseover="this.style.color='#ffffff'; this.style.textShadow='0 0 10px #ffffff, 0 0 20px #ffffff';"
+                                        onmouseout="this.style.color='#f6e79c'; this.style.textShadow='0 0 10px #f6e79c, 0 0 20px #f6e79c';">
+                                Read More
+                            </a>
+                    </div>
                 <div>
 
                     
@@ -140,7 +156,13 @@
                 1 November 2025 : Awarding Night
             </h2>
             <p class="text-xs sm:text-sm md:text-base text-gray-300">
-                Awarding night Radioactive 2025 merupakan rangkaian acara terakhir dari Radioactive 2025. Dalam awarding night, kami ingin menjadikan acara ini sebagai malam perayaan dan apresiasi untuk setiap peserta serta crew yang sudah mengikuti seluruh rangkaian acara Radioactive 2025. Awarding night sendiri akan diadakan secara intimate agar sesuai dengan tema tahun ini yaitu, “Oriselle World” yang diharapkan dapat memberikan sebuah ketenangan bagi seluruh orang yang datang.                   </p>
+                Awarding night Radioactive 2025 merupakan rangkaian acara terakhir dari Radioactive 2025. Dalam awarding night, kami ingin menjadikan acara ini sebagai malam perayaan dan apresiasi untuk setiap peserta serta crew yang sudah mengikuti seluruh rangkaian acara Radioactive 2025. 
+                          </p>
+                          <a href="/awarding-night" target="" class="no-underline m-[0.3em] sm:text-l md:text-xl font-lavish tracking-[4px] transition duration-300 hover:text-white" data-aos="fade-up" style="color: #f6e79c; text-shadow: 0 0 10px #f6e79c, 0 0 20px #f6e79c; transition: all 0.3s ease; transition: all 0.3s ease;"
+                                        onmouseover="this.style.color='#ffffff'; this.style.textShadow='0 0 10px #ffffff, 0 0 20px #ffffff';"
+                                        onmouseout="this.style.color='#f6e79c'; this.style.textShadow='0 0 10px #f6e79c, 0 0 20px #f6e79c';">
+                                Read More
+                            </a>
         </div>
     </div>
         </div>
@@ -152,7 +174,7 @@
         
 
         {{-- Exclusive Radio Partner --}}
-        <div class="px-4 mt-12 sm:mt-16 md:mt-20">
+        {{-- <div class="px-4 mt-12 sm:mt-16 md:mt-20">
             <div data-aos="zoom-in-up" data-aos-delay="400"
                 class="container mx-auto flex flex-col md:flex-row justify-center md:justify-around items-center align-middle gap-6 md:gap-4">
                 <div class="relative text-center font-lavish">
@@ -166,12 +188,12 @@
                 <img src="/images/LOGO MEDPAR/LOGO MUSTANG.webp" alt="Mustang Radio Logo" 
                      class="w-48 sm:w-64 md:w-80 lg:w-96 object-contain">
             </div>
-        </div>
+        </div> --}}
 
         {{-- Partners Section --}}
-        <div id="partners" class="mt-8 sm:mt-12 md:mt-16 lg:mt-24 px-4" data-aos="fade-up">
+        {{-- <div id="partners" class="mt-8 sm:mt-12 md:mt-16 lg:mt-24 px-4" data-aos="fade-up">
             <div class="container mx-auto">
-                {{-- Title --}}
+                
                 <div data-aos="zoom-in-up" data-aos-delay="400" class="w-full text-center mb-8 sm:mb-10 md:mb-12">
                     <div class="relative text-center font-lavish">
                         <span class="absolute inset-0 text-xl sm:text-2xl md:text-4xl lg:text-5xl font-extrabold text-transparent bg-gradient-to-r from-gold to-white bg-clip-text blur-xl opacity-60 select-none tracking-wider">
@@ -181,37 +203,37 @@
                             PARTNERS
                         </h2>
                     </div>
-                </div>
+                </div> --}}
 
                 {{-- Pyramid Layout --}}
-                <div class="w-full">
-                    <div class="flex flex-col items-center space-y-4 sm:space-y-6 md:space-y-8">
+{{--                 <div class="w-full">
+                    <div class="flex flex-col items-center space-y-4 sm:space-y-6 md:space-y-8"> --}}
                         {{-- Tier 1 - 1 logo (Largest) --}}
-                        <div class="flex justify-center">
+                        <{{-- div class="flex justify-center">
                             <img class="w-48 sm:w-56 md:w-64 lg:w-80 h-16 sm:h-20 md:h-24 lg:h-28 object-contain"
                                 src="/images/LOGO MEDPAR/logo milenials radio.webp" alt="Milenials Radio" />
-                        </div>
+                        </> --}}
 
                         {{-- Tier 2 - 2 logos (Large) --}}
-                        <div class="flex justify-center items-center space-x-8 sm:space-x-12 md:space-x-16 lg:space-x-20">
+                        {{-- <div class="flex justify-center items-center space-x-8 sm:space-x-12 md:space-x-16 lg:space-x-20">
                             <img class="w-32 sm:w-36 md:w-40 lg:w-48 h-12 sm:h-14 md:h-16 lg:h-20 object-contain" 
                                  src="/images/LOGO MEDPAR/Logo SMI Putih.webp" alt="SMI" />
                             <img class="w-32 sm:w-36 md:w-40 lg:w-48 h-12 sm:h-14 md:h-16 lg:h-20 object-contain"
                                  src="/images/LOGO MEDPAR/Logo Ultimagz Putih.webp" alt="Ultimagz" />
-                        </div>
+                        </div> --}}
 
                         {{-- Tier 3 - 3 logos (Medium) --}}
-                        <div class="flex justify-center items-center space-x-6 sm:space-x-8 md:space-x-10 lg:space-x-14">
+                        {{-- <div class="flex justify-center items-center space-x-6 sm:space-x-8 md:space-x-10 lg:space-x-14">
                             <img class="w-24 sm:w-28 md:w-32 lg:w-36 h-10 sm:h-12 md:h-14 lg:h-16 object-contain" 
                                  src="/images/LOGO MEDPAR/Logo lspr radio .webp" alt="LSPR Radio" />
                             <img class="w-24 sm:w-28 md:w-32 lg:w-36 h-10 sm:h-12 md:h-14 lg:h-16 object-contain" 
                                  src="/images/LOGO MEDPAR/Logo Mradio .webp" alt="M Radio" />
                             <img class="w-24 sm:w-28 md:w-32 lg:w-36 h-10 sm:h-12 md:h-14 lg:h-16 object-contain" 
                                  src="/images/LOGO MEDPAR/fourtyfiveradio.webp" alt="45 Radio" />
-                        </div>
+                        </div> --}}
 
                         {{-- Tier 4 - 4 logos (Small-Medium) --}}
-                        <div class="flex justify-center items-center space-x-4 sm:space-x-6 md:space-x-8 lg:space-x-10">
+                       {{--  <div class="flex justify-center items-center space-x-4 sm:space-x-6 md:space-x-8 lg:space-x-10">
                             <img src="/images/LOGO MEDPAR/LOGO BEM UMN PUTIH.webp" alt="BEM UMN"
                                 class="w-16 sm:w-18 md:w-20 lg:w-28 h-8 sm:h-10 md:h-12 lg:h-14 object-contain">
                             <img class="w-16 sm:w-18 md:w-20 lg:w-28 h-8 sm:h-10 md:h-12 lg:h-14 object-contain" 
@@ -220,10 +242,10 @@
                                  src="/images/LOGO MEDPAR/logo imkom.webp" alt="Imkom" />
                             <img class="w-16 sm:w-18 md:w-20 lg:w-28 h-8 sm:h-10 md:h-12 lg:h-14 object-contain"
                                  src="/images/LOGO MEDPAR/Logo Kacamata Lomba.webp" alt="Kacamata Lomba" />
-                        </div>
+                        </div> --}}
 
                         {{-- Tier 5 - 5 logos (Small) --}}
-                        <div class="flex justify-center items-center space-x-3 sm:space-x-4 md:space-x-6 lg:space-x-8">
+                        {{-- <div class="flex justify-center items-center space-x-3 sm:space-x-4 md:space-x-6 lg:space-x-8">
                             <img class="w-12 sm:w-14 md:w-16 lg:w-24 h-6 sm:h-8 md:h-10 lg:h-12 object-contain" 
                                  src="/images/LOGO MEDPAR/LOGO_MOESTOPO.webp" alt="Moestopo" />
                             <img class="w-12 sm:w-14 md:w-16 lg:w-24 h-6 sm:h-8 md:h-10 lg:h-12 object-contain" 
@@ -234,10 +256,10 @@
                                  src="/images/LOGO MEDPAR/Logo Acarakampus.com.webp" alt="Acara Kampus" />
                             <img class="w-12 sm:w-14 md:w-16 lg:w-24 h-6 sm:h-8 md:h-10 lg:h-12 object-contain" 
                                  src="/images/LOGO MEDPAR/LOGO BERITA LOMBA PNG.webp" alt="Berita Lomba" />
-                        </div>
+                        </div> --}}
 
                         {{-- Tier 6 - 6 logos (Smallest) --}}
-                        <div class="flex justify-center items-center space-x-2 sm:space-x-3 md:space-x-4 lg:space-x-6 flex-wrap max-w-4xl gap-y-2">
+{{--                         <div class="flex justify-center items-center space-x-2 sm:space-x-3 md:space-x-4 lg:space-x-6 flex-wrap max-w-4xl gap-y-2">
                             <img class="w-10 sm:w-12 md:w-14 lg:w-20 h-5 sm:h-6 md:h-8 lg:h-10 object-contain" 
                                  src="/images/LOGO MEDPAR/Logo Eventnya Mahasiswa.webp" alt="Event Mahasiswa" />
                             <img class="w-10 sm:w-12 md:w-14 lg:w-20 h-5 sm:h-6 md:h-8 lg:h-10 object-contain" 
@@ -248,7 +270,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
 
         {{-- Divider --}}
         <div class="w-full flex justify-center mt-12 sm:mt-16 md:mt-20 lg:mt-24">
@@ -256,7 +278,7 @@
         </div>
 
         {{-- Ticketing Partner --}}
-        <div class="px-4 mt-12 sm:mt-16 md:mt-20">
+        {{-- <div class="px-4 mt-12 sm:mt-16 md:mt-20">
             <div data-aos="zoom-in-up" data-aos-delay="400"
                 class="container mx-auto flex flex-col md:flex-row justify-center md:justify-around items-center align-middle gap-6 md:gap-4">
                 <div class="relative text-center font-lavish">
@@ -271,12 +293,12 @@
                      class="w-48 sm:w-64 md:w-80 lg:w-96 object-contain">
             </div>
         </div>
-
+ --}}
         {{-- Sponsors Section --}}
-        <div id="sponsors" class="mt-8 sm:mt-12 md:mt-16 lg:mt-24 px-4" data-aos="fade-up">
-            <div class="container mx-auto">
+        {{-- <div id="sponsors" class="mt-8 sm:mt-12 md:mt-16 lg:mt-24 px-4" data-aos="fade-up">
+            <div class="container mx-auto"> --}}
                 {{-- Title --}}
-                <div data-aos="zoom-in-up" data-aos-delay="400" class="w-full text-center mb-8 sm:mb-10 md:mb-12">
+                {{-- <div data-aos="zoom-in-up" data-aos-delay="400" class="w-full text-center mb-8 sm:mb-10 md:mb-12">
                     <div class="relative text-center font-lavish">
                         <span class="absolute inset-0 text-xl sm:text-2xl md:text-4xl lg:text-5xl font-extrabold text-transparent bg-gradient-to-r from-gold to-white bg-clip-text blur-xl opacity-60 select-none tracking-wider">
                             SPONSORS
@@ -285,27 +307,27 @@
                             SPONSORS
                         </h2>
                     </div>
-                </div>
+                </div> --}}
 
                 {{-- Pyramid Layout --}}
-                <div class="w-full">
-                    <div class="flex flex-col items-center space-y-4 sm:space-y-6 md:space-y-8">
+                {{-- <div class="w-full">
+                    <div class="flex flex-col items-center space-y-4 sm:space-y-6 md:space-y-8"> --}}
                         {{-- Tier 1 - 1 logo (Largest) --}}
-                        <div class="flex justify-center">
+                        {{-- <div class="flex justify-center">
                             <img src="/images/LOGO SPONSOR/ALLOBANK (2) XS.webp" alt="Allo Bank"
                                 class="w-48 sm:w-56 md:w-64 lg:w-80 h-16 sm:h-20 md:h-24 lg:h-28 object-contain">
-                        </div>
+                        </div> --}}
 
                         {{-- Tier 2 - 2 logos (Large) --}}
-                        <div class="flex justify-center items-center space-x-8 sm:space-x-12 md:space-x-16 lg:space-x-20">
+                        {{-- <div class="flex justify-center items-center space-x-8 sm:space-x-12 md:space-x-16 lg:space-x-20">
                             <img src="/images/LOGO SPONSOR/AMATERASUN XS.webp" alt="Amaterasun"
                                 class="w-32 sm:w-36 md:w-40 lg:w-48 h-12 sm:h-14 md:h-16 lg:h-20 object-contain">
                             <img src="/images/LOGO SPONSOR/ITOEN WHITE XS.webp" alt="Ito En"
                                 class="w-32 sm:w-36 md:w-40 lg:w-48 h-12 sm:h-14 md:h-16 lg:h-20 object-contain">
-                        </div>
+                        </div> --}}
 
                         {{-- Tier 3 - 3 logos (Medium) --}}
-                        <div class="flex justify-center items-center space-x-6 sm:space-x-8 md:space-x-10 lg:space-x-14">
+{{--                         <div class="flex justify-center items-center space-x-6 sm:space-x-8 md:space-x-10 lg:space-x-14">
                             <img src="/images/LOGO SPONSOR/LOGO CAP PANDA.webp" alt="Cap Panda"
                                 class="w-24 sm:w-28 md:w-32 lg:w-36 h-10 sm:h-12 md:h-14 lg:h-16 object-contain">
                             <img src="/images/LOGO SPONSOR/PUYO XS.webp" alt="Puyo"
@@ -316,7 +338,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
 
         {{-- Gallery Section --}}
         <div class="flex flex-col lg:flex-row px-4 md:px-8 lg:px-12 mt-12 sm:mt-16 md:mt-20 space-y-6 lg:space-y-0 lg:space-x-6">
@@ -425,13 +447,14 @@
                 <div class="relative w-full max-w-4xl aspect-video">
                     <iframe 
                         class="w-full h-full rounded-lg shadow-lg" 
-                        src="https://www.youtube.com/embed/noafJ76PHeM?si=5ho9Ad32GabxdrVT"
+                        src="https://drive.google.com/file/d/1Nqs3RU2Pq_rAiwEUZICD6kbs15Ud-EIM/preview"
                         title="YouTube video player" 
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" 
                         allowfullscreen>
                     </iframe>
+                    
                 </div>
             </div>
         </div>

@@ -94,6 +94,10 @@
                 0 0 30px rgba(246, 231, 156, 0.2);
         }
         
+        .text-gold {
+            color: #F6E79C;
+        }
+        
         [data-aos="flip-left"] {
             transform: perspective(2500px) rotateY(-100deg);
         }
@@ -211,7 +215,8 @@
                             className="text-base sm:text-lg md:text-xl lg:text-2xl max-w-4xl mb-12 text-gray-200 leading-relaxed font-sans text-center px-4 break-words"
                             style={descriptionStyle}
                         >
-                            nnti dikasi tau faikar
+                            Tahun ini, Radioactive 2025 dengan bangga mempersembahkan Podcast Competition pertama! Mengusung tema "Crack the Shell, Take the Next Step", kompetisi ini menjadi wadah bagi individu untuk berani melangkah keluar dari zona nyaman, membuka diri, dan menyuarakan isi pikiran melalui Podcast Competition.
+Kompetisi ini bertujuan bukan hanya sebagai ajang unjuk karya, melainkan juga sebagai jembatan untuk mempererat hubungan antar radio kampus, membuka kolaborasi baru, dan memperluas jejaring komunikasi yang inspiratif serta positif di dunia penyiaran mahasiswa.
                         </p>
                         
                         <div 
@@ -222,6 +227,95 @@
                         >
                             <ScrollArrow delay={0} onClick={scrollToHandbook} />
                             <ScrollArrow delay={0.15} onClick={scrollToHandbook} />
+                        </div>
+                    </div>
+                </section>
+            );
+        };
+
+        const TimelineSection = () => {
+            const sectionStyle = { background: 'transparent' };
+            
+            const titleStyle = {
+                fontFamily: 'Royal Couture, serif',
+                textShadow: '0 0 20px rgba(246, 231, 156, 0.3)',
+                wordBreak: 'break-word',
+                overflowWrap: 'break-word'
+            };
+
+            const decorationStyle = {
+                background: 'linear-gradient(90deg, transparent, #F6E79C, transparent)'
+            };
+
+            return (
+                <section 
+                    id="timeline-section"
+                    className="flex min-h-screen flex-col justify-center items-center py-16 px-4 sm:px-8 relative overflow-x-hidden"
+                    style={sectionStyle}
+                >
+                    <div className="flex flex-col items-center justify-center w-full max-w-6xl mx-auto relative z-10">
+                        <h2 
+                            data-aos="fade-up"
+                            data-aos-duration="1000"
+                            data-aos-offset="200"
+                            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-8 tracking-wider text-yellow-200 leading-tight break-words text-center glow-text"
+                            style={titleStyle}
+                        >
+                            TIMELINE
+                        </h2>
+                        
+                        <div 
+                            className="w-32 h-0.5 mx-auto mb-16 opacity-80"
+                            style={decorationStyle}
+                        />
+
+                        <div className="relative max-w-5xl mx-auto" data-aos="zoom-in-right" data-aos-delay="100">
+                            <div className="absolute hidden md:block left-1/2 top-0 bottom-0 w-px bg-white opacity-30 z-0"></div>
+                            <div className="space-y-12">
+                                <div className="md:grid md:grid-cols-2 md:gap-8 items-center">
+                                    <div className="border border-white rounded-2xl p-4 sm:p-6 bg-opacity-20 backdrop-blur-md text-white">
+                                        <h2 className="mb-2 text-sm sm:text-base md:text-lg text-gold font-bold">
+                                            Pendaftaran Podcast Competition
+                                        </h2>
+                                        <p className="text-xs sm:text-sm md:text-base text-gray-300">
+                                        25 Agustus - 12 September 2025                        </p>
+                                    </div>
+                                    <div></div>
+                                </div>
+
+                                <div className="md:grid md:grid-cols-2 md:gap-8 items-center">
+                                    <div></div>
+                                    <div className="border border-white rounded-2xl p-4 sm:p-6 bg-opacity-20 backdrop-blur-md text-white">
+                                        <h2 className="mb-2 text-sm sm:text-base md:text-lg text-gold font-bold">
+                                            Technical Meeting Podcast Competition
+                                        </h2>
+                                        <p className="text-xs sm:text-sm md:text-base text-gray-300">
+                                            13 September 2025                        </p>
+                                    </div>
+                                </div>
+
+                                <div className="md:grid md:grid-cols-2 md:gap-8 items-center">
+                                    <div className="border border-white rounded-2xl p-4 sm:p-6 bg-opacity-20 backdrop-blur-md text-white">
+                                        <h2 className="mb-2 text-sm sm:text-base md:text-lg text-gold font-bold">
+                                           Pengumpulan Karya
+                                        </h2>
+                                        <p className="text-xs sm:text-sm md:text-base text-gray-300">
+                                             15 September - 27 September 2025                        </p>
+                                    </div>
+                                    <div></div>
+                                </div>
+
+                                <div className="md:grid md:grid-cols-2 md:gap-8 items-center">
+                                    <div></div>
+                                    <div className="border border-white rounded-2xl p-4 sm:p-6 bg-opacity-20 backdrop-blur-md text-white">
+                                        <h2 className="mb-2 text-sm sm:text-base md:text-lg text-gold font-bold">
+                                            Penilaian Juri
+                                        </h2>
+                                        <p className="text-xs sm:text-sm md:text-base text-gray-300">
+                                            1 Oktober 2025 - Selesai                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -383,7 +477,7 @@
                 overflowWrap: 'break-word'
             };
 
-            return (
+           /*  return (
                 <section 
                     id="judges-section"
                     className="flex min-h-screen flex-col justify-center items-center py-16 px-4 sm:px-8 relative overflow-x-hidden"
@@ -478,7 +572,7 @@
                         
                     </div>
                 </section>
-            );
+            ); */
         };
 
         const PodcastApp = () => {
@@ -515,6 +609,7 @@
                     />
                     
                     <HeroSection />
+                    <TimelineSection />
                     <HandbookSection />
                     <JudgesSection />
                 </div>

@@ -215,7 +215,8 @@
                             className="text-base sm:text-lg md:text-xl lg:text-2xl max-w-4xl mb-12 text-gray-200 leading-relaxed font-sans text-center px-4 break-words"
                             style={descriptionStyle}
                         >
-                            nnti dikasi tau faikar
+                            Tahun ini, Radioactive 2025 dengan bangga mempersembahkan Podcast Competition pertama! Mengusung tema "Crack the Shell, Take the Next Step", kompetisi ini menjadi wadah bagi individu untuk berani melangkah keluar dari zona nyaman, membuka diri, dan menyuarakan isi pikiran melalui Podcast Competition.
+Kompetisi ini bertujuan bukan hanya sebagai ajang unjuk karya, melainkan juga sebagai jembatan untuk mempererat hubungan antar radio kampus, membuka kolaborasi baru, dan memperluas jejaring komunikasi yang inspiratif serta positif di dunia penyiaran mahasiswa.
                         </p>
                         
                         <div 
@@ -274,10 +275,10 @@
                                 <div className="md:grid md:grid-cols-2 md:gap-8 items-center">
                                     <div className="border border-white rounded-2xl p-4 sm:p-6 bg-opacity-20 backdrop-blur-md text-white">
                                         <h2 className="mb-2 text-sm sm:text-base md:text-lg text-gold font-bold">
-                                            25 Agustus - 12 September 2025 : Pendaftaran Podcast Competition
+                                            Pendaftaran Podcast Competition
                                         </h2>
                                         <p className="text-xs sm:text-sm md:text-base text-gray-300">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio cumque fugiat labore vero, voluptatem nisi optio dolor debitis facere quas nobis nulla laborum itaque qui exercitationem rem laudantium quaerat assumenda.                        </p>
+                                        25 Agustus - 12 September 2025                        </p>
                                     </div>
                                     <div></div>
                                 </div>
@@ -286,20 +287,20 @@
                                     <div></div>
                                     <div className="border border-white rounded-2xl p-4 sm:p-6 bg-opacity-20 backdrop-blur-md text-white">
                                         <h2 className="mb-2 text-sm sm:text-base md:text-lg text-gold font-bold">
-                                            13 September 2025 : Technical Meeting Podcast Competition
+                                            Technical Meeting Podcast Competition
                                         </h2>
                                         <p className="text-xs sm:text-sm md:text-base text-gray-300">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio cumque fugiat labore vero, voluptatem nisi optio dolor debitis facere quas nobis nulla laborum itaque qui exercitationem rem laudantium quaerat assumenda.                        </p>
+                                            13 September 2025                        </p>
                                     </div>
                                 </div>
 
                                 <div className="md:grid md:grid-cols-2 md:gap-8 items-center">
                                     <div className="border border-white rounded-2xl p-4 sm:p-6 bg-opacity-20 backdrop-blur-md text-white">
                                         <h2 className="mb-2 text-sm sm:text-base md:text-lg text-gold font-bold">
-                                            15 September - 27 September 2025 : Pengumpulan Karya
+                                           Pengumpulan Karya
                                         </h2>
                                         <p className="text-xs sm:text-sm md:text-base text-gray-300">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio cumque fugiat labore vero, voluptatem nisi optio dolor debitis facere quas nobis nulla laborum itaque qui exercitationem rem laudantium quaerat assumenda.                        </p>
+                                             15 September - 27 September 2025                        </p>
                                     </div>
                                     <div></div>
                                 </div>
@@ -308,10 +309,10 @@
                                     <div></div>
                                     <div className="border border-white rounded-2xl p-4 sm:p-6 bg-opacity-20 backdrop-blur-md text-white">
                                         <h2 className="mb-2 text-sm sm:text-base md:text-lg text-gold font-bold">
-                                            1 Oktober 2025 - Selesai : Penilaian Juri
+                                            Penilaian Juri
                                         </h2>
                                         <p className="text-xs sm:text-sm md:text-base text-gray-300">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio cumque fugiat labore vero, voluptatem nisi optio dolor debitis facere quas nobis nulla laborum itaque qui exercitationem rem laudantium quaerat assumenda.                        </p>
+                                            1 Oktober 2025 - Selesai                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -476,7 +477,7 @@
                 overflowWrap: 'break-word'
             };
 
-            return (
+           /*  return (
                 <section 
                     id="judges-section"
                     className="flex min-h-screen flex-col justify-center items-center py-16 px-4 sm:px-8 relative overflow-x-hidden"
@@ -571,7 +572,7 @@
                         
                     </div>
                 </section>
-            );
+            ); */
         };
 
         const PodcastApp = () => {

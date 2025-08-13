@@ -309,7 +309,7 @@
                 background: 'linear-gradient(90deg, transparent, #F6E79C, transparent)'
             };
 
-            return (
+            /* return (
                 <section className="py-16 md:py-24 overflow-x-hidden" style={sectionStyle}>
                     <div className="max-w-6xl mx-auto px-4 w-full">
                         {number === 1 && (
@@ -355,7 +355,7 @@
                                     ))}
                                 </div>
                             </div>
-                        </div>
+                        </div> 
                         
                         {number === 2 && (
                             <div className="text-center mt-12 w-full">
@@ -370,7 +370,7 @@
                         )}
                     </div>
                 </section>
-            );
+            ); */
         };
 
         const AwardingApp = () => {

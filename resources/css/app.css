@@ -94,6 +94,17 @@
   font-style: normal;
 }
 
+@font-face {
+    font-family: 'RoyaleCouture';
+    src: url('fonts/RoyaleCouture-Serif.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font-royale {
+    font-family: 'RoyaleCouture', sans-serif;
+}
+
 .dataTables_length select {
     background-color: white;
 }

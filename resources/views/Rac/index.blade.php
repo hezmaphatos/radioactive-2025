@@ -1,6 +1,27 @@
 @extends('layouts.main')
 
 @section('container')
+{{-- PARALLAX BACKGROUND WRAPPER --}}
+        <div class="">
+
+            {{-- Overlay --}}
+            <div class="">
+
+                {{-- CONTENT --}}
+                <div class="max-w-7xl mx-auto">
+    
+<section class="flex min-h-screen flex-col justify-center items-center text-center px-4 font-['Brody_Rawk',sans-serif] relative">
+
+    {{-- Background Decoration --}}
+    <div class="absolute inset-0 pointer-events-none" style="
+        background-image: 
+            radial-gradient(circle at 30% 70%, rgba(246, 231, 156, 0.08) 0%, transparent 50%),
+            radial-gradient(circle at 70% 30%, rgba(246, 231, 156, 0.06) 0%, transparent 50%);
+        z-index: 0;
+    "></div>
+
+    <div id="title" class="text-center my-8 px-4 relative z-10">
+        <h1 class="m-[0.3em] text-2xl sm:text-3xl md:text-4xl font-royale tracking-[4px]" style="color: #f6e79c; text-shadow: 0 0 10px #f6e79c, 0 0 20px #f6e79c;">
 <body class="text-white">
     
 <section class="flex min-h-screen flex-col justify-center items-center text-center px-4 font-lavish relative">
@@ -12,9 +33,12 @@
         {{-- Decorative underline --}}
         <div class="w-32 h-0.5 mx-auto mt-2 opacity-80" style="background: linear-gradient(90deg, transparent, #F6E79C, transparent);"></div>
     </div>
-
-    <p class="md:text-lg max-w-4xl text-base mb-8 font-lavish z-10 relative" data-aos="fade-up" data-aos-delay="100">
-        nnti dikasi tau faikar
+    <p class="md:text-lg max-w-4xl text-base mb-8 font-royale z-10 relative" data-aos="fade-up" data-aos-delay="100">
+        Radio Announcing Competition merupakan rangkaian acara utama RADIOACTIVE. 
+        Lomba ini merupakan ajang untuk siswa SMA dan mahasiswa se-Jabodetabek untuk 
+        memperluas wawasan dan mengasah kemampuan di dunia broadcasting. 
+        Kompetisi ini sesuai dengan nilai utama RADIOACTIVE 2025. 
+        Lomba ini mengasah kreativitas dalam membuat siaran, serta menggambarkan perjuangan manusia dalam menghadapi rintangan kehidupan.
     </p>
 
     <p class="mb-4 animate-bounce z-10 relative">Scroll Down</p>
@@ -23,6 +47,94 @@
     </svg>
 </section>
 
+<section class="items-center justify-between max-w-5xl mx-auto mt-10 p-4 font-ltmuseum relative">
+    {{-- Handbook Background Decoration --}}
+    <div class="absolute inset-0 pointer-events-none" style="
+        background-image: 
+            radial-gradient(circle at 30% 70%, rgba(246, 231, 156, 0.08) 0%, transparent 50%),
+            radial-gradient(circle at 70% 30%, rgba(246, 231, 156, 0.06) 0%, transparent 50%);
+        z-index: 0;
+    "></div>
+
+<section class="items-center justify-between max-w-5xl mx-auto mt-10 p-4 font-ltmuseum relative">
+    {{-- Judges Background Decoration --}}
+    <div class="absolute inset-0 pointer-events-none" style="
+        background-image: 
+            radial-gradient(circle at 30% 70%, rgba(246, 231, 156, 0.08) 0%, transparent 50%),
+            radial-gradient(circle at 70% 30%, rgba(246, 231, 156, 0.06) 0%, transparent 50%);
+        z-index: 0;
+    "></div>
+
+    <section class="w-full font-royalecoutureserif px-4 mt-16" id="timeline">
+        <div class="text-center px-4 mb-8 sm:mb-12 md:mb-16">
+        <div class="relative flex justify-center items-center min-h-[250px] sm:min-h-[300px] md:min-h-[400px] w-full font-lavish">
+            <span class="absolute text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold text-transparent bg-gradient-to-r from-gold to-white bg-clip-text blur-xl opacity-60 select-none text-center">
+                TIMELINE
+            </span>
+            <h1 class="relative z-10 glow-text bg-gradient-to-r from-gold to-white bg-clip-text text-transparent text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold text-center">
+                TIMELINE
+            </h1>
+        </div>
+    </div>
+    <div class="relative max-w-5xl mx-auto" data-aos="zoom-in-right" data-aos-delay="100">
+                                <!-- Vertical Line -->
+                                <div class="absolute hidden md:block left-1/2 top-0 bottom-0 w-1 z-0"
+                                    style="background: linear-gradient(to bottom, transparent, #f6e79c, transparent); box-shadow: 0 0 10px #f6e79c;">
+                                </div>
+
+                                <!-- Timeline Items -->
+                                <div class="space-y-12">
+
+                                    <!-- ITEM 1 -->
+                                    <div class="md:grid md:grid-cols-2 md:gap-8 items-center">
+                                        <div class="border border-[#f6e79c] rounded-2xl p-4 sm:p-6 bg-black bg-opacity-40 backdrop-blur-md text-white shadow-lg"
+                                            style="box-shadow: 0 0 15px #f6e79c50;">
+                                            <h2 class="mb-2 text-sm sm:text-base md:text-lg font-bold"
+                                                style="color:#f6e79c; text-shadow:0 0 8px #f6e79c;">
+                                                Pendaftaran Radio Announcing Competition
+                                            </h2>
+                                            <p class="text-xs sm:text-sm md:text-base text-gray-200">
+                                                30 Agustus - 2 Oktober 2025
+                                            </p>
+                                        </div>
+                                        <div></div>
+                                    </div>
+
+                                    <!-- ITEM 2 -->
+                                    <div class="md:grid md:grid-cols-2 md:gap-8 items-center">
+                                        <div></div>
+                                        <div class="border border-[#f6e79c] rounded-2xl p-4 sm:p-6 bg-black bg-opacity-40 backdrop-blur-md text-white shadow-lg"
+                                            style="box-shadow: 0 0 15px #f6e79c50;">
+                                            <h2 class="mb-2 text-sm sm:text-base md:text-lg font-bold"
+                                                style="color:#f6e79c; text-shadow:0 0 8px #f6e79c;">
+                                                Technical Meeting Radio Announcing Competition
+                                            </h2>
+                                            <p class="text-xs sm:text-sm md:text-base text-gray-200">
+                                                4 Oktober 2025
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <!-- ITEM 3 -->
+                                    <div class="md:grid md:grid-cols-2 md:gap-8 items-center">
+                                        <div class="border border-[#f6e79c] rounded-2xl p-4 sm:p-6 bg-black bg-opacity-40 backdrop-blur-md text-white shadow-lg"
+                                            style="box-shadow: 0 0 15px #f6e79c50;">
+                                            <h2 class="mb-2 text-sm sm:text-base md:text-lg font-bold"
+                                                style="color:#f6e79c; text-shadow:0 0 8px #f6e79c;">
+                                                Pelaksanaan Radio Announcing Competition
+                                            </h2>
+                                            <p class="text-xs sm:text-sm md:text-base text-gray-200">
+                                                11 Oktober 2025
+                                            </p>
+                                        </div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+    <div id="title" class="text-center my-8 px-4 relative z-10">
+        <h1 class="m-[0.3em] text-2xl sm:text-3xl md:text-4xl font-royale tracking-[4px]" style="color: #f6e79c; text-shadow: 0 0 10px #f6e79c, 0 0 20px #f6e79c;">
                     <section
                         class="min-h-screen flex flex-col justify-center items-center px-4 py-16 relative overflow-hidden">
                         <div class="relative z-10 flex flex-col items-center w-full max-w-5xl">

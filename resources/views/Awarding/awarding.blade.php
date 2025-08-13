@@ -123,7 +123,7 @@
 
         const LoadingScreen = ({ isVisible, onComplete }) => {
             useEffect(() => {
-                if (isVisible) {
+                 if (isVisible) {
                     const timer = setTimeout(() => {
                         onComplete();
                     }, 3000);

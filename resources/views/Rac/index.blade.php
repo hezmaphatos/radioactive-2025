@@ -139,7 +139,7 @@ Dengan tema  Voice the Shell, Dare to Tell, RAC 2025 membawa harapan untuk membe
                             style="color: #f6e79c; text-shadow: 0 0 10px #f6e79c, 0 0 20px #f6e79c;"
                             onmouseover="this.style.color='#ffffff'; this.style.textShadow='0 0 10px #ffffff, 0 0 20px #ffffff';"
                             onmouseout="this.style.color='#f6e79c'; this.style.textShadow='0 0 10px #f6e79c, 0 0 20px #f6e79c';">
-                            READY TO TAKE THE CHALLENGE?
+                            READY TO TAKE THE CHALLENGE???
                         </h1>
                     </div>
                 </a>

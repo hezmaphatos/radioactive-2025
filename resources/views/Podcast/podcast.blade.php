@@ -127,7 +127,7 @@
             margin-bottom: 0 !important;
         }
         
-        footer {
+        /* footer {
             margin-top: 0 !important;
             padding-top: 0 !important;
         }
@@ -138,7 +138,7 @@
             height: 2px;
             background: linear-gradient(90deg, transparent, rgba(246, 231, 156, 0.3), transparent);
             margin-bottom: 2rem;
-        }
+        } */
     </style>
 
     <script type="text/babel">

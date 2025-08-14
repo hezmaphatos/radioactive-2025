@@ -15,15 +15,15 @@
             <section class="flex min-h-screen flex-col justify-center items-center text-center px-4 font-['Brody_Rawk',sans-serif] relative">
 
     {{-- Background Decoration --}}
-    <div class="absolute inset-0 pointer-events-none" style="
+    {{-- <div class="absolute inset-0 pointer-events-none" style="
         background-image: 
             radial-gradient(circle at 30% 70%, rgba(246, 231, 156, 0.08) 0%, transparent 50%),
             radial-gradient(circle at 70% 30%, rgba(246, 231, 156, 0.06) 0%, transparent 50%);
         z-index: 0;
-    "></div>
+    "></div> --}}
 
     <div id="title" class="text-center my-8 px-4 relative z-10">
-        <h1 class="m-[0.3em] text-2xl sm:text-3xl md:text-4xl font-royale tracking-[4px]" style="color: #f6e79c; text-shadow: 0 0 10px #f6e79c, 0 0 20px #f6e79c;">
+   {{--      <h1 class="m-[0.3em] text-2xl sm:text-3xl md:text-4xl font-royale tracking-[4px]" style="color: #f6e79c; text-shadow: 0 0 10px #f6e79c, 0 0 20px #f6e79c;"> --}}
 <body class="text-white">
     
 <section class="flex min-h-screen flex-col justify-center items-center text-center px-4 font-lavish relative">
@@ -133,7 +133,7 @@ Dengan tema  Voice the Shell, Dare to Tell, RAC 2025 membawa harapan untuk membe
                 </div>
 
                 {{-- CTA --}}
-                <a href="https://forms.gle/XTN1WX2vDHp6veNn7" target="_blank" class="no-underline">
+{{--                 <a href="https://forms.gle/XTN1WX2vDHp6veNn7" target="_blank" class="no-underline">
                     <div id="title" class="text-center my-8 px-4 relative z-10" data-aos="fade-up">
                         <h1 class="m-[0.3em] text-2xl sm:text-3xl md:text-4xl font-lavish tracking-[4px] transition duration-300 hover:text-white"
                             style="color: #f6e79c; text-shadow: 0 0 10px #f6e79c, 0 0 20px #f6e79c;"
@@ -142,21 +142,21 @@ Dengan tema  Voice the Shell, Dare to Tell, RAC 2025 membawa harapan untuk membe
                             READY TO TAKE THE CHALLENGE???
                         </h1>
                     </div>
-                </a>
+                </a> --}}
             </section>
 
             {{-- JUDGES --}}
-            <section class="items-center justify-between max-w-5xl mx-auto mt-10 p-4 font-lavish relative">
+            {{-- <section class="items-center justify-between max-w-5xl mx-auto mt-10 p-4 font-lavish relative">
                 <div id="title" class="text-center my-8 px-4 relative z-10">
                     <h1 class="m-[0.3em] text-2xl sm:text-3xl md:text-4xl font-lavish tracking-[4px]"
                         style="color: #f6e79c; text-shadow: 0 0 10px #f6e79c, 0 0 20px #f6e79c;">
                         JUDGES
-                    </h1>
+                    </h1> --}}
                     {{-- Decorative underline --}}
-                    <div class="w-32 h-0.5 mx-auto mt-2 opacity-80" style="background: linear-gradient(90deg, transparent, #F6E79C, transparent);"></div>
+                   {{--  <div class="w-32 h-0.5 mx-auto mt-2 opacity-80" style="background: linear-gradient(90deg, transparent, #F6E79C, transparent);"></div>
                 </div>
-
-                <div id="judges" class="flex flex-col sm:flex-row justify-center gap-6 relative z-10">
+ --}}
+                {{-- <div id="judges" class="flex flex-col sm:flex-row justify-center gap-6 relative z-10">
                     <div id="judge1" class="p-4 text-center" data-aos="fade-up" data-aos-delay="100">
                         <div class="w-64 h-64 mx-auto mb-4 relative">
                             <img src="{{ asset('images/reza_bima_nobg.webp') }}" alt="Reza Bima"
@@ -177,7 +177,7 @@ Dengan tema  Voice the Shell, Dare to Tell, RAC 2025 membawa harapan untuk membe
                         <h2 class="mb-2 text-lg sm:text-xl">Dina Janidya</h2>
                     </div>
                 </div>
-            </section>
+            </section> --}}
 
         </div>
     </div>

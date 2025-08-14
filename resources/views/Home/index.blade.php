@@ -434,7 +434,7 @@
         </div>
 
         {{-- After Movie Section --}}
-        <div id="after" class="mt-12 sm:mt-16 md:mt-20 lg:mt-24 px-4" data-aos="fade-up">
+        <div id="after" class="mt-12 sm:mt-16 md:mt-20 lg:mt-24 px-4 mb-12" data-aos="fade-up">
             <div class="relative text-center mb-6 sm:mb-8 md:mb-12 font-lavish">
                 <span class="absolute inset-0 text-base sm:text-lg md:text-2xl lg:text-3xl text-transparent bg-gradient-to-r from-gold to-white bg-clip-text blur-xl opacity-60 select-none tracking-wider">
                     TEASER RADIOACTIVE 2025

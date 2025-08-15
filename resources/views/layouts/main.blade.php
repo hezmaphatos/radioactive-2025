@@ -12,7 +12,7 @@
     <script src="https://kit.fontawesome.com/3a9b6894e0.js" crossorigin="anonymous"></script>
     <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
     @vite('resources/css/app.css')
-    <title>UMN Radioactive 2024</title>
+    <title>UMN Radioactive 2025</title>
 </head>
 
     <body>      

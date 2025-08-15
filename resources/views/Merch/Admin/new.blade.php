@@ -43,6 +43,21 @@
                                 </div>
                             </div>
                             <div class="mb-1">
+                                <label class="block form-label text-sm mb-0 text-black" for="type">
+                                    <span class="">Tipe</span>
+                                </label>
+                                <div>
+                                    <select required name="type" id="type" class="block @error('type') border-red-500 @enderror shadow appearance-none border text-black bg-white border-black w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline">
+                                        <option value="">Pilih tipe</option>
+                                        <option value="preorder" {{ old('type') == 'preorder' ? 'selected' : '' }}>Pre Order</option>
+                                        <option value="regular" {{ old('type') == 'regular' ? 'selected' : '' }}>Not Pre Order</option>
+                                    </select>
+                                    @error('type')
+                                        <div class="text-sm text-red-600">{{ $message }}</div>
+                                    @enderror
+                                </div>
+                            </div>
+                            <div class="mb-1">
                                 <label class="block form-label text-sm mb-0 text-black" for="">
                                     <span class="">Deskripsi Merch</span>
                                 </label>

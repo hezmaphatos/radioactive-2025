@@ -66,6 +66,7 @@ html {
   animation: glow 2s ease-in-out infinite;
 }
 
+
 /* Parallax section */
 .parallax-section {
   background-image: url('/public/images/BG PARALLAX2.jpg');

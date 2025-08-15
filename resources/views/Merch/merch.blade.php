@@ -69,7 +69,8 @@
 
                     <div class="pl-2 md:pl-0">
                         <div class="mt-5 md:mt-auto">
-                            <p class="mt-10 md:mt-auto font-brodyrawk text-[#ff0015] text-5xl">{{ $merch->name }}</p>
+                            <p class="mt-10 md:mt-auto font-brodyrawk glow-text text-5xl"
+                            style="color: #f6e79c; text-shadow: 0 0 10px #f6e79c, 0 0 20px #f6e79c;">{{ $merch->name }}</p>
                         </div>
                         <p class="mt-1 font-ltmuseum-bold text-white text-3xl">Rp
                             {{ number_format($merch->price, 0, ',', '.') }}
@@ -77,7 +78,7 @@
                         <div id="indicators-carousel" class="relative" data-carousel="static">
                             <div class="z-30 inline-flex gap-4 h-3 overflow-hidden justify-center mt-[20px]">
                                 <div type="button"
-                                    class="h-[2px] w-[95px] cursor-pointer no-underline text-white font-brodyrawk text-[15px] text-center"
+                                    class="h-[2px] w-[95px] cursor-pointer text-white font-brodyrawk text-[15px] text-center"
                                     aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0" class="relative">
                                     <p class="absolute top-1">Description</p>
                                 </div>
@@ -110,9 +111,9 @@
                                     <h1>Order Now</h1>
                                     <div class="flex flex-wrap gap-4">
                                         <div class="my-2 w-2/5">
-                                            <p>Size</p>
+                                            <p>Variant</p>
                                             <select name="variation" id="variation_select" required
-                                                class="w-full bg-gray-900 border-2 border-[#d61525] text-white px-2 py-1 rounded">
+                                                class="w-full bg-gray-900 border-2 border-[#f6e79c] text-white px-2 py-1 rounded">
                                                 <option disabled selected value>select variant</option>
                                                 @foreach ($merch->merchvariations as $merchvariation)
                                                     <option value="{{ $merchvariation->description }}"
@@ -130,12 +131,12 @@
                                             <p>Quantity</p>
                                             <input name="quantity" id="quantity_input" min="1" value="1"
                                                 type="number" required
-                                                class="w-full bg-gray-900 border-2 border-[#d61525] text-white px-2 py-1 rounded">
+                                                class="w-full bg-gray-900 border-2 border-[#f6e79c] text-white px-2 py-1 rounded">
                                         </div>
                                     </div>
                                     <input hidden type="text" name="merch_id" value="{{ $merch->id }}">
                                     <button type="submit"
-                                        class="text-white border-2 bg-[#d61525] border-white rounded px-2 py-1 hover:bg-red-500 font-ltmuseum-bold my-1">
+                                        class="text-white border-2 background-transparent border-[#f6e79c] rounded px-2 py-1 hover:bg-[#f6e79c] font-ltmuseum-bold my-1 glow-text transition duration-300 ease-in-out">
                                         Add to Cart
                                     </button>
                                 </form>

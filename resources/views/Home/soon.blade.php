@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>UMN RADIOACTIVE 2024</title>
+    <title>UMN RADIOACTIVE 2025</title>
     @vite('resources/css/app.css')
     <style>
         .shadow-follow {
@@ -28,8 +28,8 @@
         </div>
         <div class="flex justify-center align-middle items-center flex-wrap w-full">
             <div class="relative">
-                <img class="shadow-follow object-cover h-80 md:h-96 aspect-square animate-pulse" src="{{ asset('images/LOGO RADIOACTIVE 2024.png') }}" alt="">
-                <img class="absolute top-0 object-cover h-80 md:h-96 aspect-square" src="{{ asset('images/LOGO RADIOACTIVE 2024.png') }}" alt="">
+                <img class="shadow-follow object-cover h-80 md:h-96 aspect-square animate-pulse" src="{{ asset('images/LOGO RADIOACTIVE 2025.png') }}" alt="">
+                <img class="absolute top-0 object-cover h-80 md:h-96 aspect-square" src="{{ asset('images/LOGO RADIOACTIVE 2025.png') }}" alt="">
             </div>
             <h1 class="text-center text-[#D61525] font-brodyrawk text-7xl w-full">COMING SOON</h1>
         </div>

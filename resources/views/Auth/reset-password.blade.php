@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     @vite('resources/css/app.css')
-    <title>UMN RadioActive 2024 | Reset Password</title>
+    <title>UMN RadioActive 2025 | Reset Password</title>
 </head>
 <body>
     <section class="bg-black h-screen relative flex items-center justify-center">
         <div class="absolute inset-0 flex items-center justify-center">
-            <img class="h-auto max-w-full max-h-full" src="{{ asset('images/LOGO RADIOACTIVE 2024.webp') }}" alt="Radioactive 2024 Logo">
+            <img class="h-auto max-w-full max-h-full" src="{{ asset('images/LOGO_RADIOACTIVE2025.png') }}" alt="Radioactive 2025 Logo">
         </div>
         <div class="absolute top-0 left-1/2 transform -translate-x-1/2 z-40 p-8">
             <img src="{{ url('images/LOGO UMN RADIO.webp') }}" alt="Image" class="h-16 md:h-10 lg:h-24" />

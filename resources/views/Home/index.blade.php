@@ -16,12 +16,17 @@
             </button>
         </a>
     </div> --}}
-        <div id="section-1" class="pt-32 max-w-4xl mx-auto">
-            <div data-aos="zoom-in" data-aos-duration="3000" data-aos-anchor-placement="center-center"
-                class="flex flex-col md:flex-row items-center justify-center gap-4">
-                <p class="text-center font-brody text-base text-white z-20 tracking-10">THE MOST SPECTACULAR ANNUAL EVENT BY
-                </p>
-                <img class="w-20 md:w-24 z-16" src="images/LOGO UMN RADIO.webp" alt="UMN Radio Logo">
+        
+        {{-- Hero Section --}}
+        <div class="parallax-section relative overflow-hidden h-screen w-screen">
+            <div class="pt-16 sm:pt-24 md:pt-32 max-w-4xl mx-auto z-30 relative px-4">
+                <div data-aos="zoom-in" data-aos-duration="3000" data-aos-anchor-placement="center-center"
+                    class="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4">
+                    <p class="text-center font-lavish text-xs sm:text-sm md:text-base text-white tracking-wider sm:tracking-widest">
+                        THE MOST SPECTACULAR ANNUAL EVENT BY
+                    </p>
+                    <img class="w-16 sm:w-20 md:w-24" src="{{ asset('images/LOGO UMN RADIO.webp') }}" alt="UMN Radio Logo">
+                </div>
             </div>
 
             {{-- Decorative flowers --}}
@@ -58,226 +63,210 @@
                 </h1>
             </div>
         </div>
-
-        <div id="about-us" class="flex flex-col justify-center items-center h-screen mt-0 mb-0 px-4 sm:px-8"
-            data-aos="fade-up" data-aos-duration="1500">
-            <h4 class="font-brodyrawk text-5xl sm:text-6xl md:text-8xl text-white text-center my-6 sm:my-12 tracking-wider">
-                ABOUT US</h4>
-            <div class="px-4 sm:px-8 md:px-20 lg:px-48">
-                <p
-                    class="font-ltmuseum text-base sm:text-lg md:text-xl text-white text-justify md:text-center tracking-wider mb-6">
-                    RADIOACTIVE adalah Acara off air tahunan yang diselenggarakan oleh UMN Radio, radio komunitas
-                    Universitas Multimedia Nusantara. Pertama kali diadakan di tahun 2015, RADIOACTIVE 2024 merupakan kali
-                    ke-10 acara ini diselenggarakan.
-                </p>
-                <p
-                    class="font-ltmuseum text-base sm:text-lg md:text-xl text-white text-justify md:text-center tracking-wider">
-                    RADIOACTIVE 2024 mengangkat tema “RADIOACTIVE 2024: Resilience Era”, dengan tagline “Dare to Strive”,
-                    serta bertujuan agar individu yang telah berevolusi mampu mempertahankan perubahannya dan
-                    mengembangkannya dalam perjuangan tanpa ada rasa cukup.
-                </p>
-            </div>
+            
+        {{-- About Us Content --}}
+        <div class="px-4 sm:px-8 md:px-20 lg:px-48">
+            <p class="font-royalecoutureserif text-sm sm:text-base md:text-lg lg:text-xl text-white text-justify md:text-center tracking-wider mb-4 sm:mb-6 leading-relaxed">
+                RADIOACTIVE adalah acara off air tahunan yang diselenggarakan oleh UMN Radio, radio komunitas Universitas Multimedia Nusantara. Pertama kali diadakan di tahun 2015, RADIOACTIVE 2025 merupakan kali ke-10 acara ini diselenggarakan.
+            </p>
+            <p class="font-royalecoutureserif text-sm sm:text-base md:text-lg lg:text-xl text-white text-justify md:text-center tracking-wider leading-relaxed">
+                Pada tahun ini acara kami mengangkat tema “Radioactive 2025: Oriselle World” dengan tagline “Rise and Fell, Reveal Our Shell” yang berfokus pada perasaan damai yang muncul setelah mereka melewati berbagai macam tantangan. 
+            </p>
         </div>
 
-        <div id="marquee-section" class="mt-8 mb-16">
-            <div class="overflow-hidden">
-                <div class="marquee">
-                    <span class="max font-ltmuseum text-2xl text-white tracking-8">
-                        DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO
-                        STRIVE
-                    </span>
-                    <!-- Duplicate the text -->
-                    <span class="max font-ltmuseum text-2xl text-white tracking-8">
-                        DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO
-                        STRIVE
-                    </span>
-                </div>
-                <div class="marquee-reverse mt-5">
-                    <span class="max font-ltmuseum text-2xl text-white tracking-8">
-                        DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO
-                        STRIVE
-                    </span>
-                    <!-- Duplicate the text -->
-                    <span class="max font-ltmuseum text-2xl text-white tracking-8">
-                        DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO STRIVE DARE TO
-                        STRIVE
-                    </span>
-                </div>
-            </div>
+        <section class="w-full font-royalecoutureserif px-4 mt-16" id="timeline">
+    <div class="text-center px-4 mb-8 sm:mb-12 md:mb-16">
+        <div class="relative flex justify-center items-center min-h-[250px] sm:min-h-[300px] md:min-h-[400px] w-full font-lavish">
+            <span class="absolute text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold text-transparent bg-gradient-to-r from-gold to-white bg-clip-text blur-xl opacity-60 select-none text-center">
+                GENERAL TIMELINE
+            </span>
+            <h1 class="relative z-10 glow-text bg-gradient-to-r from-gold to-white bg-clip-text text-transparent text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold text-center">
+                GENERAL TIMELINE
+            </h1>
         </div>
+    </div>
 
-        <section class="min-h-screen max-w font-ltmuseumreg p-4" id="timeline">
-            <div id="title" class="text-center my-8 px-4">
-                <h1 class="font-brody md:text-3xl text-white text-center my-12 tracking-8 m-[0.3em] md:text-[3em] italic"
-                    style="letter-spacing: 5px;">GENERAL TIMELINE</h1>
-                {{-- <p class="text-white md:text-xl tracking-widest">------</p> --}}
+    <div class="relative max-w-5xl mx-auto" data-aos="zoom-in-right" data-aos-delay="100">
+        {{-- Vertical Line --}}
+        <div class="absolute hidden md:block left-1/2 top-0 bottom-0 w-px bg-white opacity-30 z-0"></div>
+
+        {{-- Timeline Items --}}
+        <div class="space-y-12">
+            {{-- ITEM 1 --}}
+            <div class="md:grid md:grid-cols-2 md:gap-8 items-center">
+                <div class="border border-white rounded-2xl p-4 sm:p-6 bg-opacity-20 backdrop-blur-md text-white">
+                    <h2 class="mb-2 text-sm sm:text-base md:text-lg text-gold font-bold">
+                        25 Agustus - 1 October 2025 : Podcast Competition
+                    </h2>
+                    <p class="text-xs sm:text-sm md:text-base text-gray-300">
+                    Tahun ini, Radioactive 2025 dengan bangga mempersembahkan Podcast Competition pertama! Mengusung tema "Crack the Shell, Take the Next Step", kompetisi ini menjadi wadah bagi individu untuk berani melangkah keluar dari zona nyaman, membuka diri, dan menyuarakan isi pikiran melalui Podcast Competition.                  </p>
+                        <a href="/podcast" target="" class="no-underline m-[0.3em] sm:text-l md:text-xl font-lavish tracking-[4px] transition duration-300 hover:text-white" data-aos="fade-up" style="color: #f6e79c; text-shadow: 0 0 10px #f6e79c, 0 0 20px #f6e79c; transition: all 0.3s ease; transition: all 0.3s ease;"
+                                        onmouseover="this.style.color='#ffffff'; this.style.textShadow='0 0 10px #ffffff, 0 0 20px #ffffff';"
+                                        onmouseout="this.style.color='#f6e79c'; this.style.textShadow='0 0 10px #f6e79c, 0 0 20px #f6e79c';">
+                                Read More
+                            </a>
+                </div>
+                <div></div>
             </div>
-            <div class="relative" data-aos="zoom-in-right" data-aos-delay="100">
-                <div class="absolute left-1/2 h-full w-px bg-white hidden m-s:block"></div>
-                <div class="mx-auto max-w-[34.15em]">
-                    <div id="checkpoint" class="border-2 border-white m-s:translate-x-[19em] rounded-2xl p-6 mb-4 mt-4">
-                        <div>
-                            <h2 class="mb-2 text-[#D61525]">2 - 9 September 2024 :<a href="/mac"
-                                    class="no-underline text-white hover:opacity-50"> Mini Annoucing Challenge</a></h2>
-                            <p class="leading-[27px] text-gray-300">
-                                Mini Annoucing Challenge merupakan salah satu rangkaian acara RADIOACTIVE 2024. Mini
-                                Annoucing Challenge bertujuan untuk mengasah skill para peserta dalam bidang siaran. Dalam
-                                challenge ini, peserta tidak dibatasi untuk berkreasi. Teknis dari Mini Annoucing Challenge
-                                ini adalah peserta dapat siaran menggunakan tema dan 3 kata yang sudah dipilih secara acak.
-                                Disisi lain, challenge ini juga dapat meningkatkan awareness untuk rangkaian acara
-                                berikutnya.
-                            </p>
-                        </div>
-                    </div>
-                    <div id="checkpoint" class="border-2 border-white m-s:-translate-x-[19em] rounded-2xl p-6 mb-4 mt-4">
-                        <div>
-                            <h2 class="mb-2 text-[#D61525]">2 September 2024 - 12 Oktober 2024 : <a href="/rac"
-                                    class="no-underline text-white hover:opacity-50">Radio Announcing Competition</a></h2>
-                            <p class="leading-[27px] text-gray-300">
-                                Radio Announcing Competition merupakan rangkaian acara utama RADIOACTIVE. Lomba ini merupa
-                                kan ajang untuk siswa SMA dan mahasiswa se-Jabodetabek untuk memperluas wawasan dan mengasah
-                                kemampuan di dunia broadcasting. Radio Announcing Competition ini memiliki konsep yang
-                                sesuai dengan nilai utama RADIOACTIVE 2024, yaitu “Surviving the Maze”. Tujuan dari lomba
-                                ini adalah untuk mengasah kreativitas peserta dalam membuat siaran dan secara tidak langsung
-                                memberikan informasi hingga mengajak para peserta untuk menggambarkan perjuangan manusia
-                                dalam menghadapi rintangan dan lika-liku kehidupan.
-                            </p>
-                        </div>
-                    </div>
-                    <div id="checkpoint" class="border-2 border-white m-s:translate-x-[19em] rounded-2xl p-6 mb-4 mt-4">
-                        <div>
-                            <h2 class="mb-2 text-[#D61525]">2 November 2024 : <a href="/closing-night"
-                                    class="no-underline text-white hover:opacity-50">CLOSING NIGHT</a></h2>
-                            <p class="leading-[27px] text-gray-300">
-                                Closing Night merupakan puncak dan penutup dari rangkaian acara RADIOACTIVE 2024 yang akan
-                                dilaksanakan secara offline. Kegiatan ini bertujuan untuk meningkatkan awareness dan
-                                engagement RADIOACTIVE sebagai acara tahunan dari UMN Radio. Konsep Closing Night tahun ini
-                                adalah “Valiant Against Fear” , Radioactive 2024 mengajak seluruh peserta dan panitia untuk
-                                dapat bertahan setelah keluar dari zona nyaman mereka. Untuk closing night Radioactive tahun
-                                ini akan diadakan secara intimate karena untuk berusaha bertahan di zona nyaman, tahap awal
-                                yang dapat dilakukan adalah berfokus di skala yang kecil terlebih dahulu, kemudian baru
-                                dilanjutkan ke skala yang lebih besar.
-                            </p>
-                        </div>
-                    </div>
+
+            {{-- ITEM 2 --}}
+            <div class="md:grid md:grid-cols-2 md:gap-8 items-center">
+                <div></div>
+                <div class="border border-white rounded-2xl p-4 sm:p-6 bg-opacity-20 backdrop-blur-md text-white">
+                    <h2 class="mb-2 text-sm sm:text-base md:text-lg text-gold font-bold">
+                        30 Agustus – 11 Oktober 2025 : Radio Announcing Competition
+                    </h2>
+                    <p class="text-xs sm:text-sm md:text-base text-gray-300">
+                        Radio Announcing Competition (RAC) merupakan rangkaian acara utama Radioactive. Lomba ini merupakan ajang bagi mahasiswa se-Jabodetabek untuk memperluas wawasan dan mengasah kemampuan di dunia broadcasting. Lomba ini bertujuan untuk mengasah kreativitas dalam membuat siaran dan membangun menjalin hubungan baik  antar radio kampus. 
+                    </p>
+                    <a href="/rac" target="" class="no-underline m-[0.3em] sm:text-l md:text-xl font-lavish tracking-[4px] transition duration-300 hover:text-white" data-aos="fade-up" style="color: #f6e79c; text-shadow: 0 0 10px #f6e79c, 0 0 20px #f6e79c; transition: all 0.3s ease; transition: all 0.3s ease;"
+                                        onmouseover="this.style.color='#ffffff'; this.style.textShadow='0 0 10px #ffffff, 0 0 20px #ffffff';"
+                                        onmouseout="this.style.color='#f6e79c'; this.style.textShadow='0 0 10px #f6e79c, 0 0 20px #f6e79c';">
+                                Read More
+                            </a>
                 </div>
             </div>
-        </section>
 
-        <div class="px-4">
+            {{-- ITEM 3 --}}
+            <div class="md:grid md:grid-cols-2 md:gap-8 items-center">
+                <div class="border border-white rounded-2xl p-4 sm:p-6 bg-opacity-20 backdrop-blur-md text-white">
+                    <h2 class="mb-2 text-sm sm:text-base md:text-lg text-gold font-bold">
+                        1 September - 9 September 2025 : Mini Announcing Challenge
+                    </h2>
+                    <p class="text-xs sm:text-sm md:text-base text-gray-300">
+                        Mini Announcing Challenge merupakan salah satu rangkaian acara Radioactive 2025. Mini Announcing Challenge bertujuan untuk mengasah skill para peserta dalam bidang penyiaran. Dalam challenge ini, peserta tidak dibatasi untuk berkreasi.                   </p>
+                        <a href="/mac" target="" class="no-underline m-[0.3em] sm:text-l md:text-xl font-lavish tracking-[4px] transition duration-300 hover:text-white" data-aos="fade-up" style="color: #f6e79c; text-shadow: 0 0 10px #f6e79c, 0 0 20px #f6e79c; transition: all 0.3s ease; transition: all 0.3s ease;"
+                                        onmouseover="this.style.color='#ffffff'; this.style.textShadow='0 0 10px #ffffff, 0 0 20px #ffffff';"
+                                        onmouseout="this.style.color='#f6e79c'; this.style.textShadow='0 0 10px #f6e79c, 0 0 20px #f6e79c';">
+                                Read More
+                            </a>
+                    </div>
+                <div>
+
+                    
+                    
+                </div>
+                <div></div>
+            </div>
+            {{-- ITEM 4 --}}
+            
+    <div class="md:grid md:grid-cols-2 md:gap-8 items-center">
+        <div></div>
+        <div class="border border-white rounded-2xl p-4 sm:p-6 bg-opacity-20 backdrop-blur-md text-white">
+            <h2 class="mb-2 text-sm sm:text-base md:text-lg text-gold font-bold">
+                1 November 2025 : Awarding Night
+            </h2>
+            <p class="text-xs sm:text-sm md:text-base text-gray-300">
+                Awarding night Radioactive 2025 merupakan rangkaian acara terakhir dari Radioactive 2025. Dalam awarding night, kami ingin menjadikan acara ini sebagai malam perayaan dan apresiasi untuk setiap peserta serta crew yang sudah mengikuti seluruh rangkaian acara Radioactive 2025. 
+                          </p>
+                          <a href="/awarding-night" target="" class="no-underline m-[0.3em] sm:text-l md:text-xl font-lavish tracking-[4px] transition duration-300 hover:text-white" data-aos="fade-up" style="color: #f6e79c; text-shadow: 0 0 10px #f6e79c, 0 0 20px #f6e79c; transition: all 0.3s ease; transition: all 0.3s ease;"
+                                        onmouseover="this.style.color='#ffffff'; this.style.textShadow='0 0 10px #ffffff, 0 0 20px #ffffff';"
+                                        onmouseout="this.style.color='#f6e79c'; this.style.textShadow='0 0 10px #f6e79c, 0 0 20px #f6e79c';">
+                                Read More
+                            </a>
+        </div>
+    </div>
+        </div>
+    </div>
+</section>
+
+        
+
+        
+
+        {{-- Exclusive Radio Partner --}}
+        {{-- <div class="px-4 mt-12 sm:mt-16 md:mt-20">
             <div data-aos="zoom-in-up" data-aos-delay="400"
-                class="container mx-auto flex justify-center md:justify-around flex-wrap items-center align-middle">
-                <h2 class="font-brodyrawk md:text-5xl text-3xl text-center my-12 tracking-[4px] text-red-600">EXCLUSIVE
-                    RADIO PARTNER</h2>
-                <img src="/images/LOGO MEDPAR/LOGO MUSTANG.webp" alt="" class="md:w-96 w-64 object-contain">
-            </div>
-        </div>
-
-        <div id="partners" class="-mb-20 md:-mb-0 md:my-24 mt-8 px-4" data-aos="fade-up">
-            <div class="container mx-auto flex flex-col lg:flex-row items-center lg:justify-between">
-                <!-- Text -->
-                <div data-aos="zoom-in-up" data-aos-delay="400" class="w-full lg:w-2/5 lg:mb-0 lg:text-left text-center">
-                    <h2 class="font-brodyrawk md:text-5xl text-3xl my-12 tracking-[4px] text-red-600">PARTNERS</h2>
+                class="container mx-auto flex flex-col md:flex-row justify-center md:justify-around items-center align-middle gap-6 md:gap-4">
+                <div class="relative text-center font-lavish">
+                    <span class="absolute inset-0 text-xl sm:text-2xl md:text-4xl lg:text-5xl font-extrabold text-transparent bg-gradient-to-r from-gold to-white bg-clip-text blur-xl opacity-60 select-none tracking-wider">
+                        EXCLUSIVE RADIO PARTNER
+                    </span>
+                    <h2 class="relative z-10 glow-text text-xl sm:text-2xl md:text-4xl lg:text-5xl font-extrabold text-transparent bg-gradient-to-r from-gold to-white bg-clip-text tracking-wider">
+                        EXCLUSIVE RADIO PARTNER
+                    </h2>
                 </div>
-                <div class="w-full lg:w-3/5">
-                    <div class="grid grid-cols-6 gap-4">
-                        {{-- L --}}
-                        <div class="col-span-6 flex justify-center">
-                            <img class="w-[70%] md:w-1/2 md:h-64 object-contain"
-                                src="/images/LOGO MEDPAR/logo milenials radio.webp" alt="" />
-                        </div>
+                <img src="/images/LOGO MEDPAR/LOGO MUSTANG.webp" alt="Mustang Radio Logo" 
+                     class="w-48 sm:w-64 md:w-80 lg:w-96 object-contain">
+            </div>
+        </div> --}}
 
-                        {{-- M --}}
-                        <div class="col-span-6 grid grid-cols-2">
-                            <div class="col-span-1 flex justify-center">
-                                <img class="object-contain md:w-1/2 md:h-48" src="/images/LOGO MEDPAR/Logo SMI Putih.webp"
-                                    alt="" />
-                            </div>
-                            <div class="col-span-1 flex justify-center">
-                                <img class="object-contain md:w-1/2 md:h-48"
-                                    src="/images/LOGO MEDPAR/Logo Ultimagz Putih.webp" alt="" />
-                            </div>
-                            <div class="col-span-1 flex justify-center">
-                                <img class="object-contain md:w-1/2 md:h-48" src="/images/LOGO MEDPAR/Logo lspr radio .webp"
-                                    alt="" />
-                            </div>
-                            <div class="col-span-1 flex justify-center">
-                                <img class="object-contain md:w-1/2 md:h-48" src="/images/LOGO MEDPAR/Logo Mradio .webp"
-                                    alt="" />
-                            </div>
-                        </div>
+        {{-- Partners Section --}}
+        {{-- <div id="partners" class="mt-8 sm:mt-12 md:mt-16 lg:mt-24 px-4" data-aos="fade-up">
+            <div class="container mx-auto">
+                
+                <div data-aos="zoom-in-up" data-aos-delay="400" class="w-full text-center mb-8 sm:mb-10 md:mb-12">
+                    <div class="relative text-center font-lavish">
+                        <span class="absolute inset-0 text-xl sm:text-2xl md:text-4xl lg:text-5xl font-extrabold text-transparent bg-gradient-to-r from-gold to-white bg-clip-text blur-xl opacity-60 select-none tracking-wider">
+                            PARTNERS
+                        </span>
+                        <h2 class="relative z-10 glow-text text-xl sm:text-2xl md:text-4xl lg:text-5xl font-extrabold text-transparent bg-gradient-to-r from-gold to-white bg-clip-text tracking-wider">
+                            PARTNERS
+                        </h2>
+                    </div>
+                </div> --}}
 
-                        {{-- S --}}
-                        <div class="col-span-6 grid grid-cols-4 gap-1">
-                            <div class="col-span-1">
-                                <img src="/images/LOGO MEDPAR/LOGO BEM UMN PUTIH.webp" alt=""
-                                    class="w-full object-contain md:h-24">
-                            </div>
-                            {{-- <div class="col-span-1">
-                                <img src="/images/LOGO MEDPAR/LOGO BERITA LOMBA JPEG.jpeg" alt=""
-                                    class="w-full object-contain md:h-24">
-                            </div> --}}
-                            {{-- <div class="col-span-1">
-                                <img class="w-full object-contain md:h-24"
-                                    src="/images/LOGO MEDPAR/Logo Eventnya Mahasiswa.png" alt="" />
-                            </div> --}}
-                            <div class="col-span-1">
-                                <img class="w-full object-contain md:h-24" src="/images/LOGO MEDPAR/fourtyfiveradio.webp"
-                                    alt="" />
-                            </div>
-                            <div class="col-span-1">
-                                <img class="w-full object-contain md:h-24" src="/images/LOGO MEDPAR/LOGO HMFILM.webp"
-                                    alt="" />
-                            </div>
-                            <div class="col-span-1">
-                                <img class="w-full object-contain md:h-24" src="/images/LOGO MEDPAR/logo imkom.webp"
-                                    alt="" />
-                            </div>
-                            <div class="col-span-1">
-                                <img class="w-full object-contain md:h-24"
-                                    src="/images/LOGO MEDPAR/Logo Kacamata Lomba.webp" alt="" />
-                            </div>
-                            <div class="col-span-1">
-                                <img class="w-full object-contain md:h-24" src="/images/LOGO MEDPAR/LOGO_MOESTOPO.webp"
-                                    alt="" />
-                            </div>
-                            <div class="col-span-1">
-                                <img class="w-full object-contain md:h-24" src="/images/LOGO MEDPAR/LOGO ORI.webp"
-                                    alt="" />
-                            </div>
-                            {{-- <div class="col-span-1">
-                                <img class="w-full object-contain md:h-24" src="/images/LOGO MEDPAR/Logo Radio Untar.PNG"
-                                    alt="" />
-                            </div> --}}
-                            {{-- <div class="col-span-1">
-                                <img class="w-full object-contain md:h-24" src="/images/LOGO MEDPAR/Point Kampus.png"
-                                    alt="" />
-                            </div> --}}
-                            <div class="col-span-1">
-                                <img class="w-full object-contain md:h-24" src="/images/LOGO MEDPAR/unpar.webp"
-                                    alt="" />
-                            </div>
-                            <div class="col-span-1">
-                                <img class="w-full object-contain md:h-24" src="/images/LOGO MEDPAR/Logo Acarakampus.com.webp"
-                                    alt="" />
-                            </div>
-                            <div class="col-span-1">
-                                <img class="w-full object-contain md:h-24" src="/images/LOGO MEDPAR/LOGO BERITA LOMBA PNG.webp"
-                                    alt="" />
-                            </div>
-                            <div class="col-span-1">
-                                <img class="w-full object-contain md:h-24" src="/images/LOGO MEDPAR/Logo Eventnya Mahasiswa.webp"
-                                    alt="" />
-                            </div>
-                            <div class="col-span-1">
-                                <img class="w-full object-contain md:h-24" src="/images/LOGO MEDPAR/Logo Radio Untar.webp"
-                                    alt="" />
-                            </div>
-                            <div class="col-span-1">
-                                <img class="w-full object-contain md:h-24" src="/images/LOGO MEDPAR/Point Kampus.webp"
-                                    alt="" />
-                            </div>
+                {{-- Pyramid Layout --}}
+{{--                 <div class="w-full">
+                    <div class="flex flex-col items-center space-y-4 sm:space-y-6 md:space-y-8"> --}}
+                        {{-- Tier 1 - 1 logo (Largest) --}}
+                        <{{-- div class="flex justify-center">
+                            <img class="w-48 sm:w-56 md:w-64 lg:w-80 h-16 sm:h-20 md:h-24 lg:h-28 object-contain"
+                                src="/images/LOGO MEDPAR/logo milenials radio.webp" alt="Milenials Radio" />
+                        </> --}}
 
+                        {{-- Tier 2 - 2 logos (Large) --}}
+                        {{-- <div class="flex justify-center items-center space-x-8 sm:space-x-12 md:space-x-16 lg:space-x-20">
+                            <img class="w-32 sm:w-36 md:w-40 lg:w-48 h-12 sm:h-14 md:h-16 lg:h-20 object-contain" 
+                                 src="/images/LOGO MEDPAR/Logo SMI Putih.webp" alt="SMI" />
+                            <img class="w-32 sm:w-36 md:w-40 lg:w-48 h-12 sm:h-14 md:h-16 lg:h-20 object-contain"
+                                 src="/images/LOGO MEDPAR/Logo Ultimagz Putih.webp" alt="Ultimagz" />
+                        </div> --}}
+
+                        {{-- Tier 3 - 3 logos (Medium) --}}
+                        {{-- <div class="flex justify-center items-center space-x-6 sm:space-x-8 md:space-x-10 lg:space-x-14">
+                            <img class="w-24 sm:w-28 md:w-32 lg:w-36 h-10 sm:h-12 md:h-14 lg:h-16 object-contain" 
+                                 src="/images/LOGO MEDPAR/Logo lspr radio .webp" alt="LSPR Radio" />
+                            <img class="w-24 sm:w-28 md:w-32 lg:w-36 h-10 sm:h-12 md:h-14 lg:h-16 object-contain" 
+                                 src="/images/LOGO MEDPAR/Logo Mradio .webp" alt="M Radio" />
+                            <img class="w-24 sm:w-28 md:w-32 lg:w-36 h-10 sm:h-12 md:h-14 lg:h-16 object-contain" 
+                                 src="/images/LOGO MEDPAR/fourtyfiveradio.webp" alt="45 Radio" />
+                        </div> --}}
+
+                        {{-- Tier 4 - 4 logos (Small-Medium) --}}
+                       {{--  <div class="flex justify-center items-center space-x-4 sm:space-x-6 md:space-x-8 lg:space-x-10">
+                            <img src="/images/LOGO MEDPAR/LOGO BEM UMN PUTIH.webp" alt="BEM UMN"
+                                class="w-16 sm:w-18 md:w-20 lg:w-28 h-8 sm:h-10 md:h-12 lg:h-14 object-contain">
+                            <img class="w-16 sm:w-18 md:w-20 lg:w-28 h-8 sm:h-10 md:h-12 lg:h-14 object-contain" 
+                                 src="/images/LOGO MEDPAR/LOGO HMFILM.webp" alt="HM Film" />
+                            <img class="w-16 sm:w-18 md:w-20 lg:w-28 h-8 sm:h-10 md:h-12 lg:h-14 object-contain" 
+                                 src="/images/LOGO MEDPAR/logo imkom.webp" alt="Imkom" />
+                            <img class="w-16 sm:w-18 md:w-20 lg:w-28 h-8 sm:h-10 md:h-12 lg:h-14 object-contain"
+                                 src="/images/LOGO MEDPAR/Logo Kacamata Lomba.webp" alt="Kacamata Lomba" />
+                        </div> --}}
+
+                        {{-- Tier 5 - 5 logos (Small) --}}
+                        {{-- <div class="flex justify-center items-center space-x-3 sm:space-x-4 md:space-x-6 lg:space-x-8">
+                            <img class="w-12 sm:w-14 md:w-16 lg:w-24 h-6 sm:h-8 md:h-10 lg:h-12 object-contain" 
+                                 src="/images/LOGO MEDPAR/LOGO_MOESTOPO.webp" alt="Moestopo" />
+                            <img class="w-12 sm:w-14 md:w-16 lg:w-24 h-6 sm:h-8 md:h-10 lg:h-12 object-contain" 
+                                 src="/images/LOGO MEDPAR/LOGO ORI.webp" alt="ORI" />
+                            <img class="w-12 sm:w-14 md:w-16 lg:w-24 h-6 sm:h-8 md:h-10 lg:h-12 object-contain" 
+                                 src="/images/LOGO MEDPAR/unpar.webp" alt="Unpar" />
+                            <img class="w-12 sm:w-14 md:w-16 lg:w-24 h-6 sm:h-8 md:h-10 lg:h-12 object-contain" 
+                                 src="/images/LOGO MEDPAR/Logo Acarakampus.com.webp" alt="Acara Kampus" />
+                            <img class="w-12 sm:w-14 md:w-16 lg:w-24 h-6 sm:h-8 md:h-10 lg:h-12 object-contain" 
+                                 src="/images/LOGO MEDPAR/LOGO BERITA LOMBA PNG.webp" alt="Berita Lomba" />
+                        </div> --}}
+
+                        {{-- Tier 6 - 6 logos (Smallest) --}}
+{{--                         <div class="flex justify-center items-center space-x-2 sm:space-x-3 md:space-x-4 lg:space-x-6 flex-wrap max-w-4xl gap-y-2">
+                            <img class="w-10 sm:w-12 md:w-14 lg:w-20 h-5 sm:h-6 md:h-8 lg:h-10 object-contain" 
+                                 src="/images/LOGO MEDPAR/Logo Eventnya Mahasiswa.webp" alt="Event Mahasiswa" />
+                            <img class="w-10 sm:w-12 md:w-14 lg:w-20 h-5 sm:h-6 md:h-8 lg:h-10 object-contain" 
+                                 src="/images/LOGO MEDPAR/Logo Radio Untar.webp" alt="Radio Untar" />
+                            <img class="w-10 sm:w-12 md:w-14 lg:w-20 h-5 sm:h-6 md:h-8 lg:h-10 object-contain" 
+                                 src="/images/LOGO MEDPAR/Point Kampus.webp" alt="Point Kampus" />
                         </div>
                     </div>
                 </div>
@@ -288,10 +277,9 @@
         <div class="w-full flex justify-center mt-12 sm:mt-16 md:mt-20 lg:mt-24">
             <hr class="w-[90%] border-white/30">
         </div>
-        <div class="w-full flex justify-center">
-            <hr class="w-[90%] my-24">
-        </div>
-        <div class="px-4">
+
+        {{-- Ticketing Partner --}}
+        {{-- <div class="px-4 mt-12 sm:mt-16 md:mt-20">
             <div data-aos="zoom-in-up" data-aos-delay="400"
                 class="container mx-auto flex flex-col md:flex-row justify-center md:justify-around items-center align-middle gap-6 md:gap-4">
                 <div class="relative text-center font-lavish">
@@ -306,37 +294,47 @@
                      class="w-48 sm:w-64 md:w-80 lg:w-96 object-contain">
             </div>
         </div>
+ --}}
+        {{-- Sponsors Section --}}
+        {{-- <div id="sponsors" class="mt-8 sm:mt-12 md:mt-16 lg:mt-24 px-4" data-aos="fade-up">
+            <div class="container mx-auto"> --}}
+                {{-- Title --}}
+                {{-- <div data-aos="zoom-in-up" data-aos-delay="400" class="w-full text-center mb-8 sm:mb-10 md:mb-12">
+                    <div class="relative text-center font-lavish">
+                        <span class="absolute inset-0 text-xl sm:text-2xl md:text-4xl lg:text-5xl font-extrabold text-transparent bg-gradient-to-r from-gold to-white bg-clip-text blur-xl opacity-60 select-none tracking-wider">
+                            SPONSORS
+                        </span>
+                        <h2 class="relative z-10 glow-text text-xl sm:text-2xl md:text-4xl lg:text-5xl font-extrabold text-transparent bg-gradient-to-r from-gold to-white bg-clip-text tracking-wider">
+                            SPONSORS
+                        </h2>
+                    </div>
+                </div> --}}
 
-        <!-- Sponsors Section -->
-        <div id="sponsors" class="md:py-16 px-4">
-            <div data-aos="zoom-in-right" data-aos-delay="400"
-                class="container mx-auto flex justify-center flex-wrap-reverse lg:justify-around">
-                <!-- Images -->
-                <div class="w-full lg:w-1/2">
-                    <div class="grid grid-cols-3 gap-4">
-                        <div class="bg-black border border-white aspect-w-1 aspect-h-1 rounded-lg">
-                            <img src="/images/LOGO SPONSOR/ALLOBANK (2) XS.webp" alt=""
-                                class="w-full h-full object-contain">
-                        </div>
-                        <div class="bg-black border border-white aspect-w-1 aspect-h-1 rounded-lg">
-                            <img src="/images/LOGO SPONSOR/AMATERASUN XS.webp" alt=""
-                                class="w-full h-full object-contain">
-                        </div>
-                        <div class="bg-black border border-white aspect-w-1 aspect-h-1 rounded-lg">
-                            <img src="/images/LOGO SPONSOR/ITOEN WHITE XS.webp" alt=""
-                                class="w-full h-full object-contain">
-                        </div>
-                        <div class="bg-black border border-white aspect-w-1 aspect-h-1 rounded-lg">
-                            <img src="/images/LOGO SPONSOR/LOGO CAP PANDA.webp" alt=""
-                                class="w-full h-full object-contain">
-                        </div>
-                        <div class="bg-black border border-white aspect-w-1 aspect-h-1 rounded-lg">
-                            <img src="/images/LOGO SPONSOR/PUYO XS.webp" alt=""
-                                class="w-full h-full object-contain">
-                        </div>
-                        <div class="bg-black border border-white aspect-w-1 aspect-h-1 rounded-lg">
-                            <img src="/images/LOGO SPONSOR/SARI ROTI XS.webp" alt=""
-                                class="w-full h-full object-contain">
+                {{-- Pyramid Layout --}}
+                {{-- <div class="w-full">
+                    <div class="flex flex-col items-center space-y-4 sm:space-y-6 md:space-y-8"> --}}
+                        {{-- Tier 1 - 1 logo (Largest) --}}
+                        {{-- <div class="flex justify-center">
+                            <img src="/images/LOGO SPONSOR/ALLOBANK (2) XS.webp" alt="Allo Bank"
+                                class="w-48 sm:w-56 md:w-64 lg:w-80 h-16 sm:h-20 md:h-24 lg:h-28 object-contain">
+                        </div> --}}
+
+                        {{-- Tier 2 - 2 logos (Large) --}}
+                        {{-- <div class="flex justify-center items-center space-x-8 sm:space-x-12 md:space-x-16 lg:space-x-20">
+                            <img src="/images/LOGO SPONSOR/AMATERASUN XS.webp" alt="Amaterasun"
+                                class="w-32 sm:w-36 md:w-40 lg:w-48 h-12 sm:h-14 md:h-16 lg:h-20 object-contain">
+                            <img src="/images/LOGO SPONSOR/ITOEN WHITE XS.webp" alt="Ito En"
+                                class="w-32 sm:w-36 md:w-40 lg:w-48 h-12 sm:h-14 md:h-16 lg:h-20 object-contain">
+                        </div> --}}
+
+                        {{-- Tier 3 - 3 logos (Medium) --}}
+{{--                         <div class="flex justify-center items-center space-x-6 sm:space-x-8 md:space-x-10 lg:space-x-14">
+                            <img src="/images/LOGO SPONSOR/LOGO CAP PANDA.webp" alt="Cap Panda"
+                                class="w-24 sm:w-28 md:w-32 lg:w-36 h-10 sm:h-12 md:h-14 lg:h-16 object-contain">
+                            <img src="/images/LOGO SPONSOR/PUYO XS.webp" alt="Puyo"
+                                class="w-24 sm:w-28 md:w-32 lg:w-36 h-10 sm:h-12 md:h-14 lg:h-16 object-contain">
+                            <img src="/images/LOGO SPONSOR/SARI ROTI XS.webp" alt="Sari Roti"
+                                class="w-24 sm:w-28 md:w-32 lg:w-36 h-10 sm:h-12 md:h-14 lg:h-16 object-contain">
                         </div>
                     </div>
                 </div>
@@ -346,32 +344,28 @@
         {{-- Gallery Section --}}
         <div class="flex flex-col lg:flex-row px-4 md:px-8 lg:px-12 mt-12 sm:mt-16 md:mt-20 space-y-6 lg:space-y-0 lg:space-x-6">
             {{-- Gallery Filter Section --}}
-            <div class="w-full lg:w-1/4 p-4 md:p-6">
-                <h1 class="text-base sm:text-lg md:text-xl font-lavish text-gold mb-2 md:mb-4">UMN RADIOACTIVE 2025</h1>
-                <div class="relative text-center my-4 sm:my-6 font-lavish">
-                    <span class="absolute inset-0 text-lg sm:text-xl md:text-3xl lg:text-4xl font-bold text-transparent bg-gradient-to-r from-gold to-white bg-clip-text blur-xl opacity-60 select-none">
-                        Flashback to last year's thrills!
-                    </span>
-                    <h2 class="relative z-10 glow-text text-lg sm:text-xl md:text-3xl lg:text-4xl font-bold text-transparent bg-gradient-to-r from-gold to-white bg-clip-text">
-                        Flashback to last year's thrills!
-                    </h2>
-                </div>
+            <div class="w-full lg:w-1/4 p-4 md:p-6 flex flex-col items-center text-center">
+    <h1 class="text-base sm:text-lg md:text-xl font-lavish text-gold mb-2 md:mb-4">
+        UMN RADIOACTIVE 2025
+    </h1>
 
-        <div class="flex flex-wrap md:flex-nowrap px-4 md:px-12 mt-20 space-y-8 md:space-y-0">
-            <div class="w-full md:w-1/4 p-4 md:p-6">
-                <h1 class="text-lg md:text-xl font-brodyrawk text-[#D61525] mb-2 md:mb-4">UMN RADIOACTIVE 2023</h1>
-                <h2 class="text-2xl md:text-4xl font-bold mb-4 md:mb-6 font-ltmuseumbold text-white">Flashback to last year's thrills!</h2>
-                <div class="flex flex-wrap items-center align-middle gap-4">
-                    <div class=""><a data-filter="all"
-                            class="filter-link no-underline font-ltmuseumbold text-[#d61525] hover:cursor-pointer hover:opacity-50">ALL</a></div>
-                    <div class=""><a data-filter="voc"
-                            class="filter-link no-underline font-ltmuseumbold text-[#d61525] hover:cursor-pointer hover:opacity-50">VOC</a></div>
-                    <div class=""><a data-filter="rac"
-                            class="filter-link no-underline font-ltmuseumbold text-[#d61525] hover:cursor-pointer hover:opacity-50">RAC</a></div>
-                    <div class=""><a data-filter="closing-night"
-                            class="filter-link no-underline font-ltmuseumbold text-[#d61525] hover:cursor-pointer hover:opacity-50">CLOSING NIGHT</a></div>
-                </div>
-            </div>
+    <div class="relative my-4 sm:my-6 font-lavish">
+        <span class="absolute inset-0 text-lg sm:text-xl md:text-3xl lg:text-4xl font-bold text-transparent bg-gradient-to-r from-gold to-white bg-clip-text blur-xl opacity-60 select-none">
+            Flashback to last year's thrills!
+        </span>
+        <h2 class="relative z-10 glow-text text-lg sm:text-xl md:text-3xl lg:text-4xl font-bold text-transparent bg-gradient-to-r from-gold to-white bg-clip-text">
+            Flashback to last year's thrills!
+        </h2>
+    </div>
+
+    <div class="flex flex-wrap justify-center items-center gap-3 sm:gap-4">
+        <a data-filter="all" class="filter-link no-underline font-royalecoutureserif text-sm sm:text-base text-gold hover:cursor-pointer hover:opacity-50">ALL</a>
+        <a data-filter="voc" class="filter-link no-underline font-royalecoutureserif text-sm sm:text-base text-gold hover:cursor-pointer hover:opacity-50">VOC</a>
+        <a data-filter="rac" class="filter-link no-underline font-royalecoutureserif text-sm sm:text-base text-gold hover:cursor-pointer hover:opacity-50">RAC</a>
+        <a data-filter="closing-night" class="filter-link no-underline font-royalecoutureserif text-sm sm:text-base text-gold hover:cursor-pointer hover:opacity-50">CLOSING NIGHT</a>
+    </div>
+</div>
+
 
             {{-- Gallery Images Section --}}
             <div class="w-full lg:flex-1" id="gallery">
@@ -440,14 +434,29 @@
             </div>
         </div>
 
-        <div id="after" class="-mb-20 md:-mb-0 md:my-24" data-aos="fade-up">
-            <h2 class="font-brodyrawk md:text-3xl text-white text-center my-12 tracking-8">AFTER MOVIE RADIOACTIVE 2023
-            </h2>
+        {{-- After Movie Section --}}
+        <div id="after" class="mt-12 sm:mt-16 md:mt-20 lg:mt-24 px-4 mb-12" data-aos="fade-up">
+            <div class="relative text-center mb-6 sm:mb-8 md:mb-12 font-lavish">
+                <span class="absolute inset-0 text-base sm:text-lg md:text-2xl lg:text-3xl text-transparent bg-gradient-to-r from-gold to-white bg-clip-text blur-xl opacity-60 select-none tracking-wider">
+                    TEASER RADIOACTIVE 2025
+                </span>
+                <h2 class="relative z-10 glow-text text-base sm:text-lg md:text-2xl lg:text-3xl text-transparent bg-gradient-to-r from-gold to-white bg-clip-text tracking-wider">
+                    TEASER RADIOACTIVE 2025
+                </h2>
+            </div>
             <div class="w-full flex justify-center">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/noafJ76PHeM?si=5ho9Ad32GabxdrVT"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="relative w-full max-w-4xl aspect-video">
+                    <iframe 
+                        class="w-full h-full rounded-lg shadow-lg" 
+                        src="https://drive.google.com/file/d/1Nqs3RU2Pq_rAiwEUZICD6kbs15Ud-EIM/preview"
+                        title="YouTube video player" 
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
+                    
+                </div>
             </div>
         </div>
 
@@ -522,6 +531,128 @@
 
             function closePopup() {
                 document.getElementById('popup').classList.add('hidden');
+                document.body.style.overflow = 'auto'; // Restore scrolling
+            }
+
+            // Close popup with Escape key
+            document.addEventListener('keydown', function(event) {
+                if (event.key === 'Escape') {
+                    closePopup();
+                }
+            });
+        </script>
+
+        {{-- Parallax Script with Performance Optimization --}}
+        <script>
+            const elements = {
+                left: document.getElementById('left'),
+                right: document.getElementById('right'),
+                bungakiri: document.getElementById('bungakiri'),
+                bungakanan: document.getElementById('bungakanan'),
+                logo: document.getElementById('logo'),
+                leaveskiri: document.getElementById('leaveskiri'),
+                leaveskanan: document.getElementById('leaveskanan')
+            };
+
+            let ticking = false;
+
+            function updateParallax() {
+                const value = window.scrollY;
+                const maxLeafMove = window.innerWidth < 768 ? 200 : 400;
+
+                // Background layer - slowest
+                if (elements.bungakiri) {
+                    elements.bungakiri.style.transform = `translate(${value * -0.2}px, 0%)`;
+                }
+                if (elements.bungakanan) {
+                    elements.bungakanan.style.transform = `translate(${value * 0.2}px, 0%)`;
+                }
+
+                // Mid layer
+                if (elements.left) {
+                    elements.left.style.transform = `translate(${value * -0.4}px, 0%)`;
+                }
+                if (elements.right) {
+                    elements.right.style.transform = `translate(${value * 0.4}px, 0%)`;
+                }
+
+                // Foreground layer - fastest
+                if (elements.logo) {
+                    elements.logo.style.transform = `translate(-50%, calc(-50% + ${value * 0.25}px))`;
+                }
+
+                // Leaves with limited movement
+                const kiriOffset = Math.min(value * 0.6, maxLeafMove);
+                const kananOffset = Math.max(-value * 0.6, -maxLeafMove);
+
+                if (elements.leaveskiri) {
+                    elements.leaveskiri.style.transform = `translate(${kiriOffset}px, 0%)`;
+                }
+                if (elements.leaveskanan) {
+                    elements.leaveskanan.style.transform = `translate(${kananOffset}px, 0%)`;
+                }
+
+                ticking = false;
+            }
+
+            function requestTick() {
+                if (!ticking) {
+                    requestAnimationFrame(updateParallax);
+                    ticking = true;
+                }
+            }
+
+            // Throttled scroll event
+            window.addEventListener('scroll', requestTick, { passive: true });
+
+            // Resize handler
+            window.addEventListener('resize', () => {
+                requestTick();
+            });
+        </script>
+
+        {{-- Date Check Script --}}
+        <script>
+            var CurrentDate = new Date();
+            var regDate = new Date("2025-09-18");
+            var closeDate = new Date("2026-10-20");
+            var btnReg = document.getElementById('btnReg');
+
+            function checkTime() {
+                if (btnReg) {
+                    if (CurrentDate >= regDate) {
+                        btnReg.removeAttribute("disabled");
+                    }
+                    if (CurrentDate >= closeDate) {
+                        btnReg.classList.add("hidden");
+                    }
+                }
+            }
+            
+            checkTime();
+            setInterval(checkTime, 1000);
+        </script>
+
+        {{-- Smooth Scroll Functions --}}
+        <script>
+            function scrollToTimeline() {
+                const timelineSection = document.getElementById('timeline');
+                if (timelineSection) {
+                    timelineSection.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            }
+
+            function scrollToDownload() {
+                const handbookSection = document.getElementById('download');
+                if (handbookSection) {
+                    handbookSection.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
             }
         </script>
 

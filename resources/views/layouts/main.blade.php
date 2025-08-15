@@ -16,10 +16,15 @@
 </head>
 
     <body>      
-        <div>
-            <img src="/images/BG WEB 2025 TES.jpg" alt="Background Image"
-                class="fixed -z-10 w-auto lg:w-full md:min-w-full md:min-h-full max-w-fit object-cover brightness-[50%]" loading="lazy">
-        </div>
+        <div class="fixed inset-0 -z-10">
+  <img 
+    src="/images/BG WEB 2025 TES.jpg" 
+    alt="Background Image"
+    class="w-full h-full object-cover brightness-[50%]" 
+    loading="lazy"
+  >
+</div>
+
         @include('components.navbar')
 
         @yield('container')

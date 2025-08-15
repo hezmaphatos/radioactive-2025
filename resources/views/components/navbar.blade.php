@@ -2,10 +2,6 @@
     class="font-lavish fixed top-0 z-50 w-full bg-[#20661c] backdrop-blur-md shadow-md px-4 lg:px-12 xl:px-20 lg:pb-0 transition-all duration-300 ease-in-out"
     :class="isOpen ? 'pb-4' : 'pb-0'">
 
-    <div class="absolute left-0 ">
-        <img src="{{ url('images/LOGO RADIOACTIVE 2025 PNG.png') }}" alt="image" class="w-14 lg:w-16 ml-2 mt-2">
-        <div class="menu-item ml-0 font-lavish text-white text-sm tracking-wide mt-1">RADIOACTIVE</div>
-    </div>
     <div class="max-w-7xl mx-auto flex items-center justify-between relative transition-all duration-300 ease-in-out">
 
         <!-- Logo -->

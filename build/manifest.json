@@ -1,0 +1,79 @@
+{
+  "public/images/BG PARALLAX2.jpg": {
+    "file": "assets/BG PARALLAX2-0bdb33bc.jpg",
+    "src": "public/images/BG PARALLAX2.jpg"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-a22258e5.css",
+    "src": "resources/js/app.css"
+  },
+  "resources/css/dashboard.css": {
+    "file": "assets/dashboard-01bcb2f8.css",
+    "isEntry": true,
+    "src": "resources/css/dashboard.css"
+  },
+  "resources/css/fonts/LTMuseum-Bold.ttf": {
+    "file": "assets/LTMuseum-Bold-1f453395.ttf",
+    "src": "resources/css/fonts/LTMuseum-Bold.ttf"
+  },
+  "resources/css/fonts/LTMuseum-BoldItalic.ttf": {
+    "file": "assets/LTMuseum-BoldItalic-b8d69f27.ttf",
+    "src": "resources/css/fonts/LTMuseum-BoldItalic.ttf"
+  },
+  "resources/css/fonts/LTMuseum-Inline.ttf": {
+    "file": "assets/LTMuseum-Inline-73b28d5a.ttf",
+    "src": "resources/css/fonts/LTMuseum-Inline.ttf"
+  },
+  "resources/css/fonts/LTMuseum-Ital.ttf": {
+    "file": "assets/LTMuseum-Ital-adf8a900.ttf",
+    "src": "resources/css/fonts/LTMuseum-Ital.ttf"
+  },
+  "resources/css/fonts/LTMuseum-Light.ttf": {
+    "file": "assets/LTMuseum-Light-a474ac21.ttf",
+    "src": "resources/css/fonts/LTMuseum-Light.ttf"
+  },
+  "resources/css/fonts/LTMuseum-LightItalic.ttf": {
+    "file": "assets/LTMuseum-LightItalic-44b12da5.ttf",
+    "src": "resources/css/fonts/LTMuseum-LightItalic.ttf"
+  },
+  "resources/css/fonts/LTMuseum-Reg.ttf": {
+    "file": "assets/LTMuseum-Reg-9830b0f9.ttf",
+    "src": "resources/css/fonts/LTMuseum-Reg.ttf"
+  },
+  "resources/css/fonts/Lavish.ttf": {
+    "file": "assets/Lavish-124c788f.ttf",
+    "src": "resources/css/fonts/Lavish.ttf"
+  },
+  "resources/css/fonts/RoyaleCouture-Serif.otf": {
+    "file": "assets/RoyaleCouture-Serif-94a8159f.otf",
+    "src": "resources/css/fonts/RoyaleCouture-Serif.otf"
+  },
+  "resources/css/home.css": {
+    "file": "assets/home-a05a1d8c.css",
+    "isEntry": true,
+    "src": "resources/css/home.css"
+  },
+  "resources/js/app.css": {
+    "file": "assets/app-a22258e5.css",
+    "src": "resources/js/app.css"
+  },
+  "resources/js/app.js": {
+    "assets": [
+      "assets/LTMuseum-Bold-1f453395.ttf",
+      "assets/LTMuseum-Reg-9830b0f9.ttf",
+      "assets/LTMuseum-BoldItalic-b8d69f27.ttf",
+      "assets/LTMuseum-Inline-73b28d5a.ttf",
+      "assets/LTMuseum-Ital-adf8a900.ttf",
+      "assets/LTMuseum-Light-a474ac21.ttf",
+      "assets/LTMuseum-LightItalic-44b12da5.ttf",
+      "assets/Lavish-124c788f.ttf",
+      "assets/RoyaleCouture-Serif-94a8159f.otf"
+    ],
+    "css": [
+      "assets/app-a22258e5.css"
+    ],
+    "file": "assets/app-fa27e15a.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  }
+}

@@ -124,12 +124,12 @@
                             {{-- READY TO TAKE THE CHALLENGE --}}
                             <a href="https://forms.gle/XTN1WX2vDHp6veNn7" target="_blank" class="no-underline">
                                 <div id="title" class="text-center my-8 px-4 relative z-10" data-aos="fade-up">
-                                    <h1 class="m-[0.3em] text-2xl sm:text-3xl md:text-4xl font-lavish tracking-[4px] transition duration-300 hover:text-white"
+                                    {{-- <h1 class="m-[0.3em] text-2xl sm:text-3xl md:text-4xl font-lavish tracking-[4px] transition duration-300 hover:text-white"
                                         style="color: #f6e79c; text-shadow: 0 0 10px #f6e79c, 0 0 20px #f6e79c;"
                                         onmouseover="this.style.color='#ffffff'; this.style.textShadow='0 0 10px #ffffff, 0 0 20px #ffffff';"
                                         onmouseout="this.style.color='#f6e79c'; this.style.textShadow='0 0 10px #f6e79c, 0 0 20px #f6e79c';">
                                         READY TO TAKE THE CHALLENGE?
-                                    </h1>
+                                    </h1> --}}
                                     {{-- Decorative underline --}}
                                     <!-- <div class="w-32 h-0.5 mx-auto mt-2 opacity-80"
                                             style="background: linear-gradient(90deg, transparent, #F6E79C, transparent);">
